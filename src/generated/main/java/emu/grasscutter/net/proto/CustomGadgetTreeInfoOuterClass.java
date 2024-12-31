@@ -43,10 +43,6 @@ public final class CustomGadgetTreeInfoOuterClass {
         int index);
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code CustomGadgetTreeInfo}
    */
   public static final class CustomGadgetTreeInfo extends
@@ -335,10 +331,6 @@ public final class CustomGadgetTreeInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code CustomGadgetTreeInfo}
      */
     public static final class Builder extends

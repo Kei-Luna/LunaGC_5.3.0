@@ -19,18 +19,6 @@ public final class BreakoutSpawnPointOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 1;</code>
-     * @return The id.
-     */
-    int getId();
-
-    /**
-     * <code>uint32 brick_suite_id = 2;</code>
-     * @return The brickSuiteId.
-     */
-    int getBrickSuiteId();
-
-    /**
      * <code>repeated .BreakoutPhysicalObject spawned_brick_list = 3;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> 
@@ -53,12 +41,20 @@ public final class BreakoutSpawnPointOuterClass {
      */
     emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getSpawnedBrickListOrBuilder(
         int index);
+
+    /**
+     * <code>uint32 brick_suite_id = 2;</code>
+     * @return The brickSuiteId.
+     */
+    int getBrickSuiteId();
+
+    /**
+     * <code>uint32 id = 1;</code>
+     * @return The id.
+     */
+    int getId();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code BreakoutSpawnPoint}
    */
   public static final class BreakoutSpawnPoint extends
@@ -159,28 +155,6 @@ public final class BreakoutSpawnPointOuterClass {
               emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.class, emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 1;
-    private int id_;
-    /**
-     * <code>uint32 id = 1;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int BRICK_SUITE_ID_FIELD_NUMBER = 2;
-    private int brickSuiteId_;
-    /**
-     * <code>uint32 brick_suite_id = 2;</code>
-     * @return The brickSuiteId.
-     */
-    @java.lang.Override
-    public int getBrickSuiteId() {
-      return brickSuiteId_;
-    }
-
     public static final int SPAWNED_BRICK_LIST_FIELD_NUMBER = 3;
     private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> spawnedBrickList_;
     /**
@@ -219,6 +193,28 @@ public final class BreakoutSpawnPointOuterClass {
     public emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObjectOrBuilder getSpawnedBrickListOrBuilder(
         int index) {
       return spawnedBrickList_.get(index);
+    }
+
+    public static final int BRICK_SUITE_ID_FIELD_NUMBER = 2;
+    private int brickSuiteId_;
+    /**
+     * <code>uint32 brick_suite_id = 2;</code>
+     * @return The brickSuiteId.
+     */
+    @java.lang.Override
+    public int getBrickSuiteId() {
+      return brickSuiteId_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 1;
+    private int id_;
+    /**
+     * <code>uint32 id = 1;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -280,12 +276,12 @@ public final class BreakoutSpawnPointOuterClass {
       }
       emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint other = (emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint) obj;
 
-      if (getId()
-          != other.getId()) return false;
-      if (getBrickSuiteId()
-          != other.getBrickSuiteId()) return false;
       if (!getSpawnedBrickListList()
           .equals(other.getSpawnedBrickListList())) return false;
+      if (getBrickSuiteId()
+          != other.getBrickSuiteId()) return false;
+      if (getId()
+          != other.getId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -297,14 +293,14 @@ public final class BreakoutSpawnPointOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
-      hash = (37 * hash) + BRICK_SUITE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getBrickSuiteId();
       if (getSpawnedBrickListCount() > 0) {
         hash = (37 * hash) + SPAWNED_BRICK_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSpawnedBrickListList().hashCode();
       }
+      hash = (37 * hash) + BRICK_SUITE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBrickSuiteId();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -401,10 +397,6 @@ public final class BreakoutSpawnPointOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code BreakoutSpawnPoint}
      */
     public static final class Builder extends
@@ -443,16 +435,16 @@ public final class BreakoutSpawnPointOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        id_ = 0;
-
-        brickSuiteId_ = 0;
-
         if (spawnedBrickListBuilder_ == null) {
           spawnedBrickList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           spawnedBrickListBuilder_.clear();
         }
+        brickSuiteId_ = 0;
+
+        id_ = 0;
+
         return this;
       }
 
@@ -480,8 +472,6 @@ public final class BreakoutSpawnPointOuterClass {
       public emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint buildPartial() {
         emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint result = new emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint(this);
         int from_bitField0_ = bitField0_;
-        result.id_ = id_;
-        result.brickSuiteId_ = brickSuiteId_;
         if (spawnedBrickListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             spawnedBrickList_ = java.util.Collections.unmodifiableList(spawnedBrickList_);
@@ -491,6 +481,8 @@ public final class BreakoutSpawnPointOuterClass {
         } else {
           result.spawnedBrickList_ = spawnedBrickListBuilder_.build();
         }
+        result.brickSuiteId_ = brickSuiteId_;
+        result.id_ = id_;
         onBuilt();
         return result;
       }
@@ -539,12 +531,6 @@ public final class BreakoutSpawnPointOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint other) {
         if (other == emu.grasscutter.net.proto.BreakoutSpawnPointOuterClass.BreakoutSpawnPoint.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
-        if (other.getBrickSuiteId() != 0) {
-          setBrickSuiteId(other.getBrickSuiteId());
-        }
         if (spawnedBrickListBuilder_ == null) {
           if (!other.spawnedBrickList_.isEmpty()) {
             if (spawnedBrickList_.isEmpty()) {
@@ -570,6 +556,12 @@ public final class BreakoutSpawnPointOuterClass {
               spawnedBrickListBuilder_.addAllMessages(other.spawnedBrickList_);
             }
           }
+        }
+        if (other.getBrickSuiteId() != 0) {
+          setBrickSuiteId(other.getBrickSuiteId());
+        }
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -600,68 +592,6 @@ public final class BreakoutSpawnPointOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private int id_ ;
-      /**
-       * <code>uint32 id = 1;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 1;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int brickSuiteId_ ;
-      /**
-       * <code>uint32 brick_suite_id = 2;</code>
-       * @return The brickSuiteId.
-       */
-      @java.lang.Override
-      public int getBrickSuiteId() {
-        return brickSuiteId_;
-      }
-      /**
-       * <code>uint32 brick_suite_id = 2;</code>
-       * @param value The brickSuiteId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBrickSuiteId(int value) {
-        
-        brickSuiteId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 brick_suite_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBrickSuiteId() {
-        
-        brickSuiteId_ = 0;
-        onChanged();
-        return this;
-      }
 
       private java.util.List<emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.BreakoutPhysicalObject> spawnedBrickList_ =
         java.util.Collections.emptyList();
@@ -902,6 +832,68 @@ public final class BreakoutSpawnPointOuterClass {
         }
         return spawnedBrickListBuilder_;
       }
+
+      private int brickSuiteId_ ;
+      /**
+       * <code>uint32 brick_suite_id = 2;</code>
+       * @return The brickSuiteId.
+       */
+      @java.lang.Override
+      public int getBrickSuiteId() {
+        return brickSuiteId_;
+      }
+      /**
+       * <code>uint32 brick_suite_id = 2;</code>
+       * @param value The brickSuiteId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBrickSuiteId(int value) {
+        
+        brickSuiteId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 brick_suite_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBrickSuiteId() {
+        
+        brickSuiteId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>uint32 id = 1;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 1;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -970,10 +962,10 @@ public final class BreakoutSpawnPointOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030BreakoutSpawnPoint.proto\032\034BreakoutPhys" +
-      "icalObject.proto\"m\n\022BreakoutSpawnPoint\022\n" +
-      "\n\002id\030\001 \001(\r\022\026\n\016brick_suite_id\030\002 \001(\r\0223\n\022sp" +
-      "awned_brick_list\030\003 \003(\0132\027.BreakoutPhysica" +
-      "lObjectB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "icalObject.proto\"m\n\022BreakoutSpawnPoint\0223" +
+      "\n\022spawned_brick_list\030\003 \003(\0132\027.BreakoutPhy" +
+      "sicalObject\022\026\n\016brick_suite_id\030\002 \001(\r\022\n\n\002i" +
+      "d\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
       "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -986,7 +978,7 @@ public final class BreakoutSpawnPointOuterClass {
     internal_static_BreakoutSpawnPoint_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BreakoutSpawnPoint_descriptor,
-        new java.lang.String[] { "Id", "BrickSuiteId", "SpawnedBrickList", });
+        new java.lang.String[] { "SpawnedBrickList", "BrickSuiteId", "Id", });
     emu.grasscutter.net.proto.BreakoutPhysicalObjectOuterClass.getDescriptor();
   }
 

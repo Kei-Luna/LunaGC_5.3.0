@@ -19,18 +19,6 @@ public final class PropValueOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 type = 1;</code>
-     * @return The type.
-     */
-    int getType();
-
-    /**
-     * <code>int64 val = 4;</code>
-     * @return The val.
-     */
-    long getVal();
-
-    /**
      * <code>int64 ival = 2;</code>
      * @return Whether the ival field is set.
      */
@@ -51,6 +39,18 @@ public final class PropValueOuterClass {
      * @return The fval.
      */
     float getFval();
+
+    /**
+     * <code>uint32 type = 1;</code>
+     * @return The type.
+     */
+    int getType();
+
+    /**
+     * <code>int64 val = 4;</code>
+     * @return The val.
+     */
+    long getVal();
 
     public emu.grasscutter.net.proto.PropValueOuterClass.PropValue.ValueCase getValueCase();
   }
@@ -192,28 +192,6 @@ public final class PropValueOuterClass {
           valueCase_);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 1;
-    private int type_;
-    /**
-     * <code>uint32 type = 1;</code>
-     * @return The type.
-     */
-    @java.lang.Override
-    public int getType() {
-      return type_;
-    }
-
-    public static final int VAL_FIELD_NUMBER = 4;
-    private long val_;
-    /**
-     * <code>int64 val = 4;</code>
-     * @return The val.
-     */
-    @java.lang.Override
-    public long getVal() {
-      return val_;
-    }
-
     public static final int IVAL_FIELD_NUMBER = 2;
     /**
      * <code>int64 ival = 2;</code>
@@ -254,6 +232,28 @@ public final class PropValueOuterClass {
         return (java.lang.Float) value_;
       }
       return 0F;
+    }
+
+    public static final int TYPE_FIELD_NUMBER = 1;
+    private int type_;
+    /**
+     * <code>uint32 type = 1;</code>
+     * @return The type.
+     */
+    @java.lang.Override
+    public int getType() {
+      return type_;
+    }
+
+    public static final int VAL_FIELD_NUMBER = 4;
+    private long val_;
+    /**
+     * <code>int64 val = 4;</code>
+     * @return The val.
+     */
+    @java.lang.Override
+    public long getVal() {
+      return val_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -539,14 +539,14 @@ public final class PropValueOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PropValueOuterClass.PropValue buildPartial() {
         emu.grasscutter.net.proto.PropValueOuterClass.PropValue result = new emu.grasscutter.net.proto.PropValueOuterClass.PropValue(this);
-        result.type_ = type_;
-        result.val_ = val_;
         if (valueCase_ == 2) {
           result.value_ = value_;
         }
         if (valueCase_ == 3) {
           result.value_ = value_;
         }
+        result.type_ = type_;
+        result.val_ = val_;
         result.valueCase_ = valueCase_;
         onBuilt();
         return result;
@@ -659,68 +659,6 @@ public final class PropValueOuterClass {
       }
 
 
-      private int type_ ;
-      /**
-       * <code>uint32 type = 1;</code>
-       * @return The type.
-       */
-      @java.lang.Override
-      public int getType() {
-        return type_;
-      }
-      /**
-       * <code>uint32 type = 1;</code>
-       * @param value The type to set.
-       * @return This builder for chaining.
-       */
-      public Builder setType(int value) {
-        
-        type_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 type = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearType() {
-        
-        type_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long val_ ;
-      /**
-       * <code>int64 val = 4;</code>
-       * @return The val.
-       */
-      @java.lang.Override
-      public long getVal() {
-        return val_;
-      }
-      /**
-       * <code>int64 val = 4;</code>
-       * @param value The val to set.
-       * @return This builder for chaining.
-       */
-      public Builder setVal(long value) {
-        
-        val_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int64 val = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearVal() {
-        
-        val_ = 0L;
-        onChanged();
-        return this;
-      }
-
       /**
        * <code>int64 ival = 2;</code>
        * @return Whether the ival field is set.
@@ -802,6 +740,68 @@ public final class PropValueOuterClass {
         }
         return this;
       }
+
+      private int type_ ;
+      /**
+       * <code>uint32 type = 1;</code>
+       * @return The type.
+       */
+      @java.lang.Override
+      public int getType() {
+        return type_;
+      }
+      /**
+       * <code>uint32 type = 1;</code>
+       * @param value The type to set.
+       * @return This builder for chaining.
+       */
+      public Builder setType(int value) {
+        
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 type = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearType() {
+        
+        type_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long val_ ;
+      /**
+       * <code>int64 val = 4;</code>
+       * @return The val.
+       */
+      @java.lang.Override
+      public long getVal() {
+        return val_;
+      }
+      /**
+       * <code>int64 val = 4;</code>
+       * @param value The val to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVal(long value) {
+        
+        val_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 val = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVal() {
+        
+        val_ = 0L;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -869,9 +869,9 @@ public final class PropValueOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017PropValue.proto\"O\n\tPropValue\022\014\n\004type\030\001" +
-      " \001(\r\022\013\n\003val\030\004 \001(\003\022\016\n\004ival\030\002 \001(\003H\000\022\016\n\004fva" +
-      "l\030\003 \001(\002H\000B\007\n\005ValueB\033\n\031emu.grasscutter.ne" +
+      "\n\017PropValue.proto\"O\n\tPropValue\022\016\n\004ival\030\002" +
+      " \001(\003H\000\022\016\n\004fval\030\003 \001(\002H\000\022\014\n\004type\030\001 \001(\r\022\013\n\003" +
+      "val\030\004 \001(\003B\007\n\005valueB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -883,7 +883,7 @@ public final class PropValueOuterClass {
     internal_static_PropValue_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PropValue_descriptor,
-        new java.lang.String[] { "Type", "Val", "Ival", "Fval", "Value", });
+        new java.lang.String[] { "Ival", "Fval", "Type", "Val", "Value", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

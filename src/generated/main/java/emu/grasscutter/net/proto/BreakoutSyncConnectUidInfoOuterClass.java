@@ -19,12 +19,6 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 1;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
      * <code>repeated uint32 skill_id_list = 2;</code>
      * @return A list containing the skillIdList.
      */
@@ -57,12 +51,14 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
      * @return The skillLevelList at the given index.
      */
     int getSkillLevelList(int index);
+
+    /**
+     * <code>uint32 uid = 1;</code>
+     * @return The uid.
+     */
+    int getUid();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code BreakoutSyncConnectUidInfo}
    */
   public static final class BreakoutSyncConnectUidInfo extends
@@ -195,17 +191,6 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
               emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.class, emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 1;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 1;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
     public static final int SKILL_ID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList skillIdList_;
     /**
@@ -261,6 +246,17 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       return skillLevelList_.getInt(index);
     }
     private int skillLevelListMemoizedSerializedSize = -1;
+
+    public static final int UID_FIELD_NUMBER = 1;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 1;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -350,12 +346,12 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       }
       emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo other = (emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo) obj;
 
-      if (getUid()
-          != other.getUid()) return false;
       if (!getSkillIdListList()
           .equals(other.getSkillIdListList())) return false;
       if (!getSkillLevelListList()
           .equals(other.getSkillLevelListList())) return false;
+      if (getUid()
+          != other.getUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -367,8 +363,6 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       if (getSkillIdListCount() > 0) {
         hash = (37 * hash) + SKILL_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSkillIdListList().hashCode();
@@ -377,6 +371,8 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         hash = (37 * hash) + SKILL_LEVEL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSkillLevelListList().hashCode();
       }
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -473,10 +469,6 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code BreakoutSyncConnectUidInfo}
      */
     public static final class Builder extends
@@ -514,12 +506,12 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        uid_ = 0;
-
         skillIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         skillLevelList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
+        uid_ = 0;
+
         return this;
       }
 
@@ -547,7 +539,6 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
       public emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo buildPartial() {
         emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo result = new emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo(this);
         int from_bitField0_ = bitField0_;
-        result.uid_ = uid_;
         if (((bitField0_ & 0x00000001) != 0)) {
           skillIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -558,6 +549,7 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.skillLevelList_ = skillLevelList_;
+        result.uid_ = uid_;
         onBuilt();
         return result;
       }
@@ -606,9 +598,6 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo other) {
         if (other == emu.grasscutter.net.proto.BreakoutSyncConnectUidInfoOuterClass.BreakoutSyncConnectUidInfo.getDefaultInstance()) return this;
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
-        }
         if (!other.skillIdList_.isEmpty()) {
           if (skillIdList_.isEmpty()) {
             skillIdList_ = other.skillIdList_;
@@ -628,6 +617,9 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
             skillLevelList_.addAll(other.skillLevelList_);
           }
           onChanged();
+        }
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -658,37 +650,6 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 1;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 1;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
 
       private com.google.protobuf.Internal.IntList skillIdList_ = emptyIntList();
       private void ensureSkillIdListIsMutable() {
@@ -847,6 +808,37 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
         onChanged();
         return this;
       }
+
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 1;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 1;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -915,9 +907,9 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n BreakoutSyncConnectUidInfo.proto\"Z\n\032Br" +
-      "eakoutSyncConnectUidInfo\022\013\n\003uid\030\001 \001(\r\022\025\n" +
-      "\rskill_id_list\030\002 \003(\r\022\030\n\020skill_level_list" +
-      "\030\003 \003(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "eakoutSyncConnectUidInfo\022\025\n\rskill_id_lis" +
+      "t\030\002 \003(\r\022\030\n\020skill_level_list\030\003 \003(\r\022\013\n\003uid" +
+      "\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -929,7 +921,7 @@ public final class BreakoutSyncConnectUidInfoOuterClass {
     internal_static_BreakoutSyncConnectUidInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BreakoutSyncConnectUidInfo_descriptor,
-        new java.lang.String[] { "Uid", "SkillIdList", "SkillLevelList", });
+        new java.lang.String[] { "SkillIdList", "SkillLevelList", "Uid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

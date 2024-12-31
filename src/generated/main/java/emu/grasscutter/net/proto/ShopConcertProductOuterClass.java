@@ -43,10 +43,10 @@ public final class ShopConcertProductOuterClass {
         getPriceTierBytes();
 
     /**
-     * <code>uint32 obtain_count = 3;</code>
-     * @return The obtainCount.
+     * <code>uint32 buy_times = 7;</code>
+     * @return The buyTimes.
      */
-    int getObtainCount();
+    int getBuyTimes();
 
     /**
      * <code>uint32 obtain_limit = 4;</code>
@@ -61,16 +61,16 @@ public final class ShopConcertProductOuterClass {
     int getBeginTime();
 
     /**
+     * <code>uint32 obtain_count = 3;</code>
+     * @return The obtainCount.
+     */
+    int getObtainCount();
+
+    /**
      * <code>uint32 end_time = 6;</code>
      * @return The endTime.
      */
     int getEndTime();
-
-    /**
-     * <code>uint32 buy_times = 7;</code>
-     * @return The buyTimes.
-     */
-    int getBuyTimes();
   }
   /**
    * Protobuf type {@code ShopConcertProduct}
@@ -264,15 +264,15 @@ public final class ShopConcertProductOuterClass {
       }
     }
 
-    public static final int OBTAIN_COUNT_FIELD_NUMBER = 3;
-    private int obtainCount_;
+    public static final int BUY_TIMES_FIELD_NUMBER = 7;
+    private int buyTimes_;
     /**
-     * <code>uint32 obtain_count = 3;</code>
-     * @return The obtainCount.
+     * <code>uint32 buy_times = 7;</code>
+     * @return The buyTimes.
      */
     @java.lang.Override
-    public int getObtainCount() {
-      return obtainCount_;
+    public int getBuyTimes() {
+      return buyTimes_;
     }
 
     public static final int OBTAIN_LIMIT_FIELD_NUMBER = 4;
@@ -297,6 +297,17 @@ public final class ShopConcertProductOuterClass {
       return beginTime_;
     }
 
+    public static final int OBTAIN_COUNT_FIELD_NUMBER = 3;
+    private int obtainCount_;
+    /**
+     * <code>uint32 obtain_count = 3;</code>
+     * @return The obtainCount.
+     */
+    @java.lang.Override
+    public int getObtainCount() {
+      return obtainCount_;
+    }
+
     public static final int END_TIME_FIELD_NUMBER = 6;
     private int endTime_;
     /**
@@ -306,17 +317,6 @@ public final class ShopConcertProductOuterClass {
     @java.lang.Override
     public int getEndTime() {
       return endTime_;
-    }
-
-    public static final int BUY_TIMES_FIELD_NUMBER = 7;
-    private int buyTimes_;
-    /**
-     * <code>uint32 buy_times = 7;</code>
-     * @return The buyTimes.
-     */
-    @java.lang.Override
-    public int getBuyTimes() {
-      return buyTimes_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -408,16 +408,16 @@ public final class ShopConcertProductOuterClass {
           .equals(other.getProductId())) return false;
       if (!getPriceTier()
           .equals(other.getPriceTier())) return false;
-      if (getObtainCount()
-          != other.getObtainCount()) return false;
+      if (getBuyTimes()
+          != other.getBuyTimes()) return false;
       if (getObtainLimit()
           != other.getObtainLimit()) return false;
       if (getBeginTime()
           != other.getBeginTime()) return false;
+      if (getObtainCount()
+          != other.getObtainCount()) return false;
       if (getEndTime()
           != other.getEndTime()) return false;
-      if (getBuyTimes()
-          != other.getBuyTimes()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -433,16 +433,16 @@ public final class ShopConcertProductOuterClass {
       hash = (53 * hash) + getProductId().hashCode();
       hash = (37 * hash) + PRICE_TIER_FIELD_NUMBER;
       hash = (53 * hash) + getPriceTier().hashCode();
-      hash = (37 * hash) + OBTAIN_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getObtainCount();
+      hash = (37 * hash) + BUY_TIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getBuyTimes();
       hash = (37 * hash) + OBTAIN_LIMIT_FIELD_NUMBER;
       hash = (53 * hash) + getObtainLimit();
       hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getBeginTime();
+      hash = (37 * hash) + OBTAIN_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getObtainCount();
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
-      hash = (37 * hash) + BUY_TIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getBuyTimes();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -580,15 +580,15 @@ public final class ShopConcertProductOuterClass {
 
         priceTier_ = "";
 
-        obtainCount_ = 0;
+        buyTimes_ = 0;
 
         obtainLimit_ = 0;
 
         beginTime_ = 0;
 
-        endTime_ = 0;
+        obtainCount_ = 0;
 
-        buyTimes_ = 0;
+        endTime_ = 0;
 
         return this;
       }
@@ -618,11 +618,11 @@ public final class ShopConcertProductOuterClass {
         emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct result = new emu.grasscutter.net.proto.ShopConcertProductOuterClass.ShopConcertProduct(this);
         result.productId_ = productId_;
         result.priceTier_ = priceTier_;
-        result.obtainCount_ = obtainCount_;
+        result.buyTimes_ = buyTimes_;
         result.obtainLimit_ = obtainLimit_;
         result.beginTime_ = beginTime_;
+        result.obtainCount_ = obtainCount_;
         result.endTime_ = endTime_;
-        result.buyTimes_ = buyTimes_;
         onBuilt();
         return result;
       }
@@ -679,8 +679,8 @@ public final class ShopConcertProductOuterClass {
           priceTier_ = other.priceTier_;
           onChanged();
         }
-        if (other.getObtainCount() != 0) {
-          setObtainCount(other.getObtainCount());
+        if (other.getBuyTimes() != 0) {
+          setBuyTimes(other.getBuyTimes());
         }
         if (other.getObtainLimit() != 0) {
           setObtainLimit(other.getObtainLimit());
@@ -688,11 +688,11 @@ public final class ShopConcertProductOuterClass {
         if (other.getBeginTime() != 0) {
           setBeginTime(other.getBeginTime());
         }
+        if (other.getObtainCount() != 0) {
+          setObtainCount(other.getObtainCount());
+        }
         if (other.getEndTime() != 0) {
           setEndTime(other.getEndTime());
-        }
-        if (other.getBuyTimes() != 0) {
-          setBuyTimes(other.getBuyTimes());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -875,33 +875,33 @@ public final class ShopConcertProductOuterClass {
         return this;
       }
 
-      private int obtainCount_ ;
+      private int buyTimes_ ;
       /**
-       * <code>uint32 obtain_count = 3;</code>
-       * @return The obtainCount.
+       * <code>uint32 buy_times = 7;</code>
+       * @return The buyTimes.
        */
       @java.lang.Override
-      public int getObtainCount() {
-        return obtainCount_;
+      public int getBuyTimes() {
+        return buyTimes_;
       }
       /**
-       * <code>uint32 obtain_count = 3;</code>
-       * @param value The obtainCount to set.
+       * <code>uint32 buy_times = 7;</code>
+       * @param value The buyTimes to set.
        * @return This builder for chaining.
        */
-      public Builder setObtainCount(int value) {
+      public Builder setBuyTimes(int value) {
         
-        obtainCount_ = value;
+        buyTimes_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 obtain_count = 3;</code>
+       * <code>uint32 buy_times = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearObtainCount() {
+      public Builder clearBuyTimes() {
         
-        obtainCount_ = 0;
+        buyTimes_ = 0;
         onChanged();
         return this;
       }
@@ -968,6 +968,37 @@ public final class ShopConcertProductOuterClass {
         return this;
       }
 
+      private int obtainCount_ ;
+      /**
+       * <code>uint32 obtain_count = 3;</code>
+       * @return The obtainCount.
+       */
+      @java.lang.Override
+      public int getObtainCount() {
+        return obtainCount_;
+      }
+      /**
+       * <code>uint32 obtain_count = 3;</code>
+       * @param value The obtainCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setObtainCount(int value) {
+        
+        obtainCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 obtain_count = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearObtainCount() {
+        
+        obtainCount_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int endTime_ ;
       /**
        * <code>uint32 end_time = 6;</code>
@@ -995,37 +1026,6 @@ public final class ShopConcertProductOuterClass {
       public Builder clearEndTime() {
         
         endTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int buyTimes_ ;
-      /**
-       * <code>uint32 buy_times = 7;</code>
-       * @return The buyTimes.
-       */
-      @java.lang.Override
-      public int getBuyTimes() {
-        return buyTimes_;
-      }
-      /**
-       * <code>uint32 buy_times = 7;</code>
-       * @param value The buyTimes to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBuyTimes(int value) {
-        
-        buyTimes_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 buy_times = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBuyTimes() {
-        
-        buyTimes_ = 0;
         onChanged();
         return this;
       }
@@ -1098,9 +1098,9 @@ public final class ShopConcertProductOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030ShopConcertProduct.proto\"\241\001\n\022ShopConce" +
       "rtProduct\022\022\n\nproduct_id\030\001 \001(\t\022\022\n\nprice_t" +
-      "ier\030\002 \001(\t\022\024\n\014obtain_count\030\003 \001(\r\022\024\n\014obtai" +
-      "n_limit\030\004 \001(\r\022\022\n\nbegin_time\030\005 \001(\r\022\020\n\010end" +
-      "_time\030\006 \001(\r\022\021\n\tbuy_times\030\007 \001(\rB\033\n\031emu.gr" +
+      "ier\030\002 \001(\t\022\021\n\tbuy_times\030\007 \001(\r\022\024\n\014obtain_l" +
+      "imit\030\004 \001(\r\022\022\n\nbegin_time\030\005 \001(\r\022\024\n\014obtain" +
+      "_count\030\003 \001(\r\022\020\n\010end_time\030\006 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1112,7 +1112,7 @@ public final class ShopConcertProductOuterClass {
     internal_static_ShopConcertProduct_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ShopConcertProduct_descriptor,
-        new java.lang.String[] { "ProductId", "PriceTier", "ObtainCount", "ObtainLimit", "BeginTime", "EndTime", "BuyTimes", });
+        new java.lang.String[] { "ProductId", "PriceTier", "BuyTimes", "ObtainLimit", "BeginTime", "ObtainCount", "EndTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -31,10 +31,6 @@ public final class GadgetCrucibleInfoOuterClass {
     int getPrepareEndTime();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code GadgetCrucibleInfo}
    */
   public static final class GadgetCrucibleInfo extends
@@ -310,10 +306,6 @@ public final class GadgetCrucibleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code GadgetCrucibleInfo}
      */
     public static final class Builder extends

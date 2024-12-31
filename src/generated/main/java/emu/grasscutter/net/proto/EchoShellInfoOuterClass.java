@@ -25,10 +25,6 @@ public final class EchoShellInfoOuterClass {
     int getShellId();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code EchoShellInfo}
    */
   public static final class EchoShellInfo extends
@@ -277,10 +273,6 @@ public final class EchoShellInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code EchoShellInfo}
      */
     public static final class Builder extends

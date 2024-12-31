@@ -55,16 +55,16 @@ public final class VehicleInfoOuterClass {
     float getCurStamina();
 
     /**
-     * <code>uint32 GPMPAEGBEJE = 4;</code>
-     * @return The gPMPAEGBEJE.
+     * <code>uint32 transform_entity_id = 4;</code>
+     * @return The transformEntityId.
      */
-    int getGPMPAEGBEJE();
+    int getTransformEntityId();
 
     /**
-     * <code>float LLGKENMIENL = 5;</code>
-     * @return The lLGKENMIENL.
+     * <code>float cur_phlogiston = 5;</code>
+     * @return The curPhlogiston.
      */
-    float getLLGKENMIENL();
+    float getCurPhlogiston();
 
     /**
      * <code>uint32 anim_hash = 6;</code>
@@ -73,10 +73,6 @@ public final class VehicleInfoOuterClass {
     int getAnimHash();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code VehicleInfo}
    */
   public static final class VehicleInfo extends
@@ -144,12 +140,12 @@ public final class VehicleInfoOuterClass {
             }
             case 32: {
 
-              gPMPAEGBEJE_ = input.readUInt32();
+              transformEntityId_ = input.readUInt32();
               break;
             }
             case 45: {
 
-              lLGKENMIENL_ = input.readFloat();
+              curPhlogiston_ = input.readFloat();
               break;
             }
             case 48: {
@@ -254,26 +250,26 @@ public final class VehicleInfoOuterClass {
       return curStamina_;
     }
 
-    public static final int GPMPAEGBEJE_FIELD_NUMBER = 4;
-    private int gPMPAEGBEJE_;
+    public static final int TRANSFORM_ENTITY_ID_FIELD_NUMBER = 4;
+    private int transformEntityId_;
     /**
-     * <code>uint32 GPMPAEGBEJE = 4;</code>
-     * @return The gPMPAEGBEJE.
+     * <code>uint32 transform_entity_id = 4;</code>
+     * @return The transformEntityId.
      */
     @java.lang.Override
-    public int getGPMPAEGBEJE() {
-      return gPMPAEGBEJE_;
+    public int getTransformEntityId() {
+      return transformEntityId_;
     }
 
-    public static final int LLGKENMIENL_FIELD_NUMBER = 5;
-    private float lLGKENMIENL_;
+    public static final int CUR_PHLOGISTON_FIELD_NUMBER = 5;
+    private float curPhlogiston_;
     /**
-     * <code>float LLGKENMIENL = 5;</code>
-     * @return The lLGKENMIENL.
+     * <code>float cur_phlogiston = 5;</code>
+     * @return The curPhlogiston.
      */
     @java.lang.Override
-    public float getLLGKENMIENL() {
-      return lLGKENMIENL_;
+    public float getCurPhlogiston() {
+      return curPhlogiston_;
     }
 
     public static final int ANIM_HASH_FIELD_NUMBER = 6;
@@ -310,11 +306,11 @@ public final class VehicleInfoOuterClass {
       if (curStamina_ != 0F) {
         output.writeFloat(3, curStamina_);
       }
-      if (gPMPAEGBEJE_ != 0) {
-        output.writeUInt32(4, gPMPAEGBEJE_);
+      if (transformEntityId_ != 0) {
+        output.writeUInt32(4, transformEntityId_);
       }
-      if (lLGKENMIENL_ != 0F) {
-        output.writeFloat(5, lLGKENMIENL_);
+      if (curPhlogiston_ != 0F) {
+        output.writeFloat(5, curPhlogiston_);
       }
       if (animHash_ != 0) {
         output.writeUInt32(6, animHash_);
@@ -340,13 +336,13 @@ public final class VehicleInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(3, curStamina_);
       }
-      if (gPMPAEGBEJE_ != 0) {
+      if (transformEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, gPMPAEGBEJE_);
+          .computeUInt32Size(4, transformEntityId_);
       }
-      if (lLGKENMIENL_ != 0F) {
+      if (curPhlogiston_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(5, lLGKENMIENL_);
+          .computeFloatSize(5, curPhlogiston_);
       }
       if (animHash_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -374,11 +370,11 @@ public final class VehicleInfoOuterClass {
       if (java.lang.Float.floatToIntBits(getCurStamina())
           != java.lang.Float.floatToIntBits(
               other.getCurStamina())) return false;
-      if (getGPMPAEGBEJE()
-          != other.getGPMPAEGBEJE()) return false;
-      if (java.lang.Float.floatToIntBits(getLLGKENMIENL())
+      if (getTransformEntityId()
+          != other.getTransformEntityId()) return false;
+      if (java.lang.Float.floatToIntBits(getCurPhlogiston())
           != java.lang.Float.floatToIntBits(
-              other.getLLGKENMIENL())) return false;
+              other.getCurPhlogiston())) return false;
       if (getAnimHash()
           != other.getAnimHash()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -401,11 +397,11 @@ public final class VehicleInfoOuterClass {
       hash = (37 * hash) + CUR_STAMINA_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getCurStamina());
-      hash = (37 * hash) + GPMPAEGBEJE_FIELD_NUMBER;
-      hash = (53 * hash) + getGPMPAEGBEJE();
-      hash = (37 * hash) + LLGKENMIENL_FIELD_NUMBER;
+      hash = (37 * hash) + TRANSFORM_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTransformEntityId();
+      hash = (37 * hash) + CUR_PHLOGISTON_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getLLGKENMIENL());
+          getCurPhlogiston());
       hash = (37 * hash) + ANIM_HASH_FIELD_NUMBER;
       hash = (53 * hash) + getAnimHash();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -504,10 +500,6 @@ public final class VehicleInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code VehicleInfo}
      */
     public static final class Builder extends
@@ -556,9 +548,9 @@ public final class VehicleInfoOuterClass {
 
         curStamina_ = 0F;
 
-        gPMPAEGBEJE_ = 0;
+        transformEntityId_ = 0;
 
-        lLGKENMIENL_ = 0F;
+        curPhlogiston_ = 0F;
 
         animHash_ = 0;
 
@@ -600,8 +592,8 @@ public final class VehicleInfoOuterClass {
         }
         result.ownerUid_ = ownerUid_;
         result.curStamina_ = curStamina_;
-        result.gPMPAEGBEJE_ = gPMPAEGBEJE_;
-        result.lLGKENMIENL_ = lLGKENMIENL_;
+        result.transformEntityId_ = transformEntityId_;
+        result.curPhlogiston_ = curPhlogiston_;
         result.animHash_ = animHash_;
         onBuilt();
         return result;
@@ -683,11 +675,11 @@ public final class VehicleInfoOuterClass {
         if (other.getCurStamina() != 0F) {
           setCurStamina(other.getCurStamina());
         }
-        if (other.getGPMPAEGBEJE() != 0) {
-          setGPMPAEGBEJE(other.getGPMPAEGBEJE());
+        if (other.getTransformEntityId() != 0) {
+          setTransformEntityId(other.getTransformEntityId());
         }
-        if (other.getLLGKENMIENL() != 0F) {
-          setLLGKENMIENL(other.getLLGKENMIENL());
+        if (other.getCurPhlogiston() != 0F) {
+          setCurPhlogiston(other.getCurPhlogiston());
         }
         if (other.getAnimHash() != 0) {
           setAnimHash(other.getAnimHash());
@@ -1024,64 +1016,64 @@ public final class VehicleInfoOuterClass {
         return this;
       }
 
-      private int gPMPAEGBEJE_ ;
+      private int transformEntityId_ ;
       /**
-       * <code>uint32 GPMPAEGBEJE = 4;</code>
-       * @return The gPMPAEGBEJE.
+       * <code>uint32 transform_entity_id = 4;</code>
+       * @return The transformEntityId.
        */
       @java.lang.Override
-      public int getGPMPAEGBEJE() {
-        return gPMPAEGBEJE_;
+      public int getTransformEntityId() {
+        return transformEntityId_;
       }
       /**
-       * <code>uint32 GPMPAEGBEJE = 4;</code>
-       * @param value The gPMPAEGBEJE to set.
+       * <code>uint32 transform_entity_id = 4;</code>
+       * @param value The transformEntityId to set.
        * @return This builder for chaining.
        */
-      public Builder setGPMPAEGBEJE(int value) {
+      public Builder setTransformEntityId(int value) {
         
-        gPMPAEGBEJE_ = value;
+        transformEntityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GPMPAEGBEJE = 4;</code>
+       * <code>uint32 transform_entity_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGPMPAEGBEJE() {
+      public Builder clearTransformEntityId() {
         
-        gPMPAEGBEJE_ = 0;
+        transformEntityId_ = 0;
         onChanged();
         return this;
       }
 
-      private float lLGKENMIENL_ ;
+      private float curPhlogiston_ ;
       /**
-       * <code>float LLGKENMIENL = 5;</code>
-       * @return The lLGKENMIENL.
+       * <code>float cur_phlogiston = 5;</code>
+       * @return The curPhlogiston.
        */
       @java.lang.Override
-      public float getLLGKENMIENL() {
-        return lLGKENMIENL_;
+      public float getCurPhlogiston() {
+        return curPhlogiston_;
       }
       /**
-       * <code>float LLGKENMIENL = 5;</code>
-       * @param value The lLGKENMIENL to set.
+       * <code>float cur_phlogiston = 5;</code>
+       * @param value The curPhlogiston to set.
        * @return This builder for chaining.
        */
-      public Builder setLLGKENMIENL(float value) {
+      public Builder setCurPhlogiston(float value) {
         
-        lLGKENMIENL_ = value;
+        curPhlogiston_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float LLGKENMIENL = 5;</code>
+       * <code>float cur_phlogiston = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLLGKENMIENL() {
+      public Builder clearCurPhlogiston() {
         
-        lLGKENMIENL_ = 0F;
+        curPhlogiston_ = 0F;
         onChanged();
         return this;
       }
@@ -1184,11 +1176,12 @@ public final class VehicleInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021VehicleInfo.proto\032\023VehicleMember.proto" +
-      "\"\227\001\n\013VehicleInfo\022#\n\013member_list\030\001 \003(\0132\016." +
+      "\"\242\001\n\013VehicleInfo\022#\n\013member_list\030\001 \003(\0132\016." +
       "VehicleMember\022\021\n\towner_uid\030\002 \001(\r\022\023\n\013cur_" +
-      "stamina\030\003 \001(\002\022\023\n\013GPMPAEGBEJE\030\004 \001(\r\022\023\n\013LL" +
-      "GKENMIENL\030\005 \001(\002\022\021\n\tanim_hash\030\006 \001(\rB\033\n\031em" +
-      "u.grasscutter.net.protob\006proto3"
+      "stamina\030\003 \001(\002\022\033\n\023transform_entity_id\030\004 \001" +
+      "(\r\022\026\n\016cur_phlogiston\030\005 \001(\002\022\021\n\tanim_hash\030" +
+      "\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1200,7 +1193,7 @@ public final class VehicleInfoOuterClass {
     internal_static_VehicleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VehicleInfo_descriptor,
-        new java.lang.String[] { "MemberList", "OwnerUid", "CurStamina", "GPMPAEGBEJE", "LLGKENMIENL", "AnimHash", });
+        new java.lang.String[] { "MemberList", "OwnerUid", "CurStamina", "TransformEntityId", "CurPhlogiston", "AnimHash", });
     emu.grasscutter.net.proto.VehicleMemberOuterClass.getDescriptor();
   }
 

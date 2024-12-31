@@ -34,10 +34,6 @@ public final class EntityClientExtraInfoOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSkillAnchorPositionOrBuilder();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code EntityClientExtraInfo}
    */
   public static final class EntityClientExtraInfo extends
@@ -314,10 +310,6 @@ public final class EntityClientExtraInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code EntityClientExtraInfo}
      */
     public static final class Builder extends

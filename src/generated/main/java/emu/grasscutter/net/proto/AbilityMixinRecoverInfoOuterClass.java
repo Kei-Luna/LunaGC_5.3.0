@@ -19,10 +19,19 @@ public final class AbilityMixinRecoverInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 local_id = 3;</code>
-     * @return The localId.
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     * @return Whether the breakoutSnapShot field is set.
      */
-    int getLocalId();
+    boolean hasBreakoutSnapShot();
+    /**
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     * @return The breakoutSnapShot.
+     */
+    emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot getBreakoutSnapShot();
+    /**
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     */
+    emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder getBreakoutSnapShotOrBuilder();
 
     /**
      * <code>repeated uint32 data_list = 4;</code>
@@ -40,12 +49,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
      * @return The dataList at the given index.
      */
     int getDataList(int index);
-
-    /**
-     * <code>bool is_serverbuff_modifier = 5;</code>
-     * @return The isServerbuffModifier.
-     */
-    boolean getIsServerbuffModifier();
 
     /**
      * <code>repeated .MassivePropSyncInfo massive_prop_list = 6;</code>
@@ -72,19 +75,20 @@ public final class AbilityMixinRecoverInfoOuterClass {
         int index);
 
     /**
-     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-     * @return Whether the breakoutSnapShot field is set.
+     * <pre>
+     *LAMOMNEEAPK OMPAHPEAMOI = 8;
+     * </pre>
+     *
+     * <code>uint32 local_id = 3;</code>
+     * @return The localId.
      */
-    boolean hasBreakoutSnapShot();
+    int getLocalId();
+
     /**
-     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-     * @return The breakoutSnapShot.
+     * <code>bool is_serverbuff_modifier = 5;</code>
+     * @return The isServerbuffModifier.
      */
-    emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot getBreakoutSnapShot();
-    /**
-     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-     */
-    emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder getBreakoutSnapShotOrBuilder();
+    boolean getIsServerbuffModifier();
 
     /**
      * <code>uint32 instanced_ability_id = 1;</code>
@@ -300,15 +304,30 @@ public final class AbilityMixinRecoverInfoOuterClass {
           sourceCase_);
     }
 
-    public static final int LOCAL_ID_FIELD_NUMBER = 3;
-    private int localId_;
+    public static final int BREAKOUT_SNAP_SHOT_FIELD_NUMBER = 7;
+    private emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot breakoutSnapShot_;
     /**
-     * <code>uint32 local_id = 3;</code>
-     * @return The localId.
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     * @return Whether the breakoutSnapShot field is set.
      */
     @java.lang.Override
-    public int getLocalId() {
-      return localId_;
+    public boolean hasBreakoutSnapShot() {
+      return breakoutSnapShot_ != null;
+    }
+    /**
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     * @return The breakoutSnapShot.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot getBreakoutSnapShot() {
+      return breakoutSnapShot_ == null ? emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.getDefaultInstance() : breakoutSnapShot_;
+    }
+    /**
+     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder getBreakoutSnapShotOrBuilder() {
+      return getBreakoutSnapShot();
     }
 
     public static final int DATA_LIST_FIELD_NUMBER = 4;
@@ -338,17 +357,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
       return dataList_.getInt(index);
     }
     private int dataListMemoizedSerializedSize = -1;
-
-    public static final int IS_SERVERBUFF_MODIFIER_FIELD_NUMBER = 5;
-    private boolean isServerbuffModifier_;
-    /**
-     * <code>bool is_serverbuff_modifier = 5;</code>
-     * @return The isServerbuffModifier.
-     */
-    @java.lang.Override
-    public boolean getIsServerbuffModifier() {
-      return isServerbuffModifier_;
-    }
 
     public static final int MASSIVE_PROP_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.MassivePropSyncInfo> massivePropList_;
@@ -390,30 +398,30 @@ public final class AbilityMixinRecoverInfoOuterClass {
       return massivePropList_.get(index);
     }
 
-    public static final int BREAKOUT_SNAP_SHOT_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot breakoutSnapShot_;
+    public static final int LOCAL_ID_FIELD_NUMBER = 3;
+    private int localId_;
     /**
-     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-     * @return Whether the breakoutSnapShot field is set.
+     * <pre>
+     *LAMOMNEEAPK OMPAHPEAMOI = 8;
+     * </pre>
+     *
+     * <code>uint32 local_id = 3;</code>
+     * @return The localId.
      */
     @java.lang.Override
-    public boolean hasBreakoutSnapShot() {
-      return breakoutSnapShot_ != null;
+    public int getLocalId() {
+      return localId_;
     }
+
+    public static final int IS_SERVERBUFF_MODIFIER_FIELD_NUMBER = 5;
+    private boolean isServerbuffModifier_;
     /**
-     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-     * @return The breakoutSnapShot.
+     * <code>bool is_serverbuff_modifier = 5;</code>
+     * @return The isServerbuffModifier.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot getBreakoutSnapShot() {
-      return breakoutSnapShot_ == null ? emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.getDefaultInstance() : breakoutSnapShot_;
-    }
-    /**
-     * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder getBreakoutSnapShotOrBuilder() {
-      return getBreakoutSnapShot();
+    public boolean getIsServerbuffModifier() {
+      return isServerbuffModifier_;
     }
 
     public static final int INSTANCED_ABILITY_ID_FIELD_NUMBER = 1;
@@ -564,19 +572,19 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo other = (emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo) obj;
 
-      if (getLocalId()
-          != other.getLocalId()) return false;
-      if (!getDataListList()
-          .equals(other.getDataListList())) return false;
-      if (getIsServerbuffModifier()
-          != other.getIsServerbuffModifier()) return false;
-      if (!getMassivePropListList()
-          .equals(other.getMassivePropListList())) return false;
       if (hasBreakoutSnapShot() != other.hasBreakoutSnapShot()) return false;
       if (hasBreakoutSnapShot()) {
         if (!getBreakoutSnapShot()
             .equals(other.getBreakoutSnapShot())) return false;
       }
+      if (!getDataListList()
+          .equals(other.getDataListList())) return false;
+      if (!getMassivePropListList()
+          .equals(other.getMassivePropListList())) return false;
+      if (getLocalId()
+          != other.getLocalId()) return false;
+      if (getIsServerbuffModifier()
+          != other.getIsServerbuffModifier()) return false;
       if (!getSourceCase().equals(other.getSourceCase())) return false;
       switch (sourceCase_) {
         case 1:
@@ -601,23 +609,23 @@ public final class AbilityMixinRecoverInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LOCAL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLocalId();
-      if (getDataListCount() > 0) {
-        hash = (37 * hash) + DATA_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getDataListList().hashCode();
-      }
-      hash = (37 * hash) + IS_SERVERBUFF_MODIFIER_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsServerbuffModifier());
-      if (getMassivePropListCount() > 0) {
-        hash = (37 * hash) + MASSIVE_PROP_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getMassivePropListList().hashCode();
-      }
       if (hasBreakoutSnapShot()) {
         hash = (37 * hash) + BREAKOUT_SNAP_SHOT_FIELD_NUMBER;
         hash = (53 * hash) + getBreakoutSnapShot().hashCode();
       }
+      if (getDataListCount() > 0) {
+        hash = (37 * hash) + DATA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getDataListList().hashCode();
+      }
+      if (getMassivePropListCount() > 0) {
+        hash = (37 * hash) + MASSIVE_PROP_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getMassivePropListList().hashCode();
+      }
+      hash = (37 * hash) + LOCAL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLocalId();
+      hash = (37 * hash) + IS_SERVERBUFF_MODIFIER_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsServerbuffModifier());
       switch (sourceCase_) {
         case 1:
           hash = (37 * hash) + INSTANCED_ABILITY_ID_FIELD_NUMBER;
@@ -764,24 +772,24 @@ public final class AbilityMixinRecoverInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        localId_ = 0;
-
-        dataList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        isServerbuffModifier_ = false;
-
-        if (massivePropListBuilder_ == null) {
-          massivePropList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        } else {
-          massivePropListBuilder_.clear();
-        }
         if (breakoutSnapShotBuilder_ == null) {
           breakoutSnapShot_ = null;
         } else {
           breakoutSnapShot_ = null;
           breakoutSnapShotBuilder_ = null;
         }
+        dataList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (massivePropListBuilder_ == null) {
+          massivePropList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          massivePropListBuilder_.clear();
+        }
+        localId_ = 0;
+
+        isServerbuffModifier_ = false;
+
         sourceCase_ = 0;
         source_ = null;
         return this;
@@ -811,13 +819,16 @@ public final class AbilityMixinRecoverInfoOuterClass {
       public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo buildPartial() {
         emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo result = new emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo(this);
         int from_bitField0_ = bitField0_;
-        result.localId_ = localId_;
+        if (breakoutSnapShotBuilder_ == null) {
+          result.breakoutSnapShot_ = breakoutSnapShot_;
+        } else {
+          result.breakoutSnapShot_ = breakoutSnapShotBuilder_.build();
+        }
         if (((bitField0_ & 0x00000001) != 0)) {
           dataList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.dataList_ = dataList_;
-        result.isServerbuffModifier_ = isServerbuffModifier_;
         if (massivePropListBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
             massivePropList_ = java.util.Collections.unmodifiableList(massivePropList_);
@@ -827,11 +838,8 @@ public final class AbilityMixinRecoverInfoOuterClass {
         } else {
           result.massivePropList_ = massivePropListBuilder_.build();
         }
-        if (breakoutSnapShotBuilder_ == null) {
-          result.breakoutSnapShot_ = breakoutSnapShot_;
-        } else {
-          result.breakoutSnapShot_ = breakoutSnapShotBuilder_.build();
-        }
+        result.localId_ = localId_;
+        result.isServerbuffModifier_ = isServerbuffModifier_;
         if (sourceCase_ == 1) {
           result.source_ = source_;
         }
@@ -887,8 +895,8 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo other) {
         if (other == emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.getDefaultInstance()) return this;
-        if (other.getLocalId() != 0) {
-          setLocalId(other.getLocalId());
+        if (other.hasBreakoutSnapShot()) {
+          mergeBreakoutSnapShot(other.getBreakoutSnapShot());
         }
         if (!other.dataList_.isEmpty()) {
           if (dataList_.isEmpty()) {
@@ -899,9 +907,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
             dataList_.addAll(other.dataList_);
           }
           onChanged();
-        }
-        if (other.getIsServerbuffModifier() != false) {
-          setIsServerbuffModifier(other.getIsServerbuffModifier());
         }
         if (massivePropListBuilder_ == null) {
           if (!other.massivePropList_.isEmpty()) {
@@ -929,8 +934,11 @@ public final class AbilityMixinRecoverInfoOuterClass {
             }
           }
         }
-        if (other.hasBreakoutSnapShot()) {
-          mergeBreakoutSnapShot(other.getBreakoutSnapShot());
+        if (other.getLocalId() != 0) {
+          setLocalId(other.getLocalId());
+        }
+        if (other.getIsServerbuffModifier() != false) {
+          setIsServerbuffModifier(other.getIsServerbuffModifier());
         }
         switch (other.getSourceCase()) {
           case INSTANCED_ABILITY_ID: {
@@ -990,35 +998,123 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
       private int bitField0_;
 
-      private int localId_ ;
+      private emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot breakoutSnapShot_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder> breakoutSnapShotBuilder_;
       /**
-       * <code>uint32 local_id = 3;</code>
-       * @return The localId.
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       * @return Whether the breakoutSnapShot field is set.
        */
-      @java.lang.Override
-      public int getLocalId() {
-        return localId_;
+      public boolean hasBreakoutSnapShot() {
+        return breakoutSnapShotBuilder_ != null || breakoutSnapShot_ != null;
       }
       /**
-       * <code>uint32 local_id = 3;</code>
-       * @param value The localId to set.
-       * @return This builder for chaining.
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       * @return The breakoutSnapShot.
        */
-      public Builder setLocalId(int value) {
-        
-        localId_ = value;
-        onChanged();
+      public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot getBreakoutSnapShot() {
+        if (breakoutSnapShotBuilder_ == null) {
+          return breakoutSnapShot_ == null ? emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.getDefaultInstance() : breakoutSnapShot_;
+        } else {
+          return breakoutSnapShotBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      public Builder setBreakoutSnapShot(emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot value) {
+        if (breakoutSnapShotBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          breakoutSnapShot_ = value;
+          onChanged();
+        } else {
+          breakoutSnapShotBuilder_.setMessage(value);
+        }
+
         return this;
       }
       /**
-       * <code>uint32 local_id = 3;</code>
-       * @return This builder for chaining.
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
        */
-      public Builder clearLocalId() {
-        
-        localId_ = 0;
-        onChanged();
+      public Builder setBreakoutSnapShot(
+          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder builderForValue) {
+        if (breakoutSnapShotBuilder_ == null) {
+          breakoutSnapShot_ = builderForValue.build();
+          onChanged();
+        } else {
+          breakoutSnapShotBuilder_.setMessage(builderForValue.build());
+        }
+
         return this;
+      }
+      /**
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      public Builder mergeBreakoutSnapShot(emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot value) {
+        if (breakoutSnapShotBuilder_ == null) {
+          if (breakoutSnapShot_ != null) {
+            breakoutSnapShot_ =
+              emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.newBuilder(breakoutSnapShot_).mergeFrom(value).buildPartial();
+          } else {
+            breakoutSnapShot_ = value;
+          }
+          onChanged();
+        } else {
+          breakoutSnapShotBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      public Builder clearBreakoutSnapShot() {
+        if (breakoutSnapShotBuilder_ == null) {
+          breakoutSnapShot_ = null;
+          onChanged();
+        } else {
+          breakoutSnapShot_ = null;
+          breakoutSnapShotBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder getBreakoutSnapShotBuilder() {
+        
+        onChanged();
+        return getBreakoutSnapShotFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder getBreakoutSnapShotOrBuilder() {
+        if (breakoutSnapShotBuilder_ != null) {
+          return breakoutSnapShotBuilder_.getMessageOrBuilder();
+        } else {
+          return breakoutSnapShot_ == null ?
+              emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.getDefaultInstance() : breakoutSnapShot_;
+        }
+      }
+      /**
+       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder> 
+          getBreakoutSnapShotFieldBuilder() {
+        if (breakoutSnapShotBuilder_ == null) {
+          breakoutSnapShotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder>(
+                  getBreakoutSnapShot(),
+                  getParentForChildren(),
+                  isClean());
+          breakoutSnapShot_ = null;
+        }
+        return breakoutSnapShotBuilder_;
       }
 
       private com.google.protobuf.Internal.IntList dataList_ = emptyIntList();
@@ -1096,37 +1192,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
       public Builder clearDataList() {
         dataList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private boolean isServerbuffModifier_ ;
-      /**
-       * <code>bool is_serverbuff_modifier = 5;</code>
-       * @return The isServerbuffModifier.
-       */
-      @java.lang.Override
-      public boolean getIsServerbuffModifier() {
-        return isServerbuffModifier_;
-      }
-      /**
-       * <code>bool is_serverbuff_modifier = 5;</code>
-       * @param value The isServerbuffModifier to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsServerbuffModifier(boolean value) {
-        
-        isServerbuffModifier_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_serverbuff_modifier = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsServerbuffModifier() {
-        
-        isServerbuffModifier_ = false;
         onChanged();
         return this;
       }
@@ -1371,123 +1436,78 @@ public final class AbilityMixinRecoverInfoOuterClass {
         return massivePropListBuilder_;
       }
 
-      private emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot breakoutSnapShot_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder> breakoutSnapShotBuilder_;
+      private int localId_ ;
       /**
-       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-       * @return Whether the breakoutSnapShot field is set.
+       * <pre>
+       *LAMOMNEEAPK OMPAHPEAMOI = 8;
+       * </pre>
+       *
+       * <code>uint32 local_id = 3;</code>
+       * @return The localId.
        */
-      public boolean hasBreakoutSnapShot() {
-        return breakoutSnapShotBuilder_ != null || breakoutSnapShot_ != null;
+      @java.lang.Override
+      public int getLocalId() {
+        return localId_;
       }
       /**
-       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-       * @return The breakoutSnapShot.
+       * <pre>
+       *LAMOMNEEAPK OMPAHPEAMOI = 8;
+       * </pre>
+       *
+       * <code>uint32 local_id = 3;</code>
+       * @param value The localId to set.
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot getBreakoutSnapShot() {
-        if (breakoutSnapShotBuilder_ == null) {
-          return breakoutSnapShot_ == null ? emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.getDefaultInstance() : breakoutSnapShot_;
-        } else {
-          return breakoutSnapShotBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-       */
-      public Builder setBreakoutSnapShot(emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot value) {
-        if (breakoutSnapShotBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          breakoutSnapShot_ = value;
-          onChanged();
-        } else {
-          breakoutSnapShotBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-       */
-      public Builder setBreakoutSnapShot(
-          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder builderForValue) {
-        if (breakoutSnapShotBuilder_ == null) {
-          breakoutSnapShot_ = builderForValue.build();
-          onChanged();
-        } else {
-          breakoutSnapShotBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-       */
-      public Builder mergeBreakoutSnapShot(emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot value) {
-        if (breakoutSnapShotBuilder_ == null) {
-          if (breakoutSnapShot_ != null) {
-            breakoutSnapShot_ =
-              emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.newBuilder(breakoutSnapShot_).mergeFrom(value).buildPartial();
-          } else {
-            breakoutSnapShot_ = value;
-          }
-          onChanged();
-        } else {
-          breakoutSnapShotBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-       */
-      public Builder clearBreakoutSnapShot() {
-        if (breakoutSnapShotBuilder_ == null) {
-          breakoutSnapShot_ = null;
-          onChanged();
-        } else {
-          breakoutSnapShot_ = null;
-          breakoutSnapShotBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
-       */
-      public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder getBreakoutSnapShotBuilder() {
+      public Builder setLocalId(int value) {
         
+        localId_ = value;
         onChanged();
-        return getBreakoutSnapShotFieldBuilder().getBuilder();
+        return this;
       }
       /**
-       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       * <pre>
+       *LAMOMNEEAPK OMPAHPEAMOI = 8;
+       * </pre>
+       *
+       * <code>uint32 local_id = 3;</code>
+       * @return This builder for chaining.
        */
-      public emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder getBreakoutSnapShotOrBuilder() {
-        if (breakoutSnapShotBuilder_ != null) {
-          return breakoutSnapShotBuilder_.getMessageOrBuilder();
-        } else {
-          return breakoutSnapShot_ == null ?
-              emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.getDefaultInstance() : breakoutSnapShot_;
-        }
+      public Builder clearLocalId() {
+        
+        localId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isServerbuffModifier_ ;
+      /**
+       * <code>bool is_serverbuff_modifier = 5;</code>
+       * @return The isServerbuffModifier.
+       */
+      @java.lang.Override
+      public boolean getIsServerbuffModifier() {
+        return isServerbuffModifier_;
       }
       /**
-       * <code>.BreakoutSnapShot breakout_snap_shot = 7;</code>
+       * <code>bool is_serverbuff_modifier = 5;</code>
+       * @param value The isServerbuffModifier to set.
+       * @return This builder for chaining.
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder> 
-          getBreakoutSnapShotFieldBuilder() {
-        if (breakoutSnapShotBuilder_ == null) {
-          breakoutSnapShotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShot.Builder, emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.BreakoutSnapShotOrBuilder>(
-                  getBreakoutSnapShot(),
-                  getParentForChildren(),
-                  isClean());
-          breakoutSnapShot_ = null;
-        }
-        return breakoutSnapShotBuilder_;
+      public Builder setIsServerbuffModifier(boolean value) {
+        
+        isServerbuffModifier_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_serverbuff_modifier = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsServerbuffModifier() {
+        
+        isServerbuffModifier_ = false;
+        onChanged();
+        return this;
       }
 
       /**
@@ -1638,13 +1658,13 @@ public final class AbilityMixinRecoverInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035AbilityMixinRecoverInfo.proto\032\031Massive" +
-      "PropSyncInfo.proto\032\026BreakoutSnapShot.pro" +
-      "to\"\211\002\n\027AbilityMixinRecoverInfo\022\020\n\010local_" +
-      "id\030\003 \001(\r\022\021\n\tdata_list\030\004 \003(\r\022\036\n\026is_server" +
-      "buff_modifier\030\005 \001(\010\022/\n\021massive_prop_list" +
-      "\030\006 \003(\0132\024.MassivePropSyncInfo\022-\n\022breakout" +
-      "_snap_shot\030\007 \001(\0132\021.BreakoutSnapShot\022\036\n\024i" +
+      "\n\035AbilityMixinRecoverInfo.proto\032\026Breakou" +
+      "tSnapShot.proto\032\031MassivePropSyncInfo.pro" +
+      "to\"\211\002\n\027AbilityMixinRecoverInfo\022-\n\022breako" +
+      "ut_snap_shot\030\007 \001(\0132\021.BreakoutSnapShot\022\021\n" +
+      "\tdata_list\030\004 \003(\r\022/\n\021massive_prop_list\030\006 " +
+      "\003(\0132\024.MassivePropSyncInfo\022\020\n\010local_id\030\003 " +
+      "\001(\r\022\036\n\026is_serverbuff_modifier\030\005 \001(\010\022\036\n\024i" +
       "nstanced_ability_id\030\001 \001(\rH\000\022\037\n\025instanced" +
       "_modifier_id\030\002 \001(\rH\000B\010\n\006SourceB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
@@ -1652,17 +1672,17 @@ public final class AbilityMixinRecoverInfoOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.getDescriptor(),
         });
     internal_static_AbilityMixinRecoverInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AbilityMixinRecoverInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMixinRecoverInfo_descriptor,
-        new java.lang.String[] { "LocalId", "DataList", "IsServerbuffModifier", "MassivePropList", "BreakoutSnapShot", "InstancedAbilityId", "InstancedModifierId", "Source", });
-    emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "BreakoutSnapShot", "DataList", "MassivePropList", "LocalId", "IsServerbuffModifier", "InstancedAbilityId", "InstancedModifierId", "Source", });
     emu.grasscutter.net.proto.BreakoutSnapShotOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MassivePropSyncInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

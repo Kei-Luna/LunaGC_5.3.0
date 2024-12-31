@@ -25,10 +25,6 @@ public final class CoinCollectOperatorInfoOuterClass {
     int getLevelId();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code CoinCollectOperatorInfo}
    */
   public static final class CoinCollectOperatorInfo extends
@@ -277,10 +273,6 @@ public final class CoinCollectOperatorInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code CoinCollectOperatorInfo}
      */
     public static final class Builder extends

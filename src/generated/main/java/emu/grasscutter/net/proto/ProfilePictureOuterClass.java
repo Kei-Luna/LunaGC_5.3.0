@@ -25,16 +25,16 @@ public final class ProfilePictureOuterClass {
     int getAvatarId();
 
     /**
-     * <code>uint32 costume_id = 2;</code>
-     * @return The costumeId.
-     */
-    int getCostumeId();
-
-    /**
      * <code>uint32 head_image_id = 3;</code>
      * @return The headImageId.
      */
     int getHeadImageId();
+
+    /**
+     * <code>uint32 costume_id = 2;</code>
+     * @return The costumeId.
+     */
+    int getCostumeId();
   }
   /**
    * Protobuf type {@code ProfilePicture}
@@ -139,17 +139,6 @@ public final class ProfilePictureOuterClass {
       return avatarId_;
     }
 
-    public static final int COSTUME_ID_FIELD_NUMBER = 2;
-    private int costumeId_;
-    /**
-     * <code>uint32 costume_id = 2;</code>
-     * @return The costumeId.
-     */
-    @java.lang.Override
-    public int getCostumeId() {
-      return costumeId_;
-    }
-
     public static final int HEAD_IMAGE_ID_FIELD_NUMBER = 3;
     private int headImageId_;
     /**
@@ -159,6 +148,17 @@ public final class ProfilePictureOuterClass {
     @java.lang.Override
     public int getHeadImageId() {
       return headImageId_;
+    }
+
+    public static final int COSTUME_ID_FIELD_NUMBER = 2;
+    private int costumeId_;
+    /**
+     * <code>uint32 costume_id = 2;</code>
+     * @return The costumeId.
+     */
+    @java.lang.Override
+    public int getCostumeId() {
+      return costumeId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -222,10 +222,10 @@ public final class ProfilePictureOuterClass {
 
       if (getAvatarId()
           != other.getAvatarId()) return false;
-      if (getCostumeId()
-          != other.getCostumeId()) return false;
       if (getHeadImageId()
           != other.getHeadImageId()) return false;
+      if (getCostumeId()
+          != other.getCostumeId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -239,10 +239,10 @@ public final class ProfilePictureOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
-      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCostumeId();
       hash = (37 * hash) + HEAD_IMAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getHeadImageId();
+      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCostumeId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,9 +378,9 @@ public final class ProfilePictureOuterClass {
         super.clear();
         avatarId_ = 0;
 
-        costumeId_ = 0;
-
         headImageId_ = 0;
+
+        costumeId_ = 0;
 
         return this;
       }
@@ -409,8 +409,8 @@ public final class ProfilePictureOuterClass {
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture buildPartial() {
         emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture result = new emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture(this);
         result.avatarId_ = avatarId_;
-        result.costumeId_ = costumeId_;
         result.headImageId_ = headImageId_;
+        result.costumeId_ = costumeId_;
         onBuilt();
         return result;
       }
@@ -462,11 +462,11 @@ public final class ProfilePictureOuterClass {
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
         }
-        if (other.getCostumeId() != 0) {
-          setCostumeId(other.getCostumeId());
-        }
         if (other.getHeadImageId() != 0) {
           setHeadImageId(other.getHeadImageId());
+        }
+        if (other.getCostumeId() != 0) {
+          setCostumeId(other.getCostumeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -528,37 +528,6 @@ public final class ProfilePictureOuterClass {
         return this;
       }
 
-      private int costumeId_ ;
-      /**
-       * <code>uint32 costume_id = 2;</code>
-       * @return The costumeId.
-       */
-      @java.lang.Override
-      public int getCostumeId() {
-        return costumeId_;
-      }
-      /**
-       * <code>uint32 costume_id = 2;</code>
-       * @param value The costumeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostumeId(int value) {
-        
-        costumeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 costume_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostumeId() {
-        
-        costumeId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int headImageId_ ;
       /**
        * <code>uint32 head_image_id = 3;</code>
@@ -586,6 +555,37 @@ public final class ProfilePictureOuterClass {
       public Builder clearHeadImageId() {
         
         headImageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int costumeId_ ;
+      /**
+       * <code>uint32 costume_id = 2;</code>
+       * @return The costumeId.
+       */
+      @java.lang.Override
+      public int getCostumeId() {
+        return costumeId_;
+      }
+      /**
+       * <code>uint32 costume_id = 2;</code>
+       * @param value The costumeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCostumeId(int value) {
+        
+        costumeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 costume_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCostumeId() {
+        
+        costumeId_ = 0;
         onChanged();
         return this;
       }
@@ -657,8 +657,8 @@ public final class ProfilePictureOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024ProfilePicture.proto\"N\n\016ProfilePicture" +
-      "\022\021\n\tavatar_id\030\001 \001(\r\022\022\n\ncostume_id\030\002 \001(\r\022" +
-      "\025\n\rhead_image_id\030\003 \001(\rB\033\n\031emu.grasscutte" +
+      "\022\021\n\tavatar_id\030\001 \001(\r\022\025\n\rhead_image_id\030\003 \001" +
+      "(\r\022\022\n\ncostume_id\030\002 \001(\rB\033\n\031emu.grasscutte" +
       "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -670,7 +670,7 @@ public final class ProfilePictureOuterClass {
     internal_static_ProfilePicture_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ProfilePicture_descriptor,
-        new java.lang.String[] { "AvatarId", "CostumeId", "HeadImageId", });
+        new java.lang.String[] { "AvatarId", "HeadImageId", "CostumeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

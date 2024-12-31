@@ -19,17 +19,6 @@ public final class FoundationInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.FoundationStatus status = 1;</code>
-     * @return The enum numeric value on the wire for status.
-     */
-    int getStatusValue();
-    /**
-     * <code>.FoundationStatus status = 1;</code>
-     * @return The status.
-     */
-    emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus getStatus();
-
-    /**
      * <code>repeated uint32 uid_list = 2;</code>
      * @return A list containing the uidList.
      */
@@ -47,6 +36,17 @@ public final class FoundationInfoOuterClass {
     int getUidList(int index);
 
     /**
+     * <code>.FoundationStatus status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    int getStatusValue();
+    /**
+     * <code>.FoundationStatus status = 1;</code>
+     * @return The status.
+     */
+    emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus getStatus();
+
+    /**
      * <code>uint32 current_building_id = 3;</code>
      * @return The currentBuildingId.
      */
@@ -59,11 +59,6 @@ public final class FoundationInfoOuterClass {
     int getLockedByUid();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * CmdId: 
-   * </pre>
-   *
    * Protobuf type {@code FoundationInfo}
    */
   public static final class FoundationInfo extends
@@ -76,8 +71,8 @@ public final class FoundationInfoOuterClass {
       super(builder);
     }
     private FoundationInfo() {
-      status_ = 0;
       uidList_ = emptyIntList();
+      status_ = 0;
     }
 
     @java.lang.Override
@@ -183,25 +178,6 @@ public final class FoundationInfoOuterClass {
               emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo.class, emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo.Builder.class);
     }
 
-    public static final int STATUS_FIELD_NUMBER = 1;
-    private int status_;
-    /**
-     * <code>.FoundationStatus status = 1;</code>
-     * @return The enum numeric value on the wire for status.
-     */
-    @java.lang.Override public int getStatusValue() {
-      return status_;
-    }
-    /**
-     * <code>.FoundationStatus status = 1;</code>
-     * @return The status.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus getStatus() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus result = emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.valueOf(status_);
-      return result == null ? emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.UNRECOGNIZED : result;
-    }
-
     public static final int UID_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList uidList_;
     /**
@@ -229,6 +205,25 @@ public final class FoundationInfoOuterClass {
       return uidList_.getInt(index);
     }
     private int uidListMemoizedSerializedSize = -1;
+
+    public static final int STATUS_FIELD_NUMBER = 1;
+    private int status_;
+    /**
+     * <code>.FoundationStatus status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    @java.lang.Override public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.FoundationStatus status = 1;</code>
+     * @return The status.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus getStatus() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus result = emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.valueOf(status_);
+      return result == null ? emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.UNRECOGNIZED : result;
+    }
 
     public static final int CURRENT_BUILDING_ID_FIELD_NUMBER = 3;
     private int currentBuildingId_;
@@ -267,7 +262,7 @@ public final class FoundationInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (status_ != emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.FOUNDATION_STATUS_NONE.getNumber()) {
+      if (status_ != emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.FoundationStatus_NONE.getNumber()) {
         output.writeEnum(1, status_);
       }
       if (getUidListList().size() > 0) {
@@ -292,7 +287,7 @@ public final class FoundationInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (status_ != emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.FOUNDATION_STATUS_NONE.getNumber()) {
+      if (status_ != emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.FoundationStatus_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, status_);
       }
@@ -333,9 +328,9 @@ public final class FoundationInfoOuterClass {
       }
       emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo other = (emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo) obj;
 
-      if (status_ != other.status_) return false;
       if (!getUidListList()
           .equals(other.getUidListList())) return false;
+      if (status_ != other.status_) return false;
       if (getCurrentBuildingId()
           != other.getCurrentBuildingId()) return false;
       if (getLockedByUid()
@@ -351,12 +346,12 @@ public final class FoundationInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + status_;
       if (getUidListCount() > 0) {
         hash = (37 * hash) + UID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getUidListList().hashCode();
       }
+      hash = (37 * hash) + STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + status_;
       hash = (37 * hash) + CURRENT_BUILDING_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCurrentBuildingId();
       hash = (37 * hash) + LOCKED_BY_UID_FIELD_NUMBER;
@@ -457,11 +452,6 @@ public final class FoundationInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * CmdId: 
-     * </pre>
-     *
      * Protobuf type {@code FoundationInfo}
      */
     public static final class Builder extends
@@ -499,10 +489,10 @@ public final class FoundationInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        status_ = 0;
-
         uidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        status_ = 0;
+
         currentBuildingId_ = 0;
 
         lockedByUid_ = 0;
@@ -534,12 +524,12 @@ public final class FoundationInfoOuterClass {
       public emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo buildPartial() {
         emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo result = new emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo(this);
         int from_bitField0_ = bitField0_;
-        result.status_ = status_;
         if (((bitField0_ & 0x00000001) != 0)) {
           uidList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.uidList_ = uidList_;
+        result.status_ = status_;
         result.currentBuildingId_ = currentBuildingId_;
         result.lockedByUid_ = lockedByUid_;
         onBuilt();
@@ -590,9 +580,6 @@ public final class FoundationInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo other) {
         if (other == emu.grasscutter.net.proto.FoundationInfoOuterClass.FoundationInfo.getDefaultInstance()) return this;
-        if (other.status_ != 0) {
-          setStatusValue(other.getStatusValue());
-        }
         if (!other.uidList_.isEmpty()) {
           if (uidList_.isEmpty()) {
             uidList_ = other.uidList_;
@@ -602,6 +589,9 @@ public final class FoundationInfoOuterClass {
             uidList_.addAll(other.uidList_);
           }
           onChanged();
+        }
+        if (other.status_ != 0) {
+          setStatusValue(other.getStatusValue());
         }
         if (other.getCurrentBuildingId() != 0) {
           setCurrentBuildingId(other.getCurrentBuildingId());
@@ -638,60 +628,6 @@ public final class FoundationInfoOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private int status_ = 0;
-      /**
-       * <code>.FoundationStatus status = 1;</code>
-       * @return The enum numeric value on the wire for status.
-       */
-      @java.lang.Override public int getStatusValue() {
-        return status_;
-      }
-      /**
-       * <code>.FoundationStatus status = 1;</code>
-       * @param value The enum numeric value on the wire for status to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStatusValue(int value) {
-        
-        status_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.FoundationStatus status = 1;</code>
-       * @return The status.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus getStatus() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus result = emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.valueOf(status_);
-        return result == null ? emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.FoundationStatus status = 1;</code>
-       * @param value The status to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStatus(emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        status_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.FoundationStatus status = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStatus() {
-        
-        status_ = 0;
-        onChanged();
-        return this;
-      }
 
       private com.google.protobuf.Internal.IntList uidList_ = emptyIntList();
       private void ensureUidListIsMutable() {
@@ -768,6 +704,60 @@ public final class FoundationInfoOuterClass {
       public Builder clearUidList() {
         uidList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int status_ = 0;
+      /**
+       * <code>.FoundationStatus status = 1;</code>
+       * @return The enum numeric value on the wire for status.
+       */
+      @java.lang.Override public int getStatusValue() {
+        return status_;
+      }
+      /**
+       * <code>.FoundationStatus status = 1;</code>
+       * @param value The enum numeric value on the wire for status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatusValue(int value) {
+        
+        status_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.FoundationStatus status = 1;</code>
+       * @return The status.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus getStatus() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus result = emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.valueOf(status_);
+        return result == null ? emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.FoundationStatus status = 1;</code>
+       * @param value The status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatus(emu.grasscutter.net.proto.FoundationStatusOuterClass.FoundationStatus value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        status_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.FoundationStatus status = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStatus() {
+        
+        status_ = 0;
         onChanged();
         return this;
       }
@@ -901,8 +891,8 @@ public final class FoundationInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024FoundationInfo.proto\032\026FoundationStatus" +
-      ".proto\"y\n\016FoundationInfo\022!\n\006status\030\001 \001(\016" +
-      "2\021.FoundationStatus\022\020\n\010uid_list\030\002 \003(\r\022\033\n" +
+      ".proto\"y\n\016FoundationInfo\022\020\n\010uid_list\030\002 \003" +
+      "(\r\022!\n\006status\030\001 \001(\0162\021.FoundationStatus\022\033\n" +
       "\023current_building_id\030\003 \001(\r\022\025\n\rlocked_by_" +
       "uid\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
@@ -917,7 +907,7 @@ public final class FoundationInfoOuterClass {
     internal_static_FoundationInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FoundationInfo_descriptor,
-        new java.lang.String[] { "Status", "UidList", "CurrentBuildingId", "LockedByUid", });
+        new java.lang.String[] { "UidList", "Status", "CurrentBuildingId", "LockedByUid", });
     emu.grasscutter.net.proto.FoundationStatusOuterClass.getDescriptor();
   }
 

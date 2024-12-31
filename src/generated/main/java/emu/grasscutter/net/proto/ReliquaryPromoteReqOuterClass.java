@@ -19,23 +19,58 @@ public final class ReliquaryPromoteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 target_guid = 3;</code>
-     * @return The targetGuid.
+     * <code>repeated float NJFKGHEGPBF = 7;</code>
+     * @return A list containing the nJFKGHEGPBF.
      */
-    long getTargetGuid();
+    java.util.List<java.lang.Float> getNJFKGHEGPBFList();
+    /**
+     * <code>repeated float NJFKGHEGPBF = 7;</code>
+     * @return The count of nJFKGHEGPBF.
+     */
+    int getNJFKGHEGPBFCount();
+    /**
+     * <code>repeated float NJFKGHEGPBF = 7;</code>
+     * @param index The index of the element to return.
+     * @return The nJFKGHEGPBF at the given index.
+     */
+    float getNJFKGHEGPBF(int index);
 
     /**
-     * <code>uint64 item_guid = 5;</code>
-     * @return The itemGuid.
+     * <code>string MJAOMIHHMIL = 15;</code>
+     * @return The mJAOMIHHMIL.
      */
-    long getItemGuid();
+    java.lang.String getMJAOMIHHMIL();
+    /**
+     * <code>string MJAOMIHHMIL = 15;</code>
+     * @return The bytes for mJAOMIHHMIL.
+     */
+    com.google.protobuf.ByteString
+        getMJAOMIHHMILBytes();
+
+    /**
+     * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+     * @return A list containing the mHPJOEBAFMH.
+     */
+    java.util.List<java.lang.Integer> getMHPJOEBAFMHList();
+    /**
+     * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+     * @return The count of mHPJOEBAFMH.
+     */
+    int getMHPJOEBAFMHCount();
+    /**
+     * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+     * @param index The index of the element to return.
+     * @return The mHPJOEBAFMH at the given index.
+     */
+    int getMHPJOEBAFMH(int index);
+
+    /**
+     * <code>uint32 type = 11;</code>
+     * @return The type.
+     */
+    int getType();
   }
   /**
-   * <pre>
-   * 4.6.0
-   * CmdId: 8833
-   * </pre>
-   *
    * Protobuf type {@code ReliquaryPromoteReq}
    */
   public static final class ReliquaryPromoteReq extends
@@ -48,6 +83,9 @@ public final class ReliquaryPromoteReqOuterClass {
       super(builder);
     }
     private ReliquaryPromoteReq() {
+      nJFKGHEGPBF_ = emptyFloatList();
+      mJAOMIHHMIL_ = "";
+      mHPJOEBAFMH_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -70,6 +108,7 @@ public final class ReliquaryPromoteReqOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -80,14 +119,57 @@ public final class ReliquaryPromoteReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              targetGuid_ = input.readUInt64();
+            case 61: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                nJFKGHEGPBF_ = newFloatList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              nJFKGHEGPBF_.addFloat(input.readFloat());
               break;
             }
-            case 40: {
+            case 58: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                nJFKGHEGPBF_ = newFloatList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                nJFKGHEGPBF_.addFloat(input.readFloat());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 64: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                mHPJOEBAFMH_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              mHPJOEBAFMH_.addInt(input.readInt32());
+              break;
+            }
+            case 66: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                mHPJOEBAFMH_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                mHPJOEBAFMH_.addInt(input.readInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 88: {
 
-              itemGuid_ = input.readUInt64();
+              type_ = input.readUInt32();
+              break;
+            }
+            case 122: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              mJAOMIHHMIL_ = s;
               break;
             }
             default: {
@@ -105,6 +187,12 @@ public final class ReliquaryPromoteReqOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          nJFKGHEGPBF_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          mHPJOEBAFMH_.makeImmutable(); // C
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -122,26 +210,109 @@ public final class ReliquaryPromoteReqOuterClass {
               emu.grasscutter.net.proto.ReliquaryPromoteReqOuterClass.ReliquaryPromoteReq.class, emu.grasscutter.net.proto.ReliquaryPromoteReqOuterClass.ReliquaryPromoteReq.Builder.class);
     }
 
-    public static final int TARGET_GUID_FIELD_NUMBER = 3;
-    private long targetGuid_;
+    public static final int NJFKGHEGPBF_FIELD_NUMBER = 7;
+    private com.google.protobuf.Internal.FloatList nJFKGHEGPBF_;
     /**
-     * <code>uint64 target_guid = 3;</code>
-     * @return The targetGuid.
+     * <code>repeated float NJFKGHEGPBF = 7;</code>
+     * @return A list containing the nJFKGHEGPBF.
      */
     @java.lang.Override
-    public long getTargetGuid() {
-      return targetGuid_;
+    public java.util.List<java.lang.Float>
+        getNJFKGHEGPBFList() {
+      return nJFKGHEGPBF_;
+    }
+    /**
+     * <code>repeated float NJFKGHEGPBF = 7;</code>
+     * @return The count of nJFKGHEGPBF.
+     */
+    public int getNJFKGHEGPBFCount() {
+      return nJFKGHEGPBF_.size();
+    }
+    /**
+     * <code>repeated float NJFKGHEGPBF = 7;</code>
+     * @param index The index of the element to return.
+     * @return The nJFKGHEGPBF at the given index.
+     */
+    public float getNJFKGHEGPBF(int index) {
+      return nJFKGHEGPBF_.getFloat(index);
+    }
+    private int nJFKGHEGPBFMemoizedSerializedSize = -1;
+
+    public static final int MJAOMIHHMIL_FIELD_NUMBER = 15;
+    private volatile java.lang.Object mJAOMIHHMIL_;
+    /**
+     * <code>string MJAOMIHHMIL = 15;</code>
+     * @return The mJAOMIHHMIL.
+     */
+    @java.lang.Override
+    public java.lang.String getMJAOMIHHMIL() {
+      java.lang.Object ref = mJAOMIHHMIL_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        mJAOMIHHMIL_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string MJAOMIHHMIL = 15;</code>
+     * @return The bytes for mJAOMIHHMIL.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getMJAOMIHHMILBytes() {
+      java.lang.Object ref = mJAOMIHHMIL_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        mJAOMIHHMIL_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
-    public static final int ITEM_GUID_FIELD_NUMBER = 5;
-    private long itemGuid_;
+    public static final int MHPJOEBAFMH_FIELD_NUMBER = 8;
+    private com.google.protobuf.Internal.IntList mHPJOEBAFMH_;
     /**
-     * <code>uint64 item_guid = 5;</code>
-     * @return The itemGuid.
+     * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+     * @return A list containing the mHPJOEBAFMH.
      */
     @java.lang.Override
-    public long getItemGuid() {
-      return itemGuid_;
+    public java.util.List<java.lang.Integer>
+        getMHPJOEBAFMHList() {
+      return mHPJOEBAFMH_;
+    }
+    /**
+     * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+     * @return The count of mHPJOEBAFMH.
+     */
+    public int getMHPJOEBAFMHCount() {
+      return mHPJOEBAFMH_.size();
+    }
+    /**
+     * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+     * @param index The index of the element to return.
+     * @return The mHPJOEBAFMH at the given index.
+     */
+    public int getMHPJOEBAFMH(int index) {
+      return mHPJOEBAFMH_.getInt(index);
+    }
+    private int mHPJOEBAFMHMemoizedSerializedSize = -1;
+
+    public static final int TYPE_FIELD_NUMBER = 11;
+    private int type_;
+    /**
+     * <code>uint32 type = 11;</code>
+     * @return The type.
+     */
+    @java.lang.Override
+    public int getType() {
+      return type_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +329,26 @@ public final class ReliquaryPromoteReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetGuid_ != 0L) {
-        output.writeUInt64(3, targetGuid_);
+      getSerializedSize();
+      if (getNJFKGHEGPBFList().size() > 0) {
+        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(nJFKGHEGPBFMemoizedSerializedSize);
       }
-      if (itemGuid_ != 0L) {
-        output.writeUInt64(5, itemGuid_);
+      for (int i = 0; i < nJFKGHEGPBF_.size(); i++) {
+        output.writeFloatNoTag(nJFKGHEGPBF_.getFloat(i));
+      }
+      if (getMHPJOEBAFMHList().size() > 0) {
+        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(mHPJOEBAFMHMemoizedSerializedSize);
+      }
+      for (int i = 0; i < mHPJOEBAFMH_.size(); i++) {
+        output.writeInt32NoTag(mHPJOEBAFMH_.getInt(i));
+      }
+      if (type_ != 0) {
+        output.writeUInt32(11, type_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mJAOMIHHMIL_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, mJAOMIHHMIL_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +359,37 @@ public final class ReliquaryPromoteReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetGuid_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(3, targetGuid_);
+      {
+        int dataSize = 0;
+        dataSize = 4 * getNJFKGHEGPBFList().size();
+        size += dataSize;
+        if (!getNJFKGHEGPBFList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        nJFKGHEGPBFMemoizedSerializedSize = dataSize;
       }
-      if (itemGuid_ != 0L) {
+      {
+        int dataSize = 0;
+        for (int i = 0; i < mHPJOEBAFMH_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt32SizeNoTag(mHPJOEBAFMH_.getInt(i));
+        }
+        size += dataSize;
+        if (!getMHPJOEBAFMHList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        mHPJOEBAFMHMemoizedSerializedSize = dataSize;
+      }
+      if (type_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, itemGuid_);
+          .computeUInt32Size(11, type_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mJAOMIHHMIL_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, mJAOMIHHMIL_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +406,14 @@ public final class ReliquaryPromoteReqOuterClass {
       }
       emu.grasscutter.net.proto.ReliquaryPromoteReqOuterClass.ReliquaryPromoteReq other = (emu.grasscutter.net.proto.ReliquaryPromoteReqOuterClass.ReliquaryPromoteReq) obj;
 
-      if (getTargetGuid()
-          != other.getTargetGuid()) return false;
-      if (getItemGuid()
-          != other.getItemGuid()) return false;
+      if (!getNJFKGHEGPBFList()
+          .equals(other.getNJFKGHEGPBFList())) return false;
+      if (!getMJAOMIHHMIL()
+          .equals(other.getMJAOMIHHMIL())) return false;
+      if (!getMHPJOEBAFMHList()
+          .equals(other.getMHPJOEBAFMHList())) return false;
+      if (getType()
+          != other.getType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,12 +425,18 @@ public final class ReliquaryPromoteReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getTargetGuid());
-      hash = (37 * hash) + ITEM_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getItemGuid());
+      if (getNJFKGHEGPBFCount() > 0) {
+        hash = (37 * hash) + NJFKGHEGPBF_FIELD_NUMBER;
+        hash = (53 * hash) + getNJFKGHEGPBFList().hashCode();
+      }
+      hash = (37 * hash) + MJAOMIHHMIL_FIELD_NUMBER;
+      hash = (53 * hash) + getMJAOMIHHMIL().hashCode();
+      if (getMHPJOEBAFMHCount() > 0) {
+        hash = (37 * hash) + MHPJOEBAFMH_FIELD_NUMBER;
+        hash = (53 * hash) + getMHPJOEBAFMHList().hashCode();
+      }
+      hash = (37 * hash) + TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,11 +533,6 @@ public final class ReliquaryPromoteReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 4.6.0
-     * CmdId: 8833
-     * </pre>
-     *
      * Protobuf type {@code ReliquaryPromoteReq}
      */
     public static final class Builder extends
@@ -355,9 +570,13 @@ public final class ReliquaryPromoteReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetGuid_ = 0L;
+        nJFKGHEGPBF_ = emptyFloatList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        mJAOMIHHMIL_ = "";
 
-        itemGuid_ = 0L;
+        mHPJOEBAFMH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        type_ = 0;
 
         return this;
       }
@@ -385,8 +604,19 @@ public final class ReliquaryPromoteReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ReliquaryPromoteReqOuterClass.ReliquaryPromoteReq buildPartial() {
         emu.grasscutter.net.proto.ReliquaryPromoteReqOuterClass.ReliquaryPromoteReq result = new emu.grasscutter.net.proto.ReliquaryPromoteReqOuterClass.ReliquaryPromoteReq(this);
-        result.targetGuid_ = targetGuid_;
-        result.itemGuid_ = itemGuid_;
+        int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          nJFKGHEGPBF_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.nJFKGHEGPBF_ = nJFKGHEGPBF_;
+        result.mJAOMIHHMIL_ = mJAOMIHHMIL_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          mHPJOEBAFMH_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.mHPJOEBAFMH_ = mHPJOEBAFMH_;
+        result.type_ = type_;
         onBuilt();
         return result;
       }
@@ -435,11 +665,32 @@ public final class ReliquaryPromoteReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReliquaryPromoteReqOuterClass.ReliquaryPromoteReq other) {
         if (other == emu.grasscutter.net.proto.ReliquaryPromoteReqOuterClass.ReliquaryPromoteReq.getDefaultInstance()) return this;
-        if (other.getTargetGuid() != 0L) {
-          setTargetGuid(other.getTargetGuid());
+        if (!other.nJFKGHEGPBF_.isEmpty()) {
+          if (nJFKGHEGPBF_.isEmpty()) {
+            nJFKGHEGPBF_ = other.nJFKGHEGPBF_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureNJFKGHEGPBFIsMutable();
+            nJFKGHEGPBF_.addAll(other.nJFKGHEGPBF_);
+          }
+          onChanged();
         }
-        if (other.getItemGuid() != 0L) {
-          setItemGuid(other.getItemGuid());
+        if (!other.getMJAOMIHHMIL().isEmpty()) {
+          mJAOMIHHMIL_ = other.mJAOMIHHMIL_;
+          onChanged();
+        }
+        if (!other.mHPJOEBAFMH_.isEmpty()) {
+          if (mHPJOEBAFMH_.isEmpty()) {
+            mHPJOEBAFMH_ = other.mHPJOEBAFMH_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureMHPJOEBAFMHIsMutable();
+            mHPJOEBAFMH_.addAll(other.mHPJOEBAFMH_);
+          }
+          onChanged();
+        }
+        if (other.getType() != 0) {
+          setType(other.getType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -469,65 +720,269 @@ public final class ReliquaryPromoteReqOuterClass {
         }
         return this;
       }
+      private int bitField0_;
 
-      private long targetGuid_ ;
+      private com.google.protobuf.Internal.FloatList nJFKGHEGPBF_ = emptyFloatList();
+      private void ensureNJFKGHEGPBFIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          nJFKGHEGPBF_ = mutableCopy(nJFKGHEGPBF_);
+          bitField0_ |= 0x00000001;
+         }
+      }
       /**
-       * <code>uint64 target_guid = 3;</code>
-       * @return The targetGuid.
+       * <code>repeated float NJFKGHEGPBF = 7;</code>
+       * @return A list containing the nJFKGHEGPBF.
+       */
+      public java.util.List<java.lang.Float>
+          getNJFKGHEGPBFList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(nJFKGHEGPBF_) : nJFKGHEGPBF_;
+      }
+      /**
+       * <code>repeated float NJFKGHEGPBF = 7;</code>
+       * @return The count of nJFKGHEGPBF.
+       */
+      public int getNJFKGHEGPBFCount() {
+        return nJFKGHEGPBF_.size();
+      }
+      /**
+       * <code>repeated float NJFKGHEGPBF = 7;</code>
+       * @param index The index of the element to return.
+       * @return The nJFKGHEGPBF at the given index.
+       */
+      public float getNJFKGHEGPBF(int index) {
+        return nJFKGHEGPBF_.getFloat(index);
+      }
+      /**
+       * <code>repeated float NJFKGHEGPBF = 7;</code>
+       * @param index The index to set the value at.
+       * @param value The nJFKGHEGPBF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNJFKGHEGPBF(
+          int index, float value) {
+        ensureNJFKGHEGPBFIsMutable();
+        nJFKGHEGPBF_.setFloat(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated float NJFKGHEGPBF = 7;</code>
+       * @param value The nJFKGHEGPBF to add.
+       * @return This builder for chaining.
+       */
+      public Builder addNJFKGHEGPBF(float value) {
+        ensureNJFKGHEGPBFIsMutable();
+        nJFKGHEGPBF_.addFloat(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated float NJFKGHEGPBF = 7;</code>
+       * @param values The nJFKGHEGPBF to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllNJFKGHEGPBF(
+          java.lang.Iterable<? extends java.lang.Float> values) {
+        ensureNJFKGHEGPBFIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, nJFKGHEGPBF_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated float NJFKGHEGPBF = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNJFKGHEGPBF() {
+        nJFKGHEGPBF_ = emptyFloatList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object mJAOMIHHMIL_ = "";
+      /**
+       * <code>string MJAOMIHHMIL = 15;</code>
+       * @return The mJAOMIHHMIL.
+       */
+      public java.lang.String getMJAOMIHHMIL() {
+        java.lang.Object ref = mJAOMIHHMIL_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          mJAOMIHHMIL_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string MJAOMIHHMIL = 15;</code>
+       * @return The bytes for mJAOMIHHMIL.
+       */
+      public com.google.protobuf.ByteString
+          getMJAOMIHHMILBytes() {
+        java.lang.Object ref = mJAOMIHHMIL_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          mJAOMIHHMIL_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string MJAOMIHHMIL = 15;</code>
+       * @param value The mJAOMIHHMIL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMJAOMIHHMIL(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        mJAOMIHHMIL_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string MJAOMIHHMIL = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMJAOMIHHMIL() {
+        
+        mJAOMIHHMIL_ = getDefaultInstance().getMJAOMIHHMIL();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string MJAOMIHHMIL = 15;</code>
+       * @param value The bytes for mJAOMIHHMIL to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMJAOMIHHMILBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        mJAOMIHHMIL_ = value;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList mHPJOEBAFMH_ = emptyIntList();
+      private void ensureMHPJOEBAFMHIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          mHPJOEBAFMH_ = mutableCopy(mHPJOEBAFMH_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+      /**
+       * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+       * @return A list containing the mHPJOEBAFMH.
+       */
+      public java.util.List<java.lang.Integer>
+          getMHPJOEBAFMHList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(mHPJOEBAFMH_) : mHPJOEBAFMH_;
+      }
+      /**
+       * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+       * @return The count of mHPJOEBAFMH.
+       */
+      public int getMHPJOEBAFMHCount() {
+        return mHPJOEBAFMH_.size();
+      }
+      /**
+       * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+       * @param index The index of the element to return.
+       * @return The mHPJOEBAFMH at the given index.
+       */
+      public int getMHPJOEBAFMH(int index) {
+        return mHPJOEBAFMH_.getInt(index);
+      }
+      /**
+       * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+       * @param index The index to set the value at.
+       * @param value The mHPJOEBAFMH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMHPJOEBAFMH(
+          int index, int value) {
+        ensureMHPJOEBAFMHIsMutable();
+        mHPJOEBAFMH_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+       * @param value The mHPJOEBAFMH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addMHPJOEBAFMH(int value) {
+        ensureMHPJOEBAFMHIsMutable();
+        mHPJOEBAFMH_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+       * @param values The mHPJOEBAFMH to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllMHPJOEBAFMH(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureMHPJOEBAFMHIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, mHPJOEBAFMH_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 MHPJOEBAFMH = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMHPJOEBAFMH() {
+        mHPJOEBAFMH_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+        return this;
+      }
+
+      private int type_ ;
+      /**
+       * <code>uint32 type = 11;</code>
+       * @return The type.
        */
       @java.lang.Override
-      public long getTargetGuid() {
-        return targetGuid_;
+      public int getType() {
+        return type_;
       }
       /**
-       * <code>uint64 target_guid = 3;</code>
-       * @param value The targetGuid to set.
+       * <code>uint32 type = 11;</code>
+       * @param value The type to set.
        * @return This builder for chaining.
        */
-      public Builder setTargetGuid(long value) {
+      public Builder setType(int value) {
         
-        targetGuid_ = value;
+        type_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 target_guid = 3;</code>
+       * <code>uint32 type = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTargetGuid() {
+      public Builder clearType() {
         
-        targetGuid_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long itemGuid_ ;
-      /**
-       * <code>uint64 item_guid = 5;</code>
-       * @return The itemGuid.
-       */
-      @java.lang.Override
-      public long getItemGuid() {
-        return itemGuid_;
-      }
-      /**
-       * <code>uint64 item_guid = 5;</code>
-       * @param value The itemGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setItemGuid(long value) {
-        
-        itemGuid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 item_guid = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearItemGuid() {
-        
-        itemGuid_ = 0L;
+        type_ = 0;
         onChanged();
         return this;
       }
@@ -598,10 +1053,11 @@ public final class ReliquaryPromoteReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031ReliquaryPromoteReq.proto\"=\n\023Reliquary" +
-      "PromoteReq\022\023\n\013target_guid\030\003 \001(\004\022\021\n\titem_" +
-      "guid\030\005 \001(\004B\033\n\031emu.grasscutter.net.protob" +
-      "\006proto3"
+      "\n\031ReliquaryPromoteReq.proto\"b\n\023Reliquary" +
+      "PromoteReq\022\023\n\013NJFKGHEGPBF\030\007 \003(\002\022\023\n\013MJAOM" +
+      "IHHMIL\030\017 \001(\t\022\023\n\013MHPJOEBAFMH\030\010 \003(\005\022\014\n\004typ" +
+      "e\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -612,7 +1068,7 @@ public final class ReliquaryPromoteReqOuterClass {
     internal_static_ReliquaryPromoteReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReliquaryPromoteReq_descriptor,
-        new java.lang.String[] { "TargetGuid", "ItemGuid", });
+        new java.lang.String[] { "NJFKGHEGPBF", "MJAOMIHHMIL", "MHPJOEBAFMH", "Type", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

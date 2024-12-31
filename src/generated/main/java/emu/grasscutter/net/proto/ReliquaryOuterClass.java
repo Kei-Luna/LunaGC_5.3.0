@@ -19,30 +19,6 @@ public final class ReliquaryOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level = 1;</code>
-     * @return The level.
-     */
-    int getLevel();
-
-    /**
-     * <code>uint32 exp = 2;</code>
-     * @return The exp.
-     */
-    int getExp();
-
-    /**
-     * <code>uint32 promote_level = 3;</code>
-     * @return The promoteLevel.
-     */
-    int getPromoteLevel();
-
-    /**
-     * <code>uint32 main_prop_id = 4;</code>
-     * @return The mainPropId.
-     */
-    int getMainPropId();
-
-    /**
      * <code>repeated uint32 append_prop_id_list = 5;</code>
      * @return A list containing the appendPropIdList.
      */
@@ -58,6 +34,36 @@ public final class ReliquaryOuterClass {
      * @return The appendPropIdList at the given index.
      */
     int getAppendPropIdList(int index);
+
+    /**
+     * <code>uint32 promote_level = 3;</code>
+     * @return The promoteLevel.
+     */
+    int getPromoteLevel();
+
+    /**
+     * <code>uint32 level = 1;</code>
+     * @return The level.
+     */
+    int getLevel();
+
+    /**
+     * <code>uint32 main_prop_id = 4;</code>
+     * @return The mainPropId.
+     */
+    int getMainPropId();
+
+    /**
+     * <code>uint32 exp = 2;</code>
+     * @return The exp.
+     */
+    int getExp();
+
+    /**
+     * <code>bool GPPMHJLMIIF = 6;</code>
+     * @return The gPPMHJLMIIF.
+     */
+    boolean getGPPMHJLMIIF();
   }
   /**
    * Protobuf type {@code Reliquary}
@@ -147,6 +153,11 @@ public final class ReliquaryOuterClass {
               input.popLimit(limit);
               break;
             }
+            case 48: {
+
+              gPPMHJLMIIF_ = input.readBool();
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -182,50 +193,6 @@ public final class ReliquaryOuterClass {
               emu.grasscutter.net.proto.ReliquaryOuterClass.Reliquary.class, emu.grasscutter.net.proto.ReliquaryOuterClass.Reliquary.Builder.class);
     }
 
-    public static final int LEVEL_FIELD_NUMBER = 1;
-    private int level_;
-    /**
-     * <code>uint32 level = 1;</code>
-     * @return The level.
-     */
-    @java.lang.Override
-    public int getLevel() {
-      return level_;
-    }
-
-    public static final int EXP_FIELD_NUMBER = 2;
-    private int exp_;
-    /**
-     * <code>uint32 exp = 2;</code>
-     * @return The exp.
-     */
-    @java.lang.Override
-    public int getExp() {
-      return exp_;
-    }
-
-    public static final int PROMOTE_LEVEL_FIELD_NUMBER = 3;
-    private int promoteLevel_;
-    /**
-     * <code>uint32 promote_level = 3;</code>
-     * @return The promoteLevel.
-     */
-    @java.lang.Override
-    public int getPromoteLevel() {
-      return promoteLevel_;
-    }
-
-    public static final int MAIN_PROP_ID_FIELD_NUMBER = 4;
-    private int mainPropId_;
-    /**
-     * <code>uint32 main_prop_id = 4;</code>
-     * @return The mainPropId.
-     */
-    @java.lang.Override
-    public int getMainPropId() {
-      return mainPropId_;
-    }
-
     public static final int APPEND_PROP_ID_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList appendPropIdList_;
     /**
@@ -253,6 +220,61 @@ public final class ReliquaryOuterClass {
       return appendPropIdList_.getInt(index);
     }
     private int appendPropIdListMemoizedSerializedSize = -1;
+
+    public static final int PROMOTE_LEVEL_FIELD_NUMBER = 3;
+    private int promoteLevel_;
+    /**
+     * <code>uint32 promote_level = 3;</code>
+     * @return The promoteLevel.
+     */
+    @java.lang.Override
+    public int getPromoteLevel() {
+      return promoteLevel_;
+    }
+
+    public static final int LEVEL_FIELD_NUMBER = 1;
+    private int level_;
+    /**
+     * <code>uint32 level = 1;</code>
+     * @return The level.
+     */
+    @java.lang.Override
+    public int getLevel() {
+      return level_;
+    }
+
+    public static final int MAIN_PROP_ID_FIELD_NUMBER = 4;
+    private int mainPropId_;
+    /**
+     * <code>uint32 main_prop_id = 4;</code>
+     * @return The mainPropId.
+     */
+    @java.lang.Override
+    public int getMainPropId() {
+      return mainPropId_;
+    }
+
+    public static final int EXP_FIELD_NUMBER = 2;
+    private int exp_;
+    /**
+     * <code>uint32 exp = 2;</code>
+     * @return The exp.
+     */
+    @java.lang.Override
+    public int getExp() {
+      return exp_;
+    }
+
+    public static final int GPPMHJLMIIF_FIELD_NUMBER = 6;
+    private boolean gPPMHJLMIIF_;
+    /**
+     * <code>bool GPPMHJLMIIF = 6;</code>
+     * @return The gPPMHJLMIIF.
+     */
+    @java.lang.Override
+    public boolean getGPPMHJLMIIF() {
+      return gPPMHJLMIIF_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -287,6 +309,9 @@ public final class ReliquaryOuterClass {
       }
       for (int i = 0; i < appendPropIdList_.size(); i++) {
         output.writeUInt32NoTag(appendPropIdList_.getInt(i));
+      }
+      if (gPPMHJLMIIF_ != false) {
+        output.writeBool(6, gPPMHJLMIIF_);
       }
       unknownFields.writeTo(output);
     }
@@ -327,6 +352,10 @@ public final class ReliquaryOuterClass {
         }
         appendPropIdListMemoizedSerializedSize = dataSize;
       }
+      if (gPPMHJLMIIF_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(6, gPPMHJLMIIF_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -342,16 +371,18 @@ public final class ReliquaryOuterClass {
       }
       emu.grasscutter.net.proto.ReliquaryOuterClass.Reliquary other = (emu.grasscutter.net.proto.ReliquaryOuterClass.Reliquary) obj;
 
-      if (getLevel()
-          != other.getLevel()) return false;
-      if (getExp()
-          != other.getExp()) return false;
-      if (getPromoteLevel()
-          != other.getPromoteLevel()) return false;
-      if (getMainPropId()
-          != other.getMainPropId()) return false;
       if (!getAppendPropIdListList()
           .equals(other.getAppendPropIdListList())) return false;
+      if (getPromoteLevel()
+          != other.getPromoteLevel()) return false;
+      if (getLevel()
+          != other.getLevel()) return false;
+      if (getMainPropId()
+          != other.getMainPropId()) return false;
+      if (getExp()
+          != other.getExp()) return false;
+      if (getGPPMHJLMIIF()
+          != other.getGPPMHJLMIIF()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -363,18 +394,21 @@ public final class ReliquaryOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
-      hash = (37 * hash) + EXP_FIELD_NUMBER;
-      hash = (53 * hash) + getExp();
-      hash = (37 * hash) + PROMOTE_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getPromoteLevel();
-      hash = (37 * hash) + MAIN_PROP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMainPropId();
       if (getAppendPropIdListCount() > 0) {
         hash = (37 * hash) + APPEND_PROP_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAppendPropIdListList().hashCode();
       }
+      hash = (37 * hash) + PROMOTE_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getPromoteLevel();
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
+      hash = (37 * hash) + MAIN_PROP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMainPropId();
+      hash = (37 * hash) + EXP_FIELD_NUMBER;
+      hash = (53 * hash) + getExp();
+      hash = (37 * hash) + GPPMHJLMIIF_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getGPPMHJLMIIF());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -508,16 +542,18 @@ public final class ReliquaryOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        level_ = 0;
-
-        exp_ = 0;
-
+        appendPropIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         promoteLevel_ = 0;
+
+        level_ = 0;
 
         mainPropId_ = 0;
 
-        appendPropIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        exp_ = 0;
+
+        gPPMHJLMIIF_ = false;
+
         return this;
       }
 
@@ -545,15 +581,16 @@ public final class ReliquaryOuterClass {
       public emu.grasscutter.net.proto.ReliquaryOuterClass.Reliquary buildPartial() {
         emu.grasscutter.net.proto.ReliquaryOuterClass.Reliquary result = new emu.grasscutter.net.proto.ReliquaryOuterClass.Reliquary(this);
         int from_bitField0_ = bitField0_;
-        result.level_ = level_;
-        result.exp_ = exp_;
-        result.promoteLevel_ = promoteLevel_;
-        result.mainPropId_ = mainPropId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           appendPropIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.appendPropIdList_ = appendPropIdList_;
+        result.promoteLevel_ = promoteLevel_;
+        result.level_ = level_;
+        result.mainPropId_ = mainPropId_;
+        result.exp_ = exp_;
+        result.gPPMHJLMIIF_ = gPPMHJLMIIF_;
         onBuilt();
         return result;
       }
@@ -602,18 +639,6 @@ public final class ReliquaryOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReliquaryOuterClass.Reliquary other) {
         if (other == emu.grasscutter.net.proto.ReliquaryOuterClass.Reliquary.getDefaultInstance()) return this;
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
-        }
-        if (other.getExp() != 0) {
-          setExp(other.getExp());
-        }
-        if (other.getPromoteLevel() != 0) {
-          setPromoteLevel(other.getPromoteLevel());
-        }
-        if (other.getMainPropId() != 0) {
-          setMainPropId(other.getMainPropId());
-        }
         if (!other.appendPropIdList_.isEmpty()) {
           if (appendPropIdList_.isEmpty()) {
             appendPropIdList_ = other.appendPropIdList_;
@@ -623,6 +648,21 @@ public final class ReliquaryOuterClass {
             appendPropIdList_.addAll(other.appendPropIdList_);
           }
           onChanged();
+        }
+        if (other.getPromoteLevel() != 0) {
+          setPromoteLevel(other.getPromoteLevel());
+        }
+        if (other.getLevel() != 0) {
+          setLevel(other.getLevel());
+        }
+        if (other.getMainPropId() != 0) {
+          setMainPropId(other.getMainPropId());
+        }
+        if (other.getExp() != 0) {
+          setExp(other.getExp());
+        }
+        if (other.getGPPMHJLMIIF() != false) {
+          setGPPMHJLMIIF(other.getGPPMHJLMIIF());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -653,130 +693,6 @@ public final class ReliquaryOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private int level_ ;
-      /**
-       * <code>uint32 level = 1;</code>
-       * @return The level.
-       */
-      @java.lang.Override
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <code>uint32 level = 1;</code>
-       * @param value The level to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevel(int value) {
-        
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevel() {
-        
-        level_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int exp_ ;
-      /**
-       * <code>uint32 exp = 2;</code>
-       * @return The exp.
-       */
-      @java.lang.Override
-      public int getExp() {
-        return exp_;
-      }
-      /**
-       * <code>uint32 exp = 2;</code>
-       * @param value The exp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setExp(int value) {
-        
-        exp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 exp = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearExp() {
-        
-        exp_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int promoteLevel_ ;
-      /**
-       * <code>uint32 promote_level = 3;</code>
-       * @return The promoteLevel.
-       */
-      @java.lang.Override
-      public int getPromoteLevel() {
-        return promoteLevel_;
-      }
-      /**
-       * <code>uint32 promote_level = 3;</code>
-       * @param value The promoteLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPromoteLevel(int value) {
-        
-        promoteLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 promote_level = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPromoteLevel() {
-        
-        promoteLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mainPropId_ ;
-      /**
-       * <code>uint32 main_prop_id = 4;</code>
-       * @return The mainPropId.
-       */
-      @java.lang.Override
-      public int getMainPropId() {
-        return mainPropId_;
-      }
-      /**
-       * <code>uint32 main_prop_id = 4;</code>
-       * @param value The mainPropId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMainPropId(int value) {
-        
-        mainPropId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 main_prop_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMainPropId() {
-        
-        mainPropId_ = 0;
-        onChanged();
-        return this;
-      }
 
       private com.google.protobuf.Internal.IntList appendPropIdList_ = emptyIntList();
       private void ensureAppendPropIdListIsMutable() {
@@ -856,6 +772,161 @@ public final class ReliquaryOuterClass {
         onChanged();
         return this;
       }
+
+      private int promoteLevel_ ;
+      /**
+       * <code>uint32 promote_level = 3;</code>
+       * @return The promoteLevel.
+       */
+      @java.lang.Override
+      public int getPromoteLevel() {
+        return promoteLevel_;
+      }
+      /**
+       * <code>uint32 promote_level = 3;</code>
+       * @param value The promoteLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPromoteLevel(int value) {
+        
+        promoteLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 promote_level = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPromoteLevel() {
+        
+        promoteLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int level_ ;
+      /**
+       * <code>uint32 level = 1;</code>
+       * @return The level.
+       */
+      @java.lang.Override
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <code>uint32 level = 1;</code>
+       * @param value The level to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevel(int value) {
+        
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevel() {
+        
+        level_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mainPropId_ ;
+      /**
+       * <code>uint32 main_prop_id = 4;</code>
+       * @return The mainPropId.
+       */
+      @java.lang.Override
+      public int getMainPropId() {
+        return mainPropId_;
+      }
+      /**
+       * <code>uint32 main_prop_id = 4;</code>
+       * @param value The mainPropId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMainPropId(int value) {
+        
+        mainPropId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 main_prop_id = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMainPropId() {
+        
+        mainPropId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int exp_ ;
+      /**
+       * <code>uint32 exp = 2;</code>
+       * @return The exp.
+       */
+      @java.lang.Override
+      public int getExp() {
+        return exp_;
+      }
+      /**
+       * <code>uint32 exp = 2;</code>
+       * @param value The exp to set.
+       * @return This builder for chaining.
+       */
+      public Builder setExp(int value) {
+        
+        exp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 exp = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearExp() {
+        
+        exp_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean gPPMHJLMIIF_ ;
+      /**
+       * <code>bool GPPMHJLMIIF = 6;</code>
+       * @return The gPPMHJLMIIF.
+       */
+      @java.lang.Override
+      public boolean getGPPMHJLMIIF() {
+        return gPPMHJLMIIF_;
+      }
+      /**
+       * <code>bool GPPMHJLMIIF = 6;</code>
+       * @param value The gPPMHJLMIIF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGPPMHJLMIIF(boolean value) {
+        
+        gPPMHJLMIIF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool GPPMHJLMIIF = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGPPMHJLMIIF() {
+        
+        gPPMHJLMIIF_ = false;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -923,11 +994,11 @@ public final class ReliquaryOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017Reliquary.proto\"q\n\tReliquary\022\r\n\005level\030" +
-      "\001 \001(\r\022\013\n\003exp\030\002 \001(\r\022\025\n\rpromote_level\030\003 \001(" +
-      "\r\022\024\n\014main_prop_id\030\004 \001(\r\022\033\n\023append_prop_i" +
-      "d_list\030\005 \003(\rB\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\n\017Reliquary.proto\"\206\001\n\tReliquary\022\033\n\023appen" +
+      "d_prop_id_list\030\005 \003(\r\022\025\n\rpromote_level\030\003 " +
+      "\001(\r\022\r\n\005level\030\001 \001(\r\022\024\n\014main_prop_id\030\004 \001(\r" +
+      "\022\013\n\003exp\030\002 \001(\r\022\023\n\013GPPMHJLMIIF\030\006 \001(\010B\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -938,7 +1009,7 @@ public final class ReliquaryOuterClass {
     internal_static_Reliquary_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Reliquary_descriptor,
-        new java.lang.String[] { "Level", "Exp", "PromoteLevel", "MainPropId", "AppendPropIdList", });
+        new java.lang.String[] { "AppendPropIdList", "PromoteLevel", "Level", "MainPropId", "Exp", "GPPMHJLMIIF", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

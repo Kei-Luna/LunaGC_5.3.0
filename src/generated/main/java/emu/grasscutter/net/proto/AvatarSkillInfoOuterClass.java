@@ -19,12 +19,6 @@ public final class AvatarSkillInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 pass_cd_time = 1;</code>
-     * @return The passCdTime.
-     */
-    int getPassCdTime();
-
-    /**
      * <code>repeated uint32 full_cd_time_list = 2;</code>
      * @return A list containing the fullCdTimeList.
      */
@@ -46,6 +40,12 @@ public final class AvatarSkillInfoOuterClass {
      * @return The maxChargeCount.
      */
     int getMaxChargeCount();
+
+    /**
+     * <code>uint32 pass_cd_time = 1;</code>
+     * @return The passCdTime.
+     */
+    int getPassCdTime();
   }
   /**
    * Protobuf type {@code AvatarSkillInfo}
@@ -160,17 +160,6 @@ public final class AvatarSkillInfoOuterClass {
               emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo.class, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo.Builder.class);
     }
 
-    public static final int PASS_CD_TIME_FIELD_NUMBER = 1;
-    private int passCdTime_;
-    /**
-     * <code>uint32 pass_cd_time = 1;</code>
-     * @return The passCdTime.
-     */
-    @java.lang.Override
-    public int getPassCdTime() {
-      return passCdTime_;
-    }
-
     public static final int FULL_CD_TIME_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList fullCdTimeList_;
     /**
@@ -208,6 +197,17 @@ public final class AvatarSkillInfoOuterClass {
     @java.lang.Override
     public int getMaxChargeCount() {
       return maxChargeCount_;
+    }
+
+    public static final int PASS_CD_TIME_FIELD_NUMBER = 1;
+    private int passCdTime_;
+    /**
+     * <code>uint32 pass_cd_time = 1;</code>
+     * @return The passCdTime.
+     */
+    @java.lang.Override
+    public int getPassCdTime() {
+      return passCdTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -284,12 +284,12 @@ public final class AvatarSkillInfoOuterClass {
       }
       emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo other = (emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo) obj;
 
-      if (getPassCdTime()
-          != other.getPassCdTime()) return false;
       if (!getFullCdTimeListList()
           .equals(other.getFullCdTimeListList())) return false;
       if (getMaxChargeCount()
           != other.getMaxChargeCount()) return false;
+      if (getPassCdTime()
+          != other.getPassCdTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -301,14 +301,14 @@ public final class AvatarSkillInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PASS_CD_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getPassCdTime();
       if (getFullCdTimeListCount() > 0) {
         hash = (37 * hash) + FULL_CD_TIME_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFullCdTimeListList().hashCode();
       }
       hash = (37 * hash) + MAX_CHARGE_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getMaxChargeCount();
+      hash = (37 * hash) + PASS_CD_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getPassCdTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,11 +442,11 @@ public final class AvatarSkillInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        passCdTime_ = 0;
-
         fullCdTimeList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         maxChargeCount_ = 0;
+
+        passCdTime_ = 0;
 
         return this;
       }
@@ -475,13 +475,13 @@ public final class AvatarSkillInfoOuterClass {
       public emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo buildPartial() {
         emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo result = new emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo(this);
         int from_bitField0_ = bitField0_;
-        result.passCdTime_ = passCdTime_;
         if (((bitField0_ & 0x00000001) != 0)) {
           fullCdTimeList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.fullCdTimeList_ = fullCdTimeList_;
         result.maxChargeCount_ = maxChargeCount_;
+        result.passCdTime_ = passCdTime_;
         onBuilt();
         return result;
       }
@@ -530,9 +530,6 @@ public final class AvatarSkillInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo other) {
         if (other == emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo.getDefaultInstance()) return this;
-        if (other.getPassCdTime() != 0) {
-          setPassCdTime(other.getPassCdTime());
-        }
         if (!other.fullCdTimeList_.isEmpty()) {
           if (fullCdTimeList_.isEmpty()) {
             fullCdTimeList_ = other.fullCdTimeList_;
@@ -545,6 +542,9 @@ public final class AvatarSkillInfoOuterClass {
         }
         if (other.getMaxChargeCount() != 0) {
           setMaxChargeCount(other.getMaxChargeCount());
+        }
+        if (other.getPassCdTime() != 0) {
+          setPassCdTime(other.getPassCdTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -575,37 +575,6 @@ public final class AvatarSkillInfoOuterClass {
         return this;
       }
       private int bitField0_;
-
-      private int passCdTime_ ;
-      /**
-       * <code>uint32 pass_cd_time = 1;</code>
-       * @return The passCdTime.
-       */
-      @java.lang.Override
-      public int getPassCdTime() {
-        return passCdTime_;
-      }
-      /**
-       * <code>uint32 pass_cd_time = 1;</code>
-       * @param value The passCdTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPassCdTime(int value) {
-        
-        passCdTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 pass_cd_time = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPassCdTime() {
-        
-        passCdTime_ = 0;
-        onChanged();
-        return this;
-      }
 
       private com.google.protobuf.Internal.IntList fullCdTimeList_ = emptyIntList();
       private void ensureFullCdTimeListIsMutable() {
@@ -716,6 +685,37 @@ public final class AvatarSkillInfoOuterClass {
         onChanged();
         return this;
       }
+
+      private int passCdTime_ ;
+      /**
+       * <code>uint32 pass_cd_time = 1;</code>
+       * @return The passCdTime.
+       */
+      @java.lang.Override
+      public int getPassCdTime() {
+        return passCdTime_;
+      }
+      /**
+       * <code>uint32 pass_cd_time = 1;</code>
+       * @param value The passCdTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPassCdTime(int value) {
+        
+        passCdTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 pass_cd_time = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPassCdTime() {
+        
+        passCdTime_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -784,8 +784,8 @@ public final class AvatarSkillInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025AvatarSkillInfo.proto\"\\\n\017AvatarSkillIn" +
-      "fo\022\024\n\014pass_cd_time\030\001 \001(\r\022\031\n\021full_cd_time" +
-      "_list\030\002 \003(\r\022\030\n\020max_charge_count\030\003 \001(\rB\033\n" +
+      "fo\022\031\n\021full_cd_time_list\030\002 \003(\r\022\030\n\020max_cha" +
+      "rge_count\030\003 \001(\r\022\024\n\014pass_cd_time\030\001 \001(\rB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -797,7 +797,7 @@ public final class AvatarSkillInfoOuterClass {
     internal_static_AvatarSkillInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarSkillInfo_descriptor,
-        new java.lang.String[] { "PassCdTime", "FullCdTimeList", "MaxChargeCount", });
+        new java.lang.String[] { "FullCdTimeList", "MaxChargeCount", "PassCdTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

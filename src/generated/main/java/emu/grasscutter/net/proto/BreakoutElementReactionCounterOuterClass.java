@@ -19,22 +19,18 @@ public final class BreakoutElementReactionCounterOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 element_reaction = 1;</code>
-     * @return The elementReaction.
-     */
-    int getElementReaction();
-
-    /**
      * <code>uint32 count = 2;</code>
      * @return The count.
      */
     int getCount();
+
+    /**
+     * <code>uint32 PHOHIGFDOCI = 1;</code>
+     * @return The pHOHIGFDOCI.
+     */
+    int getPHOHIGFDOCI();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code BreakoutElementReactionCounter}
    */
   public static final class BreakoutElementReactionCounter extends
@@ -81,7 +77,7 @@ public final class BreakoutElementReactionCounterOuterClass {
               break;
             case 8: {
 
-              elementReaction_ = input.readUInt32();
+              pHOHIGFDOCI_ = input.readUInt32();
               break;
             }
             case 16: {
@@ -121,17 +117,6 @@ public final class BreakoutElementReactionCounterOuterClass {
               emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter.class, emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter.Builder.class);
     }
 
-    public static final int ELEMENT_REACTION_FIELD_NUMBER = 1;
-    private int elementReaction_;
-    /**
-     * <code>uint32 element_reaction = 1;</code>
-     * @return The elementReaction.
-     */
-    @java.lang.Override
-    public int getElementReaction() {
-      return elementReaction_;
-    }
-
     public static final int COUNT_FIELD_NUMBER = 2;
     private int count_;
     /**
@@ -141,6 +126,17 @@ public final class BreakoutElementReactionCounterOuterClass {
     @java.lang.Override
     public int getCount() {
       return count_;
+    }
+
+    public static final int PHOHIGFDOCI_FIELD_NUMBER = 1;
+    private int pHOHIGFDOCI_;
+    /**
+     * <code>uint32 PHOHIGFDOCI = 1;</code>
+     * @return The pHOHIGFDOCI.
+     */
+    @java.lang.Override
+    public int getPHOHIGFDOCI() {
+      return pHOHIGFDOCI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -157,8 +153,8 @@ public final class BreakoutElementReactionCounterOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (elementReaction_ != 0) {
-        output.writeUInt32(1, elementReaction_);
+      if (pHOHIGFDOCI_ != 0) {
+        output.writeUInt32(1, pHOHIGFDOCI_);
       }
       if (count_ != 0) {
         output.writeUInt32(2, count_);
@@ -172,9 +168,9 @@ public final class BreakoutElementReactionCounterOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (elementReaction_ != 0) {
+      if (pHOHIGFDOCI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, elementReaction_);
+          .computeUInt32Size(1, pHOHIGFDOCI_);
       }
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -195,10 +191,10 @@ public final class BreakoutElementReactionCounterOuterClass {
       }
       emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter other = (emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter) obj;
 
-      if (getElementReaction()
-          != other.getElementReaction()) return false;
       if (getCount()
           != other.getCount()) return false;
+      if (getPHOHIGFDOCI()
+          != other.getPHOHIGFDOCI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +206,10 @@ public final class BreakoutElementReactionCounterOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ELEMENT_REACTION_FIELD_NUMBER;
-      hash = (53 * hash) + getElementReaction();
       hash = (37 * hash) + COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getCount();
+      hash = (37 * hash) + PHOHIGFDOCI_FIELD_NUMBER;
+      hash = (53 * hash) + getPHOHIGFDOCI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +306,6 @@ public final class BreakoutElementReactionCounterOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code BreakoutElementReactionCounter}
      */
     public static final class Builder extends
@@ -351,9 +343,9 @@ public final class BreakoutElementReactionCounterOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        elementReaction_ = 0;
-
         count_ = 0;
+
+        pHOHIGFDOCI_ = 0;
 
         return this;
       }
@@ -381,8 +373,8 @@ public final class BreakoutElementReactionCounterOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter buildPartial() {
         emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter result = new emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter(this);
-        result.elementReaction_ = elementReaction_;
         result.count_ = count_;
+        result.pHOHIGFDOCI_ = pHOHIGFDOCI_;
         onBuilt();
         return result;
       }
@@ -431,11 +423,11 @@ public final class BreakoutElementReactionCounterOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter other) {
         if (other == emu.grasscutter.net.proto.BreakoutElementReactionCounterOuterClass.BreakoutElementReactionCounter.getDefaultInstance()) return this;
-        if (other.getElementReaction() != 0) {
-          setElementReaction(other.getElementReaction());
-        }
         if (other.getCount() != 0) {
           setCount(other.getCount());
+        }
+        if (other.getPHOHIGFDOCI() != 0) {
+          setPHOHIGFDOCI(other.getPHOHIGFDOCI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,37 +458,6 @@ public final class BreakoutElementReactionCounterOuterClass {
         return this;
       }
 
-      private int elementReaction_ ;
-      /**
-       * <code>uint32 element_reaction = 1;</code>
-       * @return The elementReaction.
-       */
-      @java.lang.Override
-      public int getElementReaction() {
-        return elementReaction_;
-      }
-      /**
-       * <code>uint32 element_reaction = 1;</code>
-       * @param value The elementReaction to set.
-       * @return This builder for chaining.
-       */
-      public Builder setElementReaction(int value) {
-        
-        elementReaction_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 element_reaction = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearElementReaction() {
-        
-        elementReaction_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int count_ ;
       /**
        * <code>uint32 count = 2;</code>
@@ -524,6 +485,37 @@ public final class BreakoutElementReactionCounterOuterClass {
       public Builder clearCount() {
         
         count_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pHOHIGFDOCI_ ;
+      /**
+       * <code>uint32 PHOHIGFDOCI = 1;</code>
+       * @return The pHOHIGFDOCI.
+       */
+      @java.lang.Override
+      public int getPHOHIGFDOCI() {
+        return pHOHIGFDOCI_;
+      }
+      /**
+       * <code>uint32 PHOHIGFDOCI = 1;</code>
+       * @param value The pHOHIGFDOCI to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPHOHIGFDOCI(int value) {
+        
+        pHOHIGFDOCI_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 PHOHIGFDOCI = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPHOHIGFDOCI() {
+        
+        pHOHIGFDOCI_ = 0;
         onChanged();
         return this;
       }
@@ -594,10 +586,10 @@ public final class BreakoutElementReactionCounterOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n$BreakoutElementReactionCounter.proto\"I" +
-      "\n\036BreakoutElementReactionCounter\022\030\n\020elem" +
-      "ent_reaction\030\001 \001(\r\022\r\n\005count\030\002 \001(\rB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n$BreakoutElementReactionCounter.proto\"D" +
+      "\n\036BreakoutElementReactionCounter\022\r\n\005coun" +
+      "t\030\002 \001(\r\022\023\n\013PHOHIGFDOCI\030\001 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -608,7 +600,7 @@ public final class BreakoutElementReactionCounterOuterClass {
     internal_static_BreakoutElementReactionCounter_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BreakoutElementReactionCounter_descriptor,
-        new java.lang.String[] { "ElementReaction", "Count", });
+        new java.lang.String[] { "Count", "PHOHIGFDOCI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

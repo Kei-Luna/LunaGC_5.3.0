@@ -15,10 +15,6 @@ public final class MaterialDeleteReturnTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: NHKCGBBJJGE
-   * </pre>
-   *
    * Protobuf enum {@code MaterialDeleteReturnType}
    */
   public enum MaterialDeleteReturnType

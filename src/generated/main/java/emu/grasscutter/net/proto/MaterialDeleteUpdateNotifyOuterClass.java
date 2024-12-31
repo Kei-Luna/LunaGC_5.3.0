@@ -19,11 +19,6 @@ public final class MaterialDeleteUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * <pre>
-   * CmdId: 9737
-   * Obf: FKMCADJBOIO
-   * </pre>
-   *
    * Protobuf type {@code MaterialDeleteUpdateNotify}
    */
   public static final class MaterialDeleteUpdateNotify extends
@@ -245,11 +240,6 @@ public final class MaterialDeleteUpdateNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 9737
-     * Obf: FKMCADJBOIO
-     * </pre>
-     *
      * Protobuf type {@code MaterialDeleteUpdateNotify}
      */
     public static final class Builder extends

@@ -49,32 +49,6 @@ public final class MotionInfoOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
 
     /**
-     * <code>.Vector speed = 3;</code>
-     * @return Whether the speed field is set.
-     */
-    boolean hasSpeed();
-    /**
-     * <code>.Vector speed = 3;</code>
-     * @return The speed.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getSpeed();
-    /**
-     * <code>.Vector speed = 3;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSpeedOrBuilder();
-
-    /**
-     * <code>.MotionState state = 4;</code>
-     * @return The enum numeric value on the wire for state.
-     */
-    int getStateValue();
-    /**
-     * <code>.MotionState state = 4;</code>
-     * @return The state.
-     */
-    emu.grasscutter.net.proto.MotionStateOuterClass.MotionState getState();
-
-    /**
      * <code>repeated .Vector params = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> 
@@ -114,10 +88,48 @@ public final class MotionInfoOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRefPosOrBuilder();
 
     /**
+     * <code>.Vector speed = 3;</code>
+     * @return Whether the speed field is set.
+     */
+    boolean hasSpeed();
+    /**
+     * <code>.Vector speed = 3;</code>
+     * @return The speed.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getSpeed();
+    /**
+     * <code>.Vector speed = 3;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSpeedOrBuilder();
+
+    /**
      * <code>uint32 ref_id = 7;</code>
      * @return The refId.
      */
     int getRefId();
+
+    /**
+     * <code>uint32 KDOIAIEDOEE = 10;</code>
+     * @return The kDOIAIEDOEE.
+     */
+    int getKDOIAIEDOEE();
+
+    /**
+     * <code>.MotionState state = 4;</code>
+     * @return The enum numeric value on the wire for state.
+     */
+    int getStateValue();
+    /**
+     * <code>.MotionState state = 4;</code>
+     * @return The state.
+     */
+    emu.grasscutter.net.proto.MotionStateOuterClass.MotionState getState();
+
+    /**
+     * <code>uint32 EOJMCFKMAOH = 11;</code>
+     * @return The eOJMCFKMAOH.
+     */
+    int getEOJMCFKMAOH();
 
     /**
      * <code>uint32 scene_time = 8;</code>
@@ -130,18 +142,6 @@ public final class MotionInfoOuterClass {
      * @return The intervalVelocity.
      */
     long getIntervalVelocity();
-
-    /**
-     * <code>uint32 BIMCAJGDDOI = 10;</code>
-     * @return The bIMCAJGDDOI.
-     */
-    int getBIMCAJGDDOI();
-
-    /**
-     * <code>uint32 HJCDICMBDKE = 11;</code>
-     * @return The hJCDICMBDKE.
-     */
-    int getHJCDICMBDKE();
   }
   /**
    * Protobuf type {@code MotionInfo}
@@ -156,8 +156,8 @@ public final class MotionInfoOuterClass {
       super(builder);
     }
     private MotionInfo() {
-      state_ = 0;
       params_ = java.util.Collections.emptyList();
+      state_ = 0;
     }
 
     @java.lang.Override
@@ -275,12 +275,12 @@ public final class MotionInfoOuterClass {
             }
             case 80: {
 
-              bIMCAJGDDOI_ = input.readUInt32();
+              kDOIAIEDOEE_ = input.readUInt32();
               break;
             }
             case 88: {
 
-              hJCDICMBDKE_ = input.readUInt32();
+              eOJMCFKMAOH_ = input.readUInt32();
               break;
             }
             default: {
@@ -370,51 +370,6 @@ public final class MotionInfoOuterClass {
       return getRot();
     }
 
-    public static final int SPEED_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector speed_;
-    /**
-     * <code>.Vector speed = 3;</code>
-     * @return Whether the speed field is set.
-     */
-    @java.lang.Override
-    public boolean hasSpeed() {
-      return speed_ != null;
-    }
-    /**
-     * <code>.Vector speed = 3;</code>
-     * @return The speed.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getSpeed() {
-      return speed_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : speed_;
-    }
-    /**
-     * <code>.Vector speed = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSpeedOrBuilder() {
-      return getSpeed();
-    }
-
-    public static final int STATE_FIELD_NUMBER = 4;
-    private int state_;
-    /**
-     * <code>.MotionState state = 4;</code>
-     * @return The enum numeric value on the wire for state.
-     */
-    @java.lang.Override public int getStateValue() {
-      return state_;
-    }
-    /**
-     * <code>.MotionState state = 4;</code>
-     * @return The state.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.MotionStateOuterClass.MotionState getState() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.MotionStateOuterClass.MotionState result = emu.grasscutter.net.proto.MotionStateOuterClass.MotionState.valueOf(state_);
-      return result == null ? emu.grasscutter.net.proto.MotionStateOuterClass.MotionState.UNRECOGNIZED : result;
-    }
-
     public static final int PARAMS_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> params_;
     /**
@@ -481,6 +436,32 @@ public final class MotionInfoOuterClass {
       return getRefPos();
     }
 
+    public static final int SPEED_FIELD_NUMBER = 3;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector speed_;
+    /**
+     * <code>.Vector speed = 3;</code>
+     * @return Whether the speed field is set.
+     */
+    @java.lang.Override
+    public boolean hasSpeed() {
+      return speed_ != null;
+    }
+    /**
+     * <code>.Vector speed = 3;</code>
+     * @return The speed.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getSpeed() {
+      return speed_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : speed_;
+    }
+    /**
+     * <code>.Vector speed = 3;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSpeedOrBuilder() {
+      return getSpeed();
+    }
+
     public static final int REF_ID_FIELD_NUMBER = 7;
     private int refId_;
     /**
@@ -490,6 +471,47 @@ public final class MotionInfoOuterClass {
     @java.lang.Override
     public int getRefId() {
       return refId_;
+    }
+
+    public static final int KDOIAIEDOEE_FIELD_NUMBER = 10;
+    private int kDOIAIEDOEE_;
+    /**
+     * <code>uint32 KDOIAIEDOEE = 10;</code>
+     * @return The kDOIAIEDOEE.
+     */
+    @java.lang.Override
+    public int getKDOIAIEDOEE() {
+      return kDOIAIEDOEE_;
+    }
+
+    public static final int STATE_FIELD_NUMBER = 4;
+    private int state_;
+    /**
+     * <code>.MotionState state = 4;</code>
+     * @return The enum numeric value on the wire for state.
+     */
+    @java.lang.Override public int getStateValue() {
+      return state_;
+    }
+    /**
+     * <code>.MotionState state = 4;</code>
+     * @return The state.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.MotionStateOuterClass.MotionState getState() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.MotionStateOuterClass.MotionState result = emu.grasscutter.net.proto.MotionStateOuterClass.MotionState.valueOf(state_);
+      return result == null ? emu.grasscutter.net.proto.MotionStateOuterClass.MotionState.UNRECOGNIZED : result;
+    }
+
+    public static final int EOJMCFKMAOH_FIELD_NUMBER = 11;
+    private int eOJMCFKMAOH_;
+    /**
+     * <code>uint32 EOJMCFKMAOH = 11;</code>
+     * @return The eOJMCFKMAOH.
+     */
+    @java.lang.Override
+    public int getEOJMCFKMAOH() {
+      return eOJMCFKMAOH_;
     }
 
     public static final int SCENE_TIME_FIELD_NUMBER = 8;
@@ -512,28 +534,6 @@ public final class MotionInfoOuterClass {
     @java.lang.Override
     public long getIntervalVelocity() {
       return intervalVelocity_;
-    }
-
-    public static final int BIMCAJGDDOI_FIELD_NUMBER = 10;
-    private int bIMCAJGDDOI_;
-    /**
-     * <code>uint32 BIMCAJGDDOI = 10;</code>
-     * @return The bIMCAJGDDOI.
-     */
-    @java.lang.Override
-    public int getBIMCAJGDDOI() {
-      return bIMCAJGDDOI_;
-    }
-
-    public static final int HJCDICMBDKE_FIELD_NUMBER = 11;
-    private int hJCDICMBDKE_;
-    /**
-     * <code>uint32 HJCDICMBDKE = 11;</code>
-     * @return The hJCDICMBDKE.
-     */
-    @java.lang.Override
-    public int getHJCDICMBDKE() {
-      return hJCDICMBDKE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -577,11 +577,11 @@ public final class MotionInfoOuterClass {
       if (intervalVelocity_ != 0L) {
         output.writeUInt64(9, intervalVelocity_);
       }
-      if (bIMCAJGDDOI_ != 0) {
-        output.writeUInt32(10, bIMCAJGDDOI_);
+      if (kDOIAIEDOEE_ != 0) {
+        output.writeUInt32(10, kDOIAIEDOEE_);
       }
-      if (hJCDICMBDKE_ != 0) {
-        output.writeUInt32(11, hJCDICMBDKE_);
+      if (eOJMCFKMAOH_ != 0) {
+        output.writeUInt32(11, eOJMCFKMAOH_);
       }
       unknownFields.writeTo(output);
     }
@@ -628,13 +628,13 @@ public final class MotionInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(9, intervalVelocity_);
       }
-      if (bIMCAJGDDOI_ != 0) {
+      if (kDOIAIEDOEE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, bIMCAJGDDOI_);
+          .computeUInt32Size(10, kDOIAIEDOEE_);
       }
-      if (hJCDICMBDKE_ != 0) {
+      if (eOJMCFKMAOH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, hJCDICMBDKE_);
+          .computeUInt32Size(11, eOJMCFKMAOH_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -661,12 +661,6 @@ public final class MotionInfoOuterClass {
         if (!getRot()
             .equals(other.getRot())) return false;
       }
-      if (hasSpeed() != other.hasSpeed()) return false;
-      if (hasSpeed()) {
-        if (!getSpeed()
-            .equals(other.getSpeed())) return false;
-      }
-      if (state_ != other.state_) return false;
       if (!getParamsList()
           .equals(other.getParamsList())) return false;
       if (hasRefPos() != other.hasRefPos()) return false;
@@ -674,16 +668,22 @@ public final class MotionInfoOuterClass {
         if (!getRefPos()
             .equals(other.getRefPos())) return false;
       }
+      if (hasSpeed() != other.hasSpeed()) return false;
+      if (hasSpeed()) {
+        if (!getSpeed()
+            .equals(other.getSpeed())) return false;
+      }
       if (getRefId()
           != other.getRefId()) return false;
+      if (getKDOIAIEDOEE()
+          != other.getKDOIAIEDOEE()) return false;
+      if (state_ != other.state_) return false;
+      if (getEOJMCFKMAOH()
+          != other.getEOJMCFKMAOH()) return false;
       if (getSceneTime()
           != other.getSceneTime()) return false;
       if (getIntervalVelocity()
           != other.getIntervalVelocity()) return false;
-      if (getBIMCAJGDDOI()
-          != other.getBIMCAJGDDOI()) return false;
-      if (getHJCDICMBDKE()
-          != other.getHJCDICMBDKE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -703,12 +703,6 @@ public final class MotionInfoOuterClass {
         hash = (37 * hash) + ROT_FIELD_NUMBER;
         hash = (53 * hash) + getRot().hashCode();
       }
-      if (hasSpeed()) {
-        hash = (37 * hash) + SPEED_FIELD_NUMBER;
-        hash = (53 * hash) + getSpeed().hashCode();
-      }
-      hash = (37 * hash) + STATE_FIELD_NUMBER;
-      hash = (53 * hash) + state_;
       if (getParamsCount() > 0) {
         hash = (37 * hash) + PARAMS_FIELD_NUMBER;
         hash = (53 * hash) + getParamsList().hashCode();
@@ -717,17 +711,23 @@ public final class MotionInfoOuterClass {
         hash = (37 * hash) + REF_POS_FIELD_NUMBER;
         hash = (53 * hash) + getRefPos().hashCode();
       }
+      if (hasSpeed()) {
+        hash = (37 * hash) + SPEED_FIELD_NUMBER;
+        hash = (53 * hash) + getSpeed().hashCode();
+      }
       hash = (37 * hash) + REF_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRefId();
+      hash = (37 * hash) + KDOIAIEDOEE_FIELD_NUMBER;
+      hash = (53 * hash) + getKDOIAIEDOEE();
+      hash = (37 * hash) + STATE_FIELD_NUMBER;
+      hash = (53 * hash) + state_;
+      hash = (37 * hash) + EOJMCFKMAOH_FIELD_NUMBER;
+      hash = (53 * hash) + getEOJMCFKMAOH();
       hash = (37 * hash) + SCENE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getSceneTime();
       hash = (37 * hash) + INTERVAL_VELOCITY_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getIntervalVelocity());
-      hash = (37 * hash) + BIMCAJGDDOI_FIELD_NUMBER;
-      hash = (53 * hash) + getBIMCAJGDDOI();
-      hash = (37 * hash) + HJCDICMBDKE_FIELD_NUMBER;
-      hash = (53 * hash) + getHJCDICMBDKE();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -874,14 +874,6 @@ public final class MotionInfoOuterClass {
           rot_ = null;
           rotBuilder_ = null;
         }
-        if (speedBuilder_ == null) {
-          speed_ = null;
-        } else {
-          speed_ = null;
-          speedBuilder_ = null;
-        }
-        state_ = 0;
-
         if (paramsBuilder_ == null) {
           params_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -894,15 +886,23 @@ public final class MotionInfoOuterClass {
           refPos_ = null;
           refPosBuilder_ = null;
         }
+        if (speedBuilder_ == null) {
+          speed_ = null;
+        } else {
+          speed_ = null;
+          speedBuilder_ = null;
+        }
         refId_ = 0;
+
+        kDOIAIEDOEE_ = 0;
+
+        state_ = 0;
+
+        eOJMCFKMAOH_ = 0;
 
         sceneTime_ = 0;
 
         intervalVelocity_ = 0L;
-
-        bIMCAJGDDOI_ = 0;
-
-        hJCDICMBDKE_ = 0;
 
         return this;
       }
@@ -941,12 +941,6 @@ public final class MotionInfoOuterClass {
         } else {
           result.rot_ = rotBuilder_.build();
         }
-        if (speedBuilder_ == null) {
-          result.speed_ = speed_;
-        } else {
-          result.speed_ = speedBuilder_.build();
-        }
-        result.state_ = state_;
         if (paramsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             params_ = java.util.Collections.unmodifiableList(params_);
@@ -961,11 +955,17 @@ public final class MotionInfoOuterClass {
         } else {
           result.refPos_ = refPosBuilder_.build();
         }
+        if (speedBuilder_ == null) {
+          result.speed_ = speed_;
+        } else {
+          result.speed_ = speedBuilder_.build();
+        }
         result.refId_ = refId_;
+        result.kDOIAIEDOEE_ = kDOIAIEDOEE_;
+        result.state_ = state_;
+        result.eOJMCFKMAOH_ = eOJMCFKMAOH_;
         result.sceneTime_ = sceneTime_;
         result.intervalVelocity_ = intervalVelocity_;
-        result.bIMCAJGDDOI_ = bIMCAJGDDOI_;
-        result.hJCDICMBDKE_ = hJCDICMBDKE_;
         onBuilt();
         return result;
       }
@@ -1020,12 +1020,6 @@ public final class MotionInfoOuterClass {
         if (other.hasRot()) {
           mergeRot(other.getRot());
         }
-        if (other.hasSpeed()) {
-          mergeSpeed(other.getSpeed());
-        }
-        if (other.state_ != 0) {
-          setStateValue(other.getStateValue());
-        }
         if (paramsBuilder_ == null) {
           if (!other.params_.isEmpty()) {
             if (params_.isEmpty()) {
@@ -1055,20 +1049,26 @@ public final class MotionInfoOuterClass {
         if (other.hasRefPos()) {
           mergeRefPos(other.getRefPos());
         }
+        if (other.hasSpeed()) {
+          mergeSpeed(other.getSpeed());
+        }
         if (other.getRefId() != 0) {
           setRefId(other.getRefId());
+        }
+        if (other.getKDOIAIEDOEE() != 0) {
+          setKDOIAIEDOEE(other.getKDOIAIEDOEE());
+        }
+        if (other.state_ != 0) {
+          setStateValue(other.getStateValue());
+        }
+        if (other.getEOJMCFKMAOH() != 0) {
+          setEOJMCFKMAOH(other.getEOJMCFKMAOH());
         }
         if (other.getSceneTime() != 0) {
           setSceneTime(other.getSceneTime());
         }
         if (other.getIntervalVelocity() != 0L) {
           setIntervalVelocity(other.getIntervalVelocity());
-        }
-        if (other.getBIMCAJGDDOI() != 0) {
-          setBIMCAJGDDOI(other.getBIMCAJGDDOI());
-        }
-        if (other.getHJCDICMBDKE() != 0) {
-          setHJCDICMBDKE(other.getHJCDICMBDKE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1336,179 +1336,6 @@ public final class MotionInfoOuterClass {
           rot_ = null;
         }
         return rotBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector speed_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> speedBuilder_;
-      /**
-       * <code>.Vector speed = 3;</code>
-       * @return Whether the speed field is set.
-       */
-      public boolean hasSpeed() {
-        return speedBuilder_ != null || speed_ != null;
-      }
-      /**
-       * <code>.Vector speed = 3;</code>
-       * @return The speed.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getSpeed() {
-        if (speedBuilder_ == null) {
-          return speed_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : speed_;
-        } else {
-          return speedBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector speed = 3;</code>
-       */
-      public Builder setSpeed(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (speedBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          speed_ = value;
-          onChanged();
-        } else {
-          speedBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector speed = 3;</code>
-       */
-      public Builder setSpeed(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (speedBuilder_ == null) {
-          speed_ = builderForValue.build();
-          onChanged();
-        } else {
-          speedBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector speed = 3;</code>
-       */
-      public Builder mergeSpeed(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (speedBuilder_ == null) {
-          if (speed_ != null) {
-            speed_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(speed_).mergeFrom(value).buildPartial();
-          } else {
-            speed_ = value;
-          }
-          onChanged();
-        } else {
-          speedBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector speed = 3;</code>
-       */
-      public Builder clearSpeed() {
-        if (speedBuilder_ == null) {
-          speed_ = null;
-          onChanged();
-        } else {
-          speed_ = null;
-          speedBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector speed = 3;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getSpeedBuilder() {
-        
-        onChanged();
-        return getSpeedFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector speed = 3;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSpeedOrBuilder() {
-        if (speedBuilder_ != null) {
-          return speedBuilder_.getMessageOrBuilder();
-        } else {
-          return speed_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : speed_;
-        }
-      }
-      /**
-       * <code>.Vector speed = 3;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getSpeedFieldBuilder() {
-        if (speedBuilder_ == null) {
-          speedBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getSpeed(),
-                  getParentForChildren(),
-                  isClean());
-          speed_ = null;
-        }
-        return speedBuilder_;
-      }
-
-      private int state_ = 0;
-      /**
-       * <code>.MotionState state = 4;</code>
-       * @return The enum numeric value on the wire for state.
-       */
-      @java.lang.Override public int getStateValue() {
-        return state_;
-      }
-      /**
-       * <code>.MotionState state = 4;</code>
-       * @param value The enum numeric value on the wire for state to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStateValue(int value) {
-        
-        state_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.MotionState state = 4;</code>
-       * @return The state.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.MotionStateOuterClass.MotionState getState() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.MotionStateOuterClass.MotionState result = emu.grasscutter.net.proto.MotionStateOuterClass.MotionState.valueOf(state_);
-        return result == null ? emu.grasscutter.net.proto.MotionStateOuterClass.MotionState.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.MotionState state = 4;</code>
-       * @param value The state to set.
-       * @return This builder for chaining.
-       */
-      public Builder setState(emu.grasscutter.net.proto.MotionStateOuterClass.MotionState value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        state_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.MotionState state = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearState() {
-        
-        state_ = 0;
-        onChanged();
-        return this;
       }
 
       private java.util.List<emu.grasscutter.net.proto.VectorOuterClass.Vector> params_ =
@@ -1870,6 +1697,125 @@ public final class MotionInfoOuterClass {
         return refPosBuilder_;
       }
 
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector speed_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> speedBuilder_;
+      /**
+       * <code>.Vector speed = 3;</code>
+       * @return Whether the speed field is set.
+       */
+      public boolean hasSpeed() {
+        return speedBuilder_ != null || speed_ != null;
+      }
+      /**
+       * <code>.Vector speed = 3;</code>
+       * @return The speed.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getSpeed() {
+        if (speedBuilder_ == null) {
+          return speed_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : speed_;
+        } else {
+          return speedBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector speed = 3;</code>
+       */
+      public Builder setSpeed(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (speedBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          speed_ = value;
+          onChanged();
+        } else {
+          speedBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector speed = 3;</code>
+       */
+      public Builder setSpeed(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (speedBuilder_ == null) {
+          speed_ = builderForValue.build();
+          onChanged();
+        } else {
+          speedBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector speed = 3;</code>
+       */
+      public Builder mergeSpeed(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (speedBuilder_ == null) {
+          if (speed_ != null) {
+            speed_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(speed_).mergeFrom(value).buildPartial();
+          } else {
+            speed_ = value;
+          }
+          onChanged();
+        } else {
+          speedBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector speed = 3;</code>
+       */
+      public Builder clearSpeed() {
+        if (speedBuilder_ == null) {
+          speed_ = null;
+          onChanged();
+        } else {
+          speed_ = null;
+          speedBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector speed = 3;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getSpeedBuilder() {
+        
+        onChanged();
+        return getSpeedFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector speed = 3;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getSpeedOrBuilder() {
+        if (speedBuilder_ != null) {
+          return speedBuilder_.getMessageOrBuilder();
+        } else {
+          return speed_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : speed_;
+        }
+      }
+      /**
+       * <code>.Vector speed = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getSpeedFieldBuilder() {
+        if (speedBuilder_ == null) {
+          speedBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getSpeed(),
+                  getParentForChildren(),
+                  isClean());
+          speed_ = null;
+        }
+        return speedBuilder_;
+      }
+
       private int refId_ ;
       /**
        * <code>uint32 ref_id = 7;</code>
@@ -1897,6 +1843,122 @@ public final class MotionInfoOuterClass {
       public Builder clearRefId() {
         
         refId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int kDOIAIEDOEE_ ;
+      /**
+       * <code>uint32 KDOIAIEDOEE = 10;</code>
+       * @return The kDOIAIEDOEE.
+       */
+      @java.lang.Override
+      public int getKDOIAIEDOEE() {
+        return kDOIAIEDOEE_;
+      }
+      /**
+       * <code>uint32 KDOIAIEDOEE = 10;</code>
+       * @param value The kDOIAIEDOEE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKDOIAIEDOEE(int value) {
+        
+        kDOIAIEDOEE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 KDOIAIEDOEE = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKDOIAIEDOEE() {
+        
+        kDOIAIEDOEE_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int state_ = 0;
+      /**
+       * <code>.MotionState state = 4;</code>
+       * @return The enum numeric value on the wire for state.
+       */
+      @java.lang.Override public int getStateValue() {
+        return state_;
+      }
+      /**
+       * <code>.MotionState state = 4;</code>
+       * @param value The enum numeric value on the wire for state to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStateValue(int value) {
+        
+        state_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MotionState state = 4;</code>
+       * @return The state.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.MotionStateOuterClass.MotionState getState() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.MotionStateOuterClass.MotionState result = emu.grasscutter.net.proto.MotionStateOuterClass.MotionState.valueOf(state_);
+        return result == null ? emu.grasscutter.net.proto.MotionStateOuterClass.MotionState.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.MotionState state = 4;</code>
+       * @param value The state to set.
+       * @return This builder for chaining.
+       */
+      public Builder setState(emu.grasscutter.net.proto.MotionStateOuterClass.MotionState value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        state_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MotionState state = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearState() {
+        
+        state_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int eOJMCFKMAOH_ ;
+      /**
+       * <code>uint32 EOJMCFKMAOH = 11;</code>
+       * @return The eOJMCFKMAOH.
+       */
+      @java.lang.Override
+      public int getEOJMCFKMAOH() {
+        return eOJMCFKMAOH_;
+      }
+      /**
+       * <code>uint32 EOJMCFKMAOH = 11;</code>
+       * @param value The eOJMCFKMAOH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEOJMCFKMAOH(int value) {
+        
+        eOJMCFKMAOH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 EOJMCFKMAOH = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEOJMCFKMAOH() {
+        
+        eOJMCFKMAOH_ = 0;
         onChanged();
         return this;
       }
@@ -1959,68 +2021,6 @@ public final class MotionInfoOuterClass {
       public Builder clearIntervalVelocity() {
         
         intervalVelocity_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int bIMCAJGDDOI_ ;
-      /**
-       * <code>uint32 BIMCAJGDDOI = 10;</code>
-       * @return The bIMCAJGDDOI.
-       */
-      @java.lang.Override
-      public int getBIMCAJGDDOI() {
-        return bIMCAJGDDOI_;
-      }
-      /**
-       * <code>uint32 BIMCAJGDDOI = 10;</code>
-       * @param value The bIMCAJGDDOI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBIMCAJGDDOI(int value) {
-        
-        bIMCAJGDDOI_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BIMCAJGDDOI = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBIMCAJGDDOI() {
-        
-        bIMCAJGDDOI_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int hJCDICMBDKE_ ;
-      /**
-       * <code>uint32 HJCDICMBDKE = 11;</code>
-       * @return The hJCDICMBDKE.
-       */
-      @java.lang.Override
-      public int getHJCDICMBDKE() {
-        return hJCDICMBDKE_;
-      }
-      /**
-       * <code>uint32 HJCDICMBDKE = 11;</code>
-       * @param value The hJCDICMBDKE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHJCDICMBDKE(int value) {
-        
-        hJCDICMBDKE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 HJCDICMBDKE = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHJCDICMBDKE() {
-        
-        hJCDICMBDKE_ = 0;
         onChanged();
         return this;
       }
@@ -2093,12 +2093,12 @@ public final class MotionInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\020MotionInfo.proto\032\014Vector.proto\032\021Motion" +
       "State.proto\"\211\002\n\nMotionInfo\022\024\n\003pos\030\001 \001(\0132" +
-      "\007.Vector\022\024\n\003rot\030\002 \001(\0132\007.Vector\022\026\n\005speed\030" +
-      "\003 \001(\0132\007.Vector\022\033\n\005state\030\004 \001(\0162\014.MotionSt" +
-      "ate\022\027\n\006params\030\005 \003(\0132\007.Vector\022\030\n\007ref_pos\030" +
-      "\006 \001(\0132\007.Vector\022\016\n\006ref_id\030\007 \001(\r\022\022\n\nscene_" +
-      "time\030\010 \001(\r\022\031\n\021interval_velocity\030\t \001(\004\022\023\n" +
-      "\013BIMCAJGDDOI\030\n \001(\r\022\023\n\013HJCDICMBDKE\030\013 \001(\rB" +
+      "\007.Vector\022\024\n\003rot\030\002 \001(\0132\007.Vector\022\027\n\006params" +
+      "\030\005 \003(\0132\007.Vector\022\030\n\007ref_pos\030\006 \001(\0132\007.Vecto" +
+      "r\022\026\n\005speed\030\003 \001(\0132\007.Vector\022\016\n\006ref_id\030\007 \001(" +
+      "\r\022\023\n\013KDOIAIEDOEE\030\n \001(\r\022\033\n\005state\030\004 \001(\0162\014." +
+      "MotionState\022\023\n\013EOJMCFKMAOH\030\013 \001(\r\022\022\n\nscen" +
+      "e_time\030\010 \001(\r\022\031\n\021interval_velocity\030\t \001(\004B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -2112,7 +2112,7 @@ public final class MotionInfoOuterClass {
     internal_static_MotionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MotionInfo_descriptor,
-        new java.lang.String[] { "Pos", "Rot", "Speed", "State", "Params", "RefPos", "RefId", "SceneTime", "IntervalVelocity", "BIMCAJGDDOI", "HJCDICMBDKE", });
+        new java.lang.String[] { "Pos", "Rot", "Params", "RefPos", "Speed", "RefId", "KDOIAIEDOEE", "State", "EOJMCFKMAOH", "SceneTime", "IntervalVelocity", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MotionStateOuterClass.getDescriptor();
   }

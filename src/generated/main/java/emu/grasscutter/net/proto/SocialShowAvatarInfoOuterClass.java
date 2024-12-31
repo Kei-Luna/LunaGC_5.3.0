@@ -19,6 +19,24 @@ public final class SocialShowAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 costume_id = 3;</code>
+     * @return The costumeId.
+     */
+    int getCostumeId();
+
+    /**
+     * <code>uint32 avatar_element_type = 5;</code>
+     * @return The avatarElementType.
+     */
+    int getAvatarElementType();
+
+    /**
+     * <code>uint32 talent_level = 4;</code>
+     * @return The talentLevel.
+     */
+    int getTalentLevel();
+
+    /**
      * <code>uint32 avatar_id = 1;</code>
      * @return The avatarId.
      */
@@ -29,24 +47,6 @@ public final class SocialShowAvatarInfoOuterClass {
      * @return The level.
      */
     int getLevel();
-
-    /**
-     * <code>uint32 costume_id = 3;</code>
-     * @return The costumeId.
-     */
-    int getCostumeId();
-
-    /**
-     * <code>uint32 AEPNHMCDBFL = 4;</code>
-     * @return The aEPNHMCDBFL.
-     */
-    int getAEPNHMCDBFL();
-
-    /**
-     * <code>uint32 CMAFEKGPACG = 5;</code>
-     * @return The cMAFEKGPACG.
-     */
-    int getCMAFEKGPACG();
   }
   /**
    * Protobuf type {@code SocialShowAvatarInfo}
@@ -110,12 +110,12 @@ public final class SocialShowAvatarInfoOuterClass {
             }
             case 32: {
 
-              aEPNHMCDBFL_ = input.readUInt32();
+              talentLevel_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              cMAFEKGPACG_ = input.readUInt32();
+              avatarElementType_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,6 +150,39 @@ public final class SocialShowAvatarInfoOuterClass {
               emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.class, emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.Builder.class);
     }
 
+    public static final int COSTUME_ID_FIELD_NUMBER = 3;
+    private int costumeId_;
+    /**
+     * <code>uint32 costume_id = 3;</code>
+     * @return The costumeId.
+     */
+    @java.lang.Override
+    public int getCostumeId() {
+      return costumeId_;
+    }
+
+    public static final int AVATAR_ELEMENT_TYPE_FIELD_NUMBER = 5;
+    private int avatarElementType_;
+    /**
+     * <code>uint32 avatar_element_type = 5;</code>
+     * @return The avatarElementType.
+     */
+    @java.lang.Override
+    public int getAvatarElementType() {
+      return avatarElementType_;
+    }
+
+    public static final int TALENT_LEVEL_FIELD_NUMBER = 4;
+    private int talentLevel_;
+    /**
+     * <code>uint32 talent_level = 4;</code>
+     * @return The talentLevel.
+     */
+    @java.lang.Override
+    public int getTalentLevel() {
+      return talentLevel_;
+    }
+
     public static final int AVATAR_ID_FIELD_NUMBER = 1;
     private int avatarId_;
     /**
@@ -170,39 +203,6 @@ public final class SocialShowAvatarInfoOuterClass {
     @java.lang.Override
     public int getLevel() {
       return level_;
-    }
-
-    public static final int COSTUME_ID_FIELD_NUMBER = 3;
-    private int costumeId_;
-    /**
-     * <code>uint32 costume_id = 3;</code>
-     * @return The costumeId.
-     */
-    @java.lang.Override
-    public int getCostumeId() {
-      return costumeId_;
-    }
-
-    public static final int AEPNHMCDBFL_FIELD_NUMBER = 4;
-    private int aEPNHMCDBFL_;
-    /**
-     * <code>uint32 AEPNHMCDBFL = 4;</code>
-     * @return The aEPNHMCDBFL.
-     */
-    @java.lang.Override
-    public int getAEPNHMCDBFL() {
-      return aEPNHMCDBFL_;
-    }
-
-    public static final int CMAFEKGPACG_FIELD_NUMBER = 5;
-    private int cMAFEKGPACG_;
-    /**
-     * <code>uint32 CMAFEKGPACG = 5;</code>
-     * @return The cMAFEKGPACG.
-     */
-    @java.lang.Override
-    public int getCMAFEKGPACG() {
-      return cMAFEKGPACG_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -228,11 +228,11 @@ public final class SocialShowAvatarInfoOuterClass {
       if (costumeId_ != 0) {
         output.writeUInt32(3, costumeId_);
       }
-      if (aEPNHMCDBFL_ != 0) {
-        output.writeUInt32(4, aEPNHMCDBFL_);
+      if (talentLevel_ != 0) {
+        output.writeUInt32(4, talentLevel_);
       }
-      if (cMAFEKGPACG_ != 0) {
-        output.writeUInt32(5, cMAFEKGPACG_);
+      if (avatarElementType_ != 0) {
+        output.writeUInt32(5, avatarElementType_);
       }
       unknownFields.writeTo(output);
     }
@@ -255,13 +255,13 @@ public final class SocialShowAvatarInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, costumeId_);
       }
-      if (aEPNHMCDBFL_ != 0) {
+      if (talentLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, aEPNHMCDBFL_);
+          .computeUInt32Size(4, talentLevel_);
       }
-      if (cMAFEKGPACG_ != 0) {
+      if (avatarElementType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, cMAFEKGPACG_);
+          .computeUInt32Size(5, avatarElementType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,16 +278,16 @@ public final class SocialShowAvatarInfoOuterClass {
       }
       emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo other = (emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo) obj;
 
+      if (getCostumeId()
+          != other.getCostumeId()) return false;
+      if (getAvatarElementType()
+          != other.getAvatarElementType()) return false;
+      if (getTalentLevel()
+          != other.getTalentLevel()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
       if (getLevel()
           != other.getLevel()) return false;
-      if (getCostumeId()
-          != other.getCostumeId()) return false;
-      if (getAEPNHMCDBFL()
-          != other.getAEPNHMCDBFL()) return false;
-      if (getCMAFEKGPACG()
-          != other.getCMAFEKGPACG()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -299,16 +299,16 @@ public final class SocialShowAvatarInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCostumeId();
+      hash = (37 * hash) + AVATAR_ELEMENT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarElementType();
+      hash = (37 * hash) + TALENT_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getTalentLevel();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
-      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCostumeId();
-      hash = (37 * hash) + AEPNHMCDBFL_FIELD_NUMBER;
-      hash = (53 * hash) + getAEPNHMCDBFL();
-      hash = (37 * hash) + CMAFEKGPACG_FIELD_NUMBER;
-      hash = (53 * hash) + getCMAFEKGPACG();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,15 +442,15 @@ public final class SocialShowAvatarInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        costumeId_ = 0;
+
+        avatarElementType_ = 0;
+
+        talentLevel_ = 0;
+
         avatarId_ = 0;
 
         level_ = 0;
-
-        costumeId_ = 0;
-
-        aEPNHMCDBFL_ = 0;
-
-        cMAFEKGPACG_ = 0;
 
         return this;
       }
@@ -478,11 +478,11 @@ public final class SocialShowAvatarInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo result = new emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo(this);
+        result.costumeId_ = costumeId_;
+        result.avatarElementType_ = avatarElementType_;
+        result.talentLevel_ = talentLevel_;
         result.avatarId_ = avatarId_;
         result.level_ = level_;
-        result.costumeId_ = costumeId_;
-        result.aEPNHMCDBFL_ = aEPNHMCDBFL_;
-        result.cMAFEKGPACG_ = cMAFEKGPACG_;
         onBuilt();
         return result;
       }
@@ -531,20 +531,20 @@ public final class SocialShowAvatarInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo other) {
         if (other == emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.getDefaultInstance()) return this;
+        if (other.getCostumeId() != 0) {
+          setCostumeId(other.getCostumeId());
+        }
+        if (other.getAvatarElementType() != 0) {
+          setAvatarElementType(other.getAvatarElementType());
+        }
+        if (other.getTalentLevel() != 0) {
+          setTalentLevel(other.getTalentLevel());
+        }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
         }
         if (other.getLevel() != 0) {
           setLevel(other.getLevel());
-        }
-        if (other.getCostumeId() != 0) {
-          setCostumeId(other.getCostumeId());
-        }
-        if (other.getAEPNHMCDBFL() != 0) {
-          setAEPNHMCDBFL(other.getAEPNHMCDBFL());
-        }
-        if (other.getCMAFEKGPACG() != 0) {
-          setCMAFEKGPACG(other.getCMAFEKGPACG());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -572,6 +572,99 @@ public final class SocialShowAvatarInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int costumeId_ ;
+      /**
+       * <code>uint32 costume_id = 3;</code>
+       * @return The costumeId.
+       */
+      @java.lang.Override
+      public int getCostumeId() {
+        return costumeId_;
+      }
+      /**
+       * <code>uint32 costume_id = 3;</code>
+       * @param value The costumeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCostumeId(int value) {
+        
+        costumeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 costume_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCostumeId() {
+        
+        costumeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int avatarElementType_ ;
+      /**
+       * <code>uint32 avatar_element_type = 5;</code>
+       * @return The avatarElementType.
+       */
+      @java.lang.Override
+      public int getAvatarElementType() {
+        return avatarElementType_;
+      }
+      /**
+       * <code>uint32 avatar_element_type = 5;</code>
+       * @param value The avatarElementType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarElementType(int value) {
+        
+        avatarElementType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 avatar_element_type = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarElementType() {
+        
+        avatarElementType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int talentLevel_ ;
+      /**
+       * <code>uint32 talent_level = 4;</code>
+       * @return The talentLevel.
+       */
+      @java.lang.Override
+      public int getTalentLevel() {
+        return talentLevel_;
+      }
+      /**
+       * <code>uint32 talent_level = 4;</code>
+       * @param value The talentLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTalentLevel(int value) {
+        
+        talentLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 talent_level = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTalentLevel() {
+        
+        talentLevel_ = 0;
+        onChanged();
         return this;
       }
 
@@ -633,99 +726,6 @@ public final class SocialShowAvatarInfoOuterClass {
       public Builder clearLevel() {
         
         level_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int costumeId_ ;
-      /**
-       * <code>uint32 costume_id = 3;</code>
-       * @return The costumeId.
-       */
-      @java.lang.Override
-      public int getCostumeId() {
-        return costumeId_;
-      }
-      /**
-       * <code>uint32 costume_id = 3;</code>
-       * @param value The costumeId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCostumeId(int value) {
-        
-        costumeId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 costume_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCostumeId() {
-        
-        costumeId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int aEPNHMCDBFL_ ;
-      /**
-       * <code>uint32 AEPNHMCDBFL = 4;</code>
-       * @return The aEPNHMCDBFL.
-       */
-      @java.lang.Override
-      public int getAEPNHMCDBFL() {
-        return aEPNHMCDBFL_;
-      }
-      /**
-       * <code>uint32 AEPNHMCDBFL = 4;</code>
-       * @param value The aEPNHMCDBFL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAEPNHMCDBFL(int value) {
-        
-        aEPNHMCDBFL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 AEPNHMCDBFL = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAEPNHMCDBFL() {
-        
-        aEPNHMCDBFL_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cMAFEKGPACG_ ;
-      /**
-       * <code>uint32 CMAFEKGPACG = 5;</code>
-       * @return The cMAFEKGPACG.
-       */
-      @java.lang.Override
-      public int getCMAFEKGPACG() {
-        return cMAFEKGPACG_;
-      }
-      /**
-       * <code>uint32 CMAFEKGPACG = 5;</code>
-       * @param value The cMAFEKGPACG to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCMAFEKGPACG(int value) {
-        
-        cMAFEKGPACG_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 CMAFEKGPACG = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCMAFEKGPACG() {
-        
-        cMAFEKGPACG_ = 0;
         onChanged();
         return this;
       }
@@ -796,11 +796,11 @@ public final class SocialShowAvatarInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032SocialShowAvatarInfo.proto\"v\n\024SocialSh" +
-      "owAvatarInfo\022\021\n\tavatar_id\030\001 \001(\r\022\r\n\005level" +
-      "\030\002 \001(\r\022\022\n\ncostume_id\030\003 \001(\r\022\023\n\013AEPNHMCDBF" +
-      "L\030\004 \001(\r\022\023\n\013CMAFEKGPACG\030\005 \001(\rB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\032SocialShowAvatarInfo.proto\"\177\n\024SocialSh" +
+      "owAvatarInfo\022\022\n\ncostume_id\030\003 \001(\r\022\033\n\023avat" +
+      "ar_element_type\030\005 \001(\r\022\024\n\014talent_level\030\004 " +
+      "\001(\r\022\021\n\tavatar_id\030\001 \001(\r\022\r\n\005level\030\002 \001(\rB\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -811,7 +811,7 @@ public final class SocialShowAvatarInfoOuterClass {
     internal_static_SocialShowAvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SocialShowAvatarInfo_descriptor,
-        new java.lang.String[] { "AvatarId", "Level", "CostumeId", "AEPNHMCDBFL", "CMAFEKGPACG", });
+        new java.lang.String[] { "CostumeId", "AvatarElementType", "TalentLevel", "AvatarId", "Level", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

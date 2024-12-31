@@ -19,22 +19,18 @@ public final class ScreenInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 live_id = 1;</code>
-     * @return The liveId.
-     */
-    int getLiveId();
-
-    /**
      * <code>uint32 projector_entity_id = 2;</code>
      * @return The projectorEntityId.
      */
     int getProjectorEntityId();
+
+    /**
+     * <code>uint32 live_id = 1;</code>
+     * @return The liveId.
+     */
+    int getLiveId();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code ScreenInfo}
    */
   public static final class ScreenInfo extends
@@ -121,17 +117,6 @@ public final class ScreenInfoOuterClass {
               emu.grasscutter.net.proto.ScreenInfoOuterClass.ScreenInfo.class, emu.grasscutter.net.proto.ScreenInfoOuterClass.ScreenInfo.Builder.class);
     }
 
-    public static final int LIVE_ID_FIELD_NUMBER = 1;
-    private int liveId_;
-    /**
-     * <code>uint32 live_id = 1;</code>
-     * @return The liveId.
-     */
-    @java.lang.Override
-    public int getLiveId() {
-      return liveId_;
-    }
-
     public static final int PROJECTOR_ENTITY_ID_FIELD_NUMBER = 2;
     private int projectorEntityId_;
     /**
@@ -141,6 +126,17 @@ public final class ScreenInfoOuterClass {
     @java.lang.Override
     public int getProjectorEntityId() {
       return projectorEntityId_;
+    }
+
+    public static final int LIVE_ID_FIELD_NUMBER = 1;
+    private int liveId_;
+    /**
+     * <code>uint32 live_id = 1;</code>
+     * @return The liveId.
+     */
+    @java.lang.Override
+    public int getLiveId() {
+      return liveId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -195,10 +191,10 @@ public final class ScreenInfoOuterClass {
       }
       emu.grasscutter.net.proto.ScreenInfoOuterClass.ScreenInfo other = (emu.grasscutter.net.proto.ScreenInfoOuterClass.ScreenInfo) obj;
 
-      if (getLiveId()
-          != other.getLiveId()) return false;
       if (getProjectorEntityId()
           != other.getProjectorEntityId()) return false;
+      if (getLiveId()
+          != other.getLiveId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -210,10 +206,10 @@ public final class ScreenInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LIVE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLiveId();
       hash = (37 * hash) + PROJECTOR_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getProjectorEntityId();
+      hash = (37 * hash) + LIVE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLiveId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -310,10 +306,6 @@ public final class ScreenInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code ScreenInfo}
      */
     public static final class Builder extends
@@ -351,9 +343,9 @@ public final class ScreenInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        liveId_ = 0;
-
         projectorEntityId_ = 0;
+
+        liveId_ = 0;
 
         return this;
       }
@@ -381,8 +373,8 @@ public final class ScreenInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ScreenInfoOuterClass.ScreenInfo buildPartial() {
         emu.grasscutter.net.proto.ScreenInfoOuterClass.ScreenInfo result = new emu.grasscutter.net.proto.ScreenInfoOuterClass.ScreenInfo(this);
-        result.liveId_ = liveId_;
         result.projectorEntityId_ = projectorEntityId_;
+        result.liveId_ = liveId_;
         onBuilt();
         return result;
       }
@@ -431,11 +423,11 @@ public final class ScreenInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ScreenInfoOuterClass.ScreenInfo other) {
         if (other == emu.grasscutter.net.proto.ScreenInfoOuterClass.ScreenInfo.getDefaultInstance()) return this;
-        if (other.getLiveId() != 0) {
-          setLiveId(other.getLiveId());
-        }
         if (other.getProjectorEntityId() != 0) {
           setProjectorEntityId(other.getProjectorEntityId());
+        }
+        if (other.getLiveId() != 0) {
+          setLiveId(other.getLiveId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -466,37 +458,6 @@ public final class ScreenInfoOuterClass {
         return this;
       }
 
-      private int liveId_ ;
-      /**
-       * <code>uint32 live_id = 1;</code>
-       * @return The liveId.
-       */
-      @java.lang.Override
-      public int getLiveId() {
-        return liveId_;
-      }
-      /**
-       * <code>uint32 live_id = 1;</code>
-       * @param value The liveId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLiveId(int value) {
-        
-        liveId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 live_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLiveId() {
-        
-        liveId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int projectorEntityId_ ;
       /**
        * <code>uint32 projector_entity_id = 2;</code>
@@ -524,6 +485,37 @@ public final class ScreenInfoOuterClass {
       public Builder clearProjectorEntityId() {
         
         projectorEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int liveId_ ;
+      /**
+       * <code>uint32 live_id = 1;</code>
+       * @return The liveId.
+       */
+      @java.lang.Override
+      public int getLiveId() {
+        return liveId_;
+      }
+      /**
+       * <code>uint32 live_id = 1;</code>
+       * @param value The liveId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLiveId(int value) {
+        
+        liveId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 live_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLiveId() {
+        
+        liveId_ = 0;
         onChanged();
         return this;
       }
@@ -594,8 +586,8 @@ public final class ScreenInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020ScreenInfo.proto\":\n\nScreenInfo\022\017\n\007live" +
-      "_id\030\001 \001(\r\022\033\n\023projector_entity_id\030\002 \001(\rB\033" +
+      "\n\020ScreenInfo.proto\":\n\nScreenInfo\022\033\n\023proj" +
+      "ector_entity_id\030\002 \001(\r\022\017\n\007live_id\030\001 \001(\rB\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -607,7 +599,7 @@ public final class ScreenInfoOuterClass {
     internal_static_ScreenInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScreenInfo_descriptor,
-        new java.lang.String[] { "LiveId", "ProjectorEntityId", });
+        new java.lang.String[] { "ProjectorEntityId", "LiveId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -36,10 +36,6 @@ public final class StatueGadgetInfoOuterClass {
     int getOpenedStatueUidList(int index);
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code StatueGadgetInfo}
    */
   public static final class StatueGadgetInfo extends
@@ -343,10 +339,6 @@ public final class StatueGadgetInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code StatueGadgetInfo}
      */
     public static final class Builder extends

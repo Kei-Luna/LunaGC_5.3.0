@@ -15,49 +15,45 @@ public final class FoundationStatusOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf enum {@code FoundationStatus}
    */
   public enum FoundationStatus
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>FOUNDATION_STATUS_NONE = 0;</code>
+     * <code>FoundationStatus_NONE = 0;</code>
      */
-    FOUNDATION_STATUS_NONE(0),
+    FoundationStatus_NONE(0),
     /**
-     * <code>FOUNDATION_STATUS_INIT = 1;</code>
+     * <code>FoundationStatus_INIT = 1;</code>
      */
-    FOUNDATION_STATUS_INIT(1),
+    FoundationStatus_INIT(1),
     /**
-     * <code>FOUNDATION_STATUS_BUILDING = 2;</code>
+     * <code>FoundationStatus_BUILDING = 2;</code>
      */
-    FOUNDATION_STATUS_BUILDING(2),
+    FoundationStatus_BUILDING(2),
     /**
-     * <code>FOUNDATION_STATUS_BUILT = 3;</code>
+     * <code>FoundationStatus_BUILT = 3;</code>
      */
-    FOUNDATION_STATUS_BUILT(3),
+    FoundationStatus_BUILT(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>FOUNDATION_STATUS_NONE = 0;</code>
+     * <code>FoundationStatus_NONE = 0;</code>
      */
-    public static final int FOUNDATION_STATUS_NONE_VALUE = 0;
+    public static final int FoundationStatus_NONE_VALUE = 0;
     /**
-     * <code>FOUNDATION_STATUS_INIT = 1;</code>
+     * <code>FoundationStatus_INIT = 1;</code>
      */
-    public static final int FOUNDATION_STATUS_INIT_VALUE = 1;
+    public static final int FoundationStatus_INIT_VALUE = 1;
     /**
-     * <code>FOUNDATION_STATUS_BUILDING = 2;</code>
+     * <code>FoundationStatus_BUILDING = 2;</code>
      */
-    public static final int FOUNDATION_STATUS_BUILDING_VALUE = 2;
+    public static final int FoundationStatus_BUILDING_VALUE = 2;
     /**
-     * <code>FOUNDATION_STATUS_BUILT = 3;</code>
+     * <code>FoundationStatus_BUILT = 3;</code>
      */
-    public static final int FOUNDATION_STATUS_BUILT_VALUE = 3;
+    public static final int FoundationStatus_BUILT_VALUE = 3;
 
 
     public final int getNumber() {
@@ -84,10 +80,10 @@ public final class FoundationStatusOuterClass {
      */
     public static FoundationStatus forNumber(int value) {
       switch (value) {
-        case 0: return FOUNDATION_STATUS_NONE;
-        case 1: return FOUNDATION_STATUS_INIT;
-        case 2: return FOUNDATION_STATUS_BUILDING;
-        case 3: return FOUNDATION_STATUS_BUILT;
+        case 0: return FoundationStatus_NONE;
+        case 1: return FoundationStatus_INIT;
+        case 2: return FoundationStatus_BUILDING;
+        case 3: return FoundationStatus_BUILT;
         default: return null;
       }
     }
@@ -153,11 +149,11 @@ public final class FoundationStatusOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026FoundationStatus.proto*\207\001\n\020FoundationS" +
-      "tatus\022\032\n\026FOUNDATION_STATUS_NONE\020\000\022\032\n\026FOU" +
-      "NDATION_STATUS_INIT\020\001\022\036\n\032FOUNDATION_STAT" +
-      "US_BUILDING\020\002\022\033\n\027FOUNDATION_STATUS_BUILT" +
-      "\020\003B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\n\026FoundationStatus.proto*\203\001\n\020FoundationS" +
+      "tatus\022\031\n\025FoundationStatus_NONE\020\000\022\031\n\025Foun" +
+      "dationStatus_INIT\020\001\022\035\n\031FoundationStatus_" +
+      "BUILDING\020\002\022\032\n\026FoundationStatus_BUILT\020\003B\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

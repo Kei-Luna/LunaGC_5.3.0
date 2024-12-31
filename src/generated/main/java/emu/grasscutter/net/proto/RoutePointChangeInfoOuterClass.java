@@ -19,29 +19,24 @@ public final class RoutePointChangeInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float target_velocity = 2;</code>
-     * @return The targetVelocity.
+     * <code>float DMBPNFCDAGK = 13;</code>
+     * @return The dMBPNFCDAGK.
      */
-    float getTargetVelocity();
+    float getDMBPNFCDAGK();
 
     /**
-     * <code>float wait_time = 3;</code>
-     * @return The waitTime.
+     * <code>float ICKDCIMPDHH = 8;</code>
+     * @return The iCKDCIMPDHH.
      */
-    float getWaitTime();
+    float getICKDCIMPDHH();
 
     /**
-     * <code>uint32 point_index = 15;</code>
-     * @return The pointIndex.
+     * <code>uint32 EIFACCCOKAL = 10;</code>
+     * @return The eIFACCCOKAL.
      */
-    int getPointIndex();
+    int getEIFACCCOKAL();
   }
   /**
-   * <pre>
-   * Version: 4.6.0
-   * Obfs: DDFCGDCJODG
-   * </pre>
-   *
    * Protobuf type {@code RoutePointChangeInfo}
    */
   public static final class RoutePointChangeInfo extends
@@ -86,19 +81,19 @@ public final class RoutePointChangeInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 21: {
+            case 69: {
 
-              targetVelocity_ = input.readFloat();
+              iCKDCIMPDHH_ = input.readFloat();
               break;
             }
-            case 29: {
+            case 80: {
 
-              waitTime_ = input.readFloat();
+              eIFACCCOKAL_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 109: {
 
-              pointIndex_ = input.readUInt32();
+              dMBPNFCDAGK_ = input.readFloat();
               break;
             }
             default: {
@@ -133,37 +128,37 @@ public final class RoutePointChangeInfoOuterClass {
               emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo.class, emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo.Builder.class);
     }
 
-    public static final int TARGET_VELOCITY_FIELD_NUMBER = 2;
-    private float targetVelocity_;
+    public static final int DMBPNFCDAGK_FIELD_NUMBER = 13;
+    private float dMBPNFCDAGK_;
     /**
-     * <code>float target_velocity = 2;</code>
-     * @return The targetVelocity.
+     * <code>float DMBPNFCDAGK = 13;</code>
+     * @return The dMBPNFCDAGK.
      */
     @java.lang.Override
-    public float getTargetVelocity() {
-      return targetVelocity_;
+    public float getDMBPNFCDAGK() {
+      return dMBPNFCDAGK_;
     }
 
-    public static final int WAIT_TIME_FIELD_NUMBER = 3;
-    private float waitTime_;
+    public static final int ICKDCIMPDHH_FIELD_NUMBER = 8;
+    private float iCKDCIMPDHH_;
     /**
-     * <code>float wait_time = 3;</code>
-     * @return The waitTime.
+     * <code>float ICKDCIMPDHH = 8;</code>
+     * @return The iCKDCIMPDHH.
      */
     @java.lang.Override
-    public float getWaitTime() {
-      return waitTime_;
+    public float getICKDCIMPDHH() {
+      return iCKDCIMPDHH_;
     }
 
-    public static final int POINT_INDEX_FIELD_NUMBER = 15;
-    private int pointIndex_;
+    public static final int EIFACCCOKAL_FIELD_NUMBER = 10;
+    private int eIFACCCOKAL_;
     /**
-     * <code>uint32 point_index = 15;</code>
-     * @return The pointIndex.
+     * <code>uint32 EIFACCCOKAL = 10;</code>
+     * @return The eIFACCCOKAL.
      */
     @java.lang.Override
-    public int getPointIndex() {
-      return pointIndex_;
+    public int getEIFACCCOKAL() {
+      return eIFACCCOKAL_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +175,14 @@ public final class RoutePointChangeInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetVelocity_ != 0F) {
-        output.writeFloat(2, targetVelocity_);
+      if (iCKDCIMPDHH_ != 0F) {
+        output.writeFloat(8, iCKDCIMPDHH_);
       }
-      if (waitTime_ != 0F) {
-        output.writeFloat(3, waitTime_);
+      if (eIFACCCOKAL_ != 0) {
+        output.writeUInt32(10, eIFACCCOKAL_);
       }
-      if (pointIndex_ != 0) {
-        output.writeUInt32(15, pointIndex_);
+      if (dMBPNFCDAGK_ != 0F) {
+        output.writeFloat(13, dMBPNFCDAGK_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +193,17 @@ public final class RoutePointChangeInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetVelocity_ != 0F) {
+      if (iCKDCIMPDHH_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(2, targetVelocity_);
+          .computeFloatSize(8, iCKDCIMPDHH_);
       }
-      if (waitTime_ != 0F) {
+      if (eIFACCCOKAL_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, waitTime_);
+          .computeUInt32Size(10, eIFACCCOKAL_);
       }
-      if (pointIndex_ != 0) {
+      if (dMBPNFCDAGK_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, pointIndex_);
+          .computeFloatSize(13, dMBPNFCDAGK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,14 +220,14 @@ public final class RoutePointChangeInfoOuterClass {
       }
       emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo other = (emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo) obj;
 
-      if (java.lang.Float.floatToIntBits(getTargetVelocity())
+      if (java.lang.Float.floatToIntBits(getDMBPNFCDAGK())
           != java.lang.Float.floatToIntBits(
-              other.getTargetVelocity())) return false;
-      if (java.lang.Float.floatToIntBits(getWaitTime())
+              other.getDMBPNFCDAGK())) return false;
+      if (java.lang.Float.floatToIntBits(getICKDCIMPDHH())
           != java.lang.Float.floatToIntBits(
-              other.getWaitTime())) return false;
-      if (getPointIndex()
-          != other.getPointIndex()) return false;
+              other.getICKDCIMPDHH())) return false;
+      if (getEIFACCCOKAL()
+          != other.getEIFACCCOKAL()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -244,14 +239,14 @@ public final class RoutePointChangeInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_VELOCITY_FIELD_NUMBER;
+      hash = (37 * hash) + DMBPNFCDAGK_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getTargetVelocity());
-      hash = (37 * hash) + WAIT_TIME_FIELD_NUMBER;
+          getDMBPNFCDAGK());
+      hash = (37 * hash) + ICKDCIMPDHH_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getWaitTime());
-      hash = (37 * hash) + POINT_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getPointIndex();
+          getICKDCIMPDHH());
+      hash = (37 * hash) + EIFACCCOKAL_FIELD_NUMBER;
+      hash = (53 * hash) + getEIFACCCOKAL();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -348,11 +343,6 @@ public final class RoutePointChangeInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Version: 4.6.0
-     * Obfs: DDFCGDCJODG
-     * </pre>
-     *
      * Protobuf type {@code RoutePointChangeInfo}
      */
     public static final class Builder extends
@@ -390,11 +380,11 @@ public final class RoutePointChangeInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetVelocity_ = 0F;
+        dMBPNFCDAGK_ = 0F;
 
-        waitTime_ = 0F;
+        iCKDCIMPDHH_ = 0F;
 
-        pointIndex_ = 0;
+        eIFACCCOKAL_ = 0;
 
         return this;
       }
@@ -422,9 +412,9 @@ public final class RoutePointChangeInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo buildPartial() {
         emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo result = new emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo(this);
-        result.targetVelocity_ = targetVelocity_;
-        result.waitTime_ = waitTime_;
-        result.pointIndex_ = pointIndex_;
+        result.dMBPNFCDAGK_ = dMBPNFCDAGK_;
+        result.iCKDCIMPDHH_ = iCKDCIMPDHH_;
+        result.eIFACCCOKAL_ = eIFACCCOKAL_;
         onBuilt();
         return result;
       }
@@ -473,14 +463,14 @@ public final class RoutePointChangeInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo other) {
         if (other == emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo.getDefaultInstance()) return this;
-        if (other.getTargetVelocity() != 0F) {
-          setTargetVelocity(other.getTargetVelocity());
+        if (other.getDMBPNFCDAGK() != 0F) {
+          setDMBPNFCDAGK(other.getDMBPNFCDAGK());
         }
-        if (other.getWaitTime() != 0F) {
-          setWaitTime(other.getWaitTime());
+        if (other.getICKDCIMPDHH() != 0F) {
+          setICKDCIMPDHH(other.getICKDCIMPDHH());
         }
-        if (other.getPointIndex() != 0) {
-          setPointIndex(other.getPointIndex());
+        if (other.getEIFACCCOKAL() != 0) {
+          setEIFACCCOKAL(other.getEIFACCCOKAL());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -511,95 +501,95 @@ public final class RoutePointChangeInfoOuterClass {
         return this;
       }
 
-      private float targetVelocity_ ;
+      private float dMBPNFCDAGK_ ;
       /**
-       * <code>float target_velocity = 2;</code>
-       * @return The targetVelocity.
+       * <code>float DMBPNFCDAGK = 13;</code>
+       * @return The dMBPNFCDAGK.
        */
       @java.lang.Override
-      public float getTargetVelocity() {
-        return targetVelocity_;
+      public float getDMBPNFCDAGK() {
+        return dMBPNFCDAGK_;
       }
       /**
-       * <code>float target_velocity = 2;</code>
-       * @param value The targetVelocity to set.
+       * <code>float DMBPNFCDAGK = 13;</code>
+       * @param value The dMBPNFCDAGK to set.
        * @return This builder for chaining.
        */
-      public Builder setTargetVelocity(float value) {
+      public Builder setDMBPNFCDAGK(float value) {
         
-        targetVelocity_ = value;
+        dMBPNFCDAGK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float target_velocity = 2;</code>
+       * <code>float DMBPNFCDAGK = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTargetVelocity() {
+      public Builder clearDMBPNFCDAGK() {
         
-        targetVelocity_ = 0F;
+        dMBPNFCDAGK_ = 0F;
         onChanged();
         return this;
       }
 
-      private float waitTime_ ;
+      private float iCKDCIMPDHH_ ;
       /**
-       * <code>float wait_time = 3;</code>
-       * @return The waitTime.
+       * <code>float ICKDCIMPDHH = 8;</code>
+       * @return The iCKDCIMPDHH.
        */
       @java.lang.Override
-      public float getWaitTime() {
-        return waitTime_;
+      public float getICKDCIMPDHH() {
+        return iCKDCIMPDHH_;
       }
       /**
-       * <code>float wait_time = 3;</code>
-       * @param value The waitTime to set.
+       * <code>float ICKDCIMPDHH = 8;</code>
+       * @param value The iCKDCIMPDHH to set.
        * @return This builder for chaining.
        */
-      public Builder setWaitTime(float value) {
+      public Builder setICKDCIMPDHH(float value) {
         
-        waitTime_ = value;
+        iCKDCIMPDHH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float wait_time = 3;</code>
+       * <code>float ICKDCIMPDHH = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearWaitTime() {
+      public Builder clearICKDCIMPDHH() {
         
-        waitTime_ = 0F;
+        iCKDCIMPDHH_ = 0F;
         onChanged();
         return this;
       }
 
-      private int pointIndex_ ;
+      private int eIFACCCOKAL_ ;
       /**
-       * <code>uint32 point_index = 15;</code>
-       * @return The pointIndex.
+       * <code>uint32 EIFACCCOKAL = 10;</code>
+       * @return The eIFACCCOKAL.
        */
       @java.lang.Override
-      public int getPointIndex() {
-        return pointIndex_;
+      public int getEIFACCCOKAL() {
+        return eIFACCCOKAL_;
       }
       /**
-       * <code>uint32 point_index = 15;</code>
-       * @param value The pointIndex to set.
+       * <code>uint32 EIFACCCOKAL = 10;</code>
+       * @param value The eIFACCCOKAL to set.
        * @return This builder for chaining.
        */
-      public Builder setPointIndex(int value) {
+      public Builder setEIFACCCOKAL(int value) {
         
-        pointIndex_ = value;
+        eIFACCCOKAL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 point_index = 15;</code>
+       * <code>uint32 EIFACCCOKAL = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPointIndex() {
+      public Builder clearEIFACCCOKAL() {
         
-        pointIndex_ = 0;
+        eIFACCCOKAL_ = 0;
         onChanged();
         return this;
       }
@@ -670,10 +660,10 @@ public final class RoutePointChangeInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032RoutePointChangeInfo.proto\"W\n\024RoutePoi" +
-      "ntChangeInfo\022\027\n\017target_velocity\030\002 \001(\002\022\021\n" +
-      "\twait_time\030\003 \001(\002\022\023\n\013point_index\030\017 \001(\rB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n\032RoutePointChangeInfo.proto\"U\n\024RoutePoi" +
+      "ntChangeInfo\022\023\n\013DMBPNFCDAGK\030\r \001(\002\022\023\n\013ICK" +
+      "DCIMPDHH\030\010 \001(\002\022\023\n\013EIFACCCOKAL\030\n \001(\rB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -684,7 +674,7 @@ public final class RoutePointChangeInfoOuterClass {
     internal_static_RoutePointChangeInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RoutePointChangeInfo_descriptor,
-        new java.lang.String[] { "TargetVelocity", "WaitTime", "PointIndex", });
+        new java.lang.String[] { "DMBPNFCDAGK", "ICKDCIMPDHH", "EIFACCCOKAL", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

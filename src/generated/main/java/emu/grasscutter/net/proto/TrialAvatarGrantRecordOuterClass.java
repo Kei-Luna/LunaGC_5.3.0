@@ -31,10 +31,6 @@ public final class TrialAvatarGrantRecordOuterClass {
     int getFromParentQuestId();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code TrialAvatarGrantRecord}
    */
   public static final class TrialAvatarGrantRecord extends
@@ -544,10 +540,6 @@ public final class TrialAvatarGrantRecordOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code TrialAvatarGrantRecord}
      */
     public static final class Builder extends

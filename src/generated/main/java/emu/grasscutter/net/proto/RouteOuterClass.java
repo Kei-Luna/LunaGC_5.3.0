@@ -49,10 +49,6 @@ public final class RouteOuterClass {
     int getRouteType();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code Route}
    */
   public static final class Route extends
@@ -368,10 +364,6 @@ public final class RouteOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code Route}
      */
     public static final class Builder extends

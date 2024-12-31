@@ -19,28 +19,38 @@ public final class ClientGadgetInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 camp_id = 1;</code>
-     * @return The campId.
+     * <code>repeated uint32 target_entity_id_list = 8;</code>
+     * @return A list containing the targetEntityIdList.
      */
-    int getCampId();
+    java.util.List<java.lang.Integer> getTargetEntityIdListList();
+    /**
+     * <code>repeated uint32 target_entity_id_list = 8;</code>
+     * @return The count of targetEntityIdList.
+     */
+    int getTargetEntityIdListCount();
+    /**
+     * <code>repeated uint32 target_entity_id_list = 8;</code>
+     * @param index The index of the element to return.
+     * @return The targetEntityIdList at the given index.
+     */
+    int getTargetEntityIdList(int index);
 
     /**
-     * <code>uint32 camp_type = 2;</code>
-     * @return The campType.
+     * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+     * @return A list containing the gMAJFIJLFPI.
      */
-    int getCampType();
-
+    java.util.List<java.lang.Integer> getGMAJFIJLFPIList();
     /**
-     * <code>uint64 guid = 3;</code>
-     * @return The guid.
+     * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+     * @return The count of gMAJFIJLFPI.
      */
-    long getGuid();
-
+    int getGMAJFIJLFPICount();
     /**
-     * <code>uint32 owner_entity_id = 4;</code>
-     * @return The ownerEntityId.
+     * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+     * @param index The index of the element to return.
+     * @return The gMAJFIJLFPI at the given index.
      */
-    int getOwnerEntityId();
+    int getGMAJFIJLFPI(int index);
 
     /**
      * <code>uint32 target_entity_id = 5;</code>
@@ -61,44 +71,30 @@ public final class ClientGadgetInfoOuterClass {
     boolean getIsPeerIdFromPlayer();
 
     /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @return A list containing the targetEntityIdList.
+     * <code>uint32 camp_type = 2;</code>
+     * @return The campType.
      */
-    java.util.List<java.lang.Integer> getTargetEntityIdListList();
-    /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @return The count of targetEntityIdList.
-     */
-    int getTargetEntityIdListCount();
-    /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The targetEntityIdList at the given index.
-     */
-    int getTargetEntityIdList(int index);
+    int getCampType();
 
     /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @return A list containing the targetLockPointIndexList.
+     * <code>uint64 guid = 3;</code>
+     * @return The guid.
      */
-    java.util.List<java.lang.Integer> getTargetLockPointIndexListList();
+    long getGuid();
+
     /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @return The count of targetLockPointIndexList.
+     * <code>uint32 owner_entity_id = 4;</code>
+     * @return The ownerEntityId.
      */
-    int getTargetLockPointIndexListCount();
+    int getOwnerEntityId();
+
     /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @param index The index of the element to return.
-     * @return The targetLockPointIndexList at the given index.
+     * <code>uint32 camp_id = 1;</code>
+     * @return The campId.
      */
-    int getTargetLockPointIndexList(int index);
+    int getCampId();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code ClientGadgetInfo}
    */
   public static final class ClientGadgetInfo extends
@@ -112,7 +108,7 @@ public final class ClientGadgetInfoOuterClass {
     }
     private ClientGadgetInfo() {
       targetEntityIdList_ = emptyIntList();
-      targetLockPointIndexList_ = emptyIntList();
+      gMAJFIJLFPI_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -204,21 +200,21 @@ public final class ClientGadgetInfoOuterClass {
             }
             case 72: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                targetLockPointIndexList_ = newIntList();
+                gMAJFIJLFPI_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
-              targetLockPointIndexList_.addInt(input.readUInt32());
+              gMAJFIJLFPI_.addInt(input.readUInt32());
               break;
             }
             case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                targetLockPointIndexList_ = newIntList();
+                gMAJFIJLFPI_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                targetLockPointIndexList_.addInt(input.readUInt32());
+                gMAJFIJLFPI_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -242,7 +238,7 @@ public final class ClientGadgetInfoOuterClass {
           targetEntityIdList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          targetLockPointIndexList_.makeImmutable(); // C
+          gMAJFIJLFPI_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -261,15 +257,93 @@ public final class ClientGadgetInfoOuterClass {
               emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo.class, emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo.Builder.class);
     }
 
-    public static final int CAMP_ID_FIELD_NUMBER = 1;
-    private int campId_;
+    public static final int TARGET_ENTITY_ID_LIST_FIELD_NUMBER = 8;
+    private com.google.protobuf.Internal.IntList targetEntityIdList_;
     /**
-     * <code>uint32 camp_id = 1;</code>
-     * @return The campId.
+     * <code>repeated uint32 target_entity_id_list = 8;</code>
+     * @return A list containing the targetEntityIdList.
      */
     @java.lang.Override
-    public int getCampId() {
-      return campId_;
+    public java.util.List<java.lang.Integer>
+        getTargetEntityIdListList() {
+      return targetEntityIdList_;
+    }
+    /**
+     * <code>repeated uint32 target_entity_id_list = 8;</code>
+     * @return The count of targetEntityIdList.
+     */
+    public int getTargetEntityIdListCount() {
+      return targetEntityIdList_.size();
+    }
+    /**
+     * <code>repeated uint32 target_entity_id_list = 8;</code>
+     * @param index The index of the element to return.
+     * @return The targetEntityIdList at the given index.
+     */
+    public int getTargetEntityIdList(int index) {
+      return targetEntityIdList_.getInt(index);
+    }
+    private int targetEntityIdListMemoizedSerializedSize = -1;
+
+    public static final int GMAJFIJLFPI_FIELD_NUMBER = 9;
+    private com.google.protobuf.Internal.IntList gMAJFIJLFPI_;
+    /**
+     * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+     * @return A list containing the gMAJFIJLFPI.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getGMAJFIJLFPIList() {
+      return gMAJFIJLFPI_;
+    }
+    /**
+     * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+     * @return The count of gMAJFIJLFPI.
+     */
+    public int getGMAJFIJLFPICount() {
+      return gMAJFIJLFPI_.size();
+    }
+    /**
+     * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+     * @param index The index of the element to return.
+     * @return The gMAJFIJLFPI at the given index.
+     */
+    public int getGMAJFIJLFPI(int index) {
+      return gMAJFIJLFPI_.getInt(index);
+    }
+    private int gMAJFIJLFPIMemoizedSerializedSize = -1;
+
+    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 5;
+    private int targetEntityId_;
+    /**
+     * <code>uint32 target_entity_id = 5;</code>
+     * @return The targetEntityId.
+     */
+    @java.lang.Override
+    public int getTargetEntityId() {
+      return targetEntityId_;
+    }
+
+    public static final int ASYNC_LOAD_FIELD_NUMBER = 6;
+    private boolean asyncLoad_;
+    /**
+     * <code>bool async_load = 6;</code>
+     * @return The asyncLoad.
+     */
+    @java.lang.Override
+    public boolean getAsyncLoad() {
+      return asyncLoad_;
+    }
+
+    public static final int IS_PEER_ID_FROM_PLAYER_FIELD_NUMBER = 7;
+    private boolean isPeerIdFromPlayer_;
+    /**
+     * <code>bool is_peer_id_from_player = 7;</code>
+     * @return The isPeerIdFromPlayer.
+     */
+    @java.lang.Override
+    public boolean getIsPeerIdFromPlayer() {
+      return isPeerIdFromPlayer_;
     }
 
     public static final int CAMP_TYPE_FIELD_NUMBER = 2;
@@ -305,94 +379,16 @@ public final class ClientGadgetInfoOuterClass {
       return ownerEntityId_;
     }
 
-    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 5;
-    private int targetEntityId_;
+    public static final int CAMP_ID_FIELD_NUMBER = 1;
+    private int campId_;
     /**
-     * <code>uint32 target_entity_id = 5;</code>
-     * @return The targetEntityId.
+     * <code>uint32 camp_id = 1;</code>
+     * @return The campId.
      */
     @java.lang.Override
-    public int getTargetEntityId() {
-      return targetEntityId_;
+    public int getCampId() {
+      return campId_;
     }
-
-    public static final int ASYNC_LOAD_FIELD_NUMBER = 6;
-    private boolean asyncLoad_;
-    /**
-     * <code>bool async_load = 6;</code>
-     * @return The asyncLoad.
-     */
-    @java.lang.Override
-    public boolean getAsyncLoad() {
-      return asyncLoad_;
-    }
-
-    public static final int IS_PEER_ID_FROM_PLAYER_FIELD_NUMBER = 7;
-    private boolean isPeerIdFromPlayer_;
-    /**
-     * <code>bool is_peer_id_from_player = 7;</code>
-     * @return The isPeerIdFromPlayer.
-     */
-    @java.lang.Override
-    public boolean getIsPeerIdFromPlayer() {
-      return isPeerIdFromPlayer_;
-    }
-
-    public static final int TARGET_ENTITY_ID_LIST_FIELD_NUMBER = 8;
-    private com.google.protobuf.Internal.IntList targetEntityIdList_;
-    /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @return A list containing the targetEntityIdList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getTargetEntityIdListList() {
-      return targetEntityIdList_;
-    }
-    /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @return The count of targetEntityIdList.
-     */
-    public int getTargetEntityIdListCount() {
-      return targetEntityIdList_.size();
-    }
-    /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The targetEntityIdList at the given index.
-     */
-    public int getTargetEntityIdList(int index) {
-      return targetEntityIdList_.getInt(index);
-    }
-    private int targetEntityIdListMemoizedSerializedSize = -1;
-
-    public static final int TARGET_LOCK_POINT_INDEX_LIST_FIELD_NUMBER = 9;
-    private com.google.protobuf.Internal.IntList targetLockPointIndexList_;
-    /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @return A list containing the targetLockPointIndexList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getTargetLockPointIndexListList() {
-      return targetLockPointIndexList_;
-    }
-    /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @return The count of targetLockPointIndexList.
-     */
-    public int getTargetLockPointIndexListCount() {
-      return targetLockPointIndexList_.size();
-    }
-    /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @param index The index of the element to return.
-     * @return The targetLockPointIndexList at the given index.
-     */
-    public int getTargetLockPointIndexList(int index) {
-      return targetLockPointIndexList_.getInt(index);
-    }
-    private int targetLockPointIndexListMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -437,12 +433,12 @@ public final class ClientGadgetInfoOuterClass {
       for (int i = 0; i < targetEntityIdList_.size(); i++) {
         output.writeUInt32NoTag(targetEntityIdList_.getInt(i));
       }
-      if (getTargetLockPointIndexListList().size() > 0) {
+      if (getGMAJFIJLFPIList().size() > 0) {
         output.writeUInt32NoTag(74);
-        output.writeUInt32NoTag(targetLockPointIndexListMemoizedSerializedSize);
+        output.writeUInt32NoTag(gMAJFIJLFPIMemoizedSerializedSize);
       }
-      for (int i = 0; i < targetLockPointIndexList_.size(); i++) {
-        output.writeUInt32NoTag(targetLockPointIndexList_.getInt(i));
+      for (int i = 0; i < gMAJFIJLFPI_.size(); i++) {
+        output.writeUInt32NoTag(gMAJFIJLFPI_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -497,17 +493,17 @@ public final class ClientGadgetInfoOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < targetLockPointIndexList_.size(); i++) {
+        for (int i = 0; i < gMAJFIJLFPI_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(targetLockPointIndexList_.getInt(i));
+            .computeUInt32SizeNoTag(gMAJFIJLFPI_.getInt(i));
         }
         size += dataSize;
-        if (!getTargetLockPointIndexListList().isEmpty()) {
+        if (!getGMAJFIJLFPIList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        targetLockPointIndexListMemoizedSerializedSize = dataSize;
+        gMAJFIJLFPIMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -524,24 +520,24 @@ public final class ClientGadgetInfoOuterClass {
       }
       emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo other = (emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo) obj;
 
-      if (getCampId()
-          != other.getCampId()) return false;
-      if (getCampType()
-          != other.getCampType()) return false;
-      if (getGuid()
-          != other.getGuid()) return false;
-      if (getOwnerEntityId()
-          != other.getOwnerEntityId()) return false;
+      if (!getTargetEntityIdListList()
+          .equals(other.getTargetEntityIdListList())) return false;
+      if (!getGMAJFIJLFPIList()
+          .equals(other.getGMAJFIJLFPIList())) return false;
       if (getTargetEntityId()
           != other.getTargetEntityId()) return false;
       if (getAsyncLoad()
           != other.getAsyncLoad()) return false;
       if (getIsPeerIdFromPlayer()
           != other.getIsPeerIdFromPlayer()) return false;
-      if (!getTargetEntityIdListList()
-          .equals(other.getTargetEntityIdListList())) return false;
-      if (!getTargetLockPointIndexListList()
-          .equals(other.getTargetLockPointIndexListList())) return false;
+      if (getCampType()
+          != other.getCampType()) return false;
+      if (getGuid()
+          != other.getGuid()) return false;
+      if (getOwnerEntityId()
+          != other.getOwnerEntityId()) return false;
+      if (getCampId()
+          != other.getCampId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -553,15 +549,14 @@ public final class ClientGadgetInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CAMP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCampId();
-      hash = (37 * hash) + CAMP_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getCampType();
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getGuid());
-      hash = (37 * hash) + OWNER_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getOwnerEntityId();
+      if (getTargetEntityIdListCount() > 0) {
+        hash = (37 * hash) + TARGET_ENTITY_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getTargetEntityIdListList().hashCode();
+      }
+      if (getGMAJFIJLFPICount() > 0) {
+        hash = (37 * hash) + GMAJFIJLFPI_FIELD_NUMBER;
+        hash = (53 * hash) + getGMAJFIJLFPIList().hashCode();
+      }
       hash = (37 * hash) + TARGET_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTargetEntityId();
       hash = (37 * hash) + ASYNC_LOAD_FIELD_NUMBER;
@@ -570,14 +565,15 @@ public final class ClientGadgetInfoOuterClass {
       hash = (37 * hash) + IS_PEER_ID_FROM_PLAYER_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsPeerIdFromPlayer());
-      if (getTargetEntityIdListCount() > 0) {
-        hash = (37 * hash) + TARGET_ENTITY_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTargetEntityIdListList().hashCode();
-      }
-      if (getTargetLockPointIndexListCount() > 0) {
-        hash = (37 * hash) + TARGET_LOCK_POINT_INDEX_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTargetLockPointIndexListList().hashCode();
-      }
+      hash = (37 * hash) + CAMP_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getCampType();
+      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getGuid());
+      hash = (37 * hash) + OWNER_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getOwnerEntityId();
+      hash = (37 * hash) + CAMP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCampId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -674,10 +670,6 @@ public final class ClientGadgetInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code ClientGadgetInfo}
      */
     public static final class Builder extends
@@ -715,7 +707,15 @@ public final class ClientGadgetInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        campId_ = 0;
+        targetEntityIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        gMAJFIJLFPI_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        targetEntityId_ = 0;
+
+        asyncLoad_ = false;
+
+        isPeerIdFromPlayer_ = false;
 
         campType_ = 0;
 
@@ -723,16 +723,8 @@ public final class ClientGadgetInfoOuterClass {
 
         ownerEntityId_ = 0;
 
-        targetEntityId_ = 0;
+        campId_ = 0;
 
-        asyncLoad_ = false;
-
-        isPeerIdFromPlayer_ = false;
-
-        targetEntityIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        targetLockPointIndexList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -760,23 +752,23 @@ public final class ClientGadgetInfoOuterClass {
       public emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo buildPartial() {
         emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo result = new emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo(this);
         int from_bitField0_ = bitField0_;
-        result.campId_ = campId_;
-        result.campType_ = campType_;
-        result.guid_ = guid_;
-        result.ownerEntityId_ = ownerEntityId_;
-        result.targetEntityId_ = targetEntityId_;
-        result.asyncLoad_ = asyncLoad_;
-        result.isPeerIdFromPlayer_ = isPeerIdFromPlayer_;
         if (((bitField0_ & 0x00000001) != 0)) {
           targetEntityIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.targetEntityIdList_ = targetEntityIdList_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          targetLockPointIndexList_.makeImmutable();
+          gMAJFIJLFPI_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.targetLockPointIndexList_ = targetLockPointIndexList_;
+        result.gMAJFIJLFPI_ = gMAJFIJLFPI_;
+        result.targetEntityId_ = targetEntityId_;
+        result.asyncLoad_ = asyncLoad_;
+        result.isPeerIdFromPlayer_ = isPeerIdFromPlayer_;
+        result.campType_ = campType_;
+        result.guid_ = guid_;
+        result.ownerEntityId_ = ownerEntityId_;
+        result.campId_ = campId_;
         onBuilt();
         return result;
       }
@@ -825,27 +817,6 @@ public final class ClientGadgetInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo other) {
         if (other == emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo.getDefaultInstance()) return this;
-        if (other.getCampId() != 0) {
-          setCampId(other.getCampId());
-        }
-        if (other.getCampType() != 0) {
-          setCampType(other.getCampType());
-        }
-        if (other.getGuid() != 0L) {
-          setGuid(other.getGuid());
-        }
-        if (other.getOwnerEntityId() != 0) {
-          setOwnerEntityId(other.getOwnerEntityId());
-        }
-        if (other.getTargetEntityId() != 0) {
-          setTargetEntityId(other.getTargetEntityId());
-        }
-        if (other.getAsyncLoad() != false) {
-          setAsyncLoad(other.getAsyncLoad());
-        }
-        if (other.getIsPeerIdFromPlayer() != false) {
-          setIsPeerIdFromPlayer(other.getIsPeerIdFromPlayer());
-        }
         if (!other.targetEntityIdList_.isEmpty()) {
           if (targetEntityIdList_.isEmpty()) {
             targetEntityIdList_ = other.targetEntityIdList_;
@@ -856,15 +827,36 @@ public final class ClientGadgetInfoOuterClass {
           }
           onChanged();
         }
-        if (!other.targetLockPointIndexList_.isEmpty()) {
-          if (targetLockPointIndexList_.isEmpty()) {
-            targetLockPointIndexList_ = other.targetLockPointIndexList_;
+        if (!other.gMAJFIJLFPI_.isEmpty()) {
+          if (gMAJFIJLFPI_.isEmpty()) {
+            gMAJFIJLFPI_ = other.gMAJFIJLFPI_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureTargetLockPointIndexListIsMutable();
-            targetLockPointIndexList_.addAll(other.targetLockPointIndexList_);
+            ensureGMAJFIJLFPIIsMutable();
+            gMAJFIJLFPI_.addAll(other.gMAJFIJLFPI_);
           }
           onChanged();
+        }
+        if (other.getTargetEntityId() != 0) {
+          setTargetEntityId(other.getTargetEntityId());
+        }
+        if (other.getAsyncLoad() != false) {
+          setAsyncLoad(other.getAsyncLoad());
+        }
+        if (other.getIsPeerIdFromPlayer() != false) {
+          setIsPeerIdFromPlayer(other.getIsPeerIdFromPlayer());
+        }
+        if (other.getCampType() != 0) {
+          setCampType(other.getCampType());
+        }
+        if (other.getGuid() != 0L) {
+          setGuid(other.getGuid());
+        }
+        if (other.getOwnerEntityId() != 0) {
+          setOwnerEntityId(other.getOwnerEntityId());
+        }
+        if (other.getCampId() != 0) {
+          setCampId(other.getCampId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -896,126 +888,160 @@ public final class ClientGadgetInfoOuterClass {
       }
       private int bitField0_;
 
-      private int campId_ ;
-      /**
-       * <code>uint32 camp_id = 1;</code>
-       * @return The campId.
-       */
-      @java.lang.Override
-      public int getCampId() {
-        return campId_;
+      private com.google.protobuf.Internal.IntList targetEntityIdList_ = emptyIntList();
+      private void ensureTargetEntityIdListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          targetEntityIdList_ = mutableCopy(targetEntityIdList_);
+          bitField0_ |= 0x00000001;
+         }
       }
       /**
-       * <code>uint32 camp_id = 1;</code>
-       * @param value The campId to set.
+       * <code>repeated uint32 target_entity_id_list = 8;</code>
+       * @return A list containing the targetEntityIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getTargetEntityIdListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(targetEntityIdList_) : targetEntityIdList_;
+      }
+      /**
+       * <code>repeated uint32 target_entity_id_list = 8;</code>
+       * @return The count of targetEntityIdList.
+       */
+      public int getTargetEntityIdListCount() {
+        return targetEntityIdList_.size();
+      }
+      /**
+       * <code>repeated uint32 target_entity_id_list = 8;</code>
+       * @param index The index of the element to return.
+       * @return The targetEntityIdList at the given index.
+       */
+      public int getTargetEntityIdList(int index) {
+        return targetEntityIdList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 target_entity_id_list = 8;</code>
+       * @param index The index to set the value at.
+       * @param value The targetEntityIdList to set.
        * @return This builder for chaining.
        */
-      public Builder setCampId(int value) {
-        
-        campId_ = value;
+      public Builder setTargetEntityIdList(
+          int index, int value) {
+        ensureTargetEntityIdListIsMutable();
+        targetEntityIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 camp_id = 1;</code>
+       * <code>repeated uint32 target_entity_id_list = 8;</code>
+       * @param value The targetEntityIdList to add.
        * @return This builder for chaining.
        */
-      public Builder clearCampId() {
-        
-        campId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int campType_ ;
-      /**
-       * <code>uint32 camp_type = 2;</code>
-       * @return The campType.
-       */
-      @java.lang.Override
-      public int getCampType() {
-        return campType_;
-      }
-      /**
-       * <code>uint32 camp_type = 2;</code>
-       * @param value The campType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCampType(int value) {
-        
-        campType_ = value;
+      public Builder addTargetEntityIdList(int value) {
+        ensureTargetEntityIdListIsMutable();
+        targetEntityIdList_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 camp_type = 2;</code>
+       * <code>repeated uint32 target_entity_id_list = 8;</code>
+       * @param values The targetEntityIdList to add.
        * @return This builder for chaining.
        */
-      public Builder clearCampType() {
-        
-        campType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long guid_ ;
-      /**
-       * <code>uint64 guid = 3;</code>
-       * @return The guid.
-       */
-      @java.lang.Override
-      public long getGuid() {
-        return guid_;
-      }
-      /**
-       * <code>uint64 guid = 3;</code>
-       * @param value The guid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGuid(long value) {
-        
-        guid_ = value;
+      public Builder addAllTargetEntityIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureTargetEntityIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, targetEntityIdList_);
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 guid = 3;</code>
+       * <code>repeated uint32 target_entity_id_list = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGuid() {
-        
-        guid_ = 0L;
+      public Builder clearTargetEntityIdList() {
+        targetEntityIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private int ownerEntityId_ ;
-      /**
-       * <code>uint32 owner_entity_id = 4;</code>
-       * @return The ownerEntityId.
-       */
-      @java.lang.Override
-      public int getOwnerEntityId() {
-        return ownerEntityId_;
+      private com.google.protobuf.Internal.IntList gMAJFIJLFPI_ = emptyIntList();
+      private void ensureGMAJFIJLFPIIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          gMAJFIJLFPI_ = mutableCopy(gMAJFIJLFPI_);
+          bitField0_ |= 0x00000002;
+         }
       }
       /**
-       * <code>uint32 owner_entity_id = 4;</code>
-       * @param value The ownerEntityId to set.
+       * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+       * @return A list containing the gMAJFIJLFPI.
+       */
+      public java.util.List<java.lang.Integer>
+          getGMAJFIJLFPIList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(gMAJFIJLFPI_) : gMAJFIJLFPI_;
+      }
+      /**
+       * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+       * @return The count of gMAJFIJLFPI.
+       */
+      public int getGMAJFIJLFPICount() {
+        return gMAJFIJLFPI_.size();
+      }
+      /**
+       * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+       * @param index The index of the element to return.
+       * @return The gMAJFIJLFPI at the given index.
+       */
+      public int getGMAJFIJLFPI(int index) {
+        return gMAJFIJLFPI_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+       * @param index The index to set the value at.
+       * @param value The gMAJFIJLFPI to set.
        * @return This builder for chaining.
        */
-      public Builder setOwnerEntityId(int value) {
-        
-        ownerEntityId_ = value;
+      public Builder setGMAJFIJLFPI(
+          int index, int value) {
+        ensureGMAJFIJLFPIIsMutable();
+        gMAJFIJLFPI_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 owner_entity_id = 4;</code>
+       * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+       * @param value The gMAJFIJLFPI to add.
        * @return This builder for chaining.
        */
-      public Builder clearOwnerEntityId() {
-        
-        ownerEntityId_ = 0;
+      public Builder addGMAJFIJLFPI(int value) {
+        ensureGMAJFIJLFPIIsMutable();
+        gMAJFIJLFPI_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+       * @param values The gMAJFIJLFPI to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllGMAJFIJLFPI(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureGMAJFIJLFPIIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, gMAJFIJLFPI_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 GMAJFIJLFPI = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGMAJFIJLFPI() {
+        gMAJFIJLFPI_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -1113,160 +1139,126 @@ public final class ClientGadgetInfoOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList targetEntityIdList_ = emptyIntList();
-      private void ensureTargetEntityIdListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          targetEntityIdList_ = mutableCopy(targetEntityIdList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
+      private int campType_ ;
       /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @return A list containing the targetEntityIdList.
+       * <code>uint32 camp_type = 2;</code>
+       * @return The campType.
        */
-      public java.util.List<java.lang.Integer>
-          getTargetEntityIdListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(targetEntityIdList_) : targetEntityIdList_;
+      @java.lang.Override
+      public int getCampType() {
+        return campType_;
       }
       /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @return The count of targetEntityIdList.
-       */
-      public int getTargetEntityIdListCount() {
-        return targetEntityIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @param index The index of the element to return.
-       * @return The targetEntityIdList at the given index.
-       */
-      public int getTargetEntityIdList(int index) {
-        return targetEntityIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @param index The index to set the value at.
-       * @param value The targetEntityIdList to set.
+       * <code>uint32 camp_type = 2;</code>
+       * @param value The campType to set.
        * @return This builder for chaining.
        */
-      public Builder setTargetEntityIdList(
-          int index, int value) {
-        ensureTargetEntityIdListIsMutable();
-        targetEntityIdList_.setInt(index, value);
+      public Builder setCampType(int value) {
+        
+        campType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @param value The targetEntityIdList to add.
+       * <code>uint32 camp_type = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder addTargetEntityIdList(int value) {
-        ensureTargetEntityIdListIsMutable();
-        targetEntityIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @param values The targetEntityIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllTargetEntityIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTargetEntityIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, targetEntityIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetEntityIdList() {
-        targetEntityIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+      public Builder clearCampType() {
+        
+        campType_ = 0;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList targetLockPointIndexList_ = emptyIntList();
-      private void ensureTargetLockPointIndexListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          targetLockPointIndexList_ = mutableCopy(targetLockPointIndexList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
+      private long guid_ ;
       /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @return A list containing the targetLockPointIndexList.
+       * <code>uint64 guid = 3;</code>
+       * @return The guid.
        */
-      public java.util.List<java.lang.Integer>
-          getTargetLockPointIndexListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(targetLockPointIndexList_) : targetLockPointIndexList_;
+      @java.lang.Override
+      public long getGuid() {
+        return guid_;
       }
       /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @return The count of targetLockPointIndexList.
-       */
-      public int getTargetLockPointIndexListCount() {
-        return targetLockPointIndexList_.size();
-      }
-      /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @param index The index of the element to return.
-       * @return The targetLockPointIndexList at the given index.
-       */
-      public int getTargetLockPointIndexList(int index) {
-        return targetLockPointIndexList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @param index The index to set the value at.
-       * @param value The targetLockPointIndexList to set.
+       * <code>uint64 guid = 3;</code>
+       * @param value The guid to set.
        * @return This builder for chaining.
        */
-      public Builder setTargetLockPointIndexList(
-          int index, int value) {
-        ensureTargetLockPointIndexListIsMutable();
-        targetLockPointIndexList_.setInt(index, value);
+      public Builder setGuid(long value) {
+        
+        guid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @param value The targetLockPointIndexList to add.
+       * <code>uint64 guid = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder addTargetLockPointIndexList(int value) {
-        ensureTargetLockPointIndexListIsMutable();
-        targetLockPointIndexList_.addInt(value);
+      public Builder clearGuid() {
+        
+        guid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int ownerEntityId_ ;
+      /**
+       * <code>uint32 owner_entity_id = 4;</code>
+       * @return The ownerEntityId.
+       */
+      @java.lang.Override
+      public int getOwnerEntityId() {
+        return ownerEntityId_;
+      }
+      /**
+       * <code>uint32 owner_entity_id = 4;</code>
+       * @param value The ownerEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOwnerEntityId(int value) {
+        
+        ownerEntityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @param values The targetLockPointIndexList to add.
+       * <code>uint32 owner_entity_id = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder addAllTargetLockPointIndexList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTargetLockPointIndexListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, targetLockPointIndexList_);
+      public Builder clearOwnerEntityId() {
+        
+        ownerEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int campId_ ;
+      /**
+       * <code>uint32 camp_id = 1;</code>
+       * @return The campId.
+       */
+      @java.lang.Override
+      public int getCampId() {
+        return campId_;
+      }
+      /**
+       * <code>uint32 camp_id = 1;</code>
+       * @param value The campId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCampId(int value) {
+        
+        campId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
+       * <code>uint32 camp_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTargetLockPointIndexList() {
-        targetLockPointIndexList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+      public Builder clearCampId() {
+        
+        campId_ = 0;
         onChanged();
         return this;
       }
@@ -1337,14 +1329,14 @@ public final class ClientGadgetInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026ClientGadgetInfo.proto\"\360\001\n\020ClientGadge" +
-      "tInfo\022\017\n\007camp_id\030\001 \001(\r\022\021\n\tcamp_type\030\002 \001(" +
-      "\r\022\014\n\004guid\030\003 \001(\004\022\027\n\017owner_entity_id\030\004 \001(\r" +
-      "\022\030\n\020target_entity_id\030\005 \001(\r\022\022\n\nasync_load" +
-      "\030\006 \001(\010\022\036\n\026is_peer_id_from_player\030\007 \001(\010\022\035" +
-      "\n\025target_entity_id_list\030\010 \003(\r\022$\n\034target_" +
-      "lock_point_index_list\030\t \003(\rB\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "\n\026ClientGadgetInfo.proto\"\337\001\n\020ClientGadge" +
+      "tInfo\022\035\n\025target_entity_id_list\030\010 \003(\r\022\023\n\013" +
+      "GMAJFIJLFPI\030\t \003(\r\022\030\n\020target_entity_id\030\005 " +
+      "\001(\r\022\022\n\nasync_load\030\006 \001(\010\022\036\n\026is_peer_id_fr" +
+      "om_player\030\007 \001(\010\022\021\n\tcamp_type\030\002 \001(\r\022\014\n\004gu" +
+      "id\030\003 \001(\004\022\027\n\017owner_entity_id\030\004 \001(\r\022\017\n\007cam" +
+      "p_id\030\001 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1355,7 +1347,7 @@ public final class ClientGadgetInfoOuterClass {
     internal_static_ClientGadgetInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientGadgetInfo_descriptor,
-        new java.lang.String[] { "CampId", "CampType", "Guid", "OwnerEntityId", "TargetEntityId", "AsyncLoad", "IsPeerIdFromPlayer", "TargetEntityIdList", "TargetLockPointIndexList", });
+        new java.lang.String[] { "TargetEntityIdList", "GMAJFIJLFPI", "TargetEntityId", "AsyncLoad", "IsPeerIdFromPlayer", "CampType", "Guid", "OwnerEntityId", "CampId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

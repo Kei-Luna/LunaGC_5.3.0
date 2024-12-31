@@ -19,16 +19,16 @@ public final class BirthdayOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 month = 1;</code>
-     * @return The month.
-     */
-    int getMonth();
-
-    /**
      * <code>uint32 day = 2;</code>
      * @return The day.
      */
     int getDay();
+
+    /**
+     * <code>uint32 month = 1;</code>
+     * @return The month.
+     */
+    int getMonth();
   }
   /**
    * Protobuf type {@code Birthday}
@@ -117,17 +117,6 @@ public final class BirthdayOuterClass {
               emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.class, emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.Builder.class);
     }
 
-    public static final int MONTH_FIELD_NUMBER = 1;
-    private int month_;
-    /**
-     * <code>uint32 month = 1;</code>
-     * @return The month.
-     */
-    @java.lang.Override
-    public int getMonth() {
-      return month_;
-    }
-
     public static final int DAY_FIELD_NUMBER = 2;
     private int day_;
     /**
@@ -137,6 +126,17 @@ public final class BirthdayOuterClass {
     @java.lang.Override
     public int getDay() {
       return day_;
+    }
+
+    public static final int MONTH_FIELD_NUMBER = 1;
+    private int month_;
+    /**
+     * <code>uint32 month = 1;</code>
+     * @return The month.
+     */
+    @java.lang.Override
+    public int getMonth() {
+      return month_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,10 +191,10 @@ public final class BirthdayOuterClass {
       }
       emu.grasscutter.net.proto.BirthdayOuterClass.Birthday other = (emu.grasscutter.net.proto.BirthdayOuterClass.Birthday) obj;
 
-      if (getMonth()
-          != other.getMonth()) return false;
       if (getDay()
           != other.getDay()) return false;
+      if (getMonth()
+          != other.getMonth()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class BirthdayOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MONTH_FIELD_NUMBER;
-      hash = (53 * hash) + getMonth();
       hash = (37 * hash) + DAY_FIELD_NUMBER;
       hash = (53 * hash) + getDay();
+      hash = (37 * hash) + MONTH_FIELD_NUMBER;
+      hash = (53 * hash) + getMonth();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class BirthdayOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        month_ = 0;
-
         day_ = 0;
+
+        month_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class BirthdayOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BirthdayOuterClass.Birthday buildPartial() {
         emu.grasscutter.net.proto.BirthdayOuterClass.Birthday result = new emu.grasscutter.net.proto.BirthdayOuterClass.Birthday(this);
-        result.month_ = month_;
         result.day_ = day_;
+        result.month_ = month_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class BirthdayOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BirthdayOuterClass.Birthday other) {
         if (other == emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.getDefaultInstance()) return this;
-        if (other.getMonth() != 0) {
-          setMonth(other.getMonth());
-        }
         if (other.getDay() != 0) {
           setDay(other.getDay());
+        }
+        if (other.getMonth() != 0) {
+          setMonth(other.getMonth());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,37 +458,6 @@ public final class BirthdayOuterClass {
         return this;
       }
 
-      private int month_ ;
-      /**
-       * <code>uint32 month = 1;</code>
-       * @return The month.
-       */
-      @java.lang.Override
-      public int getMonth() {
-        return month_;
-      }
-      /**
-       * <code>uint32 month = 1;</code>
-       * @param value The month to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMonth(int value) {
-        
-        month_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 month = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMonth() {
-        
-        month_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int day_ ;
       /**
        * <code>uint32 day = 2;</code>
@@ -516,6 +485,37 @@ public final class BirthdayOuterClass {
       public Builder clearDay() {
         
         day_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int month_ ;
+      /**
+       * <code>uint32 month = 1;</code>
+       * @return The month.
+       */
+      @java.lang.Override
+      public int getMonth() {
+        return month_;
+      }
+      /**
+       * <code>uint32 month = 1;</code>
+       * @param value The month to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMonth(int value) {
+        
+        month_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 month = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMonth() {
+        
+        month_ = 0;
         onChanged();
         return this;
       }
@@ -586,8 +586,8 @@ public final class BirthdayOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016Birthday.proto\"&\n\010Birthday\022\r\n\005month\030\001 " +
-      "\001(\r\022\013\n\003day\030\002 \001(\rB\033\n\031emu.grasscutter.net." +
+      "\n\016Birthday.proto\"&\n\010Birthday\022\013\n\003day\030\002 \001(" +
+      "\r\022\r\n\005month\030\001 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -599,7 +599,7 @@ public final class BirthdayOuterClass {
     internal_static_Birthday_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Birthday_descriptor,
-        new java.lang.String[] { "Month", "Day", });
+        new java.lang.String[] { "Day", "Month", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

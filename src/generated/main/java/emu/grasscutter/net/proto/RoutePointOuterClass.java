@@ -34,12 +34,6 @@ public final class RoutePointOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPositionOrBuilder();
 
     /**
-     * <code>float arrive_range = 2;</code>
-     * @return The arriveRange.
-     */
-    float getArriveRange();
-
-    /**
      * <code>bool has_reach_event = 3;</code>
      * @return The hasReachEvent.
      */
@@ -66,6 +60,12 @@ public final class RoutePointOuterClass {
      * @return The time.
      */
     float getTime();
+
+    /**
+     * <code>float arrive_range = 2;</code>
+     * @return The arriveRange.
+     */
+    float getArriveRange();
 
     /**
      * <code>.Vector rotation = 21;</code>
@@ -378,17 +378,6 @@ public final class RoutePointOuterClass {
       return getPosition();
     }
 
-    public static final int ARRIVE_RANGE_FIELD_NUMBER = 2;
-    private float arriveRange_;
-    /**
-     * <code>float arrive_range = 2;</code>
-     * @return The arriveRange.
-     */
-    @java.lang.Override
-    public float getArriveRange() {
-      return arriveRange_;
-    }
-
     public static final int HAS_REACH_EVENT_FIELD_NUMBER = 3;
     private boolean hasReachEvent_;
     /**
@@ -440,6 +429,17 @@ public final class RoutePointOuterClass {
         return (java.lang.Float) moveParams_;
       }
       return 0F;
+    }
+
+    public static final int ARRIVE_RANGE_FIELD_NUMBER = 2;
+    private float arriveRange_;
+    /**
+     * <code>float arrive_range = 2;</code>
+     * @return The arriveRange.
+     */
+    @java.lang.Override
+    public float getArriveRange() {
+      return arriveRange_;
     }
 
     public static final int ROTATION_FIELD_NUMBER = 21;
@@ -638,11 +638,11 @@ public final class RoutePointOuterClass {
         if (!getPosition()
             .equals(other.getPosition())) return false;
       }
+      if (getHasReachEvent()
+          != other.getHasReachEvent()) return false;
       if (java.lang.Float.floatToIntBits(getArriveRange())
           != java.lang.Float.floatToIntBits(
               other.getArriveRange())) return false;
-      if (getHasReachEvent()
-          != other.getHasReachEvent()) return false;
       if (!getMoveParamsCase().equals(other.getMoveParamsCase())) return false;
       switch (moveParamsCase_) {
         case 11:
@@ -690,12 +690,12 @@ public final class RoutePointOuterClass {
         hash = (37 * hash) + POSITION_FIELD_NUMBER;
         hash = (53 * hash) + getPosition().hashCode();
       }
-      hash = (37 * hash) + ARRIVE_RANGE_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getArriveRange());
       hash = (37 * hash) + HAS_REACH_EVENT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getHasReachEvent());
+      hash = (37 * hash) + ARRIVE_RANGE_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getArriveRange());
       switch (moveParamsCase_) {
         case 11:
           hash = (37 * hash) + VELOCITY_FIELD_NUMBER;
@@ -865,9 +865,9 @@ public final class RoutePointOuterClass {
           position_ = null;
           positionBuilder_ = null;
         }
-        arriveRange_ = 0F;
-
         hasReachEvent_ = false;
+
+        arriveRange_ = 0F;
 
         moveParamsCase_ = 0;
         moveParams_ = null;
@@ -904,7 +904,6 @@ public final class RoutePointOuterClass {
         } else {
           result.position_ = positionBuilder_.build();
         }
-        result.arriveRange_ = arriveRange_;
         result.hasReachEvent_ = hasReachEvent_;
         if (moveParamsCase_ == 11) {
           result.moveParams_ = moveParams_;
@@ -912,6 +911,7 @@ public final class RoutePointOuterClass {
         if (moveParamsCase_ == 12) {
           result.moveParams_ = moveParams_;
         }
+        result.arriveRange_ = arriveRange_;
         if (rotateParamsCase_ == 21) {
           if (rotationBuilder_ == null) {
             result.rotateParams_ = rotateParams_;
@@ -986,11 +986,11 @@ public final class RoutePointOuterClass {
         if (other.hasPosition()) {
           mergePosition(other.getPosition());
         }
-        if (other.getArriveRange() != 0F) {
-          setArriveRange(other.getArriveRange());
-        }
         if (other.getHasReachEvent() != false) {
           setHasReachEvent(other.getHasReachEvent());
+        }
+        if (other.getArriveRange() != 0F) {
+          setArriveRange(other.getArriveRange());
         }
         switch (other.getMoveParamsCase()) {
           case VELOCITY: {
@@ -1200,37 +1200,6 @@ public final class RoutePointOuterClass {
         return positionBuilder_;
       }
 
-      private float arriveRange_ ;
-      /**
-       * <code>float arrive_range = 2;</code>
-       * @return The arriveRange.
-       */
-      @java.lang.Override
-      public float getArriveRange() {
-        return arriveRange_;
-      }
-      /**
-       * <code>float arrive_range = 2;</code>
-       * @param value The arriveRange to set.
-       * @return This builder for chaining.
-       */
-      public Builder setArriveRange(float value) {
-        
-        arriveRange_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float arrive_range = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearArriveRange() {
-        
-        arriveRange_ = 0F;
-        onChanged();
-        return this;
-      }
-
       private boolean hasReachEvent_ ;
       /**
        * <code>bool has_reach_event = 3;</code>
@@ -1341,6 +1310,37 @@ public final class RoutePointOuterClass {
           moveParams_ = null;
           onChanged();
         }
+        return this;
+      }
+
+      private float arriveRange_ ;
+      /**
+       * <code>float arrive_range = 2;</code>
+       * @return The arriveRange.
+       */
+      @java.lang.Override
+      public float getArriveRange() {
+        return arriveRange_;
+      }
+      /**
+       * <code>float arrive_range = 2;</code>
+       * @param value The arriveRange to set.
+       * @return This builder for chaining.
+       */
+      public Builder setArriveRange(float value) {
+        
+        arriveRange_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float arrive_range = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearArriveRange() {
+        
+        arriveRange_ = 0F;
+        onChanged();
         return this;
       }
 
@@ -1834,14 +1834,14 @@ public final class RoutePointOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020RoutePoint.proto\032\014Vector.proto\032\024MathQu" +
-      "aternion.proto\"\207\002\n\nRoutePoint\022\031\n\010positio" +
-      "n\030\001 \001(\0132\007.Vector\022\024\n\014arrive_range\030\002 \001(\002\022\027" +
-      "\n\017has_reach_event\030\003 \001(\010\022\022\n\010velocity\030\013 \001(" +
-      "\002H\000\022\016\n\004time\030\014 \001(\002H\000\022\033\n\010rotation\030\025 \001(\0132\007." +
+      "aternion.proto\"\211\002\n\nRoutePoint\022\031\n\010positio" +
+      "n\030\001 \001(\0132\007.Vector\022\027\n\017has_reach_event\030\003 \001(" +
+      "\010\022\022\n\010velocity\030\013 \001(\002H\000\022\016\n\004time\030\014 \001(\002H\000\022\024\n" +
+      "\014arrive_range\030\002 \001(\002\022\033\n\010rotation\030\025 \001(\0132\007." +
       "VectorH\001\022)\n\016rotation_speed\030\026 \001(\0132\017.MathQ" +
       "uaternionH\001\022%\n\naxis_speed\030\027 \001(\0132\017.MathQu" +
-      "aternionH\001B\014\n\nMoveParamsB\016\n\014RotateParams" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "aternionH\001B\r\n\013move_paramsB\017\n\rrotate_para" +
+      "msB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1854,7 +1854,7 @@ public final class RoutePointOuterClass {
     internal_static_RoutePoint_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_RoutePoint_descriptor,
-        new java.lang.String[] { "Position", "ArriveRange", "HasReachEvent", "Velocity", "Time", "Rotation", "RotationSpeed", "AxisSpeed", "MoveParams", "RotateParams", });
+        new java.lang.String[] { "Position", "HasReachEvent", "Velocity", "Time", "ArriveRange", "Rotation", "RotationSpeed", "AxisSpeed", "MoveParams", "RotateParams", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MathQuaternionOuterClass.getDescriptor();
   }

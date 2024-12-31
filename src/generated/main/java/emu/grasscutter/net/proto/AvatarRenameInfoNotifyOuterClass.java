@@ -43,10 +43,6 @@ public final class AvatarRenameInfoNotifyOuterClass {
         int index);
   }
   /**
-   * <pre>
-   * CmdId: 6549
-   * </pre>
-   *
    * Protobuf type {@code AvatarRenameInfoNotify}
    */
   public static final class AvatarRenameInfoNotify extends
@@ -335,10 +331,6 @@ public final class AvatarRenameInfoNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 6549
-     * </pre>
-     *
      * Protobuf type {@code AvatarRenameInfoNotify}
      */
     public static final class Builder extends

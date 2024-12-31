@@ -19,200 +19,21 @@ public final class AvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 avatar_id = 1;</code>
-     * @return The avatarId.
+     * <code>repeated uint32 team_resonance_list = 20;</code>
+     * @return A list containing the teamResonanceList.
      */
-    int getAvatarId();
-
+    java.util.List<java.lang.Integer> getTeamResonanceListList();
     /**
-     * <code>uint64 guid = 2;</code>
-     * @return The guid.
+     * <code>repeated uint32 team_resonance_list = 20;</code>
+     * @return The count of teamResonanceList.
      */
-    long getGuid();
-
+    int getTeamResonanceListCount();
     /**
-     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-     */
-    int getPropMapCount();
-    /**
-     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-     */
-    boolean containsPropMap(
-        int key);
-    /**
-     * Use {@link #getPropMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
-    getPropMap();
-    /**
-     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-     */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
-    getPropMapMap();
-    /**
-     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-     */
-
-    emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.PropValueOuterClass.PropValue defaultValue);
-    /**
-     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-     */
-
-    emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrThrow(
-        int key);
-
-    /**
-     * <code>uint32 life_state = 4;</code>
-     * @return The lifeState.
-     */
-    int getLifeState();
-
-    /**
-     * <code>repeated uint64 equip_guid_list = 5;</code>
-     * @return A list containing the equipGuidList.
-     */
-    java.util.List<java.lang.Long> getEquipGuidListList();
-    /**
-     * <code>repeated uint64 equip_guid_list = 5;</code>
-     * @return The count of equipGuidList.
-     */
-    int getEquipGuidListCount();
-    /**
-     * <code>repeated uint64 equip_guid_list = 5;</code>
+     * <code>repeated uint32 team_resonance_list = 20;</code>
      * @param index The index of the element to return.
-     * @return The equipGuidList at the given index.
+     * @return The teamResonanceList at the given index.
      */
-    long getEquipGuidList(int index);
-
-    /**
-     * <code>repeated uint32 talent_id_list = 6;</code>
-     * @return A list containing the talentIdList.
-     */
-    java.util.List<java.lang.Integer> getTalentIdListList();
-    /**
-     * <code>repeated uint32 talent_id_list = 6;</code>
-     * @return The count of talentIdList.
-     */
-    int getTalentIdListCount();
-    /**
-     * <code>repeated uint32 talent_id_list = 6;</code>
-     * @param index The index of the element to return.
-     * @return The talentIdList at the given index.
-     */
-    int getTalentIdList(int index);
-
-    /**
-     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-     */
-    int getFightPropMapCount();
-    /**
-     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-     */
-    boolean containsFightPropMap(
-        int key);
-    /**
-     * Use {@link #getFightPropMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Float>
-    getFightPropMap();
-    /**
-     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Float>
-    getFightPropMapMap();
-    /**
-     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-     */
-
-    float getFightPropMapOrDefault(
-        int key,
-        float defaultValue);
-    /**
-     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-     */
-
-    float getFightPropMapOrThrow(
-        int key);
-
-    /**
-     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-     * @return Whether the trialAvatarInfo field is set.
-     */
-    boolean hasTrialAvatarInfo();
-    /**
-     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-     * @return The trialAvatarInfo.
-     */
-    emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo getTrialAvatarInfo();
-    /**
-     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-     */
-    emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder getTrialAvatarInfoOrBuilder();
-
-    /**
-     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-     */
-    int getSkillMapCount();
-    /**
-     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-     */
-    boolean containsSkillMap(
-        int key);
-    /**
-     * Use {@link #getSkillMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
-    getSkillMap();
-    /**
-     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-     */
-    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
-    getSkillMapMap();
-    /**
-     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-     */
-
-    emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo defaultValue);
-    /**
-     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-     */
-
-    emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrThrow(
-        int key);
-
-    /**
-     * <code>uint32 skill_depot_id = 11;</code>
-     * @return The skillDepotId.
-     */
-    int getSkillDepotId();
-
-    /**
-     * <code>.AvatarFetterInfo fetter_info = 12;</code>
-     * @return Whether the fetterInfo field is set.
-     */
-    boolean hasFetterInfo();
-    /**
-     * <code>.AvatarFetterInfo fetter_info = 12;</code>
-     * @return The fetterInfo.
-     */
-    emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo getFetterInfo();
-    /**
-     * <code>.AvatarFetterInfo fetter_info = 12;</code>
-     */
-    emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder getFetterInfoOrBuilder();
-
-    /**
-     * <code>uint32 core_proud_skill_level = 13;</code>
-     * @return The coreProudSkillLevel.
-     */
-    int getCoreProudSkillLevel();
+    int getTeamResonanceList(int index);
 
     /**
      * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
@@ -230,6 +51,30 @@ public final class AvatarInfoOuterClass {
      * @return The inherentProudSkillList at the given index.
      */
     int getInherentProudSkillList(int index);
+
+    /**
+     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo> 
+        getEquipAffixListList();
+    /**
+     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
+     */
+    emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo getEquipAffixList(int index);
+    /**
+     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
+     */
+    int getEquipAffixListCount();
+    /**
+     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder> 
+        getEquipAffixListOrBuilderList();
+    /**
+     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
+     */
+    emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder getEquipAffixListOrBuilder(
+        int index);
 
     /**
      * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
@@ -266,15 +111,63 @@ public final class AvatarInfoOuterClass {
         int key);
 
     /**
-     * <code>.AvatarExpeditionState expedition_state = 16;</code>
-     * @return The enum numeric value on the wire for expeditionState.
+     * <code>repeated uint32 talent_id_list = 6;</code>
+     * @return A list containing the talentIdList.
      */
-    int getExpeditionStateValue();
+    java.util.List<java.lang.Integer> getTalentIdListList();
     /**
-     * <code>.AvatarExpeditionState expedition_state = 16;</code>
-     * @return The expeditionState.
+     * <code>repeated uint32 talent_id_list = 6;</code>
+     * @return The count of talentIdList.
      */
-    emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState getExpeditionState();
+    int getTalentIdListCount();
+    /**
+     * <code>repeated uint32 talent_id_list = 6;</code>
+     * @param index The index of the element to return.
+     * @return The talentIdList at the given index.
+     */
+    int getTalentIdList(int index);
+
+    /**
+     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+     * @return Whether the trialAvatarInfo field is set.
+     */
+    boolean hasTrialAvatarInfo();
+    /**
+     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+     * @return The trialAvatarInfo.
+     */
+    emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo getTrialAvatarInfo();
+    /**
+     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+     */
+    emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder getTrialAvatarInfoOrBuilder();
+
+    /**
+     * <pre>
+     *DKKLDLBILMO KAKKHJMHBAP = 28;
+     * </pre>
+     *
+     * <code>.AvatarFetterInfo fetter_info = 12;</code>
+     * @return Whether the fetterInfo field is set.
+     */
+    boolean hasFetterInfo();
+    /**
+     * <pre>
+     *DKKLDLBILMO KAKKHJMHBAP = 28;
+     * </pre>
+     *
+     * <code>.AvatarFetterInfo fetter_info = 12;</code>
+     * @return The fetterInfo.
+     */
+    emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo getFetterInfo();
+    /**
+     * <pre>
+     *DKKLDLBILMO KAKKHJMHBAP = 28;
+     * </pre>
+     *
+     * <code>.AvatarFetterInfo fetter_info = 12;</code>
+     */
+    emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder getFetterInfoOrBuilder();
 
     /**
      * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
@@ -311,69 +204,21 @@ public final class AvatarInfoOuterClass {
         int key);
 
     /**
-     * <code>bool is_focus = 18;</code>
-     * @return The isFocus.
+     * <code>repeated uint64 equip_guid_list = 5;</code>
+     * @return A list containing the equipGuidList.
      */
-    boolean getIsFocus();
-
+    java.util.List<java.lang.Long> getEquipGuidListList();
     /**
-     * <code>uint32 avatar_type = 19;</code>
-     * @return The avatarType.
+     * <code>repeated uint64 equip_guid_list = 5;</code>
+     * @return The count of equipGuidList.
      */
-    int getAvatarType();
-
+    int getEquipGuidListCount();
     /**
-     * <code>repeated uint32 team_resonance_list = 20;</code>
-     * @return A list containing the teamResonanceList.
-     */
-    java.util.List<java.lang.Integer> getTeamResonanceListList();
-    /**
-     * <code>repeated uint32 team_resonance_list = 20;</code>
-     * @return The count of teamResonanceList.
-     */
-    int getTeamResonanceListCount();
-    /**
-     * <code>repeated uint32 team_resonance_list = 20;</code>
+     * <code>repeated uint64 equip_guid_list = 5;</code>
      * @param index The index of the element to return.
-     * @return The teamResonanceList at the given index.
+     * @return The equipGuidList at the given index.
      */
-    int getTeamResonanceList(int index);
-
-    /**
-     * <code>uint32 wearing_flycloak_id = 21;</code>
-     * @return The wearingFlycloakId.
-     */
-    int getWearingFlycloakId();
-
-    /**
-     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo> 
-        getEquipAffixListList();
-    /**
-     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
-     */
-    emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo getEquipAffixList(int index);
-    /**
-     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
-     */
-    int getEquipAffixListCount();
-    /**
-     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder> 
-        getEquipAffixListOrBuilderList();
-    /**
-     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
-     */
-    emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder getEquipAffixListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 born_time = 23;</code>
-     * @return The bornTime.
-     */
-    int getBornTime();
+    long getEquipGuidList(int index);
 
     /**
      * <code>repeated uint32 pending_promote_reward_list = 24;</code>
@@ -393,10 +238,106 @@ public final class AvatarInfoOuterClass {
     int getPendingPromoteRewardList(int index);
 
     /**
-     * <code>uint32 costume_id = 25;</code>
-     * @return The costumeId.
+     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
      */
-    int getCostumeId();
+    int getFightPropMapCount();
+    /**
+     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+     */
+    boolean containsFightPropMap(
+        int key);
+    /**
+     * Use {@link #getFightPropMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Float>
+    getFightPropMap();
+    /**
+     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Float>
+    getFightPropMapMap();
+    /**
+     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+     */
+
+    float getFightPropMapOrDefault(
+        int key,
+        float defaultValue);
+    /**
+     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+     */
+
+    float getFightPropMapOrThrow(
+        int key);
+
+    /**
+     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+     */
+    int getSkillMapCount();
+    /**
+     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+     */
+    boolean containsSkillMap(
+        int key);
+    /**
+     * Use {@link #getSkillMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
+    getSkillMap();
+    /**
+     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+     */
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
+    getSkillMapMap();
+    /**
+     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+     */
+
+    emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrDefault(
+        int key,
+        emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo defaultValue);
+    /**
+     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+     */
+
+    emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrThrow(
+        int key);
+
+    /**
+     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+     */
+    int getPropMapCount();
+    /**
+     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+     */
+    boolean containsPropMap(
+        int key);
+    /**
+     * Use {@link #getPropMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
+    getPropMap();
+    /**
+     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+     */
+    java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
+    getPropMapMap();
+    /**
+     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+     */
+
+    emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrDefault(
+        int key,
+        emu.grasscutter.net.proto.PropValueOuterClass.PropValue defaultValue);
+    /**
+     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+     */
+
+    emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrThrow(
+        int key);
 
     /**
      * <code>.AvatarExcelInfo excel_info = 26;</code>
@@ -414,32 +355,99 @@ public final class AvatarInfoOuterClass {
     emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.AvatarExcelInfoOrBuilder getExcelInfoOrBuilder();
 
     /**
+     * <code>bool is_focus = 18;</code>
+     * @return The isFocus.
+     */
+    boolean getIsFocus();
+
+    /**
+     * <code>uint32 HBJPGICGCOB = 30;</code>
+     * @return The hBJPGICGCOB.
+     */
+    int getHBJPGICGCOB();
+
+    /**
+     * <code>uint64 guid = 2;</code>
+     * @return The guid.
+     */
+    long getGuid();
+
+    /**
+     * <code>.AvatarExpeditionState expedition_state = 16;</code>
+     * @return The enum numeric value on the wire for expeditionState.
+     */
+    int getExpeditionStateValue();
+    /**
+     * <code>.AvatarExpeditionState expedition_state = 16;</code>
+     * @return The expeditionState.
+     */
+    emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState getExpeditionState();
+
+    /**
+     * <code>uint32 BDFCBGHCIKN = 29;</code>
+     * @return The bDFCBGHCIKN.
+     */
+    int getBDFCBGHCIKN();
+
+    /**
+     * <code>uint32 costume_id = 25;</code>
+     * @return The costumeId.
+     */
+    int getCostumeId();
+
+    /**
+     * <code>uint32 wearing_flycloak_id = 21;</code>
+     * @return The wearingFlycloakId.
+     */
+    int getWearingFlycloakId();
+
+    /**
+     * <code>uint32 avatar_id = 1;</code>
+     * @return The avatarId.
+     */
+    int getAvatarId();
+
+    /**
+     * <code>uint32 core_proud_skill_level = 13;</code>
+     * @return The coreProudSkillLevel.
+     */
+    int getCoreProudSkillLevel();
+
+    /**
+     * <code>uint32 born_time = 23;</code>
+     * @return The bornTime.
+     */
+    int getBornTime();
+
+    /**
+     * <code>uint32 trace_effect_id = 31;</code>
+     * @return The traceEffectId.
+     */
+    int getTraceEffectId();
+
+    /**
      * <code>uint32 anim_hash = 27;</code>
      * @return The animHash.
      */
     int getAnimHash();
 
     /**
-     * <pre>
-     *JNHGJAIIMGJ PINDEGAFOAE = 28;
-     * </pre>
-     *
-     * <code>uint32 ABLFJPMKKDA = 29;</code>
-     * @return The aBLFJPMKKDA.
+     * <code>uint32 avatar_type = 19;</code>
+     * @return The avatarType.
      */
-    int getABLFJPMKKDA();
+    int getAvatarType();
 
     /**
-     * <code>uint32 GCHGLANNHMC = 30;</code>
-     * @return The gCHGLANNHMC.
+     * <code>uint32 life_state = 4;</code>
+     * @return The lifeState.
      */
-    int getGCHGLANNHMC();
+    int getLifeState();
 
     /**
-     * <code>uint32 KCINBOMOIGL = 31;</code>
-     * @return The kCINBOMOIGL.
+     * <code>uint32 skill_depot_id = 11;</code>
+     * @return The skillDepotId.
      */
-    int getKCINBOMOIGL();
+    int getSkillDepotId();
   }
   /**
    * Protobuf type {@code AvatarInfo}
@@ -454,13 +462,13 @@ public final class AvatarInfoOuterClass {
       super(builder);
     }
     private AvatarInfo() {
-      equipGuidList_ = emptyLongList();
-      talentIdList_ = emptyIntList();
-      inherentProudSkillList_ = emptyIntList();
-      expeditionState_ = 0;
       teamResonanceList_ = emptyIntList();
+      inherentProudSkillList_ = emptyIntList();
       equipAffixList_ = java.util.Collections.emptyList();
+      talentIdList_ = emptyIntList();
+      equipGuidList_ = emptyLongList();
       pendingPromoteRewardList_ = emptyIntList();
+      expeditionState_ = 0;
     }
 
     @java.lang.Override
@@ -505,10 +513,10 @@ public final class AvatarInfoOuterClass {
               break;
             }
             case 26: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000400) != 0)) {
                 propMap_ = com.google.protobuf.MapField.newMapField(
                     PropMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000400;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
               propMap__ = input.readMessage(
@@ -523,9 +531,9 @@ public final class AvatarInfoOuterClass {
               break;
             }
             case 40: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
                 equipGuidList_ = newLongList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000040;
               }
               equipGuidList_.addLong(input.readUInt64());
               break;
@@ -533,9 +541,9 @@ public final class AvatarInfoOuterClass {
             case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000040) != 0) && input.getBytesUntilLimit() > 0) {
                 equipGuidList_ = newLongList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000040;
               }
               while (input.getBytesUntilLimit() > 0) {
                 equipGuidList_.addLong(input.readUInt64());
@@ -544,9 +552,9 @@ public final class AvatarInfoOuterClass {
               break;
             }
             case 48: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
                 talentIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000010;
               }
               talentIdList_.addInt(input.readUInt32());
               break;
@@ -554,9 +562,9 @@ public final class AvatarInfoOuterClass {
             case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000010) != 0) && input.getBytesUntilLimit() > 0) {
                 talentIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000010;
               }
               while (input.getBytesUntilLimit() > 0) {
                 talentIdList_.addInt(input.readUInt32());
@@ -565,10 +573,10 @@ public final class AvatarInfoOuterClass {
               break;
             }
             case 58: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
                 fightPropMap_ = com.google.protobuf.MapField.newMapField(
                     FightPropMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000100;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Float>
               fightPropMap__ = input.readMessage(
@@ -591,10 +599,10 @@ public final class AvatarInfoOuterClass {
               break;
             }
             case 82: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000200) != 0)) {
                 skillMap_ = com.google.protobuf.MapField.newMapField(
                     SkillMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00000200;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
               skillMap__ = input.readMessage(
@@ -627,9 +635,9 @@ public final class AvatarInfoOuterClass {
               break;
             }
             case 112: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 inherentProudSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000002;
               }
               inherentProudSkillList_.addInt(input.readUInt32());
               break;
@@ -637,9 +645,9 @@ public final class AvatarInfoOuterClass {
             case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000020) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 inherentProudSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 inherentProudSkillList_.addInt(input.readUInt32());
@@ -648,10 +656,10 @@ public final class AvatarInfoOuterClass {
               break;
             }
             case 122: {
-              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 skillLevelMap_ = com.google.protobuf.MapField.newMapField(
                     SkillLevelMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000040;
+                mutable_bitField0_ |= 0x00000008;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               skillLevelMap__ = input.readMessage(
@@ -667,10 +675,10 @@ public final class AvatarInfoOuterClass {
               break;
             }
             case 138: {
-              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
                 proudSkillExtraLevelMap_ = com.google.protobuf.MapField.newMapField(
                     ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000080;
+                mutable_bitField0_ |= 0x00000020;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               proudSkillExtraLevelMap__ = input.readMessage(
@@ -690,9 +698,9 @@ public final class AvatarInfoOuterClass {
               break;
             }
             case 160: {
-              if (!((mutable_bitField0_ & 0x00000100) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 teamResonanceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000100;
+                mutable_bitField0_ |= 0x00000001;
               }
               teamResonanceList_.addInt(input.readUInt32());
               break;
@@ -700,9 +708,9 @@ public final class AvatarInfoOuterClass {
             case 162: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000100) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 teamResonanceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000100;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 teamResonanceList_.addInt(input.readUInt32());
@@ -716,9 +724,9 @@ public final class AvatarInfoOuterClass {
               break;
             }
             case 178: {
-              if (!((mutable_bitField0_ & 0x00000200) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 equipAffixList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo>();
-                mutable_bitField0_ |= 0x00000200;
+                mutable_bitField0_ |= 0x00000004;
               }
               equipAffixList_.add(
                   input.readMessage(emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo.parser(), extensionRegistry));
@@ -730,9 +738,9 @@ public final class AvatarInfoOuterClass {
               break;
             }
             case 192: {
-              if (!((mutable_bitField0_ & 0x00000400) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000080) != 0)) {
                 pendingPromoteRewardList_ = newIntList();
-                mutable_bitField0_ |= 0x00000400;
+                mutable_bitField0_ |= 0x00000080;
               }
               pendingPromoteRewardList_.addInt(input.readUInt32());
               break;
@@ -740,9 +748,9 @@ public final class AvatarInfoOuterClass {
             case 194: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000400) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000080) != 0) && input.getBytesUntilLimit() > 0) {
                 pendingPromoteRewardList_ = newIntList();
-                mutable_bitField0_ |= 0x00000400;
+                mutable_bitField0_ |= 0x00000080;
               }
               while (input.getBytesUntilLimit() > 0) {
                 pendingPromoteRewardList_.addInt(input.readUInt32());
@@ -775,17 +783,17 @@ public final class AvatarInfoOuterClass {
             }
             case 232: {
 
-              aBLFJPMKKDA_ = input.readUInt32();
+              bDFCBGHCIKN_ = input.readUInt32();
               break;
             }
             case 240: {
 
-              gCHGLANNHMC_ = input.readUInt32();
+              hBJPGICGCOB_ = input.readUInt32();
               break;
             }
             case 248: {
 
-              kCINBOMOIGL_ = input.readUInt32();
+              traceEffectId_ = input.readUInt32();
               break;
             }
             default: {
@@ -803,22 +811,22 @@ public final class AvatarInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000040) != 0)) {
           equipGuidList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000010) != 0)) {
           talentIdList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000020) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           inherentProudSkillList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000100) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           teamResonanceList_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000200) != 0)) {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
           equipAffixList_ = java.util.Collections.unmodifiableList(equipAffixList_);
         }
-        if (((mutable_bitField0_ & 0x00000400) != 0)) {
+        if (((mutable_bitField0_ & 0x00000080) != 0)) {
           pendingPromoteRewardList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
@@ -835,16 +843,16 @@ public final class AvatarInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 3:
-          return internalGetPropMap();
-        case 7:
-          return internalGetFightPropMap();
-        case 10:
-          return internalGetSkillMap();
         case 15:
           return internalGetSkillLevelMap();
         case 17:
           return internalGetProudSkillExtraLevelMap();
+        case 7:
+          return internalGetFightPropMap();
+        case 10:
+          return internalGetSkillMap();
+        case 3:
+          return internalGetPropMap();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -858,411 +866,33 @@ public final class AvatarInfoOuterClass {
               emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.class, emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.Builder.class);
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 1;
-    private int avatarId_;
+    public static final int TEAM_RESONANCE_LIST_FIELD_NUMBER = 20;
+    private com.google.protobuf.Internal.IntList teamResonanceList_;
     /**
-     * <code>uint32 avatar_id = 1;</code>
-     * @return The avatarId.
-     */
-    @java.lang.Override
-    public int getAvatarId() {
-      return avatarId_;
-    }
-
-    public static final int GUID_FIELD_NUMBER = 2;
-    private long guid_;
-    /**
-     * <code>uint64 guid = 2;</code>
-     * @return The guid.
-     */
-    @java.lang.Override
-    public long getGuid() {
-      return guid_;
-    }
-
-    public static final int PROP_MAP_FIELD_NUMBER = 3;
-    private static final class PropMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>newDefaultInstance(
-                  emu.grasscutter.net.proto.AvatarInfoOuterClass.internal_static_AvatarInfo_PropMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  emu.grasscutter.net.proto.PropValueOuterClass.PropValue.getDefaultInstance());
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> propMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
-    internalGetPropMap() {
-      if (propMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            PropMapDefaultEntryHolder.defaultEntry);
-      }
-      return propMap_;
-    }
-
-    public int getPropMapCount() {
-      return internalGetPropMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsPropMap(
-        int key) {
-      
-      return internalGetPropMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getPropMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropMap() {
-      return getPropMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropMapMap() {
-      return internalGetPropMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.PropValueOuterClass.PropValue defaultValue) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> map =
-          internalGetPropMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> map =
-          internalGetPropMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int LIFE_STATE_FIELD_NUMBER = 4;
-    private int lifeState_;
-    /**
-     * <code>uint32 life_state = 4;</code>
-     * @return The lifeState.
-     */
-    @java.lang.Override
-    public int getLifeState() {
-      return lifeState_;
-    }
-
-    public static final int EQUIP_GUID_LIST_FIELD_NUMBER = 5;
-    private com.google.protobuf.Internal.LongList equipGuidList_;
-    /**
-     * <code>repeated uint64 equip_guid_list = 5;</code>
-     * @return A list containing the equipGuidList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Long>
-        getEquipGuidListList() {
-      return equipGuidList_;
-    }
-    /**
-     * <code>repeated uint64 equip_guid_list = 5;</code>
-     * @return The count of equipGuidList.
-     */
-    public int getEquipGuidListCount() {
-      return equipGuidList_.size();
-    }
-    /**
-     * <code>repeated uint64 equip_guid_list = 5;</code>
-     * @param index The index of the element to return.
-     * @return The equipGuidList at the given index.
-     */
-    public long getEquipGuidList(int index) {
-      return equipGuidList_.getLong(index);
-    }
-    private int equipGuidListMemoizedSerializedSize = -1;
-
-    public static final int TALENT_ID_LIST_FIELD_NUMBER = 6;
-    private com.google.protobuf.Internal.IntList talentIdList_;
-    /**
-     * <code>repeated uint32 talent_id_list = 6;</code>
-     * @return A list containing the talentIdList.
+     * <code>repeated uint32 team_resonance_list = 20;</code>
+     * @return A list containing the teamResonanceList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getTalentIdListList() {
-      return talentIdList_;
+        getTeamResonanceListList() {
+      return teamResonanceList_;
     }
     /**
-     * <code>repeated uint32 talent_id_list = 6;</code>
-     * @return The count of talentIdList.
+     * <code>repeated uint32 team_resonance_list = 20;</code>
+     * @return The count of teamResonanceList.
      */
-    public int getTalentIdListCount() {
-      return talentIdList_.size();
+    public int getTeamResonanceListCount() {
+      return teamResonanceList_.size();
     }
     /**
-     * <code>repeated uint32 talent_id_list = 6;</code>
+     * <code>repeated uint32 team_resonance_list = 20;</code>
      * @param index The index of the element to return.
-     * @return The talentIdList at the given index.
+     * @return The teamResonanceList at the given index.
      */
-    public int getTalentIdList(int index) {
-      return talentIdList_.getInt(index);
+    public int getTeamResonanceList(int index) {
+      return teamResonanceList_.getInt(index);
     }
-    private int talentIdListMemoizedSerializedSize = -1;
-
-    public static final int FIGHT_PROP_MAP_FIELD_NUMBER = 7;
-    private static final class FightPropMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Float> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Float>newDefaultInstance(
-                  emu.grasscutter.net.proto.AvatarInfoOuterClass.internal_static_AvatarInfo_FightPropMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.FLOAT,
-                  0F);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Float> fightPropMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Float>
-    internalGetFightPropMap() {
-      if (fightPropMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            FightPropMapDefaultEntryHolder.defaultEntry);
-      }
-      return fightPropMap_;
-    }
-
-    public int getFightPropMapCount() {
-      return internalGetFightPropMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsFightPropMap(
-        int key) {
-      
-      return internalGetFightPropMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getFightPropMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Float> getFightPropMap() {
-      return getFightPropMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Float> getFightPropMapMap() {
-      return internalGetFightPropMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-     */
-    @java.lang.Override
-
-    public float getFightPropMapOrDefault(
-        int key,
-        float defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Float> map =
-          internalGetFightPropMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-     */
-    @java.lang.Override
-
-    public float getFightPropMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Float> map =
-          internalGetFightPropMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int TRIAL_AVATAR_INFO_FIELD_NUMBER = 9;
-    private emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo trialAvatarInfo_;
-    /**
-     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-     * @return Whether the trialAvatarInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasTrialAvatarInfo() {
-      return trialAvatarInfo_ != null;
-    }
-    /**
-     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-     * @return The trialAvatarInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo getTrialAvatarInfo() {
-      return trialAvatarInfo_ == null ? emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.getDefaultInstance() : trialAvatarInfo_;
-    }
-    /**
-     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder getTrialAvatarInfoOrBuilder() {
-      return getTrialAvatarInfo();
-    }
-
-    public static final int SKILL_MAP_FIELD_NUMBER = 10;
-    private static final class SkillMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>newDefaultInstance(
-                  emu.grasscutter.net.proto.AvatarInfoOuterClass.internal_static_AvatarInfo_SkillMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo.getDefaultInstance());
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> skillMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
-    internalGetSkillMap() {
-      if (skillMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            SkillMapDefaultEntryHolder.defaultEntry);
-      }
-      return skillMap_;
-    }
-
-    public int getSkillMapCount() {
-      return internalGetSkillMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsSkillMap(
-        int key) {
-      
-      return internalGetSkillMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getSkillMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> getSkillMap() {
-      return getSkillMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> getSkillMapMap() {
-      return internalGetSkillMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrDefault(
-        int key,
-        emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo defaultValue) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> map =
-          internalGetSkillMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-     */
-    @java.lang.Override
-
-    public emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> map =
-          internalGetSkillMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int SKILL_DEPOT_ID_FIELD_NUMBER = 11;
-    private int skillDepotId_;
-    /**
-     * <code>uint32 skill_depot_id = 11;</code>
-     * @return The skillDepotId.
-     */
-    @java.lang.Override
-    public int getSkillDepotId() {
-      return skillDepotId_;
-    }
-
-    public static final int FETTER_INFO_FIELD_NUMBER = 12;
-    private emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo fetterInfo_;
-    /**
-     * <code>.AvatarFetterInfo fetter_info = 12;</code>
-     * @return Whether the fetterInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasFetterInfo() {
-      return fetterInfo_ != null;
-    }
-    /**
-     * <code>.AvatarFetterInfo fetter_info = 12;</code>
-     * @return The fetterInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo getFetterInfo() {
-      return fetterInfo_ == null ? emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.getDefaultInstance() : fetterInfo_;
-    }
-    /**
-     * <code>.AvatarFetterInfo fetter_info = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder getFetterInfoOrBuilder() {
-      return getFetterInfo();
-    }
-
-    public static final int CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER = 13;
-    private int coreProudSkillLevel_;
-    /**
-     * <code>uint32 core_proud_skill_level = 13;</code>
-     * @return The coreProudSkillLevel.
-     */
-    @java.lang.Override
-    public int getCoreProudSkillLevel() {
-      return coreProudSkillLevel_;
-    }
+    private int teamResonanceListMemoizedSerializedSize = -1;
 
     public static final int INHERENT_PROUD_SKILL_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList inherentProudSkillList_;
@@ -1291,6 +921,46 @@ public final class AvatarInfoOuterClass {
       return inherentProudSkillList_.getInt(index);
     }
     private int inherentProudSkillListMemoizedSerializedSize = -1;
+
+    public static final int EQUIP_AFFIX_LIST_FIELD_NUMBER = 22;
+    private java.util.List<emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo> equipAffixList_;
+    /**
+     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo> getEquipAffixListList() {
+      return equipAffixList_;
+    }
+    /**
+     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder> 
+        getEquipAffixListOrBuilderList() {
+      return equipAffixList_;
+    }
+    /**
+     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
+     */
+    @java.lang.Override
+    public int getEquipAffixListCount() {
+      return equipAffixList_.size();
+    }
+    /**
+     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo getEquipAffixList(int index) {
+      return equipAffixList_.get(index);
+    }
+    /**
+     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder getEquipAffixListOrBuilder(
+        int index) {
+      return equipAffixList_.get(index);
+    }
 
     public static final int SKILL_LEVEL_MAP_FIELD_NUMBER = 15;
     private static final class SkillLevelMapDefaultEntryHolder {
@@ -1373,23 +1043,96 @@ public final class AvatarInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int EXPEDITION_STATE_FIELD_NUMBER = 16;
-    private int expeditionState_;
+    public static final int TALENT_ID_LIST_FIELD_NUMBER = 6;
+    private com.google.protobuf.Internal.IntList talentIdList_;
     /**
-     * <code>.AvatarExpeditionState expedition_state = 16;</code>
-     * @return The enum numeric value on the wire for expeditionState.
+     * <code>repeated uint32 talent_id_list = 6;</code>
+     * @return A list containing the talentIdList.
      */
-    @java.lang.Override public int getExpeditionStateValue() {
-      return expeditionState_;
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getTalentIdListList() {
+      return talentIdList_;
     }
     /**
-     * <code>.AvatarExpeditionState expedition_state = 16;</code>
-     * @return The expeditionState.
+     * <code>repeated uint32 talent_id_list = 6;</code>
+     * @return The count of talentIdList.
      */
-    @java.lang.Override public emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState getExpeditionState() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState result = emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState.valueOf(expeditionState_);
-      return result == null ? emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState.UNRECOGNIZED : result;
+    public int getTalentIdListCount() {
+      return talentIdList_.size();
+    }
+    /**
+     * <code>repeated uint32 talent_id_list = 6;</code>
+     * @param index The index of the element to return.
+     * @return The talentIdList at the given index.
+     */
+    public int getTalentIdList(int index) {
+      return talentIdList_.getInt(index);
+    }
+    private int talentIdListMemoizedSerializedSize = -1;
+
+    public static final int TRIAL_AVATAR_INFO_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo trialAvatarInfo_;
+    /**
+     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+     * @return Whether the trialAvatarInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasTrialAvatarInfo() {
+      return trialAvatarInfo_ != null;
+    }
+    /**
+     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+     * @return The trialAvatarInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo getTrialAvatarInfo() {
+      return trialAvatarInfo_ == null ? emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.getDefaultInstance() : trialAvatarInfo_;
+    }
+    /**
+     * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder getTrialAvatarInfoOrBuilder() {
+      return getTrialAvatarInfo();
+    }
+
+    public static final int FETTER_INFO_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo fetterInfo_;
+    /**
+     * <pre>
+     *DKKLDLBILMO KAKKHJMHBAP = 28;
+     * </pre>
+     *
+     * <code>.AvatarFetterInfo fetter_info = 12;</code>
+     * @return Whether the fetterInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasFetterInfo() {
+      return fetterInfo_ != null;
+    }
+    /**
+     * <pre>
+     *DKKLDLBILMO KAKKHJMHBAP = 28;
+     * </pre>
+     *
+     * <code>.AvatarFetterInfo fetter_info = 12;</code>
+     * @return The fetterInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo getFetterInfo() {
+      return fetterInfo_ == null ? emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.getDefaultInstance() : fetterInfo_;
+    }
+    /**
+     * <pre>
+     *DKKLDLBILMO KAKKHJMHBAP = 28;
+     * </pre>
+     *
+     * <code>.AvatarFetterInfo fetter_info = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder getFetterInfoOrBuilder() {
+      return getFetterInfo();
     }
 
     public static final int PROUD_SKILL_EXTRA_LEVEL_MAP_FIELD_NUMBER = 17;
@@ -1473,117 +1216,33 @@ public final class AvatarInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int IS_FOCUS_FIELD_NUMBER = 18;
-    private boolean isFocus_;
+    public static final int EQUIP_GUID_LIST_FIELD_NUMBER = 5;
+    private com.google.protobuf.Internal.LongList equipGuidList_;
     /**
-     * <code>bool is_focus = 18;</code>
-     * @return The isFocus.
+     * <code>repeated uint64 equip_guid_list = 5;</code>
+     * @return A list containing the equipGuidList.
      */
     @java.lang.Override
-    public boolean getIsFocus() {
-      return isFocus_;
+    public java.util.List<java.lang.Long>
+        getEquipGuidListList() {
+      return equipGuidList_;
     }
-
-    public static final int AVATAR_TYPE_FIELD_NUMBER = 19;
-    private int avatarType_;
     /**
-     * <code>uint32 avatar_type = 19;</code>
-     * @return The avatarType.
+     * <code>repeated uint64 equip_guid_list = 5;</code>
+     * @return The count of equipGuidList.
      */
-    @java.lang.Override
-    public int getAvatarType() {
-      return avatarType_;
-    }
-
-    public static final int TEAM_RESONANCE_LIST_FIELD_NUMBER = 20;
-    private com.google.protobuf.Internal.IntList teamResonanceList_;
-    /**
-     * <code>repeated uint32 team_resonance_list = 20;</code>
-     * @return A list containing the teamResonanceList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getTeamResonanceListList() {
-      return teamResonanceList_;
+    public int getEquipGuidListCount() {
+      return equipGuidList_.size();
     }
     /**
-     * <code>repeated uint32 team_resonance_list = 20;</code>
-     * @return The count of teamResonanceList.
-     */
-    public int getTeamResonanceListCount() {
-      return teamResonanceList_.size();
-    }
-    /**
-     * <code>repeated uint32 team_resonance_list = 20;</code>
+     * <code>repeated uint64 equip_guid_list = 5;</code>
      * @param index The index of the element to return.
-     * @return The teamResonanceList at the given index.
+     * @return The equipGuidList at the given index.
      */
-    public int getTeamResonanceList(int index) {
-      return teamResonanceList_.getInt(index);
+    public long getEquipGuidList(int index) {
+      return equipGuidList_.getLong(index);
     }
-    private int teamResonanceListMemoizedSerializedSize = -1;
-
-    public static final int WEARING_FLYCLOAK_ID_FIELD_NUMBER = 21;
-    private int wearingFlycloakId_;
-    /**
-     * <code>uint32 wearing_flycloak_id = 21;</code>
-     * @return The wearingFlycloakId.
-     */
-    @java.lang.Override
-    public int getWearingFlycloakId() {
-      return wearingFlycloakId_;
-    }
-
-    public static final int EQUIP_AFFIX_LIST_FIELD_NUMBER = 22;
-    private java.util.List<emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo> equipAffixList_;
-    /**
-     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo> getEquipAffixListList() {
-      return equipAffixList_;
-    }
-    /**
-     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder> 
-        getEquipAffixListOrBuilderList() {
-      return equipAffixList_;
-    }
-    /**
-     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
-     */
-    @java.lang.Override
-    public int getEquipAffixListCount() {
-      return equipAffixList_.size();
-    }
-    /**
-     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo getEquipAffixList(int index) {
-      return equipAffixList_.get(index);
-    }
-    /**
-     * <code>repeated .AvatarEquipAffixInfo equip_affix_list = 22;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder getEquipAffixListOrBuilder(
-        int index) {
-      return equipAffixList_.get(index);
-    }
-
-    public static final int BORN_TIME_FIELD_NUMBER = 23;
-    private int bornTime_;
-    /**
-     * <code>uint32 born_time = 23;</code>
-     * @return The bornTime.
-     */
-    @java.lang.Override
-    public int getBornTime() {
-      return bornTime_;
-    }
+    private int equipGuidListMemoizedSerializedSize = -1;
 
     public static final int PENDING_PROMOTE_REWARD_LIST_FIELD_NUMBER = 24;
     private com.google.protobuf.Internal.IntList pendingPromoteRewardList_;
@@ -1613,15 +1272,247 @@ public final class AvatarInfoOuterClass {
     }
     private int pendingPromoteRewardListMemoizedSerializedSize = -1;
 
-    public static final int COSTUME_ID_FIELD_NUMBER = 25;
-    private int costumeId_;
+    public static final int FIGHT_PROP_MAP_FIELD_NUMBER = 7;
+    private static final class FightPropMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Float> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Float>newDefaultInstance(
+                  emu.grasscutter.net.proto.AvatarInfoOuterClass.internal_static_AvatarInfo_FightPropMapEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.FLOAT,
+                  0F);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Float> fightPropMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Float>
+    internalGetFightPropMap() {
+      if (fightPropMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            FightPropMapDefaultEntryHolder.defaultEntry);
+      }
+      return fightPropMap_;
+    }
+
+    public int getFightPropMapCount() {
+      return internalGetFightPropMap().getMap().size();
+    }
     /**
-     * <code>uint32 costume_id = 25;</code>
-     * @return The costumeId.
+     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsFightPropMap(
+        int key) {
+      
+      return internalGetFightPropMap().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getFightPropMapMap()} instead.
      */
     @java.lang.Override
-    public int getCostumeId() {
-      return costumeId_;
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Float> getFightPropMap() {
+      return getFightPropMapMap();
+    }
+    /**
+     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Float> getFightPropMapMap() {
+      return internalGetFightPropMap().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+     */
+    @java.lang.Override
+
+    public float getFightPropMapOrDefault(
+        int key,
+        float defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Float> map =
+          internalGetFightPropMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+     */
+    @java.lang.Override
+
+    public float getFightPropMapOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Float> map =
+          internalGetFightPropMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int SKILL_MAP_FIELD_NUMBER = 10;
+    private static final class SkillMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>newDefaultInstance(
+                  emu.grasscutter.net.proto.AvatarInfoOuterClass.internal_static_AvatarInfo_SkillMapEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
+                  emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo.getDefaultInstance());
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> skillMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
+    internalGetSkillMap() {
+      if (skillMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            SkillMapDefaultEntryHolder.defaultEntry);
+      }
+      return skillMap_;
+    }
+
+    public int getSkillMapCount() {
+      return internalGetSkillMap().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsSkillMap(
+        int key) {
+      
+      return internalGetSkillMap().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getSkillMapMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> getSkillMap() {
+      return getSkillMapMap();
+    }
+    /**
+     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> getSkillMapMap() {
+      return internalGetSkillMap().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrDefault(
+        int key,
+        emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo defaultValue) {
+      
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> map =
+          internalGetSkillMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> map =
+          internalGetSkillMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int PROP_MAP_FIELD_NUMBER = 3;
+    private static final class PropMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>newDefaultInstance(
+                  emu.grasscutter.net.proto.AvatarInfoOuterClass.internal_static_AvatarInfo_PropMapEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
+                  emu.grasscutter.net.proto.PropValueOuterClass.PropValue.getDefaultInstance());
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> propMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
+    internalGetPropMap() {
+      if (propMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            PropMapDefaultEntryHolder.defaultEntry);
+      }
+      return propMap_;
+    }
+
+    public int getPropMapCount() {
+      return internalGetPropMap().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsPropMap(
+        int key) {
+      
+      return internalGetPropMap().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getPropMapMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropMap() {
+      return getPropMapMap();
+    }
+    /**
+     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropMapMap() {
+      return internalGetPropMap().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrDefault(
+        int key,
+        emu.grasscutter.net.proto.PropValueOuterClass.PropValue defaultValue) {
+      
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> map =
+          internalGetPropMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+     */
+    @java.lang.Override
+
+    public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> map =
+          internalGetPropMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
     }
 
     public static final int EXCEL_INFO_FIELD_NUMBER = 26;
@@ -1650,6 +1541,135 @@ public final class AvatarInfoOuterClass {
       return getExcelInfo();
     }
 
+    public static final int IS_FOCUS_FIELD_NUMBER = 18;
+    private boolean isFocus_;
+    /**
+     * <code>bool is_focus = 18;</code>
+     * @return The isFocus.
+     */
+    @java.lang.Override
+    public boolean getIsFocus() {
+      return isFocus_;
+    }
+
+    public static final int HBJPGICGCOB_FIELD_NUMBER = 30;
+    private int hBJPGICGCOB_;
+    /**
+     * <code>uint32 HBJPGICGCOB = 30;</code>
+     * @return The hBJPGICGCOB.
+     */
+    @java.lang.Override
+    public int getHBJPGICGCOB() {
+      return hBJPGICGCOB_;
+    }
+
+    public static final int GUID_FIELD_NUMBER = 2;
+    private long guid_;
+    /**
+     * <code>uint64 guid = 2;</code>
+     * @return The guid.
+     */
+    @java.lang.Override
+    public long getGuid() {
+      return guid_;
+    }
+
+    public static final int EXPEDITION_STATE_FIELD_NUMBER = 16;
+    private int expeditionState_;
+    /**
+     * <code>.AvatarExpeditionState expedition_state = 16;</code>
+     * @return The enum numeric value on the wire for expeditionState.
+     */
+    @java.lang.Override public int getExpeditionStateValue() {
+      return expeditionState_;
+    }
+    /**
+     * <code>.AvatarExpeditionState expedition_state = 16;</code>
+     * @return The expeditionState.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState getExpeditionState() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState result = emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState.valueOf(expeditionState_);
+      return result == null ? emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState.UNRECOGNIZED : result;
+    }
+
+    public static final int BDFCBGHCIKN_FIELD_NUMBER = 29;
+    private int bDFCBGHCIKN_;
+    /**
+     * <code>uint32 BDFCBGHCIKN = 29;</code>
+     * @return The bDFCBGHCIKN.
+     */
+    @java.lang.Override
+    public int getBDFCBGHCIKN() {
+      return bDFCBGHCIKN_;
+    }
+
+    public static final int COSTUME_ID_FIELD_NUMBER = 25;
+    private int costumeId_;
+    /**
+     * <code>uint32 costume_id = 25;</code>
+     * @return The costumeId.
+     */
+    @java.lang.Override
+    public int getCostumeId() {
+      return costumeId_;
+    }
+
+    public static final int WEARING_FLYCLOAK_ID_FIELD_NUMBER = 21;
+    private int wearingFlycloakId_;
+    /**
+     * <code>uint32 wearing_flycloak_id = 21;</code>
+     * @return The wearingFlycloakId.
+     */
+    @java.lang.Override
+    public int getWearingFlycloakId() {
+      return wearingFlycloakId_;
+    }
+
+    public static final int AVATAR_ID_FIELD_NUMBER = 1;
+    private int avatarId_;
+    /**
+     * <code>uint32 avatar_id = 1;</code>
+     * @return The avatarId.
+     */
+    @java.lang.Override
+    public int getAvatarId() {
+      return avatarId_;
+    }
+
+    public static final int CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER = 13;
+    private int coreProudSkillLevel_;
+    /**
+     * <code>uint32 core_proud_skill_level = 13;</code>
+     * @return The coreProudSkillLevel.
+     */
+    @java.lang.Override
+    public int getCoreProudSkillLevel() {
+      return coreProudSkillLevel_;
+    }
+
+    public static final int BORN_TIME_FIELD_NUMBER = 23;
+    private int bornTime_;
+    /**
+     * <code>uint32 born_time = 23;</code>
+     * @return The bornTime.
+     */
+    @java.lang.Override
+    public int getBornTime() {
+      return bornTime_;
+    }
+
+    public static final int TRACE_EFFECT_ID_FIELD_NUMBER = 31;
+    private int traceEffectId_;
+    /**
+     * <code>uint32 trace_effect_id = 31;</code>
+     * @return The traceEffectId.
+     */
+    @java.lang.Override
+    public int getTraceEffectId() {
+      return traceEffectId_;
+    }
+
     public static final int ANIM_HASH_FIELD_NUMBER = 27;
     private int animHash_;
     /**
@@ -1661,41 +1681,37 @@ public final class AvatarInfoOuterClass {
       return animHash_;
     }
 
-    public static final int ABLFJPMKKDA_FIELD_NUMBER = 29;
-    private int aBLFJPMKKDA_;
+    public static final int AVATAR_TYPE_FIELD_NUMBER = 19;
+    private int avatarType_;
     /**
-     * <pre>
-     *JNHGJAIIMGJ PINDEGAFOAE = 28;
-     * </pre>
-     *
-     * <code>uint32 ABLFJPMKKDA = 29;</code>
-     * @return The aBLFJPMKKDA.
+     * <code>uint32 avatar_type = 19;</code>
+     * @return The avatarType.
      */
     @java.lang.Override
-    public int getABLFJPMKKDA() {
-      return aBLFJPMKKDA_;
+    public int getAvatarType() {
+      return avatarType_;
     }
 
-    public static final int GCHGLANNHMC_FIELD_NUMBER = 30;
-    private int gCHGLANNHMC_;
+    public static final int LIFE_STATE_FIELD_NUMBER = 4;
+    private int lifeState_;
     /**
-     * <code>uint32 GCHGLANNHMC = 30;</code>
-     * @return The gCHGLANNHMC.
+     * <code>uint32 life_state = 4;</code>
+     * @return The lifeState.
      */
     @java.lang.Override
-    public int getGCHGLANNHMC() {
-      return gCHGLANNHMC_;
+    public int getLifeState() {
+      return lifeState_;
     }
 
-    public static final int KCINBOMOIGL_FIELD_NUMBER = 31;
-    private int kCINBOMOIGL_;
+    public static final int SKILL_DEPOT_ID_FIELD_NUMBER = 11;
+    private int skillDepotId_;
     /**
-     * <code>uint32 KCINBOMOIGL = 31;</code>
-     * @return The kCINBOMOIGL.
+     * <code>uint32 skill_depot_id = 11;</code>
+     * @return The skillDepotId.
      */
     @java.lang.Override
-    public int getKCINBOMOIGL() {
-      return kCINBOMOIGL_;
+    public int getSkillDepotId() {
+      return skillDepotId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1826,14 +1842,14 @@ public final class AvatarInfoOuterClass {
       if (animHash_ != 0) {
         output.writeUInt32(27, animHash_);
       }
-      if (aBLFJPMKKDA_ != 0) {
-        output.writeUInt32(29, aBLFJPMKKDA_);
+      if (bDFCBGHCIKN_ != 0) {
+        output.writeUInt32(29, bDFCBGHCIKN_);
       }
-      if (gCHGLANNHMC_ != 0) {
-        output.writeUInt32(30, gCHGLANNHMC_);
+      if (hBJPGICGCOB_ != 0) {
+        output.writeUInt32(30, hBJPGICGCOB_);
       }
-      if (kCINBOMOIGL_ != 0) {
-        output.writeUInt32(31, kCINBOMOIGL_);
+      if (traceEffectId_ != 0) {
+        output.writeUInt32(31, traceEffectId_);
       }
       unknownFields.writeTo(output);
     }
@@ -2028,17 +2044,17 @@ public final class AvatarInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(27, animHash_);
       }
-      if (aBLFJPMKKDA_ != 0) {
+      if (bDFCBGHCIKN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(29, aBLFJPMKKDA_);
+          .computeUInt32Size(29, bDFCBGHCIKN_);
       }
-      if (gCHGLANNHMC_ != 0) {
+      if (hBJPGICGCOB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(30, gCHGLANNHMC_);
+          .computeUInt32Size(30, hBJPGICGCOB_);
       }
-      if (kCINBOMOIGL_ != 0) {
+      if (traceEffectId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(31, kCINBOMOIGL_);
+          .computeUInt32Size(31, traceEffectId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2055,72 +2071,72 @@ public final class AvatarInfoOuterClass {
       }
       emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo other = (emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo) obj;
 
-      if (getAvatarId()
-          != other.getAvatarId()) return false;
-      if (getGuid()
-          != other.getGuid()) return false;
-      if (!internalGetPropMap().equals(
-          other.internalGetPropMap())) return false;
-      if (getLifeState()
-          != other.getLifeState()) return false;
-      if (!getEquipGuidListList()
-          .equals(other.getEquipGuidListList())) return false;
+      if (!getTeamResonanceListList()
+          .equals(other.getTeamResonanceListList())) return false;
+      if (!getInherentProudSkillListList()
+          .equals(other.getInherentProudSkillListList())) return false;
+      if (!getEquipAffixListList()
+          .equals(other.getEquipAffixListList())) return false;
+      if (!internalGetSkillLevelMap().equals(
+          other.internalGetSkillLevelMap())) return false;
       if (!getTalentIdListList()
           .equals(other.getTalentIdListList())) return false;
-      if (!internalGetFightPropMap().equals(
-          other.internalGetFightPropMap())) return false;
       if (hasTrialAvatarInfo() != other.hasTrialAvatarInfo()) return false;
       if (hasTrialAvatarInfo()) {
         if (!getTrialAvatarInfo()
             .equals(other.getTrialAvatarInfo())) return false;
       }
-      if (!internalGetSkillMap().equals(
-          other.internalGetSkillMap())) return false;
-      if (getSkillDepotId()
-          != other.getSkillDepotId()) return false;
       if (hasFetterInfo() != other.hasFetterInfo()) return false;
       if (hasFetterInfo()) {
         if (!getFetterInfo()
             .equals(other.getFetterInfo())) return false;
       }
-      if (getCoreProudSkillLevel()
-          != other.getCoreProudSkillLevel()) return false;
-      if (!getInherentProudSkillListList()
-          .equals(other.getInherentProudSkillListList())) return false;
-      if (!internalGetSkillLevelMap().equals(
-          other.internalGetSkillLevelMap())) return false;
-      if (expeditionState_ != other.expeditionState_) return false;
       if (!internalGetProudSkillExtraLevelMap().equals(
           other.internalGetProudSkillExtraLevelMap())) return false;
-      if (getIsFocus()
-          != other.getIsFocus()) return false;
-      if (getAvatarType()
-          != other.getAvatarType()) return false;
-      if (!getTeamResonanceListList()
-          .equals(other.getTeamResonanceListList())) return false;
-      if (getWearingFlycloakId()
-          != other.getWearingFlycloakId()) return false;
-      if (!getEquipAffixListList()
-          .equals(other.getEquipAffixListList())) return false;
-      if (getBornTime()
-          != other.getBornTime()) return false;
+      if (!getEquipGuidListList()
+          .equals(other.getEquipGuidListList())) return false;
       if (!getPendingPromoteRewardListList()
           .equals(other.getPendingPromoteRewardListList())) return false;
-      if (getCostumeId()
-          != other.getCostumeId()) return false;
+      if (!internalGetFightPropMap().equals(
+          other.internalGetFightPropMap())) return false;
+      if (!internalGetSkillMap().equals(
+          other.internalGetSkillMap())) return false;
+      if (!internalGetPropMap().equals(
+          other.internalGetPropMap())) return false;
       if (hasExcelInfo() != other.hasExcelInfo()) return false;
       if (hasExcelInfo()) {
         if (!getExcelInfo()
             .equals(other.getExcelInfo())) return false;
       }
+      if (getIsFocus()
+          != other.getIsFocus()) return false;
+      if (getHBJPGICGCOB()
+          != other.getHBJPGICGCOB()) return false;
+      if (getGuid()
+          != other.getGuid()) return false;
+      if (expeditionState_ != other.expeditionState_) return false;
+      if (getBDFCBGHCIKN()
+          != other.getBDFCBGHCIKN()) return false;
+      if (getCostumeId()
+          != other.getCostumeId()) return false;
+      if (getWearingFlycloakId()
+          != other.getWearingFlycloakId()) return false;
+      if (getAvatarId()
+          != other.getAvatarId()) return false;
+      if (getCoreProudSkillLevel()
+          != other.getCoreProudSkillLevel()) return false;
+      if (getBornTime()
+          != other.getBornTime()) return false;
+      if (getTraceEffectId()
+          != other.getTraceEffectId()) return false;
       if (getAnimHash()
           != other.getAnimHash()) return false;
-      if (getABLFJPMKKDA()
-          != other.getABLFJPMKKDA()) return false;
-      if (getGCHGLANNHMC()
-          != other.getGCHGLANNHMC()) return false;
-      if (getKCINBOMOIGL()
-          != other.getKCINBOMOIGL()) return false;
+      if (getAvatarType()
+          != other.getAvatarType()) return false;
+      if (getLifeState()
+          != other.getLifeState()) return false;
+      if (getSkillDepotId()
+          != other.getSkillDepotId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -2132,94 +2148,94 @@ public final class AvatarInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarId();
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getGuid());
-      if (!internalGetPropMap().getMap().isEmpty()) {
-        hash = (37 * hash) + PROP_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetPropMap().hashCode();
+      if (getTeamResonanceListCount() > 0) {
+        hash = (37 * hash) + TEAM_RESONANCE_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getTeamResonanceListList().hashCode();
       }
-      hash = (37 * hash) + LIFE_STATE_FIELD_NUMBER;
-      hash = (53 * hash) + getLifeState();
-      if (getEquipGuidListCount() > 0) {
-        hash = (37 * hash) + EQUIP_GUID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getEquipGuidListList().hashCode();
-      }
-      if (getTalentIdListCount() > 0) {
-        hash = (37 * hash) + TALENT_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTalentIdListList().hashCode();
-      }
-      if (!internalGetFightPropMap().getMap().isEmpty()) {
-        hash = (37 * hash) + FIGHT_PROP_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetFightPropMap().hashCode();
-      }
-      if (hasTrialAvatarInfo()) {
-        hash = (37 * hash) + TRIAL_AVATAR_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getTrialAvatarInfo().hashCode();
-      }
-      if (!internalGetSkillMap().getMap().isEmpty()) {
-        hash = (37 * hash) + SKILL_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetSkillMap().hashCode();
-      }
-      hash = (37 * hash) + SKILL_DEPOT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSkillDepotId();
-      if (hasFetterInfo()) {
-        hash = (37 * hash) + FETTER_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getFetterInfo().hashCode();
-      }
-      hash = (37 * hash) + CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getCoreProudSkillLevel();
       if (getInherentProudSkillListCount() > 0) {
         hash = (37 * hash) + INHERENT_PROUD_SKILL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getInherentProudSkillListList().hashCode();
+      }
+      if (getEquipAffixListCount() > 0) {
+        hash = (37 * hash) + EQUIP_AFFIX_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getEquipAffixListList().hashCode();
       }
       if (!internalGetSkillLevelMap().getMap().isEmpty()) {
         hash = (37 * hash) + SKILL_LEVEL_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetSkillLevelMap().hashCode();
       }
-      hash = (37 * hash) + EXPEDITION_STATE_FIELD_NUMBER;
-      hash = (53 * hash) + expeditionState_;
+      if (getTalentIdListCount() > 0) {
+        hash = (37 * hash) + TALENT_ID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getTalentIdListList().hashCode();
+      }
+      if (hasTrialAvatarInfo()) {
+        hash = (37 * hash) + TRIAL_AVATAR_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getTrialAvatarInfo().hashCode();
+      }
+      if (hasFetterInfo()) {
+        hash = (37 * hash) + FETTER_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getFetterInfo().hashCode();
+      }
       if (!internalGetProudSkillExtraLevelMap().getMap().isEmpty()) {
         hash = (37 * hash) + PROUD_SKILL_EXTRA_LEVEL_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetProudSkillExtraLevelMap().hashCode();
       }
-      hash = (37 * hash) + IS_FOCUS_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFocus());
-      hash = (37 * hash) + AVATAR_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarType();
-      if (getTeamResonanceListCount() > 0) {
-        hash = (37 * hash) + TEAM_RESONANCE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTeamResonanceListList().hashCode();
+      if (getEquipGuidListCount() > 0) {
+        hash = (37 * hash) + EQUIP_GUID_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getEquipGuidListList().hashCode();
       }
-      hash = (37 * hash) + WEARING_FLYCLOAK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getWearingFlycloakId();
-      if (getEquipAffixListCount() > 0) {
-        hash = (37 * hash) + EQUIP_AFFIX_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getEquipAffixListList().hashCode();
-      }
-      hash = (37 * hash) + BORN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBornTime();
       if (getPendingPromoteRewardListCount() > 0) {
         hash = (37 * hash) + PENDING_PROMOTE_REWARD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getPendingPromoteRewardListList().hashCode();
       }
-      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCostumeId();
+      if (!internalGetFightPropMap().getMap().isEmpty()) {
+        hash = (37 * hash) + FIGHT_PROP_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetFightPropMap().hashCode();
+      }
+      if (!internalGetSkillMap().getMap().isEmpty()) {
+        hash = (37 * hash) + SKILL_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetSkillMap().hashCode();
+      }
+      if (!internalGetPropMap().getMap().isEmpty()) {
+        hash = (37 * hash) + PROP_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetPropMap().hashCode();
+      }
       if (hasExcelInfo()) {
         hash = (37 * hash) + EXCEL_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getExcelInfo().hashCode();
       }
+      hash = (37 * hash) + IS_FOCUS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFocus());
+      hash = (37 * hash) + HBJPGICGCOB_FIELD_NUMBER;
+      hash = (53 * hash) + getHBJPGICGCOB();
+      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getGuid());
+      hash = (37 * hash) + EXPEDITION_STATE_FIELD_NUMBER;
+      hash = (53 * hash) + expeditionState_;
+      hash = (37 * hash) + BDFCBGHCIKN_FIELD_NUMBER;
+      hash = (53 * hash) + getBDFCBGHCIKN();
+      hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCostumeId();
+      hash = (37 * hash) + WEARING_FLYCLOAK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getWearingFlycloakId();
+      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getCoreProudSkillLevel();
+      hash = (37 * hash) + BORN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getBornTime();
+      hash = (37 * hash) + TRACE_EFFECT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTraceEffectId();
       hash = (37 * hash) + ANIM_HASH_FIELD_NUMBER;
       hash = (53 * hash) + getAnimHash();
-      hash = (37 * hash) + ABLFJPMKKDA_FIELD_NUMBER;
-      hash = (53 * hash) + getABLFJPMKKDA();
-      hash = (37 * hash) + GCHGLANNHMC_FIELD_NUMBER;
-      hash = (53 * hash) + getGCHGLANNHMC();
-      hash = (37 * hash) + KCINBOMOIGL_FIELD_NUMBER;
-      hash = (53 * hash) + getKCINBOMOIGL();
+      hash = (37 * hash) + AVATAR_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarType();
+      hash = (37 * hash) + LIFE_STATE_FIELD_NUMBER;
+      hash = (53 * hash) + getLifeState();
+      hash = (37 * hash) + SKILL_DEPOT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillDepotId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -2331,16 +2347,16 @@ public final class AvatarInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 3:
-            return internalGetPropMap();
-          case 7:
-            return internalGetFightPropMap();
-          case 10:
-            return internalGetSkillMap();
           case 15:
             return internalGetSkillLevelMap();
           case 17:
             return internalGetProudSkillExtraLevelMap();
+          case 7:
+            return internalGetFightPropMap();
+          case 10:
+            return internalGetSkillMap();
+          case 3:
+            return internalGetPropMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -2350,16 +2366,16 @@ public final class AvatarInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 3:
-            return internalGetMutablePropMap();
-          case 7:
-            return internalGetMutableFightPropMap();
-          case 10:
-            return internalGetMutableSkillMap();
           case 15:
             return internalGetMutableSkillLevelMap();
           case 17:
             return internalGetMutableProudSkillExtraLevelMap();
+          case 7:
+            return internalGetMutableFightPropMap();
+          case 10:
+            return internalGetMutableSkillMap();
+          case 3:
+            return internalGetMutablePropMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -2392,74 +2408,74 @@ public final class AvatarInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        avatarId_ = 0;
-
-        guid_ = 0L;
-
-        internalGetMutablePropMap().clear();
-        lifeState_ = 0;
-
-        equipGuidList_ = emptyLongList();
+        teamResonanceList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        inherentProudSkillList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
+        if (equipAffixListBuilder_ == null) {
+          equipAffixList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          equipAffixListBuilder_.clear();
+        }
+        internalGetMutableSkillLevelMap().clear();
         talentIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        internalGetMutableFightPropMap().clear();
+        bitField0_ = (bitField0_ & ~0x00000010);
         if (trialAvatarInfoBuilder_ == null) {
           trialAvatarInfo_ = null;
         } else {
           trialAvatarInfo_ = null;
           trialAvatarInfoBuilder_ = null;
         }
-        internalGetMutableSkillMap().clear();
-        skillDepotId_ = 0;
-
         if (fetterInfoBuilder_ == null) {
           fetterInfo_ = null;
         } else {
           fetterInfo_ = null;
           fetterInfoBuilder_ = null;
         }
-        coreProudSkillLevel_ = 0;
-
-        inherentProudSkillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000020);
-        internalGetMutableSkillLevelMap().clear();
-        expeditionState_ = 0;
-
         internalGetMutableProudSkillExtraLevelMap().clear();
-        isFocus_ = false;
-
-        avatarType_ = 0;
-
-        teamResonanceList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000100);
-        wearingFlycloakId_ = 0;
-
-        if (equipAffixListBuilder_ == null) {
-          equipAffixList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000200);
-        } else {
-          equipAffixListBuilder_.clear();
-        }
-        bornTime_ = 0;
-
+        equipGuidList_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000040);
         pendingPromoteRewardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000400);
-        costumeId_ = 0;
-
+        bitField0_ = (bitField0_ & ~0x00000080);
+        internalGetMutableFightPropMap().clear();
+        internalGetMutableSkillMap().clear();
+        internalGetMutablePropMap().clear();
         if (excelInfoBuilder_ == null) {
           excelInfo_ = null;
         } else {
           excelInfo_ = null;
           excelInfoBuilder_ = null;
         }
+        isFocus_ = false;
+
+        hBJPGICGCOB_ = 0;
+
+        guid_ = 0L;
+
+        expeditionState_ = 0;
+
+        bDFCBGHCIKN_ = 0;
+
+        costumeId_ = 0;
+
+        wearingFlycloakId_ = 0;
+
+        avatarId_ = 0;
+
+        coreProudSkillLevel_ = 0;
+
+        bornTime_ = 0;
+
+        traceEffectId_ = 0;
+
         animHash_ = 0;
 
-        aBLFJPMKKDA_ = 0;
+        avatarType_ = 0;
 
-        gCHGLANNHMC_ = 0;
+        lifeState_ = 0;
 
-        kCINBOMOIGL_ = 0;
+        skillDepotId_ = 0;
 
         return this;
       }
@@ -2488,80 +2504,80 @@ public final class AvatarInfoOuterClass {
       public emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo buildPartial() {
         emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo result = new emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo(this);
         int from_bitField0_ = bitField0_;
-        result.avatarId_ = avatarId_;
-        result.guid_ = guid_;
-        result.propMap_ = internalGetPropMap();
-        result.propMap_.makeImmutable();
-        result.lifeState_ = lifeState_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          equipGuidList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.equipGuidList_ = equipGuidList_;
-        if (((bitField0_ & 0x00000004) != 0)) {
-          talentIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        }
-        result.talentIdList_ = talentIdList_;
-        result.fightPropMap_ = internalGetFightPropMap();
-        result.fightPropMap_.makeImmutable();
-        if (trialAvatarInfoBuilder_ == null) {
-          result.trialAvatarInfo_ = trialAvatarInfo_;
-        } else {
-          result.trialAvatarInfo_ = trialAvatarInfoBuilder_.build();
-        }
-        result.skillMap_ = internalGetSkillMap();
-        result.skillMap_.makeImmutable();
-        result.skillDepotId_ = skillDepotId_;
-        if (fetterInfoBuilder_ == null) {
-          result.fetterInfo_ = fetterInfo_;
-        } else {
-          result.fetterInfo_ = fetterInfoBuilder_.build();
-        }
-        result.coreProudSkillLevel_ = coreProudSkillLevel_;
-        if (((bitField0_ & 0x00000020) != 0)) {
-          inherentProudSkillList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000020);
-        }
-        result.inherentProudSkillList_ = inherentProudSkillList_;
-        result.skillLevelMap_ = internalGetSkillLevelMap();
-        result.skillLevelMap_.makeImmutable();
-        result.expeditionState_ = expeditionState_;
-        result.proudSkillExtraLevelMap_ = internalGetProudSkillExtraLevelMap();
-        result.proudSkillExtraLevelMap_.makeImmutable();
-        result.isFocus_ = isFocus_;
-        result.avatarType_ = avatarType_;
-        if (((bitField0_ & 0x00000100) != 0)) {
+        if (((bitField0_ & 0x00000001) != 0)) {
           teamResonanceList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000100);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.teamResonanceList_ = teamResonanceList_;
-        result.wearingFlycloakId_ = wearingFlycloakId_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          inherentProudSkillList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.inherentProudSkillList_ = inherentProudSkillList_;
         if (equipAffixListBuilder_ == null) {
-          if (((bitField0_ & 0x00000200) != 0)) {
+          if (((bitField0_ & 0x00000004) != 0)) {
             equipAffixList_ = java.util.Collections.unmodifiableList(equipAffixList_);
-            bitField0_ = (bitField0_ & ~0x00000200);
+            bitField0_ = (bitField0_ & ~0x00000004);
           }
           result.equipAffixList_ = equipAffixList_;
         } else {
           result.equipAffixList_ = equipAffixListBuilder_.build();
         }
-        result.bornTime_ = bornTime_;
-        if (((bitField0_ & 0x00000400) != 0)) {
+        result.skillLevelMap_ = internalGetSkillLevelMap();
+        result.skillLevelMap_.makeImmutable();
+        if (((bitField0_ & 0x00000010) != 0)) {
+          talentIdList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        }
+        result.talentIdList_ = talentIdList_;
+        if (trialAvatarInfoBuilder_ == null) {
+          result.trialAvatarInfo_ = trialAvatarInfo_;
+        } else {
+          result.trialAvatarInfo_ = trialAvatarInfoBuilder_.build();
+        }
+        if (fetterInfoBuilder_ == null) {
+          result.fetterInfo_ = fetterInfo_;
+        } else {
+          result.fetterInfo_ = fetterInfoBuilder_.build();
+        }
+        result.proudSkillExtraLevelMap_ = internalGetProudSkillExtraLevelMap();
+        result.proudSkillExtraLevelMap_.makeImmutable();
+        if (((bitField0_ & 0x00000040) != 0)) {
+          equipGuidList_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000040);
+        }
+        result.equipGuidList_ = equipGuidList_;
+        if (((bitField0_ & 0x00000080) != 0)) {
           pendingPromoteRewardList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000400);
+          bitField0_ = (bitField0_ & ~0x00000080);
         }
         result.pendingPromoteRewardList_ = pendingPromoteRewardList_;
-        result.costumeId_ = costumeId_;
+        result.fightPropMap_ = internalGetFightPropMap();
+        result.fightPropMap_.makeImmutable();
+        result.skillMap_ = internalGetSkillMap();
+        result.skillMap_.makeImmutable();
+        result.propMap_ = internalGetPropMap();
+        result.propMap_.makeImmutable();
         if (excelInfoBuilder_ == null) {
           result.excelInfo_ = excelInfo_;
         } else {
           result.excelInfo_ = excelInfoBuilder_.build();
         }
+        result.isFocus_ = isFocus_;
+        result.hBJPGICGCOB_ = hBJPGICGCOB_;
+        result.guid_ = guid_;
+        result.expeditionState_ = expeditionState_;
+        result.bDFCBGHCIKN_ = bDFCBGHCIKN_;
+        result.costumeId_ = costumeId_;
+        result.wearingFlycloakId_ = wearingFlycloakId_;
+        result.avatarId_ = avatarId_;
+        result.coreProudSkillLevel_ = coreProudSkillLevel_;
+        result.bornTime_ = bornTime_;
+        result.traceEffectId_ = traceEffectId_;
         result.animHash_ = animHash_;
-        result.aBLFJPMKKDA_ = aBLFJPMKKDA_;
-        result.gCHGLANNHMC_ = gCHGLANNHMC_;
-        result.kCINBOMOIGL_ = kCINBOMOIGL_;
+        result.avatarType_ = avatarType_;
+        result.lifeState_ = lifeState_;
+        result.skillDepotId_ = skillDepotId_;
         onBuilt();
         return result;
       }
@@ -2610,94 +2626,31 @@ public final class AvatarInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo other) {
         if (other == emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo.getDefaultInstance()) return this;
-        if (other.getAvatarId() != 0) {
-          setAvatarId(other.getAvatarId());
-        }
-        if (other.getGuid() != 0L) {
-          setGuid(other.getGuid());
-        }
-        internalGetMutablePropMap().mergeFrom(
-            other.internalGetPropMap());
-        if (other.getLifeState() != 0) {
-          setLifeState(other.getLifeState());
-        }
-        if (!other.equipGuidList_.isEmpty()) {
-          if (equipGuidList_.isEmpty()) {
-            equipGuidList_ = other.equipGuidList_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureEquipGuidListIsMutable();
-            equipGuidList_.addAll(other.equipGuidList_);
-          }
-          onChanged();
-        }
-        if (!other.talentIdList_.isEmpty()) {
-          if (talentIdList_.isEmpty()) {
-            talentIdList_ = other.talentIdList_;
-            bitField0_ = (bitField0_ & ~0x00000004);
-          } else {
-            ensureTalentIdListIsMutable();
-            talentIdList_.addAll(other.talentIdList_);
-          }
-          onChanged();
-        }
-        internalGetMutableFightPropMap().mergeFrom(
-            other.internalGetFightPropMap());
-        if (other.hasTrialAvatarInfo()) {
-          mergeTrialAvatarInfo(other.getTrialAvatarInfo());
-        }
-        internalGetMutableSkillMap().mergeFrom(
-            other.internalGetSkillMap());
-        if (other.getSkillDepotId() != 0) {
-          setSkillDepotId(other.getSkillDepotId());
-        }
-        if (other.hasFetterInfo()) {
-          mergeFetterInfo(other.getFetterInfo());
-        }
-        if (other.getCoreProudSkillLevel() != 0) {
-          setCoreProudSkillLevel(other.getCoreProudSkillLevel());
-        }
-        if (!other.inherentProudSkillList_.isEmpty()) {
-          if (inherentProudSkillList_.isEmpty()) {
-            inherentProudSkillList_ = other.inherentProudSkillList_;
-            bitField0_ = (bitField0_ & ~0x00000020);
-          } else {
-            ensureInherentProudSkillListIsMutable();
-            inherentProudSkillList_.addAll(other.inherentProudSkillList_);
-          }
-          onChanged();
-        }
-        internalGetMutableSkillLevelMap().mergeFrom(
-            other.internalGetSkillLevelMap());
-        if (other.expeditionState_ != 0) {
-          setExpeditionStateValue(other.getExpeditionStateValue());
-        }
-        internalGetMutableProudSkillExtraLevelMap().mergeFrom(
-            other.internalGetProudSkillExtraLevelMap());
-        if (other.getIsFocus() != false) {
-          setIsFocus(other.getIsFocus());
-        }
-        if (other.getAvatarType() != 0) {
-          setAvatarType(other.getAvatarType());
-        }
         if (!other.teamResonanceList_.isEmpty()) {
           if (teamResonanceList_.isEmpty()) {
             teamResonanceList_ = other.teamResonanceList_;
-            bitField0_ = (bitField0_ & ~0x00000100);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureTeamResonanceListIsMutable();
             teamResonanceList_.addAll(other.teamResonanceList_);
           }
           onChanged();
         }
-        if (other.getWearingFlycloakId() != 0) {
-          setWearingFlycloakId(other.getWearingFlycloakId());
+        if (!other.inherentProudSkillList_.isEmpty()) {
+          if (inherentProudSkillList_.isEmpty()) {
+            inherentProudSkillList_ = other.inherentProudSkillList_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureInherentProudSkillListIsMutable();
+            inherentProudSkillList_.addAll(other.inherentProudSkillList_);
+          }
+          onChanged();
         }
         if (equipAffixListBuilder_ == null) {
           if (!other.equipAffixList_.isEmpty()) {
             if (equipAffixList_.isEmpty()) {
               equipAffixList_ = other.equipAffixList_;
-              bitField0_ = (bitField0_ & ~0x00000200);
+              bitField0_ = (bitField0_ & ~0x00000004);
             } else {
               ensureEquipAffixListIsMutable();
               equipAffixList_.addAll(other.equipAffixList_);
@@ -2710,7 +2663,7 @@ public final class AvatarInfoOuterClass {
               equipAffixListBuilder_.dispose();
               equipAffixListBuilder_ = null;
               equipAffixList_ = other.equipAffixList_;
-              bitField0_ = (bitField0_ & ~0x00000200);
+              bitField0_ = (bitField0_ & ~0x00000004);
               equipAffixListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getEquipAffixListFieldBuilder() : null;
@@ -2719,36 +2672,99 @@ public final class AvatarInfoOuterClass {
             }
           }
         }
-        if (other.getBornTime() != 0) {
-          setBornTime(other.getBornTime());
+        internalGetMutableSkillLevelMap().mergeFrom(
+            other.internalGetSkillLevelMap());
+        if (!other.talentIdList_.isEmpty()) {
+          if (talentIdList_.isEmpty()) {
+            talentIdList_ = other.talentIdList_;
+            bitField0_ = (bitField0_ & ~0x00000010);
+          } else {
+            ensureTalentIdListIsMutable();
+            talentIdList_.addAll(other.talentIdList_);
+          }
+          onChanged();
+        }
+        if (other.hasTrialAvatarInfo()) {
+          mergeTrialAvatarInfo(other.getTrialAvatarInfo());
+        }
+        if (other.hasFetterInfo()) {
+          mergeFetterInfo(other.getFetterInfo());
+        }
+        internalGetMutableProudSkillExtraLevelMap().mergeFrom(
+            other.internalGetProudSkillExtraLevelMap());
+        if (!other.equipGuidList_.isEmpty()) {
+          if (equipGuidList_.isEmpty()) {
+            equipGuidList_ = other.equipGuidList_;
+            bitField0_ = (bitField0_ & ~0x00000040);
+          } else {
+            ensureEquipGuidListIsMutable();
+            equipGuidList_.addAll(other.equipGuidList_);
+          }
+          onChanged();
         }
         if (!other.pendingPromoteRewardList_.isEmpty()) {
           if (pendingPromoteRewardList_.isEmpty()) {
             pendingPromoteRewardList_ = other.pendingPromoteRewardList_;
-            bitField0_ = (bitField0_ & ~0x00000400);
+            bitField0_ = (bitField0_ & ~0x00000080);
           } else {
             ensurePendingPromoteRewardListIsMutable();
             pendingPromoteRewardList_.addAll(other.pendingPromoteRewardList_);
           }
           onChanged();
         }
+        internalGetMutableFightPropMap().mergeFrom(
+            other.internalGetFightPropMap());
+        internalGetMutableSkillMap().mergeFrom(
+            other.internalGetSkillMap());
+        internalGetMutablePropMap().mergeFrom(
+            other.internalGetPropMap());
+        if (other.hasExcelInfo()) {
+          mergeExcelInfo(other.getExcelInfo());
+        }
+        if (other.getIsFocus() != false) {
+          setIsFocus(other.getIsFocus());
+        }
+        if (other.getHBJPGICGCOB() != 0) {
+          setHBJPGICGCOB(other.getHBJPGICGCOB());
+        }
+        if (other.getGuid() != 0L) {
+          setGuid(other.getGuid());
+        }
+        if (other.expeditionState_ != 0) {
+          setExpeditionStateValue(other.getExpeditionStateValue());
+        }
+        if (other.getBDFCBGHCIKN() != 0) {
+          setBDFCBGHCIKN(other.getBDFCBGHCIKN());
+        }
         if (other.getCostumeId() != 0) {
           setCostumeId(other.getCostumeId());
         }
-        if (other.hasExcelInfo()) {
-          mergeExcelInfo(other.getExcelInfo());
+        if (other.getWearingFlycloakId() != 0) {
+          setWearingFlycloakId(other.getWearingFlycloakId());
+        }
+        if (other.getAvatarId() != 0) {
+          setAvatarId(other.getAvatarId());
+        }
+        if (other.getCoreProudSkillLevel() != 0) {
+          setCoreProudSkillLevel(other.getCoreProudSkillLevel());
+        }
+        if (other.getBornTime() != 0) {
+          setBornTime(other.getBornTime());
+        }
+        if (other.getTraceEffectId() != 0) {
+          setTraceEffectId(other.getTraceEffectId());
         }
         if (other.getAnimHash() != 0) {
           setAnimHash(other.getAnimHash());
         }
-        if (other.getABLFJPMKKDA() != 0) {
-          setABLFJPMKKDA(other.getABLFJPMKKDA());
+        if (other.getAvatarType() != 0) {
+          setAvatarType(other.getAvatarType());
         }
-        if (other.getGCHGLANNHMC() != 0) {
-          setGCHGLANNHMC(other.getGCHGLANNHMC());
+        if (other.getLifeState() != 0) {
+          setLifeState(other.getLifeState());
         }
-        if (other.getKCINBOMOIGL() != 0) {
-          setKCINBOMOIGL(other.getKCINBOMOIGL());
+        if (other.getSkillDepotId() != 0) {
+          setSkillDepotId(other.getSkillDepotId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2780,1397 +2796,11 @@ public final class AvatarInfoOuterClass {
       }
       private int bitField0_;
 
-      private int avatarId_ ;
-      /**
-       * <code>uint32 avatar_id = 1;</code>
-       * @return The avatarId.
-       */
-      @java.lang.Override
-      public int getAvatarId() {
-        return avatarId_;
-      }
-      /**
-       * <code>uint32 avatar_id = 1;</code>
-       * @param value The avatarId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarId(int value) {
-        
-        avatarId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 avatar_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarId() {
-        
-        avatarId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long guid_ ;
-      /**
-       * <code>uint64 guid = 2;</code>
-       * @return The guid.
-       */
-      @java.lang.Override
-      public long getGuid() {
-        return guid_;
-      }
-      /**
-       * <code>uint64 guid = 2;</code>
-       * @param value The guid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGuid(long value) {
-        
-        guid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 guid = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGuid() {
-        
-        guid_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> propMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
-      internalGetPropMap() {
-        if (propMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              PropMapDefaultEntryHolder.defaultEntry);
-        }
-        return propMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
-      internalGetMutablePropMap() {
-        onChanged();;
-        if (propMap_ == null) {
-          propMap_ = com.google.protobuf.MapField.newMapField(
-              PropMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!propMap_.isMutable()) {
-          propMap_ = propMap_.copy();
-        }
-        return propMap_;
-      }
-
-      public int getPropMapCount() {
-        return internalGetPropMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsPropMap(
-          int key) {
-        
-        return internalGetPropMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getPropMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropMap() {
-        return getPropMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropMapMap() {
-        return internalGetPropMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrDefault(
-          int key,
-          emu.grasscutter.net.proto.PropValueOuterClass.PropValue defaultValue) {
-        
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> map =
-            internalGetPropMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> map =
-            internalGetPropMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearPropMap() {
-        internalGetMutablePropMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-       */
-
-      public Builder removePropMap(
-          int key) {
-        
-        internalGetMutablePropMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
-      getMutablePropMap() {
-        return internalGetMutablePropMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-       */
-      public Builder putPropMap(
-          int key,
-          emu.grasscutter.net.proto.PropValueOuterClass.PropValue value) {
-        
-        if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutablePropMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
-       */
-
-      public Builder putAllPropMap(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> values) {
-        internalGetMutablePropMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private int lifeState_ ;
-      /**
-       * <code>uint32 life_state = 4;</code>
-       * @return The lifeState.
-       */
-      @java.lang.Override
-      public int getLifeState() {
-        return lifeState_;
-      }
-      /**
-       * <code>uint32 life_state = 4;</code>
-       * @param value The lifeState to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLifeState(int value) {
-        
-        lifeState_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 life_state = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLifeState() {
-        
-        lifeState_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.LongList equipGuidList_ = emptyLongList();
-      private void ensureEquipGuidListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          equipGuidList_ = mutableCopy(equipGuidList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-      /**
-       * <code>repeated uint64 equip_guid_list = 5;</code>
-       * @return A list containing the equipGuidList.
-       */
-      public java.util.List<java.lang.Long>
-          getEquipGuidListList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(equipGuidList_) : equipGuidList_;
-      }
-      /**
-       * <code>repeated uint64 equip_guid_list = 5;</code>
-       * @return The count of equipGuidList.
-       */
-      public int getEquipGuidListCount() {
-        return equipGuidList_.size();
-      }
-      /**
-       * <code>repeated uint64 equip_guid_list = 5;</code>
-       * @param index The index of the element to return.
-       * @return The equipGuidList at the given index.
-       */
-      public long getEquipGuidList(int index) {
-        return equipGuidList_.getLong(index);
-      }
-      /**
-       * <code>repeated uint64 equip_guid_list = 5;</code>
-       * @param index The index to set the value at.
-       * @param value The equipGuidList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEquipGuidList(
-          int index, long value) {
-        ensureEquipGuidListIsMutable();
-        equipGuidList_.setLong(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 equip_guid_list = 5;</code>
-       * @param value The equipGuidList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addEquipGuidList(long value) {
-        ensureEquipGuidListIsMutable();
-        equipGuidList_.addLong(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 equip_guid_list = 5;</code>
-       * @param values The equipGuidList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllEquipGuidList(
-          java.lang.Iterable<? extends java.lang.Long> values) {
-        ensureEquipGuidListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, equipGuidList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint64 equip_guid_list = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEquipGuidList() {
-        equipGuidList_ = emptyLongList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList talentIdList_ = emptyIntList();
-      private void ensureTalentIdListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          talentIdList_ = mutableCopy(talentIdList_);
-          bitField0_ |= 0x00000004;
-         }
-      }
-      /**
-       * <code>repeated uint32 talent_id_list = 6;</code>
-       * @return A list containing the talentIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getTalentIdListList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(talentIdList_) : talentIdList_;
-      }
-      /**
-       * <code>repeated uint32 talent_id_list = 6;</code>
-       * @return The count of talentIdList.
-       */
-      public int getTalentIdListCount() {
-        return talentIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 talent_id_list = 6;</code>
-       * @param index The index of the element to return.
-       * @return The talentIdList at the given index.
-       */
-      public int getTalentIdList(int index) {
-        return talentIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 talent_id_list = 6;</code>
-       * @param index The index to set the value at.
-       * @param value The talentIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTalentIdList(
-          int index, int value) {
-        ensureTalentIdListIsMutable();
-        talentIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 talent_id_list = 6;</code>
-       * @param value The talentIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addTalentIdList(int value) {
-        ensureTalentIdListIsMutable();
-        talentIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 talent_id_list = 6;</code>
-       * @param values The talentIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllTalentIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTalentIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, talentIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 talent_id_list = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTalentIdList() {
-        talentIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Float> fightPropMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Float>
-      internalGetFightPropMap() {
-        if (fightPropMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              FightPropMapDefaultEntryHolder.defaultEntry);
-        }
-        return fightPropMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Float>
-      internalGetMutableFightPropMap() {
-        onChanged();;
-        if (fightPropMap_ == null) {
-          fightPropMap_ = com.google.protobuf.MapField.newMapField(
-              FightPropMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!fightPropMap_.isMutable()) {
-          fightPropMap_ = fightPropMap_.copy();
-        }
-        return fightPropMap_;
-      }
-
-      public int getFightPropMapCount() {
-        return internalGetFightPropMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsFightPropMap(
-          int key) {
-        
-        return internalGetFightPropMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getFightPropMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Float> getFightPropMap() {
-        return getFightPropMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Float> getFightPropMapMap() {
-        return internalGetFightPropMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-       */
-      @java.lang.Override
-
-      public float getFightPropMapOrDefault(
-          int key,
-          float defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Float> map =
-            internalGetFightPropMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-       */
-      @java.lang.Override
-
-      public float getFightPropMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Float> map =
-            internalGetFightPropMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearFightPropMap() {
-        internalGetMutableFightPropMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-       */
-
-      public Builder removeFightPropMap(
-          int key) {
-        
-        internalGetMutableFightPropMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Float>
-      getMutableFightPropMap() {
-        return internalGetMutableFightPropMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-       */
-      public Builder putFightPropMap(
-          int key,
-          float value) {
-        
-        
-        internalGetMutableFightPropMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
-       */
-
-      public Builder putAllFightPropMap(
-          java.util.Map<java.lang.Integer, java.lang.Float> values) {
-        internalGetMutableFightPropMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo trialAvatarInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.Builder, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder> trialAvatarInfoBuilder_;
-      /**
-       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-       * @return Whether the trialAvatarInfo field is set.
-       */
-      public boolean hasTrialAvatarInfo() {
-        return trialAvatarInfoBuilder_ != null || trialAvatarInfo_ != null;
-      }
-      /**
-       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-       * @return The trialAvatarInfo.
-       */
-      public emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo getTrialAvatarInfo() {
-        if (trialAvatarInfoBuilder_ == null) {
-          return trialAvatarInfo_ == null ? emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.getDefaultInstance() : trialAvatarInfo_;
-        } else {
-          return trialAvatarInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-       */
-      public Builder setTrialAvatarInfo(emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo value) {
-        if (trialAvatarInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          trialAvatarInfo_ = value;
-          onChanged();
-        } else {
-          trialAvatarInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-       */
-      public Builder setTrialAvatarInfo(
-          emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.Builder builderForValue) {
-        if (trialAvatarInfoBuilder_ == null) {
-          trialAvatarInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          trialAvatarInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-       */
-      public Builder mergeTrialAvatarInfo(emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo value) {
-        if (trialAvatarInfoBuilder_ == null) {
-          if (trialAvatarInfo_ != null) {
-            trialAvatarInfo_ =
-              emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.newBuilder(trialAvatarInfo_).mergeFrom(value).buildPartial();
-          } else {
-            trialAvatarInfo_ = value;
-          }
-          onChanged();
-        } else {
-          trialAvatarInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-       */
-      public Builder clearTrialAvatarInfo() {
-        if (trialAvatarInfoBuilder_ == null) {
-          trialAvatarInfo_ = null;
-          onChanged();
-        } else {
-          trialAvatarInfo_ = null;
-          trialAvatarInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-       */
-      public emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.Builder getTrialAvatarInfoBuilder() {
-        
-        onChanged();
-        return getTrialAvatarInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-       */
-      public emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder getTrialAvatarInfoOrBuilder() {
-        if (trialAvatarInfoBuilder_ != null) {
-          return trialAvatarInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return trialAvatarInfo_ == null ?
-              emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.getDefaultInstance() : trialAvatarInfo_;
-        }
-      }
-      /**
-       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.Builder, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder> 
-          getTrialAvatarInfoFieldBuilder() {
-        if (trialAvatarInfoBuilder_ == null) {
-          trialAvatarInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.Builder, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder>(
-                  getTrialAvatarInfo(),
-                  getParentForChildren(),
-                  isClean());
-          trialAvatarInfo_ = null;
-        }
-        return trialAvatarInfoBuilder_;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> skillMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
-      internalGetSkillMap() {
-        if (skillMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              SkillMapDefaultEntryHolder.defaultEntry);
-        }
-        return skillMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
-      internalGetMutableSkillMap() {
-        onChanged();;
-        if (skillMap_ == null) {
-          skillMap_ = com.google.protobuf.MapField.newMapField(
-              SkillMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!skillMap_.isMutable()) {
-          skillMap_ = skillMap_.copy();
-        }
-        return skillMap_;
-      }
-
-      public int getSkillMapCount() {
-        return internalGetSkillMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsSkillMap(
-          int key) {
-        
-        return internalGetSkillMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getSkillMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> getSkillMap() {
-        return getSkillMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> getSkillMapMap() {
-        return internalGetSkillMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrDefault(
-          int key,
-          emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo defaultValue) {
-        
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> map =
-            internalGetSkillMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-       */
-      @java.lang.Override
-
-      public emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> map =
-            internalGetSkillMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearSkillMap() {
-        internalGetMutableSkillMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-       */
-
-      public Builder removeSkillMap(
-          int key) {
-        
-        internalGetMutableSkillMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
-      getMutableSkillMap() {
-        return internalGetMutableSkillMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-       */
-      public Builder putSkillMap(
-          int key,
-          emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo value) {
-        
-        if (value == null) { throw new java.lang.NullPointerException(); }
-        internalGetMutableSkillMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
-       */
-
-      public Builder putAllSkillMap(
-          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> values) {
-        internalGetMutableSkillMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private int skillDepotId_ ;
-      /**
-       * <code>uint32 skill_depot_id = 11;</code>
-       * @return The skillDepotId.
-       */
-      @java.lang.Override
-      public int getSkillDepotId() {
-        return skillDepotId_;
-      }
-      /**
-       * <code>uint32 skill_depot_id = 11;</code>
-       * @param value The skillDepotId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSkillDepotId(int value) {
-        
-        skillDepotId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 skill_depot_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSkillDepotId() {
-        
-        skillDepotId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo fetterInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.Builder, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder> fetterInfoBuilder_;
-      /**
-       * <code>.AvatarFetterInfo fetter_info = 12;</code>
-       * @return Whether the fetterInfo field is set.
-       */
-      public boolean hasFetterInfo() {
-        return fetterInfoBuilder_ != null || fetterInfo_ != null;
-      }
-      /**
-       * <code>.AvatarFetterInfo fetter_info = 12;</code>
-       * @return The fetterInfo.
-       */
-      public emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo getFetterInfo() {
-        if (fetterInfoBuilder_ == null) {
-          return fetterInfo_ == null ? emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.getDefaultInstance() : fetterInfo_;
-        } else {
-          return fetterInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.AvatarFetterInfo fetter_info = 12;</code>
-       */
-      public Builder setFetterInfo(emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo value) {
-        if (fetterInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          fetterInfo_ = value;
-          onChanged();
-        } else {
-          fetterInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AvatarFetterInfo fetter_info = 12;</code>
-       */
-      public Builder setFetterInfo(
-          emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.Builder builderForValue) {
-        if (fetterInfoBuilder_ == null) {
-          fetterInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          fetterInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AvatarFetterInfo fetter_info = 12;</code>
-       */
-      public Builder mergeFetterInfo(emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo value) {
-        if (fetterInfoBuilder_ == null) {
-          if (fetterInfo_ != null) {
-            fetterInfo_ =
-              emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.newBuilder(fetterInfo_).mergeFrom(value).buildPartial();
-          } else {
-            fetterInfo_ = value;
-          }
-          onChanged();
-        } else {
-          fetterInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AvatarFetterInfo fetter_info = 12;</code>
-       */
-      public Builder clearFetterInfo() {
-        if (fetterInfoBuilder_ == null) {
-          fetterInfo_ = null;
-          onChanged();
-        } else {
-          fetterInfo_ = null;
-          fetterInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AvatarFetterInfo fetter_info = 12;</code>
-       */
-      public emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.Builder getFetterInfoBuilder() {
-        
-        onChanged();
-        return getFetterInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AvatarFetterInfo fetter_info = 12;</code>
-       */
-      public emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder getFetterInfoOrBuilder() {
-        if (fetterInfoBuilder_ != null) {
-          return fetterInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return fetterInfo_ == null ?
-              emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.getDefaultInstance() : fetterInfo_;
-        }
-      }
-      /**
-       * <code>.AvatarFetterInfo fetter_info = 12;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.Builder, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder> 
-          getFetterInfoFieldBuilder() {
-        if (fetterInfoBuilder_ == null) {
-          fetterInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.Builder, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder>(
-                  getFetterInfo(),
-                  getParentForChildren(),
-                  isClean());
-          fetterInfo_ = null;
-        }
-        return fetterInfoBuilder_;
-      }
-
-      private int coreProudSkillLevel_ ;
-      /**
-       * <code>uint32 core_proud_skill_level = 13;</code>
-       * @return The coreProudSkillLevel.
-       */
-      @java.lang.Override
-      public int getCoreProudSkillLevel() {
-        return coreProudSkillLevel_;
-      }
-      /**
-       * <code>uint32 core_proud_skill_level = 13;</code>
-       * @param value The coreProudSkillLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCoreProudSkillLevel(int value) {
-        
-        coreProudSkillLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 core_proud_skill_level = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCoreProudSkillLevel() {
-        
-        coreProudSkillLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList inherentProudSkillList_ = emptyIntList();
-      private void ensureInherentProudSkillListIsMutable() {
-        if (!((bitField0_ & 0x00000020) != 0)) {
-          inherentProudSkillList_ = mutableCopy(inherentProudSkillList_);
-          bitField0_ |= 0x00000020;
-         }
-      }
-      /**
-       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
-       * @return A list containing the inherentProudSkillList.
-       */
-      public java.util.List<java.lang.Integer>
-          getInherentProudSkillListList() {
-        return ((bitField0_ & 0x00000020) != 0) ?
-                 java.util.Collections.unmodifiableList(inherentProudSkillList_) : inherentProudSkillList_;
-      }
-      /**
-       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
-       * @return The count of inherentProudSkillList.
-       */
-      public int getInherentProudSkillListCount() {
-        return inherentProudSkillList_.size();
-      }
-      /**
-       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
-       * @param index The index of the element to return.
-       * @return The inherentProudSkillList at the given index.
-       */
-      public int getInherentProudSkillList(int index) {
-        return inherentProudSkillList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
-       * @param index The index to set the value at.
-       * @param value The inherentProudSkillList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setInherentProudSkillList(
-          int index, int value) {
-        ensureInherentProudSkillListIsMutable();
-        inherentProudSkillList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
-       * @param value The inherentProudSkillList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addInherentProudSkillList(int value) {
-        ensureInherentProudSkillListIsMutable();
-        inherentProudSkillList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
-       * @param values The inherentProudSkillList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllInherentProudSkillList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureInherentProudSkillListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, inherentProudSkillList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearInherentProudSkillList() {
-        inherentProudSkillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000020);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> skillLevelMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetSkillLevelMap() {
-        if (skillLevelMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              SkillLevelMapDefaultEntryHolder.defaultEntry);
-        }
-        return skillLevelMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableSkillLevelMap() {
-        onChanged();;
-        if (skillLevelMap_ == null) {
-          skillLevelMap_ = com.google.protobuf.MapField.newMapField(
-              SkillLevelMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!skillLevelMap_.isMutable()) {
-          skillLevelMap_ = skillLevelMap_.copy();
-        }
-        return skillLevelMap_;
-      }
-
-      public int getSkillLevelMapCount() {
-        return internalGetSkillLevelMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsSkillLevelMap(
-          int key) {
-        
-        return internalGetSkillLevelMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getSkillLevelMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMap() {
-        return getSkillLevelMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMapMap() {
-        return internalGetSkillLevelMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
-       */
-      @java.lang.Override
-
-      public int getSkillLevelMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetSkillLevelMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
-       */
-      @java.lang.Override
-
-      public int getSkillLevelMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetSkillLevelMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearSkillLevelMap() {
-        internalGetMutableSkillLevelMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
-       */
-
-      public Builder removeSkillLevelMap(
-          int key) {
-        
-        internalGetMutableSkillLevelMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableSkillLevelMap() {
-        return internalGetMutableSkillLevelMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
-       */
-      public Builder putSkillLevelMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableSkillLevelMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
-       */
-
-      public Builder putAllSkillLevelMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableSkillLevelMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private int expeditionState_ = 0;
-      /**
-       * <code>.AvatarExpeditionState expedition_state = 16;</code>
-       * @return The enum numeric value on the wire for expeditionState.
-       */
-      @java.lang.Override public int getExpeditionStateValue() {
-        return expeditionState_;
-      }
-      /**
-       * <code>.AvatarExpeditionState expedition_state = 16;</code>
-       * @param value The enum numeric value on the wire for expeditionState to set.
-       * @return This builder for chaining.
-       */
-      public Builder setExpeditionStateValue(int value) {
-        
-        expeditionState_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.AvatarExpeditionState expedition_state = 16;</code>
-       * @return The expeditionState.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState getExpeditionState() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState result = emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState.valueOf(expeditionState_);
-        return result == null ? emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.AvatarExpeditionState expedition_state = 16;</code>
-       * @param value The expeditionState to set.
-       * @return This builder for chaining.
-       */
-      public Builder setExpeditionState(emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        expeditionState_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.AvatarExpeditionState expedition_state = 16;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearExpeditionState() {
-        
-        expeditionState_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> proudSkillExtraLevelMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetProudSkillExtraLevelMap() {
-        if (proudSkillExtraLevelMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
-        }
-        return proudSkillExtraLevelMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableProudSkillExtraLevelMap() {
-        onChanged();;
-        if (proudSkillExtraLevelMap_ == null) {
-          proudSkillExtraLevelMap_ = com.google.protobuf.MapField.newMapField(
-              ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!proudSkillExtraLevelMap_.isMutable()) {
-          proudSkillExtraLevelMap_ = proudSkillExtraLevelMap_.copy();
-        }
-        return proudSkillExtraLevelMap_;
-      }
-
-      public int getProudSkillExtraLevelMapCount() {
-        return internalGetProudSkillExtraLevelMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsProudSkillExtraLevelMap(
-          int key) {
-        
-        return internalGetProudSkillExtraLevelMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getProudSkillExtraLevelMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMap() {
-        return getProudSkillExtraLevelMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMapMap() {
-        return internalGetProudSkillExtraLevelMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
-       */
-      @java.lang.Override
-
-      public int getProudSkillExtraLevelMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetProudSkillExtraLevelMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
-       */
-      @java.lang.Override
-
-      public int getProudSkillExtraLevelMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetProudSkillExtraLevelMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearProudSkillExtraLevelMap() {
-        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
-       */
-
-      public Builder removeProudSkillExtraLevelMap(
-          int key) {
-        
-        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableProudSkillExtraLevelMap() {
-        return internalGetMutableProudSkillExtraLevelMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
-       */
-      public Builder putProudSkillExtraLevelMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
-       */
-
-      public Builder putAllProudSkillExtraLevelMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private boolean isFocus_ ;
-      /**
-       * <code>bool is_focus = 18;</code>
-       * @return The isFocus.
-       */
-      @java.lang.Override
-      public boolean getIsFocus() {
-        return isFocus_;
-      }
-      /**
-       * <code>bool is_focus = 18;</code>
-       * @param value The isFocus to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFocus(boolean value) {
-        
-        isFocus_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_focus = 18;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFocus() {
-        
-        isFocus_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int avatarType_ ;
-      /**
-       * <code>uint32 avatar_type = 19;</code>
-       * @return The avatarType.
-       */
-      @java.lang.Override
-      public int getAvatarType() {
-        return avatarType_;
-      }
-      /**
-       * <code>uint32 avatar_type = 19;</code>
-       * @param value The avatarType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarType(int value) {
-        
-        avatarType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 avatar_type = 19;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarType() {
-        
-        avatarType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList teamResonanceList_ = emptyIntList();
       private void ensureTeamResonanceListIsMutable() {
-        if (!((bitField0_ & 0x00000100) != 0)) {
+        if (!((bitField0_ & 0x00000001) != 0)) {
           teamResonanceList_ = mutableCopy(teamResonanceList_);
-          bitField0_ |= 0x00000100;
+          bitField0_ |= 0x00000001;
          }
       }
       /**
@@ -4179,7 +2809,7 @@ public final class AvatarInfoOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getTeamResonanceListList() {
-        return ((bitField0_ & 0x00000100) != 0) ?
+        return ((bitField0_ & 0x00000001) != 0) ?
                  java.util.Collections.unmodifiableList(teamResonanceList_) : teamResonanceList_;
       }
       /**
@@ -4240,38 +2870,86 @@ public final class AvatarInfoOuterClass {
        */
       public Builder clearTeamResonanceList() {
         teamResonanceList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private int wearingFlycloakId_ ;
-      /**
-       * <code>uint32 wearing_flycloak_id = 21;</code>
-       * @return The wearingFlycloakId.
-       */
-      @java.lang.Override
-      public int getWearingFlycloakId() {
-        return wearingFlycloakId_;
+      private com.google.protobuf.Internal.IntList inherentProudSkillList_ = emptyIntList();
+      private void ensureInherentProudSkillListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          inherentProudSkillList_ = mutableCopy(inherentProudSkillList_);
+          bitField0_ |= 0x00000002;
+         }
       }
       /**
-       * <code>uint32 wearing_flycloak_id = 21;</code>
-       * @param value The wearingFlycloakId to set.
+       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
+       * @return A list containing the inherentProudSkillList.
+       */
+      public java.util.List<java.lang.Integer>
+          getInherentProudSkillListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(inherentProudSkillList_) : inherentProudSkillList_;
+      }
+      /**
+       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
+       * @return The count of inherentProudSkillList.
+       */
+      public int getInherentProudSkillListCount() {
+        return inherentProudSkillList_.size();
+      }
+      /**
+       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
+       * @param index The index of the element to return.
+       * @return The inherentProudSkillList at the given index.
+       */
+      public int getInherentProudSkillList(int index) {
+        return inherentProudSkillList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
+       * @param index The index to set the value at.
+       * @param value The inherentProudSkillList to set.
        * @return This builder for chaining.
        */
-      public Builder setWearingFlycloakId(int value) {
-        
-        wearingFlycloakId_ = value;
+      public Builder setInherentProudSkillList(
+          int index, int value) {
+        ensureInherentProudSkillListIsMutable();
+        inherentProudSkillList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 wearing_flycloak_id = 21;</code>
+       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
+       * @param value The inherentProudSkillList to add.
        * @return This builder for chaining.
        */
-      public Builder clearWearingFlycloakId() {
-        
-        wearingFlycloakId_ = 0;
+      public Builder addInherentProudSkillList(int value) {
+        ensureInherentProudSkillListIsMutable();
+        inherentProudSkillList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
+       * @param values The inherentProudSkillList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllInherentProudSkillList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureInherentProudSkillListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, inherentProudSkillList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 inherent_proud_skill_list = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearInherentProudSkillList() {
+        inherentProudSkillList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
@@ -4279,9 +2957,9 @@ public final class AvatarInfoOuterClass {
       private java.util.List<emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo> equipAffixList_ =
         java.util.Collections.emptyList();
       private void ensureEquipAffixListIsMutable() {
-        if (!((bitField0_ & 0x00000200) != 0)) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           equipAffixList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo>(equipAffixList_);
-          bitField0_ |= 0x00000200;
+          bitField0_ |= 0x00000004;
          }
       }
 
@@ -4431,7 +3109,7 @@ public final class AvatarInfoOuterClass {
       public Builder clearEquipAffixList() {
         if (equipAffixListBuilder_ == null) {
           equipAffixList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000200);
+          bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
           equipAffixListBuilder_.clear();
@@ -4508,7 +3186,7 @@ public final class AvatarInfoOuterClass {
           equipAffixListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo, emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfo.Builder, emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.AvatarEquipAffixInfoOrBuilder>(
                   equipAffixList_,
-                  ((bitField0_ & 0x00000200) != 0),
+                  ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
                   isClean());
           equipAffixList_ = null;
@@ -4516,42 +3194,699 @@ public final class AvatarInfoOuterClass {
         return equipAffixListBuilder_;
       }
 
-      private int bornTime_ ;
-      /**
-       * <code>uint32 born_time = 23;</code>
-       * @return The bornTime.
-       */
-      @java.lang.Override
-      public int getBornTime() {
-        return bornTime_;
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> skillLevelMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetSkillLevelMap() {
+        if (skillLevelMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              SkillLevelMapDefaultEntryHolder.defaultEntry);
+        }
+        return skillLevelMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableSkillLevelMap() {
+        onChanged();;
+        if (skillLevelMap_ == null) {
+          skillLevelMap_ = com.google.protobuf.MapField.newMapField(
+              SkillLevelMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!skillLevelMap_.isMutable()) {
+          skillLevelMap_ = skillLevelMap_.copy();
+        }
+        return skillLevelMap_;
+      }
+
+      public int getSkillLevelMapCount() {
+        return internalGetSkillLevelMap().getMap().size();
       }
       /**
-       * <code>uint32 born_time = 23;</code>
-       * @param value The bornTime to set.
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsSkillLevelMap(
+          int key) {
+        
+        return internalGetSkillLevelMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getSkillLevelMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMap() {
+        return getSkillLevelMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMapMap() {
+        return internalGetSkillLevelMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
+       */
+      @java.lang.Override
+
+      public int getSkillLevelMapOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetSkillLevelMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
+       */
+      @java.lang.Override
+
+      public int getSkillLevelMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetSkillLevelMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearSkillLevelMap() {
+        internalGetMutableSkillLevelMap().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
+       */
+
+      public Builder removeSkillLevelMap(
+          int key) {
+        
+        internalGetMutableSkillLevelMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableSkillLevelMap() {
+        return internalGetMutableSkillLevelMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
+       */
+      public Builder putSkillLevelMap(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableSkillLevelMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; skill_level_map = 15;</code>
+       */
+
+      public Builder putAllSkillLevelMap(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableSkillLevelMap().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList talentIdList_ = emptyIntList();
+      private void ensureTalentIdListIsMutable() {
+        if (!((bitField0_ & 0x00000010) != 0)) {
+          talentIdList_ = mutableCopy(talentIdList_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 6;</code>
+       * @return A list containing the talentIdList.
+       */
+      public java.util.List<java.lang.Integer>
+          getTalentIdListList() {
+        return ((bitField0_ & 0x00000010) != 0) ?
+                 java.util.Collections.unmodifiableList(talentIdList_) : talentIdList_;
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 6;</code>
+       * @return The count of talentIdList.
+       */
+      public int getTalentIdListCount() {
+        return talentIdList_.size();
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 6;</code>
+       * @param index The index of the element to return.
+       * @return The talentIdList at the given index.
+       */
+      public int getTalentIdList(int index) {
+        return talentIdList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 6;</code>
+       * @param index The index to set the value at.
+       * @param value The talentIdList to set.
        * @return This builder for chaining.
        */
-      public Builder setBornTime(int value) {
-        
-        bornTime_ = value;
+      public Builder setTalentIdList(
+          int index, int value) {
+        ensureTalentIdListIsMutable();
+        talentIdList_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 born_time = 23;</code>
+       * <code>repeated uint32 talent_id_list = 6;</code>
+       * @param value The talentIdList to add.
        * @return This builder for chaining.
        */
-      public Builder clearBornTime() {
+      public Builder addTalentIdList(int value) {
+        ensureTalentIdListIsMutable();
+        talentIdList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 6;</code>
+       * @param values The talentIdList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllTalentIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureTalentIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, talentIdList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 talent_id_list = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTalentIdList() {
+        talentIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000010);
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo trialAvatarInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.Builder, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder> trialAvatarInfoBuilder_;
+      /**
+       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+       * @return Whether the trialAvatarInfo field is set.
+       */
+      public boolean hasTrialAvatarInfo() {
+        return trialAvatarInfoBuilder_ != null || trialAvatarInfo_ != null;
+      }
+      /**
+       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+       * @return The trialAvatarInfo.
+       */
+      public emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo getTrialAvatarInfo() {
+        if (trialAvatarInfoBuilder_ == null) {
+          return trialAvatarInfo_ == null ? emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.getDefaultInstance() : trialAvatarInfo_;
+        } else {
+          return trialAvatarInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+       */
+      public Builder setTrialAvatarInfo(emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo value) {
+        if (trialAvatarInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          trialAvatarInfo_ = value;
+          onChanged();
+        } else {
+          trialAvatarInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+       */
+      public Builder setTrialAvatarInfo(
+          emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.Builder builderForValue) {
+        if (trialAvatarInfoBuilder_ == null) {
+          trialAvatarInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          trialAvatarInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+       */
+      public Builder mergeTrialAvatarInfo(emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo value) {
+        if (trialAvatarInfoBuilder_ == null) {
+          if (trialAvatarInfo_ != null) {
+            trialAvatarInfo_ =
+              emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.newBuilder(trialAvatarInfo_).mergeFrom(value).buildPartial();
+          } else {
+            trialAvatarInfo_ = value;
+          }
+          onChanged();
+        } else {
+          trialAvatarInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+       */
+      public Builder clearTrialAvatarInfo() {
+        if (trialAvatarInfoBuilder_ == null) {
+          trialAvatarInfo_ = null;
+          onChanged();
+        } else {
+          trialAvatarInfo_ = null;
+          trialAvatarInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+       */
+      public emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.Builder getTrialAvatarInfoBuilder() {
         
-        bornTime_ = 0;
+        onChanged();
+        return getTrialAvatarInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+       */
+      public emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder getTrialAvatarInfoOrBuilder() {
+        if (trialAvatarInfoBuilder_ != null) {
+          return trialAvatarInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return trialAvatarInfo_ == null ?
+              emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.getDefaultInstance() : trialAvatarInfo_;
+        }
+      }
+      /**
+       * <code>.TrialAvatarInfo trial_avatar_info = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.Builder, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder> 
+          getTrialAvatarInfoFieldBuilder() {
+        if (trialAvatarInfoBuilder_ == null) {
+          trialAvatarInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfo.Builder, emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.TrialAvatarInfoOrBuilder>(
+                  getTrialAvatarInfo(),
+                  getParentForChildren(),
+                  isClean());
+          trialAvatarInfo_ = null;
+        }
+        return trialAvatarInfoBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo fetterInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.Builder, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder> fetterInfoBuilder_;
+      /**
+       * <pre>
+       *DKKLDLBILMO KAKKHJMHBAP = 28;
+       * </pre>
+       *
+       * <code>.AvatarFetterInfo fetter_info = 12;</code>
+       * @return Whether the fetterInfo field is set.
+       */
+      public boolean hasFetterInfo() {
+        return fetterInfoBuilder_ != null || fetterInfo_ != null;
+      }
+      /**
+       * <pre>
+       *DKKLDLBILMO KAKKHJMHBAP = 28;
+       * </pre>
+       *
+       * <code>.AvatarFetterInfo fetter_info = 12;</code>
+       * @return The fetterInfo.
+       */
+      public emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo getFetterInfo() {
+        if (fetterInfoBuilder_ == null) {
+          return fetterInfo_ == null ? emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.getDefaultInstance() : fetterInfo_;
+        } else {
+          return fetterInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       *DKKLDLBILMO KAKKHJMHBAP = 28;
+       * </pre>
+       *
+       * <code>.AvatarFetterInfo fetter_info = 12;</code>
+       */
+      public Builder setFetterInfo(emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo value) {
+        if (fetterInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          fetterInfo_ = value;
+          onChanged();
+        } else {
+          fetterInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *DKKLDLBILMO KAKKHJMHBAP = 28;
+       * </pre>
+       *
+       * <code>.AvatarFetterInfo fetter_info = 12;</code>
+       */
+      public Builder setFetterInfo(
+          emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.Builder builderForValue) {
+        if (fetterInfoBuilder_ == null) {
+          fetterInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          fetterInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *DKKLDLBILMO KAKKHJMHBAP = 28;
+       * </pre>
+       *
+       * <code>.AvatarFetterInfo fetter_info = 12;</code>
+       */
+      public Builder mergeFetterInfo(emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo value) {
+        if (fetterInfoBuilder_ == null) {
+          if (fetterInfo_ != null) {
+            fetterInfo_ =
+              emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.newBuilder(fetterInfo_).mergeFrom(value).buildPartial();
+          } else {
+            fetterInfo_ = value;
+          }
+          onChanged();
+        } else {
+          fetterInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *DKKLDLBILMO KAKKHJMHBAP = 28;
+       * </pre>
+       *
+       * <code>.AvatarFetterInfo fetter_info = 12;</code>
+       */
+      public Builder clearFetterInfo() {
+        if (fetterInfoBuilder_ == null) {
+          fetterInfo_ = null;
+          onChanged();
+        } else {
+          fetterInfo_ = null;
+          fetterInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       *DKKLDLBILMO KAKKHJMHBAP = 28;
+       * </pre>
+       *
+       * <code>.AvatarFetterInfo fetter_info = 12;</code>
+       */
+      public emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.Builder getFetterInfoBuilder() {
+        
+        onChanged();
+        return getFetterInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       *DKKLDLBILMO KAKKHJMHBAP = 28;
+       * </pre>
+       *
+       * <code>.AvatarFetterInfo fetter_info = 12;</code>
+       */
+      public emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder getFetterInfoOrBuilder() {
+        if (fetterInfoBuilder_ != null) {
+          return fetterInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return fetterInfo_ == null ?
+              emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.getDefaultInstance() : fetterInfo_;
+        }
+      }
+      /**
+       * <pre>
+       *DKKLDLBILMO KAKKHJMHBAP = 28;
+       * </pre>
+       *
+       * <code>.AvatarFetterInfo fetter_info = 12;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.Builder, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder> 
+          getFetterInfoFieldBuilder() {
+        if (fetterInfoBuilder_ == null) {
+          fetterInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo.Builder, emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfoOrBuilder>(
+                  getFetterInfo(),
+                  getParentForChildren(),
+                  isClean());
+          fetterInfo_ = null;
+        }
+        return fetterInfoBuilder_;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> proudSkillExtraLevelMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetProudSkillExtraLevelMap() {
+        if (proudSkillExtraLevelMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
+        }
+        return proudSkillExtraLevelMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableProudSkillExtraLevelMap() {
+        onChanged();;
+        if (proudSkillExtraLevelMap_ == null) {
+          proudSkillExtraLevelMap_ = com.google.protobuf.MapField.newMapField(
+              ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!proudSkillExtraLevelMap_.isMutable()) {
+          proudSkillExtraLevelMap_ = proudSkillExtraLevelMap_.copy();
+        }
+        return proudSkillExtraLevelMap_;
+      }
+
+      public int getProudSkillExtraLevelMapCount() {
+        return internalGetProudSkillExtraLevelMap().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsProudSkillExtraLevelMap(
+          int key) {
+        
+        return internalGetProudSkillExtraLevelMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getProudSkillExtraLevelMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMap() {
+        return getProudSkillExtraLevelMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMapMap() {
+        return internalGetProudSkillExtraLevelMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
+       */
+      @java.lang.Override
+
+      public int getProudSkillExtraLevelMapOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetProudSkillExtraLevelMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
+       */
+      @java.lang.Override
+
+      public int getProudSkillExtraLevelMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetProudSkillExtraLevelMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearProudSkillExtraLevelMap() {
+        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
+       */
+
+      public Builder removeProudSkillExtraLevelMap(
+          int key) {
+        
+        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableProudSkillExtraLevelMap() {
+        return internalGetMutableProudSkillExtraLevelMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
+       */
+      public Builder putProudSkillExtraLevelMap(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 17;</code>
+       */
+
+      public Builder putAllProudSkillExtraLevelMap(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private com.google.protobuf.Internal.LongList equipGuidList_ = emptyLongList();
+      private void ensureEquipGuidListIsMutable() {
+        if (!((bitField0_ & 0x00000040) != 0)) {
+          equipGuidList_ = mutableCopy(equipGuidList_);
+          bitField0_ |= 0x00000040;
+         }
+      }
+      /**
+       * <code>repeated uint64 equip_guid_list = 5;</code>
+       * @return A list containing the equipGuidList.
+       */
+      public java.util.List<java.lang.Long>
+          getEquipGuidListList() {
+        return ((bitField0_ & 0x00000040) != 0) ?
+                 java.util.Collections.unmodifiableList(equipGuidList_) : equipGuidList_;
+      }
+      /**
+       * <code>repeated uint64 equip_guid_list = 5;</code>
+       * @return The count of equipGuidList.
+       */
+      public int getEquipGuidListCount() {
+        return equipGuidList_.size();
+      }
+      /**
+       * <code>repeated uint64 equip_guid_list = 5;</code>
+       * @param index The index of the element to return.
+       * @return The equipGuidList at the given index.
+       */
+      public long getEquipGuidList(int index) {
+        return equipGuidList_.getLong(index);
+      }
+      /**
+       * <code>repeated uint64 equip_guid_list = 5;</code>
+       * @param index The index to set the value at.
+       * @param value The equipGuidList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEquipGuidList(
+          int index, long value) {
+        ensureEquipGuidListIsMutable();
+        equipGuidList_.setLong(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint64 equip_guid_list = 5;</code>
+       * @param value The equipGuidList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addEquipGuidList(long value) {
+        ensureEquipGuidListIsMutable();
+        equipGuidList_.addLong(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint64 equip_guid_list = 5;</code>
+       * @param values The equipGuidList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllEquipGuidList(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensureEquipGuidListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, equipGuidList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint64 equip_guid_list = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEquipGuidList() {
+        equipGuidList_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000040);
         onChanged();
         return this;
       }
 
       private com.google.protobuf.Internal.IntList pendingPromoteRewardList_ = emptyIntList();
       private void ensurePendingPromoteRewardListIsMutable() {
-        if (!((bitField0_ & 0x00000400) != 0)) {
+        if (!((bitField0_ & 0x00000080) != 0)) {
           pendingPromoteRewardList_ = mutableCopy(pendingPromoteRewardList_);
-          bitField0_ |= 0x00000400;
+          bitField0_ |= 0x00000080;
          }
       }
       /**
@@ -4560,7 +3895,7 @@ public final class AvatarInfoOuterClass {
        */
       public java.util.List<java.lang.Integer>
           getPendingPromoteRewardListList() {
-        return ((bitField0_ & 0x00000400) != 0) ?
+        return ((bitField0_ & 0x00000080) != 0) ?
                  java.util.Collections.unmodifiableList(pendingPromoteRewardList_) : pendingPromoteRewardList_;
       }
       /**
@@ -4621,39 +3956,392 @@ public final class AvatarInfoOuterClass {
        */
       public Builder clearPendingPromoteRewardList() {
         pendingPromoteRewardList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000400);
+        bitField0_ = (bitField0_ & ~0x00000080);
         onChanged();
         return this;
       }
 
-      private int costumeId_ ;
-      /**
-       * <code>uint32 costume_id = 25;</code>
-       * @return The costumeId.
-       */
-      @java.lang.Override
-      public int getCostumeId() {
-        return costumeId_;
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Float> fightPropMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Float>
+      internalGetFightPropMap() {
+        if (fightPropMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              FightPropMapDefaultEntryHolder.defaultEntry);
+        }
+        return fightPropMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Float>
+      internalGetMutableFightPropMap() {
+        onChanged();;
+        if (fightPropMap_ == null) {
+          fightPropMap_ = com.google.protobuf.MapField.newMapField(
+              FightPropMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!fightPropMap_.isMutable()) {
+          fightPropMap_ = fightPropMap_.copy();
+        }
+        return fightPropMap_;
+      }
+
+      public int getFightPropMapCount() {
+        return internalGetFightPropMap().getMap().size();
       }
       /**
-       * <code>uint32 costume_id = 25;</code>
-       * @param value The costumeId to set.
-       * @return This builder for chaining.
+       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
        */
-      public Builder setCostumeId(int value) {
+
+      @java.lang.Override
+      public boolean containsFightPropMap(
+          int key) {
         
-        costumeId_ = value;
-        onChanged();
+        return internalGetFightPropMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getFightPropMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Float> getFightPropMap() {
+        return getFightPropMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Float> getFightPropMapMap() {
+        return internalGetFightPropMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+       */
+      @java.lang.Override
+
+      public float getFightPropMapOrDefault(
+          int key,
+          float defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Float> map =
+            internalGetFightPropMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+       */
+      @java.lang.Override
+
+      public float getFightPropMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Float> map =
+            internalGetFightPropMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearFightPropMap() {
+        internalGetMutableFightPropMap().getMutableMap()
+            .clear();
         return this;
       }
       /**
-       * <code>uint32 costume_id = 25;</code>
-       * @return This builder for chaining.
+       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
        */
-      public Builder clearCostumeId() {
+
+      public Builder removeFightPropMap(
+          int key) {
         
-        costumeId_ = 0;
-        onChanged();
+        internalGetMutableFightPropMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Float>
+      getMutableFightPropMap() {
+        return internalGetMutableFightPropMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+       */
+      public Builder putFightPropMap(
+          int key,
+          float value) {
+        
+        
+        internalGetMutableFightPropMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, float&gt; fight_prop_map = 7;</code>
+       */
+
+      public Builder putAllFightPropMap(
+          java.util.Map<java.lang.Integer, java.lang.Float> values) {
+        internalGetMutableFightPropMap().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> skillMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
+      internalGetSkillMap() {
+        if (skillMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              SkillMapDefaultEntryHolder.defaultEntry);
+        }
+        return skillMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
+      internalGetMutableSkillMap() {
+        onChanged();;
+        if (skillMap_ == null) {
+          skillMap_ = com.google.protobuf.MapField.newMapField(
+              SkillMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!skillMap_.isMutable()) {
+          skillMap_ = skillMap_.copy();
+        }
+        return skillMap_;
+      }
+
+      public int getSkillMapCount() {
+        return internalGetSkillMap().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsSkillMap(
+          int key) {
+        
+        return internalGetSkillMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getSkillMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> getSkillMap() {
+        return getSkillMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> getSkillMapMap() {
+        return internalGetSkillMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrDefault(
+          int key,
+          emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo defaultValue) {
+        
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> map =
+            internalGetSkillMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo getSkillMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> map =
+            internalGetSkillMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearSkillMap() {
+        internalGetMutableSkillMap().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+       */
+
+      public Builder removeSkillMap(
+          int key) {
+        
+        internalGetMutableSkillMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo>
+      getMutableSkillMap() {
+        return internalGetMutableSkillMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+       */
+      public Builder putSkillMap(
+          int key,
+          emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo value) {
+        
+        if (value == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableSkillMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .AvatarSkillInfo&gt; skill_map = 10;</code>
+       */
+
+      public Builder putAllSkillMap(
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo> values) {
+        internalGetMutableSkillMap().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private com.google.protobuf.MapField<
+          java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> propMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
+      internalGetPropMap() {
+        if (propMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              PropMapDefaultEntryHolder.defaultEntry);
+        }
+        return propMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
+      internalGetMutablePropMap() {
+        onChanged();;
+        if (propMap_ == null) {
+          propMap_ = com.google.protobuf.MapField.newMapField(
+              PropMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!propMap_.isMutable()) {
+          propMap_ = propMap_.copy();
+        }
+        return propMap_;
+      }
+
+      public int getPropMapCount() {
+        return internalGetPropMap().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsPropMap(
+          int key) {
+        
+        return internalGetPropMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getPropMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropMap() {
+        return getPropMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> getPropMapMap() {
+        return internalGetPropMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrDefault(
+          int key,
+          emu.grasscutter.net.proto.PropValueOuterClass.PropValue defaultValue) {
+        
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> map =
+            internalGetPropMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+       */
+      @java.lang.Override
+
+      public emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> map =
+            internalGetPropMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearPropMap() {
+        internalGetMutablePropMap().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+       */
+
+      public Builder removePropMap(
+          int key) {
+        
+        internalGetMutablePropMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
+      getMutablePropMap() {
+        return internalGetMutablePropMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+       */
+      public Builder putPropMap(
+          int key,
+          emu.grasscutter.net.proto.PropValueOuterClass.PropValue value) {
+        
+        if (value == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutablePropMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, .PropValue&gt; prop_map = 3;</code>
+       */
+
+      public Builder putAllPropMap(
+          java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> values) {
+        internalGetMutablePropMap().getMutableMap()
+            .putAll(values);
         return this;
       }
 
@@ -4776,6 +4464,370 @@ public final class AvatarInfoOuterClass {
         return excelInfoBuilder_;
       }
 
+      private boolean isFocus_ ;
+      /**
+       * <code>bool is_focus = 18;</code>
+       * @return The isFocus.
+       */
+      @java.lang.Override
+      public boolean getIsFocus() {
+        return isFocus_;
+      }
+      /**
+       * <code>bool is_focus = 18;</code>
+       * @param value The isFocus to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFocus(boolean value) {
+        
+        isFocus_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_focus = 18;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFocus() {
+        
+        isFocus_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int hBJPGICGCOB_ ;
+      /**
+       * <code>uint32 HBJPGICGCOB = 30;</code>
+       * @return The hBJPGICGCOB.
+       */
+      @java.lang.Override
+      public int getHBJPGICGCOB() {
+        return hBJPGICGCOB_;
+      }
+      /**
+       * <code>uint32 HBJPGICGCOB = 30;</code>
+       * @param value The hBJPGICGCOB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHBJPGICGCOB(int value) {
+        
+        hBJPGICGCOB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 HBJPGICGCOB = 30;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHBJPGICGCOB() {
+        
+        hBJPGICGCOB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long guid_ ;
+      /**
+       * <code>uint64 guid = 2;</code>
+       * @return The guid.
+       */
+      @java.lang.Override
+      public long getGuid() {
+        return guid_;
+      }
+      /**
+       * <code>uint64 guid = 2;</code>
+       * @param value The guid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGuid(long value) {
+        
+        guid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 guid = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGuid() {
+        
+        guid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int expeditionState_ = 0;
+      /**
+       * <code>.AvatarExpeditionState expedition_state = 16;</code>
+       * @return The enum numeric value on the wire for expeditionState.
+       */
+      @java.lang.Override public int getExpeditionStateValue() {
+        return expeditionState_;
+      }
+      /**
+       * <code>.AvatarExpeditionState expedition_state = 16;</code>
+       * @param value The enum numeric value on the wire for expeditionState to set.
+       * @return This builder for chaining.
+       */
+      public Builder setExpeditionStateValue(int value) {
+        
+        expeditionState_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AvatarExpeditionState expedition_state = 16;</code>
+       * @return The expeditionState.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState getExpeditionState() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState result = emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState.valueOf(expeditionState_);
+        return result == null ? emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.AvatarExpeditionState expedition_state = 16;</code>
+       * @param value The expeditionState to set.
+       * @return This builder for chaining.
+       */
+      public Builder setExpeditionState(emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.AvatarExpeditionState value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        expeditionState_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.AvatarExpeditionState expedition_state = 16;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearExpeditionState() {
+        
+        expeditionState_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bDFCBGHCIKN_ ;
+      /**
+       * <code>uint32 BDFCBGHCIKN = 29;</code>
+       * @return The bDFCBGHCIKN.
+       */
+      @java.lang.Override
+      public int getBDFCBGHCIKN() {
+        return bDFCBGHCIKN_;
+      }
+      /**
+       * <code>uint32 BDFCBGHCIKN = 29;</code>
+       * @param value The bDFCBGHCIKN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBDFCBGHCIKN(int value) {
+        
+        bDFCBGHCIKN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BDFCBGHCIKN = 29;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBDFCBGHCIKN() {
+        
+        bDFCBGHCIKN_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int costumeId_ ;
+      /**
+       * <code>uint32 costume_id = 25;</code>
+       * @return The costumeId.
+       */
+      @java.lang.Override
+      public int getCostumeId() {
+        return costumeId_;
+      }
+      /**
+       * <code>uint32 costume_id = 25;</code>
+       * @param value The costumeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCostumeId(int value) {
+        
+        costumeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 costume_id = 25;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCostumeId() {
+        
+        costumeId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int wearingFlycloakId_ ;
+      /**
+       * <code>uint32 wearing_flycloak_id = 21;</code>
+       * @return The wearingFlycloakId.
+       */
+      @java.lang.Override
+      public int getWearingFlycloakId() {
+        return wearingFlycloakId_;
+      }
+      /**
+       * <code>uint32 wearing_flycloak_id = 21;</code>
+       * @param value The wearingFlycloakId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setWearingFlycloakId(int value) {
+        
+        wearingFlycloakId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 wearing_flycloak_id = 21;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearWearingFlycloakId() {
+        
+        wearingFlycloakId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int avatarId_ ;
+      /**
+       * <code>uint32 avatar_id = 1;</code>
+       * @return The avatarId.
+       */
+      @java.lang.Override
+      public int getAvatarId() {
+        return avatarId_;
+      }
+      /**
+       * <code>uint32 avatar_id = 1;</code>
+       * @param value The avatarId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarId(int value) {
+        
+        avatarId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 avatar_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarId() {
+        
+        avatarId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int coreProudSkillLevel_ ;
+      /**
+       * <code>uint32 core_proud_skill_level = 13;</code>
+       * @return The coreProudSkillLevel.
+       */
+      @java.lang.Override
+      public int getCoreProudSkillLevel() {
+        return coreProudSkillLevel_;
+      }
+      /**
+       * <code>uint32 core_proud_skill_level = 13;</code>
+       * @param value The coreProudSkillLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCoreProudSkillLevel(int value) {
+        
+        coreProudSkillLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 core_proud_skill_level = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCoreProudSkillLevel() {
+        
+        coreProudSkillLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bornTime_ ;
+      /**
+       * <code>uint32 born_time = 23;</code>
+       * @return The bornTime.
+       */
+      @java.lang.Override
+      public int getBornTime() {
+        return bornTime_;
+      }
+      /**
+       * <code>uint32 born_time = 23;</code>
+       * @param value The bornTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBornTime(int value) {
+        
+        bornTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 born_time = 23;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBornTime() {
+        
+        bornTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int traceEffectId_ ;
+      /**
+       * <code>uint32 trace_effect_id = 31;</code>
+       * @return The traceEffectId.
+       */
+      @java.lang.Override
+      public int getTraceEffectId() {
+        return traceEffectId_;
+      }
+      /**
+       * <code>uint32 trace_effect_id = 31;</code>
+       * @param value The traceEffectId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTraceEffectId(int value) {
+        
+        traceEffectId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 trace_effect_id = 31;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTraceEffectId() {
+        
+        traceEffectId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int animHash_ ;
       /**
        * <code>uint32 anim_hash = 27;</code>
@@ -4807,107 +4859,95 @@ public final class AvatarInfoOuterClass {
         return this;
       }
 
-      private int aBLFJPMKKDA_ ;
+      private int avatarType_ ;
       /**
-       * <pre>
-       *JNHGJAIIMGJ PINDEGAFOAE = 28;
-       * </pre>
-       *
-       * <code>uint32 ABLFJPMKKDA = 29;</code>
-       * @return The aBLFJPMKKDA.
+       * <code>uint32 avatar_type = 19;</code>
+       * @return The avatarType.
        */
       @java.lang.Override
-      public int getABLFJPMKKDA() {
-        return aBLFJPMKKDA_;
+      public int getAvatarType() {
+        return avatarType_;
       }
       /**
-       * <pre>
-       *JNHGJAIIMGJ PINDEGAFOAE = 28;
-       * </pre>
-       *
-       * <code>uint32 ABLFJPMKKDA = 29;</code>
-       * @param value The aBLFJPMKKDA to set.
+       * <code>uint32 avatar_type = 19;</code>
+       * @param value The avatarType to set.
        * @return This builder for chaining.
        */
-      public Builder setABLFJPMKKDA(int value) {
+      public Builder setAvatarType(int value) {
         
-        aBLFJPMKKDA_ = value;
+        avatarType_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       *JNHGJAIIMGJ PINDEGAFOAE = 28;
-       * </pre>
-       *
-       * <code>uint32 ABLFJPMKKDA = 29;</code>
+       * <code>uint32 avatar_type = 19;</code>
        * @return This builder for chaining.
        */
-      public Builder clearABLFJPMKKDA() {
+      public Builder clearAvatarType() {
         
-        aBLFJPMKKDA_ = 0;
+        avatarType_ = 0;
         onChanged();
         return this;
       }
 
-      private int gCHGLANNHMC_ ;
+      private int lifeState_ ;
       /**
-       * <code>uint32 GCHGLANNHMC = 30;</code>
-       * @return The gCHGLANNHMC.
+       * <code>uint32 life_state = 4;</code>
+       * @return The lifeState.
        */
       @java.lang.Override
-      public int getGCHGLANNHMC() {
-        return gCHGLANNHMC_;
+      public int getLifeState() {
+        return lifeState_;
       }
       /**
-       * <code>uint32 GCHGLANNHMC = 30;</code>
-       * @param value The gCHGLANNHMC to set.
+       * <code>uint32 life_state = 4;</code>
+       * @param value The lifeState to set.
        * @return This builder for chaining.
        */
-      public Builder setGCHGLANNHMC(int value) {
+      public Builder setLifeState(int value) {
         
-        gCHGLANNHMC_ = value;
+        lifeState_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GCHGLANNHMC = 30;</code>
+       * <code>uint32 life_state = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGCHGLANNHMC() {
+      public Builder clearLifeState() {
         
-        gCHGLANNHMC_ = 0;
+        lifeState_ = 0;
         onChanged();
         return this;
       }
 
-      private int kCINBOMOIGL_ ;
+      private int skillDepotId_ ;
       /**
-       * <code>uint32 KCINBOMOIGL = 31;</code>
-       * @return The kCINBOMOIGL.
+       * <code>uint32 skill_depot_id = 11;</code>
+       * @return The skillDepotId.
        */
       @java.lang.Override
-      public int getKCINBOMOIGL() {
-        return kCINBOMOIGL_;
+      public int getSkillDepotId() {
+        return skillDepotId_;
       }
       /**
-       * <code>uint32 KCINBOMOIGL = 31;</code>
-       * @param value The kCINBOMOIGL to set.
+       * <code>uint32 skill_depot_id = 11;</code>
+       * @param value The skillDepotId to set.
        * @return This builder for chaining.
        */
-      public Builder setKCINBOMOIGL(int value) {
+      public Builder setSkillDepotId(int value) {
         
-        kCINBOMOIGL_ = value;
+        skillDepotId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 KCINBOMOIGL = 31;</code>
+       * <code>uint32 skill_depot_id = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKCINBOMOIGL() {
+      public Builder clearSkillDepotId() {
         
-        kCINBOMOIGL_ = 0;
+        skillDepotId_ = 0;
         onChanged();
         return this;
       }
@@ -4970,10 +5010,15 @@ public final class AvatarInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AvatarInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_AvatarInfo_PropMapEntry_descriptor;
+    internal_static_AvatarInfo_SkillLevelMapEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_AvatarInfo_PropMapEntry_fieldAccessorTable;
+      internal_static_AvatarInfo_SkillLevelMapEntry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_AvatarInfo_ProudSkillExtraLevelMapEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_AvatarInfo_ProudSkillExtraLevelMapEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_AvatarInfo_FightPropMapEntry_descriptor;
   private static final 
@@ -4985,15 +5030,10 @@ public final class AvatarInfoOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AvatarInfo_SkillMapEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_AvatarInfo_SkillLevelMapEntry_descriptor;
+    internal_static_AvatarInfo_PropMapEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_AvatarInfo_SkillLevelMapEntry_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_AvatarInfo_ProudSkillExtraLevelMapEntry_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_AvatarInfo_ProudSkillExtraLevelMapEntry_fieldAccessorTable;
+      internal_static_AvatarInfo_PropMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -5003,99 +5043,99 @@ public final class AvatarInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020AvatarInfo.proto\032\017PropValue.proto\032\025Ava" +
-      "tarSkillInfo.proto\032\025TrialAvatarInfo.prot" +
-      "o\032\026AvatarFetterInfo.proto\032\033AvatarExpedit" +
-      "ionState.proto\032\032AvatarEquipAffixInfo.pro" +
-      "to\032\025AvatarExcelInfo.proto\"\355\t\n\nAvatarInfo" +
-      "\022\021\n\tavatar_id\030\001 \001(\r\022\014\n\004guid\030\002 \001(\004\022*\n\010pro" +
-      "p_map\030\003 \003(\0132\030.AvatarInfo.PropMapEntry\022\022\n" +
-      "\nlife_state\030\004 \001(\r\022\027\n\017equip_guid_list\030\005 \003" +
-      "(\004\022\026\n\016talent_id_list\030\006 \003(\r\0225\n\016fight_prop" +
-      "_map\030\007 \003(\0132\035.AvatarInfo.FightPropMapEntr" +
-      "y\022+\n\021trial_avatar_info\030\t \001(\0132\020.TrialAvat" +
-      "arInfo\022,\n\tskill_map\030\n \003(\0132\031.AvatarInfo.S" +
-      "killMapEntry\022\026\n\016skill_depot_id\030\013 \001(\r\022&\n\013" +
-      "fetter_info\030\014 \001(\0132\021.AvatarFetterInfo\022\036\n\026" +
-      "core_proud_skill_level\030\r \001(\r\022!\n\031inherent" +
-      "_proud_skill_list\030\016 \003(\r\0227\n\017skill_level_m" +
-      "ap\030\017 \003(\0132\036.AvatarInfo.SkillLevelMapEntry" +
-      "\0220\n\020expedition_state\030\020 \001(\0162\026.AvatarExped" +
-      "itionState\022M\n\033proud_skill_extra_level_ma" +
-      "p\030\021 \003(\0132(.AvatarInfo.ProudSkillExtraLeve" +
-      "lMapEntry\022\020\n\010is_focus\030\022 \001(\010\022\023\n\013avatar_ty" +
-      "pe\030\023 \001(\r\022\033\n\023team_resonance_list\030\024 \003(\r\022\033\n" +
-      "\023wearing_flycloak_id\030\025 \001(\r\022/\n\020equip_affi" +
-      "x_list\030\026 \003(\0132\025.AvatarEquipAffixInfo\022\021\n\tb" +
-      "orn_time\030\027 \001(\r\022#\n\033pending_promote_reward" +
-      "_list\030\030 \003(\r\022\022\n\ncostume_id\030\031 \001(\r\022$\n\nexcel" +
-      "_info\030\032 \001(\0132\020.AvatarExcelInfo\022\021\n\tanim_ha" +
-      "sh\030\033 \001(\r\022\023\n\013ABLFJPMKKDA\030\035 \001(\r\022\023\n\013GCHGLAN" +
-      "NHMC\030\036 \001(\r\022\023\n\013KCINBOMOIGL\030\037 \001(\r\032:\n\014PropM" +
-      "apEntry\022\013\n\003key\030\001 \001(\r\022\031\n\005value\030\002 \001(\0132\n.Pr" +
-      "opValue:\0028\001\0323\n\021FightPropMapEntry\022\013\n\003key\030" +
-      "\001 \001(\r\022\r\n\005value\030\002 \001(\002:\0028\001\032A\n\rSkillMapEntr" +
-      "y\022\013\n\003key\030\001 \001(\r\022\037\n\005value\030\002 \001(\0132\020.AvatarSk" +
-      "illInfo:\0028\001\0324\n\022SkillLevelMapEntry\022\013\n\003key" +
-      "\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\032>\n\034ProudSkillE" +
-      "xtraLevelMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030" +
-      "\002 \001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006" +
-      "proto3"
+      "\n\020AvatarInfo.proto\032\032AvatarEquipAffixInfo" +
+      ".proto\032\025TrialAvatarInfo.proto\032\026AvatarFet" +
+      "terInfo.proto\032\025AvatarExcelInfo.proto\032\033Av" +
+      "atarExpeditionState.proto\032\025AvatarSkillIn" +
+      "fo.proto\032\017PropValue.proto\"\361\t\n\nAvatarInfo" +
+      "\022\033\n\023team_resonance_list\030\024 \003(\r\022!\n\031inheren" +
+      "t_proud_skill_list\030\016 \003(\r\022/\n\020equip_affix_" +
+      "list\030\026 \003(\0132\025.AvatarEquipAffixInfo\0227\n\017ski" +
+      "ll_level_map\030\017 \003(\0132\036.AvatarInfo.SkillLev" +
+      "elMapEntry\022\026\n\016talent_id_list\030\006 \003(\r\022+\n\021tr" +
+      "ial_avatar_info\030\t \001(\0132\020.TrialAvatarInfo\022" +
+      "&\n\013fetter_info\030\014 \001(\0132\021.AvatarFetterInfo\022" +
+      "M\n\033proud_skill_extra_level_map\030\021 \003(\0132(.A" +
+      "vatarInfo.ProudSkillExtraLevelMapEntry\022\027" +
+      "\n\017equip_guid_list\030\005 \003(\004\022#\n\033pending_promo" +
+      "te_reward_list\030\030 \003(\r\0225\n\016fight_prop_map\030\007" +
+      " \003(\0132\035.AvatarInfo.FightPropMapEntry\022,\n\ts" +
+      "kill_map\030\n \003(\0132\031.AvatarInfo.SkillMapEntr" +
+      "y\022*\n\010prop_map\030\003 \003(\0132\030.AvatarInfo.PropMap" +
+      "Entry\022$\n\nexcel_info\030\032 \001(\0132\020.AvatarExcelI" +
+      "nfo\022\020\n\010is_focus\030\022 \001(\010\022\023\n\013HBJPGICGCOB\030\036 \001" +
+      "(\r\022\014\n\004guid\030\002 \001(\004\0220\n\020expedition_state\030\020 \001" +
+      "(\0162\026.AvatarExpeditionState\022\023\n\013BDFCBGHCIK" +
+      "N\030\035 \001(\r\022\022\n\ncostume_id\030\031 \001(\r\022\033\n\023wearing_f" +
+      "lycloak_id\030\025 \001(\r\022\021\n\tavatar_id\030\001 \001(\r\022\036\n\026c" +
+      "ore_proud_skill_level\030\r \001(\r\022\021\n\tborn_time" +
+      "\030\027 \001(\r\022\027\n\017trace_effect_id\030\037 \001(\r\022\021\n\tanim_" +
+      "hash\030\033 \001(\r\022\023\n\013avatar_type\030\023 \001(\r\022\022\n\nlife_" +
+      "state\030\004 \001(\r\022\026\n\016skill_depot_id\030\013 \001(\r\0324\n\022S" +
+      "killLevelMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030" +
+      "\002 \001(\r:\0028\001\032>\n\034ProudSkillExtraLevelMapEntr" +
+      "y\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0323\n\021Fig" +
+      "htPropMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001" +
+      "(\002:\0028\001\032A\n\rSkillMapEntry\022\013\n\003key\030\001 \001(\r\022\037\n\005" +
+      "value\030\002 \001(\0132\020.AvatarSkillInfo:\0028\001\032:\n\014Pro" +
+      "pMapEntry\022\013\n\003key\030\001 \001(\r\022\031\n\005value\030\002 \001(\0132\n." +
+      "PropValue:\0028\001B\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.PropValueOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.PropValueOuterClass.getDescriptor(),
         });
     internal_static_AvatarInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarInfo_descriptor,
-        new java.lang.String[] { "AvatarId", "Guid", "PropMap", "LifeState", "EquipGuidList", "TalentIdList", "FightPropMap", "TrialAvatarInfo", "SkillMap", "SkillDepotId", "FetterInfo", "CoreProudSkillLevel", "InherentProudSkillList", "SkillLevelMap", "ExpeditionState", "ProudSkillExtraLevelMap", "IsFocus", "AvatarType", "TeamResonanceList", "WearingFlycloakId", "EquipAffixList", "BornTime", "PendingPromoteRewardList", "CostumeId", "ExcelInfo", "AnimHash", "ABLFJPMKKDA", "GCHGLANNHMC", "KCINBOMOIGL", });
-    internal_static_AvatarInfo_PropMapEntry_descriptor =
-      internal_static_AvatarInfo_descriptor.getNestedTypes().get(0);
-    internal_static_AvatarInfo_PropMapEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_AvatarInfo_PropMapEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
-    internal_static_AvatarInfo_FightPropMapEntry_descriptor =
-      internal_static_AvatarInfo_descriptor.getNestedTypes().get(1);
-    internal_static_AvatarInfo_FightPropMapEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_AvatarInfo_FightPropMapEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
-    internal_static_AvatarInfo_SkillMapEntry_descriptor =
-      internal_static_AvatarInfo_descriptor.getNestedTypes().get(2);
-    internal_static_AvatarInfo_SkillMapEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_AvatarInfo_SkillMapEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new java.lang.String[] { "TeamResonanceList", "InherentProudSkillList", "EquipAffixList", "SkillLevelMap", "TalentIdList", "TrialAvatarInfo", "FetterInfo", "ProudSkillExtraLevelMap", "EquipGuidList", "PendingPromoteRewardList", "FightPropMap", "SkillMap", "PropMap", "ExcelInfo", "IsFocus", "HBJPGICGCOB", "Guid", "ExpeditionState", "BDFCBGHCIKN", "CostumeId", "WearingFlycloakId", "AvatarId", "CoreProudSkillLevel", "BornTime", "TraceEffectId", "AnimHash", "AvatarType", "LifeState", "SkillDepotId", });
     internal_static_AvatarInfo_SkillLevelMapEntry_descriptor =
-      internal_static_AvatarInfo_descriptor.getNestedTypes().get(3);
+      internal_static_AvatarInfo_descriptor.getNestedTypes().get(0);
     internal_static_AvatarInfo_SkillLevelMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarInfo_SkillLevelMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     internal_static_AvatarInfo_ProudSkillExtraLevelMapEntry_descriptor =
-      internal_static_AvatarInfo_descriptor.getNestedTypes().get(4);
+      internal_static_AvatarInfo_descriptor.getNestedTypes().get(1);
     internal_static_AvatarInfo_ProudSkillExtraLevelMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarInfo_ProudSkillExtraLevelMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    emu.grasscutter.net.proto.PropValueOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.getDescriptor();
+    internal_static_AvatarInfo_FightPropMapEntry_descriptor =
+      internal_static_AvatarInfo_descriptor.getNestedTypes().get(2);
+    internal_static_AvatarInfo_FightPropMapEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_AvatarInfo_FightPropMapEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+    internal_static_AvatarInfo_SkillMapEntry_descriptor =
+      internal_static_AvatarInfo_descriptor.getNestedTypes().get(3);
+    internal_static_AvatarInfo_SkillMapEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_AvatarInfo_SkillMapEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+    internal_static_AvatarInfo_PropMapEntry_descriptor =
+      internal_static_AvatarInfo_descriptor.getNestedTypes().get(4);
+    internal_static_AvatarInfo_PropMapEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_AvatarInfo_PropMapEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+    emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.TrialAvatarInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.PropValueOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

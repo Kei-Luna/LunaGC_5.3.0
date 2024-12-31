@@ -19,18 +19,6 @@ public final class AbilityAppliedModifierOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 modifier_local_id = 1;</code>
-     * @return The modifierLocalId.
-     */
-    int getModifierLocalId();
-
-    /**
-     * <code>uint32 parent_ability_entity_id = 2;</code>
-     * @return The parentAbilityEntityId.
-     */
-    int getParentAbilityEntityId();
-
-    /**
      * <code>.AbilityString parent_ability_name = 3;</code>
      * @return Whether the parentAbilityName field is set.
      */
@@ -44,66 +32,6 @@ public final class AbilityAppliedModifierOuterClass {
      * <code>.AbilityString parent_ability_name = 3;</code>
      */
     emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityNameOrBuilder();
-
-    /**
-     * <code>.AbilityString parent_ability_override = 4;</code>
-     * @return Whether the parentAbilityOverride field is set.
-     */
-    boolean hasParentAbilityOverride();
-    /**
-     * <code>.AbilityString parent_ability_override = 4;</code>
-     * @return The parentAbilityOverride.
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityOverride();
-    /**
-     * <code>.AbilityString parent_ability_override = 4;</code>
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityOverrideOrBuilder();
-
-    /**
-     * <code>uint32 instanced_ability_id = 5;</code>
-     * @return The instancedAbilityId.
-     */
-    int getInstancedAbilityId();
-
-    /**
-     * <code>uint32 instanced_modifier_id = 6;</code>
-     * @return The instancedModifierId.
-     */
-    int getInstancedModifierId();
-
-    /**
-     * <code>float exist_duration = 7;</code>
-     * @return The existDuration.
-     */
-    float getExistDuration();
-
-    /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
-     * @return Whether the attachedInstancedModifier field is set.
-     */
-    boolean hasAttachedInstancedModifier();
-    /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
-     * @return The attachedInstancedModifier.
-     */
-    emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier getAttachedInstancedModifier();
-    /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
-     */
-    emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder getAttachedInstancedModifierOrBuilder();
-
-    /**
-     * <code>uint32 apply_entity_id = 9;</code>
-     * @return The applyEntityId.
-     */
-    int getApplyEntityId();
-
-    /**
-     * <code>bool is_attached_parent_ability = 10;</code>
-     * @return The isAttachedParentAbility.
-     */
-    boolean getIsAttachedParentAbility();
 
     /**
      * <code>.ModifierDurability modifier_durability = 11;</code>
@@ -121,10 +49,52 @@ public final class AbilityAppliedModifierOuterClass {
     emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurabilityOrBuilder getModifierDurabilityOrBuilder();
 
     /**
-     * <code>uint32 sbuff_uid = 12;</code>
-     * @return The sbuffUid.
+     * <code>.AbilityString parent_ability_override = 4;</code>
+     * @return Whether the parentAbilityOverride field is set.
      */
-    int getSbuffUid();
+    boolean hasParentAbilityOverride();
+    /**
+     * <code>.AbilityString parent_ability_override = 4;</code>
+     * @return The parentAbilityOverride.
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityOverride();
+    /**
+     * <code>.AbilityString parent_ability_override = 4;</code>
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityOverrideOrBuilder();
+
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
+     * @return Whether the attachedInstancedModifier field is set.
+     */
+    boolean hasAttachedInstancedModifier();
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
+     * @return The attachedInstancedModifier.
+     */
+    emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier getAttachedInstancedModifier();
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
+     */
+    emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder getAttachedInstancedModifierOrBuilder();
+
+    /**
+     * <code>int32 modifier_local_id = 1;</code>
+     * @return The modifierLocalId.
+     */
+    int getModifierLocalId();
+
+    /**
+     * <code>uint32 instanced_ability_id = 5;</code>
+     * @return The instancedAbilityId.
+     */
+    int getInstancedAbilityId();
+
+    /**
+     * <code>bool DFPKCAOALDF = 14;</code>
+     * @return The dFPKCAOALDF.
+     */
+    boolean getDFPKCAOALDF();
 
     /**
      * <code>bool is_serverbuff_modifier = 13;</code>
@@ -133,10 +103,40 @@ public final class AbilityAppliedModifierOuterClass {
     boolean getIsServerbuffModifier();
 
     /**
-     * <code>bool NCEGKBANOBP = 14;</code>
-     * @return The nCEGKBANOBP.
+     * <code>bool is_attached_parent_ability = 10;</code>
+     * @return The isAttachedParentAbility.
      */
-    boolean getNCEGKBANOBP();
+    boolean getIsAttachedParentAbility();
+
+    /**
+     * <code>uint32 sbuff_uid = 12;</code>
+     * @return The sbuffUid.
+     */
+    int getSbuffUid();
+
+    /**
+     * <code>uint32 parent_ability_entity_id = 2;</code>
+     * @return The parentAbilityEntityId.
+     */
+    int getParentAbilityEntityId();
+
+    /**
+     * <code>uint32 instanced_modifier_id = 6;</code>
+     * @return The instancedModifierId.
+     */
+    int getInstancedModifierId();
+
+    /**
+     * <code>float exist_duration = 7;</code>
+     * @return The existDuration.
+     */
+    float getExistDuration();
+
+    /**
+     * <code>uint32 apply_entity_id = 9;</code>
+     * @return The applyEntityId.
+     */
+    int getApplyEntityId();
   }
   /**
    * Protobuf type {@code AbilityAppliedModifier}
@@ -282,7 +282,7 @@ public final class AbilityAppliedModifierOuterClass {
             }
             case 112: {
 
-              nCEGKBANOBP_ = input.readBool();
+              dFPKCAOALDF_ = input.readBool();
               break;
             }
             default: {
@@ -317,28 +317,6 @@ public final class AbilityAppliedModifierOuterClass {
               emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier.class, emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier.Builder.class);
     }
 
-    public static final int MODIFIER_LOCAL_ID_FIELD_NUMBER = 1;
-    private int modifierLocalId_;
-    /**
-     * <code>int32 modifier_local_id = 1;</code>
-     * @return The modifierLocalId.
-     */
-    @java.lang.Override
-    public int getModifierLocalId() {
-      return modifierLocalId_;
-    }
-
-    public static final int PARENT_ABILITY_ENTITY_ID_FIELD_NUMBER = 2;
-    private int parentAbilityEntityId_;
-    /**
-     * <code>uint32 parent_ability_entity_id = 2;</code>
-     * @return The parentAbilityEntityId.
-     */
-    @java.lang.Override
-    public int getParentAbilityEntityId() {
-      return parentAbilityEntityId_;
-    }
-
     public static final int PARENT_ABILITY_NAME_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityName_;
     /**
@@ -363,113 +341,6 @@ public final class AbilityAppliedModifierOuterClass {
     @java.lang.Override
     public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityNameOrBuilder() {
       return getParentAbilityName();
-    }
-
-    public static final int PARENT_ABILITY_OVERRIDE_FIELD_NUMBER = 4;
-    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityOverride_;
-    /**
-     * <code>.AbilityString parent_ability_override = 4;</code>
-     * @return Whether the parentAbilityOverride field is set.
-     */
-    @java.lang.Override
-    public boolean hasParentAbilityOverride() {
-      return parentAbilityOverride_ != null;
-    }
-    /**
-     * <code>.AbilityString parent_ability_override = 4;</code>
-     * @return The parentAbilityOverride.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityOverride() {
-      return parentAbilityOverride_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityOverride_;
-    }
-    /**
-     * <code>.AbilityString parent_ability_override = 4;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityOverrideOrBuilder() {
-      return getParentAbilityOverride();
-    }
-
-    public static final int INSTANCED_ABILITY_ID_FIELD_NUMBER = 5;
-    private int instancedAbilityId_;
-    /**
-     * <code>uint32 instanced_ability_id = 5;</code>
-     * @return The instancedAbilityId.
-     */
-    @java.lang.Override
-    public int getInstancedAbilityId() {
-      return instancedAbilityId_;
-    }
-
-    public static final int INSTANCED_MODIFIER_ID_FIELD_NUMBER = 6;
-    private int instancedModifierId_;
-    /**
-     * <code>uint32 instanced_modifier_id = 6;</code>
-     * @return The instancedModifierId.
-     */
-    @java.lang.Override
-    public int getInstancedModifierId() {
-      return instancedModifierId_;
-    }
-
-    public static final int EXIST_DURATION_FIELD_NUMBER = 7;
-    private float existDuration_;
-    /**
-     * <code>float exist_duration = 7;</code>
-     * @return The existDuration.
-     */
-    @java.lang.Override
-    public float getExistDuration() {
-      return existDuration_;
-    }
-
-    public static final int ATTACHED_INSTANCED_MODIFIER_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier attachedInstancedModifier_;
-    /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
-     * @return Whether the attachedInstancedModifier field is set.
-     */
-    @java.lang.Override
-    public boolean hasAttachedInstancedModifier() {
-      return attachedInstancedModifier_ != null;
-    }
-    /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
-     * @return The attachedInstancedModifier.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier getAttachedInstancedModifier() {
-      return attachedInstancedModifier_ == null ? emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.getDefaultInstance() : attachedInstancedModifier_;
-    }
-    /**
-     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder getAttachedInstancedModifierOrBuilder() {
-      return getAttachedInstancedModifier();
-    }
-
-    public static final int APPLY_ENTITY_ID_FIELD_NUMBER = 9;
-    private int applyEntityId_;
-    /**
-     * <code>uint32 apply_entity_id = 9;</code>
-     * @return The applyEntityId.
-     */
-    @java.lang.Override
-    public int getApplyEntityId() {
-      return applyEntityId_;
-    }
-
-    public static final int IS_ATTACHED_PARENT_ABILITY_FIELD_NUMBER = 10;
-    private boolean isAttachedParentAbility_;
-    /**
-     * <code>bool is_attached_parent_ability = 10;</code>
-     * @return The isAttachedParentAbility.
-     */
-    @java.lang.Override
-    public boolean getIsAttachedParentAbility() {
-      return isAttachedParentAbility_;
     }
 
     public static final int MODIFIER_DURABILITY_FIELD_NUMBER = 11;
@@ -498,15 +369,89 @@ public final class AbilityAppliedModifierOuterClass {
       return getModifierDurability();
     }
 
-    public static final int SBUFF_UID_FIELD_NUMBER = 12;
-    private int sbuffUid_;
+    public static final int PARENT_ABILITY_OVERRIDE_FIELD_NUMBER = 4;
+    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityOverride_;
     /**
-     * <code>uint32 sbuff_uid = 12;</code>
-     * @return The sbuffUid.
+     * <code>.AbilityString parent_ability_override = 4;</code>
+     * @return Whether the parentAbilityOverride field is set.
      */
     @java.lang.Override
-    public int getSbuffUid() {
-      return sbuffUid_;
+    public boolean hasParentAbilityOverride() {
+      return parentAbilityOverride_ != null;
+    }
+    /**
+     * <code>.AbilityString parent_ability_override = 4;</code>
+     * @return The parentAbilityOverride.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getParentAbilityOverride() {
+      return parentAbilityOverride_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : parentAbilityOverride_;
+    }
+    /**
+     * <code>.AbilityString parent_ability_override = 4;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getParentAbilityOverrideOrBuilder() {
+      return getParentAbilityOverride();
+    }
+
+    public static final int ATTACHED_INSTANCED_MODIFIER_FIELD_NUMBER = 8;
+    private emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier attachedInstancedModifier_;
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
+     * @return Whether the attachedInstancedModifier field is set.
+     */
+    @java.lang.Override
+    public boolean hasAttachedInstancedModifier() {
+      return attachedInstancedModifier_ != null;
+    }
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
+     * @return The attachedInstancedModifier.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier getAttachedInstancedModifier() {
+      return attachedInstancedModifier_ == null ? emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier.getDefaultInstance() : attachedInstancedModifier_;
+    }
+    /**
+     * <code>.AbilityAttachedModifier attached_instanced_modifier = 8;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifierOrBuilder getAttachedInstancedModifierOrBuilder() {
+      return getAttachedInstancedModifier();
+    }
+
+    public static final int MODIFIER_LOCAL_ID_FIELD_NUMBER = 1;
+    private int modifierLocalId_;
+    /**
+     * <code>int32 modifier_local_id = 1;</code>
+     * @return The modifierLocalId.
+     */
+    @java.lang.Override
+    public int getModifierLocalId() {
+      return modifierLocalId_;
+    }
+
+    public static final int INSTANCED_ABILITY_ID_FIELD_NUMBER = 5;
+    private int instancedAbilityId_;
+    /**
+     * <code>uint32 instanced_ability_id = 5;</code>
+     * @return The instancedAbilityId.
+     */
+    @java.lang.Override
+    public int getInstancedAbilityId() {
+      return instancedAbilityId_;
+    }
+
+    public static final int DFPKCAOALDF_FIELD_NUMBER = 14;
+    private boolean dFPKCAOALDF_;
+    /**
+     * <code>bool DFPKCAOALDF = 14;</code>
+     * @return The dFPKCAOALDF.
+     */
+    @java.lang.Override
+    public boolean getDFPKCAOALDF() {
+      return dFPKCAOALDF_;
     }
 
     public static final int IS_SERVERBUFF_MODIFIER_FIELD_NUMBER = 13;
@@ -520,15 +465,70 @@ public final class AbilityAppliedModifierOuterClass {
       return isServerbuffModifier_;
     }
 
-    public static final int NCEGKBANOBP_FIELD_NUMBER = 14;
-    private boolean nCEGKBANOBP_;
+    public static final int IS_ATTACHED_PARENT_ABILITY_FIELD_NUMBER = 10;
+    private boolean isAttachedParentAbility_;
     /**
-     * <code>bool NCEGKBANOBP = 14;</code>
-     * @return The nCEGKBANOBP.
+     * <code>bool is_attached_parent_ability = 10;</code>
+     * @return The isAttachedParentAbility.
      */
     @java.lang.Override
-    public boolean getNCEGKBANOBP() {
-      return nCEGKBANOBP_;
+    public boolean getIsAttachedParentAbility() {
+      return isAttachedParentAbility_;
+    }
+
+    public static final int SBUFF_UID_FIELD_NUMBER = 12;
+    private int sbuffUid_;
+    /**
+     * <code>uint32 sbuff_uid = 12;</code>
+     * @return The sbuffUid.
+     */
+    @java.lang.Override
+    public int getSbuffUid() {
+      return sbuffUid_;
+    }
+
+    public static final int PARENT_ABILITY_ENTITY_ID_FIELD_NUMBER = 2;
+    private int parentAbilityEntityId_;
+    /**
+     * <code>uint32 parent_ability_entity_id = 2;</code>
+     * @return The parentAbilityEntityId.
+     */
+    @java.lang.Override
+    public int getParentAbilityEntityId() {
+      return parentAbilityEntityId_;
+    }
+
+    public static final int INSTANCED_MODIFIER_ID_FIELD_NUMBER = 6;
+    private int instancedModifierId_;
+    /**
+     * <code>uint32 instanced_modifier_id = 6;</code>
+     * @return The instancedModifierId.
+     */
+    @java.lang.Override
+    public int getInstancedModifierId() {
+      return instancedModifierId_;
+    }
+
+    public static final int EXIST_DURATION_FIELD_NUMBER = 7;
+    private float existDuration_;
+    /**
+     * <code>float exist_duration = 7;</code>
+     * @return The existDuration.
+     */
+    @java.lang.Override
+    public float getExistDuration() {
+      return existDuration_;
+    }
+
+    public static final int APPLY_ENTITY_ID_FIELD_NUMBER = 9;
+    private int applyEntityId_;
+    /**
+     * <code>uint32 apply_entity_id = 9;</code>
+     * @return The applyEntityId.
+     */
+    @java.lang.Override
+    public int getApplyEntityId() {
+      return applyEntityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -584,8 +584,8 @@ public final class AbilityAppliedModifierOuterClass {
       if (isServerbuffModifier_ != false) {
         output.writeBool(13, isServerbuffModifier_);
       }
-      if (nCEGKBANOBP_ != false) {
-        output.writeBool(14, nCEGKBANOBP_);
+      if (dFPKCAOALDF_ != false) {
+        output.writeBool(14, dFPKCAOALDF_);
       }
       unknownFields.writeTo(output);
     }
@@ -648,9 +648,9 @@ public final class AbilityAppliedModifierOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(13, isServerbuffModifier_);
       }
-      if (nCEGKBANOBP_ != false) {
+      if (dFPKCAOALDF_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, nCEGKBANOBP_);
+          .computeBoolSize(14, dFPKCAOALDF_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -667,47 +667,47 @@ public final class AbilityAppliedModifierOuterClass {
       }
       emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier other = (emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier) obj;
 
-      if (getModifierLocalId()
-          != other.getModifierLocalId()) return false;
-      if (getParentAbilityEntityId()
-          != other.getParentAbilityEntityId()) return false;
       if (hasParentAbilityName() != other.hasParentAbilityName()) return false;
       if (hasParentAbilityName()) {
         if (!getParentAbilityName()
             .equals(other.getParentAbilityName())) return false;
+      }
+      if (hasModifierDurability() != other.hasModifierDurability()) return false;
+      if (hasModifierDurability()) {
+        if (!getModifierDurability()
+            .equals(other.getModifierDurability())) return false;
       }
       if (hasParentAbilityOverride() != other.hasParentAbilityOverride()) return false;
       if (hasParentAbilityOverride()) {
         if (!getParentAbilityOverride()
             .equals(other.getParentAbilityOverride())) return false;
       }
-      if (getInstancedAbilityId()
-          != other.getInstancedAbilityId()) return false;
-      if (getInstancedModifierId()
-          != other.getInstancedModifierId()) return false;
-      if (java.lang.Float.floatToIntBits(getExistDuration())
-          != java.lang.Float.floatToIntBits(
-              other.getExistDuration())) return false;
       if (hasAttachedInstancedModifier() != other.hasAttachedInstancedModifier()) return false;
       if (hasAttachedInstancedModifier()) {
         if (!getAttachedInstancedModifier()
             .equals(other.getAttachedInstancedModifier())) return false;
       }
-      if (getApplyEntityId()
-          != other.getApplyEntityId()) return false;
-      if (getIsAttachedParentAbility()
-          != other.getIsAttachedParentAbility()) return false;
-      if (hasModifierDurability() != other.hasModifierDurability()) return false;
-      if (hasModifierDurability()) {
-        if (!getModifierDurability()
-            .equals(other.getModifierDurability())) return false;
-      }
-      if (getSbuffUid()
-          != other.getSbuffUid()) return false;
+      if (getModifierLocalId()
+          != other.getModifierLocalId()) return false;
+      if (getInstancedAbilityId()
+          != other.getInstancedAbilityId()) return false;
+      if (getDFPKCAOALDF()
+          != other.getDFPKCAOALDF()) return false;
       if (getIsServerbuffModifier()
           != other.getIsServerbuffModifier()) return false;
-      if (getNCEGKBANOBP()
-          != other.getNCEGKBANOBP()) return false;
+      if (getIsAttachedParentAbility()
+          != other.getIsAttachedParentAbility()) return false;
+      if (getSbuffUid()
+          != other.getSbuffUid()) return false;
+      if (getParentAbilityEntityId()
+          != other.getParentAbilityEntityId()) return false;
+      if (getInstancedModifierId()
+          != other.getInstancedModifierId()) return false;
+      if (java.lang.Float.floatToIntBits(getExistDuration())
+          != java.lang.Float.floatToIntBits(
+              other.getExistDuration())) return false;
+      if (getApplyEntityId()
+          != other.getApplyEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -719,46 +719,46 @@ public final class AbilityAppliedModifierOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MODIFIER_LOCAL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getModifierLocalId();
-      hash = (37 * hash) + PARENT_ABILITY_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getParentAbilityEntityId();
       if (hasParentAbilityName()) {
         hash = (37 * hash) + PARENT_ABILITY_NAME_FIELD_NUMBER;
         hash = (53 * hash) + getParentAbilityName().hashCode();
+      }
+      if (hasModifierDurability()) {
+        hash = (37 * hash) + MODIFIER_DURABILITY_FIELD_NUMBER;
+        hash = (53 * hash) + getModifierDurability().hashCode();
       }
       if (hasParentAbilityOverride()) {
         hash = (37 * hash) + PARENT_ABILITY_OVERRIDE_FIELD_NUMBER;
         hash = (53 * hash) + getParentAbilityOverride().hashCode();
       }
+      if (hasAttachedInstancedModifier()) {
+        hash = (37 * hash) + ATTACHED_INSTANCED_MODIFIER_FIELD_NUMBER;
+        hash = (53 * hash) + getAttachedInstancedModifier().hashCode();
+      }
+      hash = (37 * hash) + MODIFIER_LOCAL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getModifierLocalId();
       hash = (37 * hash) + INSTANCED_ABILITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getInstancedAbilityId();
+      hash = (37 * hash) + DFPKCAOALDF_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getDFPKCAOALDF());
+      hash = (37 * hash) + IS_SERVERBUFF_MODIFIER_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsServerbuffModifier());
+      hash = (37 * hash) + IS_ATTACHED_PARENT_ABILITY_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsAttachedParentAbility());
+      hash = (37 * hash) + SBUFF_UID_FIELD_NUMBER;
+      hash = (53 * hash) + getSbuffUid();
+      hash = (37 * hash) + PARENT_ABILITY_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getParentAbilityEntityId();
       hash = (37 * hash) + INSTANCED_MODIFIER_ID_FIELD_NUMBER;
       hash = (53 * hash) + getInstancedModifierId();
       hash = (37 * hash) + EXIST_DURATION_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getExistDuration());
-      if (hasAttachedInstancedModifier()) {
-        hash = (37 * hash) + ATTACHED_INSTANCED_MODIFIER_FIELD_NUMBER;
-        hash = (53 * hash) + getAttachedInstancedModifier().hashCode();
-      }
       hash = (37 * hash) + APPLY_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getApplyEntityId();
-      hash = (37 * hash) + IS_ATTACHED_PARENT_ABILITY_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAttachedParentAbility());
-      if (hasModifierDurability()) {
-        hash = (37 * hash) + MODIFIER_DURABILITY_FIELD_NUMBER;
-        hash = (53 * hash) + getModifierDurability().hashCode();
-      }
-      hash = (37 * hash) + SBUFF_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getSbuffUid();
-      hash = (37 * hash) + IS_SERVERBUFF_MODIFIER_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsServerbuffModifier());
-      hash = (37 * hash) + NCEGKBANOBP_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getNCEGKBANOBP());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -892,15 +892,17 @@ public final class AbilityAppliedModifierOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        modifierLocalId_ = 0;
-
-        parentAbilityEntityId_ = 0;
-
         if (parentAbilityNameBuilder_ == null) {
           parentAbilityName_ = null;
         } else {
           parentAbilityName_ = null;
           parentAbilityNameBuilder_ = null;
+        }
+        if (modifierDurabilityBuilder_ == null) {
+          modifierDurability_ = null;
+        } else {
+          modifierDurability_ = null;
+          modifierDurabilityBuilder_ = null;
         }
         if (parentAbilityOverrideBuilder_ == null) {
           parentAbilityOverride_ = null;
@@ -908,33 +910,31 @@ public final class AbilityAppliedModifierOuterClass {
           parentAbilityOverride_ = null;
           parentAbilityOverrideBuilder_ = null;
         }
-        instancedAbilityId_ = 0;
-
-        instancedModifierId_ = 0;
-
-        existDuration_ = 0F;
-
         if (attachedInstancedModifierBuilder_ == null) {
           attachedInstancedModifier_ = null;
         } else {
           attachedInstancedModifier_ = null;
           attachedInstancedModifierBuilder_ = null;
         }
-        applyEntityId_ = 0;
+        modifierLocalId_ = 0;
 
-        isAttachedParentAbility_ = false;
+        instancedAbilityId_ = 0;
 
-        if (modifierDurabilityBuilder_ == null) {
-          modifierDurability_ = null;
-        } else {
-          modifierDurability_ = null;
-          modifierDurabilityBuilder_ = null;
-        }
-        sbuffUid_ = 0;
+        dFPKCAOALDF_ = false;
 
         isServerbuffModifier_ = false;
 
-        nCEGKBANOBP_ = false;
+        isAttachedParentAbility_ = false;
+
+        sbuffUid_ = 0;
+
+        parentAbilityEntityId_ = 0;
+
+        instancedModifierId_ = 0;
+
+        existDuration_ = 0F;
+
+        applyEntityId_ = 0;
 
         return this;
       }
@@ -962,36 +962,36 @@ public final class AbilityAppliedModifierOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier buildPartial() {
         emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier result = new emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier(this);
-        result.modifierLocalId_ = modifierLocalId_;
-        result.parentAbilityEntityId_ = parentAbilityEntityId_;
         if (parentAbilityNameBuilder_ == null) {
           result.parentAbilityName_ = parentAbilityName_;
         } else {
           result.parentAbilityName_ = parentAbilityNameBuilder_.build();
+        }
+        if (modifierDurabilityBuilder_ == null) {
+          result.modifierDurability_ = modifierDurability_;
+        } else {
+          result.modifierDurability_ = modifierDurabilityBuilder_.build();
         }
         if (parentAbilityOverrideBuilder_ == null) {
           result.parentAbilityOverride_ = parentAbilityOverride_;
         } else {
           result.parentAbilityOverride_ = parentAbilityOverrideBuilder_.build();
         }
-        result.instancedAbilityId_ = instancedAbilityId_;
-        result.instancedModifierId_ = instancedModifierId_;
-        result.existDuration_ = existDuration_;
         if (attachedInstancedModifierBuilder_ == null) {
           result.attachedInstancedModifier_ = attachedInstancedModifier_;
         } else {
           result.attachedInstancedModifier_ = attachedInstancedModifierBuilder_.build();
         }
-        result.applyEntityId_ = applyEntityId_;
-        result.isAttachedParentAbility_ = isAttachedParentAbility_;
-        if (modifierDurabilityBuilder_ == null) {
-          result.modifierDurability_ = modifierDurability_;
-        } else {
-          result.modifierDurability_ = modifierDurabilityBuilder_.build();
-        }
-        result.sbuffUid_ = sbuffUid_;
+        result.modifierLocalId_ = modifierLocalId_;
+        result.instancedAbilityId_ = instancedAbilityId_;
+        result.dFPKCAOALDF_ = dFPKCAOALDF_;
         result.isServerbuffModifier_ = isServerbuffModifier_;
-        result.nCEGKBANOBP_ = nCEGKBANOBP_;
+        result.isAttachedParentAbility_ = isAttachedParentAbility_;
+        result.sbuffUid_ = sbuffUid_;
+        result.parentAbilityEntityId_ = parentAbilityEntityId_;
+        result.instancedModifierId_ = instancedModifierId_;
+        result.existDuration_ = existDuration_;
+        result.applyEntityId_ = applyEntityId_;
         onBuilt();
         return result;
       }
@@ -1040,20 +1040,38 @@ public final class AbilityAppliedModifierOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier other) {
         if (other == emu.grasscutter.net.proto.AbilityAppliedModifierOuterClass.AbilityAppliedModifier.getDefaultInstance()) return this;
-        if (other.getModifierLocalId() != 0) {
-          setModifierLocalId(other.getModifierLocalId());
-        }
-        if (other.getParentAbilityEntityId() != 0) {
-          setParentAbilityEntityId(other.getParentAbilityEntityId());
-        }
         if (other.hasParentAbilityName()) {
           mergeParentAbilityName(other.getParentAbilityName());
+        }
+        if (other.hasModifierDurability()) {
+          mergeModifierDurability(other.getModifierDurability());
         }
         if (other.hasParentAbilityOverride()) {
           mergeParentAbilityOverride(other.getParentAbilityOverride());
         }
+        if (other.hasAttachedInstancedModifier()) {
+          mergeAttachedInstancedModifier(other.getAttachedInstancedModifier());
+        }
+        if (other.getModifierLocalId() != 0) {
+          setModifierLocalId(other.getModifierLocalId());
+        }
         if (other.getInstancedAbilityId() != 0) {
           setInstancedAbilityId(other.getInstancedAbilityId());
+        }
+        if (other.getDFPKCAOALDF() != false) {
+          setDFPKCAOALDF(other.getDFPKCAOALDF());
+        }
+        if (other.getIsServerbuffModifier() != false) {
+          setIsServerbuffModifier(other.getIsServerbuffModifier());
+        }
+        if (other.getIsAttachedParentAbility() != false) {
+          setIsAttachedParentAbility(other.getIsAttachedParentAbility());
+        }
+        if (other.getSbuffUid() != 0) {
+          setSbuffUid(other.getSbuffUid());
+        }
+        if (other.getParentAbilityEntityId() != 0) {
+          setParentAbilityEntityId(other.getParentAbilityEntityId());
         }
         if (other.getInstancedModifierId() != 0) {
           setInstancedModifierId(other.getInstancedModifierId());
@@ -1061,26 +1079,8 @@ public final class AbilityAppliedModifierOuterClass {
         if (other.getExistDuration() != 0F) {
           setExistDuration(other.getExistDuration());
         }
-        if (other.hasAttachedInstancedModifier()) {
-          mergeAttachedInstancedModifier(other.getAttachedInstancedModifier());
-        }
         if (other.getApplyEntityId() != 0) {
           setApplyEntityId(other.getApplyEntityId());
-        }
-        if (other.getIsAttachedParentAbility() != false) {
-          setIsAttachedParentAbility(other.getIsAttachedParentAbility());
-        }
-        if (other.hasModifierDurability()) {
-          mergeModifierDurability(other.getModifierDurability());
-        }
-        if (other.getSbuffUid() != 0) {
-          setSbuffUid(other.getSbuffUid());
-        }
-        if (other.getIsServerbuffModifier() != false) {
-          setIsServerbuffModifier(other.getIsServerbuffModifier());
-        }
-        if (other.getNCEGKBANOBP() != false) {
-          setNCEGKBANOBP(other.getNCEGKBANOBP());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1108,68 +1108,6 @@ public final class AbilityAppliedModifierOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private int modifierLocalId_ ;
-      /**
-       * <code>int32 modifier_local_id = 1;</code>
-       * @return The modifierLocalId.
-       */
-      @java.lang.Override
-      public int getModifierLocalId() {
-        return modifierLocalId_;
-      }
-      /**
-       * <code>int32 modifier_local_id = 1;</code>
-       * @param value The modifierLocalId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setModifierLocalId(int value) {
-        
-        modifierLocalId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 modifier_local_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearModifierLocalId() {
-        
-        modifierLocalId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int parentAbilityEntityId_ ;
-      /**
-       * <code>uint32 parent_ability_entity_id = 2;</code>
-       * @return The parentAbilityEntityId.
-       */
-      @java.lang.Override
-      public int getParentAbilityEntityId() {
-        return parentAbilityEntityId_;
-      }
-      /**
-       * <code>uint32 parent_ability_entity_id = 2;</code>
-       * @param value The parentAbilityEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setParentAbilityEntityId(int value) {
-        
-        parentAbilityEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 parent_ability_entity_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearParentAbilityEntityId() {
-        
-        parentAbilityEntityId_ = 0;
-        onChanged();
         return this;
       }
 
@@ -1292,6 +1230,125 @@ public final class AbilityAppliedModifierOuterClass {
         return parentAbilityNameBuilder_;
       }
 
+      private emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability modifierDurability_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.Builder, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurabilityOrBuilder> modifierDurabilityBuilder_;
+      /**
+       * <code>.ModifierDurability modifier_durability = 11;</code>
+       * @return Whether the modifierDurability field is set.
+       */
+      public boolean hasModifierDurability() {
+        return modifierDurabilityBuilder_ != null || modifierDurability_ != null;
+      }
+      /**
+       * <code>.ModifierDurability modifier_durability = 11;</code>
+       * @return The modifierDurability.
+       */
+      public emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability getModifierDurability() {
+        if (modifierDurabilityBuilder_ == null) {
+          return modifierDurability_ == null ? emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.getDefaultInstance() : modifierDurability_;
+        } else {
+          return modifierDurabilityBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.ModifierDurability modifier_durability = 11;</code>
+       */
+      public Builder setModifierDurability(emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability value) {
+        if (modifierDurabilityBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          modifierDurability_ = value;
+          onChanged();
+        } else {
+          modifierDurabilityBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ModifierDurability modifier_durability = 11;</code>
+       */
+      public Builder setModifierDurability(
+          emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.Builder builderForValue) {
+        if (modifierDurabilityBuilder_ == null) {
+          modifierDurability_ = builderForValue.build();
+          onChanged();
+        } else {
+          modifierDurabilityBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ModifierDurability modifier_durability = 11;</code>
+       */
+      public Builder mergeModifierDurability(emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability value) {
+        if (modifierDurabilityBuilder_ == null) {
+          if (modifierDurability_ != null) {
+            modifierDurability_ =
+              emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.newBuilder(modifierDurability_).mergeFrom(value).buildPartial();
+          } else {
+            modifierDurability_ = value;
+          }
+          onChanged();
+        } else {
+          modifierDurabilityBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ModifierDurability modifier_durability = 11;</code>
+       */
+      public Builder clearModifierDurability() {
+        if (modifierDurabilityBuilder_ == null) {
+          modifierDurability_ = null;
+          onChanged();
+        } else {
+          modifierDurability_ = null;
+          modifierDurabilityBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ModifierDurability modifier_durability = 11;</code>
+       */
+      public emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.Builder getModifierDurabilityBuilder() {
+        
+        onChanged();
+        return getModifierDurabilityFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.ModifierDurability modifier_durability = 11;</code>
+       */
+      public emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurabilityOrBuilder getModifierDurabilityOrBuilder() {
+        if (modifierDurabilityBuilder_ != null) {
+          return modifierDurabilityBuilder_.getMessageOrBuilder();
+        } else {
+          return modifierDurability_ == null ?
+              emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.getDefaultInstance() : modifierDurability_;
+        }
+      }
+      /**
+       * <code>.ModifierDurability modifier_durability = 11;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.Builder, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurabilityOrBuilder> 
+          getModifierDurabilityFieldBuilder() {
+        if (modifierDurabilityBuilder_ == null) {
+          modifierDurabilityBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.Builder, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurabilityOrBuilder>(
+                  getModifierDurability(),
+                  getParentForChildren(),
+                  isClean());
+          modifierDurability_ = null;
+        }
+        return modifierDurabilityBuilder_;
+      }
+
       private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString parentAbilityOverride_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> parentAbilityOverrideBuilder_;
@@ -1409,99 +1466,6 @@ public final class AbilityAppliedModifierOuterClass {
           parentAbilityOverride_ = null;
         }
         return parentAbilityOverrideBuilder_;
-      }
-
-      private int instancedAbilityId_ ;
-      /**
-       * <code>uint32 instanced_ability_id = 5;</code>
-       * @return The instancedAbilityId.
-       */
-      @java.lang.Override
-      public int getInstancedAbilityId() {
-        return instancedAbilityId_;
-      }
-      /**
-       * <code>uint32 instanced_ability_id = 5;</code>
-       * @param value The instancedAbilityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setInstancedAbilityId(int value) {
-        
-        instancedAbilityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 instanced_ability_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearInstancedAbilityId() {
-        
-        instancedAbilityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int instancedModifierId_ ;
-      /**
-       * <code>uint32 instanced_modifier_id = 6;</code>
-       * @return The instancedModifierId.
-       */
-      @java.lang.Override
-      public int getInstancedModifierId() {
-        return instancedModifierId_;
-      }
-      /**
-       * <code>uint32 instanced_modifier_id = 6;</code>
-       * @param value The instancedModifierId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setInstancedModifierId(int value) {
-        
-        instancedModifierId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 instanced_modifier_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearInstancedModifierId() {
-        
-        instancedModifierId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private float existDuration_ ;
-      /**
-       * <code>float exist_duration = 7;</code>
-       * @return The existDuration.
-       */
-      @java.lang.Override
-      public float getExistDuration() {
-        return existDuration_;
-      }
-      /**
-       * <code>float exist_duration = 7;</code>
-       * @param value The existDuration to set.
-       * @return This builder for chaining.
-       */
-      public Builder setExistDuration(float value) {
-        
-        existDuration_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float exist_duration = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearExistDuration() {
-        
-        existDuration_ = 0F;
-        onChanged();
-        return this;
       }
 
       private emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.AbilityAttachedModifier attachedInstancedModifier_;
@@ -1623,214 +1587,95 @@ public final class AbilityAppliedModifierOuterClass {
         return attachedInstancedModifierBuilder_;
       }
 
-      private int applyEntityId_ ;
+      private int modifierLocalId_ ;
       /**
-       * <code>uint32 apply_entity_id = 9;</code>
-       * @return The applyEntityId.
+       * <code>int32 modifier_local_id = 1;</code>
+       * @return The modifierLocalId.
        */
       @java.lang.Override
-      public int getApplyEntityId() {
-        return applyEntityId_;
+      public int getModifierLocalId() {
+        return modifierLocalId_;
       }
       /**
-       * <code>uint32 apply_entity_id = 9;</code>
-       * @param value The applyEntityId to set.
+       * <code>int32 modifier_local_id = 1;</code>
+       * @param value The modifierLocalId to set.
        * @return This builder for chaining.
        */
-      public Builder setApplyEntityId(int value) {
+      public Builder setModifierLocalId(int value) {
         
-        applyEntityId_ = value;
+        modifierLocalId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 apply_entity_id = 9;</code>
+       * <code>int32 modifier_local_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearApplyEntityId() {
+      public Builder clearModifierLocalId() {
         
-        applyEntityId_ = 0;
+        modifierLocalId_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean isAttachedParentAbility_ ;
+      private int instancedAbilityId_ ;
       /**
-       * <code>bool is_attached_parent_ability = 10;</code>
-       * @return The isAttachedParentAbility.
+       * <code>uint32 instanced_ability_id = 5;</code>
+       * @return The instancedAbilityId.
        */
       @java.lang.Override
-      public boolean getIsAttachedParentAbility() {
-        return isAttachedParentAbility_;
+      public int getInstancedAbilityId() {
+        return instancedAbilityId_;
       }
       /**
-       * <code>bool is_attached_parent_ability = 10;</code>
-       * @param value The isAttachedParentAbility to set.
+       * <code>uint32 instanced_ability_id = 5;</code>
+       * @param value The instancedAbilityId to set.
        * @return This builder for chaining.
        */
-      public Builder setIsAttachedParentAbility(boolean value) {
+      public Builder setInstancedAbilityId(int value) {
         
-        isAttachedParentAbility_ = value;
+        instancedAbilityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_attached_parent_ability = 10;</code>
+       * <code>uint32 instanced_ability_id = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsAttachedParentAbility() {
+      public Builder clearInstancedAbilityId() {
         
-        isAttachedParentAbility_ = false;
+        instancedAbilityId_ = 0;
         onChanged();
         return this;
       }
 
-      private emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability modifierDurability_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.Builder, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurabilityOrBuilder> modifierDurabilityBuilder_;
+      private boolean dFPKCAOALDF_ ;
       /**
-       * <code>.ModifierDurability modifier_durability = 11;</code>
-       * @return Whether the modifierDurability field is set.
-       */
-      public boolean hasModifierDurability() {
-        return modifierDurabilityBuilder_ != null || modifierDurability_ != null;
-      }
-      /**
-       * <code>.ModifierDurability modifier_durability = 11;</code>
-       * @return The modifierDurability.
-       */
-      public emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability getModifierDurability() {
-        if (modifierDurabilityBuilder_ == null) {
-          return modifierDurability_ == null ? emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.getDefaultInstance() : modifierDurability_;
-        } else {
-          return modifierDurabilityBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.ModifierDurability modifier_durability = 11;</code>
-       */
-      public Builder setModifierDurability(emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability value) {
-        if (modifierDurabilityBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          modifierDurability_ = value;
-          onChanged();
-        } else {
-          modifierDurabilityBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ModifierDurability modifier_durability = 11;</code>
-       */
-      public Builder setModifierDurability(
-          emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.Builder builderForValue) {
-        if (modifierDurabilityBuilder_ == null) {
-          modifierDurability_ = builderForValue.build();
-          onChanged();
-        } else {
-          modifierDurabilityBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ModifierDurability modifier_durability = 11;</code>
-       */
-      public Builder mergeModifierDurability(emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability value) {
-        if (modifierDurabilityBuilder_ == null) {
-          if (modifierDurability_ != null) {
-            modifierDurability_ =
-              emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.newBuilder(modifierDurability_).mergeFrom(value).buildPartial();
-          } else {
-            modifierDurability_ = value;
-          }
-          onChanged();
-        } else {
-          modifierDurabilityBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ModifierDurability modifier_durability = 11;</code>
-       */
-      public Builder clearModifierDurability() {
-        if (modifierDurabilityBuilder_ == null) {
-          modifierDurability_ = null;
-          onChanged();
-        } else {
-          modifierDurability_ = null;
-          modifierDurabilityBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ModifierDurability modifier_durability = 11;</code>
-       */
-      public emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.Builder getModifierDurabilityBuilder() {
-        
-        onChanged();
-        return getModifierDurabilityFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.ModifierDurability modifier_durability = 11;</code>
-       */
-      public emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurabilityOrBuilder getModifierDurabilityOrBuilder() {
-        if (modifierDurabilityBuilder_ != null) {
-          return modifierDurabilityBuilder_.getMessageOrBuilder();
-        } else {
-          return modifierDurability_ == null ?
-              emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.getDefaultInstance() : modifierDurability_;
-        }
-      }
-      /**
-       * <code>.ModifierDurability modifier_durability = 11;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.Builder, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurabilityOrBuilder> 
-          getModifierDurabilityFieldBuilder() {
-        if (modifierDurabilityBuilder_ == null) {
-          modifierDurabilityBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurability.Builder, emu.grasscutter.net.proto.ModifierDurabilityOuterClass.ModifierDurabilityOrBuilder>(
-                  getModifierDurability(),
-                  getParentForChildren(),
-                  isClean());
-          modifierDurability_ = null;
-        }
-        return modifierDurabilityBuilder_;
-      }
-
-      private int sbuffUid_ ;
-      /**
-       * <code>uint32 sbuff_uid = 12;</code>
-       * @return The sbuffUid.
+       * <code>bool DFPKCAOALDF = 14;</code>
+       * @return The dFPKCAOALDF.
        */
       @java.lang.Override
-      public int getSbuffUid() {
-        return sbuffUid_;
+      public boolean getDFPKCAOALDF() {
+        return dFPKCAOALDF_;
       }
       /**
-       * <code>uint32 sbuff_uid = 12;</code>
-       * @param value The sbuffUid to set.
+       * <code>bool DFPKCAOALDF = 14;</code>
+       * @param value The dFPKCAOALDF to set.
        * @return This builder for chaining.
        */
-      public Builder setSbuffUid(int value) {
+      public Builder setDFPKCAOALDF(boolean value) {
         
-        sbuffUid_ = value;
+        dFPKCAOALDF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 sbuff_uid = 12;</code>
+       * <code>bool DFPKCAOALDF = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearSbuffUid() {
+      public Builder clearDFPKCAOALDF() {
         
-        sbuffUid_ = 0;
+        dFPKCAOALDF_ = false;
         onChanged();
         return this;
       }
@@ -1866,33 +1711,188 @@ public final class AbilityAppliedModifierOuterClass {
         return this;
       }
 
-      private boolean nCEGKBANOBP_ ;
+      private boolean isAttachedParentAbility_ ;
       /**
-       * <code>bool NCEGKBANOBP = 14;</code>
-       * @return The nCEGKBANOBP.
+       * <code>bool is_attached_parent_ability = 10;</code>
+       * @return The isAttachedParentAbility.
        */
       @java.lang.Override
-      public boolean getNCEGKBANOBP() {
-        return nCEGKBANOBP_;
+      public boolean getIsAttachedParentAbility() {
+        return isAttachedParentAbility_;
       }
       /**
-       * <code>bool NCEGKBANOBP = 14;</code>
-       * @param value The nCEGKBANOBP to set.
+       * <code>bool is_attached_parent_ability = 10;</code>
+       * @param value The isAttachedParentAbility to set.
        * @return This builder for chaining.
        */
-      public Builder setNCEGKBANOBP(boolean value) {
+      public Builder setIsAttachedParentAbility(boolean value) {
         
-        nCEGKBANOBP_ = value;
+        isAttachedParentAbility_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool NCEGKBANOBP = 14;</code>
+       * <code>bool is_attached_parent_ability = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNCEGKBANOBP() {
+      public Builder clearIsAttachedParentAbility() {
         
-        nCEGKBANOBP_ = false;
+        isAttachedParentAbility_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int sbuffUid_ ;
+      /**
+       * <code>uint32 sbuff_uid = 12;</code>
+       * @return The sbuffUid.
+       */
+      @java.lang.Override
+      public int getSbuffUid() {
+        return sbuffUid_;
+      }
+      /**
+       * <code>uint32 sbuff_uid = 12;</code>
+       * @param value The sbuffUid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSbuffUid(int value) {
+        
+        sbuffUid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 sbuff_uid = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSbuffUid() {
+        
+        sbuffUid_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int parentAbilityEntityId_ ;
+      /**
+       * <code>uint32 parent_ability_entity_id = 2;</code>
+       * @return The parentAbilityEntityId.
+       */
+      @java.lang.Override
+      public int getParentAbilityEntityId() {
+        return parentAbilityEntityId_;
+      }
+      /**
+       * <code>uint32 parent_ability_entity_id = 2;</code>
+       * @param value The parentAbilityEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParentAbilityEntityId(int value) {
+        
+        parentAbilityEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 parent_ability_entity_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParentAbilityEntityId() {
+        
+        parentAbilityEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int instancedModifierId_ ;
+      /**
+       * <code>uint32 instanced_modifier_id = 6;</code>
+       * @return The instancedModifierId.
+       */
+      @java.lang.Override
+      public int getInstancedModifierId() {
+        return instancedModifierId_;
+      }
+      /**
+       * <code>uint32 instanced_modifier_id = 6;</code>
+       * @param value The instancedModifierId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setInstancedModifierId(int value) {
+        
+        instancedModifierId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 instanced_modifier_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearInstancedModifierId() {
+        
+        instancedModifierId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private float existDuration_ ;
+      /**
+       * <code>float exist_duration = 7;</code>
+       * @return The existDuration.
+       */
+      @java.lang.Override
+      public float getExistDuration() {
+        return existDuration_;
+      }
+      /**
+       * <code>float exist_duration = 7;</code>
+       * @param value The existDuration to set.
+       * @return This builder for chaining.
+       */
+      public Builder setExistDuration(float value) {
+        
+        existDuration_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float exist_duration = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearExistDuration() {
+        
+        existDuration_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int applyEntityId_ ;
+      /**
+       * <code>uint32 apply_entity_id = 9;</code>
+       * @return The applyEntityId.
+       */
+      @java.lang.Override
+      public int getApplyEntityId() {
+        return applyEntityId_;
+      }
+      /**
+       * <code>uint32 apply_entity_id = 9;</code>
+       * @param value The applyEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setApplyEntityId(int value) {
+        
+        applyEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 apply_entity_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearApplyEntityId() {
+        
+        applyEntityId_ = 0;
         onChanged();
         return this;
       }
@@ -1964,39 +1964,39 @@ public final class AbilityAppliedModifierOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034AbilityAppliedModifier.proto\032\023AbilityS" +
-      "tring.proto\032\035AbilityAttachedModifier.pro" +
-      "to\032\030ModifierDurability.proto\"\376\003\n\026Ability" +
-      "AppliedModifier\022\031\n\021modifier_local_id\030\001 \001" +
-      "(\005\022 \n\030parent_ability_entity_id\030\002 \001(\r\022+\n\023" +
-      "parent_ability_name\030\003 \001(\0132\016.AbilityStrin" +
-      "g\022/\n\027parent_ability_override\030\004 \001(\0132\016.Abi" +
-      "lityString\022\034\n\024instanced_ability_id\030\005 \001(\r" +
-      "\022\035\n\025instanced_modifier_id\030\006 \001(\r\022\026\n\016exist" +
-      "_duration\030\007 \001(\002\022=\n\033attached_instanced_mo" +
-      "difier\030\010 \001(\0132\030.AbilityAttachedModifier\022\027" +
-      "\n\017apply_entity_id\030\t \001(\r\022\"\n\032is_attached_p" +
-      "arent_ability\030\n \001(\010\0220\n\023modifier_durabili" +
-      "ty\030\013 \001(\0132\023.ModifierDurability\022\021\n\tsbuff_u" +
-      "id\030\014 \001(\r\022\036\n\026is_serverbuff_modifier\030\r \001(\010" +
-      "\022\023\n\013NCEGKBANOBP\030\016 \001(\010B\033\n\031emu.grasscutter" +
+      "tring.proto\032\030ModifierDurability.proto\032\035A" +
+      "bilityAttachedModifier.proto\"\376\003\n\026Ability" +
+      "AppliedModifier\022+\n\023parent_ability_name\030\003" +
+      " \001(\0132\016.AbilityString\0220\n\023modifier_durabil" +
+      "ity\030\013 \001(\0132\023.ModifierDurability\022/\n\027parent" +
+      "_ability_override\030\004 \001(\0132\016.AbilityString\022" +
+      "=\n\033attached_instanced_modifier\030\010 \001(\0132\030.A" +
+      "bilityAttachedModifier\022\031\n\021modifier_local" +
+      "_id\030\001 \001(\005\022\034\n\024instanced_ability_id\030\005 \001(\r\022" +
+      "\023\n\013DFPKCAOALDF\030\016 \001(\010\022\036\n\026is_serverbuff_mo" +
+      "difier\030\r \001(\010\022\"\n\032is_attached_parent_abili" +
+      "ty\030\n \001(\010\022\021\n\tsbuff_uid\030\014 \001(\r\022 \n\030parent_ab" +
+      "ility_entity_id\030\002 \001(\r\022\035\n\025instanced_modif" +
+      "ier_id\030\006 \001(\r\022\026\n\016exist_duration\030\007 \001(\002\022\027\n\017" +
+      "apply_entity_id\030\t \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ModifierDurabilityOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.getDescriptor(),
         });
     internal_static_AbilityAppliedModifier_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AbilityAppliedModifier_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityAppliedModifier_descriptor,
-        new java.lang.String[] { "ModifierLocalId", "ParentAbilityEntityId", "ParentAbilityName", "ParentAbilityOverride", "InstancedAbilityId", "InstancedModifierId", "ExistDuration", "AttachedInstancedModifier", "ApplyEntityId", "IsAttachedParentAbility", "ModifierDurability", "SbuffUid", "IsServerbuffModifier", "NCEGKBANOBP", });
+        new java.lang.String[] { "ParentAbilityName", "ModifierDurability", "ParentAbilityOverride", "AttachedInstancedModifier", "ModifierLocalId", "InstancedAbilityId", "DFPKCAOALDF", "IsServerbuffModifier", "IsAttachedParentAbility", "SbuffUid", "ParentAbilityEntityId", "InstancedModifierId", "ExistDuration", "ApplyEntityId", });
     emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ModifierDurabilityOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AbilityAttachedModifierOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
