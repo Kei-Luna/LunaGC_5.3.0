@@ -73,8 +73,6 @@ However, if you need a more detailed guide and help with the server please refer
 
 ### Compile the actual Server
 
-**Sidenote**: Make sure to append the right prefix and suffix based on your operating system (./ for linux | .\ for windows | add .bat for windows systems when compiling server JAR/handbook).
-
 **Requirements**:
 
 [Java Development Kit 17 | JDK](https://oracle.com/java/technologies/javase/jdk17-archive-downloads.html) or higher
@@ -88,17 +86,12 @@ However, if you need a more detailed guide and help with the server please refer
   .\gradlew.bat jar
   ```
   
-  *If you are wondering, the first command is to set up the environment while the 2nd one is for building the server JAR file.*
-  
 - **For Linux**:
   
   ```bash
   chmod +x gradlew
   ./gradlew jar
   ```
-  
-  *If you are wondering, the first command is to make the file executeable and for the rest refer to the windows explanation.*
-  
 
 ### You can find the output JAR in the project root folder.
 
