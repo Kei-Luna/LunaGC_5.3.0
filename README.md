@@ -14,7 +14,6 @@ However, if you need a more detailed guide and help with the server please refer
 
 ## You'll need a proxy to connect to the server.
 - This tutorial uses fiddler, check this [video tutorial](https://tutorials.freespyware.store/api/public/dl/viOvXvPH) to set it up if you don't know how.
-- The script can be found in the docs folder, or by [this link](https://github.com/Kei-Luna/LunaGC_5.0.0/blob/main/docs/fiddlerscript.txt).
 
 ## Read the handbook (found at the end of the file)
 ## Some stuff mentioned here (such as wishing etc.) will not work.
@@ -55,7 +54,7 @@ However, if you need a more detailed guide and help with the server please refer
 
 - Make sure to install java and set the environment variables.
 - Build the server (refer to "Compile the actual server" in this guide.)
-- Put [Astrolabe.dll](https://github.com/Kei-Luna/LunaGC_5.0.0/raw/main/patch/Astrolabe.dll) in the local game root directory
+- Put [Astrolabe.dll](https://github.com/Kei-Luna/LunaGC_5.3.0/raw/main/patch/Astrolabe.dll) in the local game root directory
 - Download the [Resources](https://github.com/Kei-Luna/LunaGC_Resources_5.0.0), make a new folder called `resources` in the downloaded LunaGC folder and then extract the resources in that new folder.
 - Set useEncryption, Questing and useInRouting to false (it should be false by default, if not then change it)
 - Start the server and the game, make sure to also create an account in the LunaGC console!
