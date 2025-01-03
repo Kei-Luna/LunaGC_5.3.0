@@ -1,4 +1,4 @@
-# LunaGC-5.0.0
+# LunaGC-5.3.0
 
 [简中](docs/README_zh-CN.md)
 
@@ -9,53 +9,47 @@ Please contribute actively to this repository
 # Setup Guide
 
 This guide is very minimal and contains steps to just get your server and client up and running.
-However, if you need a more detailed guide and help with the server please refer to GrassCutter's official repository and discord server.
 
-
-## You'll need a proxy to connect to the server.
-- This tutorial uses fiddler, check this [video tutorial](https://tutorials.freespyware.store/api/public/dl/viOvXvPH) to set it up if you don't know how.
+## You'll need to patch the game to even enter the game world (see below).
 
 ## Read the handbook (found at the end of the file)
-## Some stuff mentioned here (such as wishing etc.) will not work.
 
 ## Main Requirements
 
 - Get [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - Get [MongoDB Community Server](https://www.mongodb.com/try/download/community)
 - Get [NodeJS](https://nodejs.org/dist/v20.15.0/node-v20.15.0-x64.msi)
-- Get game version REL5.0.0 (If you don't have a 5.0.0 client, you can find it here along with the audio files) :
-
-
-| Download link | Package size | Decompressed package size | MD5 checksum |
-| :---: | :---: | :---: | :---: |
-| [GenshinImpact_5.0.0.zip.001](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.001) | 10.0 GB | 20.0 GB | 1ebf5dbcbe43bebcda7a57a8d789092e |
-| [GenshinImpact_5.0.0.zip.002](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.002) | 10.0 GB | 20.0 GB | 57a67026c45d57c28e5b52e24e84cc04 |
-| [GenshinImpact_5.0.0.zip.003](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.003) | 10.0 GB | 20.0 GB | 5e66ff28eaf6ba89e49f153c0f077d34 |
-| [GenshinImpact_5.0.0.zip.004](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.004) | 10.0 GB | 20.0 GB | 39f014a760e27f77abed1989739c74c6 |
-| [GenshinImpact_5.0.0.zip.005](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.005) | 10.0 GB | 20.0 GB | 15f9405a199afba833f18fce288b9c7f |
-| [GenshinImpact_5.0.0.zip.006](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.006) | 10.0 GB | 20.0 GB | 881432ceab27987b1297c9eefb39f192 |
-| [GenshinImpact_5.0.0.zip.007](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/GenshinImpact_5.0.0.zip.007) | 3.78 GB | 7.57 GB | 951f91992b428385294baf9b6c764d49 |
-| [Audio_Chinese_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_Chinese_5.0.0.zip) | 14.77 GB | 29.56 GB | 216b3e53f3c5c7e1290891696b2bbc66 |
-| [Audio_English(US)_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_English(US)_5.0.0.zip) | 17.23 GB | 34.47 GB | ecd59f31ec48c50f9051fdad39603d67 |
-| [Audio_Korean_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_Korean_5.0.0.zip) | 14.51 GB | 29.04 GB | 8bf09bd07413189b69a5a0512df97335 |
-| [Audio_Japanese_5.0.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240816185649_LtymMnnIZVQfbLZ2/Audio_Japanese_5.0.0.zip) | 19.37 GB | 38.76 GB | 95efbd23e1bde2eb574f8090cc118109 |
-
-- Or get the 4.8.0 -> 5.0.0 hdiffs:
-
+- Get game version REL5.3.0 (If you don't have a 5.3.0 client, you can find it here along with the audio files and hdiff if needed) :
 
 | Download link | Package size | Decompressed package size | MD5 checksum |
-| :---: | :---: | :---: | :---: |
-| [game_4.8.0_5.0.0_hdiff_wZvKsUhQtnBEutrh.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/game_4.8.0_5.0.0_hdiff_wZvKsUhQtnBEutrh.zip) | 19.52 GB | 39.86 | ec0cc740e01c374cd53d48219c1a4aff |
-| [audio_ko-kr_4.8.0_5.0.0_hdiff_gTmBNUAGPpXxrRKC.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_ko-kr_4.8.0_5.0.0_hdiff_gTmBNUAGPpXxrRKC.zip) | 0.60 GB | 1.31 GB | 64c52d4065a5d5983b37faeb9796a3eb |
-| [audio_ja-jp_4.8.0_5.0.0_hdiff_LumPhRraNOjGJMnG.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_ja-jp_4.8.0_5.0.0_hdiff_LumPhRraNOjGJMnG.zip) | 0.71 GB | 1.63 GB | 934899593f7234bec937fca98c0b0bed |
-| [audio_zh-cn_4.8.0_5.0.0_hdiff_ZZiDHvYQeHGKuFeP.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_zh-cn_4.8.0_5.0.0_hdiff_ZZiDHvYQeHGKuFeP.zip) | 0.62 GB | 1.35 GB | c1073373d6c7b3680217335dc346de50 |
-| [audio_en-us_4.8.0_5.0.0_hdiff_vsfAECOkroqoZSqK.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_en-us_4.8.0_5.0.0_hdiff_vsfAECOkroqoZSqK.zip) | 0.74 GB | 1.58 GB | b5cb77749a0e2fc0e85b6b1ee319a7e9 |
+| --- | --- | --- | --- |
+| [GenshinImpact_5.3.0.zip.001](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/GenshinImpact_5.3.0.zip.001) | 10.0 GB | 20.0 GB | d7ea7d49334e03e590db3f047cd9ea88 |
+| [GenshinImpact_5.3.0.zip.002](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/GenshinImpact_5.3.0.zip.002) | 10.0 GB | 20.0 GB | b4178034c1d09e889e43fd76b3fb4d3c |
+| [GenshinImpact_5.3.0.zip.003](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/GenshinImpact_5.3.0.zip.003) | 10.0 GB | 20.0 GB | 43b70975fcb957abaaaf7d940969679a |
+| [GenshinImpact_5.3.0.zip.004](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/GenshinImpact_5.3.0.zip.004) | 10.0 GB | 20.0 GB | d734b1edeb1b2b0d47d4d4bab7af6778 |
+| [GenshinImpact_5.3.0.zip.005](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/GenshinImpact_5.3.0.zip.005) | 10.0 GB | 20.0 GB | 95abe987ff924c21f3e5085492448760 |
+| [GenshinImpact_5.3.0.zip.006](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/GenshinImpact_5.3.0.zip.006) | 10.0 GB | 20.0 GB | 492510ae74ae8ac696ee59b4e831d039 |
+| [GenshinImpact_5.3.0.zip.007](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/GenshinImpact_5.3.0.zip.007) | 10.0 GB | 20.0 GB | 0c68334b33ee878c5beac321339b9447 |
+| [GenshinImpact_5.3.0.zip.008](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/GenshinImpact_5.3.0.zip.008) | 0.97 GB | 1.9 GB | 18d44596a5f1467682f5e038c80bd92a |
+| [Audio_Chinese_5.3.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/Audio_Chinese_5.3.0.zip) | 14.11 GB | 28.40 GB | 2727087a20d630d35efe804ae683e72e |
+| [Audio_English(US)_5.3.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/Audio_English(US)_5.3.0.zip) | 16.24 GB | 32.49 GB | 76f338d1925ff39cbf73f0418e9ae354 |
+| [Audio_Korean_5.3.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/Audio_Korean_5.3.0.zip) | 13.99 GB | 28.0 GB | 6356a494c7cce397bdbb1213aa6e7298 |
+| [Audio_Japanese_5.3.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20241219110745_1vT3FzXdDTDFZFrL/Audio_Japanese_5.3.0.zip) | 18.43 GB | 36.88 GB | f2b1c1f217dafbcdf27aeece987256b7 |
 
+- Or get the 5.2.0 -> 5.3.0 hdiffs:
+
+| Download link | Package size | Decompressed package size | MD5 checksum |
+| --- | --- | --- | --- |
+| [game_5.2.0_5.3.0_hdiff_cixFUHQZyAJuOKIN.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/game_5.2.0_5.3.0_hdiff_cixFUHQZyAJuOKIN.zip) | 17.16 GB | 35.14 GB | 46b32c38dbb348a172df8352074da5a1 |
+| [audio_ko-kr_5.2.0_5.3.0_hdiff_oyddjWZZfxEwaTYM.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_ko-kr_5.2.0_5.3.0_hdiff_oyddjWZZfxEwaTYM.zip) | 0.68 GB | 1.47 GB | fcee09acf85cdd2dd1d30bdea69c9065 |
+| [audio_ja-jp_5.2.0_5.3.0_hdiff_mqXJGZjryItulRRx.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_ja-jp_5.2.0_5.3.0_hdiff_mqXJGZjryItulRRx.zip) | 0.78 GB | 1.74 GB | 68146dc2e2ea63b0cae452ea01b23136 |
+| [audio_zh-cn_5.2.0_5.3.0_hdiff_zFnGPPbohnwLAFxC.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_zh-cn_5.2.0_5.3.0_hdiff_zFnGPPbohnwLAFxC.zip) | 0.64 GB | 1.41 GB | 3b4f264bd791b5f81eb165fe6d36676e |
+| [audio_en-us_5.2.0_5.3.0_hdiff_kFXfWOqklZrcycKa.zip](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/audio_en-us_5.2.0_5.3.0_hdiff_kFXfWOqklZrcycKa.zip) | 0.65 GB | 1.42 GB | c7189fa380b90a343cc56b7d8438eaba |
 
 - Make sure to install java and set the environment variables.
 - Build the server (refer to "Compile the actual server" in this guide.)
 - Put [Astrolabe.dll](https://github.com/Kei-Luna/LunaGC_5.3.0/raw/main/patch/Astrolabe.dll) in the local game root directory
-- Download the [Resources](https://github.com/Kei-Luna/LunaGC_Resources_5.0.0), make a new folder called `resources` in the downloaded LunaGC folder and then extract the resources in that new folder.
+- Download the [Resources](https://github.com/pmagixc/5.3-res), make a new folder called `resources` in the downloaded LunaGC folder and then extract the resources in that new folder.
 - Set useEncryption, Questing and useInRouting to false (it should be false by default, if not then change it)
 - Start the server and the game, make sure to also create an account in the LunaGC console!
 - Have fun
@@ -63,59 +57,63 @@ However, if you need a more detailed guide and help with the server please refer
 ### Getting started
 
 - Clone the repository (install [Git](https://git-scm.com) first )
-```
-git clone https://github.com/Kei-Luna/LunaGC_5.0.0.git
-```
-
+  
+  ```
+  git clone https://github.com/Kei-Luna/LunaGC_5.3.0.git
+  ```
+  
 - Now you can continue with the steps below.
-
+  
 
 ### Compile the actual Server
-
-**Sidenote**: Make sure to append the right prefix and suffix based on your operating system (./ for linux | .\ for windows | add .bat for windows systems when compiling server JAR/handbook).
 
 **Requirements**:
 
 [Java Development Kit 17 | JDK](https://oracle.com/java/technologies/javase/jdk17-archive-downloads.html) or higher
 
 - **Sidenote**: Handbook generation may fail on some systems. To disable handbook generation, append `-PskipHandbook=1` to the `gradlew jar` command.
-
+  
 - **For Windows**:
-```shell
-.\gradlew.bat
-.\gradlew.bat jar
-```
-*If you are wondering, the first command is to set up the environment while the 2nd one is for building the server JAR file.*
-
+  
+  ```shell
+  .\gradlew.bat
+  .\gradlew.bat jar
+  ```
+  
 - **For Linux**:
-```bash
-chmod +x gradlew
-./gradlew jar
-```
-*If you are wondering, the first command is to make the file executeable and for the rest refer to the windows explanation.*
+  
+  ```bash
+  chmod +x gradlew
+  ./gradlew jar
+  ```
 
 ### You can find the output JAR in the project root folder.
 
 ### Manually compile the handbook
+
 ```shell
 ./gradlew generateHandbook
 ```
 
 ## Troubleshooting
+
 - Make sure to set useEncryption and useInRouting both to false otherwise you might encounter errors.
 - To use windy make sure that you put your luac files in C:\Windy (make the folder if it doesnt exist)
 - If you get an error related to MongoDB connection timeout, check if the mongodb service is running. On windows: Press windows key and r then type `services.msc`, look for mongodb server and if it's not started then start it by right clicking on it and start. On linux, you can do `systemctl status mongod` to see if it's running, if it isn't then type `systemctl start mongod`. However, if you get error 14 on linux change the owner of the mongodb folder and the .sock file (`sudo chown -R mongodb:mongodb /var/lib/mongodb` and `sudo chown mongodb:mongodb /tmp/mongodb-27017.sock` then try to start the service again.)
 
-
 ## How to make or get custom banners?
-- Well, you can get pre-made ones from this [github repo](https://github.com/Zhaokugua/Grasscutter_Banners)
+
+- Pre-made: [github repo](https://github.com/Zhaokugua/Grasscutter_Banners)
 - Rename the file you chose to download to Banners.json and replace it with the already-existing one in the data folder.
 - The repo also offers a file which contains all of the banners, to use it follow the same procedure mentioned above.
-### Making custom banners
+  
+  ### Making custom banners
+  
 - If you want to make a custom banner for a character or weapon, you'll need to know the prefabPath, the titlePath and the character/item IDs.
 - Fun fact: You can set any item to be on the rateUp, even if it's a 4* instead of a 5*.
 
-## Handmade Handbook (tested)
+## Handmade Handbook (NOT tested)
+
 - Create accounts: /account <username>
 - Get all achievements: /am grantall
 - God mode: /prop god 1
@@ -136,9 +134,13 @@ chmod +x gradlew
 - Get 9999 Acquaint fates: /g 224 x9999
 - Get 9999 Mora: /g 202 x9999
 - Get 9999 Primogems: /g 201 x9999
-### Make sure to not include <> or [] in the commands! The stuff in <> means its required and the stuff in [] means its not required.
-### How to get all of the stuff maxed out: /g all lv90 r5 c6 c6 sl10 | Then do a separate one for the materials: /g mats x99999
-### Ways to TP around the map:
+  
+  ### Make sure to not include <> or [] in the commands! The stuff in <> means its required and the stuff in [] means its not required.
+  
+  ### How to get all of the stuff maxed out: /g all lv90 r5 c6 c6 sl10 | Then do a separate one for the materials: /g mats x99999
+  
+  ### Ways to TP around the map:
+  
 
 Method 1:
 
@@ -150,16 +152,19 @@ Method 2:
 
 - 1: Open the map
 - 2: Place a fishing rod marker (the last one) where you want to teleport and mark it.
-### How to get avatar/entity/material etc. IDs?
+  
+  ### How to get avatar/entity/material etc. IDs?
+  
 - Go to [ambr.top](https://ambr.top)
 - Search up the material/avatar/enemy and then the ID of it should be in the URL of the site, for example I searched for the pyro hilichurl archer; the link for it is ambr.top/en/archive/monster/21010501/pyro-hilichurl-shooter so the ID for it will be 21010501.
 
-
 ### How to spawn monsters?
+
 - Get the ID from the ambr.top link (above)
 - Do /spawn <id> in the in-game chat. You can also find out more arguments that you can use to modify the monster hp etc by doing `/help spawn` or `/spawn` | Example: `/spawn 21010501`, that will spawn a pyro hilichurl. Give it more hp: `/spawn 21010501 hp9999` and you can find more about the arguments trough the method I mentioned above.
 
-### How to use the brand new /uid command?
+### How to use the /uid command?
+
 - Rich text is supported
 - How to set custom UID: `/uid set changethistext` | bold: `/uid set <b>changethistext</b>` | italic: `/uid set <i>changethistext</i>` | combined: `/uid set <i><b>changethistext</b></i>` | colored text (you'll need a hex color code, you can easy get and pick one by search hex color picker on google now let's assume that you have done it): `/uid set <color=#698ae8>changethistext</color>`
 - You can also include spaces like this: `/uid set <b>B O L D</b>`
@@ -167,23 +172,8 @@ Method 2:
 - Restore to server-default UID: `/uid default`
 
 ## What doesn't work
-- Wishing
-- Quests
-- Serenitea pot
-- Abyss
-- Mail
-- Battlepass
-- Events
-- Claiming AR/Commission rewards
-- Claiming bosses drops
-- City reputation
-- Character ascension
-- Gadgets
-- Forging
-- Some inventory stuff
-- Weapon refinement
-- Registration in-game using the box when logging in for first time (use console to make account instead)
-### Even more
+
+- find out
 
 ## Credit
 
