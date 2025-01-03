@@ -284,8 +284,8 @@ public final class PacketOpcodes {
     public static final int HomeGetArrangementInfoRsp = 1111111111;
     public static final int HomeUpdateArrangementInfoRsp = 1111111111;
     public static final int HomeUpdateArrangementInfoReq = 1111111111;
-    public static final int GetShopReq = 1111111111;
-    public static final int GetShopRsp = 1111111111;
+    public static final int GetShopReq = 20791;
+    public static final int GetShopRsp = 24230;
     public static final int ActivityScheduleInfoNotify = 1111111111;
     public static final int GetActivityScheduleRsp = 1111111111;
     public static final int PersonalLineAllDataReq = 1111111111;
@@ -310,10 +310,10 @@ public final class PacketOpcodes {
     public static final int HomeAvatarRewardEventGetReq = 1111111111;
     public static final int HomeAvatarRewardEventGetRsp = 1111111111;
     public static final int GetAllMailNotify = 1111111111;
-    public static final int GetGachaInfoReq = 1111111111;
-    public static final int GetGachaInfoRsp = 1111111111;
-    public static final int DoGachaReq = 1111111111;
-    public static final int DoGachaRsp = 1111111111;
+    public static final int GetGachaInfoReq = 29103;
+    public static final int GetGachaInfoRsp = 23814;
+    public static final int DoGachaReq = 21228;
+    public static final int DoGachaRsp = 24454;
     public static final int AvatarChangeCostumeReq = 1111111111;
     public static final int HomeAvatarCostumeChangeNotify = 1111111111;
     public static final int AvatarWearFlycloakReq = 1111111111;
