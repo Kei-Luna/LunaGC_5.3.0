@@ -188,4 +188,4 @@ Method 2:
 
 ## Credit
 
-Repository containing the original Proto [XilonenImpact](https://git.xeondev.com/reversedrooms/XilonenImpact/src/commit/92c687cae20ba2dda20ceabe338d6e4125b19f7e/hk4e_proto/out/cmd.rs)
+patch Repository [hk4e-patch-universal](https://github.com/oureveryday/hk4e-patch-universal)
