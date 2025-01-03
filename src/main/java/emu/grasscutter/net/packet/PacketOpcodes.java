@@ -239,8 +239,8 @@ public final class PacketOpcodes {
     public static final int GetPlayerAskFriendListReq = 1111111111;
     public static final int GetPlayerBlacklistRsp = 1111111111;
     public static final int GetPlayerMpModeAvailabilityRsp = 1111111111;
-    public static final int UpdatePlayerShowAvatarListReq = 1111111111;
-    public static final int UpdatePlayerShowAvatarListRsp = 1111111111;
+    public static final int UpdatePlayerShowAvatarListReq = 22973;
+    public static final int UpdatePlayerShowAvatarListRsp = 1635;
     public static final int UpdatePlayerShowNameCardListReq = 1111111111;
     public static final int UpdatePlayerShowNameCardListRsp = 1111111111;
     public static final int AvatarFetterDataNotify = 1111111111;
