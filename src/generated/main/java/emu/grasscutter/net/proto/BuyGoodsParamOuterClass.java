@@ -19,32 +19,27 @@ public final class BuyGoodsParamOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 buy_count = 6;</code>
-     * @return The buyCount.
-     */
-    int getBuyCount();
-
-    /**
-     * <code>.ShopGoods goods = 10;</code>
+     * <code>.ShopGoods goods = 7;</code>
      * @return Whether the goods field is set.
      */
     boolean hasGoods();
     /**
-     * <code>.ShopGoods goods = 10;</code>
+     * <code>.ShopGoods goods = 7;</code>
      * @return The goods.
      */
     emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods getGoods();
     /**
-     * <code>.ShopGoods goods = 10;</code>
+     * <code>.ShopGoods goods = 7;</code>
      */
     emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder getGoodsOrBuilder();
+
+    /**
+     * <code>uint32 buy_count = 2;</code>
+     * @return The buyCount.
+     */
+    int getBuyCount();
   }
   /**
-   * <pre>
-   * Version: 4.6.0
-   * Obfs: KHNAGEGDMIJ
-   * </pre>
-   *
    * Protobuf type {@code BuyGoodsParam}
    */
   public static final class BuyGoodsParam extends
@@ -89,12 +84,12 @@ public final class BuyGoodsParamOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 16: {
 
               buyCount_ = input.readUInt32();
               break;
             }
-            case 82: {
+            case 58: {
               emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder subBuilder = null;
               if (goods_ != null) {
                 subBuilder = goods_.toBuilder();
@@ -139,21 +134,10 @@ public final class BuyGoodsParamOuterClass {
               emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.class, emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.Builder.class);
     }
 
-    public static final int BUY_COUNT_FIELD_NUMBER = 6;
-    private int buyCount_;
-    /**
-     * <code>uint32 buy_count = 6;</code>
-     * @return The buyCount.
-     */
-    @java.lang.Override
-    public int getBuyCount() {
-      return buyCount_;
-    }
-
-    public static final int GOODS_FIELD_NUMBER = 10;
+    public static final int GOODS_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods goods_;
     /**
-     * <code>.ShopGoods goods = 10;</code>
+     * <code>.ShopGoods goods = 7;</code>
      * @return Whether the goods field is set.
      */
     @java.lang.Override
@@ -161,7 +145,7 @@ public final class BuyGoodsParamOuterClass {
       return goods_ != null;
     }
     /**
-     * <code>.ShopGoods goods = 10;</code>
+     * <code>.ShopGoods goods = 7;</code>
      * @return The goods.
      */
     @java.lang.Override
@@ -169,11 +153,22 @@ public final class BuyGoodsParamOuterClass {
       return goods_ == null ? emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.getDefaultInstance() : goods_;
     }
     /**
-     * <code>.ShopGoods goods = 10;</code>
+     * <code>.ShopGoods goods = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder getGoodsOrBuilder() {
       return getGoods();
+    }
+
+    public static final int BUY_COUNT_FIELD_NUMBER = 2;
+    private int buyCount_;
+    /**
+     * <code>uint32 buy_count = 2;</code>
+     * @return The buyCount.
+     */
+    @java.lang.Override
+    public int getBuyCount() {
+      return buyCount_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,10 +186,10 @@ public final class BuyGoodsParamOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (buyCount_ != 0) {
-        output.writeUInt32(6, buyCount_);
+        output.writeUInt32(2, buyCount_);
       }
       if (goods_ != null) {
-        output.writeMessage(10, getGoods());
+        output.writeMessage(7, getGoods());
       }
       unknownFields.writeTo(output);
     }
@@ -207,11 +202,11 @@ public final class BuyGoodsParamOuterClass {
       size = 0;
       if (buyCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, buyCount_);
+          .computeUInt32Size(2, buyCount_);
       }
       if (goods_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getGoods());
+          .computeMessageSize(7, getGoods());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -228,13 +223,13 @@ public final class BuyGoodsParamOuterClass {
       }
       emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam other = (emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam) obj;
 
-      if (getBuyCount()
-          != other.getBuyCount()) return false;
       if (hasGoods() != other.hasGoods()) return false;
       if (hasGoods()) {
         if (!getGoods()
             .equals(other.getGoods())) return false;
       }
+      if (getBuyCount()
+          != other.getBuyCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -246,12 +241,12 @@ public final class BuyGoodsParamOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BUY_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getBuyCount();
       if (hasGoods()) {
         hash = (37 * hash) + GOODS_FIELD_NUMBER;
         hash = (53 * hash) + getGoods().hashCode();
       }
+      hash = (37 * hash) + BUY_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getBuyCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -348,11 +343,6 @@ public final class BuyGoodsParamOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Version: 4.6.0
-     * Obfs: KHNAGEGDMIJ
-     * </pre>
-     *
      * Protobuf type {@code BuyGoodsParam}
      */
     public static final class Builder extends
@@ -390,14 +380,14 @@ public final class BuyGoodsParamOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        buyCount_ = 0;
-
         if (goodsBuilder_ == null) {
           goods_ = null;
         } else {
           goods_ = null;
           goodsBuilder_ = null;
         }
+        buyCount_ = 0;
+
         return this;
       }
 
@@ -424,12 +414,12 @@ public final class BuyGoodsParamOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam buildPartial() {
         emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam result = new emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam(this);
-        result.buyCount_ = buyCount_;
         if (goodsBuilder_ == null) {
           result.goods_ = goods_;
         } else {
           result.goods_ = goodsBuilder_.build();
         }
+        result.buyCount_ = buyCount_;
         onBuilt();
         return result;
       }
@@ -478,11 +468,11 @@ public final class BuyGoodsParamOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam other) {
         if (other == emu.grasscutter.net.proto.BuyGoodsParamOuterClass.BuyGoodsParam.getDefaultInstance()) return this;
-        if (other.getBuyCount() != 0) {
-          setBuyCount(other.getBuyCount());
-        }
         if (other.hasGoods()) {
           mergeGoods(other.getGoods());
+        }
+        if (other.getBuyCount() != 0) {
+          setBuyCount(other.getBuyCount());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -513,49 +503,18 @@ public final class BuyGoodsParamOuterClass {
         return this;
       }
 
-      private int buyCount_ ;
-      /**
-       * <code>uint32 buy_count = 6;</code>
-       * @return The buyCount.
-       */
-      @java.lang.Override
-      public int getBuyCount() {
-        return buyCount_;
-      }
-      /**
-       * <code>uint32 buy_count = 6;</code>
-       * @param value The buyCount to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBuyCount(int value) {
-        
-        buyCount_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 buy_count = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBuyCount() {
-        
-        buyCount_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods goods_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods, emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder, emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder> goodsBuilder_;
       /**
-       * <code>.ShopGoods goods = 10;</code>
+       * <code>.ShopGoods goods = 7;</code>
        * @return Whether the goods field is set.
        */
       public boolean hasGoods() {
         return goodsBuilder_ != null || goods_ != null;
       }
       /**
-       * <code>.ShopGoods goods = 10;</code>
+       * <code>.ShopGoods goods = 7;</code>
        * @return The goods.
        */
       public emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods getGoods() {
@@ -566,7 +525,7 @@ public final class BuyGoodsParamOuterClass {
         }
       }
       /**
-       * <code>.ShopGoods goods = 10;</code>
+       * <code>.ShopGoods goods = 7;</code>
        */
       public Builder setGoods(emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods value) {
         if (goodsBuilder_ == null) {
@@ -582,7 +541,7 @@ public final class BuyGoodsParamOuterClass {
         return this;
       }
       /**
-       * <code>.ShopGoods goods = 10;</code>
+       * <code>.ShopGoods goods = 7;</code>
        */
       public Builder setGoods(
           emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder builderForValue) {
@@ -596,7 +555,7 @@ public final class BuyGoodsParamOuterClass {
         return this;
       }
       /**
-       * <code>.ShopGoods goods = 10;</code>
+       * <code>.ShopGoods goods = 7;</code>
        */
       public Builder mergeGoods(emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods value) {
         if (goodsBuilder_ == null) {
@@ -614,7 +573,7 @@ public final class BuyGoodsParamOuterClass {
         return this;
       }
       /**
-       * <code>.ShopGoods goods = 10;</code>
+       * <code>.ShopGoods goods = 7;</code>
        */
       public Builder clearGoods() {
         if (goodsBuilder_ == null) {
@@ -628,7 +587,7 @@ public final class BuyGoodsParamOuterClass {
         return this;
       }
       /**
-       * <code>.ShopGoods goods = 10;</code>
+       * <code>.ShopGoods goods = 7;</code>
        */
       public emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder getGoodsBuilder() {
         
@@ -636,7 +595,7 @@ public final class BuyGoodsParamOuterClass {
         return getGoodsFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ShopGoods goods = 10;</code>
+       * <code>.ShopGoods goods = 7;</code>
        */
       public emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder getGoodsOrBuilder() {
         if (goodsBuilder_ != null) {
@@ -647,7 +606,7 @@ public final class BuyGoodsParamOuterClass {
         }
       }
       /**
-       * <code>.ShopGoods goods = 10;</code>
+       * <code>.ShopGoods goods = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods, emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoods.Builder, emu.grasscutter.net.proto.ShopGoodsOuterClass.ShopGoodsOrBuilder> 
@@ -661,6 +620,37 @@ public final class BuyGoodsParamOuterClass {
           goods_ = null;
         }
         return goodsBuilder_;
+      }
+
+      private int buyCount_ ;
+      /**
+       * <code>uint32 buy_count = 2;</code>
+       * @return The buyCount.
+       */
+      @java.lang.Override
+      public int getBuyCount() {
+        return buyCount_;
+      }
+      /**
+       * <code>uint32 buy_count = 2;</code>
+       * @param value The buyCount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBuyCount(int value) {
+        
+        buyCount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 buy_count = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBuyCount() {
+        
+        buyCount_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -730,8 +720,8 @@ public final class BuyGoodsParamOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023BuyGoodsParam.proto\032\017ShopGoods.proto\"=" +
-      "\n\rBuyGoodsParam\022\021\n\tbuy_count\030\006 \001(\r\022\031\n\005go" +
-      "ods\030\n \001(\0132\n.ShopGoodsB\033\n\031emu.grasscutter" +
+      "\n\rBuyGoodsParam\022\031\n\005goods\030\007 \001(\0132\n.ShopGoo" +
+      "ds\022\021\n\tbuy_count\030\002 \001(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -744,7 +734,7 @@ public final class BuyGoodsParamOuterClass {
     internal_static_BuyGoodsParam_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BuyGoodsParam_descriptor,
-        new java.lang.String[] { "BuyCount", "Goods", });
+        new java.lang.String[] { "Goods", "BuyCount", });
     emu.grasscutter.net.proto.ShopGoodsOuterClass.getDescriptor();
   }
 

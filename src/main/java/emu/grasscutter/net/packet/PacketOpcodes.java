@@ -99,7 +99,7 @@ public final class PacketOpcodes {
     public static final int SetUpAvatarTeamReq = 25377;
     public static final int SetUpAvatarTeamRsp = 23817;
     public static final int SetEntityClientDataNotify = 20492;
-    public static final int StoreItemChangeNotify = 1383;
+    public static final int StoreItemChangeNotify = 29570;
     public static final int StoreWeightLimitNotify = 7223;
     public static final int SyncScenePlayTeamEntityNotify = 5752;
     public static final int SyncTeamEntityNotify = 8997;
@@ -340,8 +340,8 @@ public final class PacketOpcodes {
     public static final int GetOnlinePlayerListReq = 1111111111;
     public static final int GetOnlinePlayerListRsp = 1111111111;
     public static final int SetPlayerPropReq = 1111111111;
-    public static final int GetShopmallDataReq = 1111111111;
-    public static final int GetShopmallDataRsp = 1111111111;
+    public static final int GetShopmallDataReq = 26578;
+    public static final int GetShopmallDataRsp = 1963;
     public static final int GetActivityShopSheetInfoReq = 1111111111;
     public static final int GetActivityShopSheetInfoRsp = 1111111111;
     public static final int ServerAnnounceNotify = 1111111111;
@@ -452,8 +452,8 @@ public final class PacketOpcodes {
     public static final int TakePlayerLevelRewardRsp = 1111111111;
     public static final int AvatarFetterLevelRewardReq = 1111111111;
     public static final int AvatarFetterLevelRewardRsp = 1111111111;
-    public static final int BuyGoodsReq = 1111111111;
-    public static final int BuyGoodsRsp = 1111111111;
+    public static final int BuyGoodsReq = 1834;
+    public static final int BuyGoodsRsp = 3029;
     public static final int AddNoGachaAvatarCardNotify = 1111111111;
     public static final int StoreItemDelNotify = 21177;
     public static final int AvatarAddNotify = 21576;
@@ -478,7 +478,7 @@ public final class PacketOpcodes {
     public static final int AvatarEnterElementViewNotify = 1111111111;
     public static final int AbilityInvocationFailNotify = 1111111111;
     public static final int AvatarEquipAffixStartNotify = 1111111111;
-    public static final int GachaWishReq = 1111111111;
+    public static final int GachaWishReq = 6426;
     public static final int AdjustWorldLevelRsp = 1111111111;
     public static final int EvtEntityRenderersChangedNotify = 1111111111;
     public static final int EvtEntityStartDieEndNotify = 1111111111;
@@ -497,7 +497,7 @@ public final class PacketOpcodes {
     public static final int SceneCreateEntityRsp = 1111111111;
     public static final int SceneEntityUpdateNotify = 1111111111;
     public static final int PersonalLineAllDataRsp = 1111111111;
-    public static final int GachaWishRsp = 1111111111;
+    public static final int GachaWishRsp = 2951;
     public static final int PlayerEnterChildMapLayerNotify = 1111111111;
     public static final int PlayerEnterMapLayerNotify = 1111111111;
     public static final int GetOnlinePlayerInfoReq = 1111111111;
@@ -642,8 +642,8 @@ public final class PacketOpcodes {
     public static final int BartenderLevelProgressNotify = 1111111111;
     public static final int BartenderStartLevelReq = 1111111111;
     public static final int BartenderStartLevelRsp = 1111111111;
-    public static final int BatchBuyGoodsReq = 1111111111;
-    public static final int BatchBuyGoodsRsp = 1111111111;
+    public static final int BatchBuyGoodsReq = 29849;
+    public static final int BatchBuyGoodsRsp = 28119;
     public static final int BattlePassBuySuccNotify = 1111111111;
     public static final int BattlePassMissionDelNotify = 1111111111;
     public static final int BeginCameraSceneLookNotify = 1111111111;
