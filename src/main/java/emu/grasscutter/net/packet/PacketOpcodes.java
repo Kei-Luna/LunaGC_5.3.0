@@ -99,7 +99,7 @@ public final class PacketOpcodes {
     public static final int SetUpAvatarTeamReq = 25377;
     public static final int SetUpAvatarTeamRsp = 23817;
     public static final int SetEntityClientDataNotify = 20492;
-    public static final int StoreItemChangeNotify = 1383;
+    public static final int StoreItemChangeNotify = 29570;
     public static final int StoreWeightLimitNotify = 7223;
     public static final int SyncScenePlayTeamEntityNotify = 5752;
     public static final int SyncTeamEntityNotify = 8997;
@@ -296,7 +296,7 @@ public final class PacketOpcodes {
     public static final int UgcDungeonPlayRecordNotify = 1111111111;
     public static final int ViewCodexRsp = 1111111111;
     public static final int SaveUgcRsp = 1111111111;
-    public static final int ActivityInfoNotify = 1111111111;
+    public static final int ActivityInfoNotify = 6975;
     public static final int HomeAvatarSummonAllEventNotify = 1111111111;
     public static final int HomeAvatarSummonEventReq = 1111111111;
     public static final int HomeAvatarRewardEventNotify = 1111111111;
