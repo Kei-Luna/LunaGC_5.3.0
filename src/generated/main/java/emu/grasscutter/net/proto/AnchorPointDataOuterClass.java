@@ -19,58 +19,54 @@ public final class AnchorPointDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 anchor_point_id = 3;</code>
+     * @return The anchorPointId.
+     */
+    int getAnchorPointId();
+
+    /**
+     * <code>uint32 end_time = 4;</code>
+     * @return The endTime.
+     */
+    int getEndTime();
+
+    /**
+     * <code>.Vector pos = 9;</code>
+     * @return Whether the pos field is set.
+     */
+    boolean hasPos();
+    /**
+     * <code>.Vector pos = 9;</code>
+     * @return The pos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    /**
+     * <code>.Vector pos = 9;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+
+    /**
      * <code>uint32 scene_id = 11;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>uint32 end_time = 12;</code>
-     * @return The endTime.
-     */
-    int getEndTime();
-
-    /**
-     * <code>uint32 anchor_point_id = 1;</code>
-     * @return The anchorPointId.
-     */
-    int getAnchorPointId();
-
-    /**
-     * <code>.Vector pos = 5;</code>
-     * @return Whether the pos field is set.
-     */
-    boolean hasPos();
-    /**
-     * <code>.Vector pos = 5;</code>
-     * @return The pos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
-    /**
-     * <code>.Vector pos = 5;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
-
-    /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 12;</code>
      * @return Whether the rot field is set.
      */
     boolean hasRot();
     /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 12;</code>
      * @return The rot.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 12;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
   }
   /**
-   * <pre>
-   * Obf: EBCMEKLBHEL
-   * </pre>
-   *
    * Protobuf type {@code AnchorPointData}
    */
   public static final class AnchorPointData extends
@@ -115,12 +111,17 @@ public final class AnchorPointDataOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               anchorPointId_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 32: {
+
+              endTime_ = input.readUInt32();
+              break;
+            }
+            case 74: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -133,7 +134,12 @@ public final class AnchorPointDataOuterClass {
 
               break;
             }
-            case 58: {
+            case 88: {
+
+              sceneId_ = input.readUInt32();
+              break;
+            }
+            case 98: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (rot_ != null) {
                 subBuilder = rot_.toBuilder();
@@ -144,16 +150,6 @@ public final class AnchorPointDataOuterClass {
                 rot_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 88: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
-
-              endTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -188,6 +184,54 @@ public final class AnchorPointDataOuterClass {
               emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.class, emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.Builder.class);
     }
 
+    public static final int ANCHOR_POINT_ID_FIELD_NUMBER = 3;
+    private int anchorPointId_;
+    /**
+     * <code>uint32 anchor_point_id = 3;</code>
+     * @return The anchorPointId.
+     */
+    @java.lang.Override
+    public int getAnchorPointId() {
+      return anchorPointId_;
+    }
+
+    public static final int END_TIME_FIELD_NUMBER = 4;
+    private int endTime_;
+    /**
+     * <code>uint32 end_time = 4;</code>
+     * @return The endTime.
+     */
+    @java.lang.Override
+    public int getEndTime() {
+      return endTime_;
+    }
+
+    public static final int POS_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+    /**
+     * <code>.Vector pos = 9;</code>
+     * @return Whether the pos field is set.
+     */
+    @java.lang.Override
+    public boolean hasPos() {
+      return pos_ != null;
+    }
+    /**
+     * <code>.Vector pos = 9;</code>
+     * @return The pos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    }
+    /**
+     * <code>.Vector pos = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+      return getPos();
+    }
+
     public static final int SCENE_ID_FIELD_NUMBER = 11;
     private int sceneId_;
     /**
@@ -199,58 +243,10 @@ public final class AnchorPointDataOuterClass {
       return sceneId_;
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 12;
-    private int endTime_;
-    /**
-     * <code>uint32 end_time = 12;</code>
-     * @return The endTime.
-     */
-    @java.lang.Override
-    public int getEndTime() {
-      return endTime_;
-    }
-
-    public static final int ANCHOR_POINT_ID_FIELD_NUMBER = 1;
-    private int anchorPointId_;
-    /**
-     * <code>uint32 anchor_point_id = 1;</code>
-     * @return The anchorPointId.
-     */
-    @java.lang.Override
-    public int getAnchorPointId() {
-      return anchorPointId_;
-    }
-
-    public static final int POS_FIELD_NUMBER = 5;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-    /**
-     * <code>.Vector pos = 5;</code>
-     * @return Whether the pos field is set.
-     */
-    @java.lang.Override
-    public boolean hasPos() {
-      return pos_ != null;
-    }
-    /**
-     * <code>.Vector pos = 5;</code>
-     * @return The pos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-    }
-    /**
-     * <code>.Vector pos = 5;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-      return getPos();
-    }
-
-    public static final int ROT_FIELD_NUMBER = 7;
+    public static final int ROT_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 12;</code>
      * @return Whether the rot field is set.
      */
     @java.lang.Override
@@ -258,7 +254,7 @@ public final class AnchorPointDataOuterClass {
       return rot_ != null;
     }
     /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 12;</code>
      * @return The rot.
      */
     @java.lang.Override
@@ -266,7 +262,7 @@ public final class AnchorPointDataOuterClass {
       return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
     /**
-     * <code>.Vector rot = 7;</code>
+     * <code>.Vector rot = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
@@ -288,19 +284,19 @@ public final class AnchorPointDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (anchorPointId_ != 0) {
-        output.writeUInt32(1, anchorPointId_);
+        output.writeUInt32(3, anchorPointId_);
+      }
+      if (endTime_ != 0) {
+        output.writeUInt32(4, endTime_);
       }
       if (pos_ != null) {
-        output.writeMessage(5, getPos());
-      }
-      if (rot_ != null) {
-        output.writeMessage(7, getRot());
+        output.writeMessage(9, getPos());
       }
       if (sceneId_ != 0) {
         output.writeUInt32(11, sceneId_);
       }
-      if (endTime_ != 0) {
-        output.writeUInt32(12, endTime_);
+      if (rot_ != null) {
+        output.writeMessage(12, getRot());
       }
       unknownFields.writeTo(output);
     }
@@ -313,23 +309,23 @@ public final class AnchorPointDataOuterClass {
       size = 0;
       if (anchorPointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, anchorPointId_);
+          .computeUInt32Size(3, anchorPointId_);
+      }
+      if (endTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, endTime_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getPos());
-      }
-      if (rot_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getRot());
+          .computeMessageSize(9, getPos());
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, sceneId_);
       }
-      if (endTime_ != 0) {
+      if (rot_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, endTime_);
+          .computeMessageSize(12, getRot());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -346,17 +342,17 @@ public final class AnchorPointDataOuterClass {
       }
       emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData other = (emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData) obj;
 
-      if (getSceneId()
-          != other.getSceneId()) return false;
-      if (getEndTime()
-          != other.getEndTime()) return false;
       if (getAnchorPointId()
           != other.getAnchorPointId()) return false;
+      if (getEndTime()
+          != other.getEndTime()) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
+      if (getSceneId()
+          != other.getSceneId()) return false;
       if (hasRot() != other.hasRot()) return false;
       if (hasRot()) {
         if (!getRot()
@@ -373,16 +369,16 @@ public final class AnchorPointDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
-      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getEndTime();
       hash = (37 * hash) + ANCHOR_POINT_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAnchorPointId();
+      hash = (37 * hash) + END_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getEndTime();
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
       if (hasRot()) {
         hash = (37 * hash) + ROT_FIELD_NUMBER;
         hash = (53 * hash) + getRot().hashCode();
@@ -483,10 +479,6 @@ public final class AnchorPointDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: EBCMEKLBHEL
-     * </pre>
-     *
      * Protobuf type {@code AnchorPointData}
      */
     public static final class Builder extends
@@ -524,11 +516,9 @@ public final class AnchorPointDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        sceneId_ = 0;
+        anchorPointId_ = 0;
 
         endTime_ = 0;
-
-        anchorPointId_ = 0;
 
         if (posBuilder_ == null) {
           pos_ = null;
@@ -536,6 +526,8 @@ public final class AnchorPointDataOuterClass {
           pos_ = null;
           posBuilder_ = null;
         }
+        sceneId_ = 0;
+
         if (rotBuilder_ == null) {
           rot_ = null;
         } else {
@@ -568,14 +560,14 @@ public final class AnchorPointDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData buildPartial() {
         emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData result = new emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData(this);
-        result.sceneId_ = sceneId_;
-        result.endTime_ = endTime_;
         result.anchorPointId_ = anchorPointId_;
+        result.endTime_ = endTime_;
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
+        result.sceneId_ = sceneId_;
         if (rotBuilder_ == null) {
           result.rot_ = rot_;
         } else {
@@ -629,17 +621,17 @@ public final class AnchorPointDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData other) {
         if (other == emu.grasscutter.net.proto.AnchorPointDataOuterClass.AnchorPointData.getDefaultInstance()) return this;
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
+        if (other.getAnchorPointId() != 0) {
+          setAnchorPointId(other.getAnchorPointId());
         }
         if (other.getEndTime() != 0) {
           setEndTime(other.getEndTime());
         }
-        if (other.getAnchorPointId() != 0) {
-          setAnchorPointId(other.getAnchorPointId());
-        }
         if (other.hasPos()) {
           mergePos(other.getPos());
+        }
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
         }
         if (other.hasRot()) {
           mergeRot(other.getRot());
@@ -673,6 +665,187 @@ public final class AnchorPointDataOuterClass {
         return this;
       }
 
+      private int anchorPointId_ ;
+      /**
+       * <code>uint32 anchor_point_id = 3;</code>
+       * @return The anchorPointId.
+       */
+      @java.lang.Override
+      public int getAnchorPointId() {
+        return anchorPointId_;
+      }
+      /**
+       * <code>uint32 anchor_point_id = 3;</code>
+       * @param value The anchorPointId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAnchorPointId(int value) {
+        
+        anchorPointId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 anchor_point_id = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAnchorPointId() {
+        
+        anchorPointId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int endTime_ ;
+      /**
+       * <code>uint32 end_time = 4;</code>
+       * @return The endTime.
+       */
+      @java.lang.Override
+      public int getEndTime() {
+        return endTime_;
+      }
+      /**
+       * <code>uint32 end_time = 4;</code>
+       * @param value The endTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEndTime(int value) {
+        
+        endTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 end_time = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEndTime() {
+        
+        endTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
+      /**
+       * <code>.Vector pos = 9;</code>
+       * @return Whether the pos field is set.
+       */
+      public boolean hasPos() {
+        return posBuilder_ != null || pos_ != null;
+      }
+      /**
+       * <code>.Vector pos = 9;</code>
+       * @return The pos.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+        if (posBuilder_ == null) {
+          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        } else {
+          return posBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector pos = 9;</code>
+       */
+      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pos_ = value;
+          onChanged();
+        } else {
+          posBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 9;</code>
+       */
+      public Builder setPos(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (posBuilder_ == null) {
+          pos_ = builderForValue.build();
+          onChanged();
+        } else {
+          posBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 9;</code>
+       */
+      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (posBuilder_ == null) {
+          if (pos_ != null) {
+            pos_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(pos_).mergeFrom(value).buildPartial();
+          } else {
+            pos_ = value;
+          }
+          onChanged();
+        } else {
+          posBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 9;</code>
+       */
+      public Builder clearPos() {
+        if (posBuilder_ == null) {
+          pos_ = null;
+          onChanged();
+        } else {
+          pos_ = null;
+          posBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector pos = 9;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
+        
+        onChanged();
+        return getPosFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector pos = 9;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+        if (posBuilder_ != null) {
+          return posBuilder_.getMessageOrBuilder();
+        } else {
+          return pos_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+        }
+      }
+      /**
+       * <code>.Vector pos = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getPosFieldBuilder() {
+        if (posBuilder_ == null) {
+          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getPos(),
+                  getParentForChildren(),
+                  isClean());
+          pos_ = null;
+        }
+        return posBuilder_;
+      }
+
       private int sceneId_ ;
       /**
        * <code>uint32 scene_id = 11;</code>
@@ -704,199 +877,18 @@ public final class AnchorPointDataOuterClass {
         return this;
       }
 
-      private int endTime_ ;
-      /**
-       * <code>uint32 end_time = 12;</code>
-       * @return The endTime.
-       */
-      @java.lang.Override
-      public int getEndTime() {
-        return endTime_;
-      }
-      /**
-       * <code>uint32 end_time = 12;</code>
-       * @param value The endTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEndTime(int value) {
-        
-        endTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 end_time = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEndTime() {
-        
-        endTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int anchorPointId_ ;
-      /**
-       * <code>uint32 anchor_point_id = 1;</code>
-       * @return The anchorPointId.
-       */
-      @java.lang.Override
-      public int getAnchorPointId() {
-        return anchorPointId_;
-      }
-      /**
-       * <code>uint32 anchor_point_id = 1;</code>
-       * @param value The anchorPointId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAnchorPointId(int value) {
-        
-        anchorPointId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 anchor_point_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAnchorPointId() {
-        
-        anchorPointId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
-      /**
-       * <code>.Vector pos = 5;</code>
-       * @return Whether the pos field is set.
-       */
-      public boolean hasPos() {
-        return posBuilder_ != null || pos_ != null;
-      }
-      /**
-       * <code>.Vector pos = 5;</code>
-       * @return The pos.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-        if (posBuilder_ == null) {
-          return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        } else {
-          return posBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
-      public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pos_ = value;
-          onChanged();
-        } else {
-          posBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
-      public Builder setPos(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (posBuilder_ == null) {
-          pos_ = builderForValue.build();
-          onChanged();
-        } else {
-          posBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
-      public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (posBuilder_ == null) {
-          if (pos_ != null) {
-            pos_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(pos_).mergeFrom(value).buildPartial();
-          } else {
-            pos_ = value;
-          }
-          onChanged();
-        } else {
-          posBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
-      public Builder clearPos() {
-        if (posBuilder_ == null) {
-          pos_ = null;
-          onChanged();
-        } else {
-          pos_ = null;
-          posBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
-        
-        onChanged();
-        return getPosFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-        if (posBuilder_ != null) {
-          return posBuilder_.getMessageOrBuilder();
-        } else {
-          return pos_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-        }
-      }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getPosFieldBuilder() {
-        if (posBuilder_ == null) {
-          posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getPos(),
-                  getParentForChildren(),
-                  isClean());
-          pos_ = null;
-        }
-        return posBuilder_;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 12;</code>
        * @return Whether the rot field is set.
        */
       public boolean hasRot() {
         return rotBuilder_ != null || rot_ != null;
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 12;</code>
        * @return The rot.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
@@ -907,7 +899,7 @@ public final class AnchorPointDataOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 12;</code>
        */
       public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -923,7 +915,7 @@ public final class AnchorPointDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 12;</code>
        */
       public Builder setRot(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -937,7 +929,7 @@ public final class AnchorPointDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 12;</code>
        */
       public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -955,7 +947,7 @@ public final class AnchorPointDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 12;</code>
        */
       public Builder clearRot() {
         if (rotBuilder_ == null) {
@@ -969,7 +961,7 @@ public final class AnchorPointDataOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 12;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
         
@@ -977,7 +969,7 @@ public final class AnchorPointDataOuterClass {
         return getRotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 12;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
         if (rotBuilder_ != null) {
@@ -988,7 +980,7 @@ public final class AnchorPointDataOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 7;</code>
+       * <code>.Vector rot = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -1071,9 +1063,9 @@ public final class AnchorPointDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025AnchorPointData.proto\032\014Vector.proto\"z\n" +
-      "\017AnchorPointData\022\020\n\010scene_id\030\013 \001(\r\022\020\n\010en" +
-      "d_time\030\014 \001(\r\022\027\n\017anchor_point_id\030\001 \001(\r\022\024\n" +
-      "\003pos\030\005 \001(\0132\007.Vector\022\024\n\003rot\030\007 \001(\0132\007.Vecto" +
+      "\017AnchorPointData\022\027\n\017anchor_point_id\030\003 \001(" +
+      "\r\022\020\n\010end_time\030\004 \001(\r\022\024\n\003pos\030\t \001(\0132\007.Vecto" +
+      "r\022\020\n\010scene_id\030\013 \001(\r\022\024\n\003rot\030\014 \001(\0132\007.Vecto" +
       "rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1086,7 +1078,7 @@ public final class AnchorPointDataOuterClass {
     internal_static_AnchorPointData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AnchorPointData_descriptor,
-        new java.lang.String[] { "SceneId", "EndTime", "AnchorPointId", "Pos", "Rot", });
+        new java.lang.String[] { "AnchorPointId", "EndTime", "Pos", "SceneId", "Rot", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

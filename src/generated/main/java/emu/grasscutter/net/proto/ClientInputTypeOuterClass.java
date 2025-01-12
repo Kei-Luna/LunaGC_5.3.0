@@ -15,10 +15,6 @@ public final class ClientInputTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: NIHDBIEPBGP
-   * </pre>
-   *
    * Protobuf enum {@code ClientInputType}
    */
   public enum ClientInputType

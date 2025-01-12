@@ -19,28 +19,24 @@ public final class EvtSetAttackTargetInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 select_point_index = 3;</code>
-     * @return The selectPointIndex.
-     */
-    int getSelectPointIndex();
-
-    /**
-     * <code>uint32 attack_target_id = 10;</code>
+     * <code>uint32 attack_target_id = 5;</code>
      * @return The attackTargetId.
      */
     int getAttackTargetId();
 
     /**
-     * <code>uint32 entity_id = 13;</code>
+     * <code>uint32 entity_id = 4;</code>
      * @return The entityId.
      */
     int getEntityId();
+
+    /**
+     * <code>uint32 select_point_index = 13;</code>
+     * @return The selectPointIndex.
+     */
+    int getSelectPointIndex();
   }
   /**
-   * <pre>
-   * Obf: IECFBICKHEE
-   * </pre>
-   *
    * Protobuf type {@code EvtSetAttackTargetInfo}
    */
   public static final class EvtSetAttackTargetInfo extends
@@ -85,19 +81,19 @@ public final class EvtSetAttackTargetInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 32: {
 
-              selectPointIndex_ = input.readUInt32();
+              entityId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 40: {
 
               attackTargetId_ = input.readUInt32();
               break;
             }
             case 104: {
 
-              entityId_ = input.readUInt32();
+              selectPointIndex_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,21 +128,10 @@ public final class EvtSetAttackTargetInfoOuterClass {
               emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.class, emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.Builder.class);
     }
 
-    public static final int SELECT_POINT_INDEX_FIELD_NUMBER = 3;
-    private int selectPointIndex_;
-    /**
-     * <code>uint32 select_point_index = 3;</code>
-     * @return The selectPointIndex.
-     */
-    @java.lang.Override
-    public int getSelectPointIndex() {
-      return selectPointIndex_;
-    }
-
-    public static final int ATTACK_TARGET_ID_FIELD_NUMBER = 10;
+    public static final int ATTACK_TARGET_ID_FIELD_NUMBER = 5;
     private int attackTargetId_;
     /**
-     * <code>uint32 attack_target_id = 10;</code>
+     * <code>uint32 attack_target_id = 5;</code>
      * @return The attackTargetId.
      */
     @java.lang.Override
@@ -154,15 +139,26 @@ public final class EvtSetAttackTargetInfoOuterClass {
       return attackTargetId_;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 13;
+    public static final int ENTITY_ID_FIELD_NUMBER = 4;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 13;</code>
+     * <code>uint32 entity_id = 4;</code>
      * @return The entityId.
      */
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
+    }
+
+    public static final int SELECT_POINT_INDEX_FIELD_NUMBER = 13;
+    private int selectPointIndex_;
+    /**
+     * <code>uint32 select_point_index = 13;</code>
+     * @return The selectPointIndex.
+     */
+    @java.lang.Override
+    public int getSelectPointIndex() {
+      return selectPointIndex_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +175,14 @@ public final class EvtSetAttackTargetInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (selectPointIndex_ != 0) {
-        output.writeUInt32(3, selectPointIndex_);
+      if (entityId_ != 0) {
+        output.writeUInt32(4, entityId_);
       }
       if (attackTargetId_ != 0) {
-        output.writeUInt32(10, attackTargetId_);
+        output.writeUInt32(5, attackTargetId_);
       }
-      if (entityId_ != 0) {
-        output.writeUInt32(13, entityId_);
+      if (selectPointIndex_ != 0) {
+        output.writeUInt32(13, selectPointIndex_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +193,17 @@ public final class EvtSetAttackTargetInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (selectPointIndex_ != 0) {
+      if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, selectPointIndex_);
+          .computeUInt32Size(4, entityId_);
       }
       if (attackTargetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, attackTargetId_);
+          .computeUInt32Size(5, attackTargetId_);
       }
-      if (entityId_ != 0) {
+      if (selectPointIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, entityId_);
+          .computeUInt32Size(13, selectPointIndex_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +220,12 @@ public final class EvtSetAttackTargetInfoOuterClass {
       }
       emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo other = (emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo) obj;
 
-      if (getSelectPointIndex()
-          != other.getSelectPointIndex()) return false;
       if (getAttackTargetId()
           != other.getAttackTargetId()) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (getSelectPointIndex()
+          != other.getSelectPointIndex()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +237,12 @@ public final class EvtSetAttackTargetInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SELECT_POINT_INDEX_FIELD_NUMBER;
-      hash = (53 * hash) + getSelectPointIndex();
       hash = (37 * hash) + ATTACK_TARGET_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAttackTargetId();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + SELECT_POINT_INDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getSelectPointIndex();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,10 +339,6 @@ public final class EvtSetAttackTargetInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: IECFBICKHEE
-     * </pre>
-     *
      * Protobuf type {@code EvtSetAttackTargetInfo}
      */
     public static final class Builder extends
@@ -384,11 +376,11 @@ public final class EvtSetAttackTargetInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        selectPointIndex_ = 0;
-
         attackTargetId_ = 0;
 
         entityId_ = 0;
+
+        selectPointIndex_ = 0;
 
         return this;
       }
@@ -416,9 +408,9 @@ public final class EvtSetAttackTargetInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo buildPartial() {
         emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo result = new emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo(this);
-        result.selectPointIndex_ = selectPointIndex_;
         result.attackTargetId_ = attackTargetId_;
         result.entityId_ = entityId_;
+        result.selectPointIndex_ = selectPointIndex_;
         onBuilt();
         return result;
       }
@@ -467,14 +459,14 @@ public final class EvtSetAttackTargetInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo other) {
         if (other == emu.grasscutter.net.proto.EvtSetAttackTargetInfoOuterClass.EvtSetAttackTargetInfo.getDefaultInstance()) return this;
-        if (other.getSelectPointIndex() != 0) {
-          setSelectPointIndex(other.getSelectPointIndex());
-        }
         if (other.getAttackTargetId() != 0) {
           setAttackTargetId(other.getAttackTargetId());
         }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.getSelectPointIndex() != 0) {
+          setSelectPointIndex(other.getSelectPointIndex());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -505,40 +497,9 @@ public final class EvtSetAttackTargetInfoOuterClass {
         return this;
       }
 
-      private int selectPointIndex_ ;
-      /**
-       * <code>uint32 select_point_index = 3;</code>
-       * @return The selectPointIndex.
-       */
-      @java.lang.Override
-      public int getSelectPointIndex() {
-        return selectPointIndex_;
-      }
-      /**
-       * <code>uint32 select_point_index = 3;</code>
-       * @param value The selectPointIndex to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSelectPointIndex(int value) {
-        
-        selectPointIndex_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 select_point_index = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSelectPointIndex() {
-        
-        selectPointIndex_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int attackTargetId_ ;
       /**
-       * <code>uint32 attack_target_id = 10;</code>
+       * <code>uint32 attack_target_id = 5;</code>
        * @return The attackTargetId.
        */
       @java.lang.Override
@@ -546,7 +507,7 @@ public final class EvtSetAttackTargetInfoOuterClass {
         return attackTargetId_;
       }
       /**
-       * <code>uint32 attack_target_id = 10;</code>
+       * <code>uint32 attack_target_id = 5;</code>
        * @param value The attackTargetId to set.
        * @return This builder for chaining.
        */
@@ -557,7 +518,7 @@ public final class EvtSetAttackTargetInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 attack_target_id = 10;</code>
+       * <code>uint32 attack_target_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearAttackTargetId() {
@@ -569,7 +530,7 @@ public final class EvtSetAttackTargetInfoOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 13;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -577,7 +538,7 @@ public final class EvtSetAttackTargetInfoOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 13;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -588,12 +549,43 @@ public final class EvtSetAttackTargetInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 13;</code>
+       * <code>uint32 entity_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
         
         entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int selectPointIndex_ ;
+      /**
+       * <code>uint32 select_point_index = 13;</code>
+       * @return The selectPointIndex.
+       */
+      @java.lang.Override
+      public int getSelectPointIndex() {
+        return selectPointIndex_;
+      }
+      /**
+       * <code>uint32 select_point_index = 13;</code>
+       * @param value The selectPointIndex to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSelectPointIndex(int value) {
+        
+        selectPointIndex_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 select_point_index = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSelectPointIndex() {
+        
+        selectPointIndex_ = 0;
         onChanged();
         return this;
       }
@@ -665,9 +657,9 @@ public final class EvtSetAttackTargetInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034EvtSetAttackTargetInfo.proto\"a\n\026EvtSet" +
-      "AttackTargetInfo\022\032\n\022select_point_index\030\003" +
-      " \001(\r\022\030\n\020attack_target_id\030\n \001(\r\022\021\n\tentity" +
-      "_id\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "AttackTargetInfo\022\030\n\020attack_target_id\030\005 \001" +
+      "(\r\022\021\n\tentity_id\030\004 \001(\r\022\032\n\022select_point_in" +
+      "dex\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -679,7 +671,7 @@ public final class EvtSetAttackTargetInfoOuterClass {
     internal_static_EvtSetAttackTargetInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtSetAttackTargetInfo_descriptor,
-        new java.lang.String[] { "SelectPointIndex", "AttackTargetId", "EntityId", });
+        new java.lang.String[] { "AttackTargetId", "EntityId", "SelectPointIndex", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

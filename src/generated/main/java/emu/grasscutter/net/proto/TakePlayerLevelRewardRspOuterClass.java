@@ -37,10 +37,6 @@ public final class TakePlayerLevelRewardRspOuterClass {
     int getLevel();
   }
   /**
-   * <pre>
-   * CmdId: 21700
-   * </pre>
-   *
    * Protobuf type {@code TakePlayerLevelRewardRsp}
    */
   public static final class TakePlayerLevelRewardRsp extends
@@ -343,10 +339,6 @@ public final class TakePlayerLevelRewardRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 21700
-     * </pre>
-     *
      * Protobuf type {@code TakePlayerLevelRewardRsp}
      */
     public static final class Builder extends

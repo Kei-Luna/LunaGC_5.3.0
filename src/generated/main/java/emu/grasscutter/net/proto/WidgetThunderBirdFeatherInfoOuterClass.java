@@ -36,10 +36,6 @@ public final class WidgetThunderBirdFeatherInfoOuterClass {
     int getEntityIdList(int index);
   }
   /**
-   * <pre>
-   * Obf: PCGCBLHFCEC
-   * </pre>
-   *
    * Protobuf type {@code WidgetThunderBirdFeatherInfo}
    */
   public static final class WidgetThunderBirdFeatherInfo extends
@@ -343,10 +339,6 @@ public final class WidgetThunderBirdFeatherInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PCGCBLHFCEC
-     * </pre>
-     *
      * Protobuf type {@code WidgetThunderBirdFeatherInfo}
      */
     public static final class Builder extends

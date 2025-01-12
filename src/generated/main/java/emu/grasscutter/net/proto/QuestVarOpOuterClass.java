@@ -19,29 +19,24 @@ public final class QuestVarOpOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 index = 2;</code>
+     * <code>int32 value = 3;</code>
+     * @return The value.
+     */
+    int getValue();
+
+    /**
+     * <code>uint32 index = 5;</code>
      * @return The index.
      */
     int getIndex();
 
     /**
-     * <code>bool is_add = 8;</code>
+     * <code>bool is_add = 10;</code>
      * @return The isAdd.
      */
     boolean getIsAdd();
-
-    /**
-     * <code>int32 value = 15;</code>
-     * @return The value.
-     */
-    int getValue();
   }
   /**
-   * <pre>
-   * Version: 4.6.0
-   * Obfs: LHJAINDLHBM
-   * </pre>
-   *
    * Protobuf type {@code QuestVarOp}
    */
   public static final class QuestVarOp extends
@@ -86,19 +81,19 @@ public final class QuestVarOpOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
+
+              value_ = input.readInt32();
+              break;
+            }
+            case 40: {
 
               index_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 80: {
 
               isAdd_ = input.readBool();
-              break;
-            }
-            case 120: {
-
-              value_ = input.readInt32();
               break;
             }
             default: {
@@ -133,10 +128,21 @@ public final class QuestVarOpOuterClass {
               emu.grasscutter.net.proto.QuestVarOpOuterClass.QuestVarOp.class, emu.grasscutter.net.proto.QuestVarOpOuterClass.QuestVarOp.Builder.class);
     }
 
-    public static final int INDEX_FIELD_NUMBER = 2;
+    public static final int VALUE_FIELD_NUMBER = 3;
+    private int value_;
+    /**
+     * <code>int32 value = 3;</code>
+     * @return The value.
+     */
+    @java.lang.Override
+    public int getValue() {
+      return value_;
+    }
+
+    public static final int INDEX_FIELD_NUMBER = 5;
     private int index_;
     /**
-     * <code>uint32 index = 2;</code>
+     * <code>uint32 index = 5;</code>
      * @return The index.
      */
     @java.lang.Override
@@ -144,26 +150,15 @@ public final class QuestVarOpOuterClass {
       return index_;
     }
 
-    public static final int IS_ADD_FIELD_NUMBER = 8;
+    public static final int IS_ADD_FIELD_NUMBER = 10;
     private boolean isAdd_;
     /**
-     * <code>bool is_add = 8;</code>
+     * <code>bool is_add = 10;</code>
      * @return The isAdd.
      */
     @java.lang.Override
     public boolean getIsAdd() {
       return isAdd_;
-    }
-
-    public static final int VALUE_FIELD_NUMBER = 15;
-    private int value_;
-    /**
-     * <code>int32 value = 15;</code>
-     * @return The value.
-     */
-    @java.lang.Override
-    public int getValue() {
-      return value_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -180,14 +175,14 @@ public final class QuestVarOpOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (value_ != 0) {
+        output.writeInt32(3, value_);
+      }
       if (index_ != 0) {
-        output.writeUInt32(2, index_);
+        output.writeUInt32(5, index_);
       }
       if (isAdd_ != false) {
-        output.writeBool(8, isAdd_);
-      }
-      if (value_ != 0) {
-        output.writeInt32(15, value_);
+        output.writeBool(10, isAdd_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +193,17 @@ public final class QuestVarOpOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (value_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, value_);
+      }
       if (index_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, index_);
+          .computeUInt32Size(5, index_);
       }
       if (isAdd_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isAdd_);
-      }
-      if (value_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, value_);
+          .computeBoolSize(10, isAdd_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,12 +220,12 @@ public final class QuestVarOpOuterClass {
       }
       emu.grasscutter.net.proto.QuestVarOpOuterClass.QuestVarOp other = (emu.grasscutter.net.proto.QuestVarOpOuterClass.QuestVarOp) obj;
 
+      if (getValue()
+          != other.getValue()) return false;
       if (getIndex()
           != other.getIndex()) return false;
       if (getIsAdd()
           != other.getIsAdd()) return false;
-      if (getValue()
-          != other.getValue()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -242,13 +237,13 @@ public final class QuestVarOpOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + getValue();
       hash = (37 * hash) + INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getIndex();
       hash = (37 * hash) + IS_ADD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAdd());
-      hash = (37 * hash) + VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getValue();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,11 +340,6 @@ public final class QuestVarOpOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Version: 4.6.0
-     * Obfs: LHJAINDLHBM
-     * </pre>
-     *
      * Protobuf type {@code QuestVarOp}
      */
     public static final class Builder extends
@@ -387,11 +377,11 @@ public final class QuestVarOpOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        value_ = 0;
+
         index_ = 0;
 
         isAdd_ = false;
-
-        value_ = 0;
 
         return this;
       }
@@ -419,9 +409,9 @@ public final class QuestVarOpOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.QuestVarOpOuterClass.QuestVarOp buildPartial() {
         emu.grasscutter.net.proto.QuestVarOpOuterClass.QuestVarOp result = new emu.grasscutter.net.proto.QuestVarOpOuterClass.QuestVarOp(this);
+        result.value_ = value_;
         result.index_ = index_;
         result.isAdd_ = isAdd_;
-        result.value_ = value_;
         onBuilt();
         return result;
       }
@@ -470,14 +460,14 @@ public final class QuestVarOpOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.QuestVarOpOuterClass.QuestVarOp other) {
         if (other == emu.grasscutter.net.proto.QuestVarOpOuterClass.QuestVarOp.getDefaultInstance()) return this;
+        if (other.getValue() != 0) {
+          setValue(other.getValue());
+        }
         if (other.getIndex() != 0) {
           setIndex(other.getIndex());
         }
         if (other.getIsAdd() != false) {
           setIsAdd(other.getIsAdd());
-        }
-        if (other.getValue() != 0) {
-          setValue(other.getValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -508,9 +498,40 @@ public final class QuestVarOpOuterClass {
         return this;
       }
 
+      private int value_ ;
+      /**
+       * <code>int32 value = 3;</code>
+       * @return The value.
+       */
+      @java.lang.Override
+      public int getValue() {
+        return value_;
+      }
+      /**
+       * <code>int32 value = 3;</code>
+       * @param value The value to set.
+       * @return This builder for chaining.
+       */
+      public Builder setValue(int value) {
+        
+        value_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 value = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearValue() {
+        
+        value_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int index_ ;
       /**
-       * <code>uint32 index = 2;</code>
+       * <code>uint32 index = 5;</code>
        * @return The index.
        */
       @java.lang.Override
@@ -518,7 +539,7 @@ public final class QuestVarOpOuterClass {
         return index_;
       }
       /**
-       * <code>uint32 index = 2;</code>
+       * <code>uint32 index = 5;</code>
        * @param value The index to set.
        * @return This builder for chaining.
        */
@@ -529,7 +550,7 @@ public final class QuestVarOpOuterClass {
         return this;
       }
       /**
-       * <code>uint32 index = 2;</code>
+       * <code>uint32 index = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIndex() {
@@ -541,7 +562,7 @@ public final class QuestVarOpOuterClass {
 
       private boolean isAdd_ ;
       /**
-       * <code>bool is_add = 8;</code>
+       * <code>bool is_add = 10;</code>
        * @return The isAdd.
        */
       @java.lang.Override
@@ -549,7 +570,7 @@ public final class QuestVarOpOuterClass {
         return isAdd_;
       }
       /**
-       * <code>bool is_add = 8;</code>
+       * <code>bool is_add = 10;</code>
        * @param value The isAdd to set.
        * @return This builder for chaining.
        */
@@ -560,43 +581,12 @@ public final class QuestVarOpOuterClass {
         return this;
       }
       /**
-       * <code>bool is_add = 8;</code>
+       * <code>bool is_add = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAdd() {
         
         isAdd_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int value_ ;
-      /**
-       * <code>int32 value = 15;</code>
-       * @return The value.
-       */
-      @java.lang.Override
-      public int getValue() {
-        return value_;
-      }
-      /**
-       * <code>int32 value = 15;</code>
-       * @param value The value to set.
-       * @return This builder for chaining.
-       */
-      public Builder setValue(int value) {
-        
-        value_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 value = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearValue() {
-        
-        value_ = 0;
         onChanged();
         return this;
       }
@@ -667,8 +657,8 @@ public final class QuestVarOpOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020QuestVarOp.proto\":\n\nQuestVarOp\022\r\n\005inde" +
-      "x\030\002 \001(\r\022\016\n\006is_add\030\010 \001(\010\022\r\n\005value\030\017 \001(\005B\033" +
+      "\n\020QuestVarOp.proto\":\n\nQuestVarOp\022\r\n\005valu" +
+      "e\030\003 \001(\005\022\r\n\005index\030\005 \001(\r\022\016\n\006is_add\030\n \001(\010B\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -680,7 +670,7 @@ public final class QuestVarOpOuterClass {
     internal_static_QuestVarOp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QuestVarOp_descriptor,
-        new java.lang.String[] { "Index", "IsAdd", "Value", });
+        new java.lang.String[] { "Value", "Index", "IsAdd", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

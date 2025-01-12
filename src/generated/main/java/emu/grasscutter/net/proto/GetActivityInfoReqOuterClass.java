@@ -19,17 +19,17 @@ public final class GetActivityInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 activity_id_list = 7;</code>
+     * <code>repeated uint32 activity_id_list = 5;</code>
      * @return A list containing the activityIdList.
      */
     java.util.List<java.lang.Integer> getActivityIdListList();
     /**
-     * <code>repeated uint32 activity_id_list = 7;</code>
+     * <code>repeated uint32 activity_id_list = 5;</code>
      * @return The count of activityIdList.
      */
     int getActivityIdListCount();
     /**
-     * <code>repeated uint32 activity_id_list = 7;</code>
+     * <code>repeated uint32 activity_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The activityIdList at the given index.
      */
@@ -82,7 +82,7 @@ public final class GetActivityInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 40: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 activityIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -90,7 +90,7 @@ public final class GetActivityInfoReqOuterClass {
               activityIdList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -138,10 +138,10 @@ public final class GetActivityInfoReqOuterClass {
               emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq.class, emu.grasscutter.net.proto.GetActivityInfoReqOuterClass.GetActivityInfoReq.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_LIST_FIELD_NUMBER = 7;
+    public static final int ACTIVITY_ID_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList activityIdList_;
     /**
-     * <code>repeated uint32 activity_id_list = 7;</code>
+     * <code>repeated uint32 activity_id_list = 5;</code>
      * @return A list containing the activityIdList.
      */
     @java.lang.Override
@@ -150,14 +150,14 @@ public final class GetActivityInfoReqOuterClass {
       return activityIdList_;
     }
     /**
-     * <code>repeated uint32 activity_id_list = 7;</code>
+     * <code>repeated uint32 activity_id_list = 5;</code>
      * @return The count of activityIdList.
      */
     public int getActivityIdListCount() {
       return activityIdList_.size();
     }
     /**
-     * <code>repeated uint32 activity_id_list = 7;</code>
+     * <code>repeated uint32 activity_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The activityIdList at the given index.
      */
@@ -182,7 +182,7 @@ public final class GetActivityInfoReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getActivityIdListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(activityIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < activityIdList_.size(); i++) {
@@ -506,7 +506,7 @@ public final class GetActivityInfoReqOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 activity_id_list = 7;</code>
+       * <code>repeated uint32 activity_id_list = 5;</code>
        * @return A list containing the activityIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -515,14 +515,14 @@ public final class GetActivityInfoReqOuterClass {
                  java.util.Collections.unmodifiableList(activityIdList_) : activityIdList_;
       }
       /**
-       * <code>repeated uint32 activity_id_list = 7;</code>
+       * <code>repeated uint32 activity_id_list = 5;</code>
        * @return The count of activityIdList.
        */
       public int getActivityIdListCount() {
         return activityIdList_.size();
       }
       /**
-       * <code>repeated uint32 activity_id_list = 7;</code>
+       * <code>repeated uint32 activity_id_list = 5;</code>
        * @param index The index of the element to return.
        * @return The activityIdList at the given index.
        */
@@ -530,7 +530,7 @@ public final class GetActivityInfoReqOuterClass {
         return activityIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 activity_id_list = 7;</code>
+       * <code>repeated uint32 activity_id_list = 5;</code>
        * @param index The index to set the value at.
        * @param value The activityIdList to set.
        * @return This builder for chaining.
@@ -543,7 +543,7 @@ public final class GetActivityInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 activity_id_list = 7;</code>
+       * <code>repeated uint32 activity_id_list = 5;</code>
        * @param value The activityIdList to add.
        * @return This builder for chaining.
        */
@@ -554,7 +554,7 @@ public final class GetActivityInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 activity_id_list = 7;</code>
+       * <code>repeated uint32 activity_id_list = 5;</code>
        * @param values The activityIdList to add.
        * @return This builder for chaining.
        */
@@ -567,7 +567,7 @@ public final class GetActivityInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 activity_id_list = 7;</code>
+       * <code>repeated uint32 activity_id_list = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityIdList() {
@@ -644,7 +644,7 @@ public final class GetActivityInfoReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030GetActivityInfoReq.proto\".\n\022GetActivit" +
-      "yInfoReq\022\030\n\020activity_id_list\030\007 \003(\rB\033\n\031em" +
+      "yInfoReq\022\030\n\020activity_id_list\030\005 \003(\rB\033\n\031em" +
       "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,32 +19,27 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+     * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
      * @return Whether the dungeonEntryCond field is set.
      */
     boolean hasDungeonEntryCond();
     /**
-     * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+     * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
      * @return The dungeonEntryCond.
      */
     emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond getDungeonEntryCond();
     /**
-     * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+     * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
      */
     emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCondOrBuilder getDungeonEntryCondOrBuilder();
   }
   /**
-   * <pre>
-   * CmdId: 3536
-   * Obf: GAICEEONGHO
-   * </pre>
-   *
    * Protobuf type {@code GetDungeonEntryExploreConditionRsp}
    */
   public static final class GetDungeonEntryExploreConditionRsp extends
@@ -89,12 +84,12 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 98: {
+            case 42: {
               emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond.Builder subBuilder = null;
               if (dungeonEntryCond_ != null) {
                 subBuilder = dungeonEntryCond_.toBuilder();
@@ -139,10 +134,10 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
               emu.grasscutter.net.proto.GetDungeonEntryExploreConditionRspOuterClass.GetDungeonEntryExploreConditionRsp.class, emu.grasscutter.net.proto.GetDungeonEntryExploreConditionRspOuterClass.GetDungeonEntryExploreConditionRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -150,10 +145,10 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
       return retcode_;
     }
 
-    public static final int DUNGEON_ENTRY_COND_FIELD_NUMBER = 12;
+    public static final int DUNGEON_ENTRY_COND_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond dungeonEntryCond_;
     /**
-     * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+     * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
      * @return Whether the dungeonEntryCond field is set.
      */
     @java.lang.Override
@@ -161,7 +156,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
       return dungeonEntryCond_ != null;
     }
     /**
-     * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+     * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
      * @return The dungeonEntryCond.
      */
     @java.lang.Override
@@ -169,7 +164,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
       return dungeonEntryCond_ == null ? emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond.getDefaultInstance() : dungeonEntryCond_;
     }
     /**
-     * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+     * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCondOrBuilder getDungeonEntryCondOrBuilder() {
@@ -191,10 +186,10 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(4, retcode_);
       }
       if (dungeonEntryCond_ != null) {
-        output.writeMessage(12, getDungeonEntryCond());
+        output.writeMessage(5, getDungeonEntryCond());
       }
       unknownFields.writeTo(output);
     }
@@ -207,11 +202,11 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(4, retcode_);
       }
       if (dungeonEntryCond_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getDungeonEntryCond());
+          .computeMessageSize(5, getDungeonEntryCond());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -348,11 +343,6 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 3536
-     * Obf: GAICEEONGHO
-     * </pre>
-     *
      * Protobuf type {@code GetDungeonEntryExploreConditionRsp}
      */
     public static final class Builder extends
@@ -515,7 +505,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -523,7 +513,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -534,7 +524,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -548,14 +538,14 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond, emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond.Builder, emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCondOrBuilder> dungeonEntryCondBuilder_;
       /**
-       * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+       * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
        * @return Whether the dungeonEntryCond field is set.
        */
       public boolean hasDungeonEntryCond() {
         return dungeonEntryCondBuilder_ != null || dungeonEntryCond_ != null;
       }
       /**
-       * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+       * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
        * @return The dungeonEntryCond.
        */
       public emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond getDungeonEntryCond() {
@@ -566,7 +556,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
         }
       }
       /**
-       * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+       * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
        */
       public Builder setDungeonEntryCond(emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond value) {
         if (dungeonEntryCondBuilder_ == null) {
@@ -582,7 +572,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+       * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
        */
       public Builder setDungeonEntryCond(
           emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond.Builder builderForValue) {
@@ -596,7 +586,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+       * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
        */
       public Builder mergeDungeonEntryCond(emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond value) {
         if (dungeonEntryCondBuilder_ == null) {
@@ -614,7 +604,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+       * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
        */
       public Builder clearDungeonEntryCond() {
         if (dungeonEntryCondBuilder_ == null) {
@@ -628,7 +618,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+       * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
        */
       public emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond.Builder getDungeonEntryCondBuilder() {
         
@@ -636,7 +626,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
         return getDungeonEntryCondFieldBuilder().getBuilder();
       }
       /**
-       * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+       * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
        */
       public emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCondOrBuilder getDungeonEntryCondOrBuilder() {
         if (dungeonEntryCondBuilder_ != null) {
@@ -647,7 +637,7 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
         }
       }
       /**
-       * <code>.DungeonEntryCond dungeon_entry_cond = 12;</code>
+       * <code>.DungeonEntryCond dungeon_entry_cond = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond, emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCond.Builder, emu.grasscutter.net.proto.DungeonEntryCondOuterClass.DungeonEntryCondOrBuilder> 
@@ -731,8 +721,8 @@ public final class GetDungeonEntryExploreConditionRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n(GetDungeonEntryExploreConditionRsp.pro" +
       "to\032\026DungeonEntryCond.proto\"d\n\"GetDungeon" +
-      "EntryExploreConditionRsp\022\017\n\007retcode\030\013 \001(" +
-      "\005\022-\n\022dungeon_entry_cond\030\014 \001(\0132\021.DungeonE" +
+      "EntryExploreConditionRsp\022\017\n\007retcode\030\004 \001(" +
+      "\005\022-\n\022dungeon_entry_cond\030\005 \001(\0132\021.DungeonE" +
       "ntryCondB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };

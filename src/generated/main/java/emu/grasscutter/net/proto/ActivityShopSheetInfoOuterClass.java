@@ -19,28 +19,24 @@ public final class ActivityShopSheetInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 begin_time = 1;</code>
-     * @return The beginTime.
-     */
-    int getBeginTime();
-
-    /**
-     * <code>uint32 sheet_id = 14;</code>
+     * <code>uint32 sheet_id = 2;</code>
      * @return The sheetId.
      */
     int getSheetId();
 
     /**
-     * <code>uint32 end_time = 15;</code>
+     * <code>uint32 end_time = 7;</code>
      * @return The endTime.
      */
     int getEndTime();
+
+    /**
+     * <code>uint32 begin_time = 14;</code>
+     * @return The beginTime.
+     */
+    int getBeginTime();
   }
   /**
-   * <pre>
-   * Obf: AENJPCKAMNL
-   * </pre>
-   *
    * Protobuf type {@code ActivityShopSheetInfo}
    */
   public static final class ActivityShopSheetInfo extends
@@ -85,19 +81,19 @@ public final class ActivityShopSheetInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              beginTime_ = input.readUInt32();
-              break;
-            }
-            case 112: {
+            case 16: {
 
               sheetId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 56: {
 
               endTime_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              beginTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,21 +128,10 @@ public final class ActivityShopSheetInfoOuterClass {
               emu.grasscutter.net.proto.ActivityShopSheetInfoOuterClass.ActivityShopSheetInfo.class, emu.grasscutter.net.proto.ActivityShopSheetInfoOuterClass.ActivityShopSheetInfo.Builder.class);
     }
 
-    public static final int BEGIN_TIME_FIELD_NUMBER = 1;
-    private int beginTime_;
-    /**
-     * <code>uint32 begin_time = 1;</code>
-     * @return The beginTime.
-     */
-    @java.lang.Override
-    public int getBeginTime() {
-      return beginTime_;
-    }
-
-    public static final int SHEET_ID_FIELD_NUMBER = 14;
+    public static final int SHEET_ID_FIELD_NUMBER = 2;
     private int sheetId_;
     /**
-     * <code>uint32 sheet_id = 14;</code>
+     * <code>uint32 sheet_id = 2;</code>
      * @return The sheetId.
      */
     @java.lang.Override
@@ -154,15 +139,26 @@ public final class ActivityShopSheetInfoOuterClass {
       return sheetId_;
     }
 
-    public static final int END_TIME_FIELD_NUMBER = 15;
+    public static final int END_TIME_FIELD_NUMBER = 7;
     private int endTime_;
     /**
-     * <code>uint32 end_time = 15;</code>
+     * <code>uint32 end_time = 7;</code>
      * @return The endTime.
      */
     @java.lang.Override
     public int getEndTime() {
       return endTime_;
+    }
+
+    public static final int BEGIN_TIME_FIELD_NUMBER = 14;
+    private int beginTime_;
+    /**
+     * <code>uint32 begin_time = 14;</code>
+     * @return The beginTime.
+     */
+    @java.lang.Override
+    public int getBeginTime() {
+      return beginTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +175,14 @@ public final class ActivityShopSheetInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (beginTime_ != 0) {
-        output.writeUInt32(1, beginTime_);
-      }
       if (sheetId_ != 0) {
-        output.writeUInt32(14, sheetId_);
+        output.writeUInt32(2, sheetId_);
       }
       if (endTime_ != 0) {
-        output.writeUInt32(15, endTime_);
+        output.writeUInt32(7, endTime_);
+      }
+      if (beginTime_ != 0) {
+        output.writeUInt32(14, beginTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +193,17 @@ public final class ActivityShopSheetInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (beginTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, beginTime_);
-      }
       if (sheetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, sheetId_);
+          .computeUInt32Size(2, sheetId_);
       }
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, endTime_);
+          .computeUInt32Size(7, endTime_);
+      }
+      if (beginTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, beginTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +220,12 @@ public final class ActivityShopSheetInfoOuterClass {
       }
       emu.grasscutter.net.proto.ActivityShopSheetInfoOuterClass.ActivityShopSheetInfo other = (emu.grasscutter.net.proto.ActivityShopSheetInfoOuterClass.ActivityShopSheetInfo) obj;
 
-      if (getBeginTime()
-          != other.getBeginTime()) return false;
       if (getSheetId()
           != other.getSheetId()) return false;
       if (getEndTime()
           != other.getEndTime()) return false;
+      if (getBeginTime()
+          != other.getBeginTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +237,12 @@ public final class ActivityShopSheetInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBeginTime();
       hash = (37 * hash) + SHEET_ID_FIELD_NUMBER;
       hash = (53 * hash) + getSheetId();
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
+      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getBeginTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,10 +339,6 @@ public final class ActivityShopSheetInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: AENJPCKAMNL
-     * </pre>
-     *
      * Protobuf type {@code ActivityShopSheetInfo}
      */
     public static final class Builder extends
@@ -384,11 +376,11 @@ public final class ActivityShopSheetInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        beginTime_ = 0;
-
         sheetId_ = 0;
 
         endTime_ = 0;
+
+        beginTime_ = 0;
 
         return this;
       }
@@ -416,9 +408,9 @@ public final class ActivityShopSheetInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ActivityShopSheetInfoOuterClass.ActivityShopSheetInfo buildPartial() {
         emu.grasscutter.net.proto.ActivityShopSheetInfoOuterClass.ActivityShopSheetInfo result = new emu.grasscutter.net.proto.ActivityShopSheetInfoOuterClass.ActivityShopSheetInfo(this);
-        result.beginTime_ = beginTime_;
         result.sheetId_ = sheetId_;
         result.endTime_ = endTime_;
+        result.beginTime_ = beginTime_;
         onBuilt();
         return result;
       }
@@ -467,14 +459,14 @@ public final class ActivityShopSheetInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ActivityShopSheetInfoOuterClass.ActivityShopSheetInfo other) {
         if (other == emu.grasscutter.net.proto.ActivityShopSheetInfoOuterClass.ActivityShopSheetInfo.getDefaultInstance()) return this;
-        if (other.getBeginTime() != 0) {
-          setBeginTime(other.getBeginTime());
-        }
         if (other.getSheetId() != 0) {
           setSheetId(other.getSheetId());
         }
         if (other.getEndTime() != 0) {
           setEndTime(other.getEndTime());
+        }
+        if (other.getBeginTime() != 0) {
+          setBeginTime(other.getBeginTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -505,40 +497,9 @@ public final class ActivityShopSheetInfoOuterClass {
         return this;
       }
 
-      private int beginTime_ ;
-      /**
-       * <code>uint32 begin_time = 1;</code>
-       * @return The beginTime.
-       */
-      @java.lang.Override
-      public int getBeginTime() {
-        return beginTime_;
-      }
-      /**
-       * <code>uint32 begin_time = 1;</code>
-       * @param value The beginTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBeginTime(int value) {
-        
-        beginTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 begin_time = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBeginTime() {
-        
-        beginTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int sheetId_ ;
       /**
-       * <code>uint32 sheet_id = 14;</code>
+       * <code>uint32 sheet_id = 2;</code>
        * @return The sheetId.
        */
       @java.lang.Override
@@ -546,7 +507,7 @@ public final class ActivityShopSheetInfoOuterClass {
         return sheetId_;
       }
       /**
-       * <code>uint32 sheet_id = 14;</code>
+       * <code>uint32 sheet_id = 2;</code>
        * @param value The sheetId to set.
        * @return This builder for chaining.
        */
@@ -557,7 +518,7 @@ public final class ActivityShopSheetInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 sheet_id = 14;</code>
+       * <code>uint32 sheet_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearSheetId() {
@@ -569,7 +530,7 @@ public final class ActivityShopSheetInfoOuterClass {
 
       private int endTime_ ;
       /**
-       * <code>uint32 end_time = 15;</code>
+       * <code>uint32 end_time = 7;</code>
        * @return The endTime.
        */
       @java.lang.Override
@@ -577,7 +538,7 @@ public final class ActivityShopSheetInfoOuterClass {
         return endTime_;
       }
       /**
-       * <code>uint32 end_time = 15;</code>
+       * <code>uint32 end_time = 7;</code>
        * @param value The endTime to set.
        * @return This builder for chaining.
        */
@@ -588,12 +549,43 @@ public final class ActivityShopSheetInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 end_time = 15;</code>
+       * <code>uint32 end_time = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearEndTime() {
         
         endTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int beginTime_ ;
+      /**
+       * <code>uint32 begin_time = 14;</code>
+       * @return The beginTime.
+       */
+      @java.lang.Override
+      public int getBeginTime() {
+        return beginTime_;
+      }
+      /**
+       * <code>uint32 begin_time = 14;</code>
+       * @param value The beginTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBeginTime(int value) {
+        
+        beginTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 begin_time = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBeginTime() {
+        
+        beginTime_ = 0;
         onChanged();
         return this;
       }
@@ -665,8 +657,8 @@ public final class ActivityShopSheetInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ActivityShopSheetInfo.proto\"O\n\025Activit" +
-      "yShopSheetInfo\022\022\n\nbegin_time\030\001 \001(\r\022\020\n\010sh" +
-      "eet_id\030\016 \001(\r\022\020\n\010end_time\030\017 \001(\rB\033\n\031emu.gr" +
+      "yShopSheetInfo\022\020\n\010sheet_id\030\002 \001(\r\022\020\n\010end_" +
+      "time\030\007 \001(\r\022\022\n\nbegin_time\030\016 \001(\rB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -678,7 +670,7 @@ public final class ActivityShopSheetInfoOuterClass {
     internal_static_ActivityShopSheetInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ActivityShopSheetInfo_descriptor,
-        new java.lang.String[] { "BeginTime", "SheetId", "EndTime", });
+        new java.lang.String[] { "SheetId", "EndTime", "BeginTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

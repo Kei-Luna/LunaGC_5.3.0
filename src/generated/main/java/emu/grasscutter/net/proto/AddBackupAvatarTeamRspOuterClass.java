@@ -25,10 +25,6 @@ public final class AddBackupAvatarTeamRspOuterClass {
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 7660
-   * </pre>
-   *
    * Protobuf type {@code AddBackupAvatarTeamRsp}
    */
   public static final class AddBackupAvatarTeamRsp extends
@@ -277,10 +273,6 @@ public final class AddBackupAvatarTeamRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 7660
-     * </pre>
-     *
      * Protobuf type {@code AddBackupAvatarTeamRsp}
      */
     public static final class Builder extends

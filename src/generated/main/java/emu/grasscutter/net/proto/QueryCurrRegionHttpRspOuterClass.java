@@ -82,19 +82,19 @@ public final class QueryCurrRegionHttpRspOuterClass {
         getGateTicketBytes();
 
     /**
-     * <code>.ForceUpdateInfo force_udpate = 4;</code>
-     * @return Whether the forceUdpate field is set.
+     * <code>.ForceUpdateInfo force_update = 4;</code>
+     * @return Whether the forceUpdate field is set.
      */
-    boolean hasForceUdpate();
+    boolean hasForceUpdate();
     /**
-     * <code>.ForceUpdateInfo force_udpate = 4;</code>
-     * @return The forceUdpate.
+     * <code>.ForceUpdateInfo force_update = 4;</code>
+     * @return The forceUpdate.
      */
-    emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUdpate();
+    emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUpdate();
     /**
-     * <code>.ForceUpdateInfo force_udpate = 4;</code>
+     * <code>.ForceUpdateInfo force_update = 4;</code>
      */
-    emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUdpateOrBuilder();
+    emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUpdateOrBuilder();
 
     /**
      * <code>.StopServerInfo stop_server = 5;</code>
@@ -273,7 +273,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
     public enum DetailCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      FORCE_UDPATE(4),
+      FORCE_UPDATE(4),
       STOP_SERVER(5),
       DETAIL_NOT_SET(0);
       private final int value;
@@ -292,7 +292,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
 
       public static DetailCase forNumber(int value) {
         switch (value) {
-          case 4: return FORCE_UDPATE;
+          case 4: return FORCE_UPDATE;
           case 5: return STOP_SERVER;
           case 0: return DETAIL_NOT_SET;
           default: return null;
@@ -455,31 +455,31 @@ public final class QueryCurrRegionHttpRspOuterClass {
       }
     }
 
-    public static final int FORCE_UDPATE_FIELD_NUMBER = 4;
+    public static final int FORCE_UPDATE_FIELD_NUMBER = 4;
     /**
-     * <code>.ForceUpdateInfo force_udpate = 4;</code>
-     * @return Whether the forceUdpate field is set.
+     * <code>.ForceUpdateInfo force_update = 4;</code>
+     * @return Whether the forceUpdate field is set.
      */
     @java.lang.Override
-    public boolean hasForceUdpate() {
+    public boolean hasForceUpdate() {
       return detailCase_ == 4;
     }
     /**
-     * <code>.ForceUpdateInfo force_udpate = 4;</code>
-     * @return The forceUdpate.
+     * <code>.ForceUpdateInfo force_update = 4;</code>
+     * @return The forceUpdate.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUdpate() {
+    public emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUpdate() {
       if (detailCase_ == 4) {
          return (emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
       }
       return emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
     }
     /**
-     * <code>.ForceUpdateInfo force_udpate = 4;</code>
+     * <code>.ForceUpdateInfo force_update = 4;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUdpateOrBuilder() {
+    public emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUpdateOrBuilder() {
       if (detailCase_ == 4) {
          return (emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
       }
@@ -636,8 +636,8 @@ public final class QueryCurrRegionHttpRspOuterClass {
       if (!getDetailCase().equals(other.getDetailCase())) return false;
       switch (detailCase_) {
         case 4:
-          if (!getForceUdpate()
-              .equals(other.getForceUdpate())) return false;
+          if (!getForceUpdate()
+              .equals(other.getForceUpdate())) return false;
           break;
         case 5:
           if (!getStopServer()
@@ -675,8 +675,8 @@ public final class QueryCurrRegionHttpRspOuterClass {
       hash = (53 * hash) + getGateTicket().hashCode();
       switch (detailCase_) {
         case 4:
-          hash = (37 * hash) + FORCE_UDPATE_FIELD_NUMBER;
-          hash = (53 * hash) + getForceUdpate().hashCode();
+          hash = (37 * hash) + FORCE_UPDATE_FIELD_NUMBER;
+          hash = (53 * hash) + getForceUpdate().hashCode();
           break;
         case 5:
           hash = (37 * hash) + STOP_SERVER_FIELD_NUMBER;
@@ -876,10 +876,10 @@ public final class QueryCurrRegionHttpRspOuterClass {
         result.clientRegionCustomConfigEncrypted_ = clientRegionCustomConfigEncrypted_;
         result.gateTicket_ = gateTicket_;
         if (detailCase_ == 4) {
-          if (forceUdpateBuilder_ == null) {
+          if (forceUpdateBuilder_ == null) {
             result.detail_ = detail_;
           } else {
-            result.detail_ = forceUdpateBuilder_.build();
+            result.detail_ = forceUpdateBuilder_.build();
           }
         }
         if (detailCase_ == 5) {
@@ -962,8 +962,8 @@ public final class QueryCurrRegionHttpRspOuterClass {
           onChanged();
         }
         switch (other.getDetailCase()) {
-          case FORCE_UDPATE: {
-            mergeForceUdpate(other.getForceUdpate());
+          case FORCE_UPDATE: {
+            mergeForceUpdate(other.getForceUpdate());
             break;
           }
           case STOP_SERVER: {
@@ -1423,68 +1423,68 @@ public final class QueryCurrRegionHttpRspOuterClass {
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo, emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder, emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder> forceUdpateBuilder_;
+          emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo, emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder, emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder> forceUpdateBuilder_;
       /**
-       * <code>.ForceUpdateInfo force_udpate = 4;</code>
-       * @return Whether the forceUdpate field is set.
+       * <code>.ForceUpdateInfo force_update = 4;</code>
+       * @return Whether the forceUpdate field is set.
        */
       @java.lang.Override
-      public boolean hasForceUdpate() {
+      public boolean hasForceUpdate() {
         return detailCase_ == 4;
       }
       /**
-       * <code>.ForceUpdateInfo force_udpate = 4;</code>
-       * @return The forceUdpate.
+       * <code>.ForceUpdateInfo force_update = 4;</code>
+       * @return The forceUpdate.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUdpate() {
-        if (forceUdpateBuilder_ == null) {
+      public emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo getForceUpdate() {
+        if (forceUpdateBuilder_ == null) {
           if (detailCase_ == 4) {
             return (emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
           }
           return emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
         } else {
           if (detailCase_ == 4) {
-            return forceUdpateBuilder_.getMessage();
+            return forceUpdateBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.ForceUpdateInfo force_udpate = 4;</code>
+       * <code>.ForceUpdateInfo force_update = 4;</code>
        */
-      public Builder setForceUdpate(emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo value) {
-        if (forceUdpateBuilder_ == null) {
+      public Builder setForceUpdate(emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo value) {
+        if (forceUpdateBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
           detail_ = value;
           onChanged();
         } else {
-          forceUdpateBuilder_.setMessage(value);
+          forceUpdateBuilder_.setMessage(value);
         }
         detailCase_ = 4;
         return this;
       }
       /**
-       * <code>.ForceUpdateInfo force_udpate = 4;</code>
+       * <code>.ForceUpdateInfo force_update = 4;</code>
        */
-      public Builder setForceUdpate(
+      public Builder setForceUpdate(
           emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder builderForValue) {
-        if (forceUdpateBuilder_ == null) {
+        if (forceUpdateBuilder_ == null) {
           detail_ = builderForValue.build();
           onChanged();
         } else {
-          forceUdpateBuilder_.setMessage(builderForValue.build());
+          forceUpdateBuilder_.setMessage(builderForValue.build());
         }
         detailCase_ = 4;
         return this;
       }
       /**
-       * <code>.ForceUpdateInfo force_udpate = 4;</code>
+       * <code>.ForceUpdateInfo force_update = 4;</code>
        */
-      public Builder mergeForceUdpate(emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo value) {
-        if (forceUdpateBuilder_ == null) {
+      public Builder mergeForceUpdate(emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo value) {
+        if (forceUpdateBuilder_ == null) {
           if (detailCase_ == 4 &&
               detail_ != emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance()) {
             detail_ = emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.newBuilder((emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_)
@@ -1495,18 +1495,18 @@ public final class QueryCurrRegionHttpRspOuterClass {
           onChanged();
         } else {
           if (detailCase_ == 4) {
-            forceUdpateBuilder_.mergeFrom(value);
+            forceUpdateBuilder_.mergeFrom(value);
           }
-          forceUdpateBuilder_.setMessage(value);
+          forceUpdateBuilder_.setMessage(value);
         }
         detailCase_ = 4;
         return this;
       }
       /**
-       * <code>.ForceUpdateInfo force_udpate = 4;</code>
+       * <code>.ForceUpdateInfo force_update = 4;</code>
        */
-      public Builder clearForceUdpate() {
-        if (forceUdpateBuilder_ == null) {
+      public Builder clearForceUpdate() {
+        if (forceUpdateBuilder_ == null) {
           if (detailCase_ == 4) {
             detailCase_ = 0;
             detail_ = null;
@@ -1517,23 +1517,23 @@ public final class QueryCurrRegionHttpRspOuterClass {
             detailCase_ = 0;
             detail_ = null;
           }
-          forceUdpateBuilder_.clear();
+          forceUpdateBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>.ForceUpdateInfo force_udpate = 4;</code>
+       * <code>.ForceUpdateInfo force_update = 4;</code>
        */
-      public emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder getForceUdpateBuilder() {
-        return getForceUdpateFieldBuilder().getBuilder();
+      public emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder getForceUpdateBuilder() {
+        return getForceUpdateFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ForceUpdateInfo force_udpate = 4;</code>
+       * <code>.ForceUpdateInfo force_update = 4;</code>
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUdpateOrBuilder() {
-        if ((detailCase_ == 4) && (forceUdpateBuilder_ != null)) {
-          return forceUdpateBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder getForceUpdateOrBuilder() {
+        if ((detailCase_ == 4) && (forceUpdateBuilder_ != null)) {
+          return forceUpdateBuilder_.getMessageOrBuilder();
         } else {
           if (detailCase_ == 4) {
             return (emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_;
@@ -1542,16 +1542,16 @@ public final class QueryCurrRegionHttpRspOuterClass {
         }
       }
       /**
-       * <code>.ForceUpdateInfo force_udpate = 4;</code>
+       * <code>.ForceUpdateInfo force_update = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo, emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder, emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder> 
-          getForceUdpateFieldBuilder() {
-        if (forceUdpateBuilder_ == null) {
+          getForceUpdateFieldBuilder() {
+        if (forceUpdateBuilder_ == null) {
           if (!(detailCase_ == 4)) {
             detail_ = emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.getDefaultInstance();
           }
-          forceUdpateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          forceUpdateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo, emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo.Builder, emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfoOrBuilder>(
                   (emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.ForceUpdateInfo) detail_,
                   getParentForChildren(),
@@ -1560,7 +1560,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
         }
         detailCase_ = 4;
         onChanged();;
-        return forceUdpateBuilder_;
+        return forceUpdateBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -1778,9 +1778,9 @@ public final class QueryCurrRegionHttpRspOuterClass {
       "t_key\030\013 \001(\014\022&\n\036region_custom_config_encr" +
       "ypted\030\014 \001(\014\022-\n%client_region_custom_conf" +
       "ig_encrypted\030\r \001(\014\022\023\n\013gate_ticket\030\016 \001(\t\022" +
-      "(\n\014force_udpate\030\004 \001(\0132\020.ForceUpdateInfoH" +
+      "(\n\014force_update\030\004 \001(\0132\020.ForceUpdateInfoH" +
       "\000\022&\n\013stop_server\030\005 \001(\0132\017.StopServerInfoH" +
-      "\000B\010\n\006DetailB\033\n\031emu.grasscutter.net.proto" +
+      "\000B\010\n\006detailB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1795,7 +1795,7 @@ public final class QueryCurrRegionHttpRspOuterClass {
     internal_static_QueryCurrRegionHttpRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QueryCurrRegionHttpRsp_descriptor,
-        new java.lang.String[] { "Retcode", "Msg", "RegionInfo", "ClientSecretKey", "RegionCustomConfigEncrypted", "ClientRegionCustomConfigEncrypted", "GateTicket", "ForceUdpate", "StopServer", "Detail", });
+        new java.lang.String[] { "Retcode", "Msg", "RegionInfo", "ClientSecretKey", "RegionCustomConfigEncrypted", "ClientRegionCustomConfigEncrypted", "GateTicket", "ForceUpdate", "StopServer", "Detail", });
     emu.grasscutter.net.proto.RegionInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ForceUpdateInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.StopServerInfoOuterClass.getDescriptor();

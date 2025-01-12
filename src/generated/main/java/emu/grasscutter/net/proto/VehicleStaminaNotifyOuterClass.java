@@ -19,16 +19,16 @@ public final class VehicleStaminaNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 5;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
-
-    /**
-     * <code>float cur_stamina = 6;</code>
+     * <code>float cur_stamina = 1;</code>
      * @return The curStamina.
      */
     float getCurStamina();
+
+    /**
+     * <code>uint32 entity_id = 2;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
   }
   /**
    * Protobuf type {@code VehicleStaminaNotify}
@@ -75,14 +75,14 @@ public final class VehicleStaminaNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              entityId_ = input.readUInt32();
-              break;
-            }
-            case 53: {
+            case 13: {
 
               curStamina_ = input.readFloat();
+              break;
+            }
+            case 16: {
+
+              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class VehicleStaminaNotifyOuterClass {
               emu.grasscutter.net.proto.VehicleStaminaNotifyOuterClass.VehicleStaminaNotify.class, emu.grasscutter.net.proto.VehicleStaminaNotifyOuterClass.VehicleStaminaNotify.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 5;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 5;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
-    public static final int CUR_STAMINA_FIELD_NUMBER = 6;
+    public static final int CUR_STAMINA_FIELD_NUMBER = 1;
     private float curStamina_;
     /**
-     * <code>float cur_stamina = 6;</code>
+     * <code>float cur_stamina = 1;</code>
      * @return The curStamina.
      */
     @java.lang.Override
     public float getCurStamina() {
       return curStamina_;
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 2;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 2;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class VehicleStaminaNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (entityId_ != 0) {
-        output.writeUInt32(5, entityId_);
-      }
       if (curStamina_ != 0F) {
-        output.writeFloat(6, curStamina_);
+        output.writeFloat(1, curStamina_);
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(2, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class VehicleStaminaNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, entityId_);
-      }
       if (curStamina_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(6, curStamina_);
+          .computeFloatSize(1, curStamina_);
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,11 +191,11 @@ public final class VehicleStaminaNotifyOuterClass {
       }
       emu.grasscutter.net.proto.VehicleStaminaNotifyOuterClass.VehicleStaminaNotify other = (emu.grasscutter.net.proto.VehicleStaminaNotifyOuterClass.VehicleStaminaNotify) obj;
 
-      if (getEntityId()
-          != other.getEntityId()) return false;
       if (java.lang.Float.floatToIntBits(getCurStamina())
           != java.lang.Float.floatToIntBits(
               other.getCurStamina())) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -207,11 +207,11 @@ public final class VehicleStaminaNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       hash = (37 * hash) + CUR_STAMINA_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getCurStamina());
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,9 +345,9 @@ public final class VehicleStaminaNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        entityId_ = 0;
-
         curStamina_ = 0F;
+
+        entityId_ = 0;
 
         return this;
       }
@@ -375,8 +375,8 @@ public final class VehicleStaminaNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VehicleStaminaNotifyOuterClass.VehicleStaminaNotify buildPartial() {
         emu.grasscutter.net.proto.VehicleStaminaNotifyOuterClass.VehicleStaminaNotify result = new emu.grasscutter.net.proto.VehicleStaminaNotifyOuterClass.VehicleStaminaNotify(this);
-        result.entityId_ = entityId_;
         result.curStamina_ = curStamina_;
+        result.entityId_ = entityId_;
         onBuilt();
         return result;
       }
@@ -425,11 +425,11 @@ public final class VehicleStaminaNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VehicleStaminaNotifyOuterClass.VehicleStaminaNotify other) {
         if (other == emu.grasscutter.net.proto.VehicleStaminaNotifyOuterClass.VehicleStaminaNotify.getDefaultInstance()) return this;
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
-        }
         if (other.getCurStamina() != 0F) {
           setCurStamina(other.getCurStamina());
+        }
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -460,40 +460,9 @@ public final class VehicleStaminaNotifyOuterClass {
         return this;
       }
 
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 5;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 5;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private float curStamina_ ;
       /**
-       * <code>float cur_stamina = 6;</code>
+       * <code>float cur_stamina = 1;</code>
        * @return The curStamina.
        */
       @java.lang.Override
@@ -501,7 +470,7 @@ public final class VehicleStaminaNotifyOuterClass {
         return curStamina_;
       }
       /**
-       * <code>float cur_stamina = 6;</code>
+       * <code>float cur_stamina = 1;</code>
        * @param value The curStamina to set.
        * @return This builder for chaining.
        */
@@ -512,12 +481,43 @@ public final class VehicleStaminaNotifyOuterClass {
         return this;
       }
       /**
-       * <code>float cur_stamina = 6;</code>
+       * <code>float cur_stamina = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurStamina() {
         
         curStamina_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 2;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 2;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
         onChanged();
         return this;
       }
@@ -589,8 +589,8 @@ public final class VehicleStaminaNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032VehicleStaminaNotify.proto\">\n\024VehicleS" +
-      "taminaNotify\022\021\n\tentity_id\030\005 \001(\r\022\023\n\013cur_s" +
-      "tamina\030\006 \001(\002B\033\n\031emu.grasscutter.net.prot" +
+      "taminaNotify\022\023\n\013cur_stamina\030\001 \001(\002\022\021\n\tent" +
+      "ity_id\030\002 \001(\rB\033\n\031emu.grasscutter.net.prot" +
       "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -602,7 +602,7 @@ public final class VehicleStaminaNotifyOuterClass {
     internal_static_VehicleStaminaNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VehicleStaminaNotify_descriptor,
-        new java.lang.String[] { "EntityId", "CurStamina", });
+        new java.lang.String[] { "CurStamina", "EntityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,28 +19,12 @@ public final class AdjustWorldLevelRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 after_world_level = 3;</code>
-     * @return The afterWorldLevel.
-     */
-    int getAfterWorldLevel();
-
-    /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
-
-    /**
-     * <code>uint32 cd_over_time = 8;</code>
-     * @return The cdOverTime.
-     */
-    int getCdOverTime();
   }
   /**
-   * <pre>
-   * CmdId: 29530
-   * </pre>
-   *
    * Protobuf type {@code AdjustWorldLevelRsp}
    */
   public static final class AdjustWorldLevelRsp extends
@@ -85,19 +69,9 @@ public final class AdjustWorldLevelRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              afterWorldLevel_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 16: {
 
               retcode_ = input.readInt32();
-              break;
-            }
-            case 64: {
-
-              cdOverTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -132,37 +106,15 @@ public final class AdjustWorldLevelRspOuterClass {
               emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp.class, emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp.Builder.class);
     }
 
-    public static final int AFTER_WORLD_LEVEL_FIELD_NUMBER = 3;
-    private int afterWorldLevel_;
-    /**
-     * <code>uint32 after_world_level = 3;</code>
-     * @return The afterWorldLevel.
-     */
-    @java.lang.Override
-    public int getAfterWorldLevel() {
-      return afterWorldLevel_;
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 2;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
-    }
-
-    public static final int CD_OVER_TIME_FIELD_NUMBER = 8;
-    private int cdOverTime_;
-    /**
-     * <code>uint32 cd_over_time = 8;</code>
-     * @return The cdOverTime.
-     */
-    @java.lang.Override
-    public int getCdOverTime() {
-      return cdOverTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -179,14 +131,8 @@ public final class AdjustWorldLevelRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (afterWorldLevel_ != 0) {
-        output.writeUInt32(3, afterWorldLevel_);
-      }
       if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
-      }
-      if (cdOverTime_ != 0) {
-        output.writeUInt32(8, cdOverTime_);
+        output.writeInt32(2, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +143,9 @@ public final class AdjustWorldLevelRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (afterWorldLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, afterWorldLevel_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
-      }
-      if (cdOverTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, cdOverTime_);
+          .computeInt32Size(2, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +162,8 @@ public final class AdjustWorldLevelRspOuterClass {
       }
       emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp other = (emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp) obj;
 
-      if (getAfterWorldLevel()
-          != other.getAfterWorldLevel()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (getCdOverTime()
-          != other.getCdOverTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +175,8 @@ public final class AdjustWorldLevelRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AFTER_WORLD_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getAfterWorldLevel();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + CD_OVER_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getCdOverTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,10 +273,6 @@ public final class AdjustWorldLevelRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 29530
-     * </pre>
-     *
      * Protobuf type {@code AdjustWorldLevelRsp}
      */
     public static final class Builder extends
@@ -384,11 +310,7 @@ public final class AdjustWorldLevelRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        afterWorldLevel_ = 0;
-
         retcode_ = 0;
-
-        cdOverTime_ = 0;
 
         return this;
       }
@@ -416,9 +338,7 @@ public final class AdjustWorldLevelRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp buildPartial() {
         emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp result = new emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp(this);
-        result.afterWorldLevel_ = afterWorldLevel_;
         result.retcode_ = retcode_;
-        result.cdOverTime_ = cdOverTime_;
         onBuilt();
         return result;
       }
@@ -467,14 +387,8 @@ public final class AdjustWorldLevelRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp other) {
         if (other == emu.grasscutter.net.proto.AdjustWorldLevelRspOuterClass.AdjustWorldLevelRsp.getDefaultInstance()) return this;
-        if (other.getAfterWorldLevel() != 0) {
-          setAfterWorldLevel(other.getAfterWorldLevel());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
-        }
-        if (other.getCdOverTime() != 0) {
-          setCdOverTime(other.getCdOverTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -505,40 +419,9 @@ public final class AdjustWorldLevelRspOuterClass {
         return this;
       }
 
-      private int afterWorldLevel_ ;
-      /**
-       * <code>uint32 after_world_level = 3;</code>
-       * @return The afterWorldLevel.
-       */
-      @java.lang.Override
-      public int getAfterWorldLevel() {
-        return afterWorldLevel_;
-      }
-      /**
-       * <code>uint32 after_world_level = 3;</code>
-       * @param value The afterWorldLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAfterWorldLevel(int value) {
-        
-        afterWorldLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 after_world_level = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAfterWorldLevel() {
-        
-        afterWorldLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -546,7 +429,7 @@ public final class AdjustWorldLevelRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -557,43 +440,12 @@ public final class AdjustWorldLevelRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
         
         retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int cdOverTime_ ;
-      /**
-       * <code>uint32 cd_over_time = 8;</code>
-       * @return The cdOverTime.
-       */
-      @java.lang.Override
-      public int getCdOverTime() {
-        return cdOverTime_;
-      }
-      /**
-       * <code>uint32 cd_over_time = 8;</code>
-       * @param value The cdOverTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCdOverTime(int value) {
-        
-        cdOverTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cd_over_time = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCdOverTime() {
-        
-        cdOverTime_ = 0;
         onChanged();
         return this;
       }
@@ -664,10 +516,9 @@ public final class AdjustWorldLevelRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031AdjustWorldLevelRsp.proto\"W\n\023AdjustWor" +
-      "ldLevelRsp\022\031\n\021after_world_level\030\003 \001(\r\022\017\n" +
-      "\007retcode\030\006 \001(\005\022\024\n\014cd_over_time\030\010 \001(\rB\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "\n\031AdjustWorldLevelRsp.proto\"&\n\023AdjustWor" +
+      "ldLevelRsp\022\017\n\007retcode\030\002 \001(\005B\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -678,7 +529,7 @@ public final class AdjustWorldLevelRspOuterClass {
     internal_static_AdjustWorldLevelRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AdjustWorldLevelRsp_descriptor,
-        new java.lang.String[] { "AfterWorldLevel", "Retcode", "CdOverTime", });
+        new java.lang.String[] { "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

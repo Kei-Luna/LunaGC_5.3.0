@@ -227,6 +227,36 @@ public final class FriendBriefOuterClass {
      * @return The isDuelObservable.
      */
     boolean getIsDuelObservable();
+
+    /**
+     * <code>bool GBAOBHAAKDO = 30;</code>
+     * @return The gBAOBHAAKDO.
+     */
+    boolean getGBAOBHAAKDO();
+
+    /**
+     * <code>string PJMKDOCDKLH = 31;</code>
+     * @return The pJMKDOCDKLH.
+     */
+    java.lang.String getPJMKDOCDKLH();
+    /**
+     * <code>string PJMKDOCDKLH = 31;</code>
+     * @return The bytes for pJMKDOCDKLH.
+     */
+    com.google.protobuf.ByteString
+        getPJMKDOCDKLHBytes();
+
+    /**
+     * <code>string ADDELLGIEED = 32;</code>
+     * @return The aDDELLGIEED.
+     */
+    java.lang.String getADDELLGIEED();
+    /**
+     * <code>string ADDELLGIEED = 32;</code>
+     * @return The bytes for aDDELLGIEED.
+     */
+    com.google.protobuf.ByteString
+        getADDELLGIEEDBytes();
   }
   /**
    * Protobuf type {@code FriendBrief}
@@ -249,6 +279,8 @@ public final class FriendBriefOuterClass {
       showAvatarInfoList_ = java.util.Collections.emptyList();
       friendEnterHomeOption_ = 0;
       platformType_ = 0;
+      pJMKDOCDKLH_ = "";
+      aDDELLGIEED_ = "";
     }
 
     @java.lang.Override
@@ -419,6 +451,23 @@ public final class FriendBriefOuterClass {
             case 232: {
 
               isDuelObservable_ = input.readBool();
+              break;
+            }
+            case 240: {
+
+              gBAOBHAAKDO_ = input.readBool();
+              break;
+            }
+            case 250: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              pJMKDOCDKLH_ = s;
+              break;
+            }
+            case 258: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              aDDELLGIEED_ = s;
               break;
             }
             default: {
@@ -896,6 +945,93 @@ public final class FriendBriefOuterClass {
       return isDuelObservable_;
     }
 
+    public static final int GBAOBHAAKDO_FIELD_NUMBER = 30;
+    private boolean gBAOBHAAKDO_;
+    /**
+     * <code>bool GBAOBHAAKDO = 30;</code>
+     * @return The gBAOBHAAKDO.
+     */
+    @java.lang.Override
+    public boolean getGBAOBHAAKDO() {
+      return gBAOBHAAKDO_;
+    }
+
+    public static final int PJMKDOCDKLH_FIELD_NUMBER = 31;
+    private volatile java.lang.Object pJMKDOCDKLH_;
+    /**
+     * <code>string PJMKDOCDKLH = 31;</code>
+     * @return The pJMKDOCDKLH.
+     */
+    @java.lang.Override
+    public java.lang.String getPJMKDOCDKLH() {
+      java.lang.Object ref = pJMKDOCDKLH_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        pJMKDOCDKLH_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string PJMKDOCDKLH = 31;</code>
+     * @return The bytes for pJMKDOCDKLH.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getPJMKDOCDKLHBytes() {
+      java.lang.Object ref = pJMKDOCDKLH_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        pJMKDOCDKLH_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int ADDELLGIEED_FIELD_NUMBER = 32;
+    private volatile java.lang.Object aDDELLGIEED_;
+    /**
+     * <code>string ADDELLGIEED = 32;</code>
+     * @return The aDDELLGIEED.
+     */
+    @java.lang.Override
+    public java.lang.String getADDELLGIEED() {
+      java.lang.Object ref = aDDELLGIEED_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        aDDELLGIEED_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string ADDELLGIEED = 32;</code>
+     * @return The bytes for aDDELLGIEED.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getADDELLGIEEDBytes() {
+      java.lang.Object ref = aDDELLGIEED_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        aDDELLGIEED_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -981,6 +1117,15 @@ public final class FriendBriefOuterClass {
       }
       if (isDuelObservable_ != false) {
         output.writeBool(29, isDuelObservable_);
+      }
+      if (gBAOBHAAKDO_ != false) {
+        output.writeBool(30, gBAOBHAAKDO_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pJMKDOCDKLH_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 31, pJMKDOCDKLH_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aDDELLGIEED_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 32, aDDELLGIEED_);
       }
       unknownFields.writeTo(output);
     }
@@ -1083,6 +1228,16 @@ public final class FriendBriefOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(29, isDuelObservable_);
       }
+      if (gBAOBHAAKDO_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(30, gBAOBHAAKDO_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(pJMKDOCDKLH_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(31, pJMKDOCDKLH_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(aDDELLGIEED_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(32, aDDELLGIEED_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -1146,6 +1301,12 @@ public final class FriendBriefOuterClass {
           != other.getIsInDuel()) return false;
       if (getIsDuelObservable()
           != other.getIsDuelObservable()) return false;
+      if (getGBAOBHAAKDO()
+          != other.getGBAOBHAAKDO()) return false;
+      if (!getPJMKDOCDKLH()
+          .equals(other.getPJMKDOCDKLH())) return false;
+      if (!getADDELLGIEED()
+          .equals(other.getADDELLGIEED())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1215,6 +1376,13 @@ public final class FriendBriefOuterClass {
       hash = (37 * hash) + IS_DUEL_OBSERVABLE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsDuelObservable());
+      hash = (37 * hash) + GBAOBHAAKDO_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getGBAOBHAAKDO());
+      hash = (37 * hash) + PJMKDOCDKLH_FIELD_NUMBER;
+      hash = (53 * hash) + getPJMKDOCDKLH().hashCode();
+      hash = (37 * hash) + ADDELLGIEED_FIELD_NUMBER;
+      hash = (53 * hash) + getADDELLGIEED().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1405,6 +1573,12 @@ public final class FriendBriefOuterClass {
 
         isDuelObservable_ = false;
 
+        gBAOBHAAKDO_ = false;
+
+        pJMKDOCDKLH_ = "";
+
+        aDDELLGIEED_ = "";
+
         return this;
       }
 
@@ -1468,6 +1642,9 @@ public final class FriendBriefOuterClass {
         result.platformType_ = platformType_;
         result.isInDuel_ = isInDuel_;
         result.isDuelObservable_ = isDuelObservable_;
+        result.gBAOBHAAKDO_ = gBAOBHAAKDO_;
+        result.pJMKDOCDKLH_ = pJMKDOCDKLH_;
+        result.aDDELLGIEED_ = aDDELLGIEED_;
         onBuilt();
         return result;
       }
@@ -1614,6 +1791,17 @@ public final class FriendBriefOuterClass {
         }
         if (other.getIsDuelObservable() != false) {
           setIsDuelObservable(other.getIsDuelObservable());
+        }
+        if (other.getGBAOBHAAKDO() != false) {
+          setGBAOBHAAKDO(other.getGBAOBHAAKDO());
+        }
+        if (!other.getPJMKDOCDKLH().isEmpty()) {
+          pJMKDOCDKLH_ = other.pJMKDOCDKLH_;
+          onChanged();
+        }
+        if (!other.getADDELLGIEED().isEmpty()) {
+          aDDELLGIEED_ = other.aDDELLGIEED_;
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2934,6 +3122,189 @@ public final class FriendBriefOuterClass {
         onChanged();
         return this;
       }
+
+      private boolean gBAOBHAAKDO_ ;
+      /**
+       * <code>bool GBAOBHAAKDO = 30;</code>
+       * @return The gBAOBHAAKDO.
+       */
+      @java.lang.Override
+      public boolean getGBAOBHAAKDO() {
+        return gBAOBHAAKDO_;
+      }
+      /**
+       * <code>bool GBAOBHAAKDO = 30;</code>
+       * @param value The gBAOBHAAKDO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGBAOBHAAKDO(boolean value) {
+        
+        gBAOBHAAKDO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool GBAOBHAAKDO = 30;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGBAOBHAAKDO() {
+        
+        gBAOBHAAKDO_ = false;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object pJMKDOCDKLH_ = "";
+      /**
+       * <code>string PJMKDOCDKLH = 31;</code>
+       * @return The pJMKDOCDKLH.
+       */
+      public java.lang.String getPJMKDOCDKLH() {
+        java.lang.Object ref = pJMKDOCDKLH_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          pJMKDOCDKLH_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string PJMKDOCDKLH = 31;</code>
+       * @return The bytes for pJMKDOCDKLH.
+       */
+      public com.google.protobuf.ByteString
+          getPJMKDOCDKLHBytes() {
+        java.lang.Object ref = pJMKDOCDKLH_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          pJMKDOCDKLH_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string PJMKDOCDKLH = 31;</code>
+       * @param value The pJMKDOCDKLH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPJMKDOCDKLH(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        pJMKDOCDKLH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string PJMKDOCDKLH = 31;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPJMKDOCDKLH() {
+        
+        pJMKDOCDKLH_ = getDefaultInstance().getPJMKDOCDKLH();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string PJMKDOCDKLH = 31;</code>
+       * @param value The bytes for pJMKDOCDKLH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPJMKDOCDKLHBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        pJMKDOCDKLH_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object aDDELLGIEED_ = "";
+      /**
+       * <code>string ADDELLGIEED = 32;</code>
+       * @return The aDDELLGIEED.
+       */
+      public java.lang.String getADDELLGIEED() {
+        java.lang.Object ref = aDDELLGIEED_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          aDDELLGIEED_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string ADDELLGIEED = 32;</code>
+       * @return The bytes for aDDELLGIEED.
+       */
+      public com.google.protobuf.ByteString
+          getADDELLGIEEDBytes() {
+        java.lang.Object ref = aDDELLGIEED_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          aDDELLGIEED_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string ADDELLGIEED = 32;</code>
+       * @param value The aDDELLGIEED to set.
+       * @return This builder for chaining.
+       */
+      public Builder setADDELLGIEED(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        aDDELLGIEED_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string ADDELLGIEED = 32;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearADDELLGIEED() {
+        
+        aDDELLGIEED_ = getDefaultInstance().getADDELLGIEED();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string ADDELLGIEED = 32;</code>
+       * @param value The bytes for aDDELLGIEED to set.
+       * @return This builder for chaining.
+       */
+      public Builder setADDELLGIEEDBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        aDDELLGIEED_ = value;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -3001,10 +3372,10 @@ public final class FriendBriefOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021FriendBrief.proto\032\027FriendOnlineState.p" +
-      "roto\032\032SocialShowAvatarInfo.proto\032\033Friend" +
-      "EnterHomeOption.proto\032\024ProfilePicture.pr" +
-      "oto\032\022PlatformType.proto\"\216\005\n\013FriendBrief\022" +
+      "\n\021FriendBrief.proto\032\024ProfilePicture.prot" +
+      "o\032\032SocialShowAvatarInfo.proto\032\027FriendOnl" +
+      "ineState.proto\032\022PlatformType.proto\032\033Frie" +
+      "ndEnterHomeOption.proto\"\315\005\n\013FriendBrief\022" +
       "\013\n\003uid\030\001 \001(\r\022\020\n\010nickname\030\002 \001(\t\022\r\n\005level\030" +
       "\003 \001(\r\022\021\n\tavatar_id\030\004 \001(\r\022\023\n\013world_level\030" +
       "\005 \001(\r\022\021\n\tsignature\030\006 \001(\t\022(\n\014online_state" +
@@ -3021,28 +3392,30 @@ public final class FriendBriefOuterClass {
       "ource\030\031 \001(\010\022\025\n\ris_psn_source\030\032 \001(\010\022$\n\rpl" +
       "atform_type\030\033 \001(\0162\r.PlatformType\022\022\n\nis_i" +
       "n_duel\030\034 \001(\010\022\032\n\022is_duel_observable\030\035 \001(\010" +
-      "B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\022\023\n\013GBAOBHAAKDO\030\036 \001(\010\022\023\n\013PJMKDOCDKLH\030\037 \001" +
+      "(\t\022\023\n\013ADDELLGIEED\030  \001(\tB\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.FriendOnlineStateOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.FriendOnlineStateOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.PlatformTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.getDescriptor(),
         });
     internal_static_FriendBrief_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_FriendBrief_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FriendBrief_descriptor,
-        new java.lang.String[] { "Uid", "Nickname", "Level", "AvatarId", "WorldLevel", "Signature", "OnlineState", "Param", "IsMpModeAvailable", "OnlineId", "LastActiveTime", "NameCardId", "MpPlayerNum", "IsChatNoDisturb", "ChatSequence", "RemarkName", "ShowAvatarInfoList", "FriendEnterHomeOption", "ProfilePicture", "IsGameSource", "IsPsnSource", "PlatformType", "IsInDuel", "IsDuelObservable", });
-    emu.grasscutter.net.proto.FriendOnlineStateOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.getDescriptor();
+        new java.lang.String[] { "Uid", "Nickname", "Level", "AvatarId", "WorldLevel", "Signature", "OnlineState", "Param", "IsMpModeAvailable", "OnlineId", "LastActiveTime", "NameCardId", "MpPlayerNum", "IsChatNoDisturb", "ChatSequence", "RemarkName", "ShowAvatarInfoList", "FriendEnterHomeOption", "ProfilePicture", "IsGameSource", "IsPsnSource", "PlatformType", "IsInDuel", "IsDuelObservable", "GBAOBHAAKDO", "PJMKDOCDKLH", "ADDELLGIEED", });
     emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.FriendOnlineStateOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PlatformTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

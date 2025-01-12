@@ -19,22 +19,18 @@ public final class StrengthenPointDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 base_point = 3;</code>
+     * <code>uint32 base_point = 10;</code>
      * @return The basePoint.
      */
     int getBasePoint();
 
     /**
-     * <code>uint32 cur_point = 7;</code>
+     * <code>uint32 cur_point = 12;</code>
      * @return The curPoint.
      */
     int getCurPoint();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code StrengthenPointData}
    */
   public static final class StrengthenPointData extends
@@ -79,12 +75,12 @@ public final class StrengthenPointDataOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 80: {
 
               basePoint_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 96: {
 
               curPoint_ = input.readUInt32();
               break;
@@ -121,10 +117,10 @@ public final class StrengthenPointDataOuterClass {
               emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData.class, emu.grasscutter.net.proto.StrengthenPointDataOuterClass.StrengthenPointData.Builder.class);
     }
 
-    public static final int BASE_POINT_FIELD_NUMBER = 3;
+    public static final int BASE_POINT_FIELD_NUMBER = 10;
     private int basePoint_;
     /**
-     * <code>uint32 base_point = 3;</code>
+     * <code>uint32 base_point = 10;</code>
      * @return The basePoint.
      */
     @java.lang.Override
@@ -132,10 +128,10 @@ public final class StrengthenPointDataOuterClass {
       return basePoint_;
     }
 
-    public static final int CUR_POINT_FIELD_NUMBER = 7;
+    public static final int CUR_POINT_FIELD_NUMBER = 12;
     private int curPoint_;
     /**
-     * <code>uint32 cur_point = 7;</code>
+     * <code>uint32 cur_point = 12;</code>
      * @return The curPoint.
      */
     @java.lang.Override
@@ -158,10 +154,10 @@ public final class StrengthenPointDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (basePoint_ != 0) {
-        output.writeUInt32(3, basePoint_);
+        output.writeUInt32(10, basePoint_);
       }
       if (curPoint_ != 0) {
-        output.writeUInt32(7, curPoint_);
+        output.writeUInt32(12, curPoint_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +170,11 @@ public final class StrengthenPointDataOuterClass {
       size = 0;
       if (basePoint_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, basePoint_);
+          .computeUInt32Size(10, basePoint_);
       }
       if (curPoint_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, curPoint_);
+          .computeUInt32Size(12, curPoint_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -310,10 +306,6 @@ public final class StrengthenPointDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code StrengthenPointData}
      */
     public static final class Builder extends
@@ -468,7 +460,7 @@ public final class StrengthenPointDataOuterClass {
 
       private int basePoint_ ;
       /**
-       * <code>uint32 base_point = 3;</code>
+       * <code>uint32 base_point = 10;</code>
        * @return The basePoint.
        */
       @java.lang.Override
@@ -476,7 +468,7 @@ public final class StrengthenPointDataOuterClass {
         return basePoint_;
       }
       /**
-       * <code>uint32 base_point = 3;</code>
+       * <code>uint32 base_point = 10;</code>
        * @param value The basePoint to set.
        * @return This builder for chaining.
        */
@@ -487,7 +479,7 @@ public final class StrengthenPointDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 base_point = 3;</code>
+       * <code>uint32 base_point = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearBasePoint() {
@@ -499,7 +491,7 @@ public final class StrengthenPointDataOuterClass {
 
       private int curPoint_ ;
       /**
-       * <code>uint32 cur_point = 7;</code>
+       * <code>uint32 cur_point = 12;</code>
        * @return The curPoint.
        */
       @java.lang.Override
@@ -507,7 +499,7 @@ public final class StrengthenPointDataOuterClass {
         return curPoint_;
       }
       /**
-       * <code>uint32 cur_point = 7;</code>
+       * <code>uint32 cur_point = 12;</code>
        * @param value The curPoint to set.
        * @return This builder for chaining.
        */
@@ -518,7 +510,7 @@ public final class StrengthenPointDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_point = 7;</code>
+       * <code>uint32 cur_point = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurPoint() {
@@ -595,8 +587,8 @@ public final class StrengthenPointDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031StrengthenPointData.proto\"<\n\023Strengthe" +
-      "nPointData\022\022\n\nbase_point\030\003 \001(\r\022\021\n\tcur_po" +
-      "int\030\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "nPointData\022\022\n\nbase_point\030\n \001(\r\022\021\n\tcur_po" +
+      "int\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

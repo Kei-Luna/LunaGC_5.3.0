@@ -203,7 +203,7 @@ public final class PacketOpcodes {
     public static final int SceneEntitiesMovesRsp = 1111111111;
     public static final int GetActivityInfoReq = 1111111111;
     public static final int GetActivityInfoRsp = 1111111111;
-    public static final int ChatChannelUpdateNotify = 1111111111;
+    public static final int ChatChannelUpdateNotify = 2077;
     public static final int ChatChannelInfoNotify = 1111111111;
     public static final int PlayerChatNotify = 1111111111;
     public static final int SetWidgetSlotReq = 1111111111;
@@ -744,7 +744,7 @@ public final class PacketOpcodes {
     public static final int ChannellerSlabWearBuffRsp = 1111111111;
     public static final int CharAmusementSettleNotify = 1111111111;
     public static final int ChatChannelDataNotify = 29563;
-    public static final int ChatChannelShieldNotify = 1111111111;
+    public static final int ChatChannelShieldNotify = 4267;
     public static final int ChatHistoryNotify = 1111111111;
     public static final int CheckAddItemExceedLimitNotify = 1111111111;
     public static final int CheckGroupReplacedReq = 1111111111;
@@ -1889,8 +1889,8 @@ public final class PacketOpcodes {
     public static final int QuickUseWidgetRsp = 1111111111;
     public static final int ReadNicknameAuditReq = 1111111111;
     public static final int ReadNicknameAuditRsp = 1111111111;
-    public static final int ReadPrivateChatReq = 1111111111;
-    public static final int ReadPrivateChatRsp = 1111111111;
+    public static final int ReadPrivateChatReq = 21908;
+    public static final int ReadPrivateChatRsp = 23116;
     public static final int ReadSignatureAuditReq = 1111111111;
     public static final int ReadSignatureAuditRsp = 1111111111;
     public static final int ReceivedTrialAvatarActivityRewardReq = 1111111111;

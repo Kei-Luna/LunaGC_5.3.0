@@ -20,24 +20,24 @@ public final class ServerBuffChangeTypeOuterClass {
   public enum ServerBuffChangeType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>ADD_SERVER_BUFF = 0;</code>
+     * <code>SERVER_BUFF_CHANGE_TYPE_ADD_SERVER_BUFF = 0;</code>
      */
-    ADD_SERVER_BUFF(0),
+    SERVER_BUFF_CHANGE_TYPE_ADD_SERVER_BUFF(0),
     /**
-     * <code>DEL_SERVER_BUFF = 1;</code>
+     * <code>SERVER_BUFF_CHANGE_TYPE_DEL_SERVER_BUFF = 1;</code>
      */
-    DEL_SERVER_BUFF(1),
+    SERVER_BUFF_CHANGE_TYPE_DEL_SERVER_BUFF(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>ADD_SERVER_BUFF = 0;</code>
+     * <code>SERVER_BUFF_CHANGE_TYPE_ADD_SERVER_BUFF = 0;</code>
      */
-    public static final int ADD_SERVER_BUFF_VALUE = 0;
+    public static final int SERVER_BUFF_CHANGE_TYPE_ADD_SERVER_BUFF_VALUE = 0;
     /**
-     * <code>DEL_SERVER_BUFF = 1;</code>
+     * <code>SERVER_BUFF_CHANGE_TYPE_DEL_SERVER_BUFF = 1;</code>
      */
-    public static final int DEL_SERVER_BUFF_VALUE = 1;
+    public static final int SERVER_BUFF_CHANGE_TYPE_DEL_SERVER_BUFF_VALUE = 1;
 
 
     public final int getNumber() {
@@ -64,8 +64,8 @@ public final class ServerBuffChangeTypeOuterClass {
      */
     public static ServerBuffChangeType forNumber(int value) {
       switch (value) {
-        case 0: return ADD_SERVER_BUFF;
-        case 1: return DEL_SERVER_BUFF;
+        case 0: return SERVER_BUFF_CHANGE_TYPE_ADD_SERVER_BUFF;
+        case 1: return SERVER_BUFF_CHANGE_TYPE_DEL_SERVER_BUFF;
         default: return null;
       }
     }
@@ -131,10 +131,11 @@ public final class ServerBuffChangeTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032ServerBuffChangeType.proto*@\n\024ServerBu" +
-      "ffChangeType\022\023\n\017ADD_SERVER_BUFF\020\000\022\023\n\017DEL" +
-      "_SERVER_BUFF\020\001B\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "\n\032ServerBuffChangeType.proto*p\n\024ServerBu" +
+      "ffChangeType\022+\n\'SERVER_BUFF_CHANGE_TYPE_" +
+      "ADD_SERVER_BUFF\020\000\022+\n\'SERVER_BUFF_CHANGE_" +
+      "TYPE_DEL_SERVER_BUFF\020\001B\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

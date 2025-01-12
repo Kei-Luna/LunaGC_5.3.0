@@ -19,29 +19,24 @@ public final class CombineReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 combine_count = 5;</code>
+     * <code>uint32 combine_count = 2;</code>
      * @return The combineCount.
      */
     int getCombineCount();
 
     /**
-     * <code>uint64 avatar_guid = 2;</code>
+     * <code>uint64 avatar_guid = 9;</code>
      * @return The avatarGuid.
      */
     long getAvatarGuid();
 
     /**
-     * <code>uint32 combine_id = 3;</code>
+     * <code>uint32 combine_id = 12;</code>
      * @return The combineId.
      */
     int getCombineId();
   }
   /**
-   * <pre>
-   * CmdId: 753
-   * Obf: JIBOADJOLAM
-   * </pre>
-   *
    * Protobuf type {@code CombineReq}
    */
   public static final class CombineReq extends
@@ -88,17 +83,17 @@ public final class CombineReqOuterClass {
               break;
             case 16: {
 
+              combineCount_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
               avatarGuid_ = input.readUInt64();
               break;
             }
-            case 24: {
+            case 96: {
 
               combineId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              combineCount_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +128,10 @@ public final class CombineReqOuterClass {
               emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq.class, emu.grasscutter.net.proto.CombineReqOuterClass.CombineReq.Builder.class);
     }
 
-    public static final int COMBINE_COUNT_FIELD_NUMBER = 5;
+    public static final int COMBINE_COUNT_FIELD_NUMBER = 2;
     private int combineCount_;
     /**
-     * <code>uint32 combine_count = 5;</code>
+     * <code>uint32 combine_count = 2;</code>
      * @return The combineCount.
      */
     @java.lang.Override
@@ -144,10 +139,10 @@ public final class CombineReqOuterClass {
       return combineCount_;
     }
 
-    public static final int AVATAR_GUID_FIELD_NUMBER = 2;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 9;
     private long avatarGuid_;
     /**
-     * <code>uint64 avatar_guid = 2;</code>
+     * <code>uint64 avatar_guid = 9;</code>
      * @return The avatarGuid.
      */
     @java.lang.Override
@@ -155,10 +150,10 @@ public final class CombineReqOuterClass {
       return avatarGuid_;
     }
 
-    public static final int COMBINE_ID_FIELD_NUMBER = 3;
+    public static final int COMBINE_ID_FIELD_NUMBER = 12;
     private int combineId_;
     /**
-     * <code>uint32 combine_id = 3;</code>
+     * <code>uint32 combine_id = 12;</code>
      * @return The combineId.
      */
     @java.lang.Override
@@ -180,14 +175,14 @@ public final class CombineReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (combineCount_ != 0) {
+        output.writeUInt32(2, combineCount_);
+      }
       if (avatarGuid_ != 0L) {
-        output.writeUInt64(2, avatarGuid_);
+        output.writeUInt64(9, avatarGuid_);
       }
       if (combineId_ != 0) {
-        output.writeUInt32(3, combineId_);
-      }
-      if (combineCount_ != 0) {
-        output.writeUInt32(5, combineCount_);
+        output.writeUInt32(12, combineId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +193,17 @@ public final class CombineReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (combineCount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, combineCount_);
+      }
       if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(2, avatarGuid_);
+          .computeUInt64Size(9, avatarGuid_);
       }
       if (combineId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, combineId_);
-      }
-      if (combineCount_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, combineCount_);
+          .computeUInt32Size(12, combineId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -345,11 +340,6 @@ public final class CombineReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 753
-     * Obf: JIBOADJOLAM
-     * </pre>
-     *
      * Protobuf type {@code CombineReq}
      */
     public static final class Builder extends
@@ -510,7 +500,7 @@ public final class CombineReqOuterClass {
 
       private int combineCount_ ;
       /**
-       * <code>uint32 combine_count = 5;</code>
+       * <code>uint32 combine_count = 2;</code>
        * @return The combineCount.
        */
       @java.lang.Override
@@ -518,7 +508,7 @@ public final class CombineReqOuterClass {
         return combineCount_;
       }
       /**
-       * <code>uint32 combine_count = 5;</code>
+       * <code>uint32 combine_count = 2;</code>
        * @param value The combineCount to set.
        * @return This builder for chaining.
        */
@@ -529,7 +519,7 @@ public final class CombineReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 combine_count = 5;</code>
+       * <code>uint32 combine_count = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCombineCount() {
@@ -541,7 +531,7 @@ public final class CombineReqOuterClass {
 
       private long avatarGuid_ ;
       /**
-       * <code>uint64 avatar_guid = 2;</code>
+       * <code>uint64 avatar_guid = 9;</code>
        * @return The avatarGuid.
        */
       @java.lang.Override
@@ -549,7 +539,7 @@ public final class CombineReqOuterClass {
         return avatarGuid_;
       }
       /**
-       * <code>uint64 avatar_guid = 2;</code>
+       * <code>uint64 avatar_guid = 9;</code>
        * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
@@ -560,7 +550,7 @@ public final class CombineReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 avatar_guid = 2;</code>
+       * <code>uint64 avatar_guid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarGuid() {
@@ -572,7 +562,7 @@ public final class CombineReqOuterClass {
 
       private int combineId_ ;
       /**
-       * <code>uint32 combine_id = 3;</code>
+       * <code>uint32 combine_id = 12;</code>
        * @return The combineId.
        */
       @java.lang.Override
@@ -580,7 +570,7 @@ public final class CombineReqOuterClass {
         return combineId_;
       }
       /**
-       * <code>uint32 combine_id = 3;</code>
+       * <code>uint32 combine_id = 12;</code>
        * @param value The combineId to set.
        * @return This builder for chaining.
        */
@@ -591,7 +581,7 @@ public final class CombineReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 combine_id = 3;</code>
+       * <code>uint32 combine_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearCombineId() {
@@ -668,8 +658,8 @@ public final class CombineReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020CombineReq.proto\"L\n\nCombineReq\022\025\n\rcomb" +
-      "ine_count\030\005 \001(\r\022\023\n\013avatar_guid\030\002 \001(\004\022\022\n\n" +
-      "combine_id\030\003 \001(\rB\033\n\031emu.grasscutter.net." +
+      "ine_count\030\002 \001(\r\022\023\n\013avatar_guid\030\t \001(\004\022\022\n\n" +
+      "combine_id\030\014 \001(\rB\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -19,10 +19,6 @@ public final class AddBackupAvatarTeamReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * <pre>
-   * CmdId: 23418
-   * </pre>
-   *
    * Protobuf type {@code AddBackupAvatarTeamReq}
    */
   public static final class AddBackupAvatarTeamReq extends
@@ -244,10 +240,6 @@ public final class AddBackupAvatarTeamReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 23418
-     * </pre>
-     *
      * Protobuf type {@code AddBackupAvatarTeamReq}
      */
     public static final class Builder extends

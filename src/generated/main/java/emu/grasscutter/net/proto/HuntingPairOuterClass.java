@@ -19,13 +19,13 @@ public final class HuntingPairOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 monster_config_id = 10;</code>
+     * <code>uint32 monster_config_id = 1;</code>
      * @return The monsterConfigId.
      */
     int getMonsterConfigId();
 
     /**
-     * <code>uint32 refresh_id = 11;</code>
+     * <code>uint32 refresh_id = 6;</code>
      * @return The refreshId.
      */
     int getRefreshId();
@@ -75,12 +75,12 @@ public final class HuntingPairOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 8: {
 
               monsterConfigId_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 48: {
 
               refreshId_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class HuntingPairOuterClass {
               emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.class, emu.grasscutter.net.proto.HuntingPairOuterClass.HuntingPair.Builder.class);
     }
 
-    public static final int MONSTER_CONFIG_ID_FIELD_NUMBER = 10;
+    public static final int MONSTER_CONFIG_ID_FIELD_NUMBER = 1;
     private int monsterConfigId_;
     /**
-     * <code>uint32 monster_config_id = 10;</code>
+     * <code>uint32 monster_config_id = 1;</code>
      * @return The monsterConfigId.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class HuntingPairOuterClass {
       return monsterConfigId_;
     }
 
-    public static final int REFRESH_ID_FIELD_NUMBER = 11;
+    public static final int REFRESH_ID_FIELD_NUMBER = 6;
     private int refreshId_;
     /**
-     * <code>uint32 refresh_id = 11;</code>
+     * <code>uint32 refresh_id = 6;</code>
      * @return The refreshId.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class HuntingPairOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (monsterConfigId_ != 0) {
-        output.writeUInt32(10, monsterConfigId_);
+        output.writeUInt32(1, monsterConfigId_);
       }
       if (refreshId_ != 0) {
-        output.writeUInt32(11, refreshId_);
+        output.writeUInt32(6, refreshId_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class HuntingPairOuterClass {
       size = 0;
       if (monsterConfigId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, monsterConfigId_);
+          .computeUInt32Size(1, monsterConfigId_);
       }
       if (refreshId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, refreshId_);
+          .computeUInt32Size(6, refreshId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class HuntingPairOuterClass {
 
       private int monsterConfigId_ ;
       /**
-       * <code>uint32 monster_config_id = 10;</code>
+       * <code>uint32 monster_config_id = 1;</code>
        * @return The monsterConfigId.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class HuntingPairOuterClass {
         return monsterConfigId_;
       }
       /**
-       * <code>uint32 monster_config_id = 10;</code>
+       * <code>uint32 monster_config_id = 1;</code>
        * @param value The monsterConfigId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class HuntingPairOuterClass {
         return this;
       }
       /**
-       * <code>uint32 monster_config_id = 10;</code>
+       * <code>uint32 monster_config_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearMonsterConfigId() {
@@ -491,7 +491,7 @@ public final class HuntingPairOuterClass {
 
       private int refreshId_ ;
       /**
-       * <code>uint32 refresh_id = 11;</code>
+       * <code>uint32 refresh_id = 6;</code>
        * @return The refreshId.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class HuntingPairOuterClass {
         return refreshId_;
       }
       /**
-       * <code>uint32 refresh_id = 11;</code>
+       * <code>uint32 refresh_id = 6;</code>
        * @param value The refreshId to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class HuntingPairOuterClass {
         return this;
       }
       /**
-       * <code>uint32 refresh_id = 11;</code>
+       * <code>uint32 refresh_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRefreshId() {
@@ -587,7 +587,7 @@ public final class HuntingPairOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\021HuntingPair.proto\"<\n\013HuntingPair\022\031\n\021mo" +
-      "nster_config_id\030\n \001(\r\022\022\n\nrefresh_id\030\013 \001(" +
+      "nster_config_id\030\001 \001(\r\022\022\n\nrefresh_id\030\006 \001(" +
       "\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -2163,8 +2163,8 @@ public final class InvestigationMonsterOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032InvestigationMonster.proto\032\014Vector.pro" +
-      "to\032\017LockState.proto\032!WeeklyBossResinDisc" +
-      "ountInfo.proto\"\355\003\n\024InvestigationMonster\022" +
+      "to\032!WeeklyBossResinDiscountInfo.proto\032\017L" +
+      "ockState.proto\"\355\003\n\024InvestigationMonster\022" +
       "\n\n\002id\030\001 \001(\r\022\020\n\010is_alive\030\002 \001(\010\022\026\n\016boss_ch" +
       "est_num\030\003 \001(\r\022\r\n\005resin\030\004 \001(\r\022\026\n\016is_area_" +
       "locked\030\005 \001(\010\022\032\n\022max_boss_chest_num\030\006 \001(\r" +
@@ -2183,8 +2183,8 @@ public final class InvestigationMonsterOuterClass {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.LockStateOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.LockStateOuterClass.getDescriptor(),
         });
     internal_static_InvestigationMonster_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -2193,8 +2193,8 @@ public final class InvestigationMonsterOuterClass {
         internal_static_InvestigationMonster_descriptor,
         new java.lang.String[] { "Id", "IsAlive", "BossChestNum", "Resin", "IsAreaLocked", "MaxBossChestNum", "NextRefreshTime", "CityId", "NextBossChestRefreshTime", "SceneId", "Pos", "RefreshInterval", "LockState", "WeeklyBossResinDiscountInfo", "Level", "IDNKJEEDOGC", "MonsterId", "GroupId", "AGIENJJKPBE", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.LockStateOuterClass.getDescriptor();
     emu.grasscutter.net.proto.WeeklyBossResinDiscountInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.LockStateOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

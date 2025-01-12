@@ -19,13 +19,13 @@ public final class DungeonEnterPosInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 quest_id = 8;</code>
+     * <code>uint32 quest_id = 4;</code>
      * @return The questId.
      */
     int getQuestId();
 
     /**
-     * <code>uint32 point_id = 12;</code>
+     * <code>uint32 point_id = 13;</code>
      * @return The pointId.
      */
     int getPointId();
@@ -75,12 +75,12 @@ public final class DungeonEnterPosInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 32: {
 
               questId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 104: {
 
               pointId_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class DungeonEnterPosInfoOuterClass {
               emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.class, emu.grasscutter.net.proto.DungeonEnterPosInfoOuterClass.DungeonEnterPosInfo.Builder.class);
     }
 
-    public static final int QUEST_ID_FIELD_NUMBER = 8;
+    public static final int QUEST_ID_FIELD_NUMBER = 4;
     private int questId_;
     /**
-     * <code>uint32 quest_id = 8;</code>
+     * <code>uint32 quest_id = 4;</code>
      * @return The questId.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class DungeonEnterPosInfoOuterClass {
       return questId_;
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 12;
+    public static final int POINT_ID_FIELD_NUMBER = 13;
     private int pointId_;
     /**
-     * <code>uint32 point_id = 12;</code>
+     * <code>uint32 point_id = 13;</code>
      * @return The pointId.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class DungeonEnterPosInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (questId_ != 0) {
-        output.writeUInt32(8, questId_);
+        output.writeUInt32(4, questId_);
       }
       if (pointId_ != 0) {
-        output.writeUInt32(12, pointId_);
+        output.writeUInt32(13, pointId_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class DungeonEnterPosInfoOuterClass {
       size = 0;
       if (questId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, questId_);
+          .computeUInt32Size(4, questId_);
       }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, pointId_);
+          .computeUInt32Size(13, pointId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -460,7 +460,7 @@ public final class DungeonEnterPosInfoOuterClass {
 
       private int questId_ ;
       /**
-       * <code>uint32 quest_id = 8;</code>
+       * <code>uint32 quest_id = 4;</code>
        * @return The questId.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class DungeonEnterPosInfoOuterClass {
         return questId_;
       }
       /**
-       * <code>uint32 quest_id = 8;</code>
+       * <code>uint32 quest_id = 4;</code>
        * @param value The questId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class DungeonEnterPosInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 quest_id = 8;</code>
+       * <code>uint32 quest_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuestId() {
@@ -491,7 +491,7 @@ public final class DungeonEnterPosInfoOuterClass {
 
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 13;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -499,7 +499,7 @@ public final class DungeonEnterPosInfoOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 13;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -510,7 +510,7 @@ public final class DungeonEnterPosInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
@@ -587,8 +587,8 @@ public final class DungeonEnterPosInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031DungeonEnterPosInfo.proto\"9\n\023DungeonEn" +
-      "terPosInfo\022\020\n\010quest_id\030\010 \001(\r\022\020\n\010point_id" +
-      "\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "terPosInfo\022\020\n\010quest_id\030\004 \001(\r\022\020\n\010point_id" +
+      "\030\r \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

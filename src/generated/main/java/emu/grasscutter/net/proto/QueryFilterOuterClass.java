@@ -19,16 +19,16 @@ public final class QueryFilterOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 MJEFLBPJBKM = 7;</code>
-     * @return The mJEFLBPJBKM.
+     * <code>int32 FHPJBGOBDOE = 2;</code>
+     * @return The fHPJBGOBDOE.
      */
-    int getMJEFLBPJBKM();
+    int getFHPJBGOBDOE();
 
     /**
-     * <code>int32 NOLJBNBNLML = 9;</code>
-     * @return The nOLJBNBNLML.
+     * <code>int32 LEPIBLINJOB = 14;</code>
+     * @return The lEPIBLINJOB.
      */
-    int getNOLJBNBNLML();
+    int getLEPIBLINJOB();
   }
   /**
    * Protobuf type {@code QueryFilter}
@@ -75,14 +75,14 @@ public final class QueryFilterOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 16: {
 
-              mJEFLBPJBKM_ = input.readInt32();
+              fHPJBGOBDOE_ = input.readInt32();
               break;
             }
-            case 72: {
+            case 112: {
 
-              nOLJBNBNLML_ = input.readInt32();
+              lEPIBLINJOB_ = input.readInt32();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class QueryFilterOuterClass {
               emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter.class, emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter.Builder.class);
     }
 
-    public static final int MJEFLBPJBKM_FIELD_NUMBER = 7;
-    private int mJEFLBPJBKM_;
+    public static final int FHPJBGOBDOE_FIELD_NUMBER = 2;
+    private int fHPJBGOBDOE_;
     /**
-     * <code>int32 MJEFLBPJBKM = 7;</code>
-     * @return The mJEFLBPJBKM.
+     * <code>int32 FHPJBGOBDOE = 2;</code>
+     * @return The fHPJBGOBDOE.
      */
     @java.lang.Override
-    public int getMJEFLBPJBKM() {
-      return mJEFLBPJBKM_;
+    public int getFHPJBGOBDOE() {
+      return fHPJBGOBDOE_;
     }
 
-    public static final int NOLJBNBNLML_FIELD_NUMBER = 9;
-    private int nOLJBNBNLML_;
+    public static final int LEPIBLINJOB_FIELD_NUMBER = 14;
+    private int lEPIBLINJOB_;
     /**
-     * <code>int32 NOLJBNBNLML = 9;</code>
-     * @return The nOLJBNBNLML.
+     * <code>int32 LEPIBLINJOB = 14;</code>
+     * @return The lEPIBLINJOB.
      */
     @java.lang.Override
-    public int getNOLJBNBNLML() {
-      return nOLJBNBNLML_;
+    public int getLEPIBLINJOB() {
+      return lEPIBLINJOB_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class QueryFilterOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mJEFLBPJBKM_ != 0) {
-        output.writeInt32(7, mJEFLBPJBKM_);
+      if (fHPJBGOBDOE_ != 0) {
+        output.writeInt32(2, fHPJBGOBDOE_);
       }
-      if (nOLJBNBNLML_ != 0) {
-        output.writeInt32(9, nOLJBNBNLML_);
+      if (lEPIBLINJOB_ != 0) {
+        output.writeInt32(14, lEPIBLINJOB_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class QueryFilterOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mJEFLBPJBKM_ != 0) {
+      if (fHPJBGOBDOE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, mJEFLBPJBKM_);
+          .computeInt32Size(2, fHPJBGOBDOE_);
       }
-      if (nOLJBNBNLML_ != 0) {
+      if (lEPIBLINJOB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, nOLJBNBNLML_);
+          .computeInt32Size(14, lEPIBLINJOB_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class QueryFilterOuterClass {
       }
       emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter other = (emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter) obj;
 
-      if (getMJEFLBPJBKM()
-          != other.getMJEFLBPJBKM()) return false;
-      if (getNOLJBNBNLML()
-          != other.getNOLJBNBNLML()) return false;
+      if (getFHPJBGOBDOE()
+          != other.getFHPJBGOBDOE()) return false;
+      if (getLEPIBLINJOB()
+          != other.getLEPIBLINJOB()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +206,10 @@ public final class QueryFilterOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MJEFLBPJBKM_FIELD_NUMBER;
-      hash = (53 * hash) + getMJEFLBPJBKM();
-      hash = (37 * hash) + NOLJBNBNLML_FIELD_NUMBER;
-      hash = (53 * hash) + getNOLJBNBNLML();
+      hash = (37 * hash) + FHPJBGOBDOE_FIELD_NUMBER;
+      hash = (53 * hash) + getFHPJBGOBDOE();
+      hash = (37 * hash) + LEPIBLINJOB_FIELD_NUMBER;
+      hash = (53 * hash) + getLEPIBLINJOB();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,9 +343,9 @@ public final class QueryFilterOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mJEFLBPJBKM_ = 0;
+        fHPJBGOBDOE_ = 0;
 
-        nOLJBNBNLML_ = 0;
+        lEPIBLINJOB_ = 0;
 
         return this;
       }
@@ -373,8 +373,8 @@ public final class QueryFilterOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter buildPartial() {
         emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter result = new emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter(this);
-        result.mJEFLBPJBKM_ = mJEFLBPJBKM_;
-        result.nOLJBNBNLML_ = nOLJBNBNLML_;
+        result.fHPJBGOBDOE_ = fHPJBGOBDOE_;
+        result.lEPIBLINJOB_ = lEPIBLINJOB_;
         onBuilt();
         return result;
       }
@@ -423,11 +423,11 @@ public final class QueryFilterOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter other) {
         if (other == emu.grasscutter.net.proto.QueryFilterOuterClass.QueryFilter.getDefaultInstance()) return this;
-        if (other.getMJEFLBPJBKM() != 0) {
-          setMJEFLBPJBKM(other.getMJEFLBPJBKM());
+        if (other.getFHPJBGOBDOE() != 0) {
+          setFHPJBGOBDOE(other.getFHPJBGOBDOE());
         }
-        if (other.getNOLJBNBNLML() != 0) {
-          setNOLJBNBNLML(other.getNOLJBNBNLML());
+        if (other.getLEPIBLINJOB() != 0) {
+          setLEPIBLINJOB(other.getLEPIBLINJOB());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,64 +458,64 @@ public final class QueryFilterOuterClass {
         return this;
       }
 
-      private int mJEFLBPJBKM_ ;
+      private int fHPJBGOBDOE_ ;
       /**
-       * <code>int32 MJEFLBPJBKM = 7;</code>
-       * @return The mJEFLBPJBKM.
+       * <code>int32 FHPJBGOBDOE = 2;</code>
+       * @return The fHPJBGOBDOE.
        */
       @java.lang.Override
-      public int getMJEFLBPJBKM() {
-        return mJEFLBPJBKM_;
+      public int getFHPJBGOBDOE() {
+        return fHPJBGOBDOE_;
       }
       /**
-       * <code>int32 MJEFLBPJBKM = 7;</code>
-       * @param value The mJEFLBPJBKM to set.
+       * <code>int32 FHPJBGOBDOE = 2;</code>
+       * @param value The fHPJBGOBDOE to set.
        * @return This builder for chaining.
        */
-      public Builder setMJEFLBPJBKM(int value) {
+      public Builder setFHPJBGOBDOE(int value) {
         
-        mJEFLBPJBKM_ = value;
+        fHPJBGOBDOE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 MJEFLBPJBKM = 7;</code>
+       * <code>int32 FHPJBGOBDOE = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMJEFLBPJBKM() {
+      public Builder clearFHPJBGOBDOE() {
         
-        mJEFLBPJBKM_ = 0;
+        fHPJBGOBDOE_ = 0;
         onChanged();
         return this;
       }
 
-      private int nOLJBNBNLML_ ;
+      private int lEPIBLINJOB_ ;
       /**
-       * <code>int32 NOLJBNBNLML = 9;</code>
-       * @return The nOLJBNBNLML.
+       * <code>int32 LEPIBLINJOB = 14;</code>
+       * @return The lEPIBLINJOB.
        */
       @java.lang.Override
-      public int getNOLJBNBNLML() {
-        return nOLJBNBNLML_;
+      public int getLEPIBLINJOB() {
+        return lEPIBLINJOB_;
       }
       /**
-       * <code>int32 NOLJBNBNLML = 9;</code>
-       * @param value The nOLJBNBNLML to set.
+       * <code>int32 LEPIBLINJOB = 14;</code>
+       * @param value The lEPIBLINJOB to set.
        * @return This builder for chaining.
        */
-      public Builder setNOLJBNBNLML(int value) {
+      public Builder setLEPIBLINJOB(int value) {
         
-        nOLJBNBNLML_ = value;
+        lEPIBLINJOB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 NOLJBNBNLML = 9;</code>
+       * <code>int32 LEPIBLINJOB = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNOLJBNBNLML() {
+      public Builder clearLEPIBLINJOB() {
         
-        nOLJBNBNLML_ = 0;
+        lEPIBLINJOB_ = 0;
         onChanged();
         return this;
       }
@@ -586,8 +586,8 @@ public final class QueryFilterOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021QueryFilter.proto\"7\n\013QueryFilter\022\023\n\013MJ" +
-      "EFLBPJBKM\030\007 \001(\005\022\023\n\013NOLJBNBNLML\030\t \001(\005B\033\n\031" +
+      "\n\021QueryFilter.proto\"7\n\013QueryFilter\022\023\n\013FH" +
+      "PJBGOBDOE\030\002 \001(\005\022\023\n\013LEPIBLINJOB\030\016 \001(\005B\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -599,7 +599,7 @@ public final class QueryFilterOuterClass {
     internal_static_QueryFilter_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QueryFilter_descriptor,
-        new java.lang.String[] { "MJEFLBPJBKM", "NOLJBNBNLML", });
+        new java.lang.String[] { "FHPJBGOBDOE", "LEPIBLINJOB", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

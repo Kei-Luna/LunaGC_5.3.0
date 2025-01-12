@@ -15,49 +15,45 @@ public final class ChallengeFinishTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf enum {@code ChallengeFinishType}
    */
   public enum ChallengeFinishType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>CHALLENGE_FINISH_TYPE_NONE = 0;</code>
+     * <code>ChallengeFinishType_NONE = 0;</code>
      */
-    CHALLENGE_FINISH_TYPE_NONE(0),
+    ChallengeFinishType_NONE(0),
     /**
-     * <code>CHALLENGE_FINISH_TYPE_FAIL = 1;</code>
+     * <code>ChallengeFinishType_FAIL = 1;</code>
      */
-    CHALLENGE_FINISH_TYPE_FAIL(1),
+    ChallengeFinishType_FAIL(1),
     /**
-     * <code>CHALLENGE_FINISH_TYPE_SUCC = 2;</code>
+     * <code>ChallengeFinishType_SUCC = 2;</code>
      */
-    CHALLENGE_FINISH_TYPE_SUCC(2),
+    ChallengeFinishType_SUCC(2),
     /**
-     * <code>CHALLENGE_FINISH_TYPE_PAUSE = 3;</code>
+     * <code>ChallengeFinishType_PAUSE = 3;</code>
      */
-    CHALLENGE_FINISH_TYPE_PAUSE(3),
+    ChallengeFinishType_PAUSE(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>CHALLENGE_FINISH_TYPE_NONE = 0;</code>
+     * <code>ChallengeFinishType_NONE = 0;</code>
      */
-    public static final int CHALLENGE_FINISH_TYPE_NONE_VALUE = 0;
+    public static final int ChallengeFinishType_NONE_VALUE = 0;
     /**
-     * <code>CHALLENGE_FINISH_TYPE_FAIL = 1;</code>
+     * <code>ChallengeFinishType_FAIL = 1;</code>
      */
-    public static final int CHALLENGE_FINISH_TYPE_FAIL_VALUE = 1;
+    public static final int ChallengeFinishType_FAIL_VALUE = 1;
     /**
-     * <code>CHALLENGE_FINISH_TYPE_SUCC = 2;</code>
+     * <code>ChallengeFinishType_SUCC = 2;</code>
      */
-    public static final int CHALLENGE_FINISH_TYPE_SUCC_VALUE = 2;
+    public static final int ChallengeFinishType_SUCC_VALUE = 2;
     /**
-     * <code>CHALLENGE_FINISH_TYPE_PAUSE = 3;</code>
+     * <code>ChallengeFinishType_PAUSE = 3;</code>
      */
-    public static final int CHALLENGE_FINISH_TYPE_PAUSE_VALUE = 3;
+    public static final int ChallengeFinishType_PAUSE_VALUE = 3;
 
 
     public final int getNumber() {
@@ -84,10 +80,10 @@ public final class ChallengeFinishTypeOuterClass {
      */
     public static ChallengeFinishType forNumber(int value) {
       switch (value) {
-        case 0: return CHALLENGE_FINISH_TYPE_NONE;
-        case 1: return CHALLENGE_FINISH_TYPE_FAIL;
-        case 2: return CHALLENGE_FINISH_TYPE_SUCC;
-        case 3: return CHALLENGE_FINISH_TYPE_PAUSE;
+        case 0: return ChallengeFinishType_NONE;
+        case 1: return ChallengeFinishType_FAIL;
+        case 2: return ChallengeFinishType_SUCC;
+        case 3: return ChallengeFinishType_PAUSE;
         default: return null;
       }
     }
@@ -153,12 +149,12 @@ public final class ChallengeFinishTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031ChallengeFinishType.proto*\226\001\n\023Challeng" +
-      "eFinishType\022\036\n\032CHALLENGE_FINISH_TYPE_NON" +
-      "E\020\000\022\036\n\032CHALLENGE_FINISH_TYPE_FAIL\020\001\022\036\n\032C" +
-      "HALLENGE_FINISH_TYPE_SUCC\020\002\022\037\n\033CHALLENGE" +
-      "_FINISH_TYPE_PAUSE\020\003B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\031ChallengeFinishType.proto*\216\001\n\023Challeng" +
+      "eFinishType\022\034\n\030ChallengeFinishType_NONE\020" +
+      "\000\022\034\n\030ChallengeFinishType_FAIL\020\001\022\034\n\030Chall" +
+      "engeFinishType_SUCC\020\002\022\035\n\031ChallengeFinish" +
+      "Type_PAUSE\020\003B\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

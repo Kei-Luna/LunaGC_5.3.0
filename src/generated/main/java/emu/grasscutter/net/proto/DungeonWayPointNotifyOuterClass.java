@@ -19,35 +19,29 @@ public final class DungeonWayPointNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_add = 6;</code>
-     * @return The isAdd.
-     */
-    boolean getIsAdd();
-
-    /**
-     * <code>repeated uint32 active_way_point_list = 14;</code>
+     * <code>repeated uint32 active_way_point_list = 3;</code>
      * @return A list containing the activeWayPointList.
      */
     java.util.List<java.lang.Integer> getActiveWayPointListList();
     /**
-     * <code>repeated uint32 active_way_point_list = 14;</code>
+     * <code>repeated uint32 active_way_point_list = 3;</code>
      * @return The count of activeWayPointList.
      */
     int getActiveWayPointListCount();
     /**
-     * <code>repeated uint32 active_way_point_list = 14;</code>
+     * <code>repeated uint32 active_way_point_list = 3;</code>
      * @param index The index of the element to return.
      * @return The activeWayPointList at the given index.
      */
     int getActiveWayPointList(int index);
+
+    /**
+     * <code>bool is_add = 13;</code>
+     * @return The isAdd.
+     */
+    boolean getIsAdd();
   }
   /**
-   * <pre>
-   * CmdId: 26318
-   * Version: 4.6.0
-   * Obfs: KHEPLNGHMBP
-   * </pre>
-   *
    * Protobuf type {@code DungeonWayPointNotify}
    */
   public static final class DungeonWayPointNotify extends
@@ -94,12 +88,7 @@ public final class DungeonWayPointNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              isAdd_ = input.readBool();
-              break;
-            }
-            case 112: {
+            case 24: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 activeWayPointList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -107,7 +96,7 @@ public final class DungeonWayPointNotifyOuterClass {
               activeWayPointList_.addInt(input.readUInt32());
               break;
             }
-            case 114: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -118,6 +107,11 @@ public final class DungeonWayPointNotifyOuterClass {
                 activeWayPointList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 104: {
+
+              isAdd_ = input.readBool();
               break;
             }
             default: {
@@ -155,21 +149,10 @@ public final class DungeonWayPointNotifyOuterClass {
               emu.grasscutter.net.proto.DungeonWayPointNotifyOuterClass.DungeonWayPointNotify.class, emu.grasscutter.net.proto.DungeonWayPointNotifyOuterClass.DungeonWayPointNotify.Builder.class);
     }
 
-    public static final int IS_ADD_FIELD_NUMBER = 6;
-    private boolean isAdd_;
-    /**
-     * <code>bool is_add = 6;</code>
-     * @return The isAdd.
-     */
-    @java.lang.Override
-    public boolean getIsAdd() {
-      return isAdd_;
-    }
-
-    public static final int ACTIVE_WAY_POINT_LIST_FIELD_NUMBER = 14;
+    public static final int ACTIVE_WAY_POINT_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList activeWayPointList_;
     /**
-     * <code>repeated uint32 active_way_point_list = 14;</code>
+     * <code>repeated uint32 active_way_point_list = 3;</code>
      * @return A list containing the activeWayPointList.
      */
     @java.lang.Override
@@ -178,14 +161,14 @@ public final class DungeonWayPointNotifyOuterClass {
       return activeWayPointList_;
     }
     /**
-     * <code>repeated uint32 active_way_point_list = 14;</code>
+     * <code>repeated uint32 active_way_point_list = 3;</code>
      * @return The count of activeWayPointList.
      */
     public int getActiveWayPointListCount() {
       return activeWayPointList_.size();
     }
     /**
-     * <code>repeated uint32 active_way_point_list = 14;</code>
+     * <code>repeated uint32 active_way_point_list = 3;</code>
      * @param index The index of the element to return.
      * @return The activeWayPointList at the given index.
      */
@@ -193,6 +176,17 @@ public final class DungeonWayPointNotifyOuterClass {
       return activeWayPointList_.getInt(index);
     }
     private int activeWayPointListMemoizedSerializedSize = -1;
+
+    public static final int IS_ADD_FIELD_NUMBER = 13;
+    private boolean isAdd_;
+    /**
+     * <code>bool is_add = 13;</code>
+     * @return The isAdd.
+     */
+    @java.lang.Override
+    public boolean getIsAdd() {
+      return isAdd_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -209,15 +203,15 @@ public final class DungeonWayPointNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (isAdd_ != false) {
-        output.writeBool(6, isAdd_);
-      }
       if (getActiveWayPointListList().size() > 0) {
-        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(activeWayPointListMemoizedSerializedSize);
       }
       for (int i = 0; i < activeWayPointList_.size(); i++) {
         output.writeUInt32NoTag(activeWayPointList_.getInt(i));
+      }
+      if (isAdd_ != false) {
+        output.writeBool(13, isAdd_);
       }
       unknownFields.writeTo(output);
     }
@@ -228,10 +222,6 @@ public final class DungeonWayPointNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isAdd_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isAdd_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < activeWayPointList_.size(); i++) {
@@ -245,6 +235,10 @@ public final class DungeonWayPointNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         activeWayPointListMemoizedSerializedSize = dataSize;
+      }
+      if (isAdd_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isAdd_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -261,10 +255,10 @@ public final class DungeonWayPointNotifyOuterClass {
       }
       emu.grasscutter.net.proto.DungeonWayPointNotifyOuterClass.DungeonWayPointNotify other = (emu.grasscutter.net.proto.DungeonWayPointNotifyOuterClass.DungeonWayPointNotify) obj;
 
-      if (getIsAdd()
-          != other.getIsAdd()) return false;
       if (!getActiveWayPointListList()
           .equals(other.getActiveWayPointListList())) return false;
+      if (getIsAdd()
+          != other.getIsAdd()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -276,13 +270,13 @@ public final class DungeonWayPointNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ADD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAdd());
       if (getActiveWayPointListCount() > 0) {
         hash = (37 * hash) + ACTIVE_WAY_POINT_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getActiveWayPointListList().hashCode();
       }
+      hash = (37 * hash) + IS_ADD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsAdd());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,12 +373,6 @@ public final class DungeonWayPointNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 26318
-     * Version: 4.6.0
-     * Obfs: KHEPLNGHMBP
-     * </pre>
-     *
      * Protobuf type {@code DungeonWayPointNotify}
      */
     public static final class Builder extends
@@ -422,10 +410,10 @@ public final class DungeonWayPointNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isAdd_ = false;
-
         activeWayPointList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        isAdd_ = false;
+
         return this;
       }
 
@@ -453,12 +441,12 @@ public final class DungeonWayPointNotifyOuterClass {
       public emu.grasscutter.net.proto.DungeonWayPointNotifyOuterClass.DungeonWayPointNotify buildPartial() {
         emu.grasscutter.net.proto.DungeonWayPointNotifyOuterClass.DungeonWayPointNotify result = new emu.grasscutter.net.proto.DungeonWayPointNotifyOuterClass.DungeonWayPointNotify(this);
         int from_bitField0_ = bitField0_;
-        result.isAdd_ = isAdd_;
         if (((bitField0_ & 0x00000001) != 0)) {
           activeWayPointList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.activeWayPointList_ = activeWayPointList_;
+        result.isAdd_ = isAdd_;
         onBuilt();
         return result;
       }
@@ -507,9 +495,6 @@ public final class DungeonWayPointNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DungeonWayPointNotifyOuterClass.DungeonWayPointNotify other) {
         if (other == emu.grasscutter.net.proto.DungeonWayPointNotifyOuterClass.DungeonWayPointNotify.getDefaultInstance()) return this;
-        if (other.getIsAdd() != false) {
-          setIsAdd(other.getIsAdd());
-        }
         if (!other.activeWayPointList_.isEmpty()) {
           if (activeWayPointList_.isEmpty()) {
             activeWayPointList_ = other.activeWayPointList_;
@@ -519,6 +504,9 @@ public final class DungeonWayPointNotifyOuterClass {
             activeWayPointList_.addAll(other.activeWayPointList_);
           }
           onChanged();
+        }
+        if (other.getIsAdd() != false) {
+          setIsAdd(other.getIsAdd());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -550,37 +538,6 @@ public final class DungeonWayPointNotifyOuterClass {
       }
       private int bitField0_;
 
-      private boolean isAdd_ ;
-      /**
-       * <code>bool is_add = 6;</code>
-       * @return The isAdd.
-       */
-      @java.lang.Override
-      public boolean getIsAdd() {
-        return isAdd_;
-      }
-      /**
-       * <code>bool is_add = 6;</code>
-       * @param value The isAdd to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsAdd(boolean value) {
-        
-        isAdd_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_add = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsAdd() {
-        
-        isAdd_ = false;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList activeWayPointList_ = emptyIntList();
       private void ensureActiveWayPointListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -589,7 +546,7 @@ public final class DungeonWayPointNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 active_way_point_list = 14;</code>
+       * <code>repeated uint32 active_way_point_list = 3;</code>
        * @return A list containing the activeWayPointList.
        */
       public java.util.List<java.lang.Integer>
@@ -598,14 +555,14 @@ public final class DungeonWayPointNotifyOuterClass {
                  java.util.Collections.unmodifiableList(activeWayPointList_) : activeWayPointList_;
       }
       /**
-       * <code>repeated uint32 active_way_point_list = 14;</code>
+       * <code>repeated uint32 active_way_point_list = 3;</code>
        * @return The count of activeWayPointList.
        */
       public int getActiveWayPointListCount() {
         return activeWayPointList_.size();
       }
       /**
-       * <code>repeated uint32 active_way_point_list = 14;</code>
+       * <code>repeated uint32 active_way_point_list = 3;</code>
        * @param index The index of the element to return.
        * @return The activeWayPointList at the given index.
        */
@@ -613,7 +570,7 @@ public final class DungeonWayPointNotifyOuterClass {
         return activeWayPointList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 active_way_point_list = 14;</code>
+       * <code>repeated uint32 active_way_point_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The activeWayPointList to set.
        * @return This builder for chaining.
@@ -626,7 +583,7 @@ public final class DungeonWayPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 active_way_point_list = 14;</code>
+       * <code>repeated uint32 active_way_point_list = 3;</code>
        * @param value The activeWayPointList to add.
        * @return This builder for chaining.
        */
@@ -637,7 +594,7 @@ public final class DungeonWayPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 active_way_point_list = 14;</code>
+       * <code>repeated uint32 active_way_point_list = 3;</code>
        * @param values The activeWayPointList to add.
        * @return This builder for chaining.
        */
@@ -650,12 +607,43 @@ public final class DungeonWayPointNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 active_way_point_list = 14;</code>
+       * <code>repeated uint32 active_way_point_list = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearActiveWayPointList() {
         activeWayPointList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private boolean isAdd_ ;
+      /**
+       * <code>bool is_add = 13;</code>
+       * @return The isAdd.
+       */
+      @java.lang.Override
+      public boolean getIsAdd() {
+        return isAdd_;
+      }
+      /**
+       * <code>bool is_add = 13;</code>
+       * @param value The isAdd to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsAdd(boolean value) {
+        
+        isAdd_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_add = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsAdd() {
+        
+        isAdd_ = false;
         onChanged();
         return this;
       }
@@ -727,8 +715,8 @@ public final class DungeonWayPointNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033DungeonWayPointNotify.proto\"F\n\025Dungeon" +
-      "WayPointNotify\022\016\n\006is_add\030\006 \001(\010\022\035\n\025active" +
-      "_way_point_list\030\016 \003(\rB\033\n\031emu.grasscutter" +
+      "WayPointNotify\022\035\n\025active_way_point_list\030" +
+      "\003 \003(\r\022\016\n\006is_add\030\r \001(\010B\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -740,7 +728,7 @@ public final class DungeonWayPointNotifyOuterClass {
     internal_static_DungeonWayPointNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DungeonWayPointNotify_descriptor,
-        new java.lang.String[] { "IsAdd", "ActiveWayPointList", });
+        new java.lang.String[] { "ActiveWayPointList", "IsAdd", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,16 +19,12 @@ public final class WeatherWizardDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 shield_value = 2;</code>
+     * <code>bool shield_value = 10;</code>
      * @return The shieldValue.
      */
-    int getShieldValue();
+    boolean getShieldValue();
   }
   /**
-   * <pre>
-   * Obf: JLHBJFIOFDB
-   * </pre>
-   *
    * Protobuf type {@code WeatherWizardData}
    */
   public static final class WeatherWizardData extends
@@ -73,9 +69,9 @@ public final class WeatherWizardDataOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 80: {
 
-              shieldValue_ = input.readUInt32();
+              shieldValue_ = input.readBool();
               break;
             }
             default: {
@@ -110,14 +106,14 @@ public final class WeatherWizardDataOuterClass {
               emu.grasscutter.net.proto.WeatherWizardDataOuterClass.WeatherWizardData.class, emu.grasscutter.net.proto.WeatherWizardDataOuterClass.WeatherWizardData.Builder.class);
     }
 
-    public static final int SHIELD_VALUE_FIELD_NUMBER = 2;
-    private int shieldValue_;
+    public static final int SHIELD_VALUE_FIELD_NUMBER = 10;
+    private boolean shieldValue_;
     /**
-     * <code>uint32 shield_value = 2;</code>
+     * <code>bool shield_value = 10;</code>
      * @return The shieldValue.
      */
     @java.lang.Override
-    public int getShieldValue() {
+    public boolean getShieldValue() {
       return shieldValue_;
     }
 
@@ -135,8 +131,8 @@ public final class WeatherWizardDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (shieldValue_ != 0) {
-        output.writeUInt32(2, shieldValue_);
+      if (shieldValue_ != false) {
+        output.writeBool(10, shieldValue_);
       }
       unknownFields.writeTo(output);
     }
@@ -147,9 +143,9 @@ public final class WeatherWizardDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (shieldValue_ != 0) {
+      if (shieldValue_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, shieldValue_);
+          .computeBoolSize(10, shieldValue_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -180,7 +176,8 @@ public final class WeatherWizardDataOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SHIELD_VALUE_FIELD_NUMBER;
-      hash = (53 * hash) + getShieldValue();
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getShieldValue());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -277,10 +274,6 @@ public final class WeatherWizardDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JLHBJFIOFDB
-     * </pre>
-     *
      * Protobuf type {@code WeatherWizardData}
      */
     public static final class Builder extends
@@ -318,7 +311,7 @@ public final class WeatherWizardDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        shieldValue_ = 0;
+        shieldValue_ = false;
 
         return this;
       }
@@ -395,7 +388,7 @@ public final class WeatherWizardDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WeatherWizardDataOuterClass.WeatherWizardData other) {
         if (other == emu.grasscutter.net.proto.WeatherWizardDataOuterClass.WeatherWizardData.getDefaultInstance()) return this;
-        if (other.getShieldValue() != 0) {
+        if (other.getShieldValue() != false) {
           setShieldValue(other.getShieldValue());
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -427,33 +420,33 @@ public final class WeatherWizardDataOuterClass {
         return this;
       }
 
-      private int shieldValue_ ;
+      private boolean shieldValue_ ;
       /**
-       * <code>uint32 shield_value = 2;</code>
+       * <code>bool shield_value = 10;</code>
        * @return The shieldValue.
        */
       @java.lang.Override
-      public int getShieldValue() {
+      public boolean getShieldValue() {
         return shieldValue_;
       }
       /**
-       * <code>uint32 shield_value = 2;</code>
+       * <code>bool shield_value = 10;</code>
        * @param value The shieldValue to set.
        * @return This builder for chaining.
        */
-      public Builder setShieldValue(int value) {
+      public Builder setShieldValue(boolean value) {
         
         shieldValue_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 shield_value = 2;</code>
+       * <code>bool shield_value = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearShieldValue() {
         
-        shieldValue_ = 0;
+        shieldValue_ = false;
         onChanged();
         return this;
       }
@@ -525,7 +518,7 @@ public final class WeatherWizardDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027WeatherWizardData.proto\")\n\021WeatherWiza" +
-      "rdData\022\024\n\014shield_value\030\002 \001(\rB\033\n\031emu.gras" +
+      "rdData\022\024\n\014shield_value\030\n \001(\010B\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

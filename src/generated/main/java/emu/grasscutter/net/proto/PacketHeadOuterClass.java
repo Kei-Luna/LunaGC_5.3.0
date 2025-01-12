@@ -183,10 +183,6 @@ public final class PacketHeadOuterClass {
     int getGameThreadIndex();
   }
   /**
-   * <pre>
-   * Obf: OAOKNOKBALP
-   * </pre>
-   *
    * Protobuf type {@code PacketHead}
    */
   public static final class PacketHead extends
@@ -1090,10 +1086,6 @@ public final class PacketHeadOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: OAOKNOKBALP
-     * </pre>
-     *
      * Protobuf type {@code PacketHead}
      */
     public static final class Builder extends

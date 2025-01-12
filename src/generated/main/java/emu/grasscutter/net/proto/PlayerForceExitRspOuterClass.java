@@ -19,17 +19,12 @@ public final class PlayerForceExitRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 22773
-   * Obf: KMDIDIAADBP
-   * </pre>
-   *
    * Protobuf type {@code PlayerForceExitRsp}
    */
   public static final class PlayerForceExitRsp extends
@@ -74,7 +69,7 @@ public final class PlayerForceExitRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 112: {
 
               retcode_ = input.readInt32();
               break;
@@ -111,10 +106,10 @@ public final class PlayerForceExitRspOuterClass {
               emu.grasscutter.net.proto.PlayerForceExitRspOuterClass.PlayerForceExitRsp.class, emu.grasscutter.net.proto.PlayerForceExitRspOuterClass.PlayerForceExitRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -137,7 +132,7 @@ public final class PlayerForceExitRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +145,7 @@ public final class PlayerForceExitRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,11 +273,6 @@ public final class PlayerForceExitRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 22773
-     * Obf: KMDIDIAADBP
-     * </pre>
-     *
      * Protobuf type {@code PlayerForceExitRsp}
      */
     public static final class Builder extends
@@ -431,7 +421,7 @@ public final class PlayerForceExitRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -439,7 +429,7 @@ public final class PlayerForceExitRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -450,7 +440,7 @@ public final class PlayerForceExitRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -527,7 +517,7 @@ public final class PlayerForceExitRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030PlayerForceExitRsp.proto\"%\n\022PlayerForc" +
-      "eExitRsp\022\017\n\007retcode\030\t \001(\005B\033\n\031emu.grasscu" +
+      "eExitRsp\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

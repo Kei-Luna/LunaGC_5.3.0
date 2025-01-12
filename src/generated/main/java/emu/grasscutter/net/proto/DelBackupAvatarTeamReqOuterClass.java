@@ -25,10 +25,6 @@ public final class DelBackupAvatarTeamReqOuterClass {
     int getBackupAvatarTeamId();
   }
   /**
-   * <pre>
-   * CmdId: 8721
-   * </pre>
-   *
    * Protobuf type {@code DelBackupAvatarTeamReq}
    */
   public static final class DelBackupAvatarTeamReq extends
@@ -277,10 +273,6 @@ public final class DelBackupAvatarTeamReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 8721
-     * </pre>
-     *
      * Protobuf type {@code DelBackupAvatarTeamReq}
      */
     public static final class Builder extends

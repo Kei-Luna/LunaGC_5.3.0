@@ -19,15 +19,16 @@ public final class CanUseSkillNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_can_use_skill = 2;</code>
+     * <code>bool is_can_use_skill = 13;</code>
      * @return The isCanUseSkill.
      */
     boolean getIsCanUseSkill();
   }
   /**
    * <pre>
-   * Version: 4.6.0
-   * CmdId: 5279
+   * Version: 4.7.0
+   * CmdId: 21073 or 2728?
+   * ?
    * </pre>
    *
    * Protobuf type {@code CanUseSkillNotify}
@@ -74,7 +75,7 @@ public final class CanUseSkillNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 104: {
 
               isCanUseSkill_ = input.readBool();
               break;
@@ -111,10 +112,10 @@ public final class CanUseSkillNotifyOuterClass {
               emu.grasscutter.net.proto.CanUseSkillNotifyOuterClass.CanUseSkillNotify.class, emu.grasscutter.net.proto.CanUseSkillNotifyOuterClass.CanUseSkillNotify.Builder.class);
     }
 
-    public static final int IS_CAN_USE_SKILL_FIELD_NUMBER = 2;
+    public static final int IS_CAN_USE_SKILL_FIELD_NUMBER = 13;
     private boolean isCanUseSkill_;
     /**
-     * <code>bool is_can_use_skill = 2;</code>
+     * <code>bool is_can_use_skill = 13;</code>
      * @return The isCanUseSkill.
      */
     @java.lang.Override
@@ -137,7 +138,7 @@ public final class CanUseSkillNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isCanUseSkill_ != false) {
-        output.writeBool(2, isCanUseSkill_);
+        output.writeBool(13, isCanUseSkill_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +151,7 @@ public final class CanUseSkillNotifyOuterClass {
       size = 0;
       if (isCanUseSkill_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isCanUseSkill_);
+          .computeBoolSize(13, isCanUseSkill_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,8 +281,9 @@ public final class CanUseSkillNotifyOuterClass {
     }
     /**
      * <pre>
-     * Version: 4.6.0
-     * CmdId: 5279
+     * Version: 4.7.0
+     * CmdId: 21073 or 2728?
+     * ?
      * </pre>
      *
      * Protobuf type {@code CanUseSkillNotify}
@@ -432,7 +434,7 @@ public final class CanUseSkillNotifyOuterClass {
 
       private boolean isCanUseSkill_ ;
       /**
-       * <code>bool is_can_use_skill = 2;</code>
+       * <code>bool is_can_use_skill = 13;</code>
        * @return The isCanUseSkill.
        */
       @java.lang.Override
@@ -440,7 +442,7 @@ public final class CanUseSkillNotifyOuterClass {
         return isCanUseSkill_;
       }
       /**
-       * <code>bool is_can_use_skill = 2;</code>
+       * <code>bool is_can_use_skill = 13;</code>
        * @param value The isCanUseSkill to set.
        * @return This builder for chaining.
        */
@@ -451,7 +453,7 @@ public final class CanUseSkillNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_can_use_skill = 2;</code>
+       * <code>bool is_can_use_skill = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsCanUseSkill() {
@@ -528,7 +530,7 @@ public final class CanUseSkillNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027CanUseSkillNotify.proto\"-\n\021CanUseSkill" +
-      "Notify\022\030\n\020is_can_use_skill\030\002 \001(\010B\033\n\031emu." +
+      "Notify\022\030\n\020is_can_use_skill\030\r \001(\010B\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

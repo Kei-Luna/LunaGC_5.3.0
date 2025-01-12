@@ -19,11 +19,6 @@ public final class GetWorldMpInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * <pre>
-   * CmdId: 6964
-   * Obf: EGCDJCJPCCI
-   * </pre>
-   *
    * Protobuf type {@code GetWorldMpInfoReq}
    */
   public static final class GetWorldMpInfoReq extends
@@ -245,11 +240,6 @@ public final class GetWorldMpInfoReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 6964
-     * Obf: EGCDJCJPCCI
-     * </pre>
-     *
      * Protobuf type {@code GetWorldMpInfoReq}
      */
     public static final class Builder extends

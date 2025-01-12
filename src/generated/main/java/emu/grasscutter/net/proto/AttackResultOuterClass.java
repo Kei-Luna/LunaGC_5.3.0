@@ -19,240 +19,232 @@ public final class AttackResultOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 attacker_id = 1;</code>
-     * @return The attackerId.
+     * <code>.HitCollision hit_collision = 13;</code>
+     * @return Whether the hitCollision field is set.
      */
-    int getAttackerId();
+    boolean hasHitCollision();
+    /**
+     * <code>.HitCollision hit_collision = 13;</code>
+     * @return The hitCollision.
+     */
+    emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision getHitCollision();
+    /**
+     * <code>.HitCollision hit_collision = 13;</code>
+     */
+    emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollisionOrBuilder getHitCollisionOrBuilder();
 
     /**
-     * <code>float damage = 2;</code>
-     * @return The damage.
+     * <code>.Vector resolve_dir = 14;</code>
+     * @return Whether the resolveDir field is set.
      */
-    float getDamage();
+    boolean hasResolveDir();
+    /**
+     * <code>.Vector resolve_dir = 14;</code>
+     * @return The resolveDir.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getResolveDir();
+    /**
+     * <code>.Vector resolve_dir = 14;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getResolveDirOrBuilder();
 
     /**
-     * <code>int32 hit_retreat_angle_compat = 3;</code>
-     * @return The hitRetreatAngleCompat.
-     */
-    int getHitRetreatAngleCompat();
-
-    /**
-     * <code>uint32 defense_id = 5;</code>
-     * @return The defenseId.
-     */
-    int getDefenseId();
-
-    /**
-     * <code>.AbilityIdentifier ability_identifier = 6;</code>
+     * <code>.AbilityIdentifier ability_identifier = 5;</code>
      * @return Whether the abilityIdentifier field is set.
      */
     boolean hasAbilityIdentifier();
     /**
-     * <code>.AbilityIdentifier ability_identifier = 6;</code>
+     * <code>.AbilityIdentifier ability_identifier = 5;</code>
      * @return The abilityIdentifier.
      */
     emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier getAbilityIdentifier();
     /**
-     * <code>.AbilityIdentifier ability_identifier = 6;</code>
+     * <code>.AbilityIdentifier ability_identifier = 5;</code>
      */
     emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifierOrBuilder getAbilityIdentifierOrBuilder();
 
     /**
-     * <code>uint32 IICFMJEJOBO = 7;</code>
-     * @return The iICFMJEJOBO.
-     */
-    int getIICFMJEJOBO();
-
-    /**
-     * <code>bool is_crit = 8;</code>
-     * @return The isCrit.
-     */
-    boolean getIsCrit();
-
-    /**
-     * <code>.Vector resolved_dir = 9;</code>
-     * @return Whether the resolvedDir field is set.
-     */
-    boolean hasResolvedDir();
-    /**
-     * <code>.Vector resolved_dir = 9;</code>
-     * @return The resolvedDir.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getResolvedDir();
-    /**
-     * <code>.Vector resolved_dir = 9;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getResolvedDirOrBuilder();
-
-    /**
-     * <code>uint32 BAABHEHFAPH = 10;</code>
-     * @return The bAABHEHFAPH.
-     */
-    int getBAABHEHFAPH();
-
-    /**
-     * <code>uint32 element_type = 11;</code>
-     * @return The elementType.
-     */
-    int getElementType();
-
-    /**
-     * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-     * @return Whether the hitEffResult field is set.
-     */
-    boolean hasHitEffResult();
-    /**
-     * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-     * @return The hitEffResult.
-     */
-    emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult getHitEffResult();
-    /**
-     * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-     */
-    emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder getHitEffResultOrBuilder();
-
-    /**
-     * <code>string anim_event_id = 14;</code>
+     * <code>string anim_event_id = 6;</code>
      * @return The animEventId.
      */
     java.lang.String getAnimEventId();
     /**
-     * <code>string anim_event_id = 14;</code>
+     * <code>string anim_event_id = 6;</code>
      * @return The bytes for animEventId.
      */
     com.google.protobuf.ByteString
         getAnimEventIdBytes();
 
     /**
-     * <code>.HitCollision hit_collision = 15;</code>
-     * @return Whether the hitCollision field is set.
+     * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+     * @return Whether the hitEffResult field is set.
      */
-    boolean hasHitCollision();
+    boolean hasHitEffResult();
     /**
-     * <code>.HitCollision hit_collision = 15;</code>
-     * @return The hitCollision.
+     * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+     * @return The hitEffResult.
      */
-    emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision getHitCollision();
+    emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult getHitEffResult();
     /**
-     * <code>.HitCollision hit_collision = 15;</code>
+     * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
      */
-    emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollisionOrBuilder getHitCollisionOrBuilder();
+    emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder getHitEffResultOrBuilder();
 
     /**
-     * <code>uint32 MPBEBAKODGF = 222;</code>
-     * @return The mPBEBAKODGF.
+     * <code>float damage = 1;</code>
+     * @return The damage.
      */
-    int getMPBEBAKODGF();
+    float getDamage();
 
     /**
-     * <code>uint32 EBLEIGGLHLG = 309;</code>
-     * @return The eBLEIGGLHLG.
+     * <code>uint32 COJHCEFMEEE = 1271;</code>
+     * @return The cOJHCEFMEEE.
      */
-    int getEBLEIGGLHLG();
+    int getCOJHCEFMEEE();
 
     /**
-     * <pre>
-     * 533
-     * </pre>
-     *
-     * <code>float element_amplify_rate = 389;</code>
-     * @return The elementAmplifyRate.
+     * <code>uint32 EFNIHOAOFEF = 1065;</code>
+     * @return The eFNIHOAOFEF.
      */
-    float getElementAmplifyRate();
+    int getEFNIHOAOFEF();
 
     /**
-     * <pre>
-     * 389
-     * </pre>
-     *
-     * <code>float element_durability_attenuation = 533;</code>
-     * @return The elementDurabilityAttenuation.
+     * <code>uint32 BPMFJFJBNED = 1702;</code>
+     * @return The bPMFJFJBNED.
      */
-    float getElementDurabilityAttenuation();
+    int getBPMFJFJBNED();
 
     /**
-     * <code>bool mute_element_hurt = 590;</code>
-     * @return The muteElementHurt.
+     * <code>uint32 EDADGELMDNN = 511;</code>
+     * @return The eDADGELMDNN.
      */
-    boolean getMuteElementHurt();
+    int getEDADGELMDNN();
 
     /**
-     * <code>uint32 MFLNDGPEJOE = 606;</code>
-     * @return The mFLNDGPEJOE.
+     * <code>float CNKKJIAPAMM = 998;</code>
+     * @return The cNKKJIAPAMM.
      */
-    int getMFLNDGPEJOE();
+    float getCNKKJIAPAMM();
 
     /**
-     * <code>float damage_shield = 779;</code>
-     * @return The damageShield.
+     * <code>uint32 ICMDKMMHJLO = 4;</code>
+     * @return The iCMDKMMHJLO.
      */
-    float getDamageShield();
+    int getICMDKMMHJLO();
 
     /**
-     * <code>uint32 IFMINIBILFH = 823;</code>
-     * @return The iFMINIBILFH.
+     * <code>uint32 DIBMILDAPNJ = 598;</code>
+     * @return The dIBMILDAPNJ.
      */
-    int getIFMINIBILFH();
+    int getDIBMILDAPNJ();
 
     /**
-     * <code>uint32 JKGEMBOBALF = 1349;</code>
-     * @return The jKGEMBOBALF.
+     * <code>uint32 ANMFCGEINNB = 1308;</code>
+     * @return The aNMFCGEINNB.
      */
-    int getJKGEMBOBALF();
+    int getANMFCGEINNB();
 
     /**
-     * <code>uint32 EKJHPCHCMLF = 1525;</code>
-     * @return The eKJHPCHCMLF.
+     * <code>uint32 attacker_id = 9;</code>
+     * @return The attackerId.
      */
-    int getEKJHPCHCMLF();
+    int getAttackerId();
 
     /**
-     * <code>uint32 POAFAPLMPEB = 1640;</code>
-     * @return The pOAFAPLMPEB.
+     * <code>float EJAHLAJDPHA = 333;</code>
+     * @return The eJAHLAJDPHA.
      */
-    int getPOAFAPLMPEB();
+    float getEJAHLAJDPHA();
 
     /**
-     * <code>bool use_gadget_damage_action = 1733;</code>
-     * @return The useGadgetDamageAction.
+     * <code>uint32 BILPCAOBDBB = 591;</code>
+     * @return The bILPCAOBDBB.
      */
-    boolean getUseGadgetDamageAction();
+    int getBILPCAOBDBB();
 
     /**
-     * <code>uint32 ELIFILCNKFD = 1756;</code>
-     * @return The eLIFILCNKFD.
+     * <code>float IPLDBCEHDPJ = 1791;</code>
+     * @return The iPLDBCEHDPJ.
      */
-    int getELIFILCNKFD();
+    float getIPLDBCEHDPJ();
 
     /**
-     * <code>float endure_delta = 1827;</code>
-     * @return The endureDelta.
+     * <code>float ACAGOHDJONJ = 992;</code>
+     * @return The aCAGOHDJONJ.
      */
-    float getEndureDelta();
+    float getACAGOHDJONJ();
 
     /**
-     * <code>uint32 FLPFBAFHGNN = 1842;</code>
-     * @return The fLPFBAFHGNN.
+     * <code>bool KMKABKHIAHB = 847;</code>
+     * @return The kMKABKHIAHB.
      */
-    int getFLPFBAFHGNN();
+    boolean getKMKABKHIAHB();
 
     /**
-     * <code>uint32 NMPEDJOPMMB = 1859;</code>
-     * @return The nMPEDJOPMMB.
+     * <code>bool DDBMLBBBDFL = 1064;</code>
+     * @return The dDBMLBBBDFL.
      */
-    int getNMPEDJOPMMB();
+    boolean getDDBMLBBBDFL();
 
     /**
-     * <code>bool is_resist_text = 1978;</code>
-     * @return The isResistText.
+     * <code>bool IJLNDDIPPBI = 1687;</code>
+     * @return The iJLNDDIPPBI.
      */
-    boolean getIsResistText();
+    boolean getIJLNDDIPPBI();
 
     /**
-     * <code>uint32 GMNJEDPKNDE = 2023;</code>
-     * @return The gMNJEDPKNDE.
+     * <code>bool AGGMJJACOFC = 8;</code>
+     * @return The aGGMJJACOFC.
      */
-    int getGMNJEDPKNDE();
+    boolean getAGGMJJACOFC();
+
+    /**
+     * <code>uint32 defense_id = 12;</code>
+     * @return The defenseId.
+     */
+    int getDefenseId();
+
+    /**
+     * <code>uint32 GIHKDPHENPO = 215;</code>
+     * @return The gIHKDPHENPO.
+     */
+    int getGIHKDPHENPO();
+
+    /**
+     * <code>uint32 MKFEOFALBKJ = 886;</code>
+     * @return The mKFEOFALBKJ.
+     */
+    int getMKFEOFALBKJ();
+
+    /**
+     * <code>uint32 element_type = 2;</code>
+     * @return The elementType.
+     */
+    int getElementType();
+
+    /**
+     * <code>uint32 LANMHNELOCE = 420;</code>
+     * @return The lANMHNELOCE.
+     */
+    int getLANMHNELOCE();
+
+    /**
+     * <code>uint32 CBCDCADHGLD = 3;</code>
+     * @return The cBCDCADHGLD.
+     */
+    int getCBCDCADHGLD();
+
+    /**
+     * <code>uint32 IAAAGHFANMH = 1381;</code>
+     * @return The iAAAGHFANMH.
+     */
+    int getIAAAGHFANMH();
+
+    /**
+     * <code>int32 hit_retreat_angle_compat = 7;</code>
+     * @return The hitRetreatAngleCompat.
+     */
+    int getHitRetreatAngleCompat();
   }
   /**
    * Protobuf type {@code AttackResult}
@@ -300,27 +292,27 @@ public final class AttackResultOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              attackerId_ = input.readUInt32();
-              break;
-            }
-            case 21: {
+            case 13: {
 
               damage_ = input.readFloat();
               break;
             }
+            case 16: {
+
+              elementType_ = input.readUInt32();
+              break;
+            }
             case 24: {
 
-              hitRetreatAngleCompat_ = input.readInt32();
+              cBCDCADHGLD_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 32: {
 
-              defenseId_ = input.readUInt32();
+              iCMDKMMHJLO_ = input.readUInt32();
               break;
             }
-            case 50: {
+            case 42: {
               emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.Builder subBuilder = null;
               if (abilityIdentifier_ != null) {
                 subBuilder = abilityIdentifier_.toBuilder();
@@ -333,40 +325,28 @@ public final class AttackResultOuterClass {
 
               break;
             }
+            case 50: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              animEventId_ = s;
+              break;
+            }
             case 56: {
 
-              iICFMJEJOBO_ = input.readUInt32();
+              hitRetreatAngleCompat_ = input.readInt32();
               break;
             }
             case 64: {
 
-              isCrit_ = input.readBool();
+              aGGMJJACOFC_ = input.readBool();
               break;
             }
-            case 74: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (resolvedDir_ != null) {
-                subBuilder = resolvedDir_.toBuilder();
-              }
-              resolvedDir_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(resolvedDir_);
-                resolvedDir_ = subBuilder.buildPartial();
-              }
+            case 72: {
 
+              attackerId_ = input.readUInt32();
               break;
             }
-            case 80: {
-
-              bAABHEHFAPH_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              elementType_ = input.readUInt32();
-              break;
-            }
-            case 106: {
+            case 90: {
               emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder subBuilder = null;
               if (hitEffResult_ != null) {
                 subBuilder = hitEffResult_.toBuilder();
@@ -379,13 +359,12 @@ public final class AttackResultOuterClass {
 
               break;
             }
-            case 114: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 96: {
 
-              animEventId_ = s;
+              defenseId_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 106: {
               emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision.Builder subBuilder = null;
               if (hitCollision_ != null) {
                 subBuilder = hitCollision_.toBuilder();
@@ -398,94 +377,107 @@ public final class AttackResultOuterClass {
 
               break;
             }
-            case 1776: {
+            case 114: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (resolveDir_ != null) {
+                subBuilder = resolveDir_.toBuilder();
+              }
+              resolveDir_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(resolveDir_);
+                resolveDir_ = subBuilder.buildPartial();
+              }
 
-              mPBEBAKODGF_ = input.readUInt32();
               break;
             }
-            case 2472: {
+            case 1720: {
 
-              eBLEIGGLHLG_ = input.readUInt32();
+              gIHKDPHENPO_ = input.readUInt32();
               break;
             }
-            case 3117: {
+            case 2669: {
 
-              elementAmplifyRate_ = input.readFloat();
+              eJAHLAJDPHA_ = input.readFloat();
               break;
             }
-            case 4269: {
+            case 3360: {
 
-              elementDurabilityAttenuation_ = input.readFloat();
+              lANMHNELOCE_ = input.readUInt32();
               break;
             }
-            case 4720: {
+            case 4088: {
 
-              muteElementHurt_ = input.readBool();
+              eDADGELMDNN_ = input.readUInt32();
               break;
             }
-            case 4848: {
+            case 4728: {
 
-              mFLNDGPEJOE_ = input.readUInt32();
+              bILPCAOBDBB_ = input.readUInt32();
               break;
             }
-            case 6237: {
+            case 4784: {
 
-              damageShield_ = input.readFloat();
+              dIBMILDAPNJ_ = input.readUInt32();
               break;
             }
-            case 6584: {
+            case 6776: {
 
-              iFMINIBILFH_ = input.readUInt32();
+              kMKABKHIAHB_ = input.readBool();
               break;
             }
-            case 10792: {
+            case 7088: {
 
-              jKGEMBOBALF_ = input.readUInt32();
+              mKFEOFALBKJ_ = input.readUInt32();
               break;
             }
-            case 12200: {
+            case 7941: {
 
-              eKJHPCHCMLF_ = input.readUInt32();
+              aCAGOHDJONJ_ = input.readFloat();
               break;
             }
-            case 13120: {
+            case 7989: {
 
-              pOAFAPLMPEB_ = input.readUInt32();
+              cNKKJIAPAMM_ = input.readFloat();
               break;
             }
-            case 13864: {
+            case 8512: {
 
-              useGadgetDamageAction_ = input.readBool();
+              dDBMLBBBDFL_ = input.readBool();
               break;
             }
-            case 14048: {
+            case 8520: {
 
-              eLIFILCNKFD_ = input.readUInt32();
+              eFNIHOAOFEF_ = input.readUInt32();
               break;
             }
-            case 14621: {
+            case 10168: {
 
-              endureDelta_ = input.readFloat();
+              cOJHCEFMEEE_ = input.readUInt32();
               break;
             }
-            case 14736: {
+            case 10464: {
 
-              fLPFBAFHGNN_ = input.readUInt32();
+              aNMFCGEINNB_ = input.readUInt32();
               break;
             }
-            case 14872: {
+            case 11048: {
 
-              nMPEDJOPMMB_ = input.readUInt32();
+              iAAAGHFANMH_ = input.readUInt32();
               break;
             }
-            case 15824: {
+            case 13496: {
 
-              isResistText_ = input.readBool();
+              iJLNDDIPPBI_ = input.readBool();
               break;
             }
-            case 16184: {
+            case 13616: {
 
-              gMNJEDPKNDE_ = input.readUInt32();
+              bPMFJFJBNED_ = input.readUInt32();
+              break;
+            }
+            case 14333: {
+
+              iPLDBCEHDPJ_ = input.readFloat();
               break;
             }
             default: {
@@ -520,54 +512,62 @@ public final class AttackResultOuterClass {
               emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult.class, emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult.Builder.class);
     }
 
-    public static final int ATTACKER_ID_FIELD_NUMBER = 1;
-    private int attackerId_;
+    public static final int HIT_COLLISION_FIELD_NUMBER = 13;
+    private emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision hitCollision_;
     /**
-     * <code>uint32 attacker_id = 1;</code>
-     * @return The attackerId.
+     * <code>.HitCollision hit_collision = 13;</code>
+     * @return Whether the hitCollision field is set.
      */
     @java.lang.Override
-    public int getAttackerId() {
-      return attackerId_;
+    public boolean hasHitCollision() {
+      return hitCollision_ != null;
     }
-
-    public static final int DAMAGE_FIELD_NUMBER = 2;
-    private float damage_;
     /**
-     * <code>float damage = 2;</code>
-     * @return The damage.
+     * <code>.HitCollision hit_collision = 13;</code>
+     * @return The hitCollision.
      */
     @java.lang.Override
-    public float getDamage() {
-      return damage_;
+    public emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision getHitCollision() {
+      return hitCollision_ == null ? emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision.getDefaultInstance() : hitCollision_;
     }
-
-    public static final int HIT_RETREAT_ANGLE_COMPAT_FIELD_NUMBER = 3;
-    private int hitRetreatAngleCompat_;
     /**
-     * <code>int32 hit_retreat_angle_compat = 3;</code>
-     * @return The hitRetreatAngleCompat.
+     * <code>.HitCollision hit_collision = 13;</code>
      */
     @java.lang.Override
-    public int getHitRetreatAngleCompat() {
-      return hitRetreatAngleCompat_;
+    public emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollisionOrBuilder getHitCollisionOrBuilder() {
+      return getHitCollision();
     }
 
-    public static final int DEFENSE_ID_FIELD_NUMBER = 5;
-    private int defenseId_;
+    public static final int RESOLVE_DIR_FIELD_NUMBER = 14;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector resolveDir_;
     /**
-     * <code>uint32 defense_id = 5;</code>
-     * @return The defenseId.
+     * <code>.Vector resolve_dir = 14;</code>
+     * @return Whether the resolveDir field is set.
      */
     @java.lang.Override
-    public int getDefenseId() {
-      return defenseId_;
+    public boolean hasResolveDir() {
+      return resolveDir_ != null;
+    }
+    /**
+     * <code>.Vector resolve_dir = 14;</code>
+     * @return The resolveDir.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getResolveDir() {
+      return resolveDir_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : resolveDir_;
+    }
+    /**
+     * <code>.Vector resolve_dir = 14;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getResolveDirOrBuilder() {
+      return getResolveDir();
     }
 
-    public static final int ABILITY_IDENTIFIER_FIELD_NUMBER = 6;
+    public static final int ABILITY_IDENTIFIER_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier abilityIdentifier_;
     /**
-     * <code>.AbilityIdentifier ability_identifier = 6;</code>
+     * <code>.AbilityIdentifier ability_identifier = 5;</code>
      * @return Whether the abilityIdentifier field is set.
      */
     @java.lang.Override
@@ -575,7 +575,7 @@ public final class AttackResultOuterClass {
       return abilityIdentifier_ != null;
     }
     /**
-     * <code>.AbilityIdentifier ability_identifier = 6;</code>
+     * <code>.AbilityIdentifier ability_identifier = 5;</code>
      * @return The abilityIdentifier.
      */
     @java.lang.Override
@@ -583,113 +583,17 @@ public final class AttackResultOuterClass {
       return abilityIdentifier_ == null ? emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.getDefaultInstance() : abilityIdentifier_;
     }
     /**
-     * <code>.AbilityIdentifier ability_identifier = 6;</code>
+     * <code>.AbilityIdentifier ability_identifier = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifierOrBuilder getAbilityIdentifierOrBuilder() {
       return getAbilityIdentifier();
     }
 
-    public static final int IICFMJEJOBO_FIELD_NUMBER = 7;
-    private int iICFMJEJOBO_;
-    /**
-     * <code>uint32 IICFMJEJOBO = 7;</code>
-     * @return The iICFMJEJOBO.
-     */
-    @java.lang.Override
-    public int getIICFMJEJOBO() {
-      return iICFMJEJOBO_;
-    }
-
-    public static final int IS_CRIT_FIELD_NUMBER = 8;
-    private boolean isCrit_;
-    /**
-     * <code>bool is_crit = 8;</code>
-     * @return The isCrit.
-     */
-    @java.lang.Override
-    public boolean getIsCrit() {
-      return isCrit_;
-    }
-
-    public static final int RESOLVED_DIR_FIELD_NUMBER = 9;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector resolvedDir_;
-    /**
-     * <code>.Vector resolved_dir = 9;</code>
-     * @return Whether the resolvedDir field is set.
-     */
-    @java.lang.Override
-    public boolean hasResolvedDir() {
-      return resolvedDir_ != null;
-    }
-    /**
-     * <code>.Vector resolved_dir = 9;</code>
-     * @return The resolvedDir.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getResolvedDir() {
-      return resolvedDir_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : resolvedDir_;
-    }
-    /**
-     * <code>.Vector resolved_dir = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getResolvedDirOrBuilder() {
-      return getResolvedDir();
-    }
-
-    public static final int BAABHEHFAPH_FIELD_NUMBER = 10;
-    private int bAABHEHFAPH_;
-    /**
-     * <code>uint32 BAABHEHFAPH = 10;</code>
-     * @return The bAABHEHFAPH.
-     */
-    @java.lang.Override
-    public int getBAABHEHFAPH() {
-      return bAABHEHFAPH_;
-    }
-
-    public static final int ELEMENT_TYPE_FIELD_NUMBER = 11;
-    private int elementType_;
-    /**
-     * <code>uint32 element_type = 11;</code>
-     * @return The elementType.
-     */
-    @java.lang.Override
-    public int getElementType() {
-      return elementType_;
-    }
-
-    public static final int HIT_EFF_RESULT_FIELD_NUMBER = 13;
-    private emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult hitEffResult_;
-    /**
-     * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-     * @return Whether the hitEffResult field is set.
-     */
-    @java.lang.Override
-    public boolean hasHitEffResult() {
-      return hitEffResult_ != null;
-    }
-    /**
-     * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-     * @return The hitEffResult.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult getHitEffResult() {
-      return hitEffResult_ == null ? emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.getDefaultInstance() : hitEffResult_;
-    }
-    /**
-     * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder getHitEffResultOrBuilder() {
-      return getHitEffResult();
-    }
-
-    public static final int ANIM_EVENT_ID_FIELD_NUMBER = 14;
+    public static final int ANIM_EVENT_ID_FIELD_NUMBER = 6;
     private volatile java.lang.Object animEventId_;
     /**
-     * <code>string anim_event_id = 14;</code>
+     * <code>string anim_event_id = 6;</code>
      * @return The animEventId.
      */
     @java.lang.Override
@@ -706,7 +610,7 @@ public final class AttackResultOuterClass {
       }
     }
     /**
-     * <code>string anim_event_id = 14;</code>
+     * <code>string anim_event_id = 6;</code>
      * @return The bytes for animEventId.
      */
     @java.lang.Override
@@ -724,236 +628,316 @@ public final class AttackResultOuterClass {
       }
     }
 
-    public static final int HIT_COLLISION_FIELD_NUMBER = 15;
-    private emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision hitCollision_;
+    public static final int HIT_EFF_RESULT_FIELD_NUMBER = 11;
+    private emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult hitEffResult_;
     /**
-     * <code>.HitCollision hit_collision = 15;</code>
-     * @return Whether the hitCollision field is set.
+     * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+     * @return Whether the hitEffResult field is set.
      */
     @java.lang.Override
-    public boolean hasHitCollision() {
-      return hitCollision_ != null;
+    public boolean hasHitEffResult() {
+      return hitEffResult_ != null;
     }
     /**
-     * <code>.HitCollision hit_collision = 15;</code>
-     * @return The hitCollision.
+     * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+     * @return The hitEffResult.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision getHitCollision() {
-      return hitCollision_ == null ? emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision.getDefaultInstance() : hitCollision_;
+    public emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult getHitEffResult() {
+      return hitEffResult_ == null ? emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.getDefaultInstance() : hitEffResult_;
     }
     /**
-     * <code>.HitCollision hit_collision = 15;</code>
+     * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollisionOrBuilder getHitCollisionOrBuilder() {
-      return getHitCollision();
-    }
-
-    public static final int MPBEBAKODGF_FIELD_NUMBER = 222;
-    private int mPBEBAKODGF_;
-    /**
-     * <code>uint32 MPBEBAKODGF = 222;</code>
-     * @return The mPBEBAKODGF.
-     */
-    @java.lang.Override
-    public int getMPBEBAKODGF() {
-      return mPBEBAKODGF_;
+    public emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder getHitEffResultOrBuilder() {
+      return getHitEffResult();
     }
 
-    public static final int EBLEIGGLHLG_FIELD_NUMBER = 309;
-    private int eBLEIGGLHLG_;
+    public static final int DAMAGE_FIELD_NUMBER = 1;
+    private float damage_;
     /**
-     * <code>uint32 EBLEIGGLHLG = 309;</code>
-     * @return The eBLEIGGLHLG.
+     * <code>float damage = 1;</code>
+     * @return The damage.
      */
     @java.lang.Override
-    public int getEBLEIGGLHLG() {
-      return eBLEIGGLHLG_;
+    public float getDamage() {
+      return damage_;
     }
 
-    public static final int ELEMENT_AMPLIFY_RATE_FIELD_NUMBER = 389;
-    private float elementAmplifyRate_;
+    public static final int COJHCEFMEEE_FIELD_NUMBER = 1271;
+    private int cOJHCEFMEEE_;
     /**
-     * <pre>
-     * 533
-     * </pre>
-     *
-     * <code>float element_amplify_rate = 389;</code>
-     * @return The elementAmplifyRate.
+     * <code>uint32 COJHCEFMEEE = 1271;</code>
+     * @return The cOJHCEFMEEE.
      */
     @java.lang.Override
-    public float getElementAmplifyRate() {
-      return elementAmplifyRate_;
+    public int getCOJHCEFMEEE() {
+      return cOJHCEFMEEE_;
     }
 
-    public static final int ELEMENT_DURABILITY_ATTENUATION_FIELD_NUMBER = 533;
-    private float elementDurabilityAttenuation_;
+    public static final int EFNIHOAOFEF_FIELD_NUMBER = 1065;
+    private int eFNIHOAOFEF_;
     /**
-     * <pre>
-     * 389
-     * </pre>
-     *
-     * <code>float element_durability_attenuation = 533;</code>
-     * @return The elementDurabilityAttenuation.
+     * <code>uint32 EFNIHOAOFEF = 1065;</code>
+     * @return The eFNIHOAOFEF.
      */
     @java.lang.Override
-    public float getElementDurabilityAttenuation() {
-      return elementDurabilityAttenuation_;
+    public int getEFNIHOAOFEF() {
+      return eFNIHOAOFEF_;
     }
 
-    public static final int MUTE_ELEMENT_HURT_FIELD_NUMBER = 590;
-    private boolean muteElementHurt_;
+    public static final int BPMFJFJBNED_FIELD_NUMBER = 1702;
+    private int bPMFJFJBNED_;
     /**
-     * <code>bool mute_element_hurt = 590;</code>
-     * @return The muteElementHurt.
+     * <code>uint32 BPMFJFJBNED = 1702;</code>
+     * @return The bPMFJFJBNED.
      */
     @java.lang.Override
-    public boolean getMuteElementHurt() {
-      return muteElementHurt_;
+    public int getBPMFJFJBNED() {
+      return bPMFJFJBNED_;
     }
 
-    public static final int MFLNDGPEJOE_FIELD_NUMBER = 606;
-    private int mFLNDGPEJOE_;
+    public static final int EDADGELMDNN_FIELD_NUMBER = 511;
+    private int eDADGELMDNN_;
     /**
-     * <code>uint32 MFLNDGPEJOE = 606;</code>
-     * @return The mFLNDGPEJOE.
+     * <code>uint32 EDADGELMDNN = 511;</code>
+     * @return The eDADGELMDNN.
      */
     @java.lang.Override
-    public int getMFLNDGPEJOE() {
-      return mFLNDGPEJOE_;
+    public int getEDADGELMDNN() {
+      return eDADGELMDNN_;
     }
 
-    public static final int DAMAGE_SHIELD_FIELD_NUMBER = 779;
-    private float damageShield_;
+    public static final int CNKKJIAPAMM_FIELD_NUMBER = 998;
+    private float cNKKJIAPAMM_;
     /**
-     * <code>float damage_shield = 779;</code>
-     * @return The damageShield.
+     * <code>float CNKKJIAPAMM = 998;</code>
+     * @return The cNKKJIAPAMM.
      */
     @java.lang.Override
-    public float getDamageShield() {
-      return damageShield_;
+    public float getCNKKJIAPAMM() {
+      return cNKKJIAPAMM_;
     }
 
-    public static final int IFMINIBILFH_FIELD_NUMBER = 823;
-    private int iFMINIBILFH_;
+    public static final int ICMDKMMHJLO_FIELD_NUMBER = 4;
+    private int iCMDKMMHJLO_;
     /**
-     * <code>uint32 IFMINIBILFH = 823;</code>
-     * @return The iFMINIBILFH.
+     * <code>uint32 ICMDKMMHJLO = 4;</code>
+     * @return The iCMDKMMHJLO.
      */
     @java.lang.Override
-    public int getIFMINIBILFH() {
-      return iFMINIBILFH_;
+    public int getICMDKMMHJLO() {
+      return iCMDKMMHJLO_;
     }
 
-    public static final int JKGEMBOBALF_FIELD_NUMBER = 1349;
-    private int jKGEMBOBALF_;
+    public static final int DIBMILDAPNJ_FIELD_NUMBER = 598;
+    private int dIBMILDAPNJ_;
     /**
-     * <code>uint32 JKGEMBOBALF = 1349;</code>
-     * @return The jKGEMBOBALF.
+     * <code>uint32 DIBMILDAPNJ = 598;</code>
+     * @return The dIBMILDAPNJ.
      */
     @java.lang.Override
-    public int getJKGEMBOBALF() {
-      return jKGEMBOBALF_;
+    public int getDIBMILDAPNJ() {
+      return dIBMILDAPNJ_;
     }
 
-    public static final int EKJHPCHCMLF_FIELD_NUMBER = 1525;
-    private int eKJHPCHCMLF_;
+    public static final int ANMFCGEINNB_FIELD_NUMBER = 1308;
+    private int aNMFCGEINNB_;
     /**
-     * <code>uint32 EKJHPCHCMLF = 1525;</code>
-     * @return The eKJHPCHCMLF.
+     * <code>uint32 ANMFCGEINNB = 1308;</code>
+     * @return The aNMFCGEINNB.
      */
     @java.lang.Override
-    public int getEKJHPCHCMLF() {
-      return eKJHPCHCMLF_;
+    public int getANMFCGEINNB() {
+      return aNMFCGEINNB_;
     }
 
-    public static final int POAFAPLMPEB_FIELD_NUMBER = 1640;
-    private int pOAFAPLMPEB_;
+    public static final int ATTACKER_ID_FIELD_NUMBER = 9;
+    private int attackerId_;
     /**
-     * <code>uint32 POAFAPLMPEB = 1640;</code>
-     * @return The pOAFAPLMPEB.
+     * <code>uint32 attacker_id = 9;</code>
+     * @return The attackerId.
      */
     @java.lang.Override
-    public int getPOAFAPLMPEB() {
-      return pOAFAPLMPEB_;
+    public int getAttackerId() {
+      return attackerId_;
     }
 
-    public static final int USE_GADGET_DAMAGE_ACTION_FIELD_NUMBER = 1733;
-    private boolean useGadgetDamageAction_;
+    public static final int EJAHLAJDPHA_FIELD_NUMBER = 333;
+    private float eJAHLAJDPHA_;
     /**
-     * <code>bool use_gadget_damage_action = 1733;</code>
-     * @return The useGadgetDamageAction.
+     * <code>float EJAHLAJDPHA = 333;</code>
+     * @return The eJAHLAJDPHA.
      */
     @java.lang.Override
-    public boolean getUseGadgetDamageAction() {
-      return useGadgetDamageAction_;
+    public float getEJAHLAJDPHA() {
+      return eJAHLAJDPHA_;
     }
 
-    public static final int ELIFILCNKFD_FIELD_NUMBER = 1756;
-    private int eLIFILCNKFD_;
+    public static final int BILPCAOBDBB_FIELD_NUMBER = 591;
+    private int bILPCAOBDBB_;
     /**
-     * <code>uint32 ELIFILCNKFD = 1756;</code>
-     * @return The eLIFILCNKFD.
+     * <code>uint32 BILPCAOBDBB = 591;</code>
+     * @return The bILPCAOBDBB.
      */
     @java.lang.Override
-    public int getELIFILCNKFD() {
-      return eLIFILCNKFD_;
+    public int getBILPCAOBDBB() {
+      return bILPCAOBDBB_;
     }
 
-    public static final int ENDURE_DELTA_FIELD_NUMBER = 1827;
-    private float endureDelta_;
+    public static final int IPLDBCEHDPJ_FIELD_NUMBER = 1791;
+    private float iPLDBCEHDPJ_;
     /**
-     * <code>float endure_delta = 1827;</code>
-     * @return The endureDelta.
+     * <code>float IPLDBCEHDPJ = 1791;</code>
+     * @return The iPLDBCEHDPJ.
      */
     @java.lang.Override
-    public float getEndureDelta() {
-      return endureDelta_;
+    public float getIPLDBCEHDPJ() {
+      return iPLDBCEHDPJ_;
     }
 
-    public static final int FLPFBAFHGNN_FIELD_NUMBER = 1842;
-    private int fLPFBAFHGNN_;
+    public static final int ACAGOHDJONJ_FIELD_NUMBER = 992;
+    private float aCAGOHDJONJ_;
     /**
-     * <code>uint32 FLPFBAFHGNN = 1842;</code>
-     * @return The fLPFBAFHGNN.
+     * <code>float ACAGOHDJONJ = 992;</code>
+     * @return The aCAGOHDJONJ.
      */
     @java.lang.Override
-    public int getFLPFBAFHGNN() {
-      return fLPFBAFHGNN_;
+    public float getACAGOHDJONJ() {
+      return aCAGOHDJONJ_;
     }
 
-    public static final int NMPEDJOPMMB_FIELD_NUMBER = 1859;
-    private int nMPEDJOPMMB_;
+    public static final int KMKABKHIAHB_FIELD_NUMBER = 847;
+    private boolean kMKABKHIAHB_;
     /**
-     * <code>uint32 NMPEDJOPMMB = 1859;</code>
-     * @return The nMPEDJOPMMB.
+     * <code>bool KMKABKHIAHB = 847;</code>
+     * @return The kMKABKHIAHB.
      */
     @java.lang.Override
-    public int getNMPEDJOPMMB() {
-      return nMPEDJOPMMB_;
+    public boolean getKMKABKHIAHB() {
+      return kMKABKHIAHB_;
     }
 
-    public static final int IS_RESIST_TEXT_FIELD_NUMBER = 1978;
-    private boolean isResistText_;
+    public static final int DDBMLBBBDFL_FIELD_NUMBER = 1064;
+    private boolean dDBMLBBBDFL_;
     /**
-     * <code>bool is_resist_text = 1978;</code>
-     * @return The isResistText.
+     * <code>bool DDBMLBBBDFL = 1064;</code>
+     * @return The dDBMLBBBDFL.
      */
     @java.lang.Override
-    public boolean getIsResistText() {
-      return isResistText_;
+    public boolean getDDBMLBBBDFL() {
+      return dDBMLBBBDFL_;
     }
 
-    public static final int GMNJEDPKNDE_FIELD_NUMBER = 2023;
-    private int gMNJEDPKNDE_;
+    public static final int IJLNDDIPPBI_FIELD_NUMBER = 1687;
+    private boolean iJLNDDIPPBI_;
     /**
-     * <code>uint32 GMNJEDPKNDE = 2023;</code>
-     * @return The gMNJEDPKNDE.
+     * <code>bool IJLNDDIPPBI = 1687;</code>
+     * @return The iJLNDDIPPBI.
      */
     @java.lang.Override
-    public int getGMNJEDPKNDE() {
-      return gMNJEDPKNDE_;
+    public boolean getIJLNDDIPPBI() {
+      return iJLNDDIPPBI_;
+    }
+
+    public static final int AGGMJJACOFC_FIELD_NUMBER = 8;
+    private boolean aGGMJJACOFC_;
+    /**
+     * <code>bool AGGMJJACOFC = 8;</code>
+     * @return The aGGMJJACOFC.
+     */
+    @java.lang.Override
+    public boolean getAGGMJJACOFC() {
+      return aGGMJJACOFC_;
+    }
+
+    public static final int DEFENSE_ID_FIELD_NUMBER = 12;
+    private int defenseId_;
+    /**
+     * <code>uint32 defense_id = 12;</code>
+     * @return The defenseId.
+     */
+    @java.lang.Override
+    public int getDefenseId() {
+      return defenseId_;
+    }
+
+    public static final int GIHKDPHENPO_FIELD_NUMBER = 215;
+    private int gIHKDPHENPO_;
+    /**
+     * <code>uint32 GIHKDPHENPO = 215;</code>
+     * @return The gIHKDPHENPO.
+     */
+    @java.lang.Override
+    public int getGIHKDPHENPO() {
+      return gIHKDPHENPO_;
+    }
+
+    public static final int MKFEOFALBKJ_FIELD_NUMBER = 886;
+    private int mKFEOFALBKJ_;
+    /**
+     * <code>uint32 MKFEOFALBKJ = 886;</code>
+     * @return The mKFEOFALBKJ.
+     */
+    @java.lang.Override
+    public int getMKFEOFALBKJ() {
+      return mKFEOFALBKJ_;
+    }
+
+    public static final int ELEMENT_TYPE_FIELD_NUMBER = 2;
+    private int elementType_;
+    /**
+     * <code>uint32 element_type = 2;</code>
+     * @return The elementType.
+     */
+    @java.lang.Override
+    public int getElementType() {
+      return elementType_;
+    }
+
+    public static final int LANMHNELOCE_FIELD_NUMBER = 420;
+    private int lANMHNELOCE_;
+    /**
+     * <code>uint32 LANMHNELOCE = 420;</code>
+     * @return The lANMHNELOCE.
+     */
+    @java.lang.Override
+    public int getLANMHNELOCE() {
+      return lANMHNELOCE_;
+    }
+
+    public static final int CBCDCADHGLD_FIELD_NUMBER = 3;
+    private int cBCDCADHGLD_;
+    /**
+     * <code>uint32 CBCDCADHGLD = 3;</code>
+     * @return The cBCDCADHGLD.
+     */
+    @java.lang.Override
+    public int getCBCDCADHGLD() {
+      return cBCDCADHGLD_;
+    }
+
+    public static final int IAAAGHFANMH_FIELD_NUMBER = 1381;
+    private int iAAAGHFANMH_;
+    /**
+     * <code>uint32 IAAAGHFANMH = 1381;</code>
+     * @return The iAAAGHFANMH.
+     */
+    @java.lang.Override
+    public int getIAAAGHFANMH() {
+      return iAAAGHFANMH_;
+    }
+
+    public static final int HIT_RETREAT_ANGLE_COMPAT_FIELD_NUMBER = 7;
+    private int hitRetreatAngleCompat_;
+    /**
+     * <code>int32 hit_retreat_angle_compat = 7;</code>
+     * @return The hitRetreatAngleCompat.
+     */
+    @java.lang.Override
+    public int getHitRetreatAngleCompat() {
+      return hitRetreatAngleCompat_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -970,98 +954,98 @@ public final class AttackResultOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (attackerId_ != 0) {
-        output.writeUInt32(1, attackerId_);
-      }
       if (damage_ != 0F) {
-        output.writeFloat(2, damage_);
-      }
-      if (hitRetreatAngleCompat_ != 0) {
-        output.writeInt32(3, hitRetreatAngleCompat_);
-      }
-      if (defenseId_ != 0) {
-        output.writeUInt32(5, defenseId_);
-      }
-      if (abilityIdentifier_ != null) {
-        output.writeMessage(6, getAbilityIdentifier());
-      }
-      if (iICFMJEJOBO_ != 0) {
-        output.writeUInt32(7, iICFMJEJOBO_);
-      }
-      if (isCrit_ != false) {
-        output.writeBool(8, isCrit_);
-      }
-      if (resolvedDir_ != null) {
-        output.writeMessage(9, getResolvedDir());
-      }
-      if (bAABHEHFAPH_ != 0) {
-        output.writeUInt32(10, bAABHEHFAPH_);
+        output.writeFloat(1, damage_);
       }
       if (elementType_ != 0) {
-        output.writeUInt32(11, elementType_);
+        output.writeUInt32(2, elementType_);
       }
-      if (hitEffResult_ != null) {
-        output.writeMessage(13, getHitEffResult());
+      if (cBCDCADHGLD_ != 0) {
+        output.writeUInt32(3, cBCDCADHGLD_);
+      }
+      if (iCMDKMMHJLO_ != 0) {
+        output.writeUInt32(4, iCMDKMMHJLO_);
+      }
+      if (abilityIdentifier_ != null) {
+        output.writeMessage(5, getAbilityIdentifier());
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(animEventId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, animEventId_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, animEventId_);
+      }
+      if (hitRetreatAngleCompat_ != 0) {
+        output.writeInt32(7, hitRetreatAngleCompat_);
+      }
+      if (aGGMJJACOFC_ != false) {
+        output.writeBool(8, aGGMJJACOFC_);
+      }
+      if (attackerId_ != 0) {
+        output.writeUInt32(9, attackerId_);
+      }
+      if (hitEffResult_ != null) {
+        output.writeMessage(11, getHitEffResult());
+      }
+      if (defenseId_ != 0) {
+        output.writeUInt32(12, defenseId_);
       }
       if (hitCollision_ != null) {
-        output.writeMessage(15, getHitCollision());
+        output.writeMessage(13, getHitCollision());
       }
-      if (mPBEBAKODGF_ != 0) {
-        output.writeUInt32(222, mPBEBAKODGF_);
+      if (resolveDir_ != null) {
+        output.writeMessage(14, getResolveDir());
       }
-      if (eBLEIGGLHLG_ != 0) {
-        output.writeUInt32(309, eBLEIGGLHLG_);
+      if (gIHKDPHENPO_ != 0) {
+        output.writeUInt32(215, gIHKDPHENPO_);
       }
-      if (elementAmplifyRate_ != 0F) {
-        output.writeFloat(389, elementAmplifyRate_);
+      if (eJAHLAJDPHA_ != 0F) {
+        output.writeFloat(333, eJAHLAJDPHA_);
       }
-      if (elementDurabilityAttenuation_ != 0F) {
-        output.writeFloat(533, elementDurabilityAttenuation_);
+      if (lANMHNELOCE_ != 0) {
+        output.writeUInt32(420, lANMHNELOCE_);
       }
-      if (muteElementHurt_ != false) {
-        output.writeBool(590, muteElementHurt_);
+      if (eDADGELMDNN_ != 0) {
+        output.writeUInt32(511, eDADGELMDNN_);
       }
-      if (mFLNDGPEJOE_ != 0) {
-        output.writeUInt32(606, mFLNDGPEJOE_);
+      if (bILPCAOBDBB_ != 0) {
+        output.writeUInt32(591, bILPCAOBDBB_);
       }
-      if (damageShield_ != 0F) {
-        output.writeFloat(779, damageShield_);
+      if (dIBMILDAPNJ_ != 0) {
+        output.writeUInt32(598, dIBMILDAPNJ_);
       }
-      if (iFMINIBILFH_ != 0) {
-        output.writeUInt32(823, iFMINIBILFH_);
+      if (kMKABKHIAHB_ != false) {
+        output.writeBool(847, kMKABKHIAHB_);
       }
-      if (jKGEMBOBALF_ != 0) {
-        output.writeUInt32(1349, jKGEMBOBALF_);
+      if (mKFEOFALBKJ_ != 0) {
+        output.writeUInt32(886, mKFEOFALBKJ_);
       }
-      if (eKJHPCHCMLF_ != 0) {
-        output.writeUInt32(1525, eKJHPCHCMLF_);
+      if (aCAGOHDJONJ_ != 0F) {
+        output.writeFloat(992, aCAGOHDJONJ_);
       }
-      if (pOAFAPLMPEB_ != 0) {
-        output.writeUInt32(1640, pOAFAPLMPEB_);
+      if (cNKKJIAPAMM_ != 0F) {
+        output.writeFloat(998, cNKKJIAPAMM_);
       }
-      if (useGadgetDamageAction_ != false) {
-        output.writeBool(1733, useGadgetDamageAction_);
+      if (dDBMLBBBDFL_ != false) {
+        output.writeBool(1064, dDBMLBBBDFL_);
       }
-      if (eLIFILCNKFD_ != 0) {
-        output.writeUInt32(1756, eLIFILCNKFD_);
+      if (eFNIHOAOFEF_ != 0) {
+        output.writeUInt32(1065, eFNIHOAOFEF_);
       }
-      if (endureDelta_ != 0F) {
-        output.writeFloat(1827, endureDelta_);
+      if (cOJHCEFMEEE_ != 0) {
+        output.writeUInt32(1271, cOJHCEFMEEE_);
       }
-      if (fLPFBAFHGNN_ != 0) {
-        output.writeUInt32(1842, fLPFBAFHGNN_);
+      if (aNMFCGEINNB_ != 0) {
+        output.writeUInt32(1308, aNMFCGEINNB_);
       }
-      if (nMPEDJOPMMB_ != 0) {
-        output.writeUInt32(1859, nMPEDJOPMMB_);
+      if (iAAAGHFANMH_ != 0) {
+        output.writeUInt32(1381, iAAAGHFANMH_);
       }
-      if (isResistText_ != false) {
-        output.writeBool(1978, isResistText_);
+      if (iJLNDDIPPBI_ != false) {
+        output.writeBool(1687, iJLNDDIPPBI_);
       }
-      if (gMNJEDPKNDE_ != 0) {
-        output.writeUInt32(2023, gMNJEDPKNDE_);
+      if (bPMFJFJBNED_ != 0) {
+        output.writeUInt32(1702, bPMFJFJBNED_);
+      }
+      if (iPLDBCEHDPJ_ != 0F) {
+        output.writeFloat(1791, iPLDBCEHDPJ_);
       }
       unknownFields.writeTo(output);
     }
@@ -1072,128 +1056,128 @@ public final class AttackResultOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (attackerId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, attackerId_);
-      }
       if (damage_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(2, damage_);
-      }
-      if (hitRetreatAngleCompat_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, hitRetreatAngleCompat_);
-      }
-      if (defenseId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, defenseId_);
-      }
-      if (abilityIdentifier_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getAbilityIdentifier());
-      }
-      if (iICFMJEJOBO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, iICFMJEJOBO_);
-      }
-      if (isCrit_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isCrit_);
-      }
-      if (resolvedDir_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getResolvedDir());
-      }
-      if (bAABHEHFAPH_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, bAABHEHFAPH_);
+          .computeFloatSize(1, damage_);
       }
       if (elementType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, elementType_);
+          .computeUInt32Size(2, elementType_);
+      }
+      if (cBCDCADHGLD_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, cBCDCADHGLD_);
+      }
+      if (iCMDKMMHJLO_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, iCMDKMMHJLO_);
+      }
+      if (abilityIdentifier_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, getAbilityIdentifier());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(animEventId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, animEventId_);
+      }
+      if (hitRetreatAngleCompat_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, hitRetreatAngleCompat_);
+      }
+      if (aGGMJJACOFC_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, aGGMJJACOFC_);
+      }
+      if (attackerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, attackerId_);
       }
       if (hitEffResult_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, getHitEffResult());
+          .computeMessageSize(11, getHitEffResult());
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(animEventId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, animEventId_);
+      if (defenseId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, defenseId_);
       }
       if (hitCollision_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getHitCollision());
+          .computeMessageSize(13, getHitCollision());
       }
-      if (mPBEBAKODGF_ != 0) {
+      if (resolveDir_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(222, mPBEBAKODGF_);
+          .computeMessageSize(14, getResolveDir());
       }
-      if (eBLEIGGLHLG_ != 0) {
+      if (gIHKDPHENPO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(309, eBLEIGGLHLG_);
+          .computeUInt32Size(215, gIHKDPHENPO_);
       }
-      if (elementAmplifyRate_ != 0F) {
+      if (eJAHLAJDPHA_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(389, elementAmplifyRate_);
+          .computeFloatSize(333, eJAHLAJDPHA_);
       }
-      if (elementDurabilityAttenuation_ != 0F) {
+      if (lANMHNELOCE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(533, elementDurabilityAttenuation_);
+          .computeUInt32Size(420, lANMHNELOCE_);
       }
-      if (muteElementHurt_ != false) {
+      if (eDADGELMDNN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(590, muteElementHurt_);
+          .computeUInt32Size(511, eDADGELMDNN_);
       }
-      if (mFLNDGPEJOE_ != 0) {
+      if (bILPCAOBDBB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(606, mFLNDGPEJOE_);
+          .computeUInt32Size(591, bILPCAOBDBB_);
       }
-      if (damageShield_ != 0F) {
+      if (dIBMILDAPNJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(779, damageShield_);
+          .computeUInt32Size(598, dIBMILDAPNJ_);
       }
-      if (iFMINIBILFH_ != 0) {
+      if (kMKABKHIAHB_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(823, iFMINIBILFH_);
+          .computeBoolSize(847, kMKABKHIAHB_);
       }
-      if (jKGEMBOBALF_ != 0) {
+      if (mKFEOFALBKJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1349, jKGEMBOBALF_);
+          .computeUInt32Size(886, mKFEOFALBKJ_);
       }
-      if (eKJHPCHCMLF_ != 0) {
+      if (aCAGOHDJONJ_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1525, eKJHPCHCMLF_);
+          .computeFloatSize(992, aCAGOHDJONJ_);
       }
-      if (pOAFAPLMPEB_ != 0) {
+      if (cNKKJIAPAMM_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1640, pOAFAPLMPEB_);
+          .computeFloatSize(998, cNKKJIAPAMM_);
       }
-      if (useGadgetDamageAction_ != false) {
+      if (dDBMLBBBDFL_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1733, useGadgetDamageAction_);
+          .computeBoolSize(1064, dDBMLBBBDFL_);
       }
-      if (eLIFILCNKFD_ != 0) {
+      if (eFNIHOAOFEF_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1756, eLIFILCNKFD_);
+          .computeUInt32Size(1065, eFNIHOAOFEF_);
       }
-      if (endureDelta_ != 0F) {
+      if (cOJHCEFMEEE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(1827, endureDelta_);
+          .computeUInt32Size(1271, cOJHCEFMEEE_);
       }
-      if (fLPFBAFHGNN_ != 0) {
+      if (aNMFCGEINNB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1842, fLPFBAFHGNN_);
+          .computeUInt32Size(1308, aNMFCGEINNB_);
       }
-      if (nMPEDJOPMMB_ != 0) {
+      if (iAAAGHFANMH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1859, nMPEDJOPMMB_);
+          .computeUInt32Size(1381, iAAAGHFANMH_);
       }
-      if (isResistText_ != false) {
+      if (iJLNDDIPPBI_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1978, isResistText_);
+          .computeBoolSize(1687, iJLNDDIPPBI_);
       }
-      if (gMNJEDPKNDE_ != 0) {
+      if (bPMFJFJBNED_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2023, gMNJEDPKNDE_);
+          .computeUInt32Size(1702, bPMFJFJBNED_);
+      }
+      if (iPLDBCEHDPJ_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(1791, iPLDBCEHDPJ_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1210,85 +1194,85 @@ public final class AttackResultOuterClass {
       }
       emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult other = (emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult) obj;
 
-      if (getAttackerId()
-          != other.getAttackerId()) return false;
-      if (java.lang.Float.floatToIntBits(getDamage())
-          != java.lang.Float.floatToIntBits(
-              other.getDamage())) return false;
-      if (getHitRetreatAngleCompat()
-          != other.getHitRetreatAngleCompat()) return false;
-      if (getDefenseId()
-          != other.getDefenseId()) return false;
-      if (hasAbilityIdentifier() != other.hasAbilityIdentifier()) return false;
-      if (hasAbilityIdentifier()) {
-        if (!getAbilityIdentifier()
-            .equals(other.getAbilityIdentifier())) return false;
-      }
-      if (getIICFMJEJOBO()
-          != other.getIICFMJEJOBO()) return false;
-      if (getIsCrit()
-          != other.getIsCrit()) return false;
-      if (hasResolvedDir() != other.hasResolvedDir()) return false;
-      if (hasResolvedDir()) {
-        if (!getResolvedDir()
-            .equals(other.getResolvedDir())) return false;
-      }
-      if (getBAABHEHFAPH()
-          != other.getBAABHEHFAPH()) return false;
-      if (getElementType()
-          != other.getElementType()) return false;
-      if (hasHitEffResult() != other.hasHitEffResult()) return false;
-      if (hasHitEffResult()) {
-        if (!getHitEffResult()
-            .equals(other.getHitEffResult())) return false;
-      }
-      if (!getAnimEventId()
-          .equals(other.getAnimEventId())) return false;
       if (hasHitCollision() != other.hasHitCollision()) return false;
       if (hasHitCollision()) {
         if (!getHitCollision()
             .equals(other.getHitCollision())) return false;
       }
-      if (getMPBEBAKODGF()
-          != other.getMPBEBAKODGF()) return false;
-      if (getEBLEIGGLHLG()
-          != other.getEBLEIGGLHLG()) return false;
-      if (java.lang.Float.floatToIntBits(getElementAmplifyRate())
+      if (hasResolveDir() != other.hasResolveDir()) return false;
+      if (hasResolveDir()) {
+        if (!getResolveDir()
+            .equals(other.getResolveDir())) return false;
+      }
+      if (hasAbilityIdentifier() != other.hasAbilityIdentifier()) return false;
+      if (hasAbilityIdentifier()) {
+        if (!getAbilityIdentifier()
+            .equals(other.getAbilityIdentifier())) return false;
+      }
+      if (!getAnimEventId()
+          .equals(other.getAnimEventId())) return false;
+      if (hasHitEffResult() != other.hasHitEffResult()) return false;
+      if (hasHitEffResult()) {
+        if (!getHitEffResult()
+            .equals(other.getHitEffResult())) return false;
+      }
+      if (java.lang.Float.floatToIntBits(getDamage())
           != java.lang.Float.floatToIntBits(
-              other.getElementAmplifyRate())) return false;
-      if (java.lang.Float.floatToIntBits(getElementDurabilityAttenuation())
+              other.getDamage())) return false;
+      if (getCOJHCEFMEEE()
+          != other.getCOJHCEFMEEE()) return false;
+      if (getEFNIHOAOFEF()
+          != other.getEFNIHOAOFEF()) return false;
+      if (getBPMFJFJBNED()
+          != other.getBPMFJFJBNED()) return false;
+      if (getEDADGELMDNN()
+          != other.getEDADGELMDNN()) return false;
+      if (java.lang.Float.floatToIntBits(getCNKKJIAPAMM())
           != java.lang.Float.floatToIntBits(
-              other.getElementDurabilityAttenuation())) return false;
-      if (getMuteElementHurt()
-          != other.getMuteElementHurt()) return false;
-      if (getMFLNDGPEJOE()
-          != other.getMFLNDGPEJOE()) return false;
-      if (java.lang.Float.floatToIntBits(getDamageShield())
+              other.getCNKKJIAPAMM())) return false;
+      if (getICMDKMMHJLO()
+          != other.getICMDKMMHJLO()) return false;
+      if (getDIBMILDAPNJ()
+          != other.getDIBMILDAPNJ()) return false;
+      if (getANMFCGEINNB()
+          != other.getANMFCGEINNB()) return false;
+      if (getAttackerId()
+          != other.getAttackerId()) return false;
+      if (java.lang.Float.floatToIntBits(getEJAHLAJDPHA())
           != java.lang.Float.floatToIntBits(
-              other.getDamageShield())) return false;
-      if (getIFMINIBILFH()
-          != other.getIFMINIBILFH()) return false;
-      if (getJKGEMBOBALF()
-          != other.getJKGEMBOBALF()) return false;
-      if (getEKJHPCHCMLF()
-          != other.getEKJHPCHCMLF()) return false;
-      if (getPOAFAPLMPEB()
-          != other.getPOAFAPLMPEB()) return false;
-      if (getUseGadgetDamageAction()
-          != other.getUseGadgetDamageAction()) return false;
-      if (getELIFILCNKFD()
-          != other.getELIFILCNKFD()) return false;
-      if (java.lang.Float.floatToIntBits(getEndureDelta())
+              other.getEJAHLAJDPHA())) return false;
+      if (getBILPCAOBDBB()
+          != other.getBILPCAOBDBB()) return false;
+      if (java.lang.Float.floatToIntBits(getIPLDBCEHDPJ())
           != java.lang.Float.floatToIntBits(
-              other.getEndureDelta())) return false;
-      if (getFLPFBAFHGNN()
-          != other.getFLPFBAFHGNN()) return false;
-      if (getNMPEDJOPMMB()
-          != other.getNMPEDJOPMMB()) return false;
-      if (getIsResistText()
-          != other.getIsResistText()) return false;
-      if (getGMNJEDPKNDE()
-          != other.getGMNJEDPKNDE()) return false;
+              other.getIPLDBCEHDPJ())) return false;
+      if (java.lang.Float.floatToIntBits(getACAGOHDJONJ())
+          != java.lang.Float.floatToIntBits(
+              other.getACAGOHDJONJ())) return false;
+      if (getKMKABKHIAHB()
+          != other.getKMKABKHIAHB()) return false;
+      if (getDDBMLBBBDFL()
+          != other.getDDBMLBBBDFL()) return false;
+      if (getIJLNDDIPPBI()
+          != other.getIJLNDDIPPBI()) return false;
+      if (getAGGMJJACOFC()
+          != other.getAGGMJJACOFC()) return false;
+      if (getDefenseId()
+          != other.getDefenseId()) return false;
+      if (getGIHKDPHENPO()
+          != other.getGIHKDPHENPO()) return false;
+      if (getMKFEOFALBKJ()
+          != other.getMKFEOFALBKJ()) return false;
+      if (getElementType()
+          != other.getElementType()) return false;
+      if (getLANMHNELOCE()
+          != other.getLANMHNELOCE()) return false;
+      if (getCBCDCADHGLD()
+          != other.getCBCDCADHGLD()) return false;
+      if (getIAAAGHFANMH()
+          != other.getIAAAGHFANMH()) return false;
+      if (getHitRetreatAngleCompat()
+          != other.getHitRetreatAngleCompat()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1300,85 +1284,85 @@ public final class AttackResultOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ATTACKER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAttackerId();
-      hash = (37 * hash) + DAMAGE_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getDamage());
-      hash = (37 * hash) + HIT_RETREAT_ANGLE_COMPAT_FIELD_NUMBER;
-      hash = (53 * hash) + getHitRetreatAngleCompat();
-      hash = (37 * hash) + DEFENSE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDefenseId();
-      if (hasAbilityIdentifier()) {
-        hash = (37 * hash) + ABILITY_IDENTIFIER_FIELD_NUMBER;
-        hash = (53 * hash) + getAbilityIdentifier().hashCode();
-      }
-      hash = (37 * hash) + IICFMJEJOBO_FIELD_NUMBER;
-      hash = (53 * hash) + getIICFMJEJOBO();
-      hash = (37 * hash) + IS_CRIT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsCrit());
-      if (hasResolvedDir()) {
-        hash = (37 * hash) + RESOLVED_DIR_FIELD_NUMBER;
-        hash = (53 * hash) + getResolvedDir().hashCode();
-      }
-      hash = (37 * hash) + BAABHEHFAPH_FIELD_NUMBER;
-      hash = (53 * hash) + getBAABHEHFAPH();
-      hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getElementType();
-      if (hasHitEffResult()) {
-        hash = (37 * hash) + HIT_EFF_RESULT_FIELD_NUMBER;
-        hash = (53 * hash) + getHitEffResult().hashCode();
-      }
-      hash = (37 * hash) + ANIM_EVENT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getAnimEventId().hashCode();
       if (hasHitCollision()) {
         hash = (37 * hash) + HIT_COLLISION_FIELD_NUMBER;
         hash = (53 * hash) + getHitCollision().hashCode();
       }
-      hash = (37 * hash) + MPBEBAKODGF_FIELD_NUMBER;
-      hash = (53 * hash) + getMPBEBAKODGF();
-      hash = (37 * hash) + EBLEIGGLHLG_FIELD_NUMBER;
-      hash = (53 * hash) + getEBLEIGGLHLG();
-      hash = (37 * hash) + ELEMENT_AMPLIFY_RATE_FIELD_NUMBER;
+      if (hasResolveDir()) {
+        hash = (37 * hash) + RESOLVE_DIR_FIELD_NUMBER;
+        hash = (53 * hash) + getResolveDir().hashCode();
+      }
+      if (hasAbilityIdentifier()) {
+        hash = (37 * hash) + ABILITY_IDENTIFIER_FIELD_NUMBER;
+        hash = (53 * hash) + getAbilityIdentifier().hashCode();
+      }
+      hash = (37 * hash) + ANIM_EVENT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAnimEventId().hashCode();
+      if (hasHitEffResult()) {
+        hash = (37 * hash) + HIT_EFF_RESULT_FIELD_NUMBER;
+        hash = (53 * hash) + getHitEffResult().hashCode();
+      }
+      hash = (37 * hash) + DAMAGE_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getElementAmplifyRate());
-      hash = (37 * hash) + ELEMENT_DURABILITY_ATTENUATION_FIELD_NUMBER;
+          getDamage());
+      hash = (37 * hash) + COJHCEFMEEE_FIELD_NUMBER;
+      hash = (53 * hash) + getCOJHCEFMEEE();
+      hash = (37 * hash) + EFNIHOAOFEF_FIELD_NUMBER;
+      hash = (53 * hash) + getEFNIHOAOFEF();
+      hash = (37 * hash) + BPMFJFJBNED_FIELD_NUMBER;
+      hash = (53 * hash) + getBPMFJFJBNED();
+      hash = (37 * hash) + EDADGELMDNN_FIELD_NUMBER;
+      hash = (53 * hash) + getEDADGELMDNN();
+      hash = (37 * hash) + CNKKJIAPAMM_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getElementDurabilityAttenuation());
-      hash = (37 * hash) + MUTE_ELEMENT_HURT_FIELD_NUMBER;
+          getCNKKJIAPAMM());
+      hash = (37 * hash) + ICMDKMMHJLO_FIELD_NUMBER;
+      hash = (53 * hash) + getICMDKMMHJLO();
+      hash = (37 * hash) + DIBMILDAPNJ_FIELD_NUMBER;
+      hash = (53 * hash) + getDIBMILDAPNJ();
+      hash = (37 * hash) + ANMFCGEINNB_FIELD_NUMBER;
+      hash = (53 * hash) + getANMFCGEINNB();
+      hash = (37 * hash) + ATTACKER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAttackerId();
+      hash = (37 * hash) + EJAHLAJDPHA_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getEJAHLAJDPHA());
+      hash = (37 * hash) + BILPCAOBDBB_FIELD_NUMBER;
+      hash = (53 * hash) + getBILPCAOBDBB();
+      hash = (37 * hash) + IPLDBCEHDPJ_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getIPLDBCEHDPJ());
+      hash = (37 * hash) + ACAGOHDJONJ_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getACAGOHDJONJ());
+      hash = (37 * hash) + KMKABKHIAHB_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getMuteElementHurt());
-      hash = (37 * hash) + MFLNDGPEJOE_FIELD_NUMBER;
-      hash = (53 * hash) + getMFLNDGPEJOE();
-      hash = (37 * hash) + DAMAGE_SHIELD_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getDamageShield());
-      hash = (37 * hash) + IFMINIBILFH_FIELD_NUMBER;
-      hash = (53 * hash) + getIFMINIBILFH();
-      hash = (37 * hash) + JKGEMBOBALF_FIELD_NUMBER;
-      hash = (53 * hash) + getJKGEMBOBALF();
-      hash = (37 * hash) + EKJHPCHCMLF_FIELD_NUMBER;
-      hash = (53 * hash) + getEKJHPCHCMLF();
-      hash = (37 * hash) + POAFAPLMPEB_FIELD_NUMBER;
-      hash = (53 * hash) + getPOAFAPLMPEB();
-      hash = (37 * hash) + USE_GADGET_DAMAGE_ACTION_FIELD_NUMBER;
+          getKMKABKHIAHB());
+      hash = (37 * hash) + DDBMLBBBDFL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUseGadgetDamageAction());
-      hash = (37 * hash) + ELIFILCNKFD_FIELD_NUMBER;
-      hash = (53 * hash) + getELIFILCNKFD();
-      hash = (37 * hash) + ENDURE_DELTA_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getEndureDelta());
-      hash = (37 * hash) + FLPFBAFHGNN_FIELD_NUMBER;
-      hash = (53 * hash) + getFLPFBAFHGNN();
-      hash = (37 * hash) + NMPEDJOPMMB_FIELD_NUMBER;
-      hash = (53 * hash) + getNMPEDJOPMMB();
-      hash = (37 * hash) + IS_RESIST_TEXT_FIELD_NUMBER;
+          getDDBMLBBBDFL());
+      hash = (37 * hash) + IJLNDDIPPBI_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsResistText());
-      hash = (37 * hash) + GMNJEDPKNDE_FIELD_NUMBER;
-      hash = (53 * hash) + getGMNJEDPKNDE();
+          getIJLNDDIPPBI());
+      hash = (37 * hash) + AGGMJJACOFC_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getAGGMJJACOFC());
+      hash = (37 * hash) + DEFENSE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDefenseId();
+      hash = (37 * hash) + GIHKDPHENPO_FIELD_NUMBER;
+      hash = (53 * hash) + getGIHKDPHENPO();
+      hash = (37 * hash) + MKFEOFALBKJ_FIELD_NUMBER;
+      hash = (53 * hash) + getMKFEOFALBKJ();
+      hash = (37 * hash) + ELEMENT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getElementType();
+      hash = (37 * hash) + LANMHNELOCE_FIELD_NUMBER;
+      hash = (53 * hash) + getLANMHNELOCE();
+      hash = (37 * hash) + CBCDCADHGLD_FIELD_NUMBER;
+      hash = (53 * hash) + getCBCDCADHGLD();
+      hash = (37 * hash) + IAAAGHFANMH_FIELD_NUMBER;
+      hash = (53 * hash) + getIAAAGHFANMH();
+      hash = (37 * hash) + HIT_RETREAT_ANGLE_COMPAT_FIELD_NUMBER;
+      hash = (53 * hash) + getHitRetreatAngleCompat();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1512,33 +1496,25 @@ public final class AttackResultOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        attackerId_ = 0;
-
-        damage_ = 0F;
-
-        hitRetreatAngleCompat_ = 0;
-
-        defenseId_ = 0;
-
+        if (hitCollisionBuilder_ == null) {
+          hitCollision_ = null;
+        } else {
+          hitCollision_ = null;
+          hitCollisionBuilder_ = null;
+        }
+        if (resolveDirBuilder_ == null) {
+          resolveDir_ = null;
+        } else {
+          resolveDir_ = null;
+          resolveDirBuilder_ = null;
+        }
         if (abilityIdentifierBuilder_ == null) {
           abilityIdentifier_ = null;
         } else {
           abilityIdentifier_ = null;
           abilityIdentifierBuilder_ = null;
         }
-        iICFMJEJOBO_ = 0;
-
-        isCrit_ = false;
-
-        if (resolvedDirBuilder_ == null) {
-          resolvedDir_ = null;
-        } else {
-          resolvedDir_ = null;
-          resolvedDirBuilder_ = null;
-        }
-        bAABHEHFAPH_ = 0;
-
-        elementType_ = 0;
+        animEventId_ = "";
 
         if (hitEffResultBuilder_ == null) {
           hitEffResult_ = null;
@@ -1546,49 +1522,57 @@ public final class AttackResultOuterClass {
           hitEffResult_ = null;
           hitEffResultBuilder_ = null;
         }
-        animEventId_ = "";
+        damage_ = 0F;
 
-        if (hitCollisionBuilder_ == null) {
-          hitCollision_ = null;
-        } else {
-          hitCollision_ = null;
-          hitCollisionBuilder_ = null;
-        }
-        mPBEBAKODGF_ = 0;
+        cOJHCEFMEEE_ = 0;
 
-        eBLEIGGLHLG_ = 0;
+        eFNIHOAOFEF_ = 0;
 
-        elementAmplifyRate_ = 0F;
+        bPMFJFJBNED_ = 0;
 
-        elementDurabilityAttenuation_ = 0F;
+        eDADGELMDNN_ = 0;
 
-        muteElementHurt_ = false;
+        cNKKJIAPAMM_ = 0F;
 
-        mFLNDGPEJOE_ = 0;
+        iCMDKMMHJLO_ = 0;
 
-        damageShield_ = 0F;
+        dIBMILDAPNJ_ = 0;
 
-        iFMINIBILFH_ = 0;
+        aNMFCGEINNB_ = 0;
 
-        jKGEMBOBALF_ = 0;
+        attackerId_ = 0;
 
-        eKJHPCHCMLF_ = 0;
+        eJAHLAJDPHA_ = 0F;
 
-        pOAFAPLMPEB_ = 0;
+        bILPCAOBDBB_ = 0;
 
-        useGadgetDamageAction_ = false;
+        iPLDBCEHDPJ_ = 0F;
 
-        eLIFILCNKFD_ = 0;
+        aCAGOHDJONJ_ = 0F;
 
-        endureDelta_ = 0F;
+        kMKABKHIAHB_ = false;
 
-        fLPFBAFHGNN_ = 0;
+        dDBMLBBBDFL_ = false;
 
-        nMPEDJOPMMB_ = 0;
+        iJLNDDIPPBI_ = false;
 
-        isResistText_ = false;
+        aGGMJJACOFC_ = false;
 
-        gMNJEDPKNDE_ = 0;
+        defenseId_ = 0;
+
+        gIHKDPHENPO_ = 0;
+
+        mKFEOFALBKJ_ = 0;
+
+        elementType_ = 0;
+
+        lANMHNELOCE_ = 0;
+
+        cBCDCADHGLD_ = 0;
+
+        iAAAGHFANMH_ = 0;
+
+        hitRetreatAngleCompat_ = 0;
 
         return this;
       }
@@ -1616,53 +1600,53 @@ public final class AttackResultOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult buildPartial() {
         emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult result = new emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult(this);
-        result.attackerId_ = attackerId_;
-        result.damage_ = damage_;
-        result.hitRetreatAngleCompat_ = hitRetreatAngleCompat_;
-        result.defenseId_ = defenseId_;
-        if (abilityIdentifierBuilder_ == null) {
-          result.abilityIdentifier_ = abilityIdentifier_;
-        } else {
-          result.abilityIdentifier_ = abilityIdentifierBuilder_.build();
-        }
-        result.iICFMJEJOBO_ = iICFMJEJOBO_;
-        result.isCrit_ = isCrit_;
-        if (resolvedDirBuilder_ == null) {
-          result.resolvedDir_ = resolvedDir_;
-        } else {
-          result.resolvedDir_ = resolvedDirBuilder_.build();
-        }
-        result.bAABHEHFAPH_ = bAABHEHFAPH_;
-        result.elementType_ = elementType_;
-        if (hitEffResultBuilder_ == null) {
-          result.hitEffResult_ = hitEffResult_;
-        } else {
-          result.hitEffResult_ = hitEffResultBuilder_.build();
-        }
-        result.animEventId_ = animEventId_;
         if (hitCollisionBuilder_ == null) {
           result.hitCollision_ = hitCollision_;
         } else {
           result.hitCollision_ = hitCollisionBuilder_.build();
         }
-        result.mPBEBAKODGF_ = mPBEBAKODGF_;
-        result.eBLEIGGLHLG_ = eBLEIGGLHLG_;
-        result.elementAmplifyRate_ = elementAmplifyRate_;
-        result.elementDurabilityAttenuation_ = elementDurabilityAttenuation_;
-        result.muteElementHurt_ = muteElementHurt_;
-        result.mFLNDGPEJOE_ = mFLNDGPEJOE_;
-        result.damageShield_ = damageShield_;
-        result.iFMINIBILFH_ = iFMINIBILFH_;
-        result.jKGEMBOBALF_ = jKGEMBOBALF_;
-        result.eKJHPCHCMLF_ = eKJHPCHCMLF_;
-        result.pOAFAPLMPEB_ = pOAFAPLMPEB_;
-        result.useGadgetDamageAction_ = useGadgetDamageAction_;
-        result.eLIFILCNKFD_ = eLIFILCNKFD_;
-        result.endureDelta_ = endureDelta_;
-        result.fLPFBAFHGNN_ = fLPFBAFHGNN_;
-        result.nMPEDJOPMMB_ = nMPEDJOPMMB_;
-        result.isResistText_ = isResistText_;
-        result.gMNJEDPKNDE_ = gMNJEDPKNDE_;
+        if (resolveDirBuilder_ == null) {
+          result.resolveDir_ = resolveDir_;
+        } else {
+          result.resolveDir_ = resolveDirBuilder_.build();
+        }
+        if (abilityIdentifierBuilder_ == null) {
+          result.abilityIdentifier_ = abilityIdentifier_;
+        } else {
+          result.abilityIdentifier_ = abilityIdentifierBuilder_.build();
+        }
+        result.animEventId_ = animEventId_;
+        if (hitEffResultBuilder_ == null) {
+          result.hitEffResult_ = hitEffResult_;
+        } else {
+          result.hitEffResult_ = hitEffResultBuilder_.build();
+        }
+        result.damage_ = damage_;
+        result.cOJHCEFMEEE_ = cOJHCEFMEEE_;
+        result.eFNIHOAOFEF_ = eFNIHOAOFEF_;
+        result.bPMFJFJBNED_ = bPMFJFJBNED_;
+        result.eDADGELMDNN_ = eDADGELMDNN_;
+        result.cNKKJIAPAMM_ = cNKKJIAPAMM_;
+        result.iCMDKMMHJLO_ = iCMDKMMHJLO_;
+        result.dIBMILDAPNJ_ = dIBMILDAPNJ_;
+        result.aNMFCGEINNB_ = aNMFCGEINNB_;
+        result.attackerId_ = attackerId_;
+        result.eJAHLAJDPHA_ = eJAHLAJDPHA_;
+        result.bILPCAOBDBB_ = bILPCAOBDBB_;
+        result.iPLDBCEHDPJ_ = iPLDBCEHDPJ_;
+        result.aCAGOHDJONJ_ = aCAGOHDJONJ_;
+        result.kMKABKHIAHB_ = kMKABKHIAHB_;
+        result.dDBMLBBBDFL_ = dDBMLBBBDFL_;
+        result.iJLNDDIPPBI_ = iJLNDDIPPBI_;
+        result.aGGMJJACOFC_ = aGGMJJACOFC_;
+        result.defenseId_ = defenseId_;
+        result.gIHKDPHENPO_ = gIHKDPHENPO_;
+        result.mKFEOFALBKJ_ = mKFEOFALBKJ_;
+        result.elementType_ = elementType_;
+        result.lANMHNELOCE_ = lANMHNELOCE_;
+        result.cBCDCADHGLD_ = cBCDCADHGLD_;
+        result.iAAAGHFANMH_ = iAAAGHFANMH_;
+        result.hitRetreatAngleCompat_ = hitRetreatAngleCompat_;
         onBuilt();
         return result;
       }
@@ -1711,99 +1695,99 @@ public final class AttackResultOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult other) {
         if (other == emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult.getDefaultInstance()) return this;
-        if (other.getAttackerId() != 0) {
-          setAttackerId(other.getAttackerId());
+        if (other.hasHitCollision()) {
+          mergeHitCollision(other.getHitCollision());
         }
-        if (other.getDamage() != 0F) {
-          setDamage(other.getDamage());
-        }
-        if (other.getHitRetreatAngleCompat() != 0) {
-          setHitRetreatAngleCompat(other.getHitRetreatAngleCompat());
-        }
-        if (other.getDefenseId() != 0) {
-          setDefenseId(other.getDefenseId());
+        if (other.hasResolveDir()) {
+          mergeResolveDir(other.getResolveDir());
         }
         if (other.hasAbilityIdentifier()) {
           mergeAbilityIdentifier(other.getAbilityIdentifier());
-        }
-        if (other.getIICFMJEJOBO() != 0) {
-          setIICFMJEJOBO(other.getIICFMJEJOBO());
-        }
-        if (other.getIsCrit() != false) {
-          setIsCrit(other.getIsCrit());
-        }
-        if (other.hasResolvedDir()) {
-          mergeResolvedDir(other.getResolvedDir());
-        }
-        if (other.getBAABHEHFAPH() != 0) {
-          setBAABHEHFAPH(other.getBAABHEHFAPH());
-        }
-        if (other.getElementType() != 0) {
-          setElementType(other.getElementType());
-        }
-        if (other.hasHitEffResult()) {
-          mergeHitEffResult(other.getHitEffResult());
         }
         if (!other.getAnimEventId().isEmpty()) {
           animEventId_ = other.animEventId_;
           onChanged();
         }
-        if (other.hasHitCollision()) {
-          mergeHitCollision(other.getHitCollision());
+        if (other.hasHitEffResult()) {
+          mergeHitEffResult(other.getHitEffResult());
         }
-        if (other.getMPBEBAKODGF() != 0) {
-          setMPBEBAKODGF(other.getMPBEBAKODGF());
+        if (other.getDamage() != 0F) {
+          setDamage(other.getDamage());
         }
-        if (other.getEBLEIGGLHLG() != 0) {
-          setEBLEIGGLHLG(other.getEBLEIGGLHLG());
+        if (other.getCOJHCEFMEEE() != 0) {
+          setCOJHCEFMEEE(other.getCOJHCEFMEEE());
         }
-        if (other.getElementAmplifyRate() != 0F) {
-          setElementAmplifyRate(other.getElementAmplifyRate());
+        if (other.getEFNIHOAOFEF() != 0) {
+          setEFNIHOAOFEF(other.getEFNIHOAOFEF());
         }
-        if (other.getElementDurabilityAttenuation() != 0F) {
-          setElementDurabilityAttenuation(other.getElementDurabilityAttenuation());
+        if (other.getBPMFJFJBNED() != 0) {
+          setBPMFJFJBNED(other.getBPMFJFJBNED());
         }
-        if (other.getMuteElementHurt() != false) {
-          setMuteElementHurt(other.getMuteElementHurt());
+        if (other.getEDADGELMDNN() != 0) {
+          setEDADGELMDNN(other.getEDADGELMDNN());
         }
-        if (other.getMFLNDGPEJOE() != 0) {
-          setMFLNDGPEJOE(other.getMFLNDGPEJOE());
+        if (other.getCNKKJIAPAMM() != 0F) {
+          setCNKKJIAPAMM(other.getCNKKJIAPAMM());
         }
-        if (other.getDamageShield() != 0F) {
-          setDamageShield(other.getDamageShield());
+        if (other.getICMDKMMHJLO() != 0) {
+          setICMDKMMHJLO(other.getICMDKMMHJLO());
         }
-        if (other.getIFMINIBILFH() != 0) {
-          setIFMINIBILFH(other.getIFMINIBILFH());
+        if (other.getDIBMILDAPNJ() != 0) {
+          setDIBMILDAPNJ(other.getDIBMILDAPNJ());
         }
-        if (other.getJKGEMBOBALF() != 0) {
-          setJKGEMBOBALF(other.getJKGEMBOBALF());
+        if (other.getANMFCGEINNB() != 0) {
+          setANMFCGEINNB(other.getANMFCGEINNB());
         }
-        if (other.getEKJHPCHCMLF() != 0) {
-          setEKJHPCHCMLF(other.getEKJHPCHCMLF());
+        if (other.getAttackerId() != 0) {
+          setAttackerId(other.getAttackerId());
         }
-        if (other.getPOAFAPLMPEB() != 0) {
-          setPOAFAPLMPEB(other.getPOAFAPLMPEB());
+        if (other.getEJAHLAJDPHA() != 0F) {
+          setEJAHLAJDPHA(other.getEJAHLAJDPHA());
         }
-        if (other.getUseGadgetDamageAction() != false) {
-          setUseGadgetDamageAction(other.getUseGadgetDamageAction());
+        if (other.getBILPCAOBDBB() != 0) {
+          setBILPCAOBDBB(other.getBILPCAOBDBB());
         }
-        if (other.getELIFILCNKFD() != 0) {
-          setELIFILCNKFD(other.getELIFILCNKFD());
+        if (other.getIPLDBCEHDPJ() != 0F) {
+          setIPLDBCEHDPJ(other.getIPLDBCEHDPJ());
         }
-        if (other.getEndureDelta() != 0F) {
-          setEndureDelta(other.getEndureDelta());
+        if (other.getACAGOHDJONJ() != 0F) {
+          setACAGOHDJONJ(other.getACAGOHDJONJ());
         }
-        if (other.getFLPFBAFHGNN() != 0) {
-          setFLPFBAFHGNN(other.getFLPFBAFHGNN());
+        if (other.getKMKABKHIAHB() != false) {
+          setKMKABKHIAHB(other.getKMKABKHIAHB());
         }
-        if (other.getNMPEDJOPMMB() != 0) {
-          setNMPEDJOPMMB(other.getNMPEDJOPMMB());
+        if (other.getDDBMLBBBDFL() != false) {
+          setDDBMLBBBDFL(other.getDDBMLBBBDFL());
         }
-        if (other.getIsResistText() != false) {
-          setIsResistText(other.getIsResistText());
+        if (other.getIJLNDDIPPBI() != false) {
+          setIJLNDDIPPBI(other.getIJLNDDIPPBI());
         }
-        if (other.getGMNJEDPKNDE() != 0) {
-          setGMNJEDPKNDE(other.getGMNJEDPKNDE());
+        if (other.getAGGMJJACOFC() != false) {
+          setAGGMJJACOFC(other.getAGGMJJACOFC());
+        }
+        if (other.getDefenseId() != 0) {
+          setDefenseId(other.getDefenseId());
+        }
+        if (other.getGIHKDPHENPO() != 0) {
+          setGIHKDPHENPO(other.getGIHKDPHENPO());
+        }
+        if (other.getMKFEOFALBKJ() != 0) {
+          setMKFEOFALBKJ(other.getMKFEOFALBKJ());
+        }
+        if (other.getElementType() != 0) {
+          setElementType(other.getElementType());
+        }
+        if (other.getLANMHNELOCE() != 0) {
+          setLANMHNELOCE(other.getLANMHNELOCE());
+        }
+        if (other.getCBCDCADHGLD() != 0) {
+          setCBCDCADHGLD(other.getCBCDCADHGLD());
+        }
+        if (other.getIAAAGHFANMH() != 0) {
+          setIAAAGHFANMH(other.getIAAAGHFANMH());
+        }
+        if (other.getHitRetreatAngleCompat() != 0) {
+          setHitRetreatAngleCompat(other.getHitRetreatAngleCompat());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1834,699 +1818,18 @@ public final class AttackResultOuterClass {
         return this;
       }
 
-      private int attackerId_ ;
-      /**
-       * <code>uint32 attacker_id = 1;</code>
-       * @return The attackerId.
-       */
-      @java.lang.Override
-      public int getAttackerId() {
-        return attackerId_;
-      }
-      /**
-       * <code>uint32 attacker_id = 1;</code>
-       * @param value The attackerId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAttackerId(int value) {
-        
-        attackerId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 attacker_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAttackerId() {
-        
-        attackerId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private float damage_ ;
-      /**
-       * <code>float damage = 2;</code>
-       * @return The damage.
-       */
-      @java.lang.Override
-      public float getDamage() {
-        return damage_;
-      }
-      /**
-       * <code>float damage = 2;</code>
-       * @param value The damage to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDamage(float value) {
-        
-        damage_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float damage = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDamage() {
-        
-        damage_ = 0F;
-        onChanged();
-        return this;
-      }
-
-      private int hitRetreatAngleCompat_ ;
-      /**
-       * <code>int32 hit_retreat_angle_compat = 3;</code>
-       * @return The hitRetreatAngleCompat.
-       */
-      @java.lang.Override
-      public int getHitRetreatAngleCompat() {
-        return hitRetreatAngleCompat_;
-      }
-      /**
-       * <code>int32 hit_retreat_angle_compat = 3;</code>
-       * @param value The hitRetreatAngleCompat to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHitRetreatAngleCompat(int value) {
-        
-        hitRetreatAngleCompat_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 hit_retreat_angle_compat = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHitRetreatAngleCompat() {
-        
-        hitRetreatAngleCompat_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int defenseId_ ;
-      /**
-       * <code>uint32 defense_id = 5;</code>
-       * @return The defenseId.
-       */
-      @java.lang.Override
-      public int getDefenseId() {
-        return defenseId_;
-      }
-      /**
-       * <code>uint32 defense_id = 5;</code>
-       * @param value The defenseId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDefenseId(int value) {
-        
-        defenseId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 defense_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDefenseId() {
-        
-        defenseId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier abilityIdentifier_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.Builder, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifierOrBuilder> abilityIdentifierBuilder_;
-      /**
-       * <code>.AbilityIdentifier ability_identifier = 6;</code>
-       * @return Whether the abilityIdentifier field is set.
-       */
-      public boolean hasAbilityIdentifier() {
-        return abilityIdentifierBuilder_ != null || abilityIdentifier_ != null;
-      }
-      /**
-       * <code>.AbilityIdentifier ability_identifier = 6;</code>
-       * @return The abilityIdentifier.
-       */
-      public emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier getAbilityIdentifier() {
-        if (abilityIdentifierBuilder_ == null) {
-          return abilityIdentifier_ == null ? emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.getDefaultInstance() : abilityIdentifier_;
-        } else {
-          return abilityIdentifierBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.AbilityIdentifier ability_identifier = 6;</code>
-       */
-      public Builder setAbilityIdentifier(emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier value) {
-        if (abilityIdentifierBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          abilityIdentifier_ = value;
-          onChanged();
-        } else {
-          abilityIdentifierBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityIdentifier ability_identifier = 6;</code>
-       */
-      public Builder setAbilityIdentifier(
-          emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.Builder builderForValue) {
-        if (abilityIdentifierBuilder_ == null) {
-          abilityIdentifier_ = builderForValue.build();
-          onChanged();
-        } else {
-          abilityIdentifierBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityIdentifier ability_identifier = 6;</code>
-       */
-      public Builder mergeAbilityIdentifier(emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier value) {
-        if (abilityIdentifierBuilder_ == null) {
-          if (abilityIdentifier_ != null) {
-            abilityIdentifier_ =
-              emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.newBuilder(abilityIdentifier_).mergeFrom(value).buildPartial();
-          } else {
-            abilityIdentifier_ = value;
-          }
-          onChanged();
-        } else {
-          abilityIdentifierBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityIdentifier ability_identifier = 6;</code>
-       */
-      public Builder clearAbilityIdentifier() {
-        if (abilityIdentifierBuilder_ == null) {
-          abilityIdentifier_ = null;
-          onChanged();
-        } else {
-          abilityIdentifier_ = null;
-          abilityIdentifierBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityIdentifier ability_identifier = 6;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.Builder getAbilityIdentifierBuilder() {
-        
-        onChanged();
-        return getAbilityIdentifierFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AbilityIdentifier ability_identifier = 6;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifierOrBuilder getAbilityIdentifierOrBuilder() {
-        if (abilityIdentifierBuilder_ != null) {
-          return abilityIdentifierBuilder_.getMessageOrBuilder();
-        } else {
-          return abilityIdentifier_ == null ?
-              emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.getDefaultInstance() : abilityIdentifier_;
-        }
-      }
-      /**
-       * <code>.AbilityIdentifier ability_identifier = 6;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.Builder, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifierOrBuilder> 
-          getAbilityIdentifierFieldBuilder() {
-        if (abilityIdentifierBuilder_ == null) {
-          abilityIdentifierBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.Builder, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifierOrBuilder>(
-                  getAbilityIdentifier(),
-                  getParentForChildren(),
-                  isClean());
-          abilityIdentifier_ = null;
-        }
-        return abilityIdentifierBuilder_;
-      }
-
-      private int iICFMJEJOBO_ ;
-      /**
-       * <code>uint32 IICFMJEJOBO = 7;</code>
-       * @return The iICFMJEJOBO.
-       */
-      @java.lang.Override
-      public int getIICFMJEJOBO() {
-        return iICFMJEJOBO_;
-      }
-      /**
-       * <code>uint32 IICFMJEJOBO = 7;</code>
-       * @param value The iICFMJEJOBO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIICFMJEJOBO(int value) {
-        
-        iICFMJEJOBO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 IICFMJEJOBO = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIICFMJEJOBO() {
-        
-        iICFMJEJOBO_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isCrit_ ;
-      /**
-       * <code>bool is_crit = 8;</code>
-       * @return The isCrit.
-       */
-      @java.lang.Override
-      public boolean getIsCrit() {
-        return isCrit_;
-      }
-      /**
-       * <code>bool is_crit = 8;</code>
-       * @param value The isCrit to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsCrit(boolean value) {
-        
-        isCrit_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_crit = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsCrit() {
-        
-        isCrit_ = false;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector resolvedDir_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> resolvedDirBuilder_;
-      /**
-       * <code>.Vector resolved_dir = 9;</code>
-       * @return Whether the resolvedDir field is set.
-       */
-      public boolean hasResolvedDir() {
-        return resolvedDirBuilder_ != null || resolvedDir_ != null;
-      }
-      /**
-       * <code>.Vector resolved_dir = 9;</code>
-       * @return The resolvedDir.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getResolvedDir() {
-        if (resolvedDirBuilder_ == null) {
-          return resolvedDir_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : resolvedDir_;
-        } else {
-          return resolvedDirBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector resolved_dir = 9;</code>
-       */
-      public Builder setResolvedDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (resolvedDirBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          resolvedDir_ = value;
-          onChanged();
-        } else {
-          resolvedDirBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector resolved_dir = 9;</code>
-       */
-      public Builder setResolvedDir(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (resolvedDirBuilder_ == null) {
-          resolvedDir_ = builderForValue.build();
-          onChanged();
-        } else {
-          resolvedDirBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector resolved_dir = 9;</code>
-       */
-      public Builder mergeResolvedDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (resolvedDirBuilder_ == null) {
-          if (resolvedDir_ != null) {
-            resolvedDir_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(resolvedDir_).mergeFrom(value).buildPartial();
-          } else {
-            resolvedDir_ = value;
-          }
-          onChanged();
-        } else {
-          resolvedDirBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector resolved_dir = 9;</code>
-       */
-      public Builder clearResolvedDir() {
-        if (resolvedDirBuilder_ == null) {
-          resolvedDir_ = null;
-          onChanged();
-        } else {
-          resolvedDir_ = null;
-          resolvedDirBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector resolved_dir = 9;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getResolvedDirBuilder() {
-        
-        onChanged();
-        return getResolvedDirFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector resolved_dir = 9;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getResolvedDirOrBuilder() {
-        if (resolvedDirBuilder_ != null) {
-          return resolvedDirBuilder_.getMessageOrBuilder();
-        } else {
-          return resolvedDir_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : resolvedDir_;
-        }
-      }
-      /**
-       * <code>.Vector resolved_dir = 9;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getResolvedDirFieldBuilder() {
-        if (resolvedDirBuilder_ == null) {
-          resolvedDirBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getResolvedDir(),
-                  getParentForChildren(),
-                  isClean());
-          resolvedDir_ = null;
-        }
-        return resolvedDirBuilder_;
-      }
-
-      private int bAABHEHFAPH_ ;
-      /**
-       * <code>uint32 BAABHEHFAPH = 10;</code>
-       * @return The bAABHEHFAPH.
-       */
-      @java.lang.Override
-      public int getBAABHEHFAPH() {
-        return bAABHEHFAPH_;
-      }
-      /**
-       * <code>uint32 BAABHEHFAPH = 10;</code>
-       * @param value The bAABHEHFAPH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setBAABHEHFAPH(int value) {
-        
-        bAABHEHFAPH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 BAABHEHFAPH = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearBAABHEHFAPH() {
-        
-        bAABHEHFAPH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int elementType_ ;
-      /**
-       * <code>uint32 element_type = 11;</code>
-       * @return The elementType.
-       */
-      @java.lang.Override
-      public int getElementType() {
-        return elementType_;
-      }
-      /**
-       * <code>uint32 element_type = 11;</code>
-       * @param value The elementType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setElementType(int value) {
-        
-        elementType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 element_type = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearElementType() {
-        
-        elementType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult hitEffResult_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder> hitEffResultBuilder_;
-      /**
-       * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-       * @return Whether the hitEffResult field is set.
-       */
-      public boolean hasHitEffResult() {
-        return hitEffResultBuilder_ != null || hitEffResult_ != null;
-      }
-      /**
-       * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-       * @return The hitEffResult.
-       */
-      public emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult getHitEffResult() {
-        if (hitEffResultBuilder_ == null) {
-          return hitEffResult_ == null ? emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.getDefaultInstance() : hitEffResult_;
-        } else {
-          return hitEffResultBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-       */
-      public Builder setHitEffResult(emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult value) {
-        if (hitEffResultBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          hitEffResult_ = value;
-          onChanged();
-        } else {
-          hitEffResultBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-       */
-      public Builder setHitEffResult(
-          emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder builderForValue) {
-        if (hitEffResultBuilder_ == null) {
-          hitEffResult_ = builderForValue.build();
-          onChanged();
-        } else {
-          hitEffResultBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-       */
-      public Builder mergeHitEffResult(emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult value) {
-        if (hitEffResultBuilder_ == null) {
-          if (hitEffResult_ != null) {
-            hitEffResult_ =
-              emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.newBuilder(hitEffResult_).mergeFrom(value).buildPartial();
-          } else {
-            hitEffResult_ = value;
-          }
-          onChanged();
-        } else {
-          hitEffResultBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-       */
-      public Builder clearHitEffResult() {
-        if (hitEffResultBuilder_ == null) {
-          hitEffResult_ = null;
-          onChanged();
-        } else {
-          hitEffResult_ = null;
-          hitEffResultBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder getHitEffResultBuilder() {
-        
-        onChanged();
-        return getHitEffResultFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-       */
-      public emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder getHitEffResultOrBuilder() {
-        if (hitEffResultBuilder_ != null) {
-          return hitEffResultBuilder_.getMessageOrBuilder();
-        } else {
-          return hitEffResult_ == null ?
-              emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.getDefaultInstance() : hitEffResult_;
-        }
-      }
-      /**
-       * <code>.AttackHitEffectResult hit_eff_result = 13;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder> 
-          getHitEffResultFieldBuilder() {
-        if (hitEffResultBuilder_ == null) {
-          hitEffResultBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder>(
-                  getHitEffResult(),
-                  getParentForChildren(),
-                  isClean());
-          hitEffResult_ = null;
-        }
-        return hitEffResultBuilder_;
-      }
-
-      private java.lang.Object animEventId_ = "";
-      /**
-       * <code>string anim_event_id = 14;</code>
-       * @return The animEventId.
-       */
-      public java.lang.String getAnimEventId() {
-        java.lang.Object ref = animEventId_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          animEventId_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string anim_event_id = 14;</code>
-       * @return The bytes for animEventId.
-       */
-      public com.google.protobuf.ByteString
-          getAnimEventIdBytes() {
-        java.lang.Object ref = animEventId_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          animEventId_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string anim_event_id = 14;</code>
-       * @param value The animEventId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAnimEventId(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        animEventId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string anim_event_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAnimEventId() {
-        
-        animEventId_ = getDefaultInstance().getAnimEventId();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string anim_event_id = 14;</code>
-       * @param value The bytes for animEventId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAnimEventIdBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        animEventId_ = value;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision hitCollision_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision, emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision.Builder, emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollisionOrBuilder> hitCollisionBuilder_;
       /**
-       * <code>.HitCollision hit_collision = 15;</code>
+       * <code>.HitCollision hit_collision = 13;</code>
        * @return Whether the hitCollision field is set.
        */
       public boolean hasHitCollision() {
         return hitCollisionBuilder_ != null || hitCollision_ != null;
       }
       /**
-       * <code>.HitCollision hit_collision = 15;</code>
+       * <code>.HitCollision hit_collision = 13;</code>
        * @return The hitCollision.
        */
       public emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision getHitCollision() {
@@ -2537,7 +1840,7 @@ public final class AttackResultOuterClass {
         }
       }
       /**
-       * <code>.HitCollision hit_collision = 15;</code>
+       * <code>.HitCollision hit_collision = 13;</code>
        */
       public Builder setHitCollision(emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision value) {
         if (hitCollisionBuilder_ == null) {
@@ -2553,7 +1856,7 @@ public final class AttackResultOuterClass {
         return this;
       }
       /**
-       * <code>.HitCollision hit_collision = 15;</code>
+       * <code>.HitCollision hit_collision = 13;</code>
        */
       public Builder setHitCollision(
           emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision.Builder builderForValue) {
@@ -2567,7 +1870,7 @@ public final class AttackResultOuterClass {
         return this;
       }
       /**
-       * <code>.HitCollision hit_collision = 15;</code>
+       * <code>.HitCollision hit_collision = 13;</code>
        */
       public Builder mergeHitCollision(emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision value) {
         if (hitCollisionBuilder_ == null) {
@@ -2585,7 +1888,7 @@ public final class AttackResultOuterClass {
         return this;
       }
       /**
-       * <code>.HitCollision hit_collision = 15;</code>
+       * <code>.HitCollision hit_collision = 13;</code>
        */
       public Builder clearHitCollision() {
         if (hitCollisionBuilder_ == null) {
@@ -2599,7 +1902,7 @@ public final class AttackResultOuterClass {
         return this;
       }
       /**
-       * <code>.HitCollision hit_collision = 15;</code>
+       * <code>.HitCollision hit_collision = 13;</code>
        */
       public emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision.Builder getHitCollisionBuilder() {
         
@@ -2607,7 +1910,7 @@ public final class AttackResultOuterClass {
         return getHitCollisionFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HitCollision hit_collision = 15;</code>
+       * <code>.HitCollision hit_collision = 13;</code>
        */
       public emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollisionOrBuilder getHitCollisionOrBuilder() {
         if (hitCollisionBuilder_ != null) {
@@ -2618,7 +1921,7 @@ public final class AttackResultOuterClass {
         }
       }
       /**
-       * <code>.HitCollision hit_collision = 15;</code>
+       * <code>.HitCollision hit_collision = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision, emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollision.Builder, emu.grasscutter.net.proto.HitCollisionOuterClass.HitCollisionOrBuilder> 
@@ -2634,584 +1937,1241 @@ public final class AttackResultOuterClass {
         return hitCollisionBuilder_;
       }
 
-      private int mPBEBAKODGF_ ;
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector resolveDir_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> resolveDirBuilder_;
       /**
-       * <code>uint32 MPBEBAKODGF = 222;</code>
-       * @return The mPBEBAKODGF.
+       * <code>.Vector resolve_dir = 14;</code>
+       * @return Whether the resolveDir field is set.
        */
-      @java.lang.Override
-      public int getMPBEBAKODGF() {
-        return mPBEBAKODGF_;
+      public boolean hasResolveDir() {
+        return resolveDirBuilder_ != null || resolveDir_ != null;
       }
       /**
-       * <code>uint32 MPBEBAKODGF = 222;</code>
-       * @param value The mPBEBAKODGF to set.
+       * <code>.Vector resolve_dir = 14;</code>
+       * @return The resolveDir.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getResolveDir() {
+        if (resolveDirBuilder_ == null) {
+          return resolveDir_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : resolveDir_;
+        } else {
+          return resolveDirBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector resolve_dir = 14;</code>
+       */
+      public Builder setResolveDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (resolveDirBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          resolveDir_ = value;
+          onChanged();
+        } else {
+          resolveDirBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector resolve_dir = 14;</code>
+       */
+      public Builder setResolveDir(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (resolveDirBuilder_ == null) {
+          resolveDir_ = builderForValue.build();
+          onChanged();
+        } else {
+          resolveDirBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector resolve_dir = 14;</code>
+       */
+      public Builder mergeResolveDir(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (resolveDirBuilder_ == null) {
+          if (resolveDir_ != null) {
+            resolveDir_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(resolveDir_).mergeFrom(value).buildPartial();
+          } else {
+            resolveDir_ = value;
+          }
+          onChanged();
+        } else {
+          resolveDirBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector resolve_dir = 14;</code>
+       */
+      public Builder clearResolveDir() {
+        if (resolveDirBuilder_ == null) {
+          resolveDir_ = null;
+          onChanged();
+        } else {
+          resolveDir_ = null;
+          resolveDirBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector resolve_dir = 14;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getResolveDirBuilder() {
+        
+        onChanged();
+        return getResolveDirFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector resolve_dir = 14;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getResolveDirOrBuilder() {
+        if (resolveDirBuilder_ != null) {
+          return resolveDirBuilder_.getMessageOrBuilder();
+        } else {
+          return resolveDir_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : resolveDir_;
+        }
+      }
+      /**
+       * <code>.Vector resolve_dir = 14;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getResolveDirFieldBuilder() {
+        if (resolveDirBuilder_ == null) {
+          resolveDirBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getResolveDir(),
+                  getParentForChildren(),
+                  isClean());
+          resolveDir_ = null;
+        }
+        return resolveDirBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier abilityIdentifier_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.Builder, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifierOrBuilder> abilityIdentifierBuilder_;
+      /**
+       * <code>.AbilityIdentifier ability_identifier = 5;</code>
+       * @return Whether the abilityIdentifier field is set.
+       */
+      public boolean hasAbilityIdentifier() {
+        return abilityIdentifierBuilder_ != null || abilityIdentifier_ != null;
+      }
+      /**
+       * <code>.AbilityIdentifier ability_identifier = 5;</code>
+       * @return The abilityIdentifier.
+       */
+      public emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier getAbilityIdentifier() {
+        if (abilityIdentifierBuilder_ == null) {
+          return abilityIdentifier_ == null ? emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.getDefaultInstance() : abilityIdentifier_;
+        } else {
+          return abilityIdentifierBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.AbilityIdentifier ability_identifier = 5;</code>
+       */
+      public Builder setAbilityIdentifier(emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier value) {
+        if (abilityIdentifierBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          abilityIdentifier_ = value;
+          onChanged();
+        } else {
+          abilityIdentifierBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityIdentifier ability_identifier = 5;</code>
+       */
+      public Builder setAbilityIdentifier(
+          emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.Builder builderForValue) {
+        if (abilityIdentifierBuilder_ == null) {
+          abilityIdentifier_ = builderForValue.build();
+          onChanged();
+        } else {
+          abilityIdentifierBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityIdentifier ability_identifier = 5;</code>
+       */
+      public Builder mergeAbilityIdentifier(emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier value) {
+        if (abilityIdentifierBuilder_ == null) {
+          if (abilityIdentifier_ != null) {
+            abilityIdentifier_ =
+              emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.newBuilder(abilityIdentifier_).mergeFrom(value).buildPartial();
+          } else {
+            abilityIdentifier_ = value;
+          }
+          onChanged();
+        } else {
+          abilityIdentifierBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityIdentifier ability_identifier = 5;</code>
+       */
+      public Builder clearAbilityIdentifier() {
+        if (abilityIdentifierBuilder_ == null) {
+          abilityIdentifier_ = null;
+          onChanged();
+        } else {
+          abilityIdentifier_ = null;
+          abilityIdentifierBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityIdentifier ability_identifier = 5;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.Builder getAbilityIdentifierBuilder() {
+        
+        onChanged();
+        return getAbilityIdentifierFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.AbilityIdentifier ability_identifier = 5;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifierOrBuilder getAbilityIdentifierOrBuilder() {
+        if (abilityIdentifierBuilder_ != null) {
+          return abilityIdentifierBuilder_.getMessageOrBuilder();
+        } else {
+          return abilityIdentifier_ == null ?
+              emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.getDefaultInstance() : abilityIdentifier_;
+        }
+      }
+      /**
+       * <code>.AbilityIdentifier ability_identifier = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.Builder, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifierOrBuilder> 
+          getAbilityIdentifierFieldBuilder() {
+        if (abilityIdentifierBuilder_ == null) {
+          abilityIdentifierBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier.Builder, emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifierOrBuilder>(
+                  getAbilityIdentifier(),
+                  getParentForChildren(),
+                  isClean());
+          abilityIdentifier_ = null;
+        }
+        return abilityIdentifierBuilder_;
+      }
+
+      private java.lang.Object animEventId_ = "";
+      /**
+       * <code>string anim_event_id = 6;</code>
+       * @return The animEventId.
+       */
+      public java.lang.String getAnimEventId() {
+        java.lang.Object ref = animEventId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          animEventId_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string anim_event_id = 6;</code>
+       * @return The bytes for animEventId.
+       */
+      public com.google.protobuf.ByteString
+          getAnimEventIdBytes() {
+        java.lang.Object ref = animEventId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          animEventId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string anim_event_id = 6;</code>
+       * @param value The animEventId to set.
        * @return This builder for chaining.
        */
-      public Builder setMPBEBAKODGF(int value) {
-        
-        mPBEBAKODGF_ = value;
+      public Builder setAnimEventId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        animEventId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MPBEBAKODGF = 222;</code>
+       * <code>string anim_event_id = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMPBEBAKODGF() {
+      public Builder clearAnimEventId() {
         
-        mPBEBAKODGF_ = 0;
+        animEventId_ = getDefaultInstance().getAnimEventId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string anim_event_id = 6;</code>
+       * @param value The bytes for animEventId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAnimEventIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        animEventId_ = value;
         onChanged();
         return this;
       }
 
-      private int eBLEIGGLHLG_ ;
+      private emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult hitEffResult_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder> hitEffResultBuilder_;
       /**
-       * <code>uint32 EBLEIGGLHLG = 309;</code>
-       * @return The eBLEIGGLHLG.
+       * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+       * @return Whether the hitEffResult field is set.
        */
-      @java.lang.Override
-      public int getEBLEIGGLHLG() {
-        return eBLEIGGLHLG_;
+      public boolean hasHitEffResult() {
+        return hitEffResultBuilder_ != null || hitEffResult_ != null;
       }
       /**
-       * <code>uint32 EBLEIGGLHLG = 309;</code>
-       * @param value The eBLEIGGLHLG to set.
+       * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+       * @return The hitEffResult.
+       */
+      public emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult getHitEffResult() {
+        if (hitEffResultBuilder_ == null) {
+          return hitEffResult_ == null ? emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.getDefaultInstance() : hitEffResult_;
+        } else {
+          return hitEffResultBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+       */
+      public Builder setHitEffResult(emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult value) {
+        if (hitEffResultBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          hitEffResult_ = value;
+          onChanged();
+        } else {
+          hitEffResultBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+       */
+      public Builder setHitEffResult(
+          emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder builderForValue) {
+        if (hitEffResultBuilder_ == null) {
+          hitEffResult_ = builderForValue.build();
+          onChanged();
+        } else {
+          hitEffResultBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+       */
+      public Builder mergeHitEffResult(emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult value) {
+        if (hitEffResultBuilder_ == null) {
+          if (hitEffResult_ != null) {
+            hitEffResult_ =
+              emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.newBuilder(hitEffResult_).mergeFrom(value).buildPartial();
+          } else {
+            hitEffResult_ = value;
+          }
+          onChanged();
+        } else {
+          hitEffResultBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+       */
+      public Builder clearHitEffResult() {
+        if (hitEffResultBuilder_ == null) {
+          hitEffResult_ = null;
+          onChanged();
+        } else {
+          hitEffResult_ = null;
+          hitEffResultBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+       */
+      public emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder getHitEffResultBuilder() {
+        
+        onChanged();
+        return getHitEffResultFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+       */
+      public emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder getHitEffResultOrBuilder() {
+        if (hitEffResultBuilder_ != null) {
+          return hitEffResultBuilder_.getMessageOrBuilder();
+        } else {
+          return hitEffResult_ == null ?
+              emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.getDefaultInstance() : hitEffResult_;
+        }
+      }
+      /**
+       * <code>.AttackHitEffectResult hit_eff_result = 11;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder> 
+          getHitEffResultFieldBuilder() {
+        if (hitEffResultBuilder_ == null) {
+          hitEffResultBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResult.Builder, emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.AttackHitEffectResultOrBuilder>(
+                  getHitEffResult(),
+                  getParentForChildren(),
+                  isClean());
+          hitEffResult_ = null;
+        }
+        return hitEffResultBuilder_;
+      }
+
+      private float damage_ ;
+      /**
+       * <code>float damage = 1;</code>
+       * @return The damage.
+       */
+      @java.lang.Override
+      public float getDamage() {
+        return damage_;
+      }
+      /**
+       * <code>float damage = 1;</code>
+       * @param value The damage to set.
        * @return This builder for chaining.
        */
-      public Builder setEBLEIGGLHLG(int value) {
+      public Builder setDamage(float value) {
         
-        eBLEIGGLHLG_ = value;
+        damage_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EBLEIGGLHLG = 309;</code>
+       * <code>float damage = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEBLEIGGLHLG() {
+      public Builder clearDamage() {
         
-        eBLEIGGLHLG_ = 0;
+        damage_ = 0F;
         onChanged();
         return this;
       }
 
-      private float elementAmplifyRate_ ;
+      private int cOJHCEFMEEE_ ;
       /**
-       * <pre>
-       * 533
-       * </pre>
-       *
-       * <code>float element_amplify_rate = 389;</code>
-       * @return The elementAmplifyRate.
+       * <code>uint32 COJHCEFMEEE = 1271;</code>
+       * @return The cOJHCEFMEEE.
        */
       @java.lang.Override
-      public float getElementAmplifyRate() {
-        return elementAmplifyRate_;
+      public int getCOJHCEFMEEE() {
+        return cOJHCEFMEEE_;
       }
       /**
-       * <pre>
-       * 533
-       * </pre>
-       *
-       * <code>float element_amplify_rate = 389;</code>
-       * @param value The elementAmplifyRate to set.
+       * <code>uint32 COJHCEFMEEE = 1271;</code>
+       * @param value The cOJHCEFMEEE to set.
        * @return This builder for chaining.
        */
-      public Builder setElementAmplifyRate(float value) {
+      public Builder setCOJHCEFMEEE(int value) {
         
-        elementAmplifyRate_ = value;
+        cOJHCEFMEEE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * 533
-       * </pre>
-       *
-       * <code>float element_amplify_rate = 389;</code>
+       * <code>uint32 COJHCEFMEEE = 1271;</code>
        * @return This builder for chaining.
        */
-      public Builder clearElementAmplifyRate() {
+      public Builder clearCOJHCEFMEEE() {
         
-        elementAmplifyRate_ = 0F;
+        cOJHCEFMEEE_ = 0;
         onChanged();
         return this;
       }
 
-      private float elementDurabilityAttenuation_ ;
+      private int eFNIHOAOFEF_ ;
       /**
-       * <pre>
-       * 389
-       * </pre>
-       *
-       * <code>float element_durability_attenuation = 533;</code>
-       * @return The elementDurabilityAttenuation.
+       * <code>uint32 EFNIHOAOFEF = 1065;</code>
+       * @return The eFNIHOAOFEF.
        */
       @java.lang.Override
-      public float getElementDurabilityAttenuation() {
-        return elementDurabilityAttenuation_;
+      public int getEFNIHOAOFEF() {
+        return eFNIHOAOFEF_;
       }
       /**
-       * <pre>
-       * 389
-       * </pre>
-       *
-       * <code>float element_durability_attenuation = 533;</code>
-       * @param value The elementDurabilityAttenuation to set.
+       * <code>uint32 EFNIHOAOFEF = 1065;</code>
+       * @param value The eFNIHOAOFEF to set.
        * @return This builder for chaining.
        */
-      public Builder setElementDurabilityAttenuation(float value) {
+      public Builder setEFNIHOAOFEF(int value) {
         
-        elementDurabilityAttenuation_ = value;
+        eFNIHOAOFEF_ = value;
         onChanged();
         return this;
       }
       /**
-       * <pre>
-       * 389
-       * </pre>
-       *
-       * <code>float element_durability_attenuation = 533;</code>
+       * <code>uint32 EFNIHOAOFEF = 1065;</code>
        * @return This builder for chaining.
        */
-      public Builder clearElementDurabilityAttenuation() {
+      public Builder clearEFNIHOAOFEF() {
         
-        elementDurabilityAttenuation_ = 0F;
+        eFNIHOAOFEF_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean muteElementHurt_ ;
+      private int bPMFJFJBNED_ ;
       /**
-       * <code>bool mute_element_hurt = 590;</code>
-       * @return The muteElementHurt.
+       * <code>uint32 BPMFJFJBNED = 1702;</code>
+       * @return The bPMFJFJBNED.
        */
       @java.lang.Override
-      public boolean getMuteElementHurt() {
-        return muteElementHurt_;
+      public int getBPMFJFJBNED() {
+        return bPMFJFJBNED_;
       }
       /**
-       * <code>bool mute_element_hurt = 590;</code>
-       * @param value The muteElementHurt to set.
+       * <code>uint32 BPMFJFJBNED = 1702;</code>
+       * @param value The bPMFJFJBNED to set.
        * @return This builder for chaining.
        */
-      public Builder setMuteElementHurt(boolean value) {
+      public Builder setBPMFJFJBNED(int value) {
         
-        muteElementHurt_ = value;
+        bPMFJFJBNED_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool mute_element_hurt = 590;</code>
+       * <code>uint32 BPMFJFJBNED = 1702;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMuteElementHurt() {
+      public Builder clearBPMFJFJBNED() {
         
-        muteElementHurt_ = false;
+        bPMFJFJBNED_ = 0;
         onChanged();
         return this;
       }
 
-      private int mFLNDGPEJOE_ ;
+      private int eDADGELMDNN_ ;
       /**
-       * <code>uint32 MFLNDGPEJOE = 606;</code>
-       * @return The mFLNDGPEJOE.
+       * <code>uint32 EDADGELMDNN = 511;</code>
+       * @return The eDADGELMDNN.
        */
       @java.lang.Override
-      public int getMFLNDGPEJOE() {
-        return mFLNDGPEJOE_;
+      public int getEDADGELMDNN() {
+        return eDADGELMDNN_;
       }
       /**
-       * <code>uint32 MFLNDGPEJOE = 606;</code>
-       * @param value The mFLNDGPEJOE to set.
+       * <code>uint32 EDADGELMDNN = 511;</code>
+       * @param value The eDADGELMDNN to set.
        * @return This builder for chaining.
        */
-      public Builder setMFLNDGPEJOE(int value) {
+      public Builder setEDADGELMDNN(int value) {
         
-        mFLNDGPEJOE_ = value;
+        eDADGELMDNN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 MFLNDGPEJOE = 606;</code>
+       * <code>uint32 EDADGELMDNN = 511;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMFLNDGPEJOE() {
+      public Builder clearEDADGELMDNN() {
         
-        mFLNDGPEJOE_ = 0;
+        eDADGELMDNN_ = 0;
         onChanged();
         return this;
       }
 
-      private float damageShield_ ;
+      private float cNKKJIAPAMM_ ;
       /**
-       * <code>float damage_shield = 779;</code>
-       * @return The damageShield.
+       * <code>float CNKKJIAPAMM = 998;</code>
+       * @return The cNKKJIAPAMM.
        */
       @java.lang.Override
-      public float getDamageShield() {
-        return damageShield_;
+      public float getCNKKJIAPAMM() {
+        return cNKKJIAPAMM_;
       }
       /**
-       * <code>float damage_shield = 779;</code>
-       * @param value The damageShield to set.
+       * <code>float CNKKJIAPAMM = 998;</code>
+       * @param value The cNKKJIAPAMM to set.
        * @return This builder for chaining.
        */
-      public Builder setDamageShield(float value) {
+      public Builder setCNKKJIAPAMM(float value) {
         
-        damageShield_ = value;
+        cNKKJIAPAMM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float damage_shield = 779;</code>
+       * <code>float CNKKJIAPAMM = 998;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDamageShield() {
+      public Builder clearCNKKJIAPAMM() {
         
-        damageShield_ = 0F;
+        cNKKJIAPAMM_ = 0F;
         onChanged();
         return this;
       }
 
-      private int iFMINIBILFH_ ;
+      private int iCMDKMMHJLO_ ;
       /**
-       * <code>uint32 IFMINIBILFH = 823;</code>
-       * @return The iFMINIBILFH.
+       * <code>uint32 ICMDKMMHJLO = 4;</code>
+       * @return The iCMDKMMHJLO.
        */
       @java.lang.Override
-      public int getIFMINIBILFH() {
-        return iFMINIBILFH_;
+      public int getICMDKMMHJLO() {
+        return iCMDKMMHJLO_;
       }
       /**
-       * <code>uint32 IFMINIBILFH = 823;</code>
-       * @param value The iFMINIBILFH to set.
+       * <code>uint32 ICMDKMMHJLO = 4;</code>
+       * @param value The iCMDKMMHJLO to set.
        * @return This builder for chaining.
        */
-      public Builder setIFMINIBILFH(int value) {
+      public Builder setICMDKMMHJLO(int value) {
         
-        iFMINIBILFH_ = value;
+        iCMDKMMHJLO_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 IFMINIBILFH = 823;</code>
+       * <code>uint32 ICMDKMMHJLO = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIFMINIBILFH() {
+      public Builder clearICMDKMMHJLO() {
         
-        iFMINIBILFH_ = 0;
+        iCMDKMMHJLO_ = 0;
         onChanged();
         return this;
       }
 
-      private int jKGEMBOBALF_ ;
+      private int dIBMILDAPNJ_ ;
       /**
-       * <code>uint32 JKGEMBOBALF = 1349;</code>
-       * @return The jKGEMBOBALF.
+       * <code>uint32 DIBMILDAPNJ = 598;</code>
+       * @return The dIBMILDAPNJ.
        */
       @java.lang.Override
-      public int getJKGEMBOBALF() {
-        return jKGEMBOBALF_;
+      public int getDIBMILDAPNJ() {
+        return dIBMILDAPNJ_;
       }
       /**
-       * <code>uint32 JKGEMBOBALF = 1349;</code>
-       * @param value The jKGEMBOBALF to set.
+       * <code>uint32 DIBMILDAPNJ = 598;</code>
+       * @param value The dIBMILDAPNJ to set.
        * @return This builder for chaining.
        */
-      public Builder setJKGEMBOBALF(int value) {
+      public Builder setDIBMILDAPNJ(int value) {
         
-        jKGEMBOBALF_ = value;
+        dIBMILDAPNJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 JKGEMBOBALF = 1349;</code>
+       * <code>uint32 DIBMILDAPNJ = 598;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJKGEMBOBALF() {
+      public Builder clearDIBMILDAPNJ() {
         
-        jKGEMBOBALF_ = 0;
+        dIBMILDAPNJ_ = 0;
         onChanged();
         return this;
       }
 
-      private int eKJHPCHCMLF_ ;
+      private int aNMFCGEINNB_ ;
       /**
-       * <code>uint32 EKJHPCHCMLF = 1525;</code>
-       * @return The eKJHPCHCMLF.
+       * <code>uint32 ANMFCGEINNB = 1308;</code>
+       * @return The aNMFCGEINNB.
        */
       @java.lang.Override
-      public int getEKJHPCHCMLF() {
-        return eKJHPCHCMLF_;
+      public int getANMFCGEINNB() {
+        return aNMFCGEINNB_;
       }
       /**
-       * <code>uint32 EKJHPCHCMLF = 1525;</code>
-       * @param value The eKJHPCHCMLF to set.
+       * <code>uint32 ANMFCGEINNB = 1308;</code>
+       * @param value The aNMFCGEINNB to set.
        * @return This builder for chaining.
        */
-      public Builder setEKJHPCHCMLF(int value) {
+      public Builder setANMFCGEINNB(int value) {
         
-        eKJHPCHCMLF_ = value;
+        aNMFCGEINNB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 EKJHPCHCMLF = 1525;</code>
+       * <code>uint32 ANMFCGEINNB = 1308;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEKJHPCHCMLF() {
+      public Builder clearANMFCGEINNB() {
         
-        eKJHPCHCMLF_ = 0;
+        aNMFCGEINNB_ = 0;
         onChanged();
         return this;
       }
 
-      private int pOAFAPLMPEB_ ;
+      private int attackerId_ ;
       /**
-       * <code>uint32 POAFAPLMPEB = 1640;</code>
-       * @return The pOAFAPLMPEB.
+       * <code>uint32 attacker_id = 9;</code>
+       * @return The attackerId.
        */
       @java.lang.Override
-      public int getPOAFAPLMPEB() {
-        return pOAFAPLMPEB_;
+      public int getAttackerId() {
+        return attackerId_;
       }
       /**
-       * <code>uint32 POAFAPLMPEB = 1640;</code>
-       * @param value The pOAFAPLMPEB to set.
+       * <code>uint32 attacker_id = 9;</code>
+       * @param value The attackerId to set.
        * @return This builder for chaining.
        */
-      public Builder setPOAFAPLMPEB(int value) {
+      public Builder setAttackerId(int value) {
         
-        pOAFAPLMPEB_ = value;
+        attackerId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 POAFAPLMPEB = 1640;</code>
+       * <code>uint32 attacker_id = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPOAFAPLMPEB() {
+      public Builder clearAttackerId() {
         
-        pOAFAPLMPEB_ = 0;
+        attackerId_ = 0;
         onChanged();
         return this;
       }
 
-      private boolean useGadgetDamageAction_ ;
+      private float eJAHLAJDPHA_ ;
       /**
-       * <code>bool use_gadget_damage_action = 1733;</code>
-       * @return The useGadgetDamageAction.
+       * <code>float EJAHLAJDPHA = 333;</code>
+       * @return The eJAHLAJDPHA.
        */
       @java.lang.Override
-      public boolean getUseGadgetDamageAction() {
-        return useGadgetDamageAction_;
+      public float getEJAHLAJDPHA() {
+        return eJAHLAJDPHA_;
       }
       /**
-       * <code>bool use_gadget_damage_action = 1733;</code>
-       * @param value The useGadgetDamageAction to set.
+       * <code>float EJAHLAJDPHA = 333;</code>
+       * @param value The eJAHLAJDPHA to set.
        * @return This builder for chaining.
        */
-      public Builder setUseGadgetDamageAction(boolean value) {
+      public Builder setEJAHLAJDPHA(float value) {
         
-        useGadgetDamageAction_ = value;
+        eJAHLAJDPHA_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool use_gadget_damage_action = 1733;</code>
+       * <code>float EJAHLAJDPHA = 333;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUseGadgetDamageAction() {
+      public Builder clearEJAHLAJDPHA() {
         
-        useGadgetDamageAction_ = false;
+        eJAHLAJDPHA_ = 0F;
         onChanged();
         return this;
       }
 
-      private int eLIFILCNKFD_ ;
+      private int bILPCAOBDBB_ ;
       /**
-       * <code>uint32 ELIFILCNKFD = 1756;</code>
-       * @return The eLIFILCNKFD.
+       * <code>uint32 BILPCAOBDBB = 591;</code>
+       * @return The bILPCAOBDBB.
        */
       @java.lang.Override
-      public int getELIFILCNKFD() {
-        return eLIFILCNKFD_;
+      public int getBILPCAOBDBB() {
+        return bILPCAOBDBB_;
       }
       /**
-       * <code>uint32 ELIFILCNKFD = 1756;</code>
-       * @param value The eLIFILCNKFD to set.
+       * <code>uint32 BILPCAOBDBB = 591;</code>
+       * @param value The bILPCAOBDBB to set.
        * @return This builder for chaining.
        */
-      public Builder setELIFILCNKFD(int value) {
+      public Builder setBILPCAOBDBB(int value) {
         
-        eLIFILCNKFD_ = value;
+        bILPCAOBDBB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 ELIFILCNKFD = 1756;</code>
+       * <code>uint32 BILPCAOBDBB = 591;</code>
        * @return This builder for chaining.
        */
-      public Builder clearELIFILCNKFD() {
+      public Builder clearBILPCAOBDBB() {
         
-        eLIFILCNKFD_ = 0;
+        bILPCAOBDBB_ = 0;
         onChanged();
         return this;
       }
 
-      private float endureDelta_ ;
+      private float iPLDBCEHDPJ_ ;
       /**
-       * <code>float endure_delta = 1827;</code>
-       * @return The endureDelta.
+       * <code>float IPLDBCEHDPJ = 1791;</code>
+       * @return The iPLDBCEHDPJ.
        */
       @java.lang.Override
-      public float getEndureDelta() {
-        return endureDelta_;
+      public float getIPLDBCEHDPJ() {
+        return iPLDBCEHDPJ_;
       }
       /**
-       * <code>float endure_delta = 1827;</code>
-       * @param value The endureDelta to set.
+       * <code>float IPLDBCEHDPJ = 1791;</code>
+       * @param value The iPLDBCEHDPJ to set.
        * @return This builder for chaining.
        */
-      public Builder setEndureDelta(float value) {
+      public Builder setIPLDBCEHDPJ(float value) {
         
-        endureDelta_ = value;
+        iPLDBCEHDPJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float endure_delta = 1827;</code>
+       * <code>float IPLDBCEHDPJ = 1791;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEndureDelta() {
+      public Builder clearIPLDBCEHDPJ() {
         
-        endureDelta_ = 0F;
+        iPLDBCEHDPJ_ = 0F;
         onChanged();
         return this;
       }
 
-      private int fLPFBAFHGNN_ ;
+      private float aCAGOHDJONJ_ ;
       /**
-       * <code>uint32 FLPFBAFHGNN = 1842;</code>
-       * @return The fLPFBAFHGNN.
+       * <code>float ACAGOHDJONJ = 992;</code>
+       * @return The aCAGOHDJONJ.
        */
       @java.lang.Override
-      public int getFLPFBAFHGNN() {
-        return fLPFBAFHGNN_;
+      public float getACAGOHDJONJ() {
+        return aCAGOHDJONJ_;
       }
       /**
-       * <code>uint32 FLPFBAFHGNN = 1842;</code>
-       * @param value The fLPFBAFHGNN to set.
+       * <code>float ACAGOHDJONJ = 992;</code>
+       * @param value The aCAGOHDJONJ to set.
        * @return This builder for chaining.
        */
-      public Builder setFLPFBAFHGNN(int value) {
+      public Builder setACAGOHDJONJ(float value) {
         
-        fLPFBAFHGNN_ = value;
+        aCAGOHDJONJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 FLPFBAFHGNN = 1842;</code>
+       * <code>float ACAGOHDJONJ = 992;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFLPFBAFHGNN() {
+      public Builder clearACAGOHDJONJ() {
         
-        fLPFBAFHGNN_ = 0;
+        aCAGOHDJONJ_ = 0F;
         onChanged();
         return this;
       }
 
-      private int nMPEDJOPMMB_ ;
+      private boolean kMKABKHIAHB_ ;
       /**
-       * <code>uint32 NMPEDJOPMMB = 1859;</code>
-       * @return The nMPEDJOPMMB.
+       * <code>bool KMKABKHIAHB = 847;</code>
+       * @return The kMKABKHIAHB.
        */
       @java.lang.Override
-      public int getNMPEDJOPMMB() {
-        return nMPEDJOPMMB_;
+      public boolean getKMKABKHIAHB() {
+        return kMKABKHIAHB_;
       }
       /**
-       * <code>uint32 NMPEDJOPMMB = 1859;</code>
-       * @param value The nMPEDJOPMMB to set.
+       * <code>bool KMKABKHIAHB = 847;</code>
+       * @param value The kMKABKHIAHB to set.
        * @return This builder for chaining.
        */
-      public Builder setNMPEDJOPMMB(int value) {
+      public Builder setKMKABKHIAHB(boolean value) {
         
-        nMPEDJOPMMB_ = value;
+        kMKABKHIAHB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NMPEDJOPMMB = 1859;</code>
+       * <code>bool KMKABKHIAHB = 847;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNMPEDJOPMMB() {
+      public Builder clearKMKABKHIAHB() {
         
-        nMPEDJOPMMB_ = 0;
+        kMKABKHIAHB_ = false;
         onChanged();
         return this;
       }
 
-      private boolean isResistText_ ;
+      private boolean dDBMLBBBDFL_ ;
       /**
-       * <code>bool is_resist_text = 1978;</code>
-       * @return The isResistText.
+       * <code>bool DDBMLBBBDFL = 1064;</code>
+       * @return The dDBMLBBBDFL.
        */
       @java.lang.Override
-      public boolean getIsResistText() {
-        return isResistText_;
+      public boolean getDDBMLBBBDFL() {
+        return dDBMLBBBDFL_;
       }
       /**
-       * <code>bool is_resist_text = 1978;</code>
-       * @param value The isResistText to set.
+       * <code>bool DDBMLBBBDFL = 1064;</code>
+       * @param value The dDBMLBBBDFL to set.
        * @return This builder for chaining.
        */
-      public Builder setIsResistText(boolean value) {
+      public Builder setDDBMLBBBDFL(boolean value) {
         
-        isResistText_ = value;
+        dDBMLBBBDFL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_resist_text = 1978;</code>
+       * <code>bool DDBMLBBBDFL = 1064;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsResistText() {
+      public Builder clearDDBMLBBBDFL() {
         
-        isResistText_ = false;
+        dDBMLBBBDFL_ = false;
         onChanged();
         return this;
       }
 
-      private int gMNJEDPKNDE_ ;
+      private boolean iJLNDDIPPBI_ ;
       /**
-       * <code>uint32 GMNJEDPKNDE = 2023;</code>
-       * @return The gMNJEDPKNDE.
+       * <code>bool IJLNDDIPPBI = 1687;</code>
+       * @return The iJLNDDIPPBI.
        */
       @java.lang.Override
-      public int getGMNJEDPKNDE() {
-        return gMNJEDPKNDE_;
+      public boolean getIJLNDDIPPBI() {
+        return iJLNDDIPPBI_;
       }
       /**
-       * <code>uint32 GMNJEDPKNDE = 2023;</code>
-       * @param value The gMNJEDPKNDE to set.
+       * <code>bool IJLNDDIPPBI = 1687;</code>
+       * @param value The iJLNDDIPPBI to set.
        * @return This builder for chaining.
        */
-      public Builder setGMNJEDPKNDE(int value) {
+      public Builder setIJLNDDIPPBI(boolean value) {
         
-        gMNJEDPKNDE_ = value;
+        iJLNDDIPPBI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 GMNJEDPKNDE = 2023;</code>
+       * <code>bool IJLNDDIPPBI = 1687;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGMNJEDPKNDE() {
+      public Builder clearIJLNDDIPPBI() {
         
-        gMNJEDPKNDE_ = 0;
+        iJLNDDIPPBI_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean aGGMJJACOFC_ ;
+      /**
+       * <code>bool AGGMJJACOFC = 8;</code>
+       * @return The aGGMJJACOFC.
+       */
+      @java.lang.Override
+      public boolean getAGGMJJACOFC() {
+        return aGGMJJACOFC_;
+      }
+      /**
+       * <code>bool AGGMJJACOFC = 8;</code>
+       * @param value The aGGMJJACOFC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAGGMJJACOFC(boolean value) {
+        
+        aGGMJJACOFC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool AGGMJJACOFC = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAGGMJJACOFC() {
+        
+        aGGMJJACOFC_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int defenseId_ ;
+      /**
+       * <code>uint32 defense_id = 12;</code>
+       * @return The defenseId.
+       */
+      @java.lang.Override
+      public int getDefenseId() {
+        return defenseId_;
+      }
+      /**
+       * <code>uint32 defense_id = 12;</code>
+       * @param value The defenseId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDefenseId(int value) {
+        
+        defenseId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 defense_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDefenseId() {
+        
+        defenseId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gIHKDPHENPO_ ;
+      /**
+       * <code>uint32 GIHKDPHENPO = 215;</code>
+       * @return The gIHKDPHENPO.
+       */
+      @java.lang.Override
+      public int getGIHKDPHENPO() {
+        return gIHKDPHENPO_;
+      }
+      /**
+       * <code>uint32 GIHKDPHENPO = 215;</code>
+       * @param value The gIHKDPHENPO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGIHKDPHENPO(int value) {
+        
+        gIHKDPHENPO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 GIHKDPHENPO = 215;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGIHKDPHENPO() {
+        
+        gIHKDPHENPO_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mKFEOFALBKJ_ ;
+      /**
+       * <code>uint32 MKFEOFALBKJ = 886;</code>
+       * @return The mKFEOFALBKJ.
+       */
+      @java.lang.Override
+      public int getMKFEOFALBKJ() {
+        return mKFEOFALBKJ_;
+      }
+      /**
+       * <code>uint32 MKFEOFALBKJ = 886;</code>
+       * @param value The mKFEOFALBKJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMKFEOFALBKJ(int value) {
+        
+        mKFEOFALBKJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MKFEOFALBKJ = 886;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMKFEOFALBKJ() {
+        
+        mKFEOFALBKJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int elementType_ ;
+      /**
+       * <code>uint32 element_type = 2;</code>
+       * @return The elementType.
+       */
+      @java.lang.Override
+      public int getElementType() {
+        return elementType_;
+      }
+      /**
+       * <code>uint32 element_type = 2;</code>
+       * @param value The elementType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setElementType(int value) {
+        
+        elementType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 element_type = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearElementType() {
+        
+        elementType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lANMHNELOCE_ ;
+      /**
+       * <code>uint32 LANMHNELOCE = 420;</code>
+       * @return The lANMHNELOCE.
+       */
+      @java.lang.Override
+      public int getLANMHNELOCE() {
+        return lANMHNELOCE_;
+      }
+      /**
+       * <code>uint32 LANMHNELOCE = 420;</code>
+       * @param value The lANMHNELOCE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLANMHNELOCE(int value) {
+        
+        lANMHNELOCE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LANMHNELOCE = 420;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLANMHNELOCE() {
+        
+        lANMHNELOCE_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cBCDCADHGLD_ ;
+      /**
+       * <code>uint32 CBCDCADHGLD = 3;</code>
+       * @return The cBCDCADHGLD.
+       */
+      @java.lang.Override
+      public int getCBCDCADHGLD() {
+        return cBCDCADHGLD_;
+      }
+      /**
+       * <code>uint32 CBCDCADHGLD = 3;</code>
+       * @param value The cBCDCADHGLD to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCBCDCADHGLD(int value) {
+        
+        cBCDCADHGLD_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 CBCDCADHGLD = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCBCDCADHGLD() {
+        
+        cBCDCADHGLD_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int iAAAGHFANMH_ ;
+      /**
+       * <code>uint32 IAAAGHFANMH = 1381;</code>
+       * @return The iAAAGHFANMH.
+       */
+      @java.lang.Override
+      public int getIAAAGHFANMH() {
+        return iAAAGHFANMH_;
+      }
+      /**
+       * <code>uint32 IAAAGHFANMH = 1381;</code>
+       * @param value The iAAAGHFANMH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIAAAGHFANMH(int value) {
+        
+        iAAAGHFANMH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 IAAAGHFANMH = 1381;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIAAAGHFANMH() {
+        
+        iAAAGHFANMH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hitRetreatAngleCompat_ ;
+      /**
+       * <code>int32 hit_retreat_angle_compat = 7;</code>
+       * @return The hitRetreatAngleCompat.
+       */
+      @java.lang.Override
+      public int getHitRetreatAngleCompat() {
+        return hitRetreatAngleCompat_;
+      }
+      /**
+       * <code>int32 hit_retreat_angle_compat = 7;</code>
+       * @param value The hitRetreatAngleCompat to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHitRetreatAngleCompat(int value) {
+        
+        hitRetreatAngleCompat_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 hit_retreat_angle_compat = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHitRetreatAngleCompat() {
+        
+        hitRetreatAngleCompat_ = 0;
         onChanged();
         return this;
       }
@@ -3283,49 +3243,48 @@ public final class AttackResultOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022AttackResult.proto\032\027AbilityIdentifier." +
-      "proto\032\014Vector.proto\032\033AttackHitEffectResu" +
-      "lt.proto\032\022HitCollision.proto\"\267\006\n\014AttackR" +
-      "esult\022\023\n\013attacker_id\030\001 \001(\r\022\016\n\006damage\030\002 \001" +
-      "(\002\022 \n\030hit_retreat_angle_compat\030\003 \001(\005\022\022\n\n" +
-      "defense_id\030\005 \001(\r\022.\n\022ability_identifier\030\006" +
-      " \001(\0132\022.AbilityIdentifier\022\023\n\013IICFMJEJOBO\030" +
-      "\007 \001(\r\022\017\n\007is_crit\030\010 \001(\010\022\035\n\014resolved_dir\030\t" +
-      " \001(\0132\007.Vector\022\023\n\013BAABHEHFAPH\030\n \001(\r\022\024\n\014el" +
-      "ement_type\030\013 \001(\r\022.\n\016hit_eff_result\030\r \001(\013" +
-      "2\026.AttackHitEffectResult\022\025\n\ranim_event_i" +
-      "d\030\016 \001(\t\022$\n\rhit_collision\030\017 \001(\0132\r.HitColl" +
-      "ision\022\024\n\013MPBEBAKODGF\030\336\001 \001(\r\022\024\n\013EBLEIGGLH" +
-      "LG\030\265\002 \001(\r\022\035\n\024element_amplify_rate\030\205\003 \001(\002" +
-      "\022\'\n\036element_durability_attenuation\030\225\004 \001(" +
-      "\002\022\032\n\021mute_element_hurt\030\316\004 \001(\010\022\024\n\013MFLNDGP" +
-      "EJOE\030\336\004 \001(\r\022\026\n\rdamage_shield\030\213\006 \001(\002\022\024\n\013I" +
-      "FMINIBILFH\030\267\006 \001(\r\022\024\n\013JKGEMBOBALF\030\305\n \001(\r\022" +
-      "\024\n\013EKJHPCHCMLF\030\365\013 \001(\r\022\024\n\013POAFAPLMPEB\030\350\014 " +
-      "\001(\r\022!\n\030use_gadget_damage_action\030\305\r \001(\010\022\024" +
-      "\n\013ELIFILCNKFD\030\334\r \001(\r\022\025\n\014endure_delta\030\243\016 " +
-      "\001(\002\022\024\n\013FLPFBAFHGNN\030\262\016 \001(\r\022\024\n\013NMPEDJOPMMB" +
-      "\030\303\016 \001(\r\022\027\n\016is_resist_text\030\272\017 \001(\010\022\024\n\013GMNJ" +
-      "EDPKNDE\030\347\017 \001(\rB\033\n\031emu.grasscutter.net.pr" +
-      "otob\006proto3"
+      "proto\032\033AttackHitEffectResult.proto\032\022HitC" +
+      "ollision.proto\032\014Vector.proto\"\205\006\n\014AttackR" +
+      "esult\022$\n\rhit_collision\030\r \001(\0132\r.HitCollis" +
+      "ion\022\034\n\013resolve_dir\030\016 \001(\0132\007.Vector\022.\n\022abi" +
+      "lity_identifier\030\005 \001(\0132\022.AbilityIdentifie" +
+      "r\022\025\n\ranim_event_id\030\006 \001(\t\022.\n\016hit_eff_resu" +
+      "lt\030\013 \001(\0132\026.AttackHitEffectResult\022\016\n\006dama" +
+      "ge\030\001 \001(\002\022\024\n\013COJHCEFMEEE\030\367\t \001(\r\022\024\n\013EFNIHO" +
+      "AOFEF\030\251\010 \001(\r\022\024\n\013BPMFJFJBNED\030\246\r \001(\r\022\024\n\013ED" +
+      "ADGELMDNN\030\377\003 \001(\r\022\024\n\013CNKKJIAPAMM\030\346\007 \001(\002\022\023" +
+      "\n\013ICMDKMMHJLO\030\004 \001(\r\022\024\n\013DIBMILDAPNJ\030\326\004 \001(" +
+      "\r\022\024\n\013ANMFCGEINNB\030\234\n \001(\r\022\023\n\013attacker_id\030\t" +
+      " \001(\r\022\024\n\013EJAHLAJDPHA\030\315\002 \001(\002\022\024\n\013BILPCAOBDB" +
+      "B\030\317\004 \001(\r\022\024\n\013IPLDBCEHDPJ\030\377\r \001(\002\022\024\n\013ACAGOH" +
+      "DJONJ\030\340\007 \001(\002\022\024\n\013KMKABKHIAHB\030\317\006 \001(\010\022\024\n\013DD" +
+      "BMLBBBDFL\030\250\010 \001(\010\022\024\n\013IJLNDDIPPBI\030\227\r \001(\010\022\023" +
+      "\n\013AGGMJJACOFC\030\010 \001(\010\022\022\n\ndefense_id\030\014 \001(\r\022" +
+      "\024\n\013GIHKDPHENPO\030\327\001 \001(\r\022\024\n\013MKFEOFALBKJ\030\366\006 " +
+      "\001(\r\022\024\n\014element_type\030\002 \001(\r\022\024\n\013LANMHNELOCE" +
+      "\030\244\003 \001(\r\022\023\n\013CBCDCADHGLD\030\003 \001(\r\022\024\n\013IAAAGHFA" +
+      "NMH\030\345\n \001(\r\022 \n\030hit_retreat_angle_compat\030\007" +
+      " \001(\005B\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.AbilityIdentifierOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.HitCollisionOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
         });
     internal_static_AttackResult_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AttackResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AttackResult_descriptor,
-        new java.lang.String[] { "AttackerId", "Damage", "HitRetreatAngleCompat", "DefenseId", "AbilityIdentifier", "IICFMJEJOBO", "IsCrit", "ResolvedDir", "BAABHEHFAPH", "ElementType", "HitEffResult", "AnimEventId", "HitCollision", "MPBEBAKODGF", "EBLEIGGLHLG", "ElementAmplifyRate", "ElementDurabilityAttenuation", "MuteElementHurt", "MFLNDGPEJOE", "DamageShield", "IFMINIBILFH", "JKGEMBOBALF", "EKJHPCHCMLF", "POAFAPLMPEB", "UseGadgetDamageAction", "ELIFILCNKFD", "EndureDelta", "FLPFBAFHGNN", "NMPEDJOPMMB", "IsResistText", "GMNJEDPKNDE", });
+        new java.lang.String[] { "HitCollision", "ResolveDir", "AbilityIdentifier", "AnimEventId", "HitEffResult", "Damage", "COJHCEFMEEE", "EFNIHOAOFEF", "BPMFJFJBNED", "EDADGELMDNN", "CNKKJIAPAMM", "ICMDKMMHJLO", "DIBMILDAPNJ", "ANMFCGEINNB", "AttackerId", "EJAHLAJDPHA", "BILPCAOBDBB", "IPLDBCEHDPJ", "ACAGOHDJONJ", "KMKABKHIAHB", "DDBMLBBBDFL", "IJLNDDIPPBI", "AGGMJJACOFC", "DefenseId", "GIHKDPHENPO", "MKFEOFALBKJ", "ElementType", "LANMHNELOCE", "CBCDCADHGLD", "IAAAGHFANMH", "HitRetreatAngleCompat", });
     emu.grasscutter.net.proto.AbilityIdentifierOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AttackHitEffectResultOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HitCollisionOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

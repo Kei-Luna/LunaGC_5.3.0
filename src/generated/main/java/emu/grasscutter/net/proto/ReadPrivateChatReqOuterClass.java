@@ -19,17 +19,18 @@ public final class ReadPrivateChatReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 4;</code>
-     * @return The targetUid.
+     * <code>uint32 position = 11;</code>
+     * @return The position.
      */
-    int getTargetUid();
+    int getPosition();
+
+    /**
+     * <code>uint32 schedule_id = 15;</code>
+     * @return The scheduleId.
+     */
+    int getScheduleId();
   }
   /**
-   * <pre>
-   * CmdId: 5538
-   * Obf: BMBHFJMPFKB
-   * </pre>
-   *
    * Protobuf type {@code ReadPrivateChatReq}
    */
   public static final class ReadPrivateChatReq extends
@@ -74,9 +75,14 @@ public final class ReadPrivateChatReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 88: {
 
-              targetUid_ = input.readUInt32();
+              position_ = input.readUInt32();
+              break;
+            }
+            case 120: {
+
+              scheduleId_ = input.readUInt32();
               break;
             }
             default: {
@@ -111,15 +117,26 @@ public final class ReadPrivateChatReqOuterClass {
               emu.grasscutter.net.proto.ReadPrivateChatReqOuterClass.ReadPrivateChatReq.class, emu.grasscutter.net.proto.ReadPrivateChatReqOuterClass.ReadPrivateChatReq.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 4;
-    private int targetUid_;
+    public static final int POSITION_FIELD_NUMBER = 11;
+    private int position_;
     /**
-     * <code>uint32 target_uid = 4;</code>
-     * @return The targetUid.
+     * <code>uint32 position = 11;</code>
+     * @return The position.
      */
     @java.lang.Override
-    public int getTargetUid() {
-      return targetUid_;
+    public int getPosition() {
+      return position_;
+    }
+
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 15;
+    private int scheduleId_;
+    /**
+     * <code>uint32 schedule_id = 15;</code>
+     * @return The scheduleId.
+     */
+    @java.lang.Override
+    public int getScheduleId() {
+      return scheduleId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -136,8 +153,11 @@ public final class ReadPrivateChatReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (targetUid_ != 0) {
-        output.writeUInt32(4, targetUid_);
+      if (position_ != 0) {
+        output.writeUInt32(11, position_);
+      }
+      if (scheduleId_ != 0) {
+        output.writeUInt32(15, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -148,9 +168,13 @@ public final class ReadPrivateChatReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (targetUid_ != 0) {
+      if (position_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, targetUid_);
+          .computeUInt32Size(11, position_);
+      }
+      if (scheduleId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -167,8 +191,10 @@ public final class ReadPrivateChatReqOuterClass {
       }
       emu.grasscutter.net.proto.ReadPrivateChatReqOuterClass.ReadPrivateChatReq other = (emu.grasscutter.net.proto.ReadPrivateChatReqOuterClass.ReadPrivateChatReq) obj;
 
-      if (getTargetUid()
-          != other.getTargetUid()) return false;
+      if (getPosition()
+          != other.getPosition()) return false;
+      if (getScheduleId()
+          != other.getScheduleId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -180,8 +206,10 @@ public final class ReadPrivateChatReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TARGET_UID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetUid();
+      hash = (37 * hash) + POSITION_FIELD_NUMBER;
+      hash = (53 * hash) + getPosition();
+      hash = (37 * hash) + SCHEDULE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getScheduleId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -278,11 +306,6 @@ public final class ReadPrivateChatReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 5538
-     * Obf: BMBHFJMPFKB
-     * </pre>
-     *
      * Protobuf type {@code ReadPrivateChatReq}
      */
     public static final class Builder extends
@@ -320,7 +343,9 @@ public final class ReadPrivateChatReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        targetUid_ = 0;
+        position_ = 0;
+
+        scheduleId_ = 0;
 
         return this;
       }
@@ -348,7 +373,8 @@ public final class ReadPrivateChatReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ReadPrivateChatReqOuterClass.ReadPrivateChatReq buildPartial() {
         emu.grasscutter.net.proto.ReadPrivateChatReqOuterClass.ReadPrivateChatReq result = new emu.grasscutter.net.proto.ReadPrivateChatReqOuterClass.ReadPrivateChatReq(this);
-        result.targetUid_ = targetUid_;
+        result.position_ = position_;
+        result.scheduleId_ = scheduleId_;
         onBuilt();
         return result;
       }
@@ -397,8 +423,11 @@ public final class ReadPrivateChatReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ReadPrivateChatReqOuterClass.ReadPrivateChatReq other) {
         if (other == emu.grasscutter.net.proto.ReadPrivateChatReqOuterClass.ReadPrivateChatReq.getDefaultInstance()) return this;
-        if (other.getTargetUid() != 0) {
-          setTargetUid(other.getTargetUid());
+        if (other.getPosition() != 0) {
+          setPosition(other.getPosition());
+        }
+        if (other.getScheduleId() != 0) {
+          setScheduleId(other.getScheduleId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -429,33 +458,64 @@ public final class ReadPrivateChatReqOuterClass {
         return this;
       }
 
-      private int targetUid_ ;
+      private int position_ ;
       /**
-       * <code>uint32 target_uid = 4;</code>
-       * @return The targetUid.
+       * <code>uint32 position = 11;</code>
+       * @return The position.
        */
       @java.lang.Override
-      public int getTargetUid() {
-        return targetUid_;
+      public int getPosition() {
+        return position_;
       }
       /**
-       * <code>uint32 target_uid = 4;</code>
-       * @param value The targetUid to set.
+       * <code>uint32 position = 11;</code>
+       * @param value The position to set.
        * @return This builder for chaining.
        */
-      public Builder setTargetUid(int value) {
+      public Builder setPosition(int value) {
         
-        targetUid_ = value;
+        position_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 target_uid = 4;</code>
+       * <code>uint32 position = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTargetUid() {
+      public Builder clearPosition() {
         
-        targetUid_ = 0;
+        position_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int scheduleId_ ;
+      /**
+       * <code>uint32 schedule_id = 15;</code>
+       * @return The scheduleId.
+       */
+      @java.lang.Override
+      public int getScheduleId() {
+        return scheduleId_;
+      }
+      /**
+       * <code>uint32 schedule_id = 15;</code>
+       * @param value The scheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setScheduleId(int value) {
+        
+        scheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 schedule_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearScheduleId() {
+        
+        scheduleId_ = 0;
         onChanged();
         return this;
       }
@@ -526,9 +586,10 @@ public final class ReadPrivateChatReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030ReadPrivateChatReq.proto\"(\n\022ReadPrivat" +
-      "eChatReq\022\022\n\ntarget_uid\030\004 \001(\rB\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\030ReadPrivateChatReq.proto\";\n\022ReadPrivat" +
+      "eChatReq\022\020\n\010position\030\013 \001(\r\022\023\n\013schedule_i" +
+      "d\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -539,7 +600,7 @@ public final class ReadPrivateChatReqOuterClass {
     internal_static_ReadPrivateChatReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ReadPrivateChatReq_descriptor,
-        new java.lang.String[] { "TargetUid", });
+        new java.lang.String[] { "Position", "ScheduleId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

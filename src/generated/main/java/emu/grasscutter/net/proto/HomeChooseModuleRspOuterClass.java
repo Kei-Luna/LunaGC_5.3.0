@@ -19,7 +19,7 @@ public final class HomeChooseModuleRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     int getRetcode();
@@ -75,7 +75,7 @@ public final class HomeChooseModuleRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
@@ -117,10 +117,10 @@ public final class HomeChooseModuleRspOuterClass {
               emu.grasscutter.net.proto.HomeChooseModuleRspOuterClass.HomeChooseModuleRsp.class, emu.grasscutter.net.proto.HomeChooseModuleRspOuterClass.HomeChooseModuleRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 1;
+    public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
     /**
-     * <code>int32 retcode = 1;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -154,7 +154,7 @@ public final class HomeChooseModuleRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(1, retcode_);
+        output.writeInt32(8, retcode_);
       }
       if (moduleId_ != 0) {
         output.writeUInt32(12, moduleId_);
@@ -170,7 +170,7 @@ public final class HomeChooseModuleRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, retcode_);
+          .computeInt32Size(8, retcode_);
       }
       if (moduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -460,7 +460,7 @@ public final class HomeChooseModuleRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 8;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -468,7 +468,7 @@ public final class HomeChooseModuleRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 8;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -479,7 +479,7 @@ public final class HomeChooseModuleRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 1;</code>
+       * <code>int32 retcode = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -587,7 +587,7 @@ public final class HomeChooseModuleRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031HomeChooseModuleRsp.proto\"9\n\023HomeChoos" +
-      "eModuleRsp\022\017\n\007retcode\030\001 \001(\005\022\021\n\tmodule_id" +
+      "eModuleRsp\022\017\n\007retcode\030\010 \001(\005\022\021\n\tmodule_id" +
       "\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };

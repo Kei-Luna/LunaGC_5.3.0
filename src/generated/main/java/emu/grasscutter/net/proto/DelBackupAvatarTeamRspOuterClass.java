@@ -31,10 +31,6 @@ public final class DelBackupAvatarTeamRspOuterClass {
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 7408
-   * </pre>
-   *
    * Protobuf type {@code DelBackupAvatarTeamRsp}
    */
   public static final class DelBackupAvatarTeamRsp extends
@@ -310,10 +306,6 @@ public final class DelBackupAvatarTeamRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 7408
-     * </pre>
-     *
      * Protobuf type {@code DelBackupAvatarTeamRsp}
      */
     public static final class Builder extends

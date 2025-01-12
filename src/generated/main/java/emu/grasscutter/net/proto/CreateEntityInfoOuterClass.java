@@ -1919,8 +1919,8 @@ public final class CreateEntityInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026CreateEntityInfo.proto\032\014Vector.proto\032\026" +
-      "CreateGadgetInfo.proto\"\237\002\n\020CreateEntityI" +
+      "\n\026CreateEntityInfo.proto\032\026CreateGadgetIn" +
+      "fo.proto\032\014Vector.proto\"\237\002\n\020CreateEntityI" +
       "nfo\022\r\n\005level\030\005 \001(\r\022\024\n\003pos\030\006 \001(\0132\007.Vector" +
       "\022\024\n\003rot\030\007 \001(\0132\007.Vector\022\020\n\010scene_id\030\n \001(\r" +
       "\022\017\n\007room_id\030\013 \001(\r\022\030\n\020client_unique_id\030\014 " +
@@ -1933,8 +1933,8 @@ public final class CreateEntityInfoOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
         });
     internal_static_CreateEntityInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1942,8 +1942,8 @@ public final class CreateEntityInfoOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CreateEntityInfo_descriptor,
         new java.lang.String[] { "Level", "Pos", "Rot", "SceneId", "RoomId", "ClientUniqueId", "MonsterId", "NpcId", "GadgetId", "ItemId", "Gadget", "Entity", "EntityCreateInfo", });
-    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
     emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
