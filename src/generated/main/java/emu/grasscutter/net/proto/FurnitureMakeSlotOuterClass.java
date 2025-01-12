@@ -19,34 +19,30 @@ public final class FurnitureMakeSlotOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+     * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData> 
         getFurnitureMakeDataListList();
     /**
-     * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+     * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
      */
     emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData getFurnitureMakeDataList(int index);
     /**
-     * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+     * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
      */
     int getFurnitureMakeDataListCount();
     /**
-     * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+     * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeDataOrBuilder> 
         getFurnitureMakeDataListOrBuilderList();
     /**
-     * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+     * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
      */
     emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeDataOrBuilder getFurnitureMakeDataListOrBuilder(
         int index);
   }
   /**
-   * <pre>
-   * Obf: GINIMPCEHMA
-   * </pre>
-   *
    * Protobuf type {@code FurnitureMakeSlot}
    */
   public static final class FurnitureMakeSlot extends
@@ -93,7 +89,7 @@ public final class FurnitureMakeSlotOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 furnitureMakeDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData>();
                 mutable_bitField0_ |= 0x00000001;
@@ -137,17 +133,17 @@ public final class FurnitureMakeSlotOuterClass {
               emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.class, emu.grasscutter.net.proto.FurnitureMakeSlotOuterClass.FurnitureMakeSlot.Builder.class);
     }
 
-    public static final int FURNITURE_MAKE_DATA_LIST_FIELD_NUMBER = 7;
+    public static final int FURNITURE_MAKE_DATA_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData> furnitureMakeDataList_;
     /**
-     * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+     * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData> getFurnitureMakeDataListList() {
       return furnitureMakeDataList_;
     }
     /**
-     * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+     * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeDataOrBuilder> 
@@ -155,21 +151,21 @@ public final class FurnitureMakeSlotOuterClass {
       return furnitureMakeDataList_;
     }
     /**
-     * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+     * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
      */
     @java.lang.Override
     public int getFurnitureMakeDataListCount() {
       return furnitureMakeDataList_.size();
     }
     /**
-     * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+     * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData getFurnitureMakeDataList(int index) {
       return furnitureMakeDataList_.get(index);
     }
     /**
-     * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+     * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeDataOrBuilder getFurnitureMakeDataListOrBuilder(
@@ -192,7 +188,7 @@ public final class FurnitureMakeSlotOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < furnitureMakeDataList_.size(); i++) {
-        output.writeMessage(7, furnitureMakeDataList_.get(i));
+        output.writeMessage(15, furnitureMakeDataList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -205,7 +201,7 @@ public final class FurnitureMakeSlotOuterClass {
       size = 0;
       for (int i = 0; i < furnitureMakeDataList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, furnitureMakeDataList_.get(i));
+          .computeMessageSize(15, furnitureMakeDataList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -335,10 +331,6 @@ public final class FurnitureMakeSlotOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: GINIMPCEHMA
-     * </pre>
-     *
      * Protobuf type {@code FurnitureMakeSlot}
      */
     public static final class Builder extends
@@ -536,7 +528,7 @@ public final class FurnitureMakeSlotOuterClass {
           emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData, emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData.Builder, emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeDataOrBuilder> furnitureMakeDataListBuilder_;
 
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData> getFurnitureMakeDataListList() {
         if (furnitureMakeDataListBuilder_ == null) {
@@ -546,7 +538,7 @@ public final class FurnitureMakeSlotOuterClass {
         }
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public int getFurnitureMakeDataListCount() {
         if (furnitureMakeDataListBuilder_ == null) {
@@ -556,7 +548,7 @@ public final class FurnitureMakeSlotOuterClass {
         }
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData getFurnitureMakeDataList(int index) {
         if (furnitureMakeDataListBuilder_ == null) {
@@ -566,7 +558,7 @@ public final class FurnitureMakeSlotOuterClass {
         }
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public Builder setFurnitureMakeDataList(
           int index, emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData value) {
@@ -583,7 +575,7 @@ public final class FurnitureMakeSlotOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public Builder setFurnitureMakeDataList(
           int index, emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData.Builder builderForValue) {
@@ -597,7 +589,7 @@ public final class FurnitureMakeSlotOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public Builder addFurnitureMakeDataList(emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData value) {
         if (furnitureMakeDataListBuilder_ == null) {
@@ -613,7 +605,7 @@ public final class FurnitureMakeSlotOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public Builder addFurnitureMakeDataList(
           int index, emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData value) {
@@ -630,7 +622,7 @@ public final class FurnitureMakeSlotOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public Builder addFurnitureMakeDataList(
           emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData.Builder builderForValue) {
@@ -644,7 +636,7 @@ public final class FurnitureMakeSlotOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public Builder addFurnitureMakeDataList(
           int index, emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData.Builder builderForValue) {
@@ -658,7 +650,7 @@ public final class FurnitureMakeSlotOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public Builder addAllFurnitureMakeDataList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData> values) {
@@ -673,7 +665,7 @@ public final class FurnitureMakeSlotOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public Builder clearFurnitureMakeDataList() {
         if (furnitureMakeDataListBuilder_ == null) {
@@ -686,7 +678,7 @@ public final class FurnitureMakeSlotOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public Builder removeFurnitureMakeDataList(int index) {
         if (furnitureMakeDataListBuilder_ == null) {
@@ -699,14 +691,14 @@ public final class FurnitureMakeSlotOuterClass {
         return this;
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData.Builder getFurnitureMakeDataListBuilder(
           int index) {
         return getFurnitureMakeDataListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeDataOrBuilder getFurnitureMakeDataListOrBuilder(
           int index) {
@@ -716,7 +708,7 @@ public final class FurnitureMakeSlotOuterClass {
         }
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeDataOrBuilder> 
            getFurnitureMakeDataListOrBuilderList() {
@@ -727,14 +719,14 @@ public final class FurnitureMakeSlotOuterClass {
         }
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData.Builder addFurnitureMakeDataListBuilder() {
         return getFurnitureMakeDataListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData.getDefaultInstance());
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData.Builder addFurnitureMakeDataListBuilder(
           int index) {
@@ -742,7 +734,7 @@ public final class FurnitureMakeSlotOuterClass {
             index, emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData.getDefaultInstance());
       }
       /**
-       * <code>repeated .FurnitureMakeData furniture_make_data_list = 7;</code>
+       * <code>repeated .FurnitureMakeData furniture_make_data_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.FurnitureMakeDataOuterClass.FurnitureMakeData.Builder> 
            getFurnitureMakeDataListBuilderList() {
@@ -831,7 +823,7 @@ public final class FurnitureMakeSlotOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027FurnitureMakeSlot.proto\032\027FurnitureMake" +
       "Data.proto\"I\n\021FurnitureMakeSlot\0224\n\030furni" +
-      "ture_make_data_list\030\007 \003(\0132\022.FurnitureMak" +
+      "ture_make_data_list\030\017 \003(\0132\022.FurnitureMak" +
       "eDataB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };

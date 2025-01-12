@@ -19,27 +19,23 @@ public final class CoopRewardOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 2;</code>
+     * <code>uint32 id = 1;</code>
      * @return The id.
      */
     int getId();
 
     /**
-     * <code>.CoopReward.State state = 10;</code>
+     * <code>.CoopReward.State state = 6;</code>
      * @return The enum numeric value on the wire for state.
      */
     int getStateValue();
     /**
-     * <code>.CoopReward.State state = 10;</code>
+     * <code>.CoopReward.State state = 6;</code>
      * @return The state.
      */
     emu.grasscutter.net.proto.CoopRewardOuterClass.CoopReward.State getState();
   }
   /**
-   * <pre>
-   * Obf: PCNHBJPDMOB
-   * </pre>
-   *
    * Protobuf type {@code CoopReward}
    */
   public static final class CoopReward extends
@@ -85,12 +81,12 @@ public final class CoopRewardOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 8: {
 
               id_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 48: {
               int rawValue = input.readEnum();
 
               state_ = rawValue;
@@ -129,10 +125,6 @@ public final class CoopRewardOuterClass {
     }
 
     /**
-     * <pre>
-     * Obf: NNDLFEMBJMK
-     * </pre>
-     *
      * Protobuf enum {@code CoopReward.State}
      */
     public enum State
@@ -249,10 +241,10 @@ public final class CoopRewardOuterClass {
       // @@protoc_insertion_point(enum_scope:CoopReward.State)
     }
 
-    public static final int ID_FIELD_NUMBER = 2;
+    public static final int ID_FIELD_NUMBER = 1;
     private int id_;
     /**
-     * <code>uint32 id = 2;</code>
+     * <code>uint32 id = 1;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -260,17 +252,17 @@ public final class CoopRewardOuterClass {
       return id_;
     }
 
-    public static final int STATE_FIELD_NUMBER = 10;
+    public static final int STATE_FIELD_NUMBER = 6;
     private int state_;
     /**
-     * <code>.CoopReward.State state = 10;</code>
+     * <code>.CoopReward.State state = 6;</code>
      * @return The enum numeric value on the wire for state.
      */
     @java.lang.Override public int getStateValue() {
       return state_;
     }
     /**
-     * <code>.CoopReward.State state = 10;</code>
+     * <code>.CoopReward.State state = 6;</code>
      * @return The state.
      */
     @java.lang.Override public emu.grasscutter.net.proto.CoopRewardOuterClass.CoopReward.State getState() {
@@ -294,10 +286,10 @@ public final class CoopRewardOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0) {
-        output.writeUInt32(2, id_);
+        output.writeUInt32(1, id_);
       }
       if (state_ != emu.grasscutter.net.proto.CoopRewardOuterClass.CoopReward.State.STATE_UNLOCK.getNumber()) {
-        output.writeEnum(10, state_);
+        output.writeEnum(6, state_);
       }
       unknownFields.writeTo(output);
     }
@@ -310,11 +302,11 @@ public final class CoopRewardOuterClass {
       size = 0;
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, id_);
+          .computeUInt32Size(1, id_);
       }
       if (state_ != emu.grasscutter.net.proto.CoopRewardOuterClass.CoopReward.State.STATE_UNLOCK.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, state_);
+          .computeEnumSize(6, state_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -445,10 +437,6 @@ public final class CoopRewardOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PCNHBJPDMOB
-     * </pre>
-     *
      * Protobuf type {@code CoopReward}
      */
     public static final class Builder extends
@@ -603,7 +591,7 @@ public final class CoopRewardOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 2;</code>
+       * <code>uint32 id = 1;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -611,7 +599,7 @@ public final class CoopRewardOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 2;</code>
+       * <code>uint32 id = 1;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -622,7 +610,7 @@ public final class CoopRewardOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 2;</code>
+       * <code>uint32 id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -634,14 +622,14 @@ public final class CoopRewardOuterClass {
 
       private int state_ = 0;
       /**
-       * <code>.CoopReward.State state = 10;</code>
+       * <code>.CoopReward.State state = 6;</code>
        * @return The enum numeric value on the wire for state.
        */
       @java.lang.Override public int getStateValue() {
         return state_;
       }
       /**
-       * <code>.CoopReward.State state = 10;</code>
+       * <code>.CoopReward.State state = 6;</code>
        * @param value The enum numeric value on the wire for state to set.
        * @return This builder for chaining.
        */
@@ -652,7 +640,7 @@ public final class CoopRewardOuterClass {
         return this;
       }
       /**
-       * <code>.CoopReward.State state = 10;</code>
+       * <code>.CoopReward.State state = 6;</code>
        * @return The state.
        */
       @java.lang.Override
@@ -662,7 +650,7 @@ public final class CoopRewardOuterClass {
         return result == null ? emu.grasscutter.net.proto.CoopRewardOuterClass.CoopReward.State.UNRECOGNIZED : result;
       }
       /**
-       * <code>.CoopReward.State state = 10;</code>
+       * <code>.CoopReward.State state = 6;</code>
        * @param value The state to set.
        * @return This builder for chaining.
        */
@@ -676,7 +664,7 @@ public final class CoopRewardOuterClass {
         return this;
       }
       /**
-       * <code>.CoopReward.State state = 10;</code>
+       * <code>.CoopReward.State state = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearState() {
@@ -752,8 +740,8 @@ public final class CoopRewardOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020CoopReward.proto\"v\n\nCoopReward\022\n\n\002id\030\002" +
-      " \001(\r\022 \n\005state\030\n \001(\0162\021.CoopReward.State\":" +
+      "\n\020CoopReward.proto\"v\n\nCoopReward\022\n\n\002id\030\001" +
+      " \001(\r\022 \n\005state\030\006 \001(\0162\021.CoopReward.State\":" +
       "\n\005State\022\020\n\014STATE_UNLOCK\020\000\022\016\n\nSTATE_LOCK\020" +
       "\001\022\017\n\013STATE_TAKEN\020\002B\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"

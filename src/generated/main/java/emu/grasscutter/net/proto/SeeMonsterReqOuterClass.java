@@ -19,17 +19,12 @@ public final class SeeMonsterReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 monster_id = 2;</code>
-     * @return The monsterId.
+     * <code>uint32 live_id = 14;</code>
+     * @return The liveId.
      */
-    int getMonsterId();
+    int getLiveId();
   }
   /**
-   * <pre>
-   * CmdId: 20750
-   * Obf: ALGLKMMKJII
-   * </pre>
-   *
    * Protobuf type {@code SeeMonsterReq}
    */
   public static final class SeeMonsterReq extends
@@ -74,9 +69,9 @@ public final class SeeMonsterReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 112: {
 
-              monsterId_ = input.readUInt32();
+              liveId_ = input.readUInt32();
               break;
             }
             default: {
@@ -111,15 +106,15 @@ public final class SeeMonsterReqOuterClass {
               emu.grasscutter.net.proto.SeeMonsterReqOuterClass.SeeMonsterReq.class, emu.grasscutter.net.proto.SeeMonsterReqOuterClass.SeeMonsterReq.Builder.class);
     }
 
-    public static final int MONSTER_ID_FIELD_NUMBER = 2;
-    private int monsterId_;
+    public static final int LIVE_ID_FIELD_NUMBER = 14;
+    private int liveId_;
     /**
-     * <code>uint32 monster_id = 2;</code>
-     * @return The monsterId.
+     * <code>uint32 live_id = 14;</code>
+     * @return The liveId.
      */
     @java.lang.Override
-    public int getMonsterId() {
-      return monsterId_;
+    public int getLiveId() {
+      return liveId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -136,8 +131,8 @@ public final class SeeMonsterReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (monsterId_ != 0) {
-        output.writeUInt32(2, monsterId_);
+      if (liveId_ != 0) {
+        output.writeUInt32(14, liveId_);
       }
       unknownFields.writeTo(output);
     }
@@ -148,9 +143,9 @@ public final class SeeMonsterReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (monsterId_ != 0) {
+      if (liveId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, monsterId_);
+          .computeUInt32Size(14, liveId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -167,8 +162,8 @@ public final class SeeMonsterReqOuterClass {
       }
       emu.grasscutter.net.proto.SeeMonsterReqOuterClass.SeeMonsterReq other = (emu.grasscutter.net.proto.SeeMonsterReqOuterClass.SeeMonsterReq) obj;
 
-      if (getMonsterId()
-          != other.getMonsterId()) return false;
+      if (getLiveId()
+          != other.getLiveId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -180,8 +175,8 @@ public final class SeeMonsterReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MONSTER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMonsterId();
+      hash = (37 * hash) + LIVE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLiveId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -278,11 +273,6 @@ public final class SeeMonsterReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 20750
-     * Obf: ALGLKMMKJII
-     * </pre>
-     *
      * Protobuf type {@code SeeMonsterReq}
      */
     public static final class Builder extends
@@ -320,7 +310,7 @@ public final class SeeMonsterReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        monsterId_ = 0;
+        liveId_ = 0;
 
         return this;
       }
@@ -348,7 +338,7 @@ public final class SeeMonsterReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SeeMonsterReqOuterClass.SeeMonsterReq buildPartial() {
         emu.grasscutter.net.proto.SeeMonsterReqOuterClass.SeeMonsterReq result = new emu.grasscutter.net.proto.SeeMonsterReqOuterClass.SeeMonsterReq(this);
-        result.monsterId_ = monsterId_;
+        result.liveId_ = liveId_;
         onBuilt();
         return result;
       }
@@ -397,8 +387,8 @@ public final class SeeMonsterReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SeeMonsterReqOuterClass.SeeMonsterReq other) {
         if (other == emu.grasscutter.net.proto.SeeMonsterReqOuterClass.SeeMonsterReq.getDefaultInstance()) return this;
-        if (other.getMonsterId() != 0) {
-          setMonsterId(other.getMonsterId());
+        if (other.getLiveId() != 0) {
+          setLiveId(other.getLiveId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -429,33 +419,33 @@ public final class SeeMonsterReqOuterClass {
         return this;
       }
 
-      private int monsterId_ ;
+      private int liveId_ ;
       /**
-       * <code>uint32 monster_id = 2;</code>
-       * @return The monsterId.
+       * <code>uint32 live_id = 14;</code>
+       * @return The liveId.
        */
       @java.lang.Override
-      public int getMonsterId() {
-        return monsterId_;
+      public int getLiveId() {
+        return liveId_;
       }
       /**
-       * <code>uint32 monster_id = 2;</code>
-       * @param value The monsterId to set.
+       * <code>uint32 live_id = 14;</code>
+       * @param value The liveId to set.
        * @return This builder for chaining.
        */
-      public Builder setMonsterId(int value) {
+      public Builder setLiveId(int value) {
         
-        monsterId_ = value;
+        liveId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 monster_id = 2;</code>
+       * <code>uint32 live_id = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMonsterId() {
+      public Builder clearLiveId() {
         
-        monsterId_ = 0;
+        liveId_ = 0;
         onChanged();
         return this;
       }
@@ -526,9 +516,9 @@ public final class SeeMonsterReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023SeeMonsterReq.proto\"#\n\rSeeMonsterReq\022\022" +
-      "\n\nmonster_id\030\002 \001(\rB\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "\n\023SeeMonsterReq.proto\" \n\rSeeMonsterReq\022\017" +
+      "\n\007live_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -539,7 +529,7 @@ public final class SeeMonsterReqOuterClass {
     internal_static_SeeMonsterReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SeeMonsterReq_descriptor,
-        new java.lang.String[] { "MonsterId", });
+        new java.lang.String[] { "LiveId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

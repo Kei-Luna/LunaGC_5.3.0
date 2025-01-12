@@ -19,12 +19,12 @@ public final class SetPlayerNameReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string nick_name = 7;</code>
+     * <code>string nick_name = 5;</code>
      * @return The nickName.
      */
     java.lang.String getNickName();
     /**
-     * <code>string nick_name = 7;</code>
+     * <code>string nick_name = 5;</code>
      * @return The bytes for nickName.
      */
     com.google.protobuf.ByteString
@@ -76,7 +76,7 @@ public final class SetPlayerNameReqOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 42: {
               java.lang.String s = input.readStringRequireUtf8();
 
               nickName_ = s;
@@ -114,10 +114,10 @@ public final class SetPlayerNameReqOuterClass {
               emu.grasscutter.net.proto.SetPlayerNameReqOuterClass.SetPlayerNameReq.class, emu.grasscutter.net.proto.SetPlayerNameReqOuterClass.SetPlayerNameReq.Builder.class);
     }
 
-    public static final int NICK_NAME_FIELD_NUMBER = 7;
+    public static final int NICK_NAME_FIELD_NUMBER = 5;
     private volatile java.lang.Object nickName_;
     /**
-     * <code>string nick_name = 7;</code>
+     * <code>string nick_name = 5;</code>
      * @return The nickName.
      */
     @java.lang.Override
@@ -134,7 +134,7 @@ public final class SetPlayerNameReqOuterClass {
       }
     }
     /**
-     * <code>string nick_name = 7;</code>
+     * <code>string nick_name = 5;</code>
      * @return The bytes for nickName.
      */
     @java.lang.Override
@@ -167,7 +167,7 @@ public final class SetPlayerNameReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, nickName_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, nickName_);
       }
       unknownFields.writeTo(output);
     }
@@ -179,7 +179,7 @@ public final class SetPlayerNameReqOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, nickName_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, nickName_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -456,7 +456,7 @@ public final class SetPlayerNameReqOuterClass {
 
       private java.lang.Object nickName_ = "";
       /**
-       * <code>string nick_name = 7;</code>
+       * <code>string nick_name = 5;</code>
        * @return The nickName.
        */
       public java.lang.String getNickName() {
@@ -472,7 +472,7 @@ public final class SetPlayerNameReqOuterClass {
         }
       }
       /**
-       * <code>string nick_name = 7;</code>
+       * <code>string nick_name = 5;</code>
        * @return The bytes for nickName.
        */
       public com.google.protobuf.ByteString
@@ -489,7 +489,7 @@ public final class SetPlayerNameReqOuterClass {
         }
       }
       /**
-       * <code>string nick_name = 7;</code>
+       * <code>string nick_name = 5;</code>
        * @param value The nickName to set.
        * @return This builder for chaining.
        */
@@ -504,7 +504,7 @@ public final class SetPlayerNameReqOuterClass {
         return this;
       }
       /**
-       * <code>string nick_name = 7;</code>
+       * <code>string nick_name = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearNickName() {
@@ -514,7 +514,7 @@ public final class SetPlayerNameReqOuterClass {
         return this;
       }
       /**
-       * <code>string nick_name = 7;</code>
+       * <code>string nick_name = 5;</code>
        * @param value The bytes for nickName to set.
        * @return This builder for chaining.
        */
@@ -597,7 +597,7 @@ public final class SetPlayerNameReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026SetPlayerNameReq.proto\"%\n\020SetPlayerNam" +
-      "eReq\022\021\n\tnick_name\030\007 \001(\tB\033\n\031emu.grasscutt" +
+      "eReq\022\021\n\tnick_name\030\005 \001(\tB\033\n\031emu.grasscutt" +
       "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

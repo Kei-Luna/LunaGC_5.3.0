@@ -19,26 +19,21 @@ public final class LaunchFireworksReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+     * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
      * @return Whether the schemeData field is set.
      */
     boolean hasSchemeData();
     /**
-     * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+     * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
      * @return The schemeData.
      */
     emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData getSchemeData();
     /**
-     * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+     * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
      */
     emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeDataOrBuilder getSchemeDataOrBuilder();
   }
   /**
-   * <pre>
-   * CmdId: 6285
-   * Obf: EIEOMGBOMCB
-   * </pre>
-   *
    * Protobuf type {@code LaunchFireworksReq}
    */
   public static final class LaunchFireworksReq extends
@@ -83,7 +78,7 @@ public final class LaunchFireworksReqOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
+            case 114: {
               emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData.Builder subBuilder = null;
               if (schemeData_ != null) {
                 subBuilder = schemeData_.toBuilder();
@@ -128,10 +123,10 @@ public final class LaunchFireworksReqOuterClass {
               emu.grasscutter.net.proto.LaunchFireworksReqOuterClass.LaunchFireworksReq.class, emu.grasscutter.net.proto.LaunchFireworksReqOuterClass.LaunchFireworksReq.Builder.class);
     }
 
-    public static final int SCHEME_DATA_FIELD_NUMBER = 2;
+    public static final int SCHEME_DATA_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData schemeData_;
     /**
-     * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+     * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
      * @return Whether the schemeData field is set.
      */
     @java.lang.Override
@@ -139,7 +134,7 @@ public final class LaunchFireworksReqOuterClass {
       return schemeData_ != null;
     }
     /**
-     * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+     * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
      * @return The schemeData.
      */
     @java.lang.Override
@@ -147,7 +142,7 @@ public final class LaunchFireworksReqOuterClass {
       return schemeData_ == null ? emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData.getDefaultInstance() : schemeData_;
     }
     /**
-     * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+     * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeDataOrBuilder getSchemeDataOrBuilder() {
@@ -169,7 +164,7 @@ public final class LaunchFireworksReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (schemeData_ != null) {
-        output.writeMessage(2, getSchemeData());
+        output.writeMessage(14, getSchemeData());
       }
       unknownFields.writeTo(output);
     }
@@ -182,7 +177,7 @@ public final class LaunchFireworksReqOuterClass {
       size = 0;
       if (schemeData_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getSchemeData());
+          .computeMessageSize(14, getSchemeData());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -315,11 +310,6 @@ public final class LaunchFireworksReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 6285
-     * Obf: EIEOMGBOMCB
-     * </pre>
-     *
      * Protobuf type {@code LaunchFireworksReq}
      */
     public static final class Builder extends
@@ -478,14 +468,14 @@ public final class LaunchFireworksReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData, emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData.Builder, emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeDataOrBuilder> schemeDataBuilder_;
       /**
-       * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+       * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
        * @return Whether the schemeData field is set.
        */
       public boolean hasSchemeData() {
         return schemeDataBuilder_ != null || schemeData_ != null;
       }
       /**
-       * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+       * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
        * @return The schemeData.
        */
       public emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData getSchemeData() {
@@ -496,7 +486,7 @@ public final class LaunchFireworksReqOuterClass {
         }
       }
       /**
-       * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+       * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
        */
       public Builder setSchemeData(emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData value) {
         if (schemeDataBuilder_ == null) {
@@ -512,7 +502,7 @@ public final class LaunchFireworksReqOuterClass {
         return this;
       }
       /**
-       * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+       * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
        */
       public Builder setSchemeData(
           emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData.Builder builderForValue) {
@@ -526,7 +516,7 @@ public final class LaunchFireworksReqOuterClass {
         return this;
       }
       /**
-       * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+       * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
        */
       public Builder mergeSchemeData(emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData value) {
         if (schemeDataBuilder_ == null) {
@@ -544,7 +534,7 @@ public final class LaunchFireworksReqOuterClass {
         return this;
       }
       /**
-       * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+       * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
        */
       public Builder clearSchemeData() {
         if (schemeDataBuilder_ == null) {
@@ -558,7 +548,7 @@ public final class LaunchFireworksReqOuterClass {
         return this;
       }
       /**
-       * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+       * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
        */
       public emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData.Builder getSchemeDataBuilder() {
         
@@ -566,7 +556,7 @@ public final class LaunchFireworksReqOuterClass {
         return getSchemeDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+       * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
        */
       public emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeDataOrBuilder getSchemeDataOrBuilder() {
         if (schemeDataBuilder_ != null) {
@@ -577,7 +567,7 @@ public final class LaunchFireworksReqOuterClass {
         }
       }
       /**
-       * <code>.FireworksLaunchSchemeData scheme_data = 2;</code>
+       * <code>.FireworksLaunchSchemeData scheme_data = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData, emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeData.Builder, emu.grasscutter.net.proto.FireworksLaunchSchemeDataOuterClass.FireworksLaunchSchemeDataOrBuilder> 
@@ -661,7 +651,7 @@ public final class LaunchFireworksReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030LaunchFireworksReq.proto\032\037FireworksLau" +
       "nchSchemeData.proto\"E\n\022LaunchFireworksRe" +
-      "q\022/\n\013scheme_data\030\002 \001(\0132\032.FireworksLaunch" +
+      "q\022/\n\013scheme_data\030\016 \001(\0132\032.FireworksLaunch" +
       "SchemeDataB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };

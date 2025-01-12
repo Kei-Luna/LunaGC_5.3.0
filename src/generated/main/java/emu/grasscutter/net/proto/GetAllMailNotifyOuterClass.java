@@ -19,7 +19,7 @@ public final class GetAllMailNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_collected = 8;</code>
+     * <code>bool is_collected = 12;</code>
      * @return The isCollected.
      */
     boolean getIsCollected();
@@ -69,7 +69,7 @@ public final class GetAllMailNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 96: {
 
               isCollected_ = input.readBool();
               break;
@@ -106,10 +106,10 @@ public final class GetAllMailNotifyOuterClass {
               emu.grasscutter.net.proto.GetAllMailNotifyOuterClass.GetAllMailNotify.class, emu.grasscutter.net.proto.GetAllMailNotifyOuterClass.GetAllMailNotify.Builder.class);
     }
 
-    public static final int IS_COLLECTED_FIELD_NUMBER = 8;
+    public static final int IS_COLLECTED_FIELD_NUMBER = 12;
     private boolean isCollected_;
     /**
-     * <code>bool is_collected = 8;</code>
+     * <code>bool is_collected = 12;</code>
      * @return The isCollected.
      */
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class GetAllMailNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isCollected_ != false) {
-        output.writeBool(8, isCollected_);
+        output.writeBool(12, isCollected_);
       }
       unknownFields.writeTo(output);
     }
@@ -145,7 +145,7 @@ public final class GetAllMailNotifyOuterClass {
       size = 0;
       if (isCollected_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isCollected_);
+          .computeBoolSize(12, isCollected_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -422,7 +422,7 @@ public final class GetAllMailNotifyOuterClass {
 
       private boolean isCollected_ ;
       /**
-       * <code>bool is_collected = 8;</code>
+       * <code>bool is_collected = 12;</code>
        * @return The isCollected.
        */
       @java.lang.Override
@@ -430,7 +430,7 @@ public final class GetAllMailNotifyOuterClass {
         return isCollected_;
       }
       /**
-       * <code>bool is_collected = 8;</code>
+       * <code>bool is_collected = 12;</code>
        * @param value The isCollected to set.
        * @return This builder for chaining.
        */
@@ -441,7 +441,7 @@ public final class GetAllMailNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_collected = 8;</code>
+       * <code>bool is_collected = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsCollected() {
@@ -518,7 +518,7 @@ public final class GetAllMailNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026GetAllMailNotify.proto\"(\n\020GetAllMailNo" +
-      "tify\022\024\n\014is_collected\030\010 \001(\010B\033\n\031emu.grassc" +
+      "tify\022\024\n\014is_collected\030\014 \001(\010B\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

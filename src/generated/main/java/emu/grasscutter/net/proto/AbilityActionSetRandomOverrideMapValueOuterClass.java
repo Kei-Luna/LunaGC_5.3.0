@@ -25,6 +25,10 @@ public final class AbilityActionSetRandomOverrideMapValueOuterClass {
     float getRandomValue();
   }
   /**
+   * <pre>
+   * NEEIEHIIKCO?,KAANFENBLPM,DJJHECAOGBO,CHMHIACPPDE,ENFLAPIMDEE,HGJMOPLPBEH,BKCPFCIEMAE(3)
+   * </pre>
+   *
    * Protobuf type {@code AbilityActionSetRandomOverrideMapValue}
    */
   public static final class AbilityActionSetRandomOverrideMapValue extends
@@ -275,6 +279,10 @@ public final class AbilityActionSetRandomOverrideMapValueOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * NEEIEHIIKCO?,KAANFENBLPM,DJJHECAOGBO,CHMHIACPPDE,ENFLAPIMDEE,HGJMOPLPBEH,BKCPFCIEMAE(3)
+     * </pre>
+     *
      * Protobuf type {@code AbilityActionSetRandomOverrideMapValue}
      */
     public static final class Builder extends

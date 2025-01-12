@@ -19,35 +19,34 @@ public final class EvtRushMoveNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ForwardType forward_type = 6;</code>
-     * @return The enum numeric value on the wire for forwardType.
-     */
-    int getForwardTypeValue();
-    /**
-     * <code>.ForwardType forward_type = 6;</code>
-     * @return The forwardType.
-     */
-    emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType();
-
-    /**
-     * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+     * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
      * @return Whether the evtRushMoveInfo field is set.
      */
     boolean hasEvtRushMoveInfo();
     /**
-     * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+     * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
      * @return The evtRushMoveInfo.
      */
     emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo getEvtRushMoveInfo();
     /**
-     * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+     * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
      */
     emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfoOrBuilder getEvtRushMoveInfoOrBuilder();
+
+    /**
+     * <code>.ForwardType forward_type = 11;</code>
+     * @return The enum numeric value on the wire for forwardType.
+     */
+    int getForwardTypeValue();
+    /**
+     * <code>.ForwardType forward_type = 11;</code>
+     * @return The forwardType.
+     */
+    emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType();
   }
   /**
    * <pre>
-   * CmdId: 25987
-   * Obf: HLMODAGGEGO
+   * CmdId: 8760 
    * </pre>
    *
    * Protobuf type {@code EvtRushMoveNotify}
@@ -95,13 +94,7 @@ public final class EvtRushMoveNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-              int rawValue = input.readEnum();
-
-              forwardType_ = rawValue;
-              break;
-            }
-            case 122: {
+            case 34: {
               emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo.Builder subBuilder = null;
               if (evtRushMoveInfo_ != null) {
                 subBuilder = evtRushMoveInfo_.toBuilder();
@@ -112,6 +105,12 @@ public final class EvtRushMoveNotifyOuterClass {
                 evtRushMoveInfo_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 88: {
+              int rawValue = input.readEnum();
+
+              forwardType_ = rawValue;
               break;
             }
             default: {
@@ -146,29 +145,10 @@ public final class EvtRushMoveNotifyOuterClass {
               emu.grasscutter.net.proto.EvtRushMoveNotifyOuterClass.EvtRushMoveNotify.class, emu.grasscutter.net.proto.EvtRushMoveNotifyOuterClass.EvtRushMoveNotify.Builder.class);
     }
 
-    public static final int FORWARD_TYPE_FIELD_NUMBER = 6;
-    private int forwardType_;
-    /**
-     * <code>.ForwardType forward_type = 6;</code>
-     * @return The enum numeric value on the wire for forwardType.
-     */
-    @java.lang.Override public int getForwardTypeValue() {
-      return forwardType_;
-    }
-    /**
-     * <code>.ForwardType forward_type = 6;</code>
-     * @return The forwardType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType result = emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.valueOf(forwardType_);
-      return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
-    }
-
-    public static final int EVT_RUSH_MOVE_INFO_FIELD_NUMBER = 15;
+    public static final int EVT_RUSH_MOVE_INFO_FIELD_NUMBER = 4;
     private emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo evtRushMoveInfo_;
     /**
-     * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+     * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
      * @return Whether the evtRushMoveInfo field is set.
      */
     @java.lang.Override
@@ -176,7 +156,7 @@ public final class EvtRushMoveNotifyOuterClass {
       return evtRushMoveInfo_ != null;
     }
     /**
-     * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+     * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
      * @return The evtRushMoveInfo.
      */
     @java.lang.Override
@@ -184,11 +164,30 @@ public final class EvtRushMoveNotifyOuterClass {
       return evtRushMoveInfo_ == null ? emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo.getDefaultInstance() : evtRushMoveInfo_;
     }
     /**
-     * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+     * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfoOrBuilder getEvtRushMoveInfoOrBuilder() {
       return getEvtRushMoveInfo();
+    }
+
+    public static final int FORWARD_TYPE_FIELD_NUMBER = 11;
+    private int forwardType_;
+    /**
+     * <code>.ForwardType forward_type = 11;</code>
+     * @return The enum numeric value on the wire for forwardType.
+     */
+    @java.lang.Override public int getForwardTypeValue() {
+      return forwardType_;
+    }
+    /**
+     * <code>.ForwardType forward_type = 11;</code>
+     * @return The forwardType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType result = emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.valueOf(forwardType_);
+      return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -205,11 +204,11 @@ public final class EvtRushMoveNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
-        output.writeEnum(6, forwardType_);
-      }
       if (evtRushMoveInfo_ != null) {
-        output.writeMessage(15, getEvtRushMoveInfo());
+        output.writeMessage(4, getEvtRushMoveInfo());
+      }
+      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
+        output.writeEnum(11, forwardType_);
       }
       unknownFields.writeTo(output);
     }
@@ -220,13 +219,13 @@ public final class EvtRushMoveNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(6, forwardType_);
-      }
       if (evtRushMoveInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getEvtRushMoveInfo());
+          .computeMessageSize(4, getEvtRushMoveInfo());
+      }
+      if (forwardType_ != emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.FORWARD_TYPE_LOCAL.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(11, forwardType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -243,12 +242,12 @@ public final class EvtRushMoveNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EvtRushMoveNotifyOuterClass.EvtRushMoveNotify other = (emu.grasscutter.net.proto.EvtRushMoveNotifyOuterClass.EvtRushMoveNotify) obj;
 
-      if (forwardType_ != other.forwardType_) return false;
       if (hasEvtRushMoveInfo() != other.hasEvtRushMoveInfo()) return false;
       if (hasEvtRushMoveInfo()) {
         if (!getEvtRushMoveInfo()
             .equals(other.getEvtRushMoveInfo())) return false;
       }
+      if (forwardType_ != other.forwardType_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -260,12 +259,12 @@ public final class EvtRushMoveNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FORWARD_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + forwardType_;
       if (hasEvtRushMoveInfo()) {
         hash = (37 * hash) + EVT_RUSH_MOVE_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getEvtRushMoveInfo().hashCode();
       }
+      hash = (37 * hash) + FORWARD_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + forwardType_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -363,8 +362,7 @@ public final class EvtRushMoveNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 25987
-     * Obf: HLMODAGGEGO
+     * CmdId: 8760 
      * </pre>
      *
      * Protobuf type {@code EvtRushMoveNotify}
@@ -404,14 +402,14 @@ public final class EvtRushMoveNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        forwardType_ = 0;
-
         if (evtRushMoveInfoBuilder_ == null) {
           evtRushMoveInfo_ = null;
         } else {
           evtRushMoveInfo_ = null;
           evtRushMoveInfoBuilder_ = null;
         }
+        forwardType_ = 0;
+
         return this;
       }
 
@@ -438,12 +436,12 @@ public final class EvtRushMoveNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EvtRushMoveNotifyOuterClass.EvtRushMoveNotify buildPartial() {
         emu.grasscutter.net.proto.EvtRushMoveNotifyOuterClass.EvtRushMoveNotify result = new emu.grasscutter.net.proto.EvtRushMoveNotifyOuterClass.EvtRushMoveNotify(this);
-        result.forwardType_ = forwardType_;
         if (evtRushMoveInfoBuilder_ == null) {
           result.evtRushMoveInfo_ = evtRushMoveInfo_;
         } else {
           result.evtRushMoveInfo_ = evtRushMoveInfoBuilder_.build();
         }
+        result.forwardType_ = forwardType_;
         onBuilt();
         return result;
       }
@@ -492,11 +490,11 @@ public final class EvtRushMoveNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EvtRushMoveNotifyOuterClass.EvtRushMoveNotify other) {
         if (other == emu.grasscutter.net.proto.EvtRushMoveNotifyOuterClass.EvtRushMoveNotify.getDefaultInstance()) return this;
-        if (other.forwardType_ != 0) {
-          setForwardTypeValue(other.getForwardTypeValue());
-        }
         if (other.hasEvtRushMoveInfo()) {
           mergeEvtRushMoveInfo(other.getEvtRushMoveInfo());
+        }
+        if (other.forwardType_ != 0) {
+          setForwardTypeValue(other.getForwardTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -527,72 +525,18 @@ public final class EvtRushMoveNotifyOuterClass {
         return this;
       }
 
-      private int forwardType_ = 0;
-      /**
-       * <code>.ForwardType forward_type = 6;</code>
-       * @return The enum numeric value on the wire for forwardType.
-       */
-      @java.lang.Override public int getForwardTypeValue() {
-        return forwardType_;
-      }
-      /**
-       * <code>.ForwardType forward_type = 6;</code>
-       * @param value The enum numeric value on the wire for forwardType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setForwardTypeValue(int value) {
-        
-        forwardType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.ForwardType forward_type = 6;</code>
-       * @return The forwardType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType result = emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.valueOf(forwardType_);
-        return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.ForwardType forward_type = 6;</code>
-       * @param value The forwardType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setForwardType(emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        forwardType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.ForwardType forward_type = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearForwardType() {
-        
-        forwardType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo evtRushMoveInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo, emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo.Builder, emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfoOrBuilder> evtRushMoveInfoBuilder_;
       /**
-       * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+       * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
        * @return Whether the evtRushMoveInfo field is set.
        */
       public boolean hasEvtRushMoveInfo() {
         return evtRushMoveInfoBuilder_ != null || evtRushMoveInfo_ != null;
       }
       /**
-       * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+       * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
        * @return The evtRushMoveInfo.
        */
       public emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo getEvtRushMoveInfo() {
@@ -603,7 +547,7 @@ public final class EvtRushMoveNotifyOuterClass {
         }
       }
       /**
-       * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+       * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
        */
       public Builder setEvtRushMoveInfo(emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo value) {
         if (evtRushMoveInfoBuilder_ == null) {
@@ -619,7 +563,7 @@ public final class EvtRushMoveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+       * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
        */
       public Builder setEvtRushMoveInfo(
           emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo.Builder builderForValue) {
@@ -633,7 +577,7 @@ public final class EvtRushMoveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+       * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
        */
       public Builder mergeEvtRushMoveInfo(emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo value) {
         if (evtRushMoveInfoBuilder_ == null) {
@@ -651,7 +595,7 @@ public final class EvtRushMoveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+       * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
        */
       public Builder clearEvtRushMoveInfo() {
         if (evtRushMoveInfoBuilder_ == null) {
@@ -665,7 +609,7 @@ public final class EvtRushMoveNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+       * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
        */
       public emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo.Builder getEvtRushMoveInfoBuilder() {
         
@@ -673,7 +617,7 @@ public final class EvtRushMoveNotifyOuterClass {
         return getEvtRushMoveInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+       * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
        */
       public emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfoOrBuilder getEvtRushMoveInfoOrBuilder() {
         if (evtRushMoveInfoBuilder_ != null) {
@@ -684,7 +628,7 @@ public final class EvtRushMoveNotifyOuterClass {
         }
       }
       /**
-       * <code>.EvtRushMoveInfo evt_rush_move_info = 15;</code>
+       * <code>.EvtRushMoveInfo evt_rush_move_info = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo, emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfo.Builder, emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.EvtRushMoveInfoOrBuilder> 
@@ -698,6 +642,60 @@ public final class EvtRushMoveNotifyOuterClass {
           evtRushMoveInfo_ = null;
         }
         return evtRushMoveInfoBuilder_;
+      }
+
+      private int forwardType_ = 0;
+      /**
+       * <code>.ForwardType forward_type = 11;</code>
+       * @return The enum numeric value on the wire for forwardType.
+       */
+      @java.lang.Override public int getForwardTypeValue() {
+        return forwardType_;
+      }
+      /**
+       * <code>.ForwardType forward_type = 11;</code>
+       * @param value The enum numeric value on the wire for forwardType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setForwardTypeValue(int value) {
+        
+        forwardType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ForwardType forward_type = 11;</code>
+       * @return The forwardType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType getForwardType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType result = emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.valueOf(forwardType_);
+        return result == null ? emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.ForwardType forward_type = 11;</code>
+       * @param value The forwardType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setForwardType(emu.grasscutter.net.proto.ForwardTypeOuterClass.ForwardType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        forwardType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ForwardType forward_type = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearForwardType() {
+        
+        forwardType_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -766,27 +764,27 @@ public final class EvtRushMoveNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027EvtRushMoveNotify.proto\032\021ForwardType.p" +
-      "roto\032\025EvtRushMoveInfo.proto\"e\n\021EvtRushMo" +
-      "veNotify\022\"\n\014forward_type\030\006 \001(\0162\014.Forward" +
-      "Type\022,\n\022evt_rush_move_info\030\017 \001(\0132\020.EvtRu" +
-      "shMoveInfoB\033\n\031emu.grasscutter.net.protob" +
+      "\n\027EvtRushMoveNotify.proto\032\025EvtRushMoveIn" +
+      "fo.proto\032\021ForwardType.proto\"e\n\021EvtRushMo" +
+      "veNotify\022,\n\022evt_rush_move_info\030\004 \001(\0132\020.E" +
+      "vtRushMoveInfo\022\"\n\014forward_type\030\013 \001(\0162\014.F" +
+      "orwardTypeB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor(),
         });
     internal_static_EvtRushMoveNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_EvtRushMoveNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtRushMoveNotify_descriptor,
-        new java.lang.String[] { "ForwardType", "EvtRushMoveInfo", });
-    emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
+        new java.lang.String[] { "EvtRushMoveInfo", "ForwardType", });
     emu.grasscutter.net.proto.EvtRushMoveInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

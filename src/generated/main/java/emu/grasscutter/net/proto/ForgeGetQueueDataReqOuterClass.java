@@ -19,11 +19,6 @@ public final class ForgeGetQueueDataReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * <pre>
-   * CmdId: 477
-   * Obf: AFDBIGNEOMH
-   * </pre>
-   *
    * Protobuf type {@code ForgeGetQueueDataReq}
    */
   public static final class ForgeGetQueueDataReq extends
@@ -245,11 +240,6 @@ public final class ForgeGetQueueDataReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 477
-     * Obf: AFDBIGNEOMH
-     * </pre>
-     *
      * Protobuf type {@code ForgeGetQueueDataReq}
      */
     public static final class Builder extends

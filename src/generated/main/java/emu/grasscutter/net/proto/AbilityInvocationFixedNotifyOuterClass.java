@@ -19,99 +19,98 @@ public final class AbilityInvocationFixedNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
-     * @return Whether the gDJLCBBPFHF field is set.
+     * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
+     * @return Whether the invoke1st field is set.
      */
-    boolean hasGDJLCBBPFHF();
+    boolean hasInvoke1St();
     /**
-     * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
-     * @return The gDJLCBBPFHF.
+     * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
+     * @return The invoke1st.
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getGDJLCBBPFHF();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke1St();
     /**
-     * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
+     * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getGDJLCBBPFHFOrBuilder();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke1StOrBuilder();
 
     /**
-     * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
-     * @return Whether the cMBLCNNPIKH field is set.
+     * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
+     * @return Whether the invoke6th field is set.
      */
-    boolean hasCMBLCNNPIKH();
+    boolean hasInvoke6Th();
     /**
-     * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
-     * @return The cMBLCNNPIKH.
+     * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
+     * @return The invoke6th.
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getCMBLCNNPIKH();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke6Th();
     /**
-     * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
+     * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getCMBLCNNPIKHOrBuilder();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke6ThOrBuilder();
 
     /**
-     * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
-     * @return Whether the oFJIPJDJDJF field is set.
+     * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
+     * @return Whether the invoke3rd field is set.
      */
-    boolean hasOFJIPJDJDJF();
+    boolean hasInvoke3Rd();
     /**
-     * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
-     * @return The oFJIPJDJDJF.
+     * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
+     * @return The invoke3rd.
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getOFJIPJDJDJF();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke3Rd();
     /**
-     * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
+     * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getOFJIPJDJDJFOrBuilder();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke3RdOrBuilder();
 
     /**
-     * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
-     * @return Whether the dDFBNNBICCH field is set.
+     * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
+     * @return Whether the invoke4th field is set.
      */
-    boolean hasDDFBNNBICCH();
+    boolean hasInvoke4Th();
     /**
-     * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
-     * @return The dDFBNNBICCH.
+     * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
+     * @return The invoke4th.
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getDDFBNNBICCH();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke4Th();
     /**
-     * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
+     * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getDDFBNNBICCHOrBuilder();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke4ThOrBuilder();
 
     /**
-     * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
-     * @return Whether the oEONLMEPEBK field is set.
+     * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
+     * @return Whether the invoke2nd field is set.
      */
-    boolean hasOEONLMEPEBK();
+    boolean hasInvoke2Nd();
     /**
-     * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
-     * @return The oEONLMEPEBK.
+     * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
+     * @return The invoke2nd.
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getOEONLMEPEBK();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke2Nd();
     /**
-     * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
+     * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getOEONLMEPEBKOrBuilder();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke2NdOrBuilder();
 
     /**
-     * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
-     * @return Whether the iGACLGPDICN field is set.
+     * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
+     * @return Whether the invoke5th field is set.
      */
-    boolean hasIGACLGPDICN();
+    boolean hasInvoke5Th();
     /**
-     * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
-     * @return The iGACLGPDICN.
+     * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
+     * @return The invoke5th.
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getIGACLGPDICN();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke5Th();
     /**
-     * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
+     * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
      */
-    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getIGACLGPDICNOrBuilder();
+    emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke5ThOrBuilder();
   }
   /**
    * <pre>
-   * CmdId: 4864
-   * Obf: OHCPCJBLDIN
+   * CmdId: 27070 
    * </pre>
    *
    * Protobuf type {@code AbilityInvocationFixedNotify}
@@ -160,78 +159,78 @@ public final class AbilityInvocationFixedNotifyOuterClass {
               break;
             case 10: {
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder subBuilder = null;
-              if (gDJLCBBPFHF_ != null) {
-                subBuilder = gDJLCBBPFHF_.toBuilder();
+              if (invoke1St_ != null) {
+                subBuilder = invoke1St_.toBuilder();
               }
-              gDJLCBBPFHF_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
+              invoke1St_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(gDJLCBBPFHF_);
-                gDJLCBBPFHF_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(invoke1St_);
+                invoke1St_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 50: {
+            case 42: {
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder subBuilder = null;
-              if (oFJIPJDJDJF_ != null) {
-                subBuilder = oFJIPJDJDJF_.toBuilder();
+              if (invoke3Rd_ != null) {
+                subBuilder = invoke3Rd_.toBuilder();
               }
-              oFJIPJDJDJF_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
+              invoke3Rd_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(oFJIPJDJDJF_);
-                oFJIPJDJDJF_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(invoke3Rd_);
+                invoke3Rd_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 58: {
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder subBuilder = null;
-              if (iGACLGPDICN_ != null) {
-                subBuilder = iGACLGPDICN_.toBuilder();
+              if (invoke6Th_ != null) {
+                subBuilder = invoke6Th_.toBuilder();
               }
-              iGACLGPDICN_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
+              invoke6Th_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(iGACLGPDICN_);
-                iGACLGPDICN_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(invoke6Th_);
+                invoke6Th_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 74: {
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder subBuilder = null;
+              if (invoke5Th_ != null) {
+                subBuilder = invoke5Th_.toBuilder();
+              }
+              invoke5Th_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(invoke5Th_);
+                invoke5Th_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 82: {
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder subBuilder = null;
-              if (oEONLMEPEBK_ != null) {
-                subBuilder = oEONLMEPEBK_.toBuilder();
+              if (invoke4Th_ != null) {
+                subBuilder = invoke4Th_.toBuilder();
               }
-              oEONLMEPEBK_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
+              invoke4Th_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(oEONLMEPEBK_);
-                oEONLMEPEBK_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(invoke4Th_);
+                invoke4Th_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 98: {
+            case 90: {
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder subBuilder = null;
-              if (cMBLCNNPIKH_ != null) {
-                subBuilder = cMBLCNNPIKH_.toBuilder();
+              if (invoke2Nd_ != null) {
+                subBuilder = invoke2Nd_.toBuilder();
               }
-              cMBLCNNPIKH_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
+              invoke2Nd_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(cMBLCNNPIKH_);
-                cMBLCNNPIKH_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 122: {
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder subBuilder = null;
-              if (dDFBNNBICCH_ != null) {
-                subBuilder = dDFBNNBICCH_.toBuilder();
-              }
-              dDFBNNBICCH_ = input.readMessage(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(dDFBNNBICCH_);
-                dDFBNNBICCH_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(invoke2Nd_);
+                invoke2Nd_ = subBuilder.buildPartial();
               }
 
               break;
@@ -268,160 +267,160 @@ public final class AbilityInvocationFixedNotifyOuterClass {
               emu.grasscutter.net.proto.AbilityInvocationFixedNotifyOuterClass.AbilityInvocationFixedNotify.class, emu.grasscutter.net.proto.AbilityInvocationFixedNotifyOuterClass.AbilityInvocationFixedNotify.Builder.class);
     }
 
-    public static final int GDJLCBBPFHF_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry gDJLCBBPFHF_;
+    public static final int INVOKE_1ST_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke1St_;
     /**
-     * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
-     * @return Whether the gDJLCBBPFHF field is set.
+     * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
+     * @return Whether the invoke1st field is set.
      */
     @java.lang.Override
-    public boolean hasGDJLCBBPFHF() {
-      return gDJLCBBPFHF_ != null;
+    public boolean hasInvoke1St() {
+      return invoke1St_ != null;
     }
     /**
-     * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
-     * @return The gDJLCBBPFHF.
+     * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
+     * @return The invoke1st.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getGDJLCBBPFHF() {
-      return gDJLCBBPFHF_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : gDJLCBBPFHF_;
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke1St() {
+      return invoke1St_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke1St_;
     }
     /**
-     * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
+     * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getGDJLCBBPFHFOrBuilder() {
-      return getGDJLCBBPFHF();
-    }
-
-    public static final int CMBLCNNPIKH_FIELD_NUMBER = 12;
-    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry cMBLCNNPIKH_;
-    /**
-     * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
-     * @return Whether the cMBLCNNPIKH field is set.
-     */
-    @java.lang.Override
-    public boolean hasCMBLCNNPIKH() {
-      return cMBLCNNPIKH_ != null;
-    }
-    /**
-     * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
-     * @return The cMBLCNNPIKH.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getCMBLCNNPIKH() {
-      return cMBLCNNPIKH_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : cMBLCNNPIKH_;
-    }
-    /**
-     * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getCMBLCNNPIKHOrBuilder() {
-      return getCMBLCNNPIKH();
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke1StOrBuilder() {
+      return getInvoke1St();
     }
 
-    public static final int OFJIPJDJDJF_FIELD_NUMBER = 6;
-    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry oFJIPJDJDJF_;
+    public static final int INVOKE_6TH_FIELD_NUMBER = 7;
+    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke6Th_;
     /**
-     * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
-     * @return Whether the oFJIPJDJDJF field is set.
+     * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
+     * @return Whether the invoke6th field is set.
      */
     @java.lang.Override
-    public boolean hasOFJIPJDJDJF() {
-      return oFJIPJDJDJF_ != null;
+    public boolean hasInvoke6Th() {
+      return invoke6Th_ != null;
     }
     /**
-     * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
-     * @return The oFJIPJDJDJF.
+     * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
+     * @return The invoke6th.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getOFJIPJDJDJF() {
-      return oFJIPJDJDJF_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : oFJIPJDJDJF_;
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke6Th() {
+      return invoke6Th_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke6Th_;
     }
     /**
-     * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
+     * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getOFJIPJDJDJFOrBuilder() {
-      return getOFJIPJDJDJF();
-    }
-
-    public static final int DDFBNNBICCH_FIELD_NUMBER = 15;
-    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry dDFBNNBICCH_;
-    /**
-     * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
-     * @return Whether the dDFBNNBICCH field is set.
-     */
-    @java.lang.Override
-    public boolean hasDDFBNNBICCH() {
-      return dDFBNNBICCH_ != null;
-    }
-    /**
-     * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
-     * @return The dDFBNNBICCH.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getDDFBNNBICCH() {
-      return dDFBNNBICCH_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : dDFBNNBICCH_;
-    }
-    /**
-     * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getDDFBNNBICCHOrBuilder() {
-      return getDDFBNNBICCH();
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke6ThOrBuilder() {
+      return getInvoke6Th();
     }
 
-    public static final int OEONLMEPEBK_FIELD_NUMBER = 10;
-    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry oEONLMEPEBK_;
+    public static final int INVOKE_3RD_FIELD_NUMBER = 5;
+    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke3Rd_;
     /**
-     * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
-     * @return Whether the oEONLMEPEBK field is set.
+     * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
+     * @return Whether the invoke3rd field is set.
      */
     @java.lang.Override
-    public boolean hasOEONLMEPEBK() {
-      return oEONLMEPEBK_ != null;
+    public boolean hasInvoke3Rd() {
+      return invoke3Rd_ != null;
     }
     /**
-     * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
-     * @return The oEONLMEPEBK.
+     * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
+     * @return The invoke3rd.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getOEONLMEPEBK() {
-      return oEONLMEPEBK_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : oEONLMEPEBK_;
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke3Rd() {
+      return invoke3Rd_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke3Rd_;
     }
     /**
-     * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
+     * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getOEONLMEPEBKOrBuilder() {
-      return getOEONLMEPEBK();
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke3RdOrBuilder() {
+      return getInvoke3Rd();
     }
 
-    public static final int IGACLGPDICN_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry iGACLGPDICN_;
+    public static final int INVOKE_4TH_FIELD_NUMBER = 10;
+    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke4Th_;
     /**
-     * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
-     * @return Whether the iGACLGPDICN field is set.
+     * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
+     * @return Whether the invoke4th field is set.
      */
     @java.lang.Override
-    public boolean hasIGACLGPDICN() {
-      return iGACLGPDICN_ != null;
+    public boolean hasInvoke4Th() {
+      return invoke4Th_ != null;
     }
     /**
-     * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
-     * @return The iGACLGPDICN.
+     * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
+     * @return The invoke4th.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getIGACLGPDICN() {
-      return iGACLGPDICN_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : iGACLGPDICN_;
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke4Th() {
+      return invoke4Th_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke4Th_;
     }
     /**
-     * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
+     * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getIGACLGPDICNOrBuilder() {
-      return getIGACLGPDICN();
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke4ThOrBuilder() {
+      return getInvoke4Th();
+    }
+
+    public static final int INVOKE_2ND_FIELD_NUMBER = 11;
+    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke2Nd_;
+    /**
+     * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
+     * @return Whether the invoke2nd field is set.
+     */
+    @java.lang.Override
+    public boolean hasInvoke2Nd() {
+      return invoke2Nd_ != null;
+    }
+    /**
+     * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
+     * @return The invoke2nd.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke2Nd() {
+      return invoke2Nd_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke2Nd_;
+    }
+    /**
+     * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke2NdOrBuilder() {
+      return getInvoke2Nd();
+    }
+
+    public static final int INVOKE_5TH_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke5Th_;
+    /**
+     * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
+     * @return Whether the invoke5th field is set.
+     */
+    @java.lang.Override
+    public boolean hasInvoke5Th() {
+      return invoke5Th_ != null;
+    }
+    /**
+     * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
+     * @return The invoke5th.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke5Th() {
+      return invoke5Th_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke5Th_;
+    }
+    /**
+     * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke5ThOrBuilder() {
+      return getInvoke5Th();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -438,23 +437,23 @@ public final class AbilityInvocationFixedNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gDJLCBBPFHF_ != null) {
-        output.writeMessage(1, getGDJLCBBPFHF());
+      if (invoke1St_ != null) {
+        output.writeMessage(1, getInvoke1St());
       }
-      if (oFJIPJDJDJF_ != null) {
-        output.writeMessage(6, getOFJIPJDJDJF());
+      if (invoke3Rd_ != null) {
+        output.writeMessage(5, getInvoke3Rd());
       }
-      if (iGACLGPDICN_ != null) {
-        output.writeMessage(7, getIGACLGPDICN());
+      if (invoke6Th_ != null) {
+        output.writeMessage(7, getInvoke6Th());
       }
-      if (oEONLMEPEBK_ != null) {
-        output.writeMessage(10, getOEONLMEPEBK());
+      if (invoke5Th_ != null) {
+        output.writeMessage(9, getInvoke5Th());
       }
-      if (cMBLCNNPIKH_ != null) {
-        output.writeMessage(12, getCMBLCNNPIKH());
+      if (invoke4Th_ != null) {
+        output.writeMessage(10, getInvoke4Th());
       }
-      if (dDFBNNBICCH_ != null) {
-        output.writeMessage(15, getDDFBNNBICCH());
+      if (invoke2Nd_ != null) {
+        output.writeMessage(11, getInvoke2Nd());
       }
       unknownFields.writeTo(output);
     }
@@ -465,29 +464,29 @@ public final class AbilityInvocationFixedNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gDJLCBBPFHF_ != null) {
+      if (invoke1St_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getGDJLCBBPFHF());
+          .computeMessageSize(1, getInvoke1St());
       }
-      if (oFJIPJDJDJF_ != null) {
+      if (invoke3Rd_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getOFJIPJDJDJF());
+          .computeMessageSize(5, getInvoke3Rd());
       }
-      if (iGACLGPDICN_ != null) {
+      if (invoke6Th_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getIGACLGPDICN());
+          .computeMessageSize(7, getInvoke6Th());
       }
-      if (oEONLMEPEBK_ != null) {
+      if (invoke5Th_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getOEONLMEPEBK());
+          .computeMessageSize(9, getInvoke5Th());
       }
-      if (cMBLCNNPIKH_ != null) {
+      if (invoke4Th_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getCMBLCNNPIKH());
+          .computeMessageSize(10, getInvoke4Th());
       }
-      if (dDFBNNBICCH_ != null) {
+      if (invoke2Nd_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getDDFBNNBICCH());
+          .computeMessageSize(11, getInvoke2Nd());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -504,35 +503,35 @@ public final class AbilityInvocationFixedNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AbilityInvocationFixedNotifyOuterClass.AbilityInvocationFixedNotify other = (emu.grasscutter.net.proto.AbilityInvocationFixedNotifyOuterClass.AbilityInvocationFixedNotify) obj;
 
-      if (hasGDJLCBBPFHF() != other.hasGDJLCBBPFHF()) return false;
-      if (hasGDJLCBBPFHF()) {
-        if (!getGDJLCBBPFHF()
-            .equals(other.getGDJLCBBPFHF())) return false;
+      if (hasInvoke1St() != other.hasInvoke1St()) return false;
+      if (hasInvoke1St()) {
+        if (!getInvoke1St()
+            .equals(other.getInvoke1St())) return false;
       }
-      if (hasCMBLCNNPIKH() != other.hasCMBLCNNPIKH()) return false;
-      if (hasCMBLCNNPIKH()) {
-        if (!getCMBLCNNPIKH()
-            .equals(other.getCMBLCNNPIKH())) return false;
+      if (hasInvoke6Th() != other.hasInvoke6Th()) return false;
+      if (hasInvoke6Th()) {
+        if (!getInvoke6Th()
+            .equals(other.getInvoke6Th())) return false;
       }
-      if (hasOFJIPJDJDJF() != other.hasOFJIPJDJDJF()) return false;
-      if (hasOFJIPJDJDJF()) {
-        if (!getOFJIPJDJDJF()
-            .equals(other.getOFJIPJDJDJF())) return false;
+      if (hasInvoke3Rd() != other.hasInvoke3Rd()) return false;
+      if (hasInvoke3Rd()) {
+        if (!getInvoke3Rd()
+            .equals(other.getInvoke3Rd())) return false;
       }
-      if (hasDDFBNNBICCH() != other.hasDDFBNNBICCH()) return false;
-      if (hasDDFBNNBICCH()) {
-        if (!getDDFBNNBICCH()
-            .equals(other.getDDFBNNBICCH())) return false;
+      if (hasInvoke4Th() != other.hasInvoke4Th()) return false;
+      if (hasInvoke4Th()) {
+        if (!getInvoke4Th()
+            .equals(other.getInvoke4Th())) return false;
       }
-      if (hasOEONLMEPEBK() != other.hasOEONLMEPEBK()) return false;
-      if (hasOEONLMEPEBK()) {
-        if (!getOEONLMEPEBK()
-            .equals(other.getOEONLMEPEBK())) return false;
+      if (hasInvoke2Nd() != other.hasInvoke2Nd()) return false;
+      if (hasInvoke2Nd()) {
+        if (!getInvoke2Nd()
+            .equals(other.getInvoke2Nd())) return false;
       }
-      if (hasIGACLGPDICN() != other.hasIGACLGPDICN()) return false;
-      if (hasIGACLGPDICN()) {
-        if (!getIGACLGPDICN()
-            .equals(other.getIGACLGPDICN())) return false;
+      if (hasInvoke5Th() != other.hasInvoke5Th()) return false;
+      if (hasInvoke5Th()) {
+        if (!getInvoke5Th()
+            .equals(other.getInvoke5Th())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -545,29 +544,29 @@ public final class AbilityInvocationFixedNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasGDJLCBBPFHF()) {
-        hash = (37 * hash) + GDJLCBBPFHF_FIELD_NUMBER;
-        hash = (53 * hash) + getGDJLCBBPFHF().hashCode();
+      if (hasInvoke1St()) {
+        hash = (37 * hash) + INVOKE_1ST_FIELD_NUMBER;
+        hash = (53 * hash) + getInvoke1St().hashCode();
       }
-      if (hasCMBLCNNPIKH()) {
-        hash = (37 * hash) + CMBLCNNPIKH_FIELD_NUMBER;
-        hash = (53 * hash) + getCMBLCNNPIKH().hashCode();
+      if (hasInvoke6Th()) {
+        hash = (37 * hash) + INVOKE_6TH_FIELD_NUMBER;
+        hash = (53 * hash) + getInvoke6Th().hashCode();
       }
-      if (hasOFJIPJDJDJF()) {
-        hash = (37 * hash) + OFJIPJDJDJF_FIELD_NUMBER;
-        hash = (53 * hash) + getOFJIPJDJDJF().hashCode();
+      if (hasInvoke3Rd()) {
+        hash = (37 * hash) + INVOKE_3RD_FIELD_NUMBER;
+        hash = (53 * hash) + getInvoke3Rd().hashCode();
       }
-      if (hasDDFBNNBICCH()) {
-        hash = (37 * hash) + DDFBNNBICCH_FIELD_NUMBER;
-        hash = (53 * hash) + getDDFBNNBICCH().hashCode();
+      if (hasInvoke4Th()) {
+        hash = (37 * hash) + INVOKE_4TH_FIELD_NUMBER;
+        hash = (53 * hash) + getInvoke4Th().hashCode();
       }
-      if (hasOEONLMEPEBK()) {
-        hash = (37 * hash) + OEONLMEPEBK_FIELD_NUMBER;
-        hash = (53 * hash) + getOEONLMEPEBK().hashCode();
+      if (hasInvoke2Nd()) {
+        hash = (37 * hash) + INVOKE_2ND_FIELD_NUMBER;
+        hash = (53 * hash) + getInvoke2Nd().hashCode();
       }
-      if (hasIGACLGPDICN()) {
-        hash = (37 * hash) + IGACLGPDICN_FIELD_NUMBER;
-        hash = (53 * hash) + getIGACLGPDICN().hashCode();
+      if (hasInvoke5Th()) {
+        hash = (37 * hash) + INVOKE_5TH_FIELD_NUMBER;
+        hash = (53 * hash) + getInvoke5Th().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -666,8 +665,7 @@ public final class AbilityInvocationFixedNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4864
-     * Obf: OHCPCJBLDIN
+     * CmdId: 27070 
      * </pre>
      *
      * Protobuf type {@code AbilityInvocationFixedNotify}
@@ -707,41 +705,41 @@ public final class AbilityInvocationFixedNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (gDJLCBBPFHFBuilder_ == null) {
-          gDJLCBBPFHF_ = null;
+        if (invoke1StBuilder_ == null) {
+          invoke1St_ = null;
         } else {
-          gDJLCBBPFHF_ = null;
-          gDJLCBBPFHFBuilder_ = null;
+          invoke1St_ = null;
+          invoke1StBuilder_ = null;
         }
-        if (cMBLCNNPIKHBuilder_ == null) {
-          cMBLCNNPIKH_ = null;
+        if (invoke6ThBuilder_ == null) {
+          invoke6Th_ = null;
         } else {
-          cMBLCNNPIKH_ = null;
-          cMBLCNNPIKHBuilder_ = null;
+          invoke6Th_ = null;
+          invoke6ThBuilder_ = null;
         }
-        if (oFJIPJDJDJFBuilder_ == null) {
-          oFJIPJDJDJF_ = null;
+        if (invoke3RdBuilder_ == null) {
+          invoke3Rd_ = null;
         } else {
-          oFJIPJDJDJF_ = null;
-          oFJIPJDJDJFBuilder_ = null;
+          invoke3Rd_ = null;
+          invoke3RdBuilder_ = null;
         }
-        if (dDFBNNBICCHBuilder_ == null) {
-          dDFBNNBICCH_ = null;
+        if (invoke4ThBuilder_ == null) {
+          invoke4Th_ = null;
         } else {
-          dDFBNNBICCH_ = null;
-          dDFBNNBICCHBuilder_ = null;
+          invoke4Th_ = null;
+          invoke4ThBuilder_ = null;
         }
-        if (oEONLMEPEBKBuilder_ == null) {
-          oEONLMEPEBK_ = null;
+        if (invoke2NdBuilder_ == null) {
+          invoke2Nd_ = null;
         } else {
-          oEONLMEPEBK_ = null;
-          oEONLMEPEBKBuilder_ = null;
+          invoke2Nd_ = null;
+          invoke2NdBuilder_ = null;
         }
-        if (iGACLGPDICNBuilder_ == null) {
-          iGACLGPDICN_ = null;
+        if (invoke5ThBuilder_ == null) {
+          invoke5Th_ = null;
         } else {
-          iGACLGPDICN_ = null;
-          iGACLGPDICNBuilder_ = null;
+          invoke5Th_ = null;
+          invoke5ThBuilder_ = null;
         }
         return this;
       }
@@ -769,35 +767,35 @@ public final class AbilityInvocationFixedNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityInvocationFixedNotifyOuterClass.AbilityInvocationFixedNotify buildPartial() {
         emu.grasscutter.net.proto.AbilityInvocationFixedNotifyOuterClass.AbilityInvocationFixedNotify result = new emu.grasscutter.net.proto.AbilityInvocationFixedNotifyOuterClass.AbilityInvocationFixedNotify(this);
-        if (gDJLCBBPFHFBuilder_ == null) {
-          result.gDJLCBBPFHF_ = gDJLCBBPFHF_;
+        if (invoke1StBuilder_ == null) {
+          result.invoke1St_ = invoke1St_;
         } else {
-          result.gDJLCBBPFHF_ = gDJLCBBPFHFBuilder_.build();
+          result.invoke1St_ = invoke1StBuilder_.build();
         }
-        if (cMBLCNNPIKHBuilder_ == null) {
-          result.cMBLCNNPIKH_ = cMBLCNNPIKH_;
+        if (invoke6ThBuilder_ == null) {
+          result.invoke6Th_ = invoke6Th_;
         } else {
-          result.cMBLCNNPIKH_ = cMBLCNNPIKHBuilder_.build();
+          result.invoke6Th_ = invoke6ThBuilder_.build();
         }
-        if (oFJIPJDJDJFBuilder_ == null) {
-          result.oFJIPJDJDJF_ = oFJIPJDJDJF_;
+        if (invoke3RdBuilder_ == null) {
+          result.invoke3Rd_ = invoke3Rd_;
         } else {
-          result.oFJIPJDJDJF_ = oFJIPJDJDJFBuilder_.build();
+          result.invoke3Rd_ = invoke3RdBuilder_.build();
         }
-        if (dDFBNNBICCHBuilder_ == null) {
-          result.dDFBNNBICCH_ = dDFBNNBICCH_;
+        if (invoke4ThBuilder_ == null) {
+          result.invoke4Th_ = invoke4Th_;
         } else {
-          result.dDFBNNBICCH_ = dDFBNNBICCHBuilder_.build();
+          result.invoke4Th_ = invoke4ThBuilder_.build();
         }
-        if (oEONLMEPEBKBuilder_ == null) {
-          result.oEONLMEPEBK_ = oEONLMEPEBK_;
+        if (invoke2NdBuilder_ == null) {
+          result.invoke2Nd_ = invoke2Nd_;
         } else {
-          result.oEONLMEPEBK_ = oEONLMEPEBKBuilder_.build();
+          result.invoke2Nd_ = invoke2NdBuilder_.build();
         }
-        if (iGACLGPDICNBuilder_ == null) {
-          result.iGACLGPDICN_ = iGACLGPDICN_;
+        if (invoke5ThBuilder_ == null) {
+          result.invoke5Th_ = invoke5Th_;
         } else {
-          result.iGACLGPDICN_ = iGACLGPDICNBuilder_.build();
+          result.invoke5Th_ = invoke5ThBuilder_.build();
         }
         onBuilt();
         return result;
@@ -847,23 +845,23 @@ public final class AbilityInvocationFixedNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityInvocationFixedNotifyOuterClass.AbilityInvocationFixedNotify other) {
         if (other == emu.grasscutter.net.proto.AbilityInvocationFixedNotifyOuterClass.AbilityInvocationFixedNotify.getDefaultInstance()) return this;
-        if (other.hasGDJLCBBPFHF()) {
-          mergeGDJLCBBPFHF(other.getGDJLCBBPFHF());
+        if (other.hasInvoke1St()) {
+          mergeInvoke1St(other.getInvoke1St());
         }
-        if (other.hasCMBLCNNPIKH()) {
-          mergeCMBLCNNPIKH(other.getCMBLCNNPIKH());
+        if (other.hasInvoke6Th()) {
+          mergeInvoke6Th(other.getInvoke6Th());
         }
-        if (other.hasOFJIPJDJDJF()) {
-          mergeOFJIPJDJDJF(other.getOFJIPJDJDJF());
+        if (other.hasInvoke3Rd()) {
+          mergeInvoke3Rd(other.getInvoke3Rd());
         }
-        if (other.hasDDFBNNBICCH()) {
-          mergeDDFBNNBICCH(other.getDDFBNNBICCH());
+        if (other.hasInvoke4Th()) {
+          mergeInvoke4Th(other.getInvoke4Th());
         }
-        if (other.hasOEONLMEPEBK()) {
-          mergeOEONLMEPEBK(other.getOEONLMEPEBK());
+        if (other.hasInvoke2Nd()) {
+          mergeInvoke2Nd(other.getInvoke2Nd());
         }
-        if (other.hasIGACLGPDICN()) {
-          mergeIGACLGPDICN(other.getIGACLGPDICN());
+        if (other.hasInvoke5Th()) {
+          mergeInvoke5Th(other.getInvoke5Th());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -894,718 +892,718 @@ public final class AbilityInvocationFixedNotifyOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry gDJLCBBPFHF_;
+      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke1St_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> gDJLCBBPFHFBuilder_;
+          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> invoke1StBuilder_;
       /**
-       * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
-       * @return Whether the gDJLCBBPFHF field is set.
+       * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
+       * @return Whether the invoke1st field is set.
        */
-      public boolean hasGDJLCBBPFHF() {
-        return gDJLCBBPFHFBuilder_ != null || gDJLCBBPFHF_ != null;
+      public boolean hasInvoke1St() {
+        return invoke1StBuilder_ != null || invoke1St_ != null;
       }
       /**
-       * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
-       * @return The gDJLCBBPFHF.
+       * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
+       * @return The invoke1st.
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getGDJLCBBPFHF() {
-        if (gDJLCBBPFHFBuilder_ == null) {
-          return gDJLCBBPFHF_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : gDJLCBBPFHF_;
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke1St() {
+        if (invoke1StBuilder_ == null) {
+          return invoke1St_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke1St_;
         } else {
-          return gDJLCBBPFHFBuilder_.getMessage();
+          return invoke1StBuilder_.getMessage();
         }
       }
       /**
-       * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
+       * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
        */
-      public Builder setGDJLCBBPFHF(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (gDJLCBBPFHFBuilder_ == null) {
+      public Builder setInvoke1St(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke1StBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          gDJLCBBPFHF_ = value;
+          invoke1St_ = value;
           onChanged();
         } else {
-          gDJLCBBPFHFBuilder_.setMessage(value);
+          invoke1StBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
+       * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
        */
-      public Builder setGDJLCBBPFHF(
+      public Builder setInvoke1St(
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
-        if (gDJLCBBPFHFBuilder_ == null) {
-          gDJLCBBPFHF_ = builderForValue.build();
+        if (invoke1StBuilder_ == null) {
+          invoke1St_ = builderForValue.build();
           onChanged();
         } else {
-          gDJLCBBPFHFBuilder_.setMessage(builderForValue.build());
+          invoke1StBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
+       * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
        */
-      public Builder mergeGDJLCBBPFHF(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (gDJLCBBPFHFBuilder_ == null) {
-          if (gDJLCBBPFHF_ != null) {
-            gDJLCBBPFHF_ =
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(gDJLCBBPFHF_).mergeFrom(value).buildPartial();
+      public Builder mergeInvoke1St(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke1StBuilder_ == null) {
+          if (invoke1St_ != null) {
+            invoke1St_ =
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(invoke1St_).mergeFrom(value).buildPartial();
           } else {
-            gDJLCBBPFHF_ = value;
+            invoke1St_ = value;
           }
           onChanged();
         } else {
-          gDJLCBBPFHFBuilder_.mergeFrom(value);
+          invoke1StBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
+       * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
        */
-      public Builder clearGDJLCBBPFHF() {
-        if (gDJLCBBPFHFBuilder_ == null) {
-          gDJLCBBPFHF_ = null;
+      public Builder clearInvoke1St() {
+        if (invoke1StBuilder_ == null) {
+          invoke1St_ = null;
           onChanged();
         } else {
-          gDJLCBBPFHF_ = null;
-          gDJLCBBPFHFBuilder_ = null;
+          invoke1St_ = null;
+          invoke1StBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
+       * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getGDJLCBBPFHFBuilder() {
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getInvoke1StBuilder() {
         
         onChanged();
-        return getGDJLCBBPFHFFieldBuilder().getBuilder();
+        return getInvoke1StFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
+       * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getGDJLCBBPFHFOrBuilder() {
-        if (gDJLCBBPFHFBuilder_ != null) {
-          return gDJLCBBPFHFBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke1StOrBuilder() {
+        if (invoke1StBuilder_ != null) {
+          return invoke1StBuilder_.getMessageOrBuilder();
         } else {
-          return gDJLCBBPFHF_ == null ?
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : gDJLCBBPFHF_;
+          return invoke1St_ == null ?
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke1St_;
         }
       }
       /**
-       * <code>.AbilityInvokeEntry GDJLCBBPFHF = 1;</code>
+       * <code>.AbilityInvokeEntry invoke_1st = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
-          getGDJLCBBPFHFFieldBuilder() {
-        if (gDJLCBBPFHFBuilder_ == null) {
-          gDJLCBBPFHFBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getInvoke1StFieldBuilder() {
+        if (invoke1StBuilder_ == null) {
+          invoke1StBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder>(
-                  getGDJLCBBPFHF(),
+                  getInvoke1St(),
                   getParentForChildren(),
                   isClean());
-          gDJLCBBPFHF_ = null;
+          invoke1St_ = null;
         }
-        return gDJLCBBPFHFBuilder_;
+        return invoke1StBuilder_;
       }
 
-      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry cMBLCNNPIKH_;
+      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke6Th_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> cMBLCNNPIKHBuilder_;
+          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> invoke6ThBuilder_;
       /**
-       * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
-       * @return Whether the cMBLCNNPIKH field is set.
+       * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
+       * @return Whether the invoke6th field is set.
        */
-      public boolean hasCMBLCNNPIKH() {
-        return cMBLCNNPIKHBuilder_ != null || cMBLCNNPIKH_ != null;
+      public boolean hasInvoke6Th() {
+        return invoke6ThBuilder_ != null || invoke6Th_ != null;
       }
       /**
-       * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
-       * @return The cMBLCNNPIKH.
+       * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
+       * @return The invoke6th.
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getCMBLCNNPIKH() {
-        if (cMBLCNNPIKHBuilder_ == null) {
-          return cMBLCNNPIKH_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : cMBLCNNPIKH_;
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke6Th() {
+        if (invoke6ThBuilder_ == null) {
+          return invoke6Th_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke6Th_;
         } else {
-          return cMBLCNNPIKHBuilder_.getMessage();
+          return invoke6ThBuilder_.getMessage();
         }
       }
       /**
-       * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
+       * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
        */
-      public Builder setCMBLCNNPIKH(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (cMBLCNNPIKHBuilder_ == null) {
+      public Builder setInvoke6Th(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke6ThBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          cMBLCNNPIKH_ = value;
+          invoke6Th_ = value;
           onChanged();
         } else {
-          cMBLCNNPIKHBuilder_.setMessage(value);
+          invoke6ThBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
+       * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
        */
-      public Builder setCMBLCNNPIKH(
+      public Builder setInvoke6Th(
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
-        if (cMBLCNNPIKHBuilder_ == null) {
-          cMBLCNNPIKH_ = builderForValue.build();
+        if (invoke6ThBuilder_ == null) {
+          invoke6Th_ = builderForValue.build();
           onChanged();
         } else {
-          cMBLCNNPIKHBuilder_.setMessage(builderForValue.build());
+          invoke6ThBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
+       * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
        */
-      public Builder mergeCMBLCNNPIKH(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (cMBLCNNPIKHBuilder_ == null) {
-          if (cMBLCNNPIKH_ != null) {
-            cMBLCNNPIKH_ =
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(cMBLCNNPIKH_).mergeFrom(value).buildPartial();
+      public Builder mergeInvoke6Th(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke6ThBuilder_ == null) {
+          if (invoke6Th_ != null) {
+            invoke6Th_ =
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(invoke6Th_).mergeFrom(value).buildPartial();
           } else {
-            cMBLCNNPIKH_ = value;
+            invoke6Th_ = value;
           }
           onChanged();
         } else {
-          cMBLCNNPIKHBuilder_.mergeFrom(value);
+          invoke6ThBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
+       * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
        */
-      public Builder clearCMBLCNNPIKH() {
-        if (cMBLCNNPIKHBuilder_ == null) {
-          cMBLCNNPIKH_ = null;
+      public Builder clearInvoke6Th() {
+        if (invoke6ThBuilder_ == null) {
+          invoke6Th_ = null;
           onChanged();
         } else {
-          cMBLCNNPIKH_ = null;
-          cMBLCNNPIKHBuilder_ = null;
+          invoke6Th_ = null;
+          invoke6ThBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
+       * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getCMBLCNNPIKHBuilder() {
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getInvoke6ThBuilder() {
         
         onChanged();
-        return getCMBLCNNPIKHFieldBuilder().getBuilder();
+        return getInvoke6ThFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
+       * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getCMBLCNNPIKHOrBuilder() {
-        if (cMBLCNNPIKHBuilder_ != null) {
-          return cMBLCNNPIKHBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke6ThOrBuilder() {
+        if (invoke6ThBuilder_ != null) {
+          return invoke6ThBuilder_.getMessageOrBuilder();
         } else {
-          return cMBLCNNPIKH_ == null ?
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : cMBLCNNPIKH_;
+          return invoke6Th_ == null ?
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke6Th_;
         }
       }
       /**
-       * <code>.AbilityInvokeEntry CMBLCNNPIKH = 12;</code>
+       * <code>.AbilityInvokeEntry invoke_6th = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
-          getCMBLCNNPIKHFieldBuilder() {
-        if (cMBLCNNPIKHBuilder_ == null) {
-          cMBLCNNPIKHBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getInvoke6ThFieldBuilder() {
+        if (invoke6ThBuilder_ == null) {
+          invoke6ThBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder>(
-                  getCMBLCNNPIKH(),
+                  getInvoke6Th(),
                   getParentForChildren(),
                   isClean());
-          cMBLCNNPIKH_ = null;
+          invoke6Th_ = null;
         }
-        return cMBLCNNPIKHBuilder_;
+        return invoke6ThBuilder_;
       }
 
-      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry oFJIPJDJDJF_;
+      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke3Rd_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> oFJIPJDJDJFBuilder_;
+          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> invoke3RdBuilder_;
       /**
-       * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
-       * @return Whether the oFJIPJDJDJF field is set.
+       * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
+       * @return Whether the invoke3rd field is set.
        */
-      public boolean hasOFJIPJDJDJF() {
-        return oFJIPJDJDJFBuilder_ != null || oFJIPJDJDJF_ != null;
+      public boolean hasInvoke3Rd() {
+        return invoke3RdBuilder_ != null || invoke3Rd_ != null;
       }
       /**
-       * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
-       * @return The oFJIPJDJDJF.
+       * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
+       * @return The invoke3rd.
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getOFJIPJDJDJF() {
-        if (oFJIPJDJDJFBuilder_ == null) {
-          return oFJIPJDJDJF_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : oFJIPJDJDJF_;
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke3Rd() {
+        if (invoke3RdBuilder_ == null) {
+          return invoke3Rd_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke3Rd_;
         } else {
-          return oFJIPJDJDJFBuilder_.getMessage();
+          return invoke3RdBuilder_.getMessage();
         }
       }
       /**
-       * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
+       * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
        */
-      public Builder setOFJIPJDJDJF(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (oFJIPJDJDJFBuilder_ == null) {
+      public Builder setInvoke3Rd(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke3RdBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          oFJIPJDJDJF_ = value;
+          invoke3Rd_ = value;
           onChanged();
         } else {
-          oFJIPJDJDJFBuilder_.setMessage(value);
+          invoke3RdBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
+       * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
        */
-      public Builder setOFJIPJDJDJF(
+      public Builder setInvoke3Rd(
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
-        if (oFJIPJDJDJFBuilder_ == null) {
-          oFJIPJDJDJF_ = builderForValue.build();
+        if (invoke3RdBuilder_ == null) {
+          invoke3Rd_ = builderForValue.build();
           onChanged();
         } else {
-          oFJIPJDJDJFBuilder_.setMessage(builderForValue.build());
+          invoke3RdBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
+       * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
        */
-      public Builder mergeOFJIPJDJDJF(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (oFJIPJDJDJFBuilder_ == null) {
-          if (oFJIPJDJDJF_ != null) {
-            oFJIPJDJDJF_ =
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(oFJIPJDJDJF_).mergeFrom(value).buildPartial();
+      public Builder mergeInvoke3Rd(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke3RdBuilder_ == null) {
+          if (invoke3Rd_ != null) {
+            invoke3Rd_ =
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(invoke3Rd_).mergeFrom(value).buildPartial();
           } else {
-            oFJIPJDJDJF_ = value;
+            invoke3Rd_ = value;
           }
           onChanged();
         } else {
-          oFJIPJDJDJFBuilder_.mergeFrom(value);
+          invoke3RdBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
+       * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
        */
-      public Builder clearOFJIPJDJDJF() {
-        if (oFJIPJDJDJFBuilder_ == null) {
-          oFJIPJDJDJF_ = null;
+      public Builder clearInvoke3Rd() {
+        if (invoke3RdBuilder_ == null) {
+          invoke3Rd_ = null;
           onChanged();
         } else {
-          oFJIPJDJDJF_ = null;
-          oFJIPJDJDJFBuilder_ = null;
+          invoke3Rd_ = null;
+          invoke3RdBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
+       * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getOFJIPJDJDJFBuilder() {
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getInvoke3RdBuilder() {
         
         onChanged();
-        return getOFJIPJDJDJFFieldBuilder().getBuilder();
+        return getInvoke3RdFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
+       * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getOFJIPJDJDJFOrBuilder() {
-        if (oFJIPJDJDJFBuilder_ != null) {
-          return oFJIPJDJDJFBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke3RdOrBuilder() {
+        if (invoke3RdBuilder_ != null) {
+          return invoke3RdBuilder_.getMessageOrBuilder();
         } else {
-          return oFJIPJDJDJF_ == null ?
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : oFJIPJDJDJF_;
+          return invoke3Rd_ == null ?
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke3Rd_;
         }
       }
       /**
-       * <code>.AbilityInvokeEntry OFJIPJDJDJF = 6;</code>
+       * <code>.AbilityInvokeEntry invoke_3rd = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
-          getOFJIPJDJDJFFieldBuilder() {
-        if (oFJIPJDJDJFBuilder_ == null) {
-          oFJIPJDJDJFBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getInvoke3RdFieldBuilder() {
+        if (invoke3RdBuilder_ == null) {
+          invoke3RdBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder>(
-                  getOFJIPJDJDJF(),
+                  getInvoke3Rd(),
                   getParentForChildren(),
                   isClean());
-          oFJIPJDJDJF_ = null;
+          invoke3Rd_ = null;
         }
-        return oFJIPJDJDJFBuilder_;
+        return invoke3RdBuilder_;
       }
 
-      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry dDFBNNBICCH_;
+      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke4Th_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> dDFBNNBICCHBuilder_;
+          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> invoke4ThBuilder_;
       /**
-       * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
-       * @return Whether the dDFBNNBICCH field is set.
+       * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
+       * @return Whether the invoke4th field is set.
        */
-      public boolean hasDDFBNNBICCH() {
-        return dDFBNNBICCHBuilder_ != null || dDFBNNBICCH_ != null;
+      public boolean hasInvoke4Th() {
+        return invoke4ThBuilder_ != null || invoke4Th_ != null;
       }
       /**
-       * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
-       * @return The dDFBNNBICCH.
+       * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
+       * @return The invoke4th.
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getDDFBNNBICCH() {
-        if (dDFBNNBICCHBuilder_ == null) {
-          return dDFBNNBICCH_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : dDFBNNBICCH_;
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke4Th() {
+        if (invoke4ThBuilder_ == null) {
+          return invoke4Th_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke4Th_;
         } else {
-          return dDFBNNBICCHBuilder_.getMessage();
+          return invoke4ThBuilder_.getMessage();
         }
       }
       /**
-       * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
+       * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
        */
-      public Builder setDDFBNNBICCH(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (dDFBNNBICCHBuilder_ == null) {
+      public Builder setInvoke4Th(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke4ThBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          dDFBNNBICCH_ = value;
+          invoke4Th_ = value;
           onChanged();
         } else {
-          dDFBNNBICCHBuilder_.setMessage(value);
+          invoke4ThBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
+       * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
        */
-      public Builder setDDFBNNBICCH(
+      public Builder setInvoke4Th(
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
-        if (dDFBNNBICCHBuilder_ == null) {
-          dDFBNNBICCH_ = builderForValue.build();
+        if (invoke4ThBuilder_ == null) {
+          invoke4Th_ = builderForValue.build();
           onChanged();
         } else {
-          dDFBNNBICCHBuilder_.setMessage(builderForValue.build());
+          invoke4ThBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
+       * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
        */
-      public Builder mergeDDFBNNBICCH(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (dDFBNNBICCHBuilder_ == null) {
-          if (dDFBNNBICCH_ != null) {
-            dDFBNNBICCH_ =
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(dDFBNNBICCH_).mergeFrom(value).buildPartial();
+      public Builder mergeInvoke4Th(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke4ThBuilder_ == null) {
+          if (invoke4Th_ != null) {
+            invoke4Th_ =
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(invoke4Th_).mergeFrom(value).buildPartial();
           } else {
-            dDFBNNBICCH_ = value;
+            invoke4Th_ = value;
           }
           onChanged();
         } else {
-          dDFBNNBICCHBuilder_.mergeFrom(value);
+          invoke4ThBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
+       * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
        */
-      public Builder clearDDFBNNBICCH() {
-        if (dDFBNNBICCHBuilder_ == null) {
-          dDFBNNBICCH_ = null;
+      public Builder clearInvoke4Th() {
+        if (invoke4ThBuilder_ == null) {
+          invoke4Th_ = null;
           onChanged();
         } else {
-          dDFBNNBICCH_ = null;
-          dDFBNNBICCHBuilder_ = null;
+          invoke4Th_ = null;
+          invoke4ThBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
+       * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getDDFBNNBICCHBuilder() {
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getInvoke4ThBuilder() {
         
         onChanged();
-        return getDDFBNNBICCHFieldBuilder().getBuilder();
+        return getInvoke4ThFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
+       * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getDDFBNNBICCHOrBuilder() {
-        if (dDFBNNBICCHBuilder_ != null) {
-          return dDFBNNBICCHBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke4ThOrBuilder() {
+        if (invoke4ThBuilder_ != null) {
+          return invoke4ThBuilder_.getMessageOrBuilder();
         } else {
-          return dDFBNNBICCH_ == null ?
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : dDFBNNBICCH_;
+          return invoke4Th_ == null ?
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke4Th_;
         }
       }
       /**
-       * <code>.AbilityInvokeEntry DDFBNNBICCH = 15;</code>
+       * <code>.AbilityInvokeEntry invoke_4th = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
-          getDDFBNNBICCHFieldBuilder() {
-        if (dDFBNNBICCHBuilder_ == null) {
-          dDFBNNBICCHBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getInvoke4ThFieldBuilder() {
+        if (invoke4ThBuilder_ == null) {
+          invoke4ThBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder>(
-                  getDDFBNNBICCH(),
+                  getInvoke4Th(),
                   getParentForChildren(),
                   isClean());
-          dDFBNNBICCH_ = null;
+          invoke4Th_ = null;
         }
-        return dDFBNNBICCHBuilder_;
+        return invoke4ThBuilder_;
       }
 
-      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry oEONLMEPEBK_;
+      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke2Nd_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> oEONLMEPEBKBuilder_;
+          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> invoke2NdBuilder_;
       /**
-       * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
-       * @return Whether the oEONLMEPEBK field is set.
+       * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
+       * @return Whether the invoke2nd field is set.
        */
-      public boolean hasOEONLMEPEBK() {
-        return oEONLMEPEBKBuilder_ != null || oEONLMEPEBK_ != null;
+      public boolean hasInvoke2Nd() {
+        return invoke2NdBuilder_ != null || invoke2Nd_ != null;
       }
       /**
-       * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
-       * @return The oEONLMEPEBK.
+       * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
+       * @return The invoke2nd.
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getOEONLMEPEBK() {
-        if (oEONLMEPEBKBuilder_ == null) {
-          return oEONLMEPEBK_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : oEONLMEPEBK_;
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke2Nd() {
+        if (invoke2NdBuilder_ == null) {
+          return invoke2Nd_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke2Nd_;
         } else {
-          return oEONLMEPEBKBuilder_.getMessage();
+          return invoke2NdBuilder_.getMessage();
         }
       }
       /**
-       * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
+       * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
        */
-      public Builder setOEONLMEPEBK(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (oEONLMEPEBKBuilder_ == null) {
+      public Builder setInvoke2Nd(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke2NdBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          oEONLMEPEBK_ = value;
+          invoke2Nd_ = value;
           onChanged();
         } else {
-          oEONLMEPEBKBuilder_.setMessage(value);
+          invoke2NdBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
+       * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
        */
-      public Builder setOEONLMEPEBK(
+      public Builder setInvoke2Nd(
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
-        if (oEONLMEPEBKBuilder_ == null) {
-          oEONLMEPEBK_ = builderForValue.build();
+        if (invoke2NdBuilder_ == null) {
+          invoke2Nd_ = builderForValue.build();
           onChanged();
         } else {
-          oEONLMEPEBKBuilder_.setMessage(builderForValue.build());
+          invoke2NdBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
+       * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
        */
-      public Builder mergeOEONLMEPEBK(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (oEONLMEPEBKBuilder_ == null) {
-          if (oEONLMEPEBK_ != null) {
-            oEONLMEPEBK_ =
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(oEONLMEPEBK_).mergeFrom(value).buildPartial();
+      public Builder mergeInvoke2Nd(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke2NdBuilder_ == null) {
+          if (invoke2Nd_ != null) {
+            invoke2Nd_ =
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(invoke2Nd_).mergeFrom(value).buildPartial();
           } else {
-            oEONLMEPEBK_ = value;
+            invoke2Nd_ = value;
           }
           onChanged();
         } else {
-          oEONLMEPEBKBuilder_.mergeFrom(value);
+          invoke2NdBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
+       * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
        */
-      public Builder clearOEONLMEPEBK() {
-        if (oEONLMEPEBKBuilder_ == null) {
-          oEONLMEPEBK_ = null;
+      public Builder clearInvoke2Nd() {
+        if (invoke2NdBuilder_ == null) {
+          invoke2Nd_ = null;
           onChanged();
         } else {
-          oEONLMEPEBK_ = null;
-          oEONLMEPEBKBuilder_ = null;
+          invoke2Nd_ = null;
+          invoke2NdBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
+       * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getOEONLMEPEBKBuilder() {
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getInvoke2NdBuilder() {
         
         onChanged();
-        return getOEONLMEPEBKFieldBuilder().getBuilder();
+        return getInvoke2NdFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
+       * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getOEONLMEPEBKOrBuilder() {
-        if (oEONLMEPEBKBuilder_ != null) {
-          return oEONLMEPEBKBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke2NdOrBuilder() {
+        if (invoke2NdBuilder_ != null) {
+          return invoke2NdBuilder_.getMessageOrBuilder();
         } else {
-          return oEONLMEPEBK_ == null ?
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : oEONLMEPEBK_;
+          return invoke2Nd_ == null ?
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke2Nd_;
         }
       }
       /**
-       * <code>.AbilityInvokeEntry OEONLMEPEBK = 10;</code>
+       * <code>.AbilityInvokeEntry invoke_2nd = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
-          getOEONLMEPEBKFieldBuilder() {
-        if (oEONLMEPEBKBuilder_ == null) {
-          oEONLMEPEBKBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getInvoke2NdFieldBuilder() {
+        if (invoke2NdBuilder_ == null) {
+          invoke2NdBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder>(
-                  getOEONLMEPEBK(),
+                  getInvoke2Nd(),
                   getParentForChildren(),
                   isClean());
-          oEONLMEPEBK_ = null;
+          invoke2Nd_ = null;
         }
-        return oEONLMEPEBKBuilder_;
+        return invoke2NdBuilder_;
       }
 
-      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry iGACLGPDICN_;
+      private emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry invoke5Th_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> iGACLGPDICNBuilder_;
+          emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> invoke5ThBuilder_;
       /**
-       * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
-       * @return Whether the iGACLGPDICN field is set.
+       * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
+       * @return Whether the invoke5th field is set.
        */
-      public boolean hasIGACLGPDICN() {
-        return iGACLGPDICNBuilder_ != null || iGACLGPDICN_ != null;
+      public boolean hasInvoke5Th() {
+        return invoke5ThBuilder_ != null || invoke5Th_ != null;
       }
       /**
-       * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
-       * @return The iGACLGPDICN.
+       * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
+       * @return The invoke5th.
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getIGACLGPDICN() {
-        if (iGACLGPDICNBuilder_ == null) {
-          return iGACLGPDICN_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : iGACLGPDICN_;
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry getInvoke5Th() {
+        if (invoke5ThBuilder_ == null) {
+          return invoke5Th_ == null ? emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke5Th_;
         } else {
-          return iGACLGPDICNBuilder_.getMessage();
+          return invoke5ThBuilder_.getMessage();
         }
       }
       /**
-       * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
+       * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
        */
-      public Builder setIGACLGPDICN(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (iGACLGPDICNBuilder_ == null) {
+      public Builder setInvoke5Th(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke5ThBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          iGACLGPDICN_ = value;
+          invoke5Th_ = value;
           onChanged();
         } else {
-          iGACLGPDICNBuilder_.setMessage(value);
+          invoke5ThBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
+       * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
        */
-      public Builder setIGACLGPDICN(
+      public Builder setInvoke5Th(
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder builderForValue) {
-        if (iGACLGPDICNBuilder_ == null) {
-          iGACLGPDICN_ = builderForValue.build();
+        if (invoke5ThBuilder_ == null) {
+          invoke5Th_ = builderForValue.build();
           onChanged();
         } else {
-          iGACLGPDICNBuilder_.setMessage(builderForValue.build());
+          invoke5ThBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
+       * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
        */
-      public Builder mergeIGACLGPDICN(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
-        if (iGACLGPDICNBuilder_ == null) {
-          if (iGACLGPDICN_ != null) {
-            iGACLGPDICN_ =
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(iGACLGPDICN_).mergeFrom(value).buildPartial();
+      public Builder mergeInvoke5Th(emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry value) {
+        if (invoke5ThBuilder_ == null) {
+          if (invoke5Th_ != null) {
+            invoke5Th_ =
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.newBuilder(invoke5Th_).mergeFrom(value).buildPartial();
           } else {
-            iGACLGPDICN_ = value;
+            invoke5Th_ = value;
           }
           onChanged();
         } else {
-          iGACLGPDICNBuilder_.mergeFrom(value);
+          invoke5ThBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
+       * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
        */
-      public Builder clearIGACLGPDICN() {
-        if (iGACLGPDICNBuilder_ == null) {
-          iGACLGPDICN_ = null;
+      public Builder clearInvoke5Th() {
+        if (invoke5ThBuilder_ == null) {
+          invoke5Th_ = null;
           onChanged();
         } else {
-          iGACLGPDICN_ = null;
-          iGACLGPDICNBuilder_ = null;
+          invoke5Th_ = null;
+          invoke5ThBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
+       * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getIGACLGPDICNBuilder() {
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder getInvoke5ThBuilder() {
         
         onChanged();
-        return getIGACLGPDICNFieldBuilder().getBuilder();
+        return getInvoke5ThFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
+       * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
        */
-      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getIGACLGPDICNOrBuilder() {
-        if (iGACLGPDICNBuilder_ != null) {
-          return iGACLGPDICNBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder getInvoke5ThOrBuilder() {
+        if (invoke5ThBuilder_ != null) {
+          return invoke5ThBuilder_.getMessageOrBuilder();
         } else {
-          return iGACLGPDICN_ == null ?
-              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : iGACLGPDICN_;
+          return invoke5Th_ == null ?
+              emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.getDefaultInstance() : invoke5Th_;
         }
       }
       /**
-       * <code>.AbilityInvokeEntry IGACLGPDICN = 7;</code>
+       * <code>.AbilityInvokeEntry invoke_5th = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder> 
-          getIGACLGPDICNFieldBuilder() {
-        if (iGACLGPDICNBuilder_ == null) {
-          iGACLGPDICNBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getInvoke5ThFieldBuilder() {
+        if (invoke5ThBuilder_ == null) {
+          invoke5ThBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry.Builder, emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntryOrBuilder>(
-                  getIGACLGPDICN(),
+                  getInvoke5Th(),
                   getParentForChildren(),
                   isClean());
-          iGACLGPDICN_ = null;
+          invoke5Th_ = null;
         }
-        return iGACLGPDICNBuilder_;
+        return invoke5ThBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1675,15 +1673,15 @@ public final class AbilityInvocationFixedNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"AbilityInvocationFixedNotify.proto\032\030Ab" +
-      "ilityInvokeEntry.proto\"\232\002\n\034AbilityInvoca" +
-      "tionFixedNotify\022(\n\013GDJLCBBPFHF\030\001 \001(\0132\023.A" +
-      "bilityInvokeEntry\022(\n\013CMBLCNNPIKH\030\014 \001(\0132\023" +
-      ".AbilityInvokeEntry\022(\n\013OFJIPJDJDJF\030\006 \001(\013" +
-      "2\023.AbilityInvokeEntry\022(\n\013DDFBNNBICCH\030\017 \001" +
-      "(\0132\023.AbilityInvokeEntry\022(\n\013OEONLMEPEBK\030\n" +
-      " \001(\0132\023.AbilityInvokeEntry\022(\n\013IGACLGPDICN" +
-      "\030\007 \001(\0132\023.AbilityInvokeEntryB\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "ilityInvokeEntry.proto\"\224\002\n\034AbilityInvoca" +
+      "tionFixedNotify\022\'\n\ninvoke_1st\030\001 \001(\0132\023.Ab" +
+      "ilityInvokeEntry\022\'\n\ninvoke_6th\030\007 \001(\0132\023.A" +
+      "bilityInvokeEntry\022\'\n\ninvoke_3rd\030\005 \001(\0132\023." +
+      "AbilityInvokeEntry\022\'\n\ninvoke_4th\030\n \001(\0132\023" +
+      ".AbilityInvokeEntry\022\'\n\ninvoke_2nd\030\013 \001(\0132" +
+      "\023.AbilityInvokeEntry\022\'\n\ninvoke_5th\030\t \001(\013" +
+      "2\023.AbilityInvokeEntryB\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1695,7 +1693,7 @@ public final class AbilityInvocationFixedNotifyOuterClass {
     internal_static_AbilityInvocationFixedNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityInvocationFixedNotify_descriptor,
-        new java.lang.String[] { "GDJLCBBPFHF", "CMBLCNNPIKH", "OFJIPJDJDJF", "DDFBNNBICCH", "OEONLMEPEBK", "IGACLGPDICN", });
+        new java.lang.String[] { "Invoke1St", "Invoke6Th", "Invoke3Rd", "Invoke4Th", "Invoke2Nd", "Invoke5Th", });
     emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.getDescriptor();
   }
 

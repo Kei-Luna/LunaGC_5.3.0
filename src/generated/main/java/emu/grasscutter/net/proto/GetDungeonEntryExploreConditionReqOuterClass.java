@@ -19,27 +19,28 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_entry_config_id = 14;</code>
+     * <code>uint32 dungeon_entry_config_id = 3;</code>
      * @return The dungeonEntryConfigId.
      */
     int getDungeonEntryConfigId();
 
     /**
-     * <code>uint32 scene_id = 6;</code>
+     * <code>uint32 scene_id = 1;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>uint32 dungeon_entry_scene_point_id = 5;</code>
+     * <code>uint32 dungeon_entry_scene_point_id = 8;</code>
      * @return The dungeonEntryScenePointId.
      */
     int getDungeonEntryScenePointId();
   }
   /**
    * <pre>
-   * CmdId: 28261
-   * Obf: EEGGMAGLFIB
+   * 4.7.0
+   * CmdId: 2592
+   * Obf: HIMNHIANBJD
    * </pre>
    *
    * Protobuf type {@code GetDungeonEntryExploreConditionReq}
@@ -86,19 +87,19 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              dungeonEntryScenePointId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
+            case 8: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 24: {
 
               dungeonEntryConfigId_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              dungeonEntryScenePointId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +134,10 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
               emu.grasscutter.net.proto.GetDungeonEntryExploreConditionReqOuterClass.GetDungeonEntryExploreConditionReq.class, emu.grasscutter.net.proto.GetDungeonEntryExploreConditionReqOuterClass.GetDungeonEntryExploreConditionReq.Builder.class);
     }
 
-    public static final int DUNGEON_ENTRY_CONFIG_ID_FIELD_NUMBER = 14;
+    public static final int DUNGEON_ENTRY_CONFIG_ID_FIELD_NUMBER = 3;
     private int dungeonEntryConfigId_;
     /**
-     * <code>uint32 dungeon_entry_config_id = 14;</code>
+     * <code>uint32 dungeon_entry_config_id = 3;</code>
      * @return The dungeonEntryConfigId.
      */
     @java.lang.Override
@@ -144,10 +145,10 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
       return dungeonEntryConfigId_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 6;
+    public static final int SCENE_ID_FIELD_NUMBER = 1;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 6;</code>
+     * <code>uint32 scene_id = 1;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -155,10 +156,10 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
       return sceneId_;
     }
 
-    public static final int DUNGEON_ENTRY_SCENE_POINT_ID_FIELD_NUMBER = 5;
+    public static final int DUNGEON_ENTRY_SCENE_POINT_ID_FIELD_NUMBER = 8;
     private int dungeonEntryScenePointId_;
     /**
-     * <code>uint32 dungeon_entry_scene_point_id = 5;</code>
+     * <code>uint32 dungeon_entry_scene_point_id = 8;</code>
      * @return The dungeonEntryScenePointId.
      */
     @java.lang.Override
@@ -180,14 +181,14 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dungeonEntryScenePointId_ != 0) {
-        output.writeUInt32(5, dungeonEntryScenePointId_);
-      }
       if (sceneId_ != 0) {
-        output.writeUInt32(6, sceneId_);
+        output.writeUInt32(1, sceneId_);
       }
       if (dungeonEntryConfigId_ != 0) {
-        output.writeUInt32(14, dungeonEntryConfigId_);
+        output.writeUInt32(3, dungeonEntryConfigId_);
+      }
+      if (dungeonEntryScenePointId_ != 0) {
+        output.writeUInt32(8, dungeonEntryScenePointId_);
       }
       unknownFields.writeTo(output);
     }
@@ -198,17 +199,17 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dungeonEntryScenePointId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, dungeonEntryScenePointId_);
-      }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, sceneId_);
+          .computeUInt32Size(1, sceneId_);
       }
       if (dungeonEntryConfigId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, dungeonEntryConfigId_);
+          .computeUInt32Size(3, dungeonEntryConfigId_);
+      }
+      if (dungeonEntryScenePointId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, dungeonEntryScenePointId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -345,8 +346,9 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 28261
-     * Obf: EEGGMAGLFIB
+     * 4.7.0
+     * CmdId: 2592
+     * Obf: HIMNHIANBJD
      * </pre>
      *
      * Protobuf type {@code GetDungeonEntryExploreConditionReq}
@@ -509,7 +511,7 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
 
       private int dungeonEntryConfigId_ ;
       /**
-       * <code>uint32 dungeon_entry_config_id = 14;</code>
+       * <code>uint32 dungeon_entry_config_id = 3;</code>
        * @return The dungeonEntryConfigId.
        */
       @java.lang.Override
@@ -517,7 +519,7 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
         return dungeonEntryConfigId_;
       }
       /**
-       * <code>uint32 dungeon_entry_config_id = 14;</code>
+       * <code>uint32 dungeon_entry_config_id = 3;</code>
        * @param value The dungeonEntryConfigId to set.
        * @return This builder for chaining.
        */
@@ -528,7 +530,7 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_entry_config_id = 14;</code>
+       * <code>uint32 dungeon_entry_config_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonEntryConfigId() {
@@ -540,7 +542,7 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 6;</code>
+       * <code>uint32 scene_id = 1;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -548,7 +550,7 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 6;</code>
+       * <code>uint32 scene_id = 1;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -559,7 +561,7 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 6;</code>
+       * <code>uint32 scene_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -571,7 +573,7 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
 
       private int dungeonEntryScenePointId_ ;
       /**
-       * <code>uint32 dungeon_entry_scene_point_id = 5;</code>
+       * <code>uint32 dungeon_entry_scene_point_id = 8;</code>
        * @return The dungeonEntryScenePointId.
        */
       @java.lang.Override
@@ -579,7 +581,7 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
         return dungeonEntryScenePointId_;
       }
       /**
-       * <code>uint32 dungeon_entry_scene_point_id = 5;</code>
+       * <code>uint32 dungeon_entry_scene_point_id = 8;</code>
        * @param value The dungeonEntryScenePointId to set.
        * @return This builder for chaining.
        */
@@ -590,7 +592,7 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_entry_scene_point_id = 5;</code>
+       * <code>uint32 dungeon_entry_scene_point_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonEntryScenePointId() {
@@ -668,9 +670,9 @@ public final class GetDungeonEntryExploreConditionReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n(GetDungeonEntryExploreConditionReq.pro" +
       "to\"}\n\"GetDungeonEntryExploreConditionReq" +
-      "\022\037\n\027dungeon_entry_config_id\030\016 \001(\r\022\020\n\010sce" +
-      "ne_id\030\006 \001(\r\022$\n\034dungeon_entry_scene_point" +
-      "_id\030\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "\022\037\n\027dungeon_entry_config_id\030\003 \001(\r\022\020\n\010sce" +
+      "ne_id\030\001 \001(\r\022$\n\034dungeon_entry_scene_point" +
+      "_id\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

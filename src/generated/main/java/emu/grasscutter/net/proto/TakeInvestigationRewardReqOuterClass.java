@@ -19,17 +19,12 @@ public final class TakeInvestigationRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 8;</code>
+     * <code>uint32 id = 4;</code>
      * @return The id.
      */
     int getId();
   }
   /**
-   * <pre>
-   * CmdId: 8462
-   * Obf: GBGKOACHBNE
-   * </pre>
-   *
    * Protobuf type {@code TakeInvestigationRewardReq}
    */
   public static final class TakeInvestigationRewardReq extends
@@ -74,7 +69,7 @@ public final class TakeInvestigationRewardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 32: {
 
               id_ = input.readUInt32();
               break;
@@ -111,10 +106,10 @@ public final class TakeInvestigationRewardReqOuterClass {
               emu.grasscutter.net.proto.TakeInvestigationRewardReqOuterClass.TakeInvestigationRewardReq.class, emu.grasscutter.net.proto.TakeInvestigationRewardReqOuterClass.TakeInvestigationRewardReq.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 8;
+    public static final int ID_FIELD_NUMBER = 4;
     private int id_;
     /**
-     * <code>uint32 id = 8;</code>
+     * <code>uint32 id = 4;</code>
      * @return The id.
      */
     @java.lang.Override
@@ -137,7 +132,7 @@ public final class TakeInvestigationRewardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0) {
-        output.writeUInt32(8, id_);
+        output.writeUInt32(4, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +145,7 @@ public final class TakeInvestigationRewardReqOuterClass {
       size = 0;
       if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, id_);
+          .computeUInt32Size(4, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,11 +273,6 @@ public final class TakeInvestigationRewardReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 8462
-     * Obf: GBGKOACHBNE
-     * </pre>
-     *
      * Protobuf type {@code TakeInvestigationRewardReq}
      */
     public static final class Builder extends
@@ -431,7 +421,7 @@ public final class TakeInvestigationRewardReqOuterClass {
 
       private int id_ ;
       /**
-       * <code>uint32 id = 8;</code>
+       * <code>uint32 id = 4;</code>
        * @return The id.
        */
       @java.lang.Override
@@ -439,7 +429,7 @@ public final class TakeInvestigationRewardReqOuterClass {
         return id_;
       }
       /**
-       * <code>uint32 id = 8;</code>
+       * <code>uint32 id = 4;</code>
        * @param value The id to set.
        * @return This builder for chaining.
        */
@@ -450,7 +440,7 @@ public final class TakeInvestigationRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 id = 8;</code>
+       * <code>uint32 id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearId() {
@@ -527,7 +517,7 @@ public final class TakeInvestigationRewardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n TakeInvestigationRewardReq.proto\"(\n\032Ta" +
-      "keInvestigationRewardReq\022\n\n\002id\030\010 \001(\rB\033\n\031" +
+      "keInvestigationRewardReq\022\n\n\002id\030\004 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

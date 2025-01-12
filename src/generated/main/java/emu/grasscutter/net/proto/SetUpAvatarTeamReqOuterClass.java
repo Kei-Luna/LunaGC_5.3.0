@@ -48,6 +48,10 @@ public final class SetUpAvatarTeamReqOuterClass {
     long getCurAvatarGuid();
   }
   /**
+   * <pre>
+   * CmdId: 25377 
+   * </pre>
+   *
    * Protobuf type {@code SetUpAvatarTeamReq}
    */
   public static final class SetUpAvatarTeamReq extends
@@ -406,6 +410,10 @@ public final class SetUpAvatarTeamReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 25377 
+     * </pre>
+     *
      * Protobuf type {@code SetUpAvatarTeamReq}
      */
     public static final class Builder extends

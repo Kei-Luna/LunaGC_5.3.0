@@ -19,11 +19,6 @@ public final class PlayerGetForceQuitBanInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
   }
   /**
-   * <pre>
-   * CmdId: 24478
-   * Obf: FFIHLFOEOGJ
-   * </pre>
-   *
    * Protobuf type {@code PlayerGetForceQuitBanInfoReq}
    */
   public static final class PlayerGetForceQuitBanInfoReq extends
@@ -245,11 +240,6 @@ public final class PlayerGetForceQuitBanInfoReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 24478
-     * Obf: FFIHLFOEOGJ
-     * </pre>
-     *
      * Protobuf type {@code PlayerGetForceQuitBanInfoReq}
      */
     public static final class Builder extends

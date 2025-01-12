@@ -1840,8 +1840,8 @@ public final class MailDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016MailData.proto\032\025MailTextContent.proto\032" +
-      "\016MailItem.proto\032\026MailCollectState.proto\"" +
+      "\n\016MailData.proto\032\016MailItem.proto\032\025MailTe" +
+      "xtContent.proto\032\026MailCollectState.proto\"" +
       "\242\002\n\010MailData\022\017\n\007mail_id\030\001 \001(\r\022+\n\021mail_te" +
       "xt_content\030\004 \001(\0132\020.MailTextContent\022\034\n\tit" +
       "em_list\030\007 \003(\0132\t.MailItem\022\021\n\tsend_time\030\010 " +
@@ -1855,8 +1855,8 @@ public final class MailDataOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.MailTextContentOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MailItemOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.MailTextContentOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.MailCollectStateOuterClass.getDescriptor(),
         });
     internal_static_MailData_descriptor =
@@ -1865,8 +1865,8 @@ public final class MailDataOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MailData_descriptor,
         new java.lang.String[] { "MailId", "MailTextContent", "ItemList", "SendTime", "ExpireTime", "Importance", "IsRead", "IsAttachmentGot", "ConfigId", "ArgumentList", "CollectState", });
-    emu.grasscutter.net.proto.MailTextContentOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MailItemOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.MailTextContentOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MailCollectStateOuterClass.getDescriptor();
   }
 

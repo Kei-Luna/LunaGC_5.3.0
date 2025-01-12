@@ -19,22 +19,22 @@ public final class SalvagePreventSettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
-     * @return Whether the settleInfo field is set.
+     * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
+     * @return Whether the nJPFBDOLHBF field is set.
      */
-    boolean hasSettleInfo();
+    boolean hasNJPFBDOLHBF();
     /**
-     * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
-     * @return The settleInfo.
+     * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
+     * @return The nJPFBDOLHBF.
      */
-    emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo getSettleInfo();
+    emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo getNJPFBDOLHBF();
     /**
-     * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
+     * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
      */
-    emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfoOrBuilder getSettleInfoOrBuilder();
+    emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfoOrBuilder getNJPFBDOLHBFOrBuilder();
 
     /**
-     * <code>bool is_new_record = 14;</code>
+     * <code>bool is_new_record = 11;</code>
      * @return The isNewRecord.
      */
     boolean getIsNewRecord();
@@ -84,20 +84,20 @@ public final class SalvagePreventSettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 82: {
               emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.Builder subBuilder = null;
-              if (settleInfo_ != null) {
-                subBuilder = settleInfo_.toBuilder();
+              if (nJPFBDOLHBF_ != null) {
+                subBuilder = nJPFBDOLHBF_.toBuilder();
               }
-              settleInfo_ = input.readMessage(emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.parser(), extensionRegistry);
+              nJPFBDOLHBF_ = input.readMessage(emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(settleInfo_);
-                settleInfo_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(nJPFBDOLHBF_);
+                nJPFBDOLHBF_ = subBuilder.buildPartial();
               }
 
               break;
             }
-            case 112: {
+            case 88: {
 
               isNewRecord_ = input.readBool();
               break;
@@ -134,36 +134,36 @@ public final class SalvagePreventSettleInfoOuterClass {
               emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.class, emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.Builder.class);
     }
 
-    public static final int SETTLE_INFO_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo settleInfo_;
+    public static final int NJPFBDOLHBF_FIELD_NUMBER = 10;
+    private emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo nJPFBDOLHBF_;
     /**
-     * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
-     * @return Whether the settleInfo field is set.
+     * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
+     * @return Whether the nJPFBDOLHBF field is set.
      */
     @java.lang.Override
-    public boolean hasSettleInfo() {
-      return settleInfo_ != null;
+    public boolean hasNJPFBDOLHBF() {
+      return nJPFBDOLHBF_ != null;
     }
     /**
-     * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
-     * @return The settleInfo.
+     * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
+     * @return The nJPFBDOLHBF.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo getSettleInfo() {
-      return settleInfo_ == null ? emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.getDefaultInstance() : settleInfo_;
+    public emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo getNJPFBDOLHBF() {
+      return nJPFBDOLHBF_ == null ? emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.getDefaultInstance() : nJPFBDOLHBF_;
     }
     /**
-     * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
+     * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfoOrBuilder getSettleInfoOrBuilder() {
-      return getSettleInfo();
+    public emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfoOrBuilder getNJPFBDOLHBFOrBuilder() {
+      return getNJPFBDOLHBF();
     }
 
-    public static final int IS_NEW_RECORD_FIELD_NUMBER = 14;
+    public static final int IS_NEW_RECORD_FIELD_NUMBER = 11;
     private boolean isNewRecord_;
     /**
-     * <code>bool is_new_record = 14;</code>
+     * <code>bool is_new_record = 11;</code>
      * @return The isNewRecord.
      */
     @java.lang.Override
@@ -185,11 +185,11 @@ public final class SalvagePreventSettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (settleInfo_ != null) {
-        output.writeMessage(8, getSettleInfo());
+      if (nJPFBDOLHBF_ != null) {
+        output.writeMessage(10, getNJPFBDOLHBF());
       }
       if (isNewRecord_ != false) {
-        output.writeBool(14, isNewRecord_);
+        output.writeBool(11, isNewRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,13 +200,13 @@ public final class SalvagePreventSettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (settleInfo_ != null) {
+      if (nJPFBDOLHBF_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getSettleInfo());
+          .computeMessageSize(10, getNJPFBDOLHBF());
       }
       if (isNewRecord_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, isNewRecord_);
+          .computeBoolSize(11, isNewRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -223,10 +223,10 @@ public final class SalvagePreventSettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo other = (emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo) obj;
 
-      if (hasSettleInfo() != other.hasSettleInfo()) return false;
-      if (hasSettleInfo()) {
-        if (!getSettleInfo()
-            .equals(other.getSettleInfo())) return false;
+      if (hasNJPFBDOLHBF() != other.hasNJPFBDOLHBF()) return false;
+      if (hasNJPFBDOLHBF()) {
+        if (!getNJPFBDOLHBF()
+            .equals(other.getNJPFBDOLHBF())) return false;
       }
       if (getIsNewRecord()
           != other.getIsNewRecord()) return false;
@@ -241,9 +241,9 @@ public final class SalvagePreventSettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasSettleInfo()) {
-        hash = (37 * hash) + SETTLE_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getSettleInfo().hashCode();
+      if (hasNJPFBDOLHBF()) {
+        hash = (37 * hash) + NJPFBDOLHBF_FIELD_NUMBER;
+        hash = (53 * hash) + getNJPFBDOLHBF().hashCode();
       }
       hash = (37 * hash) + IS_NEW_RECORD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
@@ -381,11 +381,11 @@ public final class SalvagePreventSettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (settleInfoBuilder_ == null) {
-          settleInfo_ = null;
+        if (nJPFBDOLHBFBuilder_ == null) {
+          nJPFBDOLHBF_ = null;
         } else {
-          settleInfo_ = null;
-          settleInfoBuilder_ = null;
+          nJPFBDOLHBF_ = null;
+          nJPFBDOLHBFBuilder_ = null;
         }
         isNewRecord_ = false;
 
@@ -415,10 +415,10 @@ public final class SalvagePreventSettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo buildPartial() {
         emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo result = new emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo(this);
-        if (settleInfoBuilder_ == null) {
-          result.settleInfo_ = settleInfo_;
+        if (nJPFBDOLHBFBuilder_ == null) {
+          result.nJPFBDOLHBF_ = nJPFBDOLHBF_;
         } else {
-          result.settleInfo_ = settleInfoBuilder_.build();
+          result.nJPFBDOLHBF_ = nJPFBDOLHBFBuilder_.build();
         }
         result.isNewRecord_ = isNewRecord_;
         onBuilt();
@@ -469,8 +469,8 @@ public final class SalvagePreventSettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo other) {
         if (other == emu.grasscutter.net.proto.SalvagePreventSettleInfoOuterClass.SalvagePreventSettleInfo.getDefaultInstance()) return this;
-        if (other.hasSettleInfo()) {
-          mergeSettleInfo(other.getSettleInfo());
+        if (other.hasNJPFBDOLHBF()) {
+          mergeNJPFBDOLHBF(other.getNJPFBDOLHBF());
         }
         if (other.getIsNewRecord() != false) {
           setIsNewRecord(other.getIsNewRecord());
@@ -504,128 +504,128 @@ public final class SalvagePreventSettleInfoOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo settleInfo_;
+      private emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo nJPFBDOLHBF_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo, emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.Builder, emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfoOrBuilder> settleInfoBuilder_;
+          emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo, emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.Builder, emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfoOrBuilder> nJPFBDOLHBFBuilder_;
       /**
-       * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
-       * @return Whether the settleInfo field is set.
+       * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
+       * @return Whether the nJPFBDOLHBF field is set.
        */
-      public boolean hasSettleInfo() {
-        return settleInfoBuilder_ != null || settleInfo_ != null;
+      public boolean hasNJPFBDOLHBF() {
+        return nJPFBDOLHBFBuilder_ != null || nJPFBDOLHBF_ != null;
       }
       /**
-       * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
-       * @return The settleInfo.
+       * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
+       * @return The nJPFBDOLHBF.
        */
-      public emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo getSettleInfo() {
-        if (settleInfoBuilder_ == null) {
-          return settleInfo_ == null ? emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.getDefaultInstance() : settleInfo_;
+      public emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo getNJPFBDOLHBF() {
+        if (nJPFBDOLHBFBuilder_ == null) {
+          return nJPFBDOLHBF_ == null ? emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.getDefaultInstance() : nJPFBDOLHBF_;
         } else {
-          return settleInfoBuilder_.getMessage();
+          return nJPFBDOLHBFBuilder_.getMessage();
         }
       }
       /**
-       * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
+       * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
        */
-      public Builder setSettleInfo(emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo value) {
-        if (settleInfoBuilder_ == null) {
+      public Builder setNJPFBDOLHBF(emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo value) {
+        if (nJPFBDOLHBFBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          settleInfo_ = value;
+          nJPFBDOLHBF_ = value;
           onChanged();
         } else {
-          settleInfoBuilder_.setMessage(value);
+          nJPFBDOLHBFBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
+       * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
        */
-      public Builder setSettleInfo(
+      public Builder setNJPFBDOLHBF(
           emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.Builder builderForValue) {
-        if (settleInfoBuilder_ == null) {
-          settleInfo_ = builderForValue.build();
+        if (nJPFBDOLHBFBuilder_ == null) {
+          nJPFBDOLHBF_ = builderForValue.build();
           onChanged();
         } else {
-          settleInfoBuilder_.setMessage(builderForValue.build());
+          nJPFBDOLHBFBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
+       * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
        */
-      public Builder mergeSettleInfo(emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo value) {
-        if (settleInfoBuilder_ == null) {
-          if (settleInfo_ != null) {
-            settleInfo_ =
-              emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.newBuilder(settleInfo_).mergeFrom(value).buildPartial();
+      public Builder mergeNJPFBDOLHBF(emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo value) {
+        if (nJPFBDOLHBFBuilder_ == null) {
+          if (nJPFBDOLHBF_ != null) {
+            nJPFBDOLHBF_ =
+              emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.newBuilder(nJPFBDOLHBF_).mergeFrom(value).buildPartial();
           } else {
-            settleInfo_ = value;
+            nJPFBDOLHBF_ = value;
           }
           onChanged();
         } else {
-          settleInfoBuilder_.mergeFrom(value);
+          nJPFBDOLHBFBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
+       * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
        */
-      public Builder clearSettleInfo() {
-        if (settleInfoBuilder_ == null) {
-          settleInfo_ = null;
+      public Builder clearNJPFBDOLHBF() {
+        if (nJPFBDOLHBFBuilder_ == null) {
+          nJPFBDOLHBF_ = null;
           onChanged();
         } else {
-          settleInfo_ = null;
-          settleInfoBuilder_ = null;
+          nJPFBDOLHBF_ = null;
+          nJPFBDOLHBFBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
+       * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
        */
-      public emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.Builder getSettleInfoBuilder() {
+      public emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.Builder getNJPFBDOLHBFBuilder() {
         
         onChanged();
-        return getSettleInfoFieldBuilder().getBuilder();
+        return getNJPFBDOLHBFFieldBuilder().getBuilder();
       }
       /**
-       * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
+       * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
        */
-      public emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfoOrBuilder getSettleInfoOrBuilder() {
-        if (settleInfoBuilder_ != null) {
-          return settleInfoBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfoOrBuilder getNJPFBDOLHBFOrBuilder() {
+        if (nJPFBDOLHBFBuilder_ != null) {
+          return nJPFBDOLHBFBuilder_.getMessageOrBuilder();
         } else {
-          return settleInfo_ == null ?
-              emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.getDefaultInstance() : settleInfo_;
+          return nJPFBDOLHBF_ == null ?
+              emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.getDefaultInstance() : nJPFBDOLHBF_;
         }
       }
       /**
-       * <code>.SalvagePreventGallerySettleInfo settle_info = 8;</code>
+       * <code>.SalvagePreventGallerySettleInfo NJPFBDOLHBF = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo, emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.Builder, emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfoOrBuilder> 
-          getSettleInfoFieldBuilder() {
-        if (settleInfoBuilder_ == null) {
-          settleInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getNJPFBDOLHBFFieldBuilder() {
+        if (nJPFBDOLHBFBuilder_ == null) {
+          nJPFBDOLHBFBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo, emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.Builder, emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfoOrBuilder>(
-                  getSettleInfo(),
+                  getNJPFBDOLHBF(),
                   getParentForChildren(),
                   isClean());
-          settleInfo_ = null;
+          nJPFBDOLHBF_ = null;
         }
-        return settleInfoBuilder_;
+        return nJPFBDOLHBFBuilder_;
       }
 
       private boolean isNewRecord_ ;
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 11;</code>
        * @return The isNewRecord.
        */
       @java.lang.Override
@@ -633,7 +633,7 @@ public final class SalvagePreventSettleInfoOuterClass {
         return isNewRecord_;
       }
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 11;</code>
        * @param value The isNewRecord to set.
        * @return This builder for chaining.
        */
@@ -644,7 +644,7 @@ public final class SalvagePreventSettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new_record = 14;</code>
+       * <code>bool is_new_record = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNewRecord() {
@@ -722,9 +722,9 @@ public final class SalvagePreventSettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036SalvagePreventSettleInfo.proto\032%Salvag" +
       "ePreventGallerySettleInfo.proto\"h\n\030Salva" +
-      "gePreventSettleInfo\0225\n\013settle_info\030\010 \001(\013" +
+      "gePreventSettleInfo\0225\n\013NJPFBDOLHBF\030\n \001(\013" +
       "2 .SalvagePreventGallerySettleInfo\022\025\n\ris" +
-      "_new_record\030\016 \001(\010B\033\n\031emu.grasscutter.net" +
+      "_new_record\030\013 \001(\010B\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -737,7 +737,7 @@ public final class SalvagePreventSettleInfoOuterClass {
     internal_static_SalvagePreventSettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SalvagePreventSettleInfo_descriptor,
-        new java.lang.String[] { "SettleInfo", "IsNewRecord", });
+        new java.lang.String[] { "NJPFBDOLHBF", "IsNewRecord", });
     emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.getDescriptor();
   }
 

@@ -19,16 +19,16 @@ public final class MapAreaInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 2;</code>
-     * @return The isOpen.
-     */
-    boolean getIsOpen();
-
-    /**
      * <code>uint32 map_area_id = 1;</code>
      * @return The mapAreaId.
      */
     int getMapAreaId();
+
+    /**
+     * <code>bool is_open = 2;</code>
+     * @return The isOpen.
+     */
+    boolean getIsOpen();
   }
   /**
    * Protobuf type {@code MapAreaInfo}
@@ -117,17 +117,6 @@ public final class MapAreaInfoOuterClass {
               emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo.class, emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 2;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 2;</code>
-     * @return The isOpen.
-     */
-    @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
-    }
-
     public static final int MAP_AREA_ID_FIELD_NUMBER = 1;
     private int mapAreaId_;
     /**
@@ -137,6 +126,17 @@ public final class MapAreaInfoOuterClass {
     @java.lang.Override
     public int getMapAreaId() {
       return mapAreaId_;
+    }
+
+    public static final int IS_OPEN_FIELD_NUMBER = 2;
+    private boolean isOpen_;
+    /**
+     * <code>bool is_open = 2;</code>
+     * @return The isOpen.
+     */
+    @java.lang.Override
+    public boolean getIsOpen() {
+      return isOpen_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,10 +191,10 @@ public final class MapAreaInfoOuterClass {
       }
       emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo other = (emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo) obj;
 
-      if (getIsOpen()
-          != other.getIsOpen()) return false;
       if (getMapAreaId()
           != other.getMapAreaId()) return false;
+      if (getIsOpen()
+          != other.getIsOpen()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,11 +206,11 @@ public final class MapAreaInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + MAP_AREA_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMapAreaId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + MAP_AREA_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMapAreaId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,9 +344,9 @@ public final class MapAreaInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isOpen_ = false;
-
         mapAreaId_ = 0;
+
+        isOpen_ = false;
 
         return this;
       }
@@ -374,8 +374,8 @@ public final class MapAreaInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo buildPartial() {
         emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo result = new emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo(this);
-        result.isOpen_ = isOpen_;
         result.mapAreaId_ = mapAreaId_;
+        result.isOpen_ = isOpen_;
         onBuilt();
         return result;
       }
@@ -424,11 +424,11 @@ public final class MapAreaInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo other) {
         if (other == emu.grasscutter.net.proto.MapAreaInfoOuterClass.MapAreaInfo.getDefaultInstance()) return this;
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
-        }
         if (other.getMapAreaId() != 0) {
           setMapAreaId(other.getMapAreaId());
+        }
+        if (other.getIsOpen() != false) {
+          setIsOpen(other.getIsOpen());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -459,37 +459,6 @@ public final class MapAreaInfoOuterClass {
         return this;
       }
 
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 2;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 2;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
       private int mapAreaId_ ;
       /**
        * <code>uint32 map_area_id = 1;</code>
@@ -517,6 +486,37 @@ public final class MapAreaInfoOuterClass {
       public Builder clearMapAreaId() {
         
         mapAreaId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isOpen_ ;
+      /**
+       * <code>bool is_open = 2;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool is_open = 2;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_open = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        
+        isOpen_ = false;
         onChanged();
         return this;
       }
@@ -587,8 +587,8 @@ public final class MapAreaInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MapAreaInfo.proto\"3\n\013MapAreaInfo\022\017\n\007is" +
-      "_open\030\002 \001(\010\022\023\n\013map_area_id\030\001 \001(\rB\033\n\031emu." +
+      "\n\021MapAreaInfo.proto\"3\n\013MapAreaInfo\022\023\n\013ma" +
+      "p_area_id\030\001 \001(\r\022\017\n\007is_open\030\002 \001(\010B\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -600,7 +600,7 @@ public final class MapAreaInfoOuterClass {
     internal_static_MapAreaInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MapAreaInfo_descriptor,
-        new java.lang.String[] { "IsOpen", "MapAreaId", });
+        new java.lang.String[] { "MapAreaId", "IsOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

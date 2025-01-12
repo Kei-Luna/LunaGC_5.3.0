@@ -25,11 +25,6 @@ public final class AvatarChangeElementTypeRspOuterClass {
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 26227
-   * Obf: CLNCAJHKIFD
-   * </pre>
-   *
    * Protobuf type {@code AvatarChangeElementTypeRsp}
    */
   public static final class AvatarChangeElementTypeRsp extends
@@ -278,11 +273,6 @@ public final class AvatarChangeElementTypeRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 26227
-     * Obf: CLNCAJHKIFD
-     * </pre>
-     *
      * Protobuf type {@code AvatarChangeElementTypeRsp}
      */
     public static final class Builder extends

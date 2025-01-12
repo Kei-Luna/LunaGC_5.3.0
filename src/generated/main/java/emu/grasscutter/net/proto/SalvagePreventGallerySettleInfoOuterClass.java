@@ -19,30 +19,30 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 time_remain = 4;</code>
-     * @return The timeRemain.
-     */
-    int getTimeRemain();
-
-    /**
-     * <code>uint32 final_score = 7;</code>
+     * <code>uint32 final_score = 1;</code>
      * @return The finalScore.
      */
     int getFinalScore();
 
     /**
-     * <code>.SalvagePreventStopReason reason = 10;</code>
+     * <code>.SalvagePreventStopReason reason = 4;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.SalvagePreventStopReason reason = 10;</code>
+     * <code>.SalvagePreventStopReason reason = 4;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.SalvagePreventStopReasonOuterClass.SalvagePreventStopReason getReason();
 
     /**
-     * <code>uint32 monster_count = 15;</code>
+     * <code>uint32 time_remain = 6;</code>
+     * @return The timeRemain.
+     */
+    int getTimeRemain();
+
+    /**
+     * <code>uint32 monster_count = 14;</code>
      * @return The monsterCount.
      */
     int getMonsterCount();
@@ -93,23 +93,23 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              timeRemain_ = input.readUInt32();
-              break;
-            }
-            case 56: {
+            case 8: {
 
               finalScore_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 32: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 120: {
+            case 48: {
+
+              timeRemain_ = input.readUInt32();
+              break;
+            }
+            case 112: {
 
               monsterCount_ = input.readUInt32();
               break;
@@ -146,21 +146,10 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
               emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.class, emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.Builder.class);
     }
 
-    public static final int TIME_REMAIN_FIELD_NUMBER = 4;
-    private int timeRemain_;
-    /**
-     * <code>uint32 time_remain = 4;</code>
-     * @return The timeRemain.
-     */
-    @java.lang.Override
-    public int getTimeRemain() {
-      return timeRemain_;
-    }
-
-    public static final int FINAL_SCORE_FIELD_NUMBER = 7;
+    public static final int FINAL_SCORE_FIELD_NUMBER = 1;
     private int finalScore_;
     /**
-     * <code>uint32 final_score = 7;</code>
+     * <code>uint32 final_score = 1;</code>
      * @return The finalScore.
      */
     @java.lang.Override
@@ -168,17 +157,17 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
       return finalScore_;
     }
 
-    public static final int REASON_FIELD_NUMBER = 10;
+    public static final int REASON_FIELD_NUMBER = 4;
     private int reason_;
     /**
-     * <code>.SalvagePreventStopReason reason = 10;</code>
+     * <code>.SalvagePreventStopReason reason = 4;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.SalvagePreventStopReason reason = 10;</code>
+     * <code>.SalvagePreventStopReason reason = 4;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.SalvagePreventStopReasonOuterClass.SalvagePreventStopReason getReason() {
@@ -187,10 +176,21 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.SalvagePreventStopReasonOuterClass.SalvagePreventStopReason.UNRECOGNIZED : result;
     }
 
-    public static final int MONSTER_COUNT_FIELD_NUMBER = 15;
+    public static final int TIME_REMAIN_FIELD_NUMBER = 6;
+    private int timeRemain_;
+    /**
+     * <code>uint32 time_remain = 6;</code>
+     * @return The timeRemain.
+     */
+    @java.lang.Override
+    public int getTimeRemain() {
+      return timeRemain_;
+    }
+
+    public static final int MONSTER_COUNT_FIELD_NUMBER = 14;
     private int monsterCount_;
     /**
-     * <code>uint32 monster_count = 15;</code>
+     * <code>uint32 monster_count = 14;</code>
      * @return The monsterCount.
      */
     @java.lang.Override
@@ -212,17 +212,17 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (timeRemain_ != 0) {
-        output.writeUInt32(4, timeRemain_);
-      }
       if (finalScore_ != 0) {
-        output.writeUInt32(7, finalScore_);
+        output.writeUInt32(1, finalScore_);
       }
       if (reason_ != emu.grasscutter.net.proto.SalvagePreventStopReasonOuterClass.SalvagePreventStopReason.SALVAGE_PREVENT_STOP_NONE.getNumber()) {
-        output.writeEnum(10, reason_);
+        output.writeEnum(4, reason_);
+      }
+      if (timeRemain_ != 0) {
+        output.writeUInt32(6, timeRemain_);
       }
       if (monsterCount_ != 0) {
-        output.writeUInt32(15, monsterCount_);
+        output.writeUInt32(14, monsterCount_);
       }
       unknownFields.writeTo(output);
     }
@@ -233,21 +233,21 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (timeRemain_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, timeRemain_);
-      }
       if (finalScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, finalScore_);
+          .computeUInt32Size(1, finalScore_);
       }
       if (reason_ != emu.grasscutter.net.proto.SalvagePreventStopReasonOuterClass.SalvagePreventStopReason.SALVAGE_PREVENT_STOP_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, reason_);
+          .computeEnumSize(4, reason_);
+      }
+      if (timeRemain_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, timeRemain_);
       }
       if (monsterCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, monsterCount_);
+          .computeUInt32Size(14, monsterCount_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -264,11 +264,11 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
       }
       emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo other = (emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo) obj;
 
-      if (getTimeRemain()
-          != other.getTimeRemain()) return false;
       if (getFinalScore()
           != other.getFinalScore()) return false;
       if (reason_ != other.reason_) return false;
+      if (getTimeRemain()
+          != other.getTimeRemain()) return false;
       if (getMonsterCount()
           != other.getMonsterCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -282,12 +282,12 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TIME_REMAIN_FIELD_NUMBER;
-      hash = (53 * hash) + getTimeRemain();
       hash = (37 * hash) + FINAL_SCORE_FIELD_NUMBER;
       hash = (53 * hash) + getFinalScore();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + reason_;
+      hash = (37 * hash) + TIME_REMAIN_FIELD_NUMBER;
+      hash = (53 * hash) + getTimeRemain();
       hash = (37 * hash) + MONSTER_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getMonsterCount();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -423,11 +423,11 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        timeRemain_ = 0;
-
         finalScore_ = 0;
 
         reason_ = 0;
+
+        timeRemain_ = 0;
 
         monsterCount_ = 0;
 
@@ -457,9 +457,9 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo buildPartial() {
         emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo result = new emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo(this);
-        result.timeRemain_ = timeRemain_;
         result.finalScore_ = finalScore_;
         result.reason_ = reason_;
+        result.timeRemain_ = timeRemain_;
         result.monsterCount_ = monsterCount_;
         onBuilt();
         return result;
@@ -509,14 +509,14 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo other) {
         if (other == emu.grasscutter.net.proto.SalvagePreventGallerySettleInfoOuterClass.SalvagePreventGallerySettleInfo.getDefaultInstance()) return this;
-        if (other.getTimeRemain() != 0) {
-          setTimeRemain(other.getTimeRemain());
-        }
         if (other.getFinalScore() != 0) {
           setFinalScore(other.getFinalScore());
         }
         if (other.reason_ != 0) {
           setReasonValue(other.getReasonValue());
+        }
+        if (other.getTimeRemain() != 0) {
+          setTimeRemain(other.getTimeRemain());
         }
         if (other.getMonsterCount() != 0) {
           setMonsterCount(other.getMonsterCount());
@@ -550,40 +550,9 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
         return this;
       }
 
-      private int timeRemain_ ;
-      /**
-       * <code>uint32 time_remain = 4;</code>
-       * @return The timeRemain.
-       */
-      @java.lang.Override
-      public int getTimeRemain() {
-        return timeRemain_;
-      }
-      /**
-       * <code>uint32 time_remain = 4;</code>
-       * @param value The timeRemain to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTimeRemain(int value) {
-        
-        timeRemain_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 time_remain = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTimeRemain() {
-        
-        timeRemain_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int finalScore_ ;
       /**
-       * <code>uint32 final_score = 7;</code>
+       * <code>uint32 final_score = 1;</code>
        * @return The finalScore.
        */
       @java.lang.Override
@@ -591,7 +560,7 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
         return finalScore_;
       }
       /**
-       * <code>uint32 final_score = 7;</code>
+       * <code>uint32 final_score = 1;</code>
        * @param value The finalScore to set.
        * @return This builder for chaining.
        */
@@ -602,7 +571,7 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 final_score = 7;</code>
+       * <code>uint32 final_score = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinalScore() {
@@ -614,14 +583,14 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
 
       private int reason_ = 0;
       /**
-       * <code>.SalvagePreventStopReason reason = 10;</code>
+       * <code>.SalvagePreventStopReason reason = 4;</code>
        * @return The enum numeric value on the wire for reason.
        */
       @java.lang.Override public int getReasonValue() {
         return reason_;
       }
       /**
-       * <code>.SalvagePreventStopReason reason = 10;</code>
+       * <code>.SalvagePreventStopReason reason = 4;</code>
        * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
@@ -632,7 +601,7 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.SalvagePreventStopReason reason = 10;</code>
+       * <code>.SalvagePreventStopReason reason = 4;</code>
        * @return The reason.
        */
       @java.lang.Override
@@ -642,7 +611,7 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
         return result == null ? emu.grasscutter.net.proto.SalvagePreventStopReasonOuterClass.SalvagePreventStopReason.UNRECOGNIZED : result;
       }
       /**
-       * <code>.SalvagePreventStopReason reason = 10;</code>
+       * <code>.SalvagePreventStopReason reason = 4;</code>
        * @param value The reason to set.
        * @return This builder for chaining.
        */
@@ -656,7 +625,7 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>.SalvagePreventStopReason reason = 10;</code>
+       * <code>.SalvagePreventStopReason reason = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearReason() {
@@ -666,9 +635,40 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
         return this;
       }
 
+      private int timeRemain_ ;
+      /**
+       * <code>uint32 time_remain = 6;</code>
+       * @return The timeRemain.
+       */
+      @java.lang.Override
+      public int getTimeRemain() {
+        return timeRemain_;
+      }
+      /**
+       * <code>uint32 time_remain = 6;</code>
+       * @param value The timeRemain to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTimeRemain(int value) {
+        
+        timeRemain_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 time_remain = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTimeRemain() {
+        
+        timeRemain_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int monsterCount_ ;
       /**
-       * <code>uint32 monster_count = 15;</code>
+       * <code>uint32 monster_count = 14;</code>
        * @return The monsterCount.
        */
       @java.lang.Override
@@ -676,7 +676,7 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
         return monsterCount_;
       }
       /**
-       * <code>uint32 monster_count = 15;</code>
+       * <code>uint32 monster_count = 14;</code>
        * @param value The monsterCount to set.
        * @return This builder for chaining.
        */
@@ -687,7 +687,7 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 monster_count = 15;</code>
+       * <code>uint32 monster_count = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearMonsterCount() {
@@ -765,10 +765,10 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n%SalvagePreventGallerySettleInfo.proto\032" +
       "\036SalvagePreventStopReason.proto\"\215\001\n\037Salv" +
-      "agePreventGallerySettleInfo\022\023\n\013time_rema" +
-      "in\030\004 \001(\r\022\023\n\013final_score\030\007 \001(\r\022)\n\006reason\030" +
-      "\n \001(\0162\031.SalvagePreventStopReason\022\025\n\rmons" +
-      "ter_count\030\017 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "agePreventGallerySettleInfo\022\023\n\013final_sco" +
+      "re\030\001 \001(\r\022)\n\006reason\030\004 \001(\0162\031.SalvagePreven" +
+      "tStopReason\022\023\n\013time_remain\030\006 \001(\r\022\025\n\rmons" +
+      "ter_count\030\016 \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -781,7 +781,7 @@ public final class SalvagePreventGallerySettleInfoOuterClass {
     internal_static_SalvagePreventGallerySettleInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SalvagePreventGallerySettleInfo_descriptor,
-        new java.lang.String[] { "TimeRemain", "FinalScore", "Reason", "MonsterCount", });
+        new java.lang.String[] { "FinalScore", "Reason", "TimeRemain", "MonsterCount", });
     emu.grasscutter.net.proto.SalvagePreventStopReasonOuterClass.getDescriptor();
   }
 

@@ -48,10 +48,10 @@ public final class AvatarExpeditionInfoOuterClass {
     int getStartTime();
 
     /**
-     * <code>float shorten_ratio = 5;</code>
-     * @return The shortenRatio.
+     * <code>float shorted_ratio = 5;</code>
+     * @return The shortedRatio.
      */
-    float getShortenRatio();
+    float getShortedRatio();
   }
   /**
    * Protobuf type {@code AvatarExpeditionInfo}
@@ -122,7 +122,7 @@ public final class AvatarExpeditionInfoOuterClass {
             }
             case 45: {
 
-              shortenRatio_ = input.readFloat();
+              shortedRatio_ = input.readFloat();
               break;
             }
             default: {
@@ -209,15 +209,15 @@ public final class AvatarExpeditionInfoOuterClass {
       return startTime_;
     }
 
-    public static final int SHORTEN_RATIO_FIELD_NUMBER = 5;
-    private float shortenRatio_;
+    public static final int SHORTED_RATIO_FIELD_NUMBER = 5;
+    private float shortedRatio_;
     /**
-     * <code>float shorten_ratio = 5;</code>
-     * @return The shortenRatio.
+     * <code>float shorted_ratio = 5;</code>
+     * @return The shortedRatio.
      */
     @java.lang.Override
-    public float getShortenRatio() {
-      return shortenRatio_;
+    public float getShortedRatio() {
+      return shortedRatio_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -246,8 +246,8 @@ public final class AvatarExpeditionInfoOuterClass {
       if (startTime_ != 0) {
         output.writeUInt32(4, startTime_);
       }
-      if (shortenRatio_ != 0F) {
-        output.writeFloat(5, shortenRatio_);
+      if (shortedRatio_ != 0F) {
+        output.writeFloat(5, shortedRatio_);
       }
       unknownFields.writeTo(output);
     }
@@ -274,9 +274,9 @@ public final class AvatarExpeditionInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, startTime_);
       }
-      if (shortenRatio_ != 0F) {
+      if (shortedRatio_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(5, shortenRatio_);
+          .computeFloatSize(5, shortedRatio_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -300,9 +300,9 @@ public final class AvatarExpeditionInfoOuterClass {
           != other.getHourTime()) return false;
       if (getStartTime()
           != other.getStartTime()) return false;
-      if (java.lang.Float.floatToIntBits(getShortenRatio())
+      if (java.lang.Float.floatToIntBits(getShortedRatio())
           != java.lang.Float.floatToIntBits(
-              other.getShortenRatio())) return false;
+              other.getShortedRatio())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -322,9 +322,9 @@ public final class AvatarExpeditionInfoOuterClass {
       hash = (53 * hash) + getHourTime();
       hash = (37 * hash) + START_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getStartTime();
-      hash = (37 * hash) + SHORTEN_RATIO_FIELD_NUMBER;
+      hash = (37 * hash) + SHORTED_RATIO_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getShortenRatio());
+          getShortedRatio());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -466,7 +466,7 @@ public final class AvatarExpeditionInfoOuterClass {
 
         startTime_ = 0;
 
-        shortenRatio_ = 0F;
+        shortedRatio_ = 0F;
 
         return this;
       }
@@ -498,7 +498,7 @@ public final class AvatarExpeditionInfoOuterClass {
         result.expId_ = expId_;
         result.hourTime_ = hourTime_;
         result.startTime_ = startTime_;
-        result.shortenRatio_ = shortenRatio_;
+        result.shortedRatio_ = shortedRatio_;
         onBuilt();
         return result;
       }
@@ -559,8 +559,8 @@ public final class AvatarExpeditionInfoOuterClass {
         if (other.getStartTime() != 0) {
           setStartTime(other.getStartTime());
         }
-        if (other.getShortenRatio() != 0F) {
-          setShortenRatio(other.getShortenRatio());
+        if (other.getShortedRatio() != 0F) {
+          setShortedRatio(other.getShortedRatio());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -738,33 +738,33 @@ public final class AvatarExpeditionInfoOuterClass {
         return this;
       }
 
-      private float shortenRatio_ ;
+      private float shortedRatio_ ;
       /**
-       * <code>float shorten_ratio = 5;</code>
-       * @return The shortenRatio.
+       * <code>float shorted_ratio = 5;</code>
+       * @return The shortedRatio.
        */
       @java.lang.Override
-      public float getShortenRatio() {
-        return shortenRatio_;
+      public float getShortedRatio() {
+        return shortedRatio_;
       }
       /**
-       * <code>float shorten_ratio = 5;</code>
-       * @param value The shortenRatio to set.
+       * <code>float shorted_ratio = 5;</code>
+       * @param value The shortedRatio to set.
        * @return This builder for chaining.
        */
-      public Builder setShortenRatio(float value) {
+      public Builder setShortedRatio(float value) {
         
-        shortenRatio_ = value;
+        shortedRatio_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float shorten_ratio = 5;</code>
+       * <code>float shorted_ratio = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearShortenRatio() {
+      public Builder clearShortedRatio() {
         
-        shortenRatio_ = 0F;
+        shortedRatio_ = 0F;
         onChanged();
         return this;
       }
@@ -839,7 +839,7 @@ public final class AvatarExpeditionInfoOuterClass {
       "ditionState.proto\"\213\001\n\024AvatarExpeditionIn" +
       "fo\022%\n\005state\030\001 \001(\0162\026.AvatarExpeditionStat" +
       "e\022\016\n\006exp_id\030\002 \001(\r\022\021\n\thour_time\030\003 \001(\r\022\022\n\n" +
-      "start_time\030\004 \001(\r\022\025\n\rshorten_ratio\030\005 \001(\002B" +
+      "start_time\030\004 \001(\r\022\025\n\rshorted_ratio\030\005 \001(\002B" +
       "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -852,7 +852,7 @@ public final class AvatarExpeditionInfoOuterClass {
     internal_static_AvatarExpeditionInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarExpeditionInfo_descriptor,
-        new java.lang.String[] { "State", "ExpId", "HourTime", "StartTime", "ShortenRatio", });
+        new java.lang.String[] { "State", "ExpId", "HourTime", "StartTime", "ShortedRatio", });
     emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.getDescriptor();
   }
 

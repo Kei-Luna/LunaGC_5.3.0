@@ -19,52 +19,48 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.AbilityString ability_name = 4;</code>
+     * <code>.AbilityString BDMDENCELFM = 2;</code>
+     * @return Whether the bDMDENCELFM field is set.
+     */
+    boolean hasBDMDENCELFM();
+    /**
+     * <code>.AbilityString BDMDENCELFM = 2;</code>
+     * @return The bDMDENCELFM.
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getBDMDENCELFM();
+    /**
+     * <code>.AbilityString BDMDENCELFM = 2;</code>
+     */
+    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getBDMDENCELFMOrBuilder();
+
+    /**
+     * <code>uint32 NMEPAJINMAC = 4;</code>
+     * @return The nMEPAJINMAC.
+     */
+    int getNMEPAJINMAC();
+
+    /**
+     * <code>uint32 GHEAIPKJBON = 7;</code>
+     * @return The gHEAIPKJBON.
+     */
+    int getGHEAIPKJBON();
+
+    /**
+     * <code>.AbilityString ability_name = 8;</code>
      * @return Whether the abilityName field is set.
      */
     boolean hasAbilityName();
     /**
-     * <code>.AbilityString ability_name = 4;</code>
+     * <code>.AbilityString ability_name = 8;</code>
      * @return The abilityName.
      */
     emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName();
     /**
-     * <code>.AbilityString ability_name = 4;</code>
+     * <code>.AbilityString ability_name = 8;</code>
      */
     emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder();
-
-    /**
-     * <code>.AbilityString global_value_key = 8;</code>
-     * @return Whether the globalValueKey field is set.
-     */
-    boolean hasGlobalValueKey();
-    /**
-     * <code>.AbilityString global_value_key = 8;</code>
-     * @return The globalValueKey.
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getGlobalValueKey();
-    /**
-     * <code>.AbilityString global_value_key = 8;</code>
-     */
-    emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getGlobalValueKeyOrBuilder();
-
-    /**
-     * <code>uint32 EJOIOADINHE = 5;</code>
-     * @return The eJOIOADINHE.
-     */
-    int getEJOIOADINHE();
-
-    /**
-     * <code>uint32 EJHCLCMJIMM = 12;</code>
-     * @return The eJHCLCMJIMM.
-     */
-    int getEJHCLCMJIMM();
   }
   /**
-   * <pre>
-   * Obf: HGBOKEDCLOO
-   * </pre>
-   *
    * Protobuf type {@code AbilityMetaUpdateBaseReactionDamage}
    */
   public static final class AbilityMetaUpdateBaseReactionDamage extends
@@ -109,7 +105,30 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
+            case 18: {
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder subBuilder = null;
+              if (bDMDENCELFM_ != null) {
+                subBuilder = bDMDENCELFM_.toBuilder();
+              }
+              bDMDENCELFM_ = input.readMessage(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(bDMDENCELFM_);
+                bDMDENCELFM_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 32: {
+
+              nMEPAJINMAC_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              gHEAIPKJBON_ = input.readUInt32();
+              break;
+            }
+            case 66: {
               emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder subBuilder = null;
               if (abilityName_ != null) {
                 subBuilder = abilityName_.toBuilder();
@@ -120,29 +139,6 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
                 abilityName_ = subBuilder.buildPartial();
               }
 
-              break;
-            }
-            case 40: {
-
-              eJOIOADINHE_ = input.readUInt32();
-              break;
-            }
-            case 66: {
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder subBuilder = null;
-              if (globalValueKey_ != null) {
-                subBuilder = globalValueKey_.toBuilder();
-              }
-              globalValueKey_ = input.readMessage(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(globalValueKey_);
-                globalValueKey_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 96: {
-
-              eJHCLCMJIMM_ = input.readUInt32();
               break;
             }
             default: {
@@ -177,10 +173,58 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
               emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage.class, emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage.Builder.class);
     }
 
-    public static final int ABILITY_NAME_FIELD_NUMBER = 4;
+    public static final int BDMDENCELFM_FIELD_NUMBER = 2;
+    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString bDMDENCELFM_;
+    /**
+     * <code>.AbilityString BDMDENCELFM = 2;</code>
+     * @return Whether the bDMDENCELFM field is set.
+     */
+    @java.lang.Override
+    public boolean hasBDMDENCELFM() {
+      return bDMDENCELFM_ != null;
+    }
+    /**
+     * <code>.AbilityString BDMDENCELFM = 2;</code>
+     * @return The bDMDENCELFM.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getBDMDENCELFM() {
+      return bDMDENCELFM_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : bDMDENCELFM_;
+    }
+    /**
+     * <code>.AbilityString BDMDENCELFM = 2;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getBDMDENCELFMOrBuilder() {
+      return getBDMDENCELFM();
+    }
+
+    public static final int NMEPAJINMAC_FIELD_NUMBER = 4;
+    private int nMEPAJINMAC_;
+    /**
+     * <code>uint32 NMEPAJINMAC = 4;</code>
+     * @return The nMEPAJINMAC.
+     */
+    @java.lang.Override
+    public int getNMEPAJINMAC() {
+      return nMEPAJINMAC_;
+    }
+
+    public static final int GHEAIPKJBON_FIELD_NUMBER = 7;
+    private int gHEAIPKJBON_;
+    /**
+     * <code>uint32 GHEAIPKJBON = 7;</code>
+     * @return The gHEAIPKJBON.
+     */
+    @java.lang.Override
+    public int getGHEAIPKJBON() {
+      return gHEAIPKJBON_;
+    }
+
+    public static final int ABILITY_NAME_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityName_;
     /**
-     * <code>.AbilityString ability_name = 4;</code>
+     * <code>.AbilityString ability_name = 8;</code>
      * @return Whether the abilityName field is set.
      */
     @java.lang.Override
@@ -188,7 +232,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       return abilityName_ != null;
     }
     /**
-     * <code>.AbilityString ability_name = 4;</code>
+     * <code>.AbilityString ability_name = 8;</code>
      * @return The abilityName.
      */
     @java.lang.Override
@@ -196,59 +240,11 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       return abilityName_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : abilityName_;
     }
     /**
-     * <code>.AbilityString ability_name = 4;</code>
+     * <code>.AbilityString ability_name = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder() {
       return getAbilityName();
-    }
-
-    public static final int GLOBAL_VALUE_KEY_FIELD_NUMBER = 8;
-    private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString globalValueKey_;
-    /**
-     * <code>.AbilityString global_value_key = 8;</code>
-     * @return Whether the globalValueKey field is set.
-     */
-    @java.lang.Override
-    public boolean hasGlobalValueKey() {
-      return globalValueKey_ != null;
-    }
-    /**
-     * <code>.AbilityString global_value_key = 8;</code>
-     * @return The globalValueKey.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getGlobalValueKey() {
-      return globalValueKey_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : globalValueKey_;
-    }
-    /**
-     * <code>.AbilityString global_value_key = 8;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getGlobalValueKeyOrBuilder() {
-      return getGlobalValueKey();
-    }
-
-    public static final int EJOIOADINHE_FIELD_NUMBER = 5;
-    private int eJOIOADINHE_;
-    /**
-     * <code>uint32 EJOIOADINHE = 5;</code>
-     * @return The eJOIOADINHE.
-     */
-    @java.lang.Override
-    public int getEJOIOADINHE() {
-      return eJOIOADINHE_;
-    }
-
-    public static final int EJHCLCMJIMM_FIELD_NUMBER = 12;
-    private int eJHCLCMJIMM_;
-    /**
-     * <code>uint32 EJHCLCMJIMM = 12;</code>
-     * @return The eJHCLCMJIMM.
-     */
-    @java.lang.Override
-    public int getEJHCLCMJIMM() {
-      return eJHCLCMJIMM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -265,17 +261,17 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (bDMDENCELFM_ != null) {
+        output.writeMessage(2, getBDMDENCELFM());
+      }
+      if (nMEPAJINMAC_ != 0) {
+        output.writeUInt32(4, nMEPAJINMAC_);
+      }
+      if (gHEAIPKJBON_ != 0) {
+        output.writeUInt32(7, gHEAIPKJBON_);
+      }
       if (abilityName_ != null) {
-        output.writeMessage(4, getAbilityName());
-      }
-      if (eJOIOADINHE_ != 0) {
-        output.writeUInt32(5, eJOIOADINHE_);
-      }
-      if (globalValueKey_ != null) {
-        output.writeMessage(8, getGlobalValueKey());
-      }
-      if (eJHCLCMJIMM_ != 0) {
-        output.writeUInt32(12, eJHCLCMJIMM_);
+        output.writeMessage(8, getAbilityName());
       }
       unknownFields.writeTo(output);
     }
@@ -286,21 +282,21 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (bDMDENCELFM_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getBDMDENCELFM());
+      }
+      if (nMEPAJINMAC_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, nMEPAJINMAC_);
+      }
+      if (gHEAIPKJBON_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, gHEAIPKJBON_);
+      }
       if (abilityName_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getAbilityName());
-      }
-      if (eJOIOADINHE_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, eJOIOADINHE_);
-      }
-      if (globalValueKey_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getGlobalValueKey());
-      }
-      if (eJHCLCMJIMM_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, eJHCLCMJIMM_);
+          .computeMessageSize(8, getAbilityName());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,20 +313,20 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       }
       emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage other = (emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage) obj;
 
+      if (hasBDMDENCELFM() != other.hasBDMDENCELFM()) return false;
+      if (hasBDMDENCELFM()) {
+        if (!getBDMDENCELFM()
+            .equals(other.getBDMDENCELFM())) return false;
+      }
+      if (getNMEPAJINMAC()
+          != other.getNMEPAJINMAC()) return false;
+      if (getGHEAIPKJBON()
+          != other.getGHEAIPKJBON()) return false;
       if (hasAbilityName() != other.hasAbilityName()) return false;
       if (hasAbilityName()) {
         if (!getAbilityName()
             .equals(other.getAbilityName())) return false;
       }
-      if (hasGlobalValueKey() != other.hasGlobalValueKey()) return false;
-      if (hasGlobalValueKey()) {
-        if (!getGlobalValueKey()
-            .equals(other.getGlobalValueKey())) return false;
-      }
-      if (getEJOIOADINHE()
-          != other.getEJOIOADINHE()) return false;
-      if (getEJHCLCMJIMM()
-          != other.getEJHCLCMJIMM()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -342,18 +338,18 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasBDMDENCELFM()) {
+        hash = (37 * hash) + BDMDENCELFM_FIELD_NUMBER;
+        hash = (53 * hash) + getBDMDENCELFM().hashCode();
+      }
+      hash = (37 * hash) + NMEPAJINMAC_FIELD_NUMBER;
+      hash = (53 * hash) + getNMEPAJINMAC();
+      hash = (37 * hash) + GHEAIPKJBON_FIELD_NUMBER;
+      hash = (53 * hash) + getGHEAIPKJBON();
       if (hasAbilityName()) {
         hash = (37 * hash) + ABILITY_NAME_FIELD_NUMBER;
         hash = (53 * hash) + getAbilityName().hashCode();
       }
-      if (hasGlobalValueKey()) {
-        hash = (37 * hash) + GLOBAL_VALUE_KEY_FIELD_NUMBER;
-        hash = (53 * hash) + getGlobalValueKey().hashCode();
-      }
-      hash = (37 * hash) + EJOIOADINHE_FIELD_NUMBER;
-      hash = (53 * hash) + getEJOIOADINHE();
-      hash = (37 * hash) + EJHCLCMJIMM_FIELD_NUMBER;
-      hash = (53 * hash) + getEJHCLCMJIMM();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -450,10 +446,6 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: HGBOKEDCLOO
-     * </pre>
-     *
      * Protobuf type {@code AbilityMetaUpdateBaseReactionDamage}
      */
     public static final class Builder extends
@@ -491,22 +483,22 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        if (bDMDENCELFMBuilder_ == null) {
+          bDMDENCELFM_ = null;
+        } else {
+          bDMDENCELFM_ = null;
+          bDMDENCELFMBuilder_ = null;
+        }
+        nMEPAJINMAC_ = 0;
+
+        gHEAIPKJBON_ = 0;
+
         if (abilityNameBuilder_ == null) {
           abilityName_ = null;
         } else {
           abilityName_ = null;
           abilityNameBuilder_ = null;
         }
-        if (globalValueKeyBuilder_ == null) {
-          globalValueKey_ = null;
-        } else {
-          globalValueKey_ = null;
-          globalValueKeyBuilder_ = null;
-        }
-        eJOIOADINHE_ = 0;
-
-        eJHCLCMJIMM_ = 0;
-
         return this;
       }
 
@@ -533,18 +525,18 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage buildPartial() {
         emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage result = new emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage(this);
+        if (bDMDENCELFMBuilder_ == null) {
+          result.bDMDENCELFM_ = bDMDENCELFM_;
+        } else {
+          result.bDMDENCELFM_ = bDMDENCELFMBuilder_.build();
+        }
+        result.nMEPAJINMAC_ = nMEPAJINMAC_;
+        result.gHEAIPKJBON_ = gHEAIPKJBON_;
         if (abilityNameBuilder_ == null) {
           result.abilityName_ = abilityName_;
         } else {
           result.abilityName_ = abilityNameBuilder_.build();
         }
-        if (globalValueKeyBuilder_ == null) {
-          result.globalValueKey_ = globalValueKey_;
-        } else {
-          result.globalValueKey_ = globalValueKeyBuilder_.build();
-        }
-        result.eJOIOADINHE_ = eJOIOADINHE_;
-        result.eJHCLCMJIMM_ = eJHCLCMJIMM_;
         onBuilt();
         return result;
       }
@@ -593,17 +585,17 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage other) {
         if (other == emu.grasscutter.net.proto.AbilityMetaUpdateBaseReactionDamageOuterClass.AbilityMetaUpdateBaseReactionDamage.getDefaultInstance()) return this;
+        if (other.hasBDMDENCELFM()) {
+          mergeBDMDENCELFM(other.getBDMDENCELFM());
+        }
+        if (other.getNMEPAJINMAC() != 0) {
+          setNMEPAJINMAC(other.getNMEPAJINMAC());
+        }
+        if (other.getGHEAIPKJBON() != 0) {
+          setGHEAIPKJBON(other.getGHEAIPKJBON());
+        }
         if (other.hasAbilityName()) {
           mergeAbilityName(other.getAbilityName());
-        }
-        if (other.hasGlobalValueKey()) {
-          mergeGlobalValueKey(other.getGlobalValueKey());
-        }
-        if (other.getEJOIOADINHE() != 0) {
-          setEJOIOADINHE(other.getEJOIOADINHE());
-        }
-        if (other.getEJHCLCMJIMM() != 0) {
-          setEJHCLCMJIMM(other.getEJHCLCMJIMM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -634,18 +626,199 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
         return this;
       }
 
+      private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString bDMDENCELFM_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> bDMDENCELFMBuilder_;
+      /**
+       * <code>.AbilityString BDMDENCELFM = 2;</code>
+       * @return Whether the bDMDENCELFM field is set.
+       */
+      public boolean hasBDMDENCELFM() {
+        return bDMDENCELFMBuilder_ != null || bDMDENCELFM_ != null;
+      }
+      /**
+       * <code>.AbilityString BDMDENCELFM = 2;</code>
+       * @return The bDMDENCELFM.
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getBDMDENCELFM() {
+        if (bDMDENCELFMBuilder_ == null) {
+          return bDMDENCELFM_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : bDMDENCELFM_;
+        } else {
+          return bDMDENCELFMBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.AbilityString BDMDENCELFM = 2;</code>
+       */
+      public Builder setBDMDENCELFM(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
+        if (bDMDENCELFMBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          bDMDENCELFM_ = value;
+          onChanged();
+        } else {
+          bDMDENCELFMBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityString BDMDENCELFM = 2;</code>
+       */
+      public Builder setBDMDENCELFM(
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
+        if (bDMDENCELFMBuilder_ == null) {
+          bDMDENCELFM_ = builderForValue.build();
+          onChanged();
+        } else {
+          bDMDENCELFMBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityString BDMDENCELFM = 2;</code>
+       */
+      public Builder mergeBDMDENCELFM(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
+        if (bDMDENCELFMBuilder_ == null) {
+          if (bDMDENCELFM_ != null) {
+            bDMDENCELFM_ =
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.newBuilder(bDMDENCELFM_).mergeFrom(value).buildPartial();
+          } else {
+            bDMDENCELFM_ = value;
+          }
+          onChanged();
+        } else {
+          bDMDENCELFMBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityString BDMDENCELFM = 2;</code>
+       */
+      public Builder clearBDMDENCELFM() {
+        if (bDMDENCELFMBuilder_ == null) {
+          bDMDENCELFM_ = null;
+          onChanged();
+        } else {
+          bDMDENCELFM_ = null;
+          bDMDENCELFMBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityString BDMDENCELFM = 2;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getBDMDENCELFMBuilder() {
+        
+        onChanged();
+        return getBDMDENCELFMFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.AbilityString BDMDENCELFM = 2;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getBDMDENCELFMOrBuilder() {
+        if (bDMDENCELFMBuilder_ != null) {
+          return bDMDENCELFMBuilder_.getMessageOrBuilder();
+        } else {
+          return bDMDENCELFM_ == null ?
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : bDMDENCELFM_;
+        }
+      }
+      /**
+       * <code>.AbilityString BDMDENCELFM = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
+          getBDMDENCELFMFieldBuilder() {
+        if (bDMDENCELFMBuilder_ == null) {
+          bDMDENCELFMBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder>(
+                  getBDMDENCELFM(),
+                  getParentForChildren(),
+                  isClean());
+          bDMDENCELFM_ = null;
+        }
+        return bDMDENCELFMBuilder_;
+      }
+
+      private int nMEPAJINMAC_ ;
+      /**
+       * <code>uint32 NMEPAJINMAC = 4;</code>
+       * @return The nMEPAJINMAC.
+       */
+      @java.lang.Override
+      public int getNMEPAJINMAC() {
+        return nMEPAJINMAC_;
+      }
+      /**
+       * <code>uint32 NMEPAJINMAC = 4;</code>
+       * @param value The nMEPAJINMAC to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNMEPAJINMAC(int value) {
+        
+        nMEPAJINMAC_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 NMEPAJINMAC = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNMEPAJINMAC() {
+        
+        nMEPAJINMAC_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int gHEAIPKJBON_ ;
+      /**
+       * <code>uint32 GHEAIPKJBON = 7;</code>
+       * @return The gHEAIPKJBON.
+       */
+      @java.lang.Override
+      public int getGHEAIPKJBON() {
+        return gHEAIPKJBON_;
+      }
+      /**
+       * <code>uint32 GHEAIPKJBON = 7;</code>
+       * @param value The gHEAIPKJBON to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGHEAIPKJBON(int value) {
+        
+        gHEAIPKJBON_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 GHEAIPKJBON = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGHEAIPKJBON() {
+        
+        gHEAIPKJBON_ = 0;
+        onChanged();
+        return this;
+      }
+
       private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString abilityName_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> abilityNameBuilder_;
       /**
-       * <code>.AbilityString ability_name = 4;</code>
+       * <code>.AbilityString ability_name = 8;</code>
        * @return Whether the abilityName field is set.
        */
       public boolean hasAbilityName() {
         return abilityNameBuilder_ != null || abilityName_ != null;
       }
       /**
-       * <code>.AbilityString ability_name = 4;</code>
+       * <code>.AbilityString ability_name = 8;</code>
        * @return The abilityName.
        */
       public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getAbilityName() {
@@ -656,7 +829,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
         }
       }
       /**
-       * <code>.AbilityString ability_name = 4;</code>
+       * <code>.AbilityString ability_name = 8;</code>
        */
       public Builder setAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
         if (abilityNameBuilder_ == null) {
@@ -672,7 +845,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_name = 4;</code>
+       * <code>.AbilityString ability_name = 8;</code>
        */
       public Builder setAbilityName(
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
@@ -686,7 +859,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_name = 4;</code>
+       * <code>.AbilityString ability_name = 8;</code>
        */
       public Builder mergeAbilityName(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
         if (abilityNameBuilder_ == null) {
@@ -704,7 +877,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_name = 4;</code>
+       * <code>.AbilityString ability_name = 8;</code>
        */
       public Builder clearAbilityName() {
         if (abilityNameBuilder_ == null) {
@@ -718,7 +891,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
         return this;
       }
       /**
-       * <code>.AbilityString ability_name = 4;</code>
+       * <code>.AbilityString ability_name = 8;</code>
        */
       public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getAbilityNameBuilder() {
         
@@ -726,7 +899,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
         return getAbilityNameFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilityString ability_name = 4;</code>
+       * <code>.AbilityString ability_name = 8;</code>
        */
       public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getAbilityNameOrBuilder() {
         if (abilityNameBuilder_ != null) {
@@ -737,7 +910,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
         }
       }
       /**
-       * <code>.AbilityString ability_name = 4;</code>
+       * <code>.AbilityString ability_name = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
@@ -751,187 +924,6 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
           abilityName_ = null;
         }
         return abilityNameBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString globalValueKey_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> globalValueKeyBuilder_;
-      /**
-       * <code>.AbilityString global_value_key = 8;</code>
-       * @return Whether the globalValueKey field is set.
-       */
-      public boolean hasGlobalValueKey() {
-        return globalValueKeyBuilder_ != null || globalValueKey_ != null;
-      }
-      /**
-       * <code>.AbilityString global_value_key = 8;</code>
-       * @return The globalValueKey.
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString getGlobalValueKey() {
-        if (globalValueKeyBuilder_ == null) {
-          return globalValueKey_ == null ? emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : globalValueKey_;
-        } else {
-          return globalValueKeyBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.AbilityString global_value_key = 8;</code>
-       */
-      public Builder setGlobalValueKey(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
-        if (globalValueKeyBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          globalValueKey_ = value;
-          onChanged();
-        } else {
-          globalValueKeyBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString global_value_key = 8;</code>
-       */
-      public Builder setGlobalValueKey(
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder builderForValue) {
-        if (globalValueKeyBuilder_ == null) {
-          globalValueKey_ = builderForValue.build();
-          onChanged();
-        } else {
-          globalValueKeyBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString global_value_key = 8;</code>
-       */
-      public Builder mergeGlobalValueKey(emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString value) {
-        if (globalValueKeyBuilder_ == null) {
-          if (globalValueKey_ != null) {
-            globalValueKey_ =
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.newBuilder(globalValueKey_).mergeFrom(value).buildPartial();
-          } else {
-            globalValueKey_ = value;
-          }
-          onChanged();
-        } else {
-          globalValueKeyBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString global_value_key = 8;</code>
-       */
-      public Builder clearGlobalValueKey() {
-        if (globalValueKeyBuilder_ == null) {
-          globalValueKey_ = null;
-          onChanged();
-        } else {
-          globalValueKey_ = null;
-          globalValueKeyBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityString global_value_key = 8;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder getGlobalValueKeyBuilder() {
-        
-        onChanged();
-        return getGlobalValueKeyFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AbilityString global_value_key = 8;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder getGlobalValueKeyOrBuilder() {
-        if (globalValueKeyBuilder_ != null) {
-          return globalValueKeyBuilder_.getMessageOrBuilder();
-        } else {
-          return globalValueKey_ == null ?
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.getDefaultInstance() : globalValueKey_;
-        }
-      }
-      /**
-       * <code>.AbilityString global_value_key = 8;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder> 
-          getGlobalValueKeyFieldBuilder() {
-        if (globalValueKeyBuilder_ == null) {
-          globalValueKeyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.Builder, emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityStringOrBuilder>(
-                  getGlobalValueKey(),
-                  getParentForChildren(),
-                  isClean());
-          globalValueKey_ = null;
-        }
-        return globalValueKeyBuilder_;
-      }
-
-      private int eJOIOADINHE_ ;
-      /**
-       * <code>uint32 EJOIOADINHE = 5;</code>
-       * @return The eJOIOADINHE.
-       */
-      @java.lang.Override
-      public int getEJOIOADINHE() {
-        return eJOIOADINHE_;
-      }
-      /**
-       * <code>uint32 EJOIOADINHE = 5;</code>
-       * @param value The eJOIOADINHE to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEJOIOADINHE(int value) {
-        
-        eJOIOADINHE_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 EJOIOADINHE = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEJOIOADINHE() {
-        
-        eJOIOADINHE_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int eJHCLCMJIMM_ ;
-      /**
-       * <code>uint32 EJHCLCMJIMM = 12;</code>
-       * @return The eJHCLCMJIMM.
-       */
-      @java.lang.Override
-      public int getEJHCLCMJIMM() {
-        return eJHCLCMJIMM_;
-      }
-      /**
-       * <code>uint32 EJHCLCMJIMM = 12;</code>
-       * @param value The eJHCLCMJIMM to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEJHCLCMJIMM(int value) {
-        
-        eJHCLCMJIMM_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 EJHCLCMJIMM = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEJHCLCMJIMM() {
-        
-        eJHCLCMJIMM_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1001,12 +993,12 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n)AbilityMetaUpdateBaseReactionDamage.pr" +
-      "oto\032\023AbilityString.proto\"\237\001\n#AbilityMeta" +
-      "UpdateBaseReactionDamage\022$\n\014ability_name" +
-      "\030\004 \001(\0132\016.AbilityString\022(\n\020global_value_k" +
-      "ey\030\010 \001(\0132\016.AbilityString\022\023\n\013EJOIOADINHE\030" +
-      "\005 \001(\r\022\023\n\013EJHCLCMJIMM\030\014 \001(\rB\033\n\031emu.grassc" +
-      "utter.net.protob\006proto3"
+      "oto\032\023AbilityString.proto\"\232\001\n#AbilityMeta" +
+      "UpdateBaseReactionDamage\022#\n\013BDMDENCELFM\030" +
+      "\002 \001(\0132\016.AbilityString\022\023\n\013NMEPAJINMAC\030\004 \001" +
+      "(\r\022\023\n\013GHEAIPKJBON\030\007 \001(\r\022$\n\014ability_name\030" +
+      "\010 \001(\0132\016.AbilityStringB\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1018,7 +1010,7 @@ public final class AbilityMetaUpdateBaseReactionDamageOuterClass {
     internal_static_AbilityMetaUpdateBaseReactionDamage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityMetaUpdateBaseReactionDamage_descriptor,
-        new java.lang.String[] { "AbilityName", "GlobalValueKey", "EJOIOADINHE", "EJHCLCMJIMM", });
+        new java.lang.String[] { "BDMDENCELFM", "NMEPAJINMAC", "GHEAIPKJBON", "AbilityName", });
     emu.grasscutter.net.proto.AbilityStringOuterClass.getDescriptor();
   }
 

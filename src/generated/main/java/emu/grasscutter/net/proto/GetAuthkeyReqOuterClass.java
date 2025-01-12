@@ -19,36 +19,30 @@ public final class GetAuthkeyReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string auth_appid = 4;</code>
+     * <code>string auth_appid = 10;</code>
      * @return The authAppid.
      */
     java.lang.String getAuthAppid();
     /**
-     * <code>string auth_appid = 4;</code>
+     * <code>string auth_appid = 10;</code>
      * @return The bytes for authAppid.
      */
     com.google.protobuf.ByteString
         getAuthAppidBytes();
 
     /**
-     * <code>uint32 sign_type = 5;</code>
-     * @return The signType.
-     */
-    int getSignType();
-
-    /**
-     * <code>uint32 authkey_ver = 14;</code>
+     * <code>uint32 authkey_ver = 1;</code>
      * @return The authkeyVer.
      */
     int getAuthkeyVer();
+
+    /**
+     * <code>uint32 sign_type = 2;</code>
+     * @return The signType.
+     */
+    int getSignType();
   }
   /**
-   * <pre>
-   * CmdId: 20926
-   * Version: 4.6.0
-   * Obfs: HJKMHGJBGON
-   * </pre>
-   *
    * Protobuf type {@code GetAuthkeyReq}
    */
   public static final class GetAuthkeyReq extends
@@ -94,20 +88,20 @@ public final class GetAuthkeyReqOuterClass {
             case 0:
               done = true;
               break;
-            case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 8: {
 
-              authAppid_ = s;
+              authkeyVer_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 16: {
 
               signType_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 82: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              authkeyVer_ = input.readUInt32();
+              authAppid_ = s;
               break;
             }
             default: {
@@ -142,10 +136,10 @@ public final class GetAuthkeyReqOuterClass {
               emu.grasscutter.net.proto.GetAuthkeyReqOuterClass.GetAuthkeyReq.class, emu.grasscutter.net.proto.GetAuthkeyReqOuterClass.GetAuthkeyReq.Builder.class);
     }
 
-    public static final int AUTH_APPID_FIELD_NUMBER = 4;
+    public static final int AUTH_APPID_FIELD_NUMBER = 10;
     private volatile java.lang.Object authAppid_;
     /**
-     * <code>string auth_appid = 4;</code>
+     * <code>string auth_appid = 10;</code>
      * @return The authAppid.
      */
     @java.lang.Override
@@ -162,7 +156,7 @@ public final class GetAuthkeyReqOuterClass {
       }
     }
     /**
-     * <code>string auth_appid = 4;</code>
+     * <code>string auth_appid = 10;</code>
      * @return The bytes for authAppid.
      */
     @java.lang.Override
@@ -180,26 +174,26 @@ public final class GetAuthkeyReqOuterClass {
       }
     }
 
-    public static final int SIGN_TYPE_FIELD_NUMBER = 5;
-    private int signType_;
-    /**
-     * <code>uint32 sign_type = 5;</code>
-     * @return The signType.
-     */
-    @java.lang.Override
-    public int getSignType() {
-      return signType_;
-    }
-
-    public static final int AUTHKEY_VER_FIELD_NUMBER = 14;
+    public static final int AUTHKEY_VER_FIELD_NUMBER = 1;
     private int authkeyVer_;
     /**
-     * <code>uint32 authkey_ver = 14;</code>
+     * <code>uint32 authkey_ver = 1;</code>
      * @return The authkeyVer.
      */
     @java.lang.Override
     public int getAuthkeyVer() {
       return authkeyVer_;
+    }
+
+    public static final int SIGN_TYPE_FIELD_NUMBER = 2;
+    private int signType_;
+    /**
+     * <code>uint32 sign_type = 2;</code>
+     * @return The signType.
+     */
+    @java.lang.Override
+    public int getSignType() {
+      return signType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -216,14 +210,14 @@ public final class GetAuthkeyReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(authAppid_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, authAppid_);
+      if (authkeyVer_ != 0) {
+        output.writeUInt32(1, authkeyVer_);
       }
       if (signType_ != 0) {
-        output.writeUInt32(5, signType_);
+        output.writeUInt32(2, signType_);
       }
-      if (authkeyVer_ != 0) {
-        output.writeUInt32(14, authkeyVer_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(authAppid_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, authAppid_);
       }
       unknownFields.writeTo(output);
     }
@@ -234,16 +228,16 @@ public final class GetAuthkeyReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(authAppid_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, authAppid_);
+      if (authkeyVer_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, authkeyVer_);
       }
       if (signType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, signType_);
+          .computeUInt32Size(2, signType_);
       }
-      if (authkeyVer_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, authkeyVer_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(authAppid_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, authAppid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -262,10 +256,10 @@ public final class GetAuthkeyReqOuterClass {
 
       if (!getAuthAppid()
           .equals(other.getAuthAppid())) return false;
-      if (getSignType()
-          != other.getSignType()) return false;
       if (getAuthkeyVer()
           != other.getAuthkeyVer()) return false;
+      if (getSignType()
+          != other.getSignType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -279,10 +273,10 @@ public final class GetAuthkeyReqOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + AUTH_APPID_FIELD_NUMBER;
       hash = (53 * hash) + getAuthAppid().hashCode();
-      hash = (37 * hash) + SIGN_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getSignType();
       hash = (37 * hash) + AUTHKEY_VER_FIELD_NUMBER;
       hash = (53 * hash) + getAuthkeyVer();
+      hash = (37 * hash) + SIGN_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getSignType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,12 +373,6 @@ public final class GetAuthkeyReqOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 20926
-     * Version: 4.6.0
-     * Obfs: HJKMHGJBGON
-     * </pre>
-     *
      * Protobuf type {@code GetAuthkeyReq}
      */
     public static final class Builder extends
@@ -424,9 +412,9 @@ public final class GetAuthkeyReqOuterClass {
         super.clear();
         authAppid_ = "";
 
-        signType_ = 0;
-
         authkeyVer_ = 0;
+
+        signType_ = 0;
 
         return this;
       }
@@ -455,8 +443,8 @@ public final class GetAuthkeyReqOuterClass {
       public emu.grasscutter.net.proto.GetAuthkeyReqOuterClass.GetAuthkeyReq buildPartial() {
         emu.grasscutter.net.proto.GetAuthkeyReqOuterClass.GetAuthkeyReq result = new emu.grasscutter.net.proto.GetAuthkeyReqOuterClass.GetAuthkeyReq(this);
         result.authAppid_ = authAppid_;
-        result.signType_ = signType_;
         result.authkeyVer_ = authkeyVer_;
+        result.signType_ = signType_;
         onBuilt();
         return result;
       }
@@ -509,11 +497,11 @@ public final class GetAuthkeyReqOuterClass {
           authAppid_ = other.authAppid_;
           onChanged();
         }
-        if (other.getSignType() != 0) {
-          setSignType(other.getSignType());
-        }
         if (other.getAuthkeyVer() != 0) {
           setAuthkeyVer(other.getAuthkeyVer());
+        }
+        if (other.getSignType() != 0) {
+          setSignType(other.getSignType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -546,7 +534,7 @@ public final class GetAuthkeyReqOuterClass {
 
       private java.lang.Object authAppid_ = "";
       /**
-       * <code>string auth_appid = 4;</code>
+       * <code>string auth_appid = 10;</code>
        * @return The authAppid.
        */
       public java.lang.String getAuthAppid() {
@@ -562,7 +550,7 @@ public final class GetAuthkeyReqOuterClass {
         }
       }
       /**
-       * <code>string auth_appid = 4;</code>
+       * <code>string auth_appid = 10;</code>
        * @return The bytes for authAppid.
        */
       public com.google.protobuf.ByteString
@@ -579,7 +567,7 @@ public final class GetAuthkeyReqOuterClass {
         }
       }
       /**
-       * <code>string auth_appid = 4;</code>
+       * <code>string auth_appid = 10;</code>
        * @param value The authAppid to set.
        * @return This builder for chaining.
        */
@@ -594,7 +582,7 @@ public final class GetAuthkeyReqOuterClass {
         return this;
       }
       /**
-       * <code>string auth_appid = 4;</code>
+       * <code>string auth_appid = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearAuthAppid() {
@@ -604,7 +592,7 @@ public final class GetAuthkeyReqOuterClass {
         return this;
       }
       /**
-       * <code>string auth_appid = 4;</code>
+       * <code>string auth_appid = 10;</code>
        * @param value The bytes for authAppid to set.
        * @return This builder for chaining.
        */
@@ -620,40 +608,9 @@ public final class GetAuthkeyReqOuterClass {
         return this;
       }
 
-      private int signType_ ;
-      /**
-       * <code>uint32 sign_type = 5;</code>
-       * @return The signType.
-       */
-      @java.lang.Override
-      public int getSignType() {
-        return signType_;
-      }
-      /**
-       * <code>uint32 sign_type = 5;</code>
-       * @param value The signType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSignType(int value) {
-        
-        signType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 sign_type = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSignType() {
-        
-        signType_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int authkeyVer_ ;
       /**
-       * <code>uint32 authkey_ver = 14;</code>
+       * <code>uint32 authkey_ver = 1;</code>
        * @return The authkeyVer.
        */
       @java.lang.Override
@@ -661,7 +618,7 @@ public final class GetAuthkeyReqOuterClass {
         return authkeyVer_;
       }
       /**
-       * <code>uint32 authkey_ver = 14;</code>
+       * <code>uint32 authkey_ver = 1;</code>
        * @param value The authkeyVer to set.
        * @return This builder for chaining.
        */
@@ -672,12 +629,43 @@ public final class GetAuthkeyReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 authkey_ver = 14;</code>
+       * <code>uint32 authkey_ver = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearAuthkeyVer() {
         
         authkeyVer_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int signType_ ;
+      /**
+       * <code>uint32 sign_type = 2;</code>
+       * @return The signType.
+       */
+      @java.lang.Override
+      public int getSignType() {
+        return signType_;
+      }
+      /**
+       * <code>uint32 sign_type = 2;</code>
+       * @param value The signType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSignType(int value) {
+        
+        signType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 sign_type = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSignType() {
+        
+        signType_ = 0;
         onChanged();
         return this;
       }
@@ -749,8 +737,8 @@ public final class GetAuthkeyReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023GetAuthkeyReq.proto\"K\n\rGetAuthkeyReq\022\022" +
-      "\n\nauth_appid\030\004 \001(\t\022\021\n\tsign_type\030\005 \001(\r\022\023\n" +
-      "\013authkey_ver\030\016 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "\n\nauth_appid\030\n \001(\t\022\023\n\013authkey_ver\030\001 \001(\r\022" +
+      "\021\n\tsign_type\030\002 \001(\rB\033\n\031emu.grasscutter.ne" +
       "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -762,7 +750,7 @@ public final class GetAuthkeyReqOuterClass {
     internal_static_GetAuthkeyReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetAuthkeyReq_descriptor,
-        new java.lang.String[] { "AuthAppid", "SignType", "AuthkeyVer", });
+        new java.lang.String[] { "AuthAppid", "AuthkeyVer", "SignType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

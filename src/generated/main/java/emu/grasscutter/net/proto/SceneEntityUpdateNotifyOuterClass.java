@@ -60,10 +60,6 @@ public final class SceneEntityUpdateNotifyOuterClass {
     emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType getAppearType();
   }
   /**
-   * <pre>
-   * CmdId: 1936
-   * </pre>
-   *
    * Protobuf type {@code SceneEntityUpdateNotify}
    */
   public static final class SceneEntityUpdateNotify extends
@@ -415,10 +411,6 @@ public final class SceneEntityUpdateNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 1936
-     * </pre>
-     *
      * Protobuf type {@code SceneEntityUpdateNotify}
      */
     public static final class Builder extends
@@ -1006,8 +998,8 @@ public final class SceneEntityUpdateNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035SceneEntityUpdateNotify.proto\032\020VisionT" +
-      "ype.proto\032\025SceneEntityInfo.proto\"q\n\027Scen" +
+      "\n\035SceneEntityUpdateNotify.proto\032\025SceneEn" +
+      "tityInfo.proto\032\020VisionType.proto\"q\n\027Scen" +
       "eEntityUpdateNotify\022\r\n\005param\030\002 \001(\r\022%\n\013en" +
       "tity_list\030\007 \003(\0132\020.SceneEntityInfo\022 \n\013app" +
       "ear_type\030\017 \001(\0162\013.VisionTypeB\033\n\031emu.grass" +
@@ -1016,8 +1008,8 @@ public final class SceneEntityUpdateNotifyOuterClass {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.VisionTypeOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.SceneEntityInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.VisionTypeOuterClass.getDescriptor(),
         });
     internal_static_SceneEntityUpdateNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1025,8 +1017,8 @@ public final class SceneEntityUpdateNotifyOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneEntityUpdateNotify_descriptor,
         new java.lang.String[] { "Param", "EntityList", "AppearType", });
-    emu.grasscutter.net.proto.VisionTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SceneEntityInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.VisionTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,44 +19,45 @@ public final class AbilityActionCreateGadgetOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Vector rot = 3;</code>
-     * @return Whether the rot field is set.
-     */
-    boolean hasRot();
-    /**
-     * <code>.Vector rot = 3;</code>
-     * @return The rot.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
-    /**
-     * <code>.Vector rot = 3;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
-
-    /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 6;</code>
      * @return Whether the pos field is set.
      */
     boolean hasPos();
     /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 6;</code>
      * @return The pos.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
     /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 6;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
     /**
-     * <code>uint32 room_id = 7;</code>
+     * <code>.Vector rot = 13;</code>
+     * @return Whether the rot field is set.
+     */
+    boolean hasRot();
+    /**
+     * <code>.Vector rot = 13;</code>
+     * @return The rot.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
+    /**
+     * <code>.Vector rot = 13;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
+
+    /**
+     * <code>uint32 room_id = 4;</code>
      * @return The roomId.
      */
     int getRoomId();
   }
   /**
    * <pre>
-   * 4.6.0
+   * 4.7.0
+   * MGDJNOGCOIB (lock)
    * </pre>
    *
    * Protobuf type {@code AbilityActionCreateGadget}
@@ -103,20 +104,12 @@ public final class AbilityActionCreateGadgetOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (rot_ != null) {
-                subBuilder = rot_.toBuilder();
-              }
-              rot_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(rot_);
-                rot_ = subBuilder.buildPartial();
-              }
+            case 32: {
 
+              roomId_ = input.readUInt32();
               break;
             }
-            case 42: {
+            case 50: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (pos_ != null) {
                 subBuilder = pos_.toBuilder();
@@ -129,9 +122,17 @@ public final class AbilityActionCreateGadgetOuterClass {
 
               break;
             }
-            case 56: {
+            case 106: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (rot_ != null) {
+                subBuilder = rot_.toBuilder();
+              }
+              rot_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(rot_);
+                rot_ = subBuilder.buildPartial();
+              }
 
-              roomId_ = input.readUInt32();
               break;
             }
             default: {
@@ -166,36 +167,10 @@ public final class AbilityActionCreateGadgetOuterClass {
               emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget.class, emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget.Builder.class);
     }
 
-    public static final int ROT_FIELD_NUMBER = 3;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
-    /**
-     * <code>.Vector rot = 3;</code>
-     * @return Whether the rot field is set.
-     */
-    @java.lang.Override
-    public boolean hasRot() {
-      return rot_ != null;
-    }
-    /**
-     * <code>.Vector rot = 3;</code>
-     * @return The rot.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
-      return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
-    }
-    /**
-     * <code>.Vector rot = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
-      return getRot();
-    }
-
-    public static final int POS_FIELD_NUMBER = 5;
+    public static final int POS_FIELD_NUMBER = 6;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
     /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 6;</code>
      * @return Whether the pos field is set.
      */
     @java.lang.Override
@@ -203,7 +178,7 @@ public final class AbilityActionCreateGadgetOuterClass {
       return pos_ != null;
     }
     /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 6;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -211,17 +186,43 @@ public final class AbilityActionCreateGadgetOuterClass {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
     /**
-     * <code>.Vector pos = 5;</code>
+     * <code>.Vector pos = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
     }
 
-    public static final int ROOM_ID_FIELD_NUMBER = 7;
+    public static final int ROT_FIELD_NUMBER = 13;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
+    /**
+     * <code>.Vector rot = 13;</code>
+     * @return Whether the rot field is set.
+     */
+    @java.lang.Override
+    public boolean hasRot() {
+      return rot_ != null;
+    }
+    /**
+     * <code>.Vector rot = 13;</code>
+     * @return The rot.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
+      return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
+    }
+    /**
+     * <code>.Vector rot = 13;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
+      return getRot();
+    }
+
+    public static final int ROOM_ID_FIELD_NUMBER = 4;
     private int roomId_;
     /**
-     * <code>uint32 room_id = 7;</code>
+     * <code>uint32 room_id = 4;</code>
      * @return The roomId.
      */
     @java.lang.Override
@@ -243,14 +244,14 @@ public final class AbilityActionCreateGadgetOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (rot_ != null) {
-        output.writeMessage(3, getRot());
+      if (roomId_ != 0) {
+        output.writeUInt32(4, roomId_);
       }
       if (pos_ != null) {
-        output.writeMessage(5, getPos());
+        output.writeMessage(6, getPos());
       }
-      if (roomId_ != 0) {
-        output.writeUInt32(7, roomId_);
+      if (rot_ != null) {
+        output.writeMessage(13, getRot());
       }
       unknownFields.writeTo(output);
     }
@@ -261,17 +262,17 @@ public final class AbilityActionCreateGadgetOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (rot_ != null) {
+      if (roomId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getRot());
+          .computeUInt32Size(4, roomId_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getPos());
+          .computeMessageSize(6, getPos());
       }
-      if (roomId_ != 0) {
+      if (rot_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, roomId_);
+          .computeMessageSize(13, getRot());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -288,15 +289,15 @@ public final class AbilityActionCreateGadgetOuterClass {
       }
       emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget other = (emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget) obj;
 
-      if (hasRot() != other.hasRot()) return false;
-      if (hasRot()) {
-        if (!getRot()
-            .equals(other.getRot())) return false;
-      }
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
+      }
+      if (hasRot() != other.hasRot()) return false;
+      if (hasRot()) {
+        if (!getRot()
+            .equals(other.getRot())) return false;
       }
       if (getRoomId()
           != other.getRoomId()) return false;
@@ -311,13 +312,13 @@ public final class AbilityActionCreateGadgetOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasRot()) {
-        hash = (37 * hash) + ROT_FIELD_NUMBER;
-        hash = (53 * hash) + getRot().hashCode();
-      }
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
+      }
+      if (hasRot()) {
+        hash = (37 * hash) + ROT_FIELD_NUMBER;
+        hash = (53 * hash) + getRot().hashCode();
       }
       hash = (37 * hash) + ROOM_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRoomId();
@@ -418,7 +419,8 @@ public final class AbilityActionCreateGadgetOuterClass {
     }
     /**
      * <pre>
-     * 4.6.0
+     * 4.7.0
+     * MGDJNOGCOIB (lock)
      * </pre>
      *
      * Protobuf type {@code AbilityActionCreateGadget}
@@ -458,17 +460,17 @@ public final class AbilityActionCreateGadgetOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (rotBuilder_ == null) {
-          rot_ = null;
-        } else {
-          rot_ = null;
-          rotBuilder_ = null;
-        }
         if (posBuilder_ == null) {
           pos_ = null;
         } else {
           pos_ = null;
           posBuilder_ = null;
+        }
+        if (rotBuilder_ == null) {
+          rot_ = null;
+        } else {
+          rot_ = null;
+          rotBuilder_ = null;
         }
         roomId_ = 0;
 
@@ -498,15 +500,15 @@ public final class AbilityActionCreateGadgetOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget buildPartial() {
         emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget result = new emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget(this);
-        if (rotBuilder_ == null) {
-          result.rot_ = rot_;
-        } else {
-          result.rot_ = rotBuilder_.build();
-        }
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
+        }
+        if (rotBuilder_ == null) {
+          result.rot_ = rot_;
+        } else {
+          result.rot_ = rotBuilder_.build();
         }
         result.roomId_ = roomId_;
         onBuilt();
@@ -557,11 +559,11 @@ public final class AbilityActionCreateGadgetOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget other) {
         if (other == emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActionCreateGadget.getDefaultInstance()) return this;
-        if (other.hasRot()) {
-          mergeRot(other.getRot());
-        }
         if (other.hasPos()) {
           mergePos(other.getPos());
+        }
+        if (other.hasRot()) {
+          mergeRot(other.getRot());
         }
         if (other.getRoomId() != 0) {
           setRoomId(other.getRoomId());
@@ -595,137 +597,18 @@ public final class AbilityActionCreateGadgetOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
-      /**
-       * <code>.Vector rot = 3;</code>
-       * @return Whether the rot field is set.
-       */
-      public boolean hasRot() {
-        return rotBuilder_ != null || rot_ != null;
-      }
-      /**
-       * <code>.Vector rot = 3;</code>
-       * @return The rot.
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
-        if (rotBuilder_ == null) {
-          return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
-        } else {
-          return rotBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.Vector rot = 3;</code>
-       */
-      public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (rotBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          rot_ = value;
-          onChanged();
-        } else {
-          rotBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector rot = 3;</code>
-       */
-      public Builder setRot(
-          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
-        if (rotBuilder_ == null) {
-          rot_ = builderForValue.build();
-          onChanged();
-        } else {
-          rotBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector rot = 3;</code>
-       */
-      public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
-        if (rotBuilder_ == null) {
-          if (rot_ != null) {
-            rot_ =
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(rot_).mergeFrom(value).buildPartial();
-          } else {
-            rot_ = value;
-          }
-          onChanged();
-        } else {
-          rotBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector rot = 3;</code>
-       */
-      public Builder clearRot() {
-        if (rotBuilder_ == null) {
-          rot_ = null;
-          onChanged();
-        } else {
-          rot_ = null;
-          rotBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.Vector rot = 3;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
-        
-        onChanged();
-        return getRotFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.Vector rot = 3;</code>
-       */
-      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
-        if (rotBuilder_ != null) {
-          return rotBuilder_.getMessageOrBuilder();
-        } else {
-          return rot_ == null ?
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
-        }
-      }
-      /**
-       * <code>.Vector rot = 3;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
-          getRotFieldBuilder() {
-        if (rotBuilder_ == null) {
-          rotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
-                  getRot(),
-                  getParentForChildren(),
-                  isClean());
-          rot_ = null;
-        }
-        return rotBuilder_;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 6;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 6;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -736,7 +619,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 6;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -752,7 +635,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 6;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -766,7 +649,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 6;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -784,7 +667,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 6;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -798,7 +681,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 6;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -806,7 +689,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 6;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -817,7 +700,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 5;</code>
+       * <code>.Vector pos = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -833,9 +716,128 @@ public final class AbilityActionCreateGadgetOuterClass {
         return posBuilder_;
       }
 
+      private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
+      /**
+       * <code>.Vector rot = 13;</code>
+       * @return Whether the rot field is set.
+       */
+      public boolean hasRot() {
+        return rotBuilder_ != null || rot_ != null;
+      }
+      /**
+       * <code>.Vector rot = 13;</code>
+       * @return The rot.
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
+        if (rotBuilder_ == null) {
+          return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
+        } else {
+          return rotBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.Vector rot = 13;</code>
+       */
+      public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (rotBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          rot_ = value;
+          onChanged();
+        } else {
+          rotBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector rot = 13;</code>
+       */
+      public Builder setRot(
+          emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
+        if (rotBuilder_ == null) {
+          rot_ = builderForValue.build();
+          onChanged();
+        } else {
+          rotBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector rot = 13;</code>
+       */
+      public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
+        if (rotBuilder_ == null) {
+          if (rot_ != null) {
+            rot_ =
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.newBuilder(rot_).mergeFrom(value).buildPartial();
+          } else {
+            rot_ = value;
+          }
+          onChanged();
+        } else {
+          rotBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector rot = 13;</code>
+       */
+      public Builder clearRot() {
+        if (rotBuilder_ == null) {
+          rot_ = null;
+          onChanged();
+        } else {
+          rot_ = null;
+          rotBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.Vector rot = 13;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
+        
+        onChanged();
+        return getRotFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.Vector rot = 13;</code>
+       */
+      public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
+        if (rotBuilder_ != null) {
+          return rotBuilder_.getMessageOrBuilder();
+        } else {
+          return rot_ == null ?
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
+        }
+      }
+      /**
+       * <code>.Vector rot = 13;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          getRotFieldBuilder() {
+        if (rotBuilder_ == null) {
+          rotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>(
+                  getRot(),
+                  getParentForChildren(),
+                  isClean());
+          rot_ = null;
+        }
+        return rotBuilder_;
+      }
+
       private int roomId_ ;
       /**
-       * <code>uint32 room_id = 7;</code>
+       * <code>uint32 room_id = 4;</code>
        * @return The roomId.
        */
       @java.lang.Override
@@ -843,7 +845,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         return roomId_;
       }
       /**
-       * <code>uint32 room_id = 7;</code>
+       * <code>uint32 room_id = 4;</code>
        * @param value The roomId to set.
        * @return This builder for chaining.
        */
@@ -854,7 +856,7 @@ public final class AbilityActionCreateGadgetOuterClass {
         return this;
       }
       /**
-       * <code>uint32 room_id = 7;</code>
+       * <code>uint32 room_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRoomId() {
@@ -932,8 +934,8 @@ public final class AbilityActionCreateGadgetOuterClass {
     java.lang.String[] descriptorData = {
       "\n\037AbilityActionCreateGadget.proto\032\014Vecto" +
       "r.proto\"X\n\031AbilityActionCreateGadget\022\024\n\003" +
-      "rot\030\003 \001(\0132\007.Vector\022\024\n\003pos\030\005 \001(\0132\007.Vector" +
-      "\022\017\n\007room_id\030\007 \001(\rB\033\n\031emu.grasscutter.net" +
+      "pos\030\006 \001(\0132\007.Vector\022\024\n\003rot\030\r \001(\0132\007.Vector" +
+      "\022\017\n\007room_id\030\004 \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -946,7 +948,7 @@ public final class AbilityActionCreateGadgetOuterClass {
     internal_static_AbilityActionCreateGadget_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AbilityActionCreateGadget_descriptor,
-        new java.lang.String[] { "Rot", "Pos", "RoomId", });
+        new java.lang.String[] { "Pos", "Rot", "RoomId", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 

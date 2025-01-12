@@ -17,30 +17,6 @@ public final class SceneEntitiesMovesRspOuterClass {
   public interface SceneEntitiesMovesRspOrBuilder extends
       // @@protoc_insertion_point(interface_extends:SceneEntitiesMovesRsp)
       com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo> 
-        getEntityMoveFailInfoListList();
-    /**
-     * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-     */
-    emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo getEntityMoveFailInfoList(int index);
-    /**
-     * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-     */
-    int getEntityMoveFailInfoListCount();
-    /**
-     * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfoOrBuilder> 
-        getEntityMoveFailInfoListOrBuilderList();
-    /**
-     * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-     */
-    emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfoOrBuilder getEntityMoveFailInfoListOrBuilder(
-        int index);
   }
   /**
    * Protobuf type {@code SceneEntitiesMovesRsp}
@@ -55,7 +31,6 @@ public final class SceneEntitiesMovesRspOuterClass {
       super(builder);
     }
     private SceneEntitiesMovesRsp() {
-      entityMoveFailInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -78,7 +53,6 @@ public final class SceneEntitiesMovesRspOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -89,15 +63,6 @@ public final class SceneEntitiesMovesRspOuterClass {
             case 0:
               done = true;
               break;
-            case 50: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                entityMoveFailInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              entityMoveFailInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.parser(), extensionRegistry));
-              break;
-            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -113,9 +78,6 @@ public final class SceneEntitiesMovesRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          entityMoveFailInfoList_ = java.util.Collections.unmodifiableList(entityMoveFailInfoList_);
-        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -133,46 +95,6 @@ public final class SceneEntitiesMovesRspOuterClass {
               emu.grasscutter.net.proto.SceneEntitiesMovesRspOuterClass.SceneEntitiesMovesRsp.class, emu.grasscutter.net.proto.SceneEntitiesMovesRspOuterClass.SceneEntitiesMovesRsp.Builder.class);
     }
 
-    public static final int ENTITY_MOVE_FAIL_INFO_LIST_FIELD_NUMBER = 6;
-    private java.util.List<emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo> entityMoveFailInfoList_;
-    /**
-     * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo> getEntityMoveFailInfoListList() {
-      return entityMoveFailInfoList_;
-    }
-    /**
-     * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfoOrBuilder> 
-        getEntityMoveFailInfoListOrBuilderList() {
-      return entityMoveFailInfoList_;
-    }
-    /**
-     * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public int getEntityMoveFailInfoListCount() {
-      return entityMoveFailInfoList_.size();
-    }
-    /**
-     * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo getEntityMoveFailInfoList(int index) {
-      return entityMoveFailInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfoOrBuilder getEntityMoveFailInfoListOrBuilder(
-        int index) {
-      return entityMoveFailInfoList_.get(index);
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -187,9 +109,6 @@ public final class SceneEntitiesMovesRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < entityMoveFailInfoList_.size(); i++) {
-        output.writeMessage(6, entityMoveFailInfoList_.get(i));
-      }
       unknownFields.writeTo(output);
     }
 
@@ -199,10 +118,6 @@ public final class SceneEntitiesMovesRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < entityMoveFailInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, entityMoveFailInfoList_.get(i));
-      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -218,8 +133,6 @@ public final class SceneEntitiesMovesRspOuterClass {
       }
       emu.grasscutter.net.proto.SceneEntitiesMovesRspOuterClass.SceneEntitiesMovesRsp other = (emu.grasscutter.net.proto.SceneEntitiesMovesRspOuterClass.SceneEntitiesMovesRsp) obj;
 
-      if (!getEntityMoveFailInfoListList()
-          .equals(other.getEntityMoveFailInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -231,10 +144,6 @@ public final class SceneEntitiesMovesRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getEntityMoveFailInfoListCount() > 0) {
-        hash = (37 * hash) + ENTITY_MOVE_FAIL_INFO_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getEntityMoveFailInfoListList().hashCode();
-      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -363,18 +272,11 @@ public final class SceneEntitiesMovesRspOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getEntityMoveFailInfoListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (entityMoveFailInfoListBuilder_ == null) {
-          entityMoveFailInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          entityMoveFailInfoListBuilder_.clear();
-        }
         return this;
       }
 
@@ -401,16 +303,6 @@ public final class SceneEntitiesMovesRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SceneEntitiesMovesRspOuterClass.SceneEntitiesMovesRsp buildPartial() {
         emu.grasscutter.net.proto.SceneEntitiesMovesRspOuterClass.SceneEntitiesMovesRsp result = new emu.grasscutter.net.proto.SceneEntitiesMovesRspOuterClass.SceneEntitiesMovesRsp(this);
-        int from_bitField0_ = bitField0_;
-        if (entityMoveFailInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
-            entityMoveFailInfoList_ = java.util.Collections.unmodifiableList(entityMoveFailInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
-          }
-          result.entityMoveFailInfoList_ = entityMoveFailInfoList_;
-        } else {
-          result.entityMoveFailInfoList_ = entityMoveFailInfoListBuilder_.build();
-        }
         onBuilt();
         return result;
       }
@@ -459,32 +351,6 @@ public final class SceneEntitiesMovesRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneEntitiesMovesRspOuterClass.SceneEntitiesMovesRsp other) {
         if (other == emu.grasscutter.net.proto.SceneEntitiesMovesRspOuterClass.SceneEntitiesMovesRsp.getDefaultInstance()) return this;
-        if (entityMoveFailInfoListBuilder_ == null) {
-          if (!other.entityMoveFailInfoList_.isEmpty()) {
-            if (entityMoveFailInfoList_.isEmpty()) {
-              entityMoveFailInfoList_ = other.entityMoveFailInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensureEntityMoveFailInfoListIsMutable();
-              entityMoveFailInfoList_.addAll(other.entityMoveFailInfoList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.entityMoveFailInfoList_.isEmpty()) {
-            if (entityMoveFailInfoListBuilder_.isEmpty()) {
-              entityMoveFailInfoListBuilder_.dispose();
-              entityMoveFailInfoListBuilder_ = null;
-              entityMoveFailInfoList_ = other.entityMoveFailInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              entityMoveFailInfoListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getEntityMoveFailInfoListFieldBuilder() : null;
-            } else {
-              entityMoveFailInfoListBuilder_.addAllMessages(other.entityMoveFailInfoList_);
-            }
-          }
-        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -512,247 +378,6 @@ public final class SceneEntitiesMovesRspOuterClass {
           }
         }
         return this;
-      }
-      private int bitField0_;
-
-      private java.util.List<emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo> entityMoveFailInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureEntityMoveFailInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          entityMoveFailInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo>(entityMoveFailInfoList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo, emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.Builder, emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfoOrBuilder> entityMoveFailInfoListBuilder_;
-
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo> getEntityMoveFailInfoListList() {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(entityMoveFailInfoList_);
-        } else {
-          return entityMoveFailInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public int getEntityMoveFailInfoListCount() {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          return entityMoveFailInfoList_.size();
-        } else {
-          return entityMoveFailInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo getEntityMoveFailInfoList(int index) {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          return entityMoveFailInfoList_.get(index);
-        } else {
-          return entityMoveFailInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public Builder setEntityMoveFailInfoList(
-          int index, emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo value) {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureEntityMoveFailInfoListIsMutable();
-          entityMoveFailInfoList_.set(index, value);
-          onChanged();
-        } else {
-          entityMoveFailInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public Builder setEntityMoveFailInfoList(
-          int index, emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.Builder builderForValue) {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          ensureEntityMoveFailInfoListIsMutable();
-          entityMoveFailInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          entityMoveFailInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public Builder addEntityMoveFailInfoList(emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo value) {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureEntityMoveFailInfoListIsMutable();
-          entityMoveFailInfoList_.add(value);
-          onChanged();
-        } else {
-          entityMoveFailInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public Builder addEntityMoveFailInfoList(
-          int index, emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo value) {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureEntityMoveFailInfoListIsMutable();
-          entityMoveFailInfoList_.add(index, value);
-          onChanged();
-        } else {
-          entityMoveFailInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public Builder addEntityMoveFailInfoList(
-          emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.Builder builderForValue) {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          ensureEntityMoveFailInfoListIsMutable();
-          entityMoveFailInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          entityMoveFailInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public Builder addEntityMoveFailInfoList(
-          int index, emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.Builder builderForValue) {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          ensureEntityMoveFailInfoListIsMutable();
-          entityMoveFailInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          entityMoveFailInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public Builder addAllEntityMoveFailInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo> values) {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          ensureEntityMoveFailInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, entityMoveFailInfoList_);
-          onChanged();
-        } else {
-          entityMoveFailInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public Builder clearEntityMoveFailInfoList() {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          entityMoveFailInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-          onChanged();
-        } else {
-          entityMoveFailInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public Builder removeEntityMoveFailInfoList(int index) {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          ensureEntityMoveFailInfoListIsMutable();
-          entityMoveFailInfoList_.remove(index);
-          onChanged();
-        } else {
-          entityMoveFailInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.Builder getEntityMoveFailInfoListBuilder(
-          int index) {
-        return getEntityMoveFailInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfoOrBuilder getEntityMoveFailInfoListOrBuilder(
-          int index) {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          return entityMoveFailInfoList_.get(index);  } else {
-          return entityMoveFailInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfoOrBuilder> 
-           getEntityMoveFailInfoListOrBuilderList() {
-        if (entityMoveFailInfoListBuilder_ != null) {
-          return entityMoveFailInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(entityMoveFailInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.Builder addEntityMoveFailInfoListBuilder() {
-        return getEntityMoveFailInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.Builder addEntityMoveFailInfoListBuilder(
-          int index) {
-        return getEntityMoveFailInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .EntityMoveFailInfo entity_move_fail_info_list = 6;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.Builder> 
-           getEntityMoveFailInfoListBuilderList() {
-        return getEntityMoveFailInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo, emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.Builder, emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfoOrBuilder> 
-          getEntityMoveFailInfoListFieldBuilder() {
-        if (entityMoveFailInfoListBuilder_ == null) {
-          entityMoveFailInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo, emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfo.Builder, emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.EntityMoveFailInfoOrBuilder>(
-                  entityMoveFailInfoList_,
-                  ((bitField0_ & 0x00000001) != 0),
-                  getParentForChildren(),
-                  isClean());
-          entityMoveFailInfoList_ = null;
-        }
-        return entityMoveFailInfoListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -821,24 +446,20 @@ public final class SceneEntitiesMovesRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033SceneEntitiesMovesRsp.proto\032\030EntityMov" +
-      "eFailInfo.proto\"P\n\025SceneEntitiesMovesRsp" +
-      "\0227\n\032entity_move_fail_info_list\030\006 \003(\0132\023.E" +
-      "ntityMoveFailInfoB\033\n\031emu.grasscutter.net" +
-      ".protob\006proto3"
+      "\n\033SceneEntitiesMovesRsp.proto\"\027\n\025SceneEn" +
+      "titiesMovesRspB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.getDescriptor(),
         });
     internal_static_SceneEntitiesMovesRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SceneEntitiesMovesRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneEntitiesMovesRsp_descriptor,
-        new java.lang.String[] { "EntityMoveFailInfoList", });
-    emu.grasscutter.net.proto.EntityMoveFailInfoOuterClass.getDescriptor();
+        new java.lang.String[] { });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

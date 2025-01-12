@@ -19,36 +19,36 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 show_avatar_id_list = 15;</code>
+     * <code>repeated uint32 show_avatar_id_list = 3;</code>
      * @return A list containing the showAvatarIdList.
      */
     java.util.List<java.lang.Integer> getShowAvatarIdListList();
     /**
-     * <code>repeated uint32 show_avatar_id_list = 15;</code>
+     * <code>repeated uint32 show_avatar_id_list = 3;</code>
      * @return The count of showAvatarIdList.
      */
     int getShowAvatarIdListCount();
     /**
-     * <code>repeated uint32 show_avatar_id_list = 15;</code>
+     * <code>repeated uint32 show_avatar_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The showAvatarIdList at the given index.
      */
     int getShowAvatarIdList(int index);
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>bool is_show_avatar = 7;</code>
+     * <code>bool is_show_avatar = 8;</code>
      * @return The isShowAvatar.
      */
     boolean getIsShowAvatar();
 
     /**
-     * <code>bool is_show_constellation_num = 11;</code>
+     * <code>bool is_show_constellation_num = 15;</code>
      * @return The isShowConstellationNum.
      */
     boolean getIsShowConstellationNum();
@@ -100,22 +100,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              isShowAvatar_ = input.readBool();
-              break;
-            }
-            case 64: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 88: {
-
-              isShowConstellationNum_ = input.readBool();
-              break;
-            }
-            case 120: {
+            case 24: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 showAvatarIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -123,7 +108,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
               showAvatarIdList_.addInt(input.readUInt32());
               break;
             }
-            case 122: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -134,6 +119,21 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
                 showAvatarIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 40: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 64: {
+
+              isShowAvatar_ = input.readBool();
+              break;
+            }
+            case 120: {
+
+              isShowConstellationNum_ = input.readBool();
               break;
             }
             default: {
@@ -171,10 +171,10 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
               emu.grasscutter.net.proto.UpdatePlayerShowAvatarListRspOuterClass.UpdatePlayerShowAvatarListRsp.class, emu.grasscutter.net.proto.UpdatePlayerShowAvatarListRspOuterClass.UpdatePlayerShowAvatarListRsp.Builder.class);
     }
 
-    public static final int SHOW_AVATAR_ID_LIST_FIELD_NUMBER = 15;
+    public static final int SHOW_AVATAR_ID_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList showAvatarIdList_;
     /**
-     * <code>repeated uint32 show_avatar_id_list = 15;</code>
+     * <code>repeated uint32 show_avatar_id_list = 3;</code>
      * @return A list containing the showAvatarIdList.
      */
     @java.lang.Override
@@ -183,14 +183,14 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
       return showAvatarIdList_;
     }
     /**
-     * <code>repeated uint32 show_avatar_id_list = 15;</code>
+     * <code>repeated uint32 show_avatar_id_list = 3;</code>
      * @return The count of showAvatarIdList.
      */
     public int getShowAvatarIdListCount() {
       return showAvatarIdList_.size();
     }
     /**
-     * <code>repeated uint32 show_avatar_id_list = 15;</code>
+     * <code>repeated uint32 show_avatar_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The showAvatarIdList at the given index.
      */
@@ -199,10 +199,10 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
     }
     private int showAvatarIdListMemoizedSerializedSize = -1;
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 5;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -210,10 +210,10 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
       return retcode_;
     }
 
-    public static final int IS_SHOW_AVATAR_FIELD_NUMBER = 7;
+    public static final int IS_SHOW_AVATAR_FIELD_NUMBER = 8;
     private boolean isShowAvatar_;
     /**
-     * <code>bool is_show_avatar = 7;</code>
+     * <code>bool is_show_avatar = 8;</code>
      * @return The isShowAvatar.
      */
     @java.lang.Override
@@ -221,10 +221,10 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
       return isShowAvatar_;
     }
 
-    public static final int IS_SHOW_CONSTELLATION_NUM_FIELD_NUMBER = 11;
+    public static final int IS_SHOW_CONSTELLATION_NUM_FIELD_NUMBER = 15;
     private boolean isShowConstellationNum_;
     /**
-     * <code>bool is_show_constellation_num = 11;</code>
+     * <code>bool is_show_constellation_num = 15;</code>
      * @return The isShowConstellationNum.
      */
     @java.lang.Override
@@ -247,21 +247,21 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (isShowAvatar_ != false) {
-        output.writeBool(7, isShowAvatar_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
-      }
-      if (isShowConstellationNum_ != false) {
-        output.writeBool(11, isShowConstellationNum_);
-      }
       if (getShowAvatarIdListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(showAvatarIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < showAvatarIdList_.size(); i++) {
         output.writeUInt32NoTag(showAvatarIdList_.getInt(i));
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(5, retcode_);
+      }
+      if (isShowAvatar_ != false) {
+        output.writeBool(8, isShowAvatar_);
+      }
+      if (isShowConstellationNum_ != false) {
+        output.writeBool(15, isShowConstellationNum_);
       }
       unknownFields.writeTo(output);
     }
@@ -272,18 +272,6 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isShowAvatar_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, isShowAvatar_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
-      }
-      if (isShowConstellationNum_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isShowConstellationNum_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < showAvatarIdList_.size(); i++) {
@@ -297,6 +285,18 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         showAvatarIdListMemoizedSerializedSize = dataSize;
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, retcode_);
+      }
+      if (isShowAvatar_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isShowAvatar_);
+      }
+      if (isShowConstellationNum_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, isShowConstellationNum_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -625,7 +625,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 show_avatar_id_list = 15;</code>
+       * <code>repeated uint32 show_avatar_id_list = 3;</code>
        * @return A list containing the showAvatarIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -634,14 +634,14 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
                  java.util.Collections.unmodifiableList(showAvatarIdList_) : showAvatarIdList_;
       }
       /**
-       * <code>repeated uint32 show_avatar_id_list = 15;</code>
+       * <code>repeated uint32 show_avatar_id_list = 3;</code>
        * @return The count of showAvatarIdList.
        */
       public int getShowAvatarIdListCount() {
         return showAvatarIdList_.size();
       }
       /**
-       * <code>repeated uint32 show_avatar_id_list = 15;</code>
+       * <code>repeated uint32 show_avatar_id_list = 3;</code>
        * @param index The index of the element to return.
        * @return The showAvatarIdList at the given index.
        */
@@ -649,7 +649,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
         return showAvatarIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 show_avatar_id_list = 15;</code>
+       * <code>repeated uint32 show_avatar_id_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The showAvatarIdList to set.
        * @return This builder for chaining.
@@ -662,7 +662,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 show_avatar_id_list = 15;</code>
+       * <code>repeated uint32 show_avatar_id_list = 3;</code>
        * @param value The showAvatarIdList to add.
        * @return This builder for chaining.
        */
@@ -673,7 +673,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 show_avatar_id_list = 15;</code>
+       * <code>repeated uint32 show_avatar_id_list = 3;</code>
        * @param values The showAvatarIdList to add.
        * @return This builder for chaining.
        */
@@ -686,7 +686,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 show_avatar_id_list = 15;</code>
+       * <code>repeated uint32 show_avatar_id_list = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearShowAvatarIdList() {
@@ -698,7 +698,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 5;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -706,7 +706,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 5;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -717,7 +717,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -729,7 +729,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
 
       private boolean isShowAvatar_ ;
       /**
-       * <code>bool is_show_avatar = 7;</code>
+       * <code>bool is_show_avatar = 8;</code>
        * @return The isShowAvatar.
        */
       @java.lang.Override
@@ -737,7 +737,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
         return isShowAvatar_;
       }
       /**
-       * <code>bool is_show_avatar = 7;</code>
+       * <code>bool is_show_avatar = 8;</code>
        * @param value The isShowAvatar to set.
        * @return This builder for chaining.
        */
@@ -748,7 +748,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_show_avatar = 7;</code>
+       * <code>bool is_show_avatar = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsShowAvatar() {
@@ -760,7 +760,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
 
       private boolean isShowConstellationNum_ ;
       /**
-       * <code>bool is_show_constellation_num = 11;</code>
+       * <code>bool is_show_constellation_num = 15;</code>
        * @return The isShowConstellationNum.
        */
       @java.lang.Override
@@ -768,7 +768,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
         return isShowConstellationNum_;
       }
       /**
-       * <code>bool is_show_constellation_num = 11;</code>
+       * <code>bool is_show_constellation_num = 15;</code>
        * @param value The isShowConstellationNum to set.
        * @return This builder for chaining.
        */
@@ -779,7 +779,7 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_show_constellation_num = 11;</code>
+       * <code>bool is_show_constellation_num = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsShowConstellationNum() {
@@ -857,9 +857,9 @@ public final class UpdatePlayerShowAvatarListRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n#UpdatePlayerShowAvatarListRsp.proto\"\210\001" +
       "\n\035UpdatePlayerShowAvatarListRsp\022\033\n\023show_" +
-      "avatar_id_list\030\017 \003(\r\022\017\n\007retcode\030\010 \001(\005\022\026\n" +
-      "\016is_show_avatar\030\007 \001(\010\022!\n\031is_show_constel" +
-      "lation_num\030\013 \001(\010B\033\n\031emu.grasscutter.net." +
+      "avatar_id_list\030\003 \003(\r\022\017\n\007retcode\030\005 \001(\005\022\026\n" +
+      "\016is_show_avatar\030\010 \001(\010\022!\n\031is_show_constel" +
+      "lation_num\030\017 \001(\010B\033\n\031emu.grasscutter.net." +
       "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

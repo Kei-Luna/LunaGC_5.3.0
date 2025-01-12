@@ -19,16 +19,16 @@ public final class DeathZoneInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 id = 11;</code>
-     * @return The id.
-     */
-    int getId();
-
-    /**
-     * <code>bool is_open = 15;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
+
+    /**
+     * <code>uint32 id = 10;</code>
+     * @return The id.
+     */
+    int getId();
   }
   /**
    * Protobuf type {@code DeathZoneInfo}
@@ -75,14 +75,14 @@ public final class DeathZoneInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 88: {
-
-              id_ = input.readUInt32();
-              break;
-            }
-            case 120: {
+            case 48: {
 
               isOpen_ = input.readBool();
+              break;
+            }
+            case 80: {
+
+              id_ = input.readUInt32();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class DeathZoneInfoOuterClass {
               emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.class, emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.Builder.class);
     }
 
-    public static final int ID_FIELD_NUMBER = 11;
-    private int id_;
-    /**
-     * <code>uint32 id = 11;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 15;
+    public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 15;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     @java.lang.Override
     public boolean getIsOpen() {
       return isOpen_;
+    }
+
+    public static final int ID_FIELD_NUMBER = 10;
+    private int id_;
+    /**
+     * <code>uint32 id = 10;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class DeathZoneInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (id_ != 0) {
-        output.writeUInt32(11, id_);
-      }
       if (isOpen_ != false) {
-        output.writeBool(15, isOpen_);
+        output.writeBool(6, isOpen_);
+      }
+      if (id_ != 0) {
+        output.writeUInt32(10, id_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class DeathZoneInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (id_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, id_);
-      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isOpen_);
+          .computeBoolSize(6, isOpen_);
+      }
+      if (id_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, id_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class DeathZoneInfoOuterClass {
       }
       emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo other = (emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo) obj;
 
-      if (getId()
-          != other.getId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
+      if (getId()
+          != other.getId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,11 +206,11 @@ public final class DeathZoneInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -344,9 +344,9 @@ public final class DeathZoneInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        id_ = 0;
-
         isOpen_ = false;
+
+        id_ = 0;
 
         return this;
       }
@@ -374,8 +374,8 @@ public final class DeathZoneInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo buildPartial() {
         emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo result = new emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo(this);
-        result.id_ = id_;
         result.isOpen_ = isOpen_;
+        result.id_ = id_;
         onBuilt();
         return result;
       }
@@ -424,11 +424,11 @@ public final class DeathZoneInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo other) {
         if (other == emu.grasscutter.net.proto.DeathZoneInfoOuterClass.DeathZoneInfo.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
+        }
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -459,40 +459,9 @@ public final class DeathZoneInfoOuterClass {
         return this;
       }
 
-      private int id_ ;
-      /**
-       * <code>uint32 id = 11;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 11;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 15;</code>
+       * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -500,7 +469,7 @@ public final class DeathZoneInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 15;</code>
+       * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -511,12 +480,43 @@ public final class DeathZoneInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 15;</code>
+       * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
         
         isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int id_ ;
+      /**
+       * <code>uint32 id = 10;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 10;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
         onChanged();
         return this;
       }
@@ -587,8 +587,8 @@ public final class DeathZoneInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023DeathZoneInfo.proto\",\n\rDeathZoneInfo\022\n" +
-      "\n\002id\030\013 \001(\r\022\017\n\007is_open\030\017 \001(\010B\033\n\031emu.grass" +
+      "\n\023DeathZoneInfo.proto\",\n\rDeathZoneInfo\022\017" +
+      "\n\007is_open\030\006 \001(\010\022\n\n\002id\030\n \001(\rB\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -600,7 +600,7 @@ public final class DeathZoneInfoOuterClass {
     internal_static_DeathZoneInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DeathZoneInfo_descriptor,
-        new java.lang.String[] { "Id", "IsOpen", });
+        new java.lang.String[] { "IsOpen", "Id", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

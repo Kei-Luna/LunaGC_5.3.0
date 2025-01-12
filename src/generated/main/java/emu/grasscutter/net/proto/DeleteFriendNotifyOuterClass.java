@@ -19,17 +19,12 @@ public final class DeleteFriendNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 15;</code>
+     * <code>uint32 target_uid = 13;</code>
      * @return The targetUid.
      */
     int getTargetUid();
   }
   /**
-   * <pre>
-   * CmdId: 25517
-   * Obf: LFOHLJPLBGN
-   * </pre>
-   *
    * Protobuf type {@code DeleteFriendNotify}
    */
   public static final class DeleteFriendNotify extends
@@ -74,7 +69,7 @@ public final class DeleteFriendNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 104: {
 
               targetUid_ = input.readUInt32();
               break;
@@ -111,10 +106,10 @@ public final class DeleteFriendNotifyOuterClass {
               emu.grasscutter.net.proto.DeleteFriendNotifyOuterClass.DeleteFriendNotify.class, emu.grasscutter.net.proto.DeleteFriendNotifyOuterClass.DeleteFriendNotify.Builder.class);
     }
 
-    public static final int TARGET_UID_FIELD_NUMBER = 15;
+    public static final int TARGET_UID_FIELD_NUMBER = 13;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 15;</code>
+     * <code>uint32 target_uid = 13;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -137,7 +132,7 @@ public final class DeleteFriendNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetUid_ != 0) {
-        output.writeUInt32(15, targetUid_);
+        output.writeUInt32(13, targetUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +145,7 @@ public final class DeleteFriendNotifyOuterClass {
       size = 0;
       if (targetUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, targetUid_);
+          .computeUInt32Size(13, targetUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,11 +273,6 @@ public final class DeleteFriendNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 25517
-     * Obf: LFOHLJPLBGN
-     * </pre>
-     *
      * Protobuf type {@code DeleteFriendNotify}
      */
     public static final class Builder extends
@@ -431,7 +421,7 @@ public final class DeleteFriendNotifyOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 15;</code>
+       * <code>uint32 target_uid = 13;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -439,7 +429,7 @@ public final class DeleteFriendNotifyOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 15;</code>
+       * <code>uint32 target_uid = 13;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -450,7 +440,7 @@ public final class DeleteFriendNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 15;</code>
+       * <code>uint32 target_uid = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -527,7 +517,7 @@ public final class DeleteFriendNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030DeleteFriendNotify.proto\"(\n\022DeleteFrie" +
-      "ndNotify\022\022\n\ntarget_uid\030\017 \001(\rB\033\n\031emu.gras" +
+      "ndNotify\022\022\n\ntarget_uid\030\r \001(\rB\033\n\031emu.gras" +
       "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

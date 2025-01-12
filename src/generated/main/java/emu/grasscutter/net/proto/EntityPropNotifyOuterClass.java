@@ -19,6 +19,12 @@ public final class EntityPropNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 entity_id = 6;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
+
+    /**
      * <code>map&lt;uint32, .PropValue&gt; prop_map = 12;</code>
      */
     int getPropMapCount();
@@ -51,12 +57,6 @@ public final class EntityPropNotifyOuterClass {
 
     emu.grasscutter.net.proto.PropValueOuterClass.PropValue getPropMapOrThrow(
         int key);
-
-    /**
-     * <code>uint32 entity_id = 13;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
   }
   /**
    * Protobuf type {@code EntityPropNotify}
@@ -104,6 +104,11 @@ public final class EntityPropNotifyOuterClass {
             case 0:
               done = true;
               break;
+            case 48: {
+
+              entityId_ = input.readUInt32();
+              break;
+            }
             case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 propMap_ = com.google.protobuf.MapField.newMapField(
@@ -115,11 +120,6 @@ public final class EntityPropNotifyOuterClass {
                   PropMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               propMap_.getMutableMap().put(
                   propMap__.getKey(), propMap__.getValue());
-              break;
-            }
-            case 104: {
-
-              entityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -164,6 +164,17 @@ public final class EntityPropNotifyOuterClass {
       return emu.grasscutter.net.proto.EntityPropNotifyOuterClass.internal_static_EntityPropNotify_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               emu.grasscutter.net.proto.EntityPropNotifyOuterClass.EntityPropNotify.class, emu.grasscutter.net.proto.EntityPropNotifyOuterClass.EntityPropNotify.Builder.class);
+    }
+
+    public static final int ENTITY_ID_FIELD_NUMBER = 6;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 6;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
     }
 
     public static final int PROP_MAP_FIELD_NUMBER = 12;
@@ -247,17 +258,6 @@ public final class EntityPropNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 13;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 13;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -272,15 +272,15 @@ public final class EntityPropNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (entityId_ != 0) {
+        output.writeUInt32(6, entityId_);
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetPropMap(),
           PropMapDefaultEntryHolder.defaultEntry,
           12);
-      if (entityId_ != 0) {
-        output.writeUInt32(13, entityId_);
-      }
       unknownFields.writeTo(output);
     }
 
@@ -290,6 +290,10 @@ public final class EntityPropNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, entityId_);
+      }
       for (java.util.Map.Entry<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> entry
            : internalGetPropMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue>
@@ -299,10 +303,6 @@ public final class EntityPropNotifyOuterClass {
             .build();
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(12, propMap__);
-      }
-      if (entityId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -319,10 +319,10 @@ public final class EntityPropNotifyOuterClass {
       }
       emu.grasscutter.net.proto.EntityPropNotifyOuterClass.EntityPropNotify other = (emu.grasscutter.net.proto.EntityPropNotifyOuterClass.EntityPropNotify) obj;
 
-      if (!internalGetPropMap().equals(
-          other.internalGetPropMap())) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (!internalGetPropMap().equals(
+          other.internalGetPropMap())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -334,12 +334,12 @@ public final class EntityPropNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
       if (!internalGetPropMap().getMap().isEmpty()) {
         hash = (37 * hash) + PROP_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetPropMap().hashCode();
       }
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -495,9 +495,9 @@ public final class EntityPropNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutablePropMap().clear();
         entityId_ = 0;
 
+        internalGetMutablePropMap().clear();
         return this;
       }
 
@@ -525,9 +525,9 @@ public final class EntityPropNotifyOuterClass {
       public emu.grasscutter.net.proto.EntityPropNotifyOuterClass.EntityPropNotify buildPartial() {
         emu.grasscutter.net.proto.EntityPropNotifyOuterClass.EntityPropNotify result = new emu.grasscutter.net.proto.EntityPropNotifyOuterClass.EntityPropNotify(this);
         int from_bitField0_ = bitField0_;
+        result.entityId_ = entityId_;
         result.propMap_ = internalGetPropMap();
         result.propMap_.makeImmutable();
-        result.entityId_ = entityId_;
         onBuilt();
         return result;
       }
@@ -576,11 +576,11 @@ public final class EntityPropNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EntityPropNotifyOuterClass.EntityPropNotify other) {
         if (other == emu.grasscutter.net.proto.EntityPropNotifyOuterClass.EntityPropNotify.getDefaultInstance()) return this;
-        internalGetMutablePropMap().mergeFrom(
-            other.internalGetPropMap());
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
+        internalGetMutablePropMap().mergeFrom(
+            other.internalGetPropMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -610,6 +610,37 @@ public final class EntityPropNotifyOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 6;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 6;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
 
       private com.google.protobuf.MapField<
           java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> propMap_;
@@ -738,37 +769,6 @@ public final class EntityPropNotifyOuterClass {
             .putAll(values);
         return this;
       }
-
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 13;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 13;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -842,9 +842,9 @@ public final class EntityPropNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026EntityPropNotify.proto\032\017PropValue.prot" +
-      "o\"\223\001\n\020EntityPropNotify\0220\n\010prop_map\030\014 \003(\013" +
-      "2\036.EntityPropNotify.PropMapEntry\022\021\n\tenti" +
-      "ty_id\030\r \001(\r\032:\n\014PropMapEntry\022\013\n\003key\030\001 \001(\r" +
+      "o\"\223\001\n\020EntityPropNotify\022\021\n\tentity_id\030\006 \001(" +
+      "\r\0220\n\010prop_map\030\014 \003(\0132\036.EntityPropNotify.P" +
+      "ropMapEntry\032:\n\014PropMapEntry\022\013\n\003key\030\001 \001(\r" +
       "\022\031\n\005value\030\002 \001(\0132\n.PropValue:\0028\001B\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
@@ -858,7 +858,7 @@ public final class EntityPropNotifyOuterClass {
     internal_static_EntityPropNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EntityPropNotify_descriptor,
-        new java.lang.String[] { "PropMap", "EntityId", });
+        new java.lang.String[] { "EntityId", "PropMap", });
     internal_static_EntityPropNotify_PropMapEntry_descriptor =
       internal_static_EntityPropNotify_descriptor.getNestedTypes().get(0);
     internal_static_EntityPropNotify_PropMapEntry_fieldAccessorTable = new

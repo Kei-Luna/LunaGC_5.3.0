@@ -40,6 +40,10 @@ public final class AvatarAddNotifyOuterClass {
     boolean getIsInTeam();
   }
   /**
+   * <pre>
+   * CmdId: 21576 
+   * </pre>
+   *
    * Protobuf type {@code AvatarAddNotify}
    */
   public static final class AvatarAddNotify extends
@@ -344,6 +348,10 @@ public final class AvatarAddNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 21576 
+     * </pre>
+     *
      * Protobuf type {@code AvatarAddNotify}
      */
     public static final class Builder extends

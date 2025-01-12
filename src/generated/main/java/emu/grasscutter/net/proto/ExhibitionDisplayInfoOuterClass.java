@@ -37,10 +37,6 @@ public final class ExhibitionDisplayInfoOuterClass {
     int getDetailParam();
   }
   /**
-   * <pre>
-   * 5.0.0
-   * </pre>
-   *
    * Protobuf type {@code ExhibitionDisplayInfo}
    */
   public static final class ExhibitionDisplayInfo extends
@@ -343,10 +339,6 @@ public final class ExhibitionDisplayInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * 5.0.0
-     * </pre>
-     *
      * Protobuf type {@code ExhibitionDisplayInfo}
      */
     public static final class Builder extends

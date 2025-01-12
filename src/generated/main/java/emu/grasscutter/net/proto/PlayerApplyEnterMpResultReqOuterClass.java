@@ -19,13 +19,13 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_agreed = 3;</code>
+     * <code>bool is_agreed = 9;</code>
      * @return The isAgreed.
      */
     boolean getIsAgreed();
 
     /**
-     * <code>uint32 apply_uid = 15;</code>
+     * <code>uint32 apply_uid = 14;</code>
      * @return The applyUid.
      */
     int getApplyUid();
@@ -75,12 +75,12 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 72: {
 
               isAgreed_ = input.readBool();
               break;
             }
-            case 120: {
+            case 112: {
 
               applyUid_ = input.readUInt32();
               break;
@@ -117,10 +117,10 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
               emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq.class, emu.grasscutter.net.proto.PlayerApplyEnterMpResultReqOuterClass.PlayerApplyEnterMpResultReq.Builder.class);
     }
 
-    public static final int IS_AGREED_FIELD_NUMBER = 3;
+    public static final int IS_AGREED_FIELD_NUMBER = 9;
     private boolean isAgreed_;
     /**
-     * <code>bool is_agreed = 3;</code>
+     * <code>bool is_agreed = 9;</code>
      * @return The isAgreed.
      */
     @java.lang.Override
@@ -128,10 +128,10 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
       return isAgreed_;
     }
 
-    public static final int APPLY_UID_FIELD_NUMBER = 15;
+    public static final int APPLY_UID_FIELD_NUMBER = 14;
     private int applyUid_;
     /**
-     * <code>uint32 apply_uid = 15;</code>
+     * <code>uint32 apply_uid = 14;</code>
      * @return The applyUid.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isAgreed_ != false) {
-        output.writeBool(3, isAgreed_);
+        output.writeBool(9, isAgreed_);
       }
       if (applyUid_ != 0) {
-        output.writeUInt32(15, applyUid_);
+        output.writeUInt32(14, applyUid_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
       size = 0;
       if (isAgreed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isAgreed_);
+          .computeBoolSize(9, isAgreed_);
       }
       if (applyUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, applyUid_);
+          .computeUInt32Size(14, applyUid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -461,7 +461,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
 
       private boolean isAgreed_ ;
       /**
-       * <code>bool is_agreed = 3;</code>
+       * <code>bool is_agreed = 9;</code>
        * @return The isAgreed.
        */
       @java.lang.Override
@@ -469,7 +469,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
         return isAgreed_;
       }
       /**
-       * <code>bool is_agreed = 3;</code>
+       * <code>bool is_agreed = 9;</code>
        * @param value The isAgreed to set.
        * @return This builder for chaining.
        */
@@ -480,7 +480,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_agreed = 3;</code>
+       * <code>bool is_agreed = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsAgreed() {
@@ -492,7 +492,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
 
       private int applyUid_ ;
       /**
-       * <code>uint32 apply_uid = 15;</code>
+       * <code>uint32 apply_uid = 14;</code>
        * @return The applyUid.
        */
       @java.lang.Override
@@ -500,7 +500,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
         return applyUid_;
       }
       /**
-       * <code>uint32 apply_uid = 15;</code>
+       * <code>uint32 apply_uid = 14;</code>
        * @param value The applyUid to set.
        * @return This builder for chaining.
        */
@@ -511,7 +511,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 apply_uid = 15;</code>
+       * <code>uint32 apply_uid = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearApplyUid() {
@@ -589,7 +589,7 @@ public final class PlayerApplyEnterMpResultReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n!PlayerApplyEnterMpResultReq.proto\"C\n\033P" +
       "layerApplyEnterMpResultReq\022\021\n\tis_agreed\030" +
-      "\003 \001(\010\022\021\n\tapply_uid\030\017 \001(\rB\033\n\031emu.grasscut" +
+      "\t \001(\010\022\021\n\tapply_uid\030\016 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

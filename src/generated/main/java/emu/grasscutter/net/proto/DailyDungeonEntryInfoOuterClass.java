@@ -19,49 +19,49 @@ public final class DailyDungeonEntryInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool EPEBCOBLKII = 1;</code>
-     * @return The ePEBCOBLKII.
+     * <code>uint32 recommend_dungeon_id = 2;</code>
+     * @return The recommendDungeonId.
      */
-    boolean getEPEBCOBLKII();
+    int getRecommendDungeonId();
 
     /**
-     * <code>uint32 dungeon_entry_config_id = 4;</code>
-     * @return The dungeonEntryConfigId.
-     */
-    int getDungeonEntryConfigId();
-
-    /**
-     * <code>uint32 dungeon_entry_id = 7;</code>
+     * <code>uint32 dungeon_entry_id = 4;</code>
      * @return The dungeonEntryId.
      */
     int getDungeonEntryId();
 
     /**
-     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
      * @return Whether the recommendDungeonEntryInfo field is set.
      */
     boolean hasRecommendDungeonEntryInfo();
     /**
-     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
      * @return The recommendDungeonEntryInfo.
      */
     emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo getRecommendDungeonEntryInfo();
     /**
-     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
      */
     emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfoOrBuilder getRecommendDungeonEntryInfoOrBuilder();
 
     /**
-     * <code>bool LCHFFKHPJIO = 14;</code>
-     * @return The lCHFFKHPJIO.
+     * <code>uint32 dungeon_entry_config_id = 10;</code>
+     * @return The dungeonEntryConfigId.
      */
-    boolean getLCHFFKHPJIO();
+    int getDungeonEntryConfigId();
 
     /**
-     * <code>uint32 recommend_dungeon_id = 15;</code>
-     * @return The recommendDungeonId.
+     * <code>bool CDDJDJIEPPJ = 12;</code>
+     * @return The cDDJDJIEPPJ.
      */
-    int getRecommendDungeonId();
+    boolean getCDDJDJIEPPJ();
+
+    /**
+     * <code>bool PHGHDGFKPHE = 15;</code>
+     * @return The pHGHDGFKPHE.
+     */
+    boolean getPHGHDGFKPHE();
   }
   /**
    * Protobuf type {@code DailyDungeonEntryInfo}
@@ -108,22 +108,17 @@ public final class DailyDungeonEntryInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 16: {
 
-              ePEBCOBLKII_ = input.readBool();
+              recommendDungeonId_ = input.readUInt32();
               break;
             }
             case 32: {
 
-              dungeonEntryConfigId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
               dungeonEntryId_ = input.readUInt32();
               break;
             }
-            case 74: {
+            case 58: {
               emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.Builder subBuilder = null;
               if (recommendDungeonEntryInfo_ != null) {
                 subBuilder = recommendDungeonEntryInfo_.toBuilder();
@@ -136,14 +131,19 @@ public final class DailyDungeonEntryInfoOuterClass {
 
               break;
             }
-            case 112: {
+            case 80: {
 
-              lCHFFKHPJIO_ = input.readBool();
+              dungeonEntryConfigId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              cDDJDJIEPPJ_ = input.readBool();
               break;
             }
             case 120: {
 
-              recommendDungeonId_ = input.readUInt32();
+              pHGHDGFKPHE_ = input.readBool();
               break;
             }
             default: {
@@ -178,32 +178,21 @@ public final class DailyDungeonEntryInfoOuterClass {
               emu.grasscutter.net.proto.DailyDungeonEntryInfoOuterClass.DailyDungeonEntryInfo.class, emu.grasscutter.net.proto.DailyDungeonEntryInfoOuterClass.DailyDungeonEntryInfo.Builder.class);
     }
 
-    public static final int EPEBCOBLKII_FIELD_NUMBER = 1;
-    private boolean ePEBCOBLKII_;
+    public static final int RECOMMEND_DUNGEON_ID_FIELD_NUMBER = 2;
+    private int recommendDungeonId_;
     /**
-     * <code>bool EPEBCOBLKII = 1;</code>
-     * @return The ePEBCOBLKII.
+     * <code>uint32 recommend_dungeon_id = 2;</code>
+     * @return The recommendDungeonId.
      */
     @java.lang.Override
-    public boolean getEPEBCOBLKII() {
-      return ePEBCOBLKII_;
+    public int getRecommendDungeonId() {
+      return recommendDungeonId_;
     }
 
-    public static final int DUNGEON_ENTRY_CONFIG_ID_FIELD_NUMBER = 4;
-    private int dungeonEntryConfigId_;
-    /**
-     * <code>uint32 dungeon_entry_config_id = 4;</code>
-     * @return The dungeonEntryConfigId.
-     */
-    @java.lang.Override
-    public int getDungeonEntryConfigId() {
-      return dungeonEntryConfigId_;
-    }
-
-    public static final int DUNGEON_ENTRY_ID_FIELD_NUMBER = 7;
+    public static final int DUNGEON_ENTRY_ID_FIELD_NUMBER = 4;
     private int dungeonEntryId_;
     /**
-     * <code>uint32 dungeon_entry_id = 7;</code>
+     * <code>uint32 dungeon_entry_id = 4;</code>
      * @return The dungeonEntryId.
      */
     @java.lang.Override
@@ -211,10 +200,10 @@ public final class DailyDungeonEntryInfoOuterClass {
       return dungeonEntryId_;
     }
 
-    public static final int RECOMMEND_DUNGEON_ENTRY_INFO_FIELD_NUMBER = 9;
+    public static final int RECOMMEND_DUNGEON_ENTRY_INFO_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo recommendDungeonEntryInfo_;
     /**
-     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
      * @return Whether the recommendDungeonEntryInfo field is set.
      */
     @java.lang.Override
@@ -222,7 +211,7 @@ public final class DailyDungeonEntryInfoOuterClass {
       return recommendDungeonEntryInfo_ != null;
     }
     /**
-     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
      * @return The recommendDungeonEntryInfo.
      */
     @java.lang.Override
@@ -230,33 +219,44 @@ public final class DailyDungeonEntryInfoOuterClass {
       return recommendDungeonEntryInfo_ == null ? emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.getDefaultInstance() : recommendDungeonEntryInfo_;
     }
     /**
-     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+     * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfoOrBuilder getRecommendDungeonEntryInfoOrBuilder() {
       return getRecommendDungeonEntryInfo();
     }
 
-    public static final int LCHFFKHPJIO_FIELD_NUMBER = 14;
-    private boolean lCHFFKHPJIO_;
+    public static final int DUNGEON_ENTRY_CONFIG_ID_FIELD_NUMBER = 10;
+    private int dungeonEntryConfigId_;
     /**
-     * <code>bool LCHFFKHPJIO = 14;</code>
-     * @return The lCHFFKHPJIO.
+     * <code>uint32 dungeon_entry_config_id = 10;</code>
+     * @return The dungeonEntryConfigId.
      */
     @java.lang.Override
-    public boolean getLCHFFKHPJIO() {
-      return lCHFFKHPJIO_;
+    public int getDungeonEntryConfigId() {
+      return dungeonEntryConfigId_;
     }
 
-    public static final int RECOMMEND_DUNGEON_ID_FIELD_NUMBER = 15;
-    private int recommendDungeonId_;
+    public static final int CDDJDJIEPPJ_FIELD_NUMBER = 12;
+    private boolean cDDJDJIEPPJ_;
     /**
-     * <code>uint32 recommend_dungeon_id = 15;</code>
-     * @return The recommendDungeonId.
+     * <code>bool CDDJDJIEPPJ = 12;</code>
+     * @return The cDDJDJIEPPJ.
      */
     @java.lang.Override
-    public int getRecommendDungeonId() {
-      return recommendDungeonId_;
+    public boolean getCDDJDJIEPPJ() {
+      return cDDJDJIEPPJ_;
+    }
+
+    public static final int PHGHDGFKPHE_FIELD_NUMBER = 15;
+    private boolean pHGHDGFKPHE_;
+    /**
+     * <code>bool PHGHDGFKPHE = 15;</code>
+     * @return The pHGHDGFKPHE.
+     */
+    @java.lang.Override
+    public boolean getPHGHDGFKPHE() {
+      return pHGHDGFKPHE_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -273,23 +273,23 @@ public final class DailyDungeonEntryInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (ePEBCOBLKII_ != false) {
-        output.writeBool(1, ePEBCOBLKII_);
-      }
-      if (dungeonEntryConfigId_ != 0) {
-        output.writeUInt32(4, dungeonEntryConfigId_);
+      if (recommendDungeonId_ != 0) {
+        output.writeUInt32(2, recommendDungeonId_);
       }
       if (dungeonEntryId_ != 0) {
-        output.writeUInt32(7, dungeonEntryId_);
+        output.writeUInt32(4, dungeonEntryId_);
       }
       if (recommendDungeonEntryInfo_ != null) {
-        output.writeMessage(9, getRecommendDungeonEntryInfo());
+        output.writeMessage(7, getRecommendDungeonEntryInfo());
       }
-      if (lCHFFKHPJIO_ != false) {
-        output.writeBool(14, lCHFFKHPJIO_);
+      if (dungeonEntryConfigId_ != 0) {
+        output.writeUInt32(10, dungeonEntryConfigId_);
       }
-      if (recommendDungeonId_ != 0) {
-        output.writeUInt32(15, recommendDungeonId_);
+      if (cDDJDJIEPPJ_ != false) {
+        output.writeBool(12, cDDJDJIEPPJ_);
+      }
+      if (pHGHDGFKPHE_ != false) {
+        output.writeBool(15, pHGHDGFKPHE_);
       }
       unknownFields.writeTo(output);
     }
@@ -300,29 +300,29 @@ public final class DailyDungeonEntryInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (ePEBCOBLKII_ != false) {
+      if (recommendDungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, ePEBCOBLKII_);
-      }
-      if (dungeonEntryConfigId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, dungeonEntryConfigId_);
+          .computeUInt32Size(2, recommendDungeonId_);
       }
       if (dungeonEntryId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, dungeonEntryId_);
+          .computeUInt32Size(4, dungeonEntryId_);
       }
       if (recommendDungeonEntryInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getRecommendDungeonEntryInfo());
+          .computeMessageSize(7, getRecommendDungeonEntryInfo());
       }
-      if (lCHFFKHPJIO_ != false) {
+      if (dungeonEntryConfigId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, lCHFFKHPJIO_);
+          .computeUInt32Size(10, dungeonEntryConfigId_);
       }
-      if (recommendDungeonId_ != 0) {
+      if (cDDJDJIEPPJ_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, recommendDungeonId_);
+          .computeBoolSize(12, cDDJDJIEPPJ_);
+      }
+      if (pHGHDGFKPHE_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, pHGHDGFKPHE_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -339,10 +339,8 @@ public final class DailyDungeonEntryInfoOuterClass {
       }
       emu.grasscutter.net.proto.DailyDungeonEntryInfoOuterClass.DailyDungeonEntryInfo other = (emu.grasscutter.net.proto.DailyDungeonEntryInfoOuterClass.DailyDungeonEntryInfo) obj;
 
-      if (getEPEBCOBLKII()
-          != other.getEPEBCOBLKII()) return false;
-      if (getDungeonEntryConfigId()
-          != other.getDungeonEntryConfigId()) return false;
+      if (getRecommendDungeonId()
+          != other.getRecommendDungeonId()) return false;
       if (getDungeonEntryId()
           != other.getDungeonEntryId()) return false;
       if (hasRecommendDungeonEntryInfo() != other.hasRecommendDungeonEntryInfo()) return false;
@@ -350,10 +348,12 @@ public final class DailyDungeonEntryInfoOuterClass {
         if (!getRecommendDungeonEntryInfo()
             .equals(other.getRecommendDungeonEntryInfo())) return false;
       }
-      if (getLCHFFKHPJIO()
-          != other.getLCHFFKHPJIO()) return false;
-      if (getRecommendDungeonId()
-          != other.getRecommendDungeonId()) return false;
+      if (getDungeonEntryConfigId()
+          != other.getDungeonEntryConfigId()) return false;
+      if (getCDDJDJIEPPJ()
+          != other.getCDDJDJIEPPJ()) return false;
+      if (getPHGHDGFKPHE()
+          != other.getPHGHDGFKPHE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -365,22 +365,22 @@ public final class DailyDungeonEntryInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + EPEBCOBLKII_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getEPEBCOBLKII());
-      hash = (37 * hash) + DUNGEON_ENTRY_CONFIG_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getDungeonEntryConfigId();
+      hash = (37 * hash) + RECOMMEND_DUNGEON_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getRecommendDungeonId();
       hash = (37 * hash) + DUNGEON_ENTRY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonEntryId();
       if (hasRecommendDungeonEntryInfo()) {
         hash = (37 * hash) + RECOMMEND_DUNGEON_ENTRY_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getRecommendDungeonEntryInfo().hashCode();
       }
-      hash = (37 * hash) + LCHFFKHPJIO_FIELD_NUMBER;
+      hash = (37 * hash) + DUNGEON_ENTRY_CONFIG_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getDungeonEntryConfigId();
+      hash = (37 * hash) + CDDJDJIEPPJ_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getLCHFFKHPJIO());
-      hash = (37 * hash) + RECOMMEND_DUNGEON_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getRecommendDungeonId();
+          getCDDJDJIEPPJ());
+      hash = (37 * hash) + PHGHDGFKPHE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getPHGHDGFKPHE());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -514,9 +514,7 @@ public final class DailyDungeonEntryInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        ePEBCOBLKII_ = false;
-
-        dungeonEntryConfigId_ = 0;
+        recommendDungeonId_ = 0;
 
         dungeonEntryId_ = 0;
 
@@ -526,9 +524,11 @@ public final class DailyDungeonEntryInfoOuterClass {
           recommendDungeonEntryInfo_ = null;
           recommendDungeonEntryInfoBuilder_ = null;
         }
-        lCHFFKHPJIO_ = false;
+        dungeonEntryConfigId_ = 0;
 
-        recommendDungeonId_ = 0;
+        cDDJDJIEPPJ_ = false;
+
+        pHGHDGFKPHE_ = false;
 
         return this;
       }
@@ -556,16 +556,16 @@ public final class DailyDungeonEntryInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DailyDungeonEntryInfoOuterClass.DailyDungeonEntryInfo buildPartial() {
         emu.grasscutter.net.proto.DailyDungeonEntryInfoOuterClass.DailyDungeonEntryInfo result = new emu.grasscutter.net.proto.DailyDungeonEntryInfoOuterClass.DailyDungeonEntryInfo(this);
-        result.ePEBCOBLKII_ = ePEBCOBLKII_;
-        result.dungeonEntryConfigId_ = dungeonEntryConfigId_;
+        result.recommendDungeonId_ = recommendDungeonId_;
         result.dungeonEntryId_ = dungeonEntryId_;
         if (recommendDungeonEntryInfoBuilder_ == null) {
           result.recommendDungeonEntryInfo_ = recommendDungeonEntryInfo_;
         } else {
           result.recommendDungeonEntryInfo_ = recommendDungeonEntryInfoBuilder_.build();
         }
-        result.lCHFFKHPJIO_ = lCHFFKHPJIO_;
-        result.recommendDungeonId_ = recommendDungeonId_;
+        result.dungeonEntryConfigId_ = dungeonEntryConfigId_;
+        result.cDDJDJIEPPJ_ = cDDJDJIEPPJ_;
+        result.pHGHDGFKPHE_ = pHGHDGFKPHE_;
         onBuilt();
         return result;
       }
@@ -614,11 +614,8 @@ public final class DailyDungeonEntryInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DailyDungeonEntryInfoOuterClass.DailyDungeonEntryInfo other) {
         if (other == emu.grasscutter.net.proto.DailyDungeonEntryInfoOuterClass.DailyDungeonEntryInfo.getDefaultInstance()) return this;
-        if (other.getEPEBCOBLKII() != false) {
-          setEPEBCOBLKII(other.getEPEBCOBLKII());
-        }
-        if (other.getDungeonEntryConfigId() != 0) {
-          setDungeonEntryConfigId(other.getDungeonEntryConfigId());
+        if (other.getRecommendDungeonId() != 0) {
+          setRecommendDungeonId(other.getRecommendDungeonId());
         }
         if (other.getDungeonEntryId() != 0) {
           setDungeonEntryId(other.getDungeonEntryId());
@@ -626,11 +623,14 @@ public final class DailyDungeonEntryInfoOuterClass {
         if (other.hasRecommendDungeonEntryInfo()) {
           mergeRecommendDungeonEntryInfo(other.getRecommendDungeonEntryInfo());
         }
-        if (other.getLCHFFKHPJIO() != false) {
-          setLCHFFKHPJIO(other.getLCHFFKHPJIO());
+        if (other.getDungeonEntryConfigId() != 0) {
+          setDungeonEntryConfigId(other.getDungeonEntryConfigId());
         }
-        if (other.getRecommendDungeonId() != 0) {
-          setRecommendDungeonId(other.getRecommendDungeonId());
+        if (other.getCDDJDJIEPPJ() != false) {
+          setCDDJDJIEPPJ(other.getCDDJDJIEPPJ());
+        }
+        if (other.getPHGHDGFKPHE() != false) {
+          setPHGHDGFKPHE(other.getPHGHDGFKPHE());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -661,71 +661,40 @@ public final class DailyDungeonEntryInfoOuterClass {
         return this;
       }
 
-      private boolean ePEBCOBLKII_ ;
+      private int recommendDungeonId_ ;
       /**
-       * <code>bool EPEBCOBLKII = 1;</code>
-       * @return The ePEBCOBLKII.
+       * <code>uint32 recommend_dungeon_id = 2;</code>
+       * @return The recommendDungeonId.
        */
       @java.lang.Override
-      public boolean getEPEBCOBLKII() {
-        return ePEBCOBLKII_;
+      public int getRecommendDungeonId() {
+        return recommendDungeonId_;
       }
       /**
-       * <code>bool EPEBCOBLKII = 1;</code>
-       * @param value The ePEBCOBLKII to set.
+       * <code>uint32 recommend_dungeon_id = 2;</code>
+       * @param value The recommendDungeonId to set.
        * @return This builder for chaining.
        */
-      public Builder setEPEBCOBLKII(boolean value) {
+      public Builder setRecommendDungeonId(int value) {
         
-        ePEBCOBLKII_ = value;
+        recommendDungeonId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool EPEBCOBLKII = 1;</code>
+       * <code>uint32 recommend_dungeon_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEPEBCOBLKII() {
+      public Builder clearRecommendDungeonId() {
         
-        ePEBCOBLKII_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int dungeonEntryConfigId_ ;
-      /**
-       * <code>uint32 dungeon_entry_config_id = 4;</code>
-       * @return The dungeonEntryConfigId.
-       */
-      @java.lang.Override
-      public int getDungeonEntryConfigId() {
-        return dungeonEntryConfigId_;
-      }
-      /**
-       * <code>uint32 dungeon_entry_config_id = 4;</code>
-       * @param value The dungeonEntryConfigId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setDungeonEntryConfigId(int value) {
-        
-        dungeonEntryConfigId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 dungeon_entry_config_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearDungeonEntryConfigId() {
-        
-        dungeonEntryConfigId_ = 0;
+        recommendDungeonId_ = 0;
         onChanged();
         return this;
       }
 
       private int dungeonEntryId_ ;
       /**
-       * <code>uint32 dungeon_entry_id = 7;</code>
+       * <code>uint32 dungeon_entry_id = 4;</code>
        * @return The dungeonEntryId.
        */
       @java.lang.Override
@@ -733,7 +702,7 @@ public final class DailyDungeonEntryInfoOuterClass {
         return dungeonEntryId_;
       }
       /**
-       * <code>uint32 dungeon_entry_id = 7;</code>
+       * <code>uint32 dungeon_entry_id = 4;</code>
        * @param value The dungeonEntryId to set.
        * @return This builder for chaining.
        */
@@ -744,7 +713,7 @@ public final class DailyDungeonEntryInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_entry_id = 7;</code>
+       * <code>uint32 dungeon_entry_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonEntryId() {
@@ -758,14 +727,14 @@ public final class DailyDungeonEntryInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo, emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.Builder, emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfoOrBuilder> recommendDungeonEntryInfoBuilder_;
       /**
-       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
        * @return Whether the recommendDungeonEntryInfo field is set.
        */
       public boolean hasRecommendDungeonEntryInfo() {
         return recommendDungeonEntryInfoBuilder_ != null || recommendDungeonEntryInfo_ != null;
       }
       /**
-       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
        * @return The recommendDungeonEntryInfo.
        */
       public emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo getRecommendDungeonEntryInfo() {
@@ -776,7 +745,7 @@ public final class DailyDungeonEntryInfoOuterClass {
         }
       }
       /**
-       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
        */
       public Builder setRecommendDungeonEntryInfo(emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo value) {
         if (recommendDungeonEntryInfoBuilder_ == null) {
@@ -792,7 +761,7 @@ public final class DailyDungeonEntryInfoOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
        */
       public Builder setRecommendDungeonEntryInfo(
           emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.Builder builderForValue) {
@@ -806,7 +775,7 @@ public final class DailyDungeonEntryInfoOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
        */
       public Builder mergeRecommendDungeonEntryInfo(emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo value) {
         if (recommendDungeonEntryInfoBuilder_ == null) {
@@ -824,7 +793,7 @@ public final class DailyDungeonEntryInfoOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
        */
       public Builder clearRecommendDungeonEntryInfo() {
         if (recommendDungeonEntryInfoBuilder_ == null) {
@@ -838,7 +807,7 @@ public final class DailyDungeonEntryInfoOuterClass {
         return this;
       }
       /**
-       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
        */
       public emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.Builder getRecommendDungeonEntryInfoBuilder() {
         
@@ -846,7 +815,7 @@ public final class DailyDungeonEntryInfoOuterClass {
         return getRecommendDungeonEntryInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
        */
       public emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfoOrBuilder getRecommendDungeonEntryInfoOrBuilder() {
         if (recommendDungeonEntryInfoBuilder_ != null) {
@@ -857,7 +826,7 @@ public final class DailyDungeonEntryInfoOuterClass {
         }
       }
       /**
-       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 9;</code>
+       * <code>.DungeonEntryInfo recommend_dungeon_entry_info = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo, emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfo.Builder, emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.DungeonEntryInfoOrBuilder> 
@@ -873,64 +842,95 @@ public final class DailyDungeonEntryInfoOuterClass {
         return recommendDungeonEntryInfoBuilder_;
       }
 
-      private boolean lCHFFKHPJIO_ ;
+      private int dungeonEntryConfigId_ ;
       /**
-       * <code>bool LCHFFKHPJIO = 14;</code>
-       * @return The lCHFFKHPJIO.
+       * <code>uint32 dungeon_entry_config_id = 10;</code>
+       * @return The dungeonEntryConfigId.
        */
       @java.lang.Override
-      public boolean getLCHFFKHPJIO() {
-        return lCHFFKHPJIO_;
+      public int getDungeonEntryConfigId() {
+        return dungeonEntryConfigId_;
       }
       /**
-       * <code>bool LCHFFKHPJIO = 14;</code>
-       * @param value The lCHFFKHPJIO to set.
+       * <code>uint32 dungeon_entry_config_id = 10;</code>
+       * @param value The dungeonEntryConfigId to set.
        * @return This builder for chaining.
        */
-      public Builder setLCHFFKHPJIO(boolean value) {
+      public Builder setDungeonEntryConfigId(int value) {
         
-        lCHFFKHPJIO_ = value;
+        dungeonEntryConfigId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool LCHFFKHPJIO = 14;</code>
+       * <code>uint32 dungeon_entry_config_id = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLCHFFKHPJIO() {
+      public Builder clearDungeonEntryConfigId() {
         
-        lCHFFKHPJIO_ = false;
+        dungeonEntryConfigId_ = 0;
         onChanged();
         return this;
       }
 
-      private int recommendDungeonId_ ;
+      private boolean cDDJDJIEPPJ_ ;
       /**
-       * <code>uint32 recommend_dungeon_id = 15;</code>
-       * @return The recommendDungeonId.
+       * <code>bool CDDJDJIEPPJ = 12;</code>
+       * @return The cDDJDJIEPPJ.
        */
       @java.lang.Override
-      public int getRecommendDungeonId() {
-        return recommendDungeonId_;
+      public boolean getCDDJDJIEPPJ() {
+        return cDDJDJIEPPJ_;
       }
       /**
-       * <code>uint32 recommend_dungeon_id = 15;</code>
-       * @param value The recommendDungeonId to set.
+       * <code>bool CDDJDJIEPPJ = 12;</code>
+       * @param value The cDDJDJIEPPJ to set.
        * @return This builder for chaining.
        */
-      public Builder setRecommendDungeonId(int value) {
+      public Builder setCDDJDJIEPPJ(boolean value) {
         
-        recommendDungeonId_ = value;
+        cDDJDJIEPPJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 recommend_dungeon_id = 15;</code>
+       * <code>bool CDDJDJIEPPJ = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRecommendDungeonId() {
+      public Builder clearCDDJDJIEPPJ() {
         
-        recommendDungeonId_ = 0;
+        cDDJDJIEPPJ_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean pHGHDGFKPHE_ ;
+      /**
+       * <code>bool PHGHDGFKPHE = 15;</code>
+       * @return The pHGHDGFKPHE.
+       */
+      @java.lang.Override
+      public boolean getPHGHDGFKPHE() {
+        return pHGHDGFKPHE_;
+      }
+      /**
+       * <code>bool PHGHDGFKPHE = 15;</code>
+       * @param value The pHGHDGFKPHE to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPHGHDGFKPHE(boolean value) {
+        
+        pHGHDGFKPHE_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool PHGHDGFKPHE = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPHGHDGFKPHE() {
+        
+        pHGHDGFKPHE_ = false;
         onChanged();
         return this;
       }
@@ -1003,11 +1003,11 @@ public final class DailyDungeonEntryInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033DailyDungeonEntryInfo.proto\032\026DungeonEn" +
       "tryInfo.proto\"\323\001\n\025DailyDungeonEntryInfo\022" +
-      "\023\n\013EPEBCOBLKII\030\001 \001(\010\022\037\n\027dungeon_entry_co" +
-      "nfig_id\030\004 \001(\r\022\030\n\020dungeon_entry_id\030\007 \001(\r\022" +
-      "7\n\034recommend_dungeon_entry_info\030\t \001(\0132\021." +
-      "DungeonEntryInfo\022\023\n\013LCHFFKHPJIO\030\016 \001(\010\022\034\n" +
-      "\024recommend_dungeon_id\030\017 \001(\rB\033\n\031emu.grass" +
+      "\034\n\024recommend_dungeon_id\030\002 \001(\r\022\030\n\020dungeon" +
+      "_entry_id\030\004 \001(\r\0227\n\034recommend_dungeon_ent" +
+      "ry_info\030\007 \001(\0132\021.DungeonEntryInfo\022\037\n\027dung" +
+      "eon_entry_config_id\030\n \001(\r\022\023\n\013CDDJDJIEPPJ" +
+      "\030\014 \001(\010\022\023\n\013PHGHDGFKPHE\030\017 \001(\010B\033\n\031emu.grass" +
       "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1020,7 +1020,7 @@ public final class DailyDungeonEntryInfoOuterClass {
     internal_static_DailyDungeonEntryInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DailyDungeonEntryInfo_descriptor,
-        new java.lang.String[] { "EPEBCOBLKII", "DungeonEntryConfigId", "DungeonEntryId", "RecommendDungeonEntryInfo", "LCHFFKHPJIO", "RecommendDungeonId", });
+        new java.lang.String[] { "RecommendDungeonId", "DungeonEntryId", "RecommendDungeonEntryInfo", "DungeonEntryConfigId", "CDDJDJIEPPJ", "PHGHDGFKPHE", });
     emu.grasscutter.net.proto.DungeonEntryInfoOuterClass.getDescriptor();
   }
 

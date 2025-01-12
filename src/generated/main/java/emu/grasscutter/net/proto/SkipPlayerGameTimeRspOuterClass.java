@@ -19,28 +19,41 @@ public final class SkipPlayerGameTimeRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
+     * <code>uint32 game_time = 5;</code>
+     * @return The gameTime.
      */
-    int getRetcode();
+    int getGameTime();
 
     /**
-     * <code>uint32 client_game_time = 7;</code>
+     * <code>uint32 client_game_time = 10;</code>
      * @return The clientGameTime.
      */
     int getClientGameTime();
 
     /**
-     * <code>uint32 game_time = 13;</code>
-     * @return The gameTime.
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
      */
-    int getGameTime();
+    int getRetcode();
+
+    /**
+     * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+     * @return A list containing the kKAKDPMGKID.
+     */
+    java.util.List<java.lang.Integer> getKKAKDPMGKIDList();
+    /**
+     * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+     * @return The count of kKAKDPMGKID.
+     */
+    int getKKAKDPMGKIDCount();
+    /**
+     * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+     * @param index The index of the element to return.
+     * @return The kKAKDPMGKID at the given index.
+     */
+    int getKKAKDPMGKID(int index);
   }
   /**
-   * <pre>
-   * CmdId: 338
-   * </pre>
-   *
    * Protobuf type {@code SkipPlayerGameTimeRsp}
    */
   public static final class SkipPlayerGameTimeRsp extends
@@ -53,6 +66,7 @@ public final class SkipPlayerGameTimeRspOuterClass {
       super(builder);
     }
     private SkipPlayerGameTimeRsp() {
+      kKAKDPMGKID_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -75,6 +89,7 @@ public final class SkipPlayerGameTimeRspOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -85,19 +100,40 @@ public final class SkipPlayerGameTimeRspOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 40: {
 
-              retcode_ = input.readInt32();
+              gameTime_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 80: {
 
               clientGameTime_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 96: {
 
-              gameTime_ = input.readUInt32();
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 112: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                kKAKDPMGKID_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              kKAKDPMGKID_.addInt(input.readUInt32());
+              break;
+            }
+            case 114: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                kKAKDPMGKID_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                kKAKDPMGKID_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
               break;
             }
             default: {
@@ -115,6 +151,9 @@ public final class SkipPlayerGameTimeRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          kKAKDPMGKID_.makeImmutable(); // C
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -132,21 +171,21 @@ public final class SkipPlayerGameTimeRspOuterClass {
               emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp.class, emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
-    private int retcode_;
+    public static final int GAME_TIME_FIELD_NUMBER = 5;
+    private int gameTime_;
     /**
-     * <code>int32 retcode = 6;</code>
-     * @return The retcode.
+     * <code>uint32 game_time = 5;</code>
+     * @return The gameTime.
      */
     @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
+    public int getGameTime() {
+      return gameTime_;
     }
 
-    public static final int CLIENT_GAME_TIME_FIELD_NUMBER = 7;
+    public static final int CLIENT_GAME_TIME_FIELD_NUMBER = 10;
     private int clientGameTime_;
     /**
-     * <code>uint32 client_game_time = 7;</code>
+     * <code>uint32 client_game_time = 10;</code>
      * @return The clientGameTime.
      */
     @java.lang.Override
@@ -154,16 +193,44 @@ public final class SkipPlayerGameTimeRspOuterClass {
       return clientGameTime_;
     }
 
-    public static final int GAME_TIME_FIELD_NUMBER = 13;
-    private int gameTime_;
+    public static final int RETCODE_FIELD_NUMBER = 12;
+    private int retcode_;
     /**
-     * <code>uint32 game_time = 13;</code>
-     * @return The gameTime.
+     * <code>int32 retcode = 12;</code>
+     * @return The retcode.
      */
     @java.lang.Override
-    public int getGameTime() {
-      return gameTime_;
+    public int getRetcode() {
+      return retcode_;
     }
+
+    public static final int KKAKDPMGKID_FIELD_NUMBER = 14;
+    private com.google.protobuf.Internal.IntList kKAKDPMGKID_;
+    /**
+     * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+     * @return A list containing the kKAKDPMGKID.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getKKAKDPMGKIDList() {
+      return kKAKDPMGKID_;
+    }
+    /**
+     * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+     * @return The count of kKAKDPMGKID.
+     */
+    public int getKKAKDPMGKIDCount() {
+      return kKAKDPMGKID_.size();
+    }
+    /**
+     * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+     * @param index The index of the element to return.
+     * @return The kKAKDPMGKID at the given index.
+     */
+    public int getKKAKDPMGKID(int index) {
+      return kKAKDPMGKID_.getInt(index);
+    }
+    private int kKAKDPMGKIDMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -179,14 +246,22 @@ public final class SkipPlayerGameTimeRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
+      getSerializedSize();
+      if (gameTime_ != 0) {
+        output.writeUInt32(5, gameTime_);
       }
       if (clientGameTime_ != 0) {
-        output.writeUInt32(7, clientGameTime_);
+        output.writeUInt32(10, clientGameTime_);
       }
-      if (gameTime_ != 0) {
-        output.writeUInt32(13, gameTime_);
+      if (retcode_ != 0) {
+        output.writeInt32(12, retcode_);
+      }
+      if (getKKAKDPMGKIDList().size() > 0) {
+        output.writeUInt32NoTag(114);
+        output.writeUInt32NoTag(kKAKDPMGKIDMemoizedSerializedSize);
+      }
+      for (int i = 0; i < kKAKDPMGKID_.size(); i++) {
+        output.writeUInt32NoTag(kKAKDPMGKID_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -197,17 +272,31 @@ public final class SkipPlayerGameTimeRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
+      if (gameTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+          .computeUInt32Size(5, gameTime_);
       }
       if (clientGameTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, clientGameTime_);
+          .computeUInt32Size(10, clientGameTime_);
       }
-      if (gameTime_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, gameTime_);
+          .computeInt32Size(12, retcode_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < kKAKDPMGKID_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(kKAKDPMGKID_.getInt(i));
+        }
+        size += dataSize;
+        if (!getKKAKDPMGKIDList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        kKAKDPMGKIDMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -224,12 +313,14 @@ public final class SkipPlayerGameTimeRspOuterClass {
       }
       emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp other = (emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
-      if (getClientGameTime()
-          != other.getClientGameTime()) return false;
       if (getGameTime()
           != other.getGameTime()) return false;
+      if (getClientGameTime()
+          != other.getClientGameTime()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
+      if (!getKKAKDPMGKIDList()
+          .equals(other.getKKAKDPMGKIDList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -241,12 +332,16 @@ public final class SkipPlayerGameTimeRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
-      hash = (37 * hash) + CLIENT_GAME_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getClientGameTime();
       hash = (37 * hash) + GAME_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getGameTime();
+      hash = (37 * hash) + CLIENT_GAME_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getClientGameTime();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
+      if (getKKAKDPMGKIDCount() > 0) {
+        hash = (37 * hash) + KKAKDPMGKID_FIELD_NUMBER;
+        hash = (53 * hash) + getKKAKDPMGKIDList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -343,10 +438,6 @@ public final class SkipPlayerGameTimeRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 338
-     * </pre>
-     *
      * Protobuf type {@code SkipPlayerGameTimeRsp}
      */
     public static final class Builder extends
@@ -384,12 +475,14 @@ public final class SkipPlayerGameTimeRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
+        gameTime_ = 0;
 
         clientGameTime_ = 0;
 
-        gameTime_ = 0;
+        retcode_ = 0;
 
+        kKAKDPMGKID_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -416,9 +509,15 @@ public final class SkipPlayerGameTimeRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp buildPartial() {
         emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp result = new emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp(this);
-        result.retcode_ = retcode_;
-        result.clientGameTime_ = clientGameTime_;
+        int from_bitField0_ = bitField0_;
         result.gameTime_ = gameTime_;
+        result.clientGameTime_ = clientGameTime_;
+        result.retcode_ = retcode_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          kKAKDPMGKID_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.kKAKDPMGKID_ = kKAKDPMGKID_;
         onBuilt();
         return result;
       }
@@ -467,14 +566,24 @@ public final class SkipPlayerGameTimeRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp other) {
         if (other == emu.grasscutter.net.proto.SkipPlayerGameTimeRspOuterClass.SkipPlayerGameTimeRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
+        if (other.getGameTime() != 0) {
+          setGameTime(other.getGameTime());
         }
         if (other.getClientGameTime() != 0) {
           setClientGameTime(other.getClientGameTime());
         }
-        if (other.getGameTime() != 0) {
-          setGameTime(other.getGameTime());
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
+        if (!other.kKAKDPMGKID_.isEmpty()) {
+          if (kKAKDPMGKID_.isEmpty()) {
+            kKAKDPMGKID_ = other.kKAKDPMGKID_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureKKAKDPMGKIDIsMutable();
+            kKAKDPMGKID_.addAll(other.kKAKDPMGKID_);
+          }
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -504,72 +613,11 @@ public final class SkipPlayerGameTimeRspOuterClass {
         }
         return this;
       }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int clientGameTime_ ;
-      /**
-       * <code>uint32 client_game_time = 7;</code>
-       * @return The clientGameTime.
-       */
-      @java.lang.Override
-      public int getClientGameTime() {
-        return clientGameTime_;
-      }
-      /**
-       * <code>uint32 client_game_time = 7;</code>
-       * @param value The clientGameTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setClientGameTime(int value) {
-        
-        clientGameTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 client_game_time = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearClientGameTime() {
-        
-        clientGameTime_ = 0;
-        onChanged();
-        return this;
-      }
+      private int bitField0_;
 
       private int gameTime_ ;
       /**
-       * <code>uint32 game_time = 13;</code>
+       * <code>uint32 game_time = 5;</code>
        * @return The gameTime.
        */
       @java.lang.Override
@@ -577,7 +625,7 @@ public final class SkipPlayerGameTimeRspOuterClass {
         return gameTime_;
       }
       /**
-       * <code>uint32 game_time = 13;</code>
+       * <code>uint32 game_time = 5;</code>
        * @param value The gameTime to set.
        * @return This builder for chaining.
        */
@@ -588,12 +636,153 @@ public final class SkipPlayerGameTimeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 game_time = 13;</code>
+       * <code>uint32 game_time = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearGameTime() {
         
         gameTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int clientGameTime_ ;
+      /**
+       * <code>uint32 client_game_time = 10;</code>
+       * @return The clientGameTime.
+       */
+      @java.lang.Override
+      public int getClientGameTime() {
+        return clientGameTime_;
+      }
+      /**
+       * <code>uint32 client_game_time = 10;</code>
+       * @param value The clientGameTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setClientGameTime(int value) {
+        
+        clientGameTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 client_game_time = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearClientGameTime() {
+        
+        clientGameTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList kKAKDPMGKID_ = emptyIntList();
+      private void ensureKKAKDPMGKIDIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          kKAKDPMGKID_ = mutableCopy(kKAKDPMGKID_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+       * @return A list containing the kKAKDPMGKID.
+       */
+      public java.util.List<java.lang.Integer>
+          getKKAKDPMGKIDList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(kKAKDPMGKID_) : kKAKDPMGKID_;
+      }
+      /**
+       * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+       * @return The count of kKAKDPMGKID.
+       */
+      public int getKKAKDPMGKIDCount() {
+        return kKAKDPMGKID_.size();
+      }
+      /**
+       * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+       * @param index The index of the element to return.
+       * @return The kKAKDPMGKID at the given index.
+       */
+      public int getKKAKDPMGKID(int index) {
+        return kKAKDPMGKID_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+       * @param index The index to set the value at.
+       * @param value The kKAKDPMGKID to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKKAKDPMGKID(
+          int index, int value) {
+        ensureKKAKDPMGKIDIsMutable();
+        kKAKDPMGKID_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+       * @param value The kKAKDPMGKID to add.
+       * @return This builder for chaining.
+       */
+      public Builder addKKAKDPMGKID(int value) {
+        ensureKKAKDPMGKIDIsMutable();
+        kKAKDPMGKID_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+       * @param values The kKAKDPMGKID to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllKKAKDPMGKID(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureKKAKDPMGKIDIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, kKAKDPMGKID_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 KKAKDPMGKID = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKKAKDPMGKID() {
+        kKAKDPMGKID_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
@@ -664,10 +853,11 @@ public final class SkipPlayerGameTimeRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033SkipPlayerGameTimeRsp.proto\"U\n\025SkipPla" +
-      "yerGameTimeRsp\022\017\n\007retcode\030\006 \001(\005\022\030\n\020clien" +
-      "t_game_time\030\007 \001(\r\022\021\n\tgame_time\030\r \001(\rB\033\n\031" +
-      "emu.grasscutter.net.protob\006proto3"
+      "\n\033SkipPlayerGameTimeRsp.proto\"j\n\025SkipPla" +
+      "yerGameTimeRsp\022\021\n\tgame_time\030\005 \001(\r\022\030\n\020cli" +
+      "ent_game_time\030\n \001(\r\022\017\n\007retcode\030\014 \001(\005\022\023\n\013" +
+      "KKAKDPMGKID\030\016 \003(\rB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -678,7 +868,7 @@ public final class SkipPlayerGameTimeRspOuterClass {
     internal_static_SkipPlayerGameTimeRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SkipPlayerGameTimeRsp_descriptor,
-        new java.lang.String[] { "Retcode", "ClientGameTime", "GameTime", });
+        new java.lang.String[] { "GameTime", "ClientGameTime", "Retcode", "KKAKDPMGKID", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

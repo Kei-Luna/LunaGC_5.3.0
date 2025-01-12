@@ -67,17 +67,17 @@ public final class GetActivityInfoRspOuterClass {
         int index);
 
     /**
-     * <code>repeated uint32 activated_sale_id_list = 7;</code>
+     * <code>repeated uint32 activated_sale_id_list = 9;</code>
      * @return A list containing the activatedSaleIdList.
      */
     java.util.List<java.lang.Integer> getActivatedSaleIdListList();
     /**
-     * <code>repeated uint32 activated_sale_id_list = 7;</code>
+     * <code>repeated uint32 activated_sale_id_list = 9;</code>
      * @return The count of activatedSaleIdList.
      */
     int getActivatedSaleIdListCount();
     /**
-     * <code>repeated uint32 activated_sale_id_list = 7;</code>
+     * <code>repeated uint32 activated_sale_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The activatedSaleIdList at the given index.
      */
@@ -156,7 +156,7 @@ public final class GetActivityInfoRspOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
               break;
             }
-            case 56: {
+            case 72: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 activatedSaleIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
@@ -164,7 +164,7 @@ public final class GetActivityInfoRspOuterClass {
               activatedSaleIdList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
@@ -303,10 +303,10 @@ public final class GetActivityInfoRspOuterClass {
       return disableTransferPointInteractionList_.get(index);
     }
 
-    public static final int ACTIVATED_SALE_ID_LIST_FIELD_NUMBER = 7;
+    public static final int ACTIVATED_SALE_ID_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList activatedSaleIdList_;
     /**
-     * <code>repeated uint32 activated_sale_id_list = 7;</code>
+     * <code>repeated uint32 activated_sale_id_list = 9;</code>
      * @return A list containing the activatedSaleIdList.
      */
     @java.lang.Override
@@ -315,14 +315,14 @@ public final class GetActivityInfoRspOuterClass {
       return activatedSaleIdList_;
     }
     /**
-     * <code>repeated uint32 activated_sale_id_list = 7;</code>
+     * <code>repeated uint32 activated_sale_id_list = 9;</code>
      * @return The count of activatedSaleIdList.
      */
     public int getActivatedSaleIdListCount() {
       return activatedSaleIdList_.size();
     }
     /**
-     * <code>repeated uint32 activated_sale_id_list = 7;</code>
+     * <code>repeated uint32 activated_sale_id_list = 9;</code>
      * @param index The index of the element to return.
      * @return The activatedSaleIdList at the given index.
      */
@@ -364,7 +364,7 @@ public final class GetActivityInfoRspOuterClass {
         output.writeMessage(5, disableTransferPointInteractionList_.get(i));
       }
       if (getActivatedSaleIdListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(activatedSaleIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < activatedSaleIdList_.size(); i++) {
@@ -1289,7 +1289,7 @@ public final class GetActivityInfoRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 activated_sale_id_list = 7;</code>
+       * <code>repeated uint32 activated_sale_id_list = 9;</code>
        * @return A list containing the activatedSaleIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -1298,14 +1298,14 @@ public final class GetActivityInfoRspOuterClass {
                  java.util.Collections.unmodifiableList(activatedSaleIdList_) : activatedSaleIdList_;
       }
       /**
-       * <code>repeated uint32 activated_sale_id_list = 7;</code>
+       * <code>repeated uint32 activated_sale_id_list = 9;</code>
        * @return The count of activatedSaleIdList.
        */
       public int getActivatedSaleIdListCount() {
         return activatedSaleIdList_.size();
       }
       /**
-       * <code>repeated uint32 activated_sale_id_list = 7;</code>
+       * <code>repeated uint32 activated_sale_id_list = 9;</code>
        * @param index The index of the element to return.
        * @return The activatedSaleIdList at the given index.
        */
@@ -1313,7 +1313,7 @@ public final class GetActivityInfoRspOuterClass {
         return activatedSaleIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 activated_sale_id_list = 7;</code>
+       * <code>repeated uint32 activated_sale_id_list = 9;</code>
        * @param index The index to set the value at.
        * @param value The activatedSaleIdList to set.
        * @return This builder for chaining.
@@ -1326,7 +1326,7 @@ public final class GetActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 activated_sale_id_list = 7;</code>
+       * <code>repeated uint32 activated_sale_id_list = 9;</code>
        * @param value The activatedSaleIdList to add.
        * @return This builder for chaining.
        */
@@ -1337,7 +1337,7 @@ public final class GetActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 activated_sale_id_list = 7;</code>
+       * <code>repeated uint32 activated_sale_id_list = 9;</code>
        * @param values The activatedSaleIdList to add.
        * @return This builder for chaining.
        */
@@ -1350,7 +1350,7 @@ public final class GetActivityInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 activated_sale_id_list = 7;</code>
+       * <code>repeated uint32 activated_sale_id_list = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivatedSaleIdList() {
@@ -1457,19 +1457,19 @@ public final class GetActivityInfoRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030GetActivityInfoRsp.proto\032\022ActivityInfo" +
-      ".proto\032\020Uint32Pair.proto\"\256\001\n\022GetActivity" +
+      "\n\030GetActivityInfoRsp.proto\032\020Uint32Pair.p" +
+      "roto\032\022ActivityInfo.proto\"\256\001\n\022GetActivity" +
       "InfoRsp\022)\n\022activity_info_list\030\002 \003(\0132\r.Ac" +
       "tivityInfo\022<\n\'disable_transfer_point_int" +
       "eraction_list\030\005 \003(\0132\013.Uint32Pair\022\036\n\026acti" +
-      "vated_sale_id_list\030\007 \003(\r\022\017\n\007retcode\030\016 \001(" +
+      "vated_sale_id_list\030\t \003(\r\022\017\n\007retcode\030\016 \001(" +
       "\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.ActivityInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.Uint32PairOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.ActivityInfoOuterClass.getDescriptor(),
         });
     internal_static_GetActivityInfoRsp_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1477,8 +1477,8 @@ public final class GetActivityInfoRspOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetActivityInfoRsp_descriptor,
         new java.lang.String[] { "ActivityInfoList", "DisableTransferPointInteractionList", "ActivatedSaleIdList", "Retcode", });
-    emu.grasscutter.net.proto.ActivityInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.Uint32PairOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.ActivityInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

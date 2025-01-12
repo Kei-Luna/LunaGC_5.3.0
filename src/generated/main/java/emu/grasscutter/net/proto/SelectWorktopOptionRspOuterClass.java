@@ -19,13 +19,13 @@ public final class SelectWorktopOptionRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 option_id = 1;</code>
+     * <code>uint32 option_id = 3;</code>
      * @return The optionId.
      */
     int getOptionId();
 
     /**
-     * <code>uint32 gadget_entity_id = 9;</code>
+     * <code>uint32 gadget_entity_id = 8;</code>
      * @return The gadgetEntityId.
      */
     int getGadgetEntityId();
@@ -81,12 +81,12 @@ public final class SelectWorktopOptionRspOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 24: {
 
               optionId_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 64: {
 
               gadgetEntityId_ = input.readUInt32();
               break;
@@ -128,10 +128,10 @@ public final class SelectWorktopOptionRspOuterClass {
               emu.grasscutter.net.proto.SelectWorktopOptionRspOuterClass.SelectWorktopOptionRsp.class, emu.grasscutter.net.proto.SelectWorktopOptionRspOuterClass.SelectWorktopOptionRsp.Builder.class);
     }
 
-    public static final int OPTION_ID_FIELD_NUMBER = 1;
+    public static final int OPTION_ID_FIELD_NUMBER = 3;
     private int optionId_;
     /**
-     * <code>uint32 option_id = 1;</code>
+     * <code>uint32 option_id = 3;</code>
      * @return The optionId.
      */
     @java.lang.Override
@@ -139,10 +139,10 @@ public final class SelectWorktopOptionRspOuterClass {
       return optionId_;
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 9;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 8;
     private int gadgetEntityId_;
     /**
-     * <code>uint32 gadget_entity_id = 9;</code>
+     * <code>uint32 gadget_entity_id = 8;</code>
      * @return The gadgetEntityId.
      */
     @java.lang.Override
@@ -176,10 +176,10 @@ public final class SelectWorktopOptionRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (optionId_ != 0) {
-        output.writeUInt32(1, optionId_);
+        output.writeUInt32(3, optionId_);
       }
       if (gadgetEntityId_ != 0) {
-        output.writeUInt32(9, gadgetEntityId_);
+        output.writeUInt32(8, gadgetEntityId_);
       }
       if (retcode_ != 0) {
         output.writeInt32(14, retcode_);
@@ -195,11 +195,11 @@ public final class SelectWorktopOptionRspOuterClass {
       size = 0;
       if (optionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, optionId_);
+          .computeUInt32Size(3, optionId_);
       }
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, gadgetEntityId_);
+          .computeUInt32Size(8, gadgetEntityId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -499,7 +499,7 @@ public final class SelectWorktopOptionRspOuterClass {
 
       private int optionId_ ;
       /**
-       * <code>uint32 option_id = 1;</code>
+       * <code>uint32 option_id = 3;</code>
        * @return The optionId.
        */
       @java.lang.Override
@@ -507,7 +507,7 @@ public final class SelectWorktopOptionRspOuterClass {
         return optionId_;
       }
       /**
-       * <code>uint32 option_id = 1;</code>
+       * <code>uint32 option_id = 3;</code>
        * @param value The optionId to set.
        * @return This builder for chaining.
        */
@@ -518,7 +518,7 @@ public final class SelectWorktopOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 option_id = 1;</code>
+       * <code>uint32 option_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearOptionId() {
@@ -530,7 +530,7 @@ public final class SelectWorktopOptionRspOuterClass {
 
       private int gadgetEntityId_ ;
       /**
-       * <code>uint32 gadget_entity_id = 9;</code>
+       * <code>uint32 gadget_entity_id = 8;</code>
        * @return The gadgetEntityId.
        */
       @java.lang.Override
@@ -538,7 +538,7 @@ public final class SelectWorktopOptionRspOuterClass {
         return gadgetEntityId_;
       }
       /**
-       * <code>uint32 gadget_entity_id = 9;</code>
+       * <code>uint32 gadget_entity_id = 8;</code>
        * @param value The gadgetEntityId to set.
        * @return This builder for chaining.
        */
@@ -549,7 +549,7 @@ public final class SelectWorktopOptionRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gadget_entity_id = 9;</code>
+       * <code>uint32 gadget_entity_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearGadgetEntityId() {
@@ -657,8 +657,8 @@ public final class SelectWorktopOptionRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034SelectWorktopOptionRsp.proto\"V\n\026Select" +
-      "WorktopOptionRsp\022\021\n\toption_id\030\001 \001(\r\022\030\n\020g" +
-      "adget_entity_id\030\t \001(\r\022\017\n\007retcode\030\016 \001(\005B\033" +
+      "WorktopOptionRsp\022\021\n\toption_id\030\003 \001(\r\022\030\n\020g" +
+      "adget_entity_id\030\010 \001(\r\022\017\n\007retcode\030\016 \001(\005B\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
